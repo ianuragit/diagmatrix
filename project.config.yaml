@@ -1,0 +1,15 @@
+# Single source of project-wide settings, read by the pipeline (User-Agent,
+# contact) and by Astro (site/base, CTAs, forms). Values in {{braces}} are
+# placeholders — `pnpm validate` and the crawler refuse to run while the ones
+# they need are still unset.
+site_name: "{{SITE_NAME}}"
+github_repo: "ianuragit/diagmatrix"
+site_url: "{{SITE_URL}}"            # https://user.github.io/repo  or  https://custom.domain
+diagnoodle_url: "{{DIAGNOODLE_URL}}"
+form:
+  service: "{{FORM_SERVICE}}"       # web3forms | formspree
+  key: "{{FORM_KEY}}"               # public access key (Web3Forms) or endpoint (Formspree)
+whatsapp_number: "{{WHATSAPP_NUMBER}}"   # country code + number, digits only
+contact_email: "{{CONTACT_EMAIL}}"
+cname: null                          # custom domain for public/CNAME, or null
+allow_ai_crawlers: true              # robots.txt: explicitly allow GPTBot, ClaudeBot, PerplexityBot, Google-Extended

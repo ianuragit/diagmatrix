@@ -1,0 +1,30 @@
+# Canonical brands. Matching (normalise/brand.ts, Phase 4):
+#   1. longest-prefix match of `name` against canonical names + aliases,
+#   2. else product-line match (lines map a product family to its brand).
+# The matched brand text is stripped from `name`; the line is kept as product_line.
+# Unmatched names go to the report — never guessed.
+brands:
+  - name: Abbott
+    aliases: [Abbott Diagnostics, Alere]
+    lines: [Bioline, Determine, DETERMINE, Panbio, BinaxNOW, i-STAT, Afinion]
+  - name: SD Biosensor
+    aliases: [SD BIOSENSOR, SDBiosensor]
+    lines: [STANDARD Q, STANDARD F, STANDARD E, STANDARD M]
+  - name: Boditech
+    aliases: [Boditech Med]
+    lines: [ichroma, AFIAS]
+  - name: Wondfo
+    aliases: [Guangzhou Wondfo]
+    lines: [Finecare]
+  - name: CTK Biotech
+    aliases: [CTK]
+    lines: [OnSite, TRUSTline, TRUSTwell, RecombiLISA]
+  - name: Premier Medical
+    aliases: [Premier Medical Corporation]
+    lines: [First Response]
+  - name: EDAN
+    aliases: [EDAN Instruments]
+    lines: []
+  - name: Thermo Fisher
+    aliases: [ThermoFisher, Thermo Fisher Scientific, Thermo Scientific]
+    lines: []

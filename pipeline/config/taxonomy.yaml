@@ -1,0 +1,39 @@
+# Shared taxonomy. Every source maps onto these — no parallel category trees.
+# Keyword lists drive normalise/classify.ts (Phase 4); matching is case-insensitive
+# on whole words over name + category + specs. Expanded in Phase 4.
+categories:
+  - id: rapid-tests
+    label: Rapid diagnostic tests
+    source_labels: { saaskin: [Medical RTD, Medical RDT], diagnoodle: [] }
+  - id: elisa
+    label: ELISA kits
+    source_labels: { saaskin: [Medical ELISA], diagnoodle: [] }
+  - id: poct
+    label: Point-of-care testing
+    source_labels: { saaskin: [Medical POCT], diagnoodle: [] }
+  - id: fia
+    label: Fluorescence immunoassay
+    source_labels: { saaskin: [Medical FIA], diagnoodle: [] }
+  - id: ivd
+    label: In-vitro diagnostics (general)
+    source_labels: { saaskin: [Medical IVD], diagnoodle: [] }
+
+technology:
+  rdt: { label: Rapid test (lateral flow), keywords: [rapid test, rapid, cassette, card test, strip test, lateral flow, rdt] }
+  elisa: { label: ELISA, keywords: [elisa, eia] }
+  fia: { label: Fluorescence immunoassay, keywords: [fia, ichroma, afias, finecare, fluorescence] }
+  pcr: { label: PCR, keywords: [pcr, rt-pcr, qpcr, real-time pcr] }
+  blood-gas: { label: Blood gas, keywords: [blood gas, i15, i-stat, epoc] }
+  urinalysis: { label: Urinalysis, keywords: [urine strip, urinalysis, urine analyzer] }
+  glucometry: { label: Glucometry, keywords: [glucometer, glucose meter, glucose strips] }
+
+analytes: {}       # filled in Phase 4, e.g. hiv: { label: HIV, keywords: [hiv, hiv 1/2] }
+sample_types: {}   # e.g. whole-blood: { label: Whole blood, keywords: [whole blood, wb] }
+product_types:
+  instrument: [analyzer, analyser, reader, meter, instrument, device]
+  consumable: [cartridge, lancet, cuvette, tip, tube, swab]
+  reagent: [kit, test, reagent, control, calibrator, strip]
+subtypes:
+  control: [control]
+  calibrator: [calibrator]
+  cartridge: [cartridge]

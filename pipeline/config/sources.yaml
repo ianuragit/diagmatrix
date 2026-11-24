@@ -1,0 +1,16 @@
+# The ONLY place sources are registered. Adding a source:
+#   1. cp -r pipeline/sources/_template pipeline/sources/<id>
+#   2. write selectors.ts + adapter.ts + fixtures
+#   3. add an entry below.
+# priority: lower number wins field-level precedence when records from two
+# sources are merged into one product. Hand-added products in data/manual/*.yaml
+# are not listed here: they are always loaded and always win (priority -inf).
+sources:
+  - id: saaskin
+    baseUrl: https://www.saaskin.net
+    enabled: true
+    priority: 10
+  - id: diagnoodle
+    baseUrl: https://example.invalid/diagnoodle   # set from DIAGNOODLE_URL in Phase 3
+    enabled: false
+    priority: 20
