@@ -8,13 +8,15 @@
  *     or the robots Crawl-delay if larger — between request starts.
  *  3. Retry with exponential backoff on network errors, 429 and 5xx (max 3 retries),
  *     honouring Retry-After.
- *  4. Disk cache: .cache/http/{host}/{sha1(url)}.html + .meta.json. A cached URL
+ *  4. Disk cache: .cache/http/{host}/{sha1(url)}.html.br (Brotli — pages that embed
+ *     a full site nav are ~1 MB each) + .meta.json. Plain .html is still read. A cached URL
  *     is never re-fetched unless `refresh` is set (then a conditional request with
  *     If-None-Match / If-Modified-Since is used). `offline` forbids the network.
- *  5. Honest User-Agent carrying a contact address.
+ *  5. Honest bot User-Agent (contact address added once configured).
  */
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
+import { brotliCompressSync, brotliDecompressSync, constants as zc } from 'node:zlib';
 import { join } from 'node:path';
 import { sha1 } from './slug.ts';
 import { isAllowed, parseRobots, groupFor, type Robots } from './robots.ts';
@@ -132,18 +134,26 @@ export class HttpClient {
     };
   }
 
-  cachePaths(url: string): { body: string; meta: string; dir: string } {
+  cachePaths(url: string): { body: string; plain: string; meta: string; dir: string } {
     const host = new URL(url).host;
     const dir = join(this.opts.cacheDir, host.replace(/[^a-z0-9.-]/gi, '_'));
     const key = sha1(url);
-    return { dir, body: join(dir, `${key}.html`), meta: join(dir, `${key}.meta.json`) };
+    return {
+      dir,
+      body: join(dir, `${key}.html.br`),
+      plain: join(dir, `${key}.html`),
+      meta: join(dir, `${key}.meta.json`),
+    };
   }
 
   async readCache(url: string): Promise<HttpResponse | null> {
     const p = this.cachePaths(url);
-    if (!existsSync(p.body) || !existsSync(p.meta)) return null;
-    const [body, metaRaw] = await Promise.all([readFile(p.body, 'utf8'), readFile(p.meta, 'utf8')]);
-    const meta = JSON.parse(metaRaw) as CacheMeta;
+    if (!existsSync(p.meta)) return null;
+    let body: string;
+    if (existsSync(p.body)) body = brotliDecompressSync(await readFile(p.body)).toString('utf8');
+    else if (existsSync(p.plain)) body = await readFile(p.plain, 'utf8');
+    else return null;
+    const meta = JSON.parse(await readFile(p.meta, 'utf8')) as CacheMeta;
     return { url: meta.final_url, status: meta.status, body, fromCache: true, meta };
   }
 
@@ -151,7 +161,12 @@ export class HttpClient {
     const p = this.cachePaths(url);
     await mkdir(p.dir, { recursive: true });
     await Promise.all([
-      writeFile(p.body, body, 'utf8'),
+      writeFile(
+        p.body,
+        brotliCompressSync(Buffer.from(body, 'utf8'), {
+          params: { [zc.BROTLI_PARAM_QUALITY]: 9, [zc.BROTLI_PARAM_LGWIN]: 24 },
+        }),
+      ),
       writeFile(p.meta, JSON.stringify(meta, null, 2) + '\n', 'utf8'),
     ]);
   }

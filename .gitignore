@@ -14,3 +14,4 @@ test-results/
 pipeline/config/sources.local.yaml
 data/raw/*/
 data/private/
+scripts/scratch/

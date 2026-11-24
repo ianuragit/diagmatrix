@@ -81,11 +81,28 @@ function patternToRegex(pattern: string): RegExp {
   return new RegExp('^' + body + (anchored ? '$' : ''));
 }
 
-export function isAllowed(robots: Robots, userAgent: string, pathWithQuery: string): boolean {
+/**
+ * conservative (default): when no group names our bot specifically (we fall
+ * under `*`), also honour Disallow lines from every other group. Many real files put a shared Disallow list under
+ * the last named bot, which strict RFC parsing would not apply to `*`.
+ */
+export function isAllowed(
+  robots: Robots,
+  userAgent: string,
+  pathWithQuery: string,
+  opts: { conservative?: boolean } = {},
+): boolean {
   const group = groupFor(robots, userAgent);
-  if (!group) return true;
+  const specific = !!group && !group.agents.includes('*');
+  const conservative = (opts.conservative ?? true) && !specific;
+  const rules = [
+    ...(group?.rules ?? []),
+    ...(conservative
+      ? robots.groups.filter((g) => g !== group).flatMap((g) => g.rules.filter((r) => !r.allow))
+      : []),
+  ];
   let decision: RobotsRule | null = null;
-  for (const rule of group.rules) {
+  for (const rule of rules) {
     if (!patternToRegex(rule.pattern).test(pathWithQuery)) continue;
     if (
       !decision ||

@@ -25,6 +25,15 @@ describe('robots', () => {
     expect(isAllowed(r, 'OtherBot', '/products')).toBe(false);
   });
 
+  it('conservatively applies Disallow lines from other groups', () => {
+    const r = parseRobots(
+      `User-agent: *\n\nUser-agent: Googlebot\nAllow: /\n\nUser-agent: AdsBot\nAllow: /\nDisallow: /inquiry.html\n`,
+    );
+    expect(isAllowed(r, UA, '/inquiry.html')).toBe(false);
+    expect(isAllowed(r, UA, '/product-1.html')).toBe(true);
+    expect(isAllowed(r, UA, '/inquiry.html', { conservative: false })).toBe(true);
+  });
+
   it('treats empty Disallow and empty file as allow-all, collects sitemaps', () => {
     const r = parseRobots(`User-agent: *\nDisallow:\nSitemap: https://x.test/sitemap.xml`);
     expect(isAllowed(r, UA, '/anything')).toBe(true);

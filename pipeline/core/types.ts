@@ -34,7 +34,10 @@ export const RawProductSchema = z.object({
   subcategory: z.string().nullable(),
   brand: z.string().nullable(), // only if the page states it explicitly
   catalogue_no: z.string().nullable(),
+  /** Every spec row exactly as listed (key -> value). */
   specs: z.record(z.string(), z.string()),
+  /** Short structured fact table, if the page has one (usually more reliable than specs). */
+  facts: z.record(z.string(), z.string()),
   image: z.url().nullable(),
   documents: z.array(DocumentSchema),
   /** Raw description text, kept for fact extraction only — never published verbatim. */
