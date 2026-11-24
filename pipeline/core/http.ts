@@ -12,7 +12,11 @@
  *     a full site nav are ~1 MB each) + .meta.json. Plain .html is still read. A cached URL
  *     is never re-fetched unless `refresh` is set (then a conditional request with
  *     If-None-Match / If-Modified-Since is used). `offline` forbids the network.
- *  5. Honest bot User-Agent (contact address added once configured).
+ *  5. Block detection: 401/403 (and 429 once retries are exhausted) are never cached.
+ *     After `blockThreshold` consecutive block responses the host is marked blocked
+ *     for the rest of the process and every further request to it fails fast with
+ *     HostBlockedError, with no network traffic. We stop; we never try to get around a block.
+ *  6. Honest bot User-Agent (contact address added once configured).
  */
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
@@ -54,6 +58,13 @@ export class CacheMissError extends Error {
   }
 }
 
+export class HostBlockedError extends Error {
+  constructor(public readonly host: string) {
+    super(`Host is blocking this crawler; stopped requesting: ${host}`);
+    this.name = 'HostBlockedError';
+  }
+}
+
 export class HttpError extends Error {
   constructor(
     public readonly url: string,
@@ -70,6 +81,10 @@ export interface HttpClientOptions {
   refresh?: boolean;
   offline?: boolean;
   minIntervalMs?: number;
+  /** Per-host minimum interval overrides (ms), e.g. from sources.yaml minIntervalMs. */
+  hostIntervals?: Record<string, number>;
+  /** Consecutive 401/403/429 responses from a host before it is treated as blocking us. */
+  blockThreshold?: number;
   maxRetries?: number;
   timeoutMs?: number;
   log: Logger;
@@ -118,6 +133,24 @@ export class HttpClient {
   private readonly robots = new Map<string, Promise<Robots>>();
   private readonly queues = new Map<string, Promise<unknown>>();
   private readonly lastStart = new Map<string, number>();
+  private readonly blockStreak = new Map<string, number>();
+  readonly blockedHosts = new Set<string>();
+
+  private noteBlock(host: string, blocked: boolean): void {
+    if (!blocked) {
+      this.blockStreak.set(host, 0);
+      return;
+    }
+    const n = (this.blockStreak.get(host) ?? 0) + 1;
+    this.blockStreak.set(host, n);
+    if (n >= this.opts.blockThreshold && !this.blockedHosts.has(host)) {
+      this.blockedHosts.add(host);
+      this.opts.log.error('host is blocking us — no further requests will be sent to it', {
+        host,
+        consecutive: n,
+      });
+    }
+  }
 
   constructor(options: HttpClientOptions) {
     this.opts = {
@@ -125,6 +158,8 @@ export class HttpClient {
       refresh: false,
       offline: false,
       minIntervalMs: 1000,
+      blockThreshold: 3,
+      hostIntervals: {},
       maxRetries: 3,
       timeoutMs: 30_000,
       fetchImpl: globalThis.fetch.bind(globalThis),
@@ -232,8 +267,14 @@ export class HttpClient {
       }
       throw new CacheMissError(url);
     }
+    const host = new URL(url).host;
+    if (this.blockedHosts.has(host)) throw new HostBlockedError(host);
     const crawlDelayMs = (robots && groupFor(robots, this.opts.userAgent)?.crawlDelay) ?? 0;
-    const interval = Math.max(this.opts.minIntervalMs, crawlDelayMs * 1000);
+    const interval = Math.max(
+      this.opts.hostIntervals[host] ?? this.opts.minIntervalMs,
+      this.opts.minIntervalMs,
+      crawlDelayMs * 1000,
+    );
     return this.enqueue(origin, () => this.fetchWithRetry(url, interval, cached));
   }
 
@@ -262,6 +303,7 @@ export class HttpClient {
     const host = new URL(url).host;
     let attempt = 0;
     for (;;) {
+      if (this.blockedHosts.has(host)) throw new HostBlockedError(host);
       await this.waitTurn(host, interval);
       const headers: Record<string, string> = {
         'user-agent': this.opts.userAgent,
@@ -295,6 +337,11 @@ export class HttpClient {
               : Math.max(0, Date.parse(ra) - this.opts.now());
           failure = `HTTP ${res.status}`;
           await res.body?.cancel();
+        } else if (res.status === 401 || res.status === 403) {
+          // Access denied (often a WAF/rate block). Never cached, never retried.
+          await res.body?.cancel();
+          this.noteBlock(host, true);
+          throw new HttpError(url, res.status);
         } else {
           const body = await res.text();
           const meta: CacheMeta = {
@@ -306,15 +353,18 @@ export class HttpClient {
             last_modified: res.headers.get('last-modified'),
             content_type: res.headers.get('content-type'),
           };
-          // 2xx and definitive 4xx are cached, so re-runs never ask again.
+          // 2xx and definitive 4xx (404, 410, …) are cached, so re-runs never ask again.
           await this.writeCache(url, body, meta);
+          this.noteBlock(host, false);
           return { url: meta.final_url, status: res.status, body, fromCache: false, meta };
         }
       } catch (err) {
+        if (err instanceof HttpError || err instanceof HostBlockedError) throw err;
         failure = err instanceof Error ? `${err.name}: ${err.message}` : String(err);
       }
 
       if (attempt >= this.opts.maxRetries) {
+        if (failure.startsWith('HTTP 429')) this.noteBlock(host, true);
         this.opts.log.error('giving up', { url, attempts: attempt + 1, failure });
         throw new Error(`Failed after ${attempt + 1} attempts (${failure}): ${url}`);
       }

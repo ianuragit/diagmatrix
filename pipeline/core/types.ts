@@ -132,5 +132,7 @@ export const SourceConfigSchema = z.object({
   baseUrl: z.url(),
   enabled: z.boolean(),
   priority: z.number().int(), // lower = wins field-level precedence
+  /** Minimum ms between requests to this source's host (default 1000; robots Crawl-delay still applies if larger). */
+  minIntervalMs: z.number().int().min(1000).optional(),
 });
 export type SourceConfig = z.infer<typeof SourceConfigSchema>;

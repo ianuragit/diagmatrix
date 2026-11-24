@@ -18,7 +18,7 @@ const clean = (t: string | undefined | null): string =>
   (t ?? '').replace(/ /g, ' ').replace(/\s+/g, ' ').trim();
 
 /** Normalise a spec key for storage: trimmed, no trailing colon. */
-const cleanKey = (t: string): string => clean(t).replace(/\s*:\s*$/, '');
+const cleanKey = (t: string): string => clean(t).replace(/\s*[:;]+\s*$/, '');
 
 export function parseNav(html: string, pageUrl: string): NavEntry[] {
   const $ = cheerio.load(html);

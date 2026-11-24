@@ -17,7 +17,12 @@ import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { ROOT, loadProjectConfig, privateTerms, LOCAL_SOURCES } from './core/config.ts';
 import { filesToScan, scanForTerms } from './core/privacy.ts';
-import { HttpClient, RobotsDisallowedError, buildUserAgent } from './core/http.ts';
+import {
+  HttpClient,
+  HostBlockedError,
+  RobotsDisallowedError,
+  buildUserAgent,
+} from './core/http.ts';
 import { createLogger, type Logger } from './core/log.ts';
 import { loadEnabledSources, type LoadedSource } from './core/registry.ts';
 import {
@@ -55,7 +60,11 @@ async function writeJson(path: string, data: unknown) {
   await writeFile(path, JSON.stringify(data, null, 2) + '\n', 'utf8');
 }
 
-function makeClient(offline: boolean, logger: Logger): HttpClient {
+function makeClient(offline: boolean, logger: Logger, sources: LoadedSource[] = []): HttpClient {
+  const hostIntervals: Record<string, number> = {};
+  for (const s of sources)
+    if (s.config.minIntervalMs)
+      hostIntervals[new URL(s.config.baseUrl).host] = s.config.minIntervalMs;
   const cfg = loadProjectConfig();
   return new HttpClient({
     userAgent: buildUserAgent(cfg.contact_email),
@@ -63,6 +72,7 @@ function makeClient(offline: boolean, logger: Logger): HttpClient {
     refresh: values.refresh,
     offline,
     log: logger,
+    hostIntervals,
   });
 }
 
@@ -85,6 +95,12 @@ async function crawlSource(src: LoadedSource, http: HttpClient) {
     try {
       await http.get(entry.url);
     } catch (err) {
+      if (err instanceof HostBlockedError) {
+        slog.error(
+          `stopping ${src.config.id}: the site is blocking requests. ${done} of ${unique.length} attempted; re-run later (cached pages are kept).`,
+        );
+        break;
+      }
       if (!(err instanceof RobotsDisallowedError))
         slog.error('fetch failed', { url: entry.url, error: String(err) });
     }
@@ -94,7 +110,7 @@ async function crawlSource(src: LoadedSource, http: HttpClient) {
 
 async function cmdCrawl() {
   const sources = await loadEnabledSources({ only });
-  const http = makeClient(values.offline, log.child('http'));
+  const http = makeClient(values.offline, log.child('http'), sources);
   for (const src of sources) await crawlSource(src, http);
   log.info('crawl finished', {
     ...http.stats,

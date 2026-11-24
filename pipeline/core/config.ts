@@ -58,7 +58,14 @@ const CommittedSourceSchema = SourceConfigSchema.extend({ baseUrl: z.url().nulla
 
 const LocalSourcesSchema = z.object({
   sources: z
-    .record(z.string(), z.object({ baseUrl: z.url().optional(), enabled: z.boolean().optional() }))
+    .record(
+      z.string(),
+      z.object({
+        baseUrl: z.url().optional(),
+        enabled: z.boolean().optional(),
+        minIntervalMs: z.number().int().min(1000).optional(),
+      }),
+    )
     .default({}),
   /** Terms that must never appear in tracked files or the built site. */
   private_terms: z.array(z.string()).default([]),

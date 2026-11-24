@@ -2,6 +2,25 @@
 
 Newest first.
 
+## 2026-11-24 — Phase 2: Source A ingestion (partial — blocked by site firewall)
+
+**Done**
+- `src-a` adapter: discovery from the homepage nav (13 categories, 3,234 unique products, no overlap;
+  category pages verified to add nothing, no pagination). Product parser: name, breadcrumb category,
+  "Product Specifications" rows, "Product Details" rows, description fact table (brand, sample type,
+  pack size, CAT No), main image, PDF links; commercial blocks skipped.
+- Scrubbed, trimmed fixtures for nav + rapid test, ELISA, analyser, consumable, control; 8 adapter tests.
+- Crawl: 141 product pages fetched, then the site's CDN firewall returned "Request blocked" (403) for
+  every further request (from the ~141st request at 1 req/s).
+- Fixes after the block: 401/403 never cached and never retried; after 3 consecutive blocks the host is
+  marked blocked and all further requests fail fast with zero traffic; crawl stops that source.
+  Per-source `minIntervalMs` (sources.yaml / sources.local.yaml). Cached 403s deleted.
+- Report command prints categories, field coverage, fact keys, sample records, parse failures — never
+  URLs or record ids.
+
+**Outcome**: 141 / 3,234 raw records (IVD 82/82, RDT 55/150, 1 each of 4 others). Waiting on a decision
+about how (or whether) to continue crawling Source A.
+
 ## 2026-11-24 — Privacy restructure (before Phase 2)
 
 **Done**

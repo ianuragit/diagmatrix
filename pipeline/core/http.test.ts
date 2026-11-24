@@ -2,7 +2,14 @@ import { describe, expect, it, beforeEach } from 'vitest';
 import { mkdtempSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { HttpClient, RobotsDisallowedError, CacheMissError, buildUserAgent } from './http.ts';
+import {
+  HttpClient,
+  RobotsDisallowedError,
+  CacheMissError,
+  HostBlockedError,
+  HttpError,
+  buildUserAgent,
+} from './http.ts';
 import { createLogger } from './log.ts';
 
 type Route = (req: Request) => Response | Promise<Response>;
@@ -95,6 +102,18 @@ describe('HttpClient', () => {
     expect(s.calls[2]!.at - s.calls[1]!.at).toBeGreaterThanOrEqual(5000);
   });
 
+  it('applies a per-host interval override', async () => {
+    const s = fakeServer({
+      [`${ORIGIN}/robots.txt`]: () => new Response(''),
+      [`${ORIGIN}/1`]: () => new Response('1'),
+      [`${ORIGIN}/2`]: () => new Response('2'),
+    });
+    const c = client(s, { hostIntervals: { 'shop.test': 8000 } });
+    await c.get(`${ORIGIN}/1`);
+    await c.get(`${ORIGIN}/2`);
+    expect(s.calls[2]!.at - s.calls[1]!.at).toBeGreaterThanOrEqual(8000);
+  });
+
   it('retries 5xx with backoff, max 3 retries', async () => {
     const s = fakeServer({
       [`${ORIGIN}/robots.txt`]: () => new Response(''),
@@ -143,6 +162,39 @@ describe('HttpClient', () => {
     const res = await r.get(`${ORIGIN}/p`);
     expect(res.body).toBe('page');
     expect(r.stats.notModified).toBe(1);
+  });
+
+  it('never caches 403s and stops requesting a host after 3 consecutive blocks', async () => {
+    const routes: Record<string, () => Response> = {
+      [`${ORIGIN}/robots.txt`]: () => new Response(''),
+    };
+    for (let i = 1; i <= 10; i++)
+      routes[`${ORIGIN}/p${i}`] = () => new Response('blocked', { status: 403 });
+    const s = fakeServer(routes);
+    const c = client(s);
+    for (let i = 1; i <= 3; i++)
+      await expect(c.get(`${ORIGIN}/p${i}`)).rejects.toBeInstanceOf(HttpError);
+    const sent = s.calls.length;
+    for (let i = 4; i <= 10; i++)
+      await expect(c.get(`${ORIGIN}/p${i}`)).rejects.toBeInstanceOf(HostBlockedError);
+    expect(s.calls.length).toBe(sent); // fail fast, zero extra requests
+    expect(await c.readCache(`${ORIGIN}/p1`)).toBeNull();
+  });
+
+  it('a success between 403s resets the block streak', async () => {
+    const s = fakeServer({
+      [`${ORIGIN}/robots.txt`]: () => new Response(''),
+      [`${ORIGIN}/a`]: () => new Response('x', { status: 403 }),
+      [`${ORIGIN}/b`]: () => new Response('x', { status: 403 }),
+      [`${ORIGIN}/ok`]: () => new Response('ok'),
+      [`${ORIGIN}/c`]: () => new Response('x', { status: 403 }),
+    });
+    const c = client(s);
+    for (const p of ['a', 'b'])
+      await expect(c.get(`${ORIGIN}/${p}`)).rejects.toBeInstanceOf(HttpError);
+    await c.get(`${ORIGIN}/ok`);
+    await expect(c.get(`${ORIGIN}/c`)).rejects.toBeInstanceOf(HttpError);
+    expect(c.blockedHosts.size).toBe(0);
   });
 
   it('builds a generic UA, adding contact only when set and valid', () => {
