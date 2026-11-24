@@ -197,16 +197,108 @@ async function loadRaw(sourceId: string): Promise<RawProduct[]> {
   );
 }
 
+/**
+ * Markdown report on raw records. Safe to publish (e.g. as a PR body): it never
+ * prints source URLs, record ids or image URLs.
+ */
 async function cmdReport() {
   const sources = await loadEnabledSources({ only });
+  const pct = (n: number, d: number) => (d ? `${((100 * n) / d).toFixed(1)}%` : '–');
   for (const src of sources) {
-    const raw = await loadRaw(src.config.id);
-    const byCat = new Map<string, number>();
+    const id = src.config.id;
+    const raw = await loadRaw(id);
+    const navPath = join(RAW_DIR, id, 'nav.json');
+    const nav: { category: string }[] = existsSync(navPath)
+      ? JSON.parse(await readFile(navPath, 'utf8'))
+      : [];
+    const failPath = join(RAW_DIR, id, 'parse-failures.json');
+    const failures: { url: string; error: string }[] = existsSync(failPath)
+      ? JSON.parse(await readFile(failPath, 'utf8'))
+      : [];
+
+    console.log(`\n## Source \`${id}\`\n`);
+    console.log(
+      `- Nav entries: ${nav.length}\n- Parsed records: ${raw.length}\n- Parse failures: ${failures.length}\n`,
+    );
+
+    const navByCat = new Map<string, number>();
+    for (const e of nav) navByCat.set(e.category, (navByCat.get(e.category) ?? 0) + 1);
+    const rawByCat = new Map<string, number>();
     for (const r of raw)
-      byCat.set(r.category ?? '(none)', (byCat.get(r.category ?? '(none)') ?? 0) + 1);
-    console.log(`\n## ${src.config.id}: ${raw.length} raw records`);
-    for (const [cat, n] of [...byCat].sort((a, b) => b[1] - a[1]))
-      console.log(`  ${String(n).padStart(5)}  ${cat}`);
+      rawByCat.set(r.category ?? '(none)', (rawByCat.get(r.category ?? '(none)') ?? 0) + 1);
+    console.log('### Categories\n\n| Category | In nav | Parsed |\n|---|---:|---:|');
+    for (const [cat, n] of [...navByCat].sort((a, b) => b[1] - a[1]))
+      console.log(`| ${cat} | ${n} | ${rawByCat.get(cat) ?? 0} |`);
+    const extra = [...rawByCat.keys()].filter((c) => !navByCat.has(c));
+    if (extra.length) console.log(`\nBreadcrumb categories not in nav: ${extra.join(', ')}`);
+
+    const cov: [string, (r: RawProduct) => boolean][] = [
+      ['brand (stated)', (r) => !!r.brand],
+      ['catalogue_no', (r) => !!r.catalogue_no],
+      ['fact table', (r) => Object.keys(r.facts).length > 0],
+      ['spec rows', (r) => Object.keys(r.specs).length > 0],
+      ['image', (r) => !!r.image],
+      ['documents', (r) => r.documents.length > 0],
+      ['description', (r) => !!r.description_raw],
+    ];
+    console.log('\n### Field coverage\n\n| Field | Records | % |\n|---|---:|---:|');
+    for (const [label, f] of cov) {
+      const n = raw.filter(f).length;
+      console.log(`| ${label} | ${n} | ${pct(n, raw.length)} |`);
+    }
+    const factKeys = new Map<string, number>();
+    for (const r of raw)
+      for (const k of Object.keys(r.facts)) factKeys.set(k, (factKeys.get(k) ?? 0) + 1);
+    console.log(
+      '\nTop fact-table keys: ' +
+        [...factKeys]
+          .sort((a, b) => b[1] - a[1])
+          .slice(0, 15)
+          .map(([k, n]) => `${k} (${n})`)
+          .join(', '),
+    );
+
+    // Deterministic sample spread over categories.
+    const sorted = [...raw].sort((a, b) => a.name.localeCompare(b.name));
+    const cats = [...rawByCat.keys()];
+    const sample: RawProduct[] = [];
+    for (let i = 0; sample.length < Math.min(10, raw.length) && i < raw.length; i++) {
+      const cat = cats[sample.length % cats.length];
+      const pick =
+        sorted.find((r) => r.category === cat && !sample.includes(r)) ??
+        sorted.find((r) => !sample.includes(r));
+      if (pick) sample.push(pick);
+    }
+    console.log('\n### Sample records\n');
+    for (const r of sample) {
+      const { url: _u, source_id: _s, image: _i, description_raw: d, specs, ...rest } = r;
+      console.log(
+        '```json\n' +
+          JSON.stringify(
+            {
+              ...rest,
+              image: r.image ? '(present)' : null,
+              spec_rows: Object.keys(specs).length,
+              specs_preview: Object.fromEntries(Object.entries(specs).slice(0, 4)),
+              description_chars: d?.length ?? 0,
+            },
+            null,
+            2,
+          ) +
+          '\n```',
+      );
+    }
+
+    if (failures.length) {
+      const byErr = new Map<string, number>();
+      for (const f of failures)
+        byErr.set(
+          f.error.replace(/https?:\/\/\S+/g, '<url>'),
+          (byErr.get(f.error.replace(/https?:\/\/\S+/g, '<url>')) ?? 0) + 1,
+        );
+      console.log('\n### Parse failures by reason\n');
+      for (const [e, n] of byErr) console.log(`- ${n} × ${e}`);
+    }
   }
 }
 

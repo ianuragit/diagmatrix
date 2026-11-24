@@ -58,6 +58,15 @@ Things deliberately left unset for now — fill in before launch.
 
 Behind an HTTP proxy, run the crawler with `NODE_USE_ENV_PROXY=1`.
 
+Cached pages are stored Brotli-compressed (`.cache/http/{host}/{sha1(url)}.html.br`)
+next to a `.meta.json` with url, status, fetched_at and etag.
+
+To refresh test fixtures from the cache (scrubbed automatically):
+
+```bash
+pnpm exec tsx scripts/make-fixture.ts src-a nav=<homepage-url> rapid-test=<product-url> ...
+```
+
 ## How to add a new source
 
 1. `cp -r pipeline/sources/_template pipeline/sources/<id>`

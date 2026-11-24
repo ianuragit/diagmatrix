@@ -1,11 +1,18 @@
 # Learnings and Backlog
 
 ## Learnings
+- 2026-11-24 — Source A pages embed the full ~3,200-link nav, so every page is ~1 MB; Brotli q9 caches them at ~150 KB.
+- 2026-11-24 — Source A's robots.txt puts its shared Disallow list under the last named Google bot; strict RFC parsing would leave `*` allow-all. We honour all Disallow lines when no group names us.
+- 2026-11-24 — Source A's spec lists contain platform filler ("Wall Mounted: No", "Noise Level: Silent Operation", "Weight: Lightweight") and sometimes contradict the fact table; the fact table (Brand / Sample Type / Pack Size / CAT No) is more reliable. Brand in the fact table can be wrong too (an ELISA kit named for one maker, labelled with another).
+- 2026-11-24 — Source A product names sometimes lose characters at source ("1000 l" for 1000 µl).
+- 2026-11-24 — A few source pages answer HTTP 500 consistently; they are logged as crawl failures, not retried forever.
 - 2026-11-24 — Node's built-in `fetch` ignores `HTTPS_PROXY` unless `NODE_USE_ENV_PROXY=1` (Node ≥ 22.21).
 - 2026-11-24 — `Response.clone()` tees the body; cancelling only one branch never resolves. Don't clone in fakes.
 - 2026-11-24 — Zod 4: use `z.url()`; `z.string().url()` is deprecated.
 
 ## Backlog
+- 2026-11-24 — Normalise: drop platform filler spec keys; prefer fact-table values; fix "µ" loss (e.g. "1000 l" → "1000 µL").
+- 2026-11-24 — Decide scope: Source A also lists surgical devices, lab equipment and life-science instruments (not IVD).
 - 2026-11-24 — Phase 2: `src-a` selectors + adapter + scrubbed fixtures.
 - 2026-11-24 — Phase 3: `src-b` adapter (base URL to be put in sources.local.yaml).
 - 2026-11-24 — Set `contact_email` (User-Agent) and `whatsapp_number` when available.

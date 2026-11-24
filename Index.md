@@ -20,7 +20,7 @@ Every folder and key file, mirroring the tree. Keep current.
 | `pipeline/core/privacy.ts` | Privacy guard: no source names/hosts in tracked files or `dist/`. |
 | `pipeline/core/*.test.ts` | Unit tests for the core (incl. registry extensibility proof). |
 | `pipeline/sources/_template/` | Copy to add a source (adapter, selectors, README). |
-| `pipeline/sources/src-a/` | Source A adapter, selectors, scrubbed fixtures (Phase 2). |
+| `pipeline/sources/src-a/` | Source A adapter (homepage-nav discovery, product parser), selectors with snippet comments, scrubbed fixtures, tests. |
 | `pipeline/sources/src-b/` | Source B adapter, selectors, scrubbed fixtures (Phase 3). |
 | `pipeline/normalise/` | brand / classify / packsize / dedupe / merge (Phase 4). |
 | `pipeline/config/sources.yaml` | Source registry with neutral ids (id, enabled, priority). |
@@ -39,5 +39,8 @@ Every folder and key file, mirroring the tree. Keep current.
 | `.github/workflows/deploy.yml` | Push to main → test → validate → build → Pages. |
 | `.github/workflows/ci.yml` | Typecheck, test, validate, build on PRs/branches. |
 | `.github/workflows/data-refresh.yml` | Manual re-crawl that opens a data PR. |
-| `.cache/http/` (git-ignored) | HTTP response cache. |
+| `.cache/http/` (git-ignored) | HTTP response cache: `{sha1(url)}.html.br` (Brotli) + `.meta.json`. |
+| `scripts/make-fixture.ts` | Builds scrubbed, trimmed HTML fixtures from the cache (no network). |
+| `scripts/fetch.ts` | Dev helper: fetch URLs through the polite cached client. |
+| `scripts/scratch/` (git-ignored) | Throwaway inspection scripts. |
 | `.githooks/pre-commit` | Runs `pnpm privacy-check`; enable with `git config core.hooksPath .githooks`. |
