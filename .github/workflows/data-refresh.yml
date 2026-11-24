@@ -1,0 +1,63 @@
+name: Data refresh
+
+# Manual trigger only. Re-crawls politely (robots + 1 req/s + cache), rebuilds
+# data/products.json and opens a PR with the diff and the report as its body.
+on:
+  workflow_dispatch:
+    inputs:
+      refresh:
+        description: 'Revalidate cached pages (conditional requests) instead of cache-only'
+        type: boolean
+        default: false
+      sources:
+        description: 'Comma-separated source ids (blank = all enabled)'
+        type: string
+        default: ''
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Restore HTTP cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/http
+          key: http-cache-${{ github.run_id }}
+          restore-keys: http-cache-
+      - name: Crawl
+        env:
+          # Source URLs come from repository secrets, never from the repo.
+          SOURCE_SRC_A_URL: ${{ secrets.SOURCE_SRC_A_URL }}
+          SOURCE_SRC_B_URL: ${{ secrets.SOURCE_SRC_B_URL }}
+          NODE_USE_ENV_PROXY: '1'
+        run: |
+          ARGS=""
+          [ -n "${{ inputs.sources }}" ] && ARGS="$ARGS --source ${{ inputs.sources }}"
+          [ "${{ inputs.refresh }}" = "true" ] && ARGS="$ARGS --refresh"
+          pnpm crawl $ARGS
+      - run: pnpm parse
+        env:
+          SOURCE_SRC_A_URL: ${{ secrets.SOURCE_SRC_A_URL }}
+          SOURCE_SRC_B_URL: ${{ secrets.SOURCE_SRC_B_URL }}
+      - run: pnpm build-data
+      - run: pnpm validate
+      - run: pnpm report > report.md
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: data-refresh/${{ github.run_id }}
+          title: 'Data refresh ${{ github.run_id }}'
+          commit-message: 'data: refresh catalogue'
+          body-path: report.md
+          add-paths: |
+            data/**

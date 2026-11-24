@@ -1,0 +1,7 @@
+# Per-product manual corrections, applied LAST in build-data so hand fixes
+# survive re-crawls. Key = final product id. Any schema field may be set.
+# Example:
+# abbott-determine-hbsag-2:
+#   brand: Abbott
+#   catalogue_no: "7D2343"
+overrides: {}

@@ -1,0 +1,11 @@
+# Copy to sources.local.yaml (git-ignored) and fill in.
+sources:
+  src-a:
+    baseUrl: https://www.example.com
+  src-b:
+    baseUrl: https://www.example.org
+    enabled: true
+# Words that must never appear in tracked files or the built site
+# (e.g. source company names). Source hostnames are added automatically.
+# Checked by `pnpm privacy-check`, which also runs inside `pnpm validate`.
+private_terms: []

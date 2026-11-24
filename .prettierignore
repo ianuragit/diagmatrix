@@ -1,0 +1,7 @@
+pnpm-lock.yaml
+dist
+.astro
+.cache
+data/raw
+data/products.json
+data/duplicates.json

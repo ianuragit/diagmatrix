@@ -1,0 +1,4 @@
+#!/bin/sh
+# Blocks commits that would leak private source terms. Enable once per clone:
+#   git config core.hooksPath .githooks
+exec pnpm -s privacy-check

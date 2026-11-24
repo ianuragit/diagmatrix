@@ -1,0 +1,14 @@
+# The ONLY place sources are registered. Ids are neutral codenames on purpose:
+# the real base URLs live in the git-ignored sources.local.yaml (copy
+# sources.local.example.yaml), or in env SOURCE_<ID>_URL for CI. A source with
+# no resolvable base URL is skipped.
+#
+# priority: lower number wins field-level precedence when records from two
+# sources are merged. Hand-added products (data/manual/*.yaml) always win.
+sources:
+  - id: src-a
+    enabled: true
+    priority: 10
+  - id: src-b
+    enabled: false
+    priority: 20

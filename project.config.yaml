@@ -1,0 +1,16 @@
+# Single source of project-wide settings, read by the pipeline (User-Agent,
+# contact) and by Astro (site/base, CTAs, forms). Values in {{braces}} are
+# placeholders; empty strings mean "not set yet" (see README → Open TODOs).
+#
+# Source URLs are deliberately NOT here: they live in the git-ignored
+# pipeline/config/sources.local.yaml (see sources.local.example.yaml).
+site_name: "diagmatrix"
+github_repo: "ianuragit/diagmatrix"
+site_url: "{{SITE_URL}}"            # https://user.github.io/repo  or  https://custom.domain
+form:
+  service: "{{FORM_SERVICE}}"       # web3forms | formspree
+  key: "{{FORM_KEY}}"               # public access key (Web3Forms) or endpoint (Formspree)
+whatsapp_number: ""                  # country code + number, digits only — TODO
+contact_email: ""                    # TODO — added to the crawler User-Agent once set
+cname: null                          # custom domain for public/CNAME, or null
+allow_ai_crawlers: true              # robots.txt: explicitly allow GPTBot, ClaudeBot, PerplexityBot, Google-Extended

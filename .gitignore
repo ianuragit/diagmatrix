@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.astro/
+.cache/
+coverage/
+playwright-report/
+test-results/
+*.log
+.DS_Store
+.env
+.env.*
+
+# Source provenance stays local: real URLs, raw scraped records, private maps.
+pipeline/config/sources.local.yaml
+data/raw/*/
+data/private/

@@ -1,0 +1,49 @@
+{
+  "name": "diagmatrix",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Static directory of in-vitro diagnostic products, built from a polite scraping pipeline and published with Astro on GitHub Pages.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "packageManager": "pnpm@10.28.0",
+  "scripts": {
+    "crawl": "tsx pipeline/cli.ts crawl",
+    "parse": "tsx pipeline/cli.ts parse",
+    "build-data": "tsx pipeline/cli.ts build-data",
+    "validate": "tsx pipeline/cli.ts validate",
+    "report": "tsx pipeline/cli.ts report",
+    "privacy-check": "tsx pipeline/cli.ts privacy-check",
+    "dev": "astro dev",
+    "build": "astro build && pagefind --site dist",
+    "preview": "astro preview",
+    "typecheck": "tsc --noEmit && astro check",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "astro": "^7.4.13",
+    "yaml": "^2.9.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@types/node": "^26.6.7",
+    "cheerio": "^1.2.0",
+    "pagefind": "^1.6.0",
+    "prettier": "^3.10.1",
+    "prettier-plugin-astro": "^1.1.2",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3",
+    "vitest": "^5.1.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
+  }
+}
