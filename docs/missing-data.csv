@@ -11,9 +11,14 @@ bio-rad-pw-40-microplate-washer,Bio-Rad,PW 40 Microplate Washer,general,,9,categ
 biomerieux-bact-alert-3d,bioMérieux,BACT/ALERT 3D,general,,9,category technology summary specs product_type analyte sample_type catalogue_no pack_size,/products/biomerieux-bact-alert-3d/
 biomerieux-vidas-kube-automated-immunoassay-solution,bioMérieux,VIDAS KUBE Automated Immunoassay Solution,general,,9,category technology summary specs product_type analyte sample_type catalogue_no pack_size,/products/biomerieux-vidas-kube-automated-immunoassay-solution/
 biomerieux-vitek-2-compact,bioMérieux,VITEK 2 COMPACT,general,,9,category technology summary specs product_type analyte sample_type catalogue_no pack_size,/products/biomerieux-vitek-2-compact/
+qiagen-8-rod-covers,Qiagen,8-Rod Covers,general,,9,category technology summary specs product_type analyte sample_type catalogue_no pack_size,/products/qiagen-8-rod-covers/
+qiagen-easicollect-plus-50,Qiagen,EasiCollect Plus (50),general,,9,category technology summary specs product_type analyte sample_type catalogue_no pack_size,/products/qiagen-easicollect-plus-50/
 qiagen-powerlyzer-24-homogenizer-110-220-v,Qiagen,PowerLyzer 24 Homogenizer (110/220 V),general,,9,category technology summary specs product_type analyte sample_type catalogue_no pack_size,/products/qiagen-powerlyzer-24-homogenizer-110-220-v/
 qiagen-qiacube-connect,Qiagen,QIAcube Connect,general,,9,category technology summary specs product_type analyte sample_type catalogue_no pack_size,/products/qiagen-qiacube-connect/
+qiagen-qiacube-ht-plasticware,Qiagen,QIAcube HT Plasticware,general,,9,category technology summary specs product_type analyte sample_type catalogue_no pack_size,/products/qiagen-qiacube-ht-plasticware/
+qiagen-qiacuity-nanoplate-26k-24-well,Qiagen,QIAcuity Nanoplate 26k 24-well,general,,9,category technology summary specs product_type analyte sample_type catalogue_no pack_size,/products/qiagen-qiacuity-nanoplate-26k-24-well/
 qiagen-qiaquant-384-5plex-230-v,Qiagen,QIAquant 384 5plex (230 V),general,,9,category technology summary specs product_type analyte sample_type catalogue_no pack_size,/products/qiagen-qiaquant-384-5plex-230-v/
+qiagen-reuse-seal-set,Qiagen,Reuse Seal Set,general,,9,category technology summary specs product_type analyte sample_type catalogue_no pack_size,/products/qiagen-reuse-seal-set/
 qiagen-tissuelyser-iii,Qiagen,TissueLyser III,general,,9,category technology summary specs product_type analyte sample_type catalogue_no pack_size,/products/qiagen-tissuelyser-iii/
 qiagen-tissuelyser-lt,Qiagen,TissueLyser LT,general,,9,category technology summary specs product_type analyte sample_type catalogue_no pack_size,/products/qiagen-tissuelyser-lt/
 roche-benchmark-ultra-stainer-module,Roche,BenchMark ULTRA Stainer Module,general,,9,category technology summary specs product_type analyte sample_type catalogue_no pack_size,/products/roche-benchmark-ultra-stainer-module/
@@ -21,27 +26,40 @@ roche-cobas-6000-c-501-module,Roche,Cobas 6000 C 501 module,general,,9,category 
 thermo-fisher-applied-biosystems-veriti-pro-96-well-thermal-cycler,Thermo Fisher,Applied Biosystems Veriti Pro 96 Well Thermal Cycler,general,,9,category technology summary specs product_type analyte sample_type catalogue_no pack_size,/products/thermo-fisher-applied-biosystems-veriti-pro-96-well-thermal-cycler/
 thermo-fisher-applied-biosystems-veritipro-thermal-cycler-aaf351,Thermo Fisher,Applied Biosystems VeritiPro Thermal Cycler,general,,9,category technology summary specs product_type analyte sample_type catalogue_no pack_size,/products/thermo-fisher-applied-biosystems-veritipro-thermal-cycler-aaf351/
 thermo-fisher-invitrogen-countess-3-automated-cell-counter,Thermo Fisher,Invitrogen Countess 3 Automated Cell Counter,general,,9,category technology summary specs product_type analyte sample_type catalogue_no pack_size,/products/thermo-fisher-invitrogen-countess-3-automated-cell-counter/
+acon-mi-po-cleaner-for-mission-ha-360,Acon,Mi-Po Cleaner for Mission HA-360,general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/acon-mi-po-cleaner-for-mission-ha-360/
 arkray-trustcheck-bpm-3-0-digital-blood-pressure-monitor,Arkray,Trustcheck BPM 3.0 Digital Blood Pressure Monitor,general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/arkray-trustcheck-bpm-3-0-digital-blood-pressure-monitor/
+bio-rad-7-5-mini-protean-tgx-precast-protein-gels-7-cm-ipg-prep-well-450-ul,Bio-Rad,"7.5% Mini-PROTEAN TGX Precast Protein Gels, 7 cm IPG/prep well, 450 ul",general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/bio-rad-7-5-mini-protean-tgx-precast-protein-gels-7-cm-ipg-prep-well-450-ul/
+bio-rad-iscript-reverse-transcription-supermix-100-x-20-l-rxns-400-l,Bio-Rad,"iScript Reverse Transcription Supermix, 100 x 20 µl rxns, 400 µl",general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/bio-rad-iscript-reverse-transcription-supermix-100-x-20-l-rxns-400-l/
+bio-rad-mini-protean-tgx-precast-protein-gels-10,Bio-Rad,"Mini-PROTEAN TGX Precast Protein Gels, 10%",general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/bio-rad-mini-protean-tgx-precast-protein-gels-10/
+bio-rad-mini-protean-tgx-precast-protein-gels-12,Bio-Rad,"Mini-PROTEAN TGX Precast Protein Gels, 12%",general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/bio-rad-mini-protean-tgx-precast-protein-gels-12/
+bio-rad-mini-proteantgx-precast-protein-gels,Bio-Rad,Mini-PROTEANTGX Precast Protein Gels,general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/bio-rad-mini-proteantgx-precast-protein-gels/
 bio-rad-mini-proteantgx-precast-protein-gels-12,Bio-Rad,"Mini-PROTEANTGX Precast Protein Gels, 12%",general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/bio-rad-mini-proteantgx-precast-protein-gels-12/
 ekf-diagnostics-biosen-s-line-lab-plus,EKF Diagnostics,Biosen S-Line Lab+,general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/ekf-diagnostics-biosen-s-line-lab-plus/
 ekf-diagnostics-easycon-norm-qc-material,EKF Diagnostics,EasyCon Norm (QC material),general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/ekf-diagnostics-easycon-norm-qc-material/
 ekf-diagnostics-hemolyzing-solution-cups-with-20-l-end-to-end-capillaries-plastic-capillaries,EKF Diagnostics,Hemolyzing solution cups with 20 µl end-to-end capillaries (plastic capillaries),general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/ekf-diagnostics-hemolyzing-solution-cups-with-20-l-end-to-end-capillaries-plastic-capillaries/
 leica-biosystem-leica-biosystems-microtomes,Leica BIOSYSTEM,Leica Biosystems Microtomes,general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/leica-biosystem-leica-biosystems-microtomes/
+mindray-m-53p-probe-cleanser,Mindray,M-53P Probe Cleanser,general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/mindray-m-53p-probe-cleanser/
 qiagen-generation-dna-purif-solution-1000-ml,Qiagen,Generation DNA Purif. Solution (1000 ml),general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/qiagen-generation-dna-purif-solution-1000-ml/
 qiagen-magattract-magnetic-rack,Qiagen,MagAttract Magnetic Rack,general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/qiagen-magattract-magnetic-rack/
 qiagen-ni-nta-agarose-500-ml,Qiagen,Ni-NTA Agarose (500 ml),general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/qiagen-ni-nta-agarose-500-ml/
+qiagen-ni-nta-superflow,Qiagen,Ni-NTA Superflow,general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/qiagen-ni-nta-superflow/
 qiagen-powerprotect-dna-rna-1000-ml,Qiagen,PowerProtect DNA/RNA (1000 ml),general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/qiagen-powerprotect-dna-rna-1000-ml/
 qiagen-tagzyme-dapase-enzyme-50-u,Qiagen,TAGZyme DAPase Enzyme (50 U),general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/qiagen-tagzyme-dapase-enzyme-50-u/
+thermo-fisher-applied-biosystems-pop-7-polymer-for-3500-seqstudio-flex,Thermo Fisher,"Applied Biosystems POP-7 Polymer, for 3500/SeqStudio Flex",general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/thermo-fisher-applied-biosystems-pop-7-polymer-for-3500-seqstudio-flex/
 abbott-easy-microplate-washer,Abbott,Easy Microplate Washer,general,,7,category technology summary product_type analyte sample_type pack_size,/products/abbott-easy-microplate-washer/
 arkray-trustcheck-bca,Arkray,TRUSTCHECK BCA,general,,7,category technology summary product_type analyte sample_type pack_size,/products/arkray-trustcheck-bca/
 arkray-trustcheck-bpm-2-0-digital-blood-pressure-monitor,Arkray,Trustcheck BPM 2.0 Digital Blood Pressure Monitor,general,,7,category technology summary product_type analyte sample_type pack_size,/products/arkray-trustcheck-bpm-2-0-digital-blood-pressure-monitor/
+arkray-turbigold-aso,Arkray,TURBIGOLD ASO,general,,7,category technology summary product_type analyte catalogue_no pack_size,/products/arkray-turbigold-aso/
+arkray-turbigold-rf,Arkray,TURBIGOLD RF,general,,7,category technology summary product_type analyte catalogue_no pack_size,/products/arkray-turbigold-rf/
 awareness-technology-chemwell-rpr-5801,Awareness Technology,ChemWell RPR 5801,general,,7,category technology summary product_type analyte sample_type pack_size,/products/awareness-technology-chemwell-rpr-5801/
 awareness-technology-chromate-4300-pc-controlled-microplate-washer,Awareness Technology,Chromate 4300- PC Controlled Microplate Washer,general,,7,category technology summary product_type analyte sample_type pack_size,/products/awareness-technology-chromate-4300-pc-controlled-microplate-washer/
 awareness-technology-lumate-4400-pc-controlled-microplate-luminometer,Awareness Technology,LuMate 4400-PC Controlled Microplate Luminometer,general,,7,category technology summary product_type analyte sample_type pack_size,/products/awareness-technology-lumate-4400-pc-controlled-microplate-luminometer/
 awareness-technology-stat-fax-2200-digital-dry-bath,Awareness Technology,Stat Fax 2200- Digital Dry Bath,general,,7,category technology summary product_type analyte sample_type pack_size,/products/awareness-technology-stat-fax-2200-digital-dry-bath/
 awareness-technology-stat-fax-2600-automatic-microplate-washer,Awareness Technology,Stat Fax 2600- Automatic Microplate Washer,general,,7,category technology summary product_type analyte sample_type pack_size,/products/awareness-technology-stat-fax-2600-automatic-microplate-washer/
+becton-dickinson-1ml-syringe-slip-tip-with-bd-precisionglide-needle,Becton Dickinson,1mL Syringe slip tip with BD Precisionglide Needle,general,,7,category technology summary product_type analyte sample_type pack_size,/products/becton-dickinson-1ml-syringe-slip-tip-with-bd-precisionglide-needle/
 becton-dickinson-bactec-fx-bottom,Becton Dickinson,BACTEC FX bottom,general,,7,category technology summary product_type analyte sample_type pack_size,/products/becton-dickinson-bactec-fx-bottom/
 becton-dickinson-bactec-fx-top,Becton Dickinson,BACTEC FX top,general,,7,category technology summary product_type analyte sample_type pack_size,/products/becton-dickinson-bactec-fx-top/
+becton-dickinson-stretch-tourniquet,Becton Dickinson,Stretch Tourniquet,general,,7,category technology summary product_type analyte sample_type pack_size,/products/becton-dickinson-stretch-tourniquet/
 bio-rad-autoblot-3000-strip-processor,Bio-Rad,Autoblot 3000 Strip Processor,general,reagent,7,category technology specs analyte sample_type catalogue_no pack_size,/products/bio-rad-autoblot-3000-strip-processor/
 bio-rad-c1000-touch-thermal-cycler-with-384-well-reaction-module,Bio-Rad,C1000 Touch Thermal Cycler with 384-Well Reaction Module,general,,7,category technology summary product_type analyte sample_type pack_size,/products/bio-rad-c1000-touch-thermal-cycler-with-384-well-reaction-module/
 bio-rad-c1000-touch-thermal-cycler-with-96-deep-well-reaction-module,Bio-Rad,C1000 Touch Thermal Cycler with 96-Deep Well Reaction Module,general,,7,category technology summary product_type analyte sample_type pack_size,/products/bio-rad-c1000-touch-thermal-cycler-with-96-deep-well-reaction-module/
@@ -75,13 +93,18 @@ leica-biosystem-histocore-multicut,Leica BIOSYSTEM,HistoCore MULTICUT,general,,7
 philips-simplygo-mini-portable-oxygen-concentrator-poc,Philips,SimplyGo Mini Portable oxygen concentrator (POC),general,,7,category technology summary product_type analyte sample_type pack_size,/products/philips-simplygo-mini-portable-oxygen-concentrator-poc/
 philips-simplygo-portable-oxygen-concentrator,Philips,SimplyGo Portable oxygen concentrator,general,,7,category technology summary product_type analyte sample_type pack_size,/products/philips-simplygo-portable-oxygen-concentrator/
 philips-trilogy-ev300-hospital-ventilator,Philips,Trilogy EV300 Hospital ventilator,general,,7,category technology summary product_type analyte sample_type pack_size,/products/philips-trilogy-ev300-hospital-ventilator/
+qiagen-reagent-cartridge-holder,Qiagen,Reagent Cartridge Holder,general,reagent,7,category technology specs analyte sample_type catalogue_no pack_size,/products/qiagen-reagent-cartridge-holder/
 siemens-healthineers-rapidchem-744-754-electrolyte-and-lithium-testing-analyzers,Siemens Healthineers,RAPIDChem 744/754 Electrolyte and Lithium Testing Analyzers,general,,7,category technology summary product_type analyte sample_type pack_size,/products/siemens-healthineers-rapidchem-744-754-electrolyte-and-lithium-testing-analyzers/
+siemens-healthineers-stratus-cs-acute-care-ccrp-testpak,Siemens Healthineers,Stratus CS Acute Care CCRP TestPak,general,,7,category technology summary product_type analyte catalogue_no pack_size,/products/siemens-healthineers-stratus-cs-acute-care-ccrp-testpak/
+siemens-healthineers-stratus-cs-acute-care-pbnp-testpak,Siemens Healthineers,Stratus CS Acute Care pBNP TestPak,general,,7,category technology summary product_type analyte catalogue_no pack_size,/products/siemens-healthineers-stratus-cs-acute-care-pbnp-testpak/
+thermo-fisher-applied-biosystems-microamp-clear-adhesive-film,Thermo Fisher,Applied Biosystems MicroAmp Clear Adhesive Film,general,,7,category technology summary product_type analyte sample_type pack_size,/products/thermo-fisher-applied-biosystems-microamp-clear-adhesive-film/
 thermo-fisher-applied-biosystems-simpliamp-and-miniamp-thermal-cycler,Thermo Fisher,Applied Biosystems SimpliAmp and MiniAmp Thermal Cycler,general,,7,category technology summary product_type analyte sample_type pack_size,/products/thermo-fisher-applied-biosystems-simpliamp-and-miniamp-thermal-cycler/
 thermo-fisher-automated-thermal-cycler-384-well-atc,Thermo Fisher,Automated Thermal Cycler 384-well (ATC),general,,7,category technology summary product_type analyte sample_type pack_size,/products/thermo-fisher-automated-thermal-cycler-384-well-atc/
 thermo-fisher-automated-thermal-cycler-atc-384-well-laptop-1-m-cable,Thermo Fisher,Automated Thermal Cycler (ATC) 384 Well Laptop 1-m Cable,general,,7,category technology summary product_type analyte sample_type pack_size,/products/thermo-fisher-automated-thermal-cycler-atc-384-well-laptop-1-m-cable/
 thermo-fisher-countess-3-automated-cell-counter,Thermo Fisher,Countess 3 Automated Cell Counter,general,,7,category technology summary product_type analyte sample_type pack_size,/products/thermo-fisher-countess-3-automated-cell-counter/
 thermo-fisher-invitrogen-e-gel-ngs-0-8-agarose-gels,Thermo Fisher,Invitrogen E-Gel NGS 0.8% Agarose Gels,general,,7,category technology summary product_type analyte sample_type pack_size,/products/thermo-fisher-invitrogen-e-gel-ngs-0-8-agarose-gels/
 thermo-fisher-invitrogen-sybr-green,Thermo Fisher,Invitrogen SYBR Green,general,,7,category technology summary product_type analyte sample_type pack_size,/products/thermo-fisher-invitrogen-sybr-green/
+thermo-fisher-invitrogen-sybr-safe-dna-gel-stain,Thermo Fisher,Invitrogen SYBR Safe DNA Gel Stain,general,,7,category technology summary product_type analyte sample_type pack_size,/products/thermo-fisher-invitrogen-sybr-safe-dna-gel-stain/
 thermo-fisher-miniamp-plus-thermal-cycler,Thermo Fisher,MiniAmp Plus Thermal Cycler,general,,7,category technology summary product_type analyte sample_type pack_size,/products/thermo-fisher-miniamp-plus-thermal-cycler/
 thermo-fisher-miniamp-thermal-cycler,Thermo Fisher,MiniAmp Thermal Cycler,general,,7,category technology summary product_type analyte sample_type pack_size,/products/thermo-fisher-miniamp-thermal-cycler/
 thermo-fisher-simpliamp-thermal-cycler,Thermo Fisher,SimpliAmp Thermal Cycler,general,,7,category technology summary product_type analyte sample_type pack_size,/products/thermo-fisher-simpliamp-thermal-cycler/
@@ -91,6 +114,8 @@ arkray-orinalyser-u500,Arkray,Orinalyser U500,general,,6,category technology sum
 becton-dickinson-max-ct-gc-tv,Becton Dickinson,MAX CT/GC/TV,general,,6,category technology summary product_type analyte pack_size,/products/becton-dickinson-max-ct-gc-tv/
 becton-dickinson-max-exk-tna-3,Becton Dickinson,MAX ExK TNA-3,general,,6,category technology summary product_type analyte pack_size,/products/becton-dickinson-max-exk-tna-3/
 becton-dickinson-max-exk-tna-3-luo,Becton Dickinson,MAX ExK TNA-3 LUO,general,,6,category technology summary product_type analyte pack_size,/products/becton-dickinson-max-exk-tna-3-luo/
+becton-dickinson-posiflush-heparin-lock-flush-syringe-10ml,Becton Dickinson,"PosiFlush Heparin Lock Flush Syringe , 10mL",general,,6,category technology summary product_type analyte sample_type,/products/becton-dickinson-posiflush-heparin-lock-flush-syringe-10ml/
+becton-dickinson-posiflush-heparin-lock-flush-syringe-5ml,Becton Dickinson,"PosiFlush Heparin Lock Flush Syringe , 5mL",general,,6,category technology summary product_type analyte sample_type,/products/becton-dickinson-posiflush-heparin-lock-flush-syringe-5ml/
 bio-rad-electrophoresis-reagents,Bio-Rad,Electrophoresis Reagents,general,reagent,6,category technology analyte sample_type catalogue_no pack_size,/products/bio-rad-electrophoresis-reagents/
 cepheid-genexpert-edge,Cepheid,GeneXpert Edge,molecular,,6,specs product_type analyte sample_type catalogue_no pack_size,/products/cepheid-genexpert-edge/
 horiba-abx-difftrol,Horiba,ABX Difftrol,hematology,,6,specs product_type analyte sample_type catalogue_no pack_size,/products/horiba-abx-difftrol/
@@ -143,29 +168,39 @@ qiagen-repli-g-cell-wga-and-wta-kit-48,Qiagen,REPLI-g Cell WGA & WTA Kit (48),ge
 qiagen-repli-g-screening-kit-200,Qiagen,REPLI-g Screening Kit (200),general,reagent,6,category technology analyte sample_type catalogue_no pack_size,/products/qiagen-repli-g-screening-kit-200/
 qiagen-repli-g-single-cell-kit-96,Qiagen,REPLI-g Single Cell Kit (96),general,reagent,6,category technology analyte sample_type catalogue_no pack_size,/products/qiagen-repli-g-single-cell-kit-96/
 qiagen-repli-g-wta-single-cell-kit-96,Qiagen,REPLI-g WTA Single Cell Kit (96),general,reagent,6,category technology analyte sample_type catalogue_no pack_size,/products/qiagen-repli-g-wta-single-cell-kit-96/
+qiagen-rneasy-96-kit-12,Qiagen,RNeasy 96 Kit (12),general,reagent,6,category technology analyte sample_type catalogue_no pack_size,/products/qiagen-rneasy-96-kit-12/
 qiagen-rneasy-96-qiacube-ht-kit-5,Qiagen,RNeasy 96 QIAcube HT Kit (5),general,reagent,6,category technology analyte sample_type catalogue_no pack_size,/products/qiagen-rneasy-96-qiacube-ht-kit-5/
 qiagen-rneasy-96-universal-tissue-kit-4,Qiagen,RNeasy 96 Universal Tissue Kit (4),general,reagent,6,category technology analyte sample_type catalogue_no pack_size,/products/qiagen-rneasy-96-universal-tissue-kit-4/
 qiagen-rneasy-mini-qiacube-kit-240,Qiagen,RNeasy Mini QIAcube Kit (240),general,reagent,6,category technology analyte sample_type catalogue_no pack_size,/products/qiagen-rneasy-mini-qiacube-kit-240/
 qiagen-rneasy-protect-mini-kit-250,Qiagen,RNeasy Protect Mini Kit (250),general,reagent,6,category technology analyte sample_type catalogue_no pack_size,/products/qiagen-rneasy-protect-mini-kit-250/
 qiagen-rneasy-ucp-micro-kit,Qiagen,RNeasy UCP Micro Kit,general,reagent,6,category technology analyte sample_type catalogue_no pack_size,/products/qiagen-rneasy-ucp-micro-kit/
 qiagen-rotor-gene-q-pcr-machine,Qiagen,Rotor GENE Q PCR Machine,molecular,,6,specs product_type analyte sample_type catalogue_no pack_size,/products/qiagen-rotor-gene-q-pcr-machine/
+roche-cobas-elecsys-anti-hbc-igm,Roche,Cobas Elecsys Anti-HBc IgM,general,,6,category technology product_type sample_type catalogue_no pack_size,/products/roche-cobas-elecsys-anti-hbc-igm/
+siemens-healthineers-rapidchem-744-daily-cleaner-kit,Siemens Healthineers,RAPIDChem 744 Daily Cleaner Kit,general,reagent,6,category technology analyte sample_type catalogue_no pack_size,/products/siemens-healthineers-rapidchem-744-daily-cleaner-kit/
 sysmex-xn-350-xn-550-xn-l-series-hematology,Sysmex,XN-350/ XN-550 XN-L Series Hematology,hematology,,6,specs product_type analyte sample_type catalogue_no pack_size,/products/sysmex-xn-350-xn-550-xn-l-series-hematology/
 thermo-fisher-8m-guanidine-hcl-solution,Thermo Fisher,8M Guanidine-HCl Solution,general,,6,category technology summary product_type analyte sample_type,/products/thermo-fisher-8m-guanidine-hcl-solution/
+thermo-fisher-applied-biosystems-magmax-core-nucleic-acid-purification-kit,Thermo Fisher,Applied Biosystems MagMAX CORE Nucleic Acid Purification Kit,general,reagent,6,category technology analyte sample_type catalogue_no pack_size,/products/thermo-fisher-applied-biosystems-magmax-core-nucleic-acid-purification-kit/
+thermo-fisher-applied-biosystems-magmax-pathogen-rna-dna-kit,Thermo Fisher,Applied Biosystems MagMAX Pathogen RNA/DNA Kit,general,reagent,6,category technology analyte sample_type catalogue_no pack_size,/products/thermo-fisher-applied-biosystems-magmax-pathogen-rna-dna-kit/
 thermo-fisher-applied-biosystems-magmax-viral,Thermo Fisher,Applied Biosystems MagMAX Viral,general,,6,category technology summary product_type analyte sample_type,/products/thermo-fisher-applied-biosystems-magmax-viral/
-thermo-fisher-applied-biosystems-taqpath-1-step-multiplex-master-mix-no-rox,Thermo Fisher,Applied Biosystems TaqPath 1-Step Multiplex Master Mix (No ROX),general,,6,category technology summary product_type analyte sample_type,/products/thermo-fisher-applied-biosystems-taqpath-1-step-multiplex-master-mix-no-rox/
 thermo-fisher-invitrogen-edta-0-5-m-ph-8-0-rnase-free,Thermo Fisher,"Invitrogen EDTA (0.5 M), pH 8.0, RNase-free",general,,6,category technology summary product_type analyte sample_type,/products/thermo-fisher-invitrogen-edta-0-5-m-ph-8-0-rnase-free/
+thermo-fisher-invitrogen-neon-nxt-electroporation-system-100-microliter-kit-with-1-channel-tubes,Thermo Fisher,Invitrogen Neon NxT Electroporation System 100-microliter Kit with 1-Channel Tubes,general,reagent,6,category technology analyte sample_type catalogue_no pack_size,/products/thermo-fisher-invitrogen-neon-nxt-electroporation-system-100-microliter-kit-with-1-channel-tubes/
 thermo-fisher-invitrogen-purelink-dnase-set,Thermo Fisher,Invitrogen PureLink DNase Set,general,,6,category technology summary product_type analyte sample_type,/products/thermo-fisher-invitrogen-purelink-dnase-set/
 thermo-fisher-invitrogen-rnasezap-rnase-decontamination-solution,Thermo Fisher,Invitrogen RNaseZap RNase Decontamination Solution,general,,6,category technology summary product_type analyte sample_type,/products/thermo-fisher-invitrogen-rnasezap-rnase-decontamination-solution/
 thermo-fisher-qubit-dsdna-quantification-assay-kits,Thermo Fisher,Qubit dsDNA Quantification Assay Kits,general,reagent,6,category technology analyte sample_type catalogue_no pack_size,/products/thermo-fisher-qubit-dsdna-quantification-assay-kits/
 thermo-fisher-slide-a-lyzer-mini-dialysis-devices-10k-mwco,Thermo Fisher,"Slide-A-Lyzer MINI Dialysis Devices, 10K MWCO",general,,6,category technology summary product_type analyte sample_type,/products/thermo-fisher-slide-a-lyzer-mini-dialysis-devices-10k-mwco/
 abbott-i-stat-test-cartridges,Abbott,I Stat Test Cartridges,general,reagent,5,category technology analyte catalogue_no pack_size,/products/abbott-i-stat-test-cartridges/
+acon-cyto-lyser-for-mission-ha-360,Acon,Cyto-Lyser for Mission HA-360,hematology,,5,product_type analyte sample_type catalogue_no pack_size,/products/acon-cyto-lyser-for-mission-ha-360/
 arkray-turbigold-crp,Arkray,TURBIGOLD CRP,general,,5,category technology product_type catalogue_no pack_size,/products/arkray-turbigold-crp/
 awareness-technology-stat-fax-4700-micro-strip-reader,Awareness Technology,Stat Fax 4700 - Micro strip Reader,general,reagent,5,category technology analyte sample_type pack_size,/products/awareness-technology-stat-fax-4700-micro-strip-reader/
 becton-dickinson-bactec-mgit-320,Becton Dickinson,BACTEC MGIT 320,general,,5,category technology product_type sample_type pack_size,/products/becton-dickinson-bactec-mgit-320/
 becton-dickinson-bactec-mgit-960,Becton Dickinson,BACTEC MGIT 960,general,,5,category technology product_type sample_type pack_size,/products/becton-dickinson-bactec-mgit-960/
+becton-dickinson-max-str-sample-treatment-reagent,Becton Dickinson,MAX STR (Sample Treatment Reagent),general,reagent,5,category technology analyte sample_type pack_size,/products/becton-dickinson-max-str-sample-treatment-reagent/
+becton-dickinson-max-uve-specimen-collection-kit,Becton Dickinson,MAX UVE Specimen Collection Kit,general,reagent,5,category technology analyte sample_type pack_size,/products/becton-dickinson-max-uve-specimen-collection-kit/
+becton-dickinson-ultra-fine-needle-insulin-syringe-1-ml,Becton Dickinson,Ultra-Fine needle Insulin syringe (1 ml),general,,5,category technology product_type sample_type pack_size,/products/becton-dickinson-ultra-fine-needle-insulin-syringe-1-ml/
 bio-rad-bio-plex-200-system,Bio-Rad,Bio-Plex 200 System,general,instrument,5,category technology specs analyte catalogue_no,/products/bio-rad-bio-plex-200-system/
 bio-rad-bioplex-2200-system,Bio-Rad,BioPlex 2200 System,general,instrument,5,category technology specs analyte catalogue_no,/products/bio-rad-bioplex-2200-system/
 bio-rad-cfx-96well-touch-rtpcr-system,Bio-Rad,CFX 96well Touch RTPCR System,general,instrument,5,category technology specs analyte catalogue_no,/products/bio-rad-cfx-96well-touch-rtpcr-system/
+bio-rad-dd-pcr-consumables,Bio-Rad,DD PCR Consumables,molecular,,5,product_type analyte sample_type catalogue_no pack_size,/products/bio-rad-dd-pcr-consumables/
 bio-rad-evolis-twin-plus-system,Bio-Rad,EVOLIS Twin Plus System,general,instrument,5,category technology specs analyte catalogue_no,/products/bio-rad-evolis-twin-plus-system/
 bio-rad-ih-500-system,Bio-Rad,IH-500 System,general,instrument,5,category technology specs analyte catalogue_no,/products/bio-rad-ih-500-system/
 bio-rad-iq-check-prep-system,Bio-Rad,iQ-Check Prep System,general,instrument,5,category technology specs analyte catalogue_no,/products/bio-rad-iq-check-prep-system/
@@ -181,6 +216,10 @@ edan-bg3-i15-test-cartridge,EDAN,BG3 i15 Test Cartridge,general,reagent,5,catego
 edan-bg4-i15-test-cartridge,EDAN,BG4 i15 Test Cartridge,general,reagent,5,category technology analyte sample_type catalogue_no,/products/edan-bg4-i15-test-cartridge/
 eppendorf-mastercycler-x50-pcr-thermocycler,,Eppendorf Mastercycler X50 - PCR Thermocycler,molecular,,5,brand product_type analyte sample_type pack_size,/products/eppendorf-mastercycler-x50-pcr-thermocycler/
 erba-mannheim-dekaphan-laura,Erba Mannheim,DekaPHAN LAURA,urinalysis,,5,product_type analyte sample_type catalogue_no pack_size,/products/erba-mannheim-dekaphan-laura/
+erba-mannheim-elite-h-clean,Erba Mannheim,Elite H Clean,hematology,,5,product_type analyte sample_type catalogue_no pack_size,/products/erba-mannheim-elite-h-clean/
+erba-mannheim-h360-dil,Erba Mannheim,H360 Dil,hematology,,5,product_type analyte sample_type catalogue_no pack_size,/products/erba-mannheim-h360-dil/
+erba-mannheim-h360-lyse,Erba Mannheim,H360 Lyse,hematology,,5,product_type analyte sample_type catalogue_no pack_size,/products/erba-mannheim-h360-lyse/
+erba-mannheim-h560-dil,Erba Mannheim,H560 Dil,hematology,,5,product_type analyte sample_type catalogue_no pack_size,/products/erba-mannheim-h560-dil/
 erba-mannheim-protime-ls,Erba Mannheim,Protime LS,general,,5,category technology summary product_type analyte,/products/erba-mannheim-protime-ls/
 hemocue-martel-printer-kit-universal,HemoCue,Martel Printer Kit Universal,general,reagent,5,category technology analyte sample_type pack_size,/products/hemocue-martel-printer-kit-universal/
 hepa-card,,Hepa card,rapid-tests,reagent,5,brand analyte sample_type catalogue_no pack_size,/products/hepa-card/
@@ -192,6 +231,7 @@ medtronic-hms-plus-cartridges-heparin-dose-response-hdr-6-channel,Medtronic,HMS 
 mindray-calcium-reagent-kits,Mindray,Calcium Reagent Kits,general,reagent,5,category technology sample_type catalogue_no pack_size,/products/mindray-calcium-reagent-kits/
 qiagen-dntp-set-pcr-grade,Qiagen,"dNTP Set, PCR Grade",molecular,,5,product_type analyte sample_type catalogue_no pack_size,/products/qiagen-dntp-set-pcr-grade/
 qiagen-dpcr-microbial-dna-detection-assays,Qiagen,dPCR Microbial DNA Detection Assays,molecular,,5,product_type analyte sample_type catalogue_no pack_size,/products/qiagen-dpcr-microbial-dna-detection-assays/
+qiagen-elution-microtubes-cl,Qiagen,Elution Microtubes CL,general,consumable,5,category technology specs catalogue_no pack_size,/products/qiagen-elution-microtubes-cl/
 qiagen-ez2-connect-fx-system,Qiagen,EZ2 Connect Fx System,general,instrument,5,category technology specs analyte catalogue_no,/products/qiagen-ez2-connect-fx-system/
 qiagen-filter-tips-1000-l,Qiagen,"Filter-Tips, 1000 µl",general,consumable,5,category technology specs catalogue_no pack_size,/products/qiagen-filter-tips-1000-l/
 qiagen-flexigene-dna-kit-250,Qiagen,FlexiGene DNA Kit (250),general,reagent,5,category technology analyte catalogue_no pack_size,/products/qiagen-flexigene-dna-kit-250/
@@ -206,6 +246,7 @@ qiagen-qiacuity-eight-platform-system,Qiagen,QIAcuity Eight Platform System,gene
 qiagen-qiacuity-four-platform-system,Qiagen,QIAcuity Four Platform System,general,instrument,5,category technology specs analyte catalogue_no,/products/qiagen-qiacuity-four-platform-system/
 qiagen-qiacuity-one-5plex-system,Qiagen,"QIAcuity One, 5plex System",general,instrument,5,category technology specs analyte catalogue_no,/products/qiagen-qiacuity-one-5plex-system/
 qiagen-qiagility-hepa-uv-w-o-pc-system,Qiagen,QIAgility HEPA/UV (w/o PC) System,general,instrument,5,category technology specs analyte catalogue_no,/products/qiagen-qiagility-hepa-uv-w-o-pc-system/
+qiagen-qiaprep-96-plates-24,Qiagen,QIAprep 96 Plates (24),general,consumable,5,category technology specs catalogue_no pack_size,/products/qiagen-qiaprep-96-plates-24/
 qiagen-qiasymphony-rgq-system,Qiagen,"QIAsymphony RGQ, System",general,instrument,5,category technology specs analyte catalogue_no,/products/qiagen-qiasymphony-rgq-system/
 qiagen-repli-g-midi-kit-100,Qiagen,REPLI g Midi Kit (100),general,reagent,5,category technology analyte catalogue_no pack_size,/products/qiagen-repli-g-midi-kit-100/
 qiagen-rotor-gene-q-2plex-hrm-platform,Qiagen,Rotor-Gene Q 2plex HRM Platform,general,instrument,5,category technology specs analyte catalogue_no,/products/qiagen-rotor-gene-q-2plex-hrm-platform/
@@ -213,16 +254,22 @@ qiagen-rt-sybr-green-fluor-qpcr-mastermix-24,Qiagen,RT SYBR Green Fluor qPCR Mas
 qiagen-rt-sybr-green-rox-qpcr-mastermix-24,Qiagen,RT SYBR Green ROX qPCR Mastermix (24),molecular,,5,product_type analyte sample_type catalogue_no pack_size,/products/qiagen-rt-sybr-green-rox-qpcr-mastermix-24/
 qiagen-rt2-profiler-pcr-array,Qiagen,RT2 Profiler PCR Array,molecular,,5,product_type analyte sample_type catalogue_no pack_size,/products/qiagen-rt2-profiler-pcr-array/
 qiagen-taq-dna-polymerase-25000,Qiagen,Taq DNA Polymerase (25000),molecular,,5,product_type analyte sample_type catalogue_no pack_size,/products/qiagen-taq-dna-polymerase-25000/
+qiagen-turbofilter-96-plates-96,Qiagen,TurboFilter 96 Plates (96),general,consumable,5,category technology specs catalogue_no pack_size,/products/qiagen-turbofilter-96-plates-96/
 roche-cobas-4000-c311-stand-alone-system,Roche,Cobas 4000 C311 Stand Alone System,general,instrument,5,category technology specs analyte catalogue_no,/products/roche-cobas-4000-c311-stand-alone-system/
 roche-cobas-6000-e601-module-system,Roche,Cobas 6000 e601 Module System,general,instrument,5,category technology specs analyte catalogue_no,/products/roche-cobas-6000-e601-module-system/
 roche-cobas-u-701-microscopy-analyzer,Roche,Cobas u 701 Microscopy Analyzer,general,instrument,5,category technology specs analyte catalogue_no,/products/roche-cobas-u-701-microscopy-analyzer/
 sd-biosensor-g6pd-control,SD Biosensor,G6PD CONTROL,general,reagent,5,category technology sample_type catalogue_no pack_size,/products/sd-biosensor-g6pd-control/
 siemens-healthineers-stratus-cs-acute-care-ckmb-testpak,Siemens Healthineers,Stratus CS Acute Care CKMB TestPak,general,,5,category technology summary product_type analyte,/products/siemens-healthineers-stratus-cs-acute-care-ckmb-testpak/
+siemens-healthineers-stratus-cs-acute-care-d-dimer-testpak,Siemens Healthineers,Stratus CS Acute Care D-Dimer TestPak,general,,5,category technology product_type catalogue_no pack_size,/products/siemens-healthineers-stratus-cs-acute-care-d-dimer-testpak/
 siemens-healthineers-stratus-cs-acute-care-diagnostic-system,Siemens Healthineers,Stratus CS Acute Care Diagnostic System,general,instrument,5,category technology specs analyte catalogue_no,/products/siemens-healthineers-stratus-cs-acute-care-diagnostic-system/
+siemens-healthineers-stratus-cs-acute-care-myoglobin-testpak,Siemens Healthineers,Stratus CS Acute Care Myoglobin TestPak,general,,5,category technology product_type catalogue_no pack_size,/products/siemens-healthineers-stratus-cs-acute-care-myoglobin-testpak/
 siemens-healthineers-stratus-cs-acute-care-troponin-i-testpak,Siemens Healthineers,Stratus CS Acute Care Troponin I TestPak,general,,5,category technology product_type catalogue_no pack_size,/products/siemens-healthineers-stratus-cs-acute-care-troponin-i-testpak/
+thermo-fisher-applied-biosystems-magmax-dx-prefilled-viral-pathogen-nucleic-acid-isolation-kit,Thermo Fisher,Applied Biosystems MagMAX Dx Prefilled Viral/Pathogen Nucleic Acid Isolation Kit,general,reagent,5,category technology analyte sample_type catalogue_no,/products/thermo-fisher-applied-biosystems-magmax-dx-prefilled-viral-pathogen-nucleic-acid-isolation-kit/
+thermo-fisher-applied-biosystems-magmax-mirvana-total-rna-isolation-kit,Thermo Fisher,Applied Biosystems MagMAX mirVana Total RNA Isolation Kit,general,reagent,5,category technology analyte sample_type catalogue_no,/products/thermo-fisher-applied-biosystems-magmax-mirvana-total-rna-isolation-kit/
 thermo-fisher-applied-biosystems-magmax-viral-pathogen-ii-mvp-ii-nucleic-acid-isolation-kit,Thermo Fisher,Applied Biosystems MagMAX Viral/Pathogen II (MVP II) Nucleic Acid Isolation Kit,general,reagent,5,category technology analyte sample_type pack_size,/products/thermo-fisher-applied-biosystems-magmax-viral-pathogen-ii-mvp-ii-nucleic-acid-isolation-kit/
 thermo-fisher-applied-biosystems-microamp-optical-96-well-reaction-plate,Thermo Fisher,Applied Biosystems MicroAmp Optical 96-Well Reaction Plate,general,consumable,5,category technology specs catalogue_no pack_size,/products/thermo-fisher-applied-biosystems-microamp-optical-96-well-reaction-plate/
 thermo-fisher-invitrogen-glycoblue-coprecipitant-15-mg-ml,Thermo Fisher,Invitrogen GlycoBlue Coprecipitant (15 mg/mL),general,,5,category technology product_type sample_type pack_size,/products/thermo-fisher-invitrogen-glycoblue-coprecipitant-15-mg-ml/
+thermo-fisher-invitrogen-quant-it-dsdna-assay-kits-high-sensitivity-hs-and-broad-range-br,Thermo Fisher,"Invitrogen Quant-iT dsDNA Assay Kits, high sensitivity (HS) and broad range (BR)",general,reagent,5,category technology analyte sample_type pack_size,/products/thermo-fisher-invitrogen-quant-it-dsdna-assay-kits-high-sensitivity-hs-and-broad-range-br/
 thermo-fisher-invitrogen-quant-it-rna-assay-kits-and-quant-it-rna-hs-reagent,Thermo Fisher,Invitrogen Quant-iT RNA Assay Kits and Quant-iT RNA HS Reagent,general,reagent,5,category technology analyte sample_type pack_size,/products/thermo-fisher-invitrogen-quant-it-rna-assay-kits-and-quant-it-rna-hs-reagent/
 thermo-fisher-kingfisher-duo-prime-purification-system,Thermo Fisher,KingFisher Duo Prime Purification System,general,instrument,5,category technology specs analyte catalogue_no,/products/thermo-fisher-kingfisher-duo-prime-purification-system/
 thermo-fisher-qubit-1x-dsdna-high-sensitivity-hs-and-broad-range-br-assay-kits,Thermo Fisher,Qubit 1X dsDNA High Sensitivity (HS) and Broad Range (BR) Assay Kits,general,reagent,5,category technology analyte sample_type pack_size,/products/thermo-fisher-qubit-1x-dsdna-high-sensitivity-hs-and-broad-range-br-assay-kits/
@@ -240,6 +287,9 @@ applied-biosystem-proflex-3-x-32-well-pcr-system,,Applied Biosystem ProFlex 3 x 
 arkray-lactate-pro-2-test-strips,Arkray,Lactate Pro 2 Test Strips,general,reagent,4,category technology catalogue_no pack_size,/products/arkray-lactate-pro-2-test-strips/
 arkray-pocketchem-hemog,Arkray,Pocketchem HemoG,hematology,,4,product_type sample_type catalogue_no pack_size,/products/arkray-pocketchem-hemog/
 arkray-thrombospan-ls-aptt-ea,Arkray,Thrombospan LS aPTT-EA,coagulation,,4,product_type sample_type catalogue_no pack_size,/products/arkray-thrombospan-ls-aptt-ea/
+becton-dickinson-bactec-platelet-aerobic-f-culture-vials-plastic,Becton Dickinson,BACTEC Platelet Aerobic/F Culture Vials (plastic),microbiology,,4,product_type analyte sample_type pack_size,/products/becton-dickinson-bactec-platelet-aerobic-f-culture-vials-plastic/
+becton-dickinson-bactec-platelet-anaerobic-f-culture-vials-plastic,Becton Dickinson,BACTEC Platelet Anaerobic/F culture vials (plastic),microbiology,,4,product_type analyte sample_type pack_size,/products/becton-dickinson-bactec-platelet-anaerobic-f-culture-vials-plastic/
+becton-dickinson-max-enteric-viral-panel,Becton Dickinson,MAX Enteric Viral Panel,general,reagent,4,category technology analyte pack_size,/products/becton-dickinson-max-enteric-viral-panel/
 becton-dickinson-max-mrsa-xt,Becton Dickinson,MAX MRSA XT,general,,4,category technology product_type pack_size,/products/becton-dickinson-max-mrsa-xt/
 becton-dickinson-max-staphsr,Becton Dickinson,MAX StaphSR,general,,4,category technology product_type pack_size,/products/becton-dickinson-max-staphsr/
 bioantibody-ast-alt,Bioantibody,AST/ALT,clinical-chemistry,reagent,4,specs sample_type catalogue_no pack_size,/products/bioantibody-ast-alt/
@@ -266,6 +316,9 @@ bonraybio-sperm-test-cassette-cs1,Bonraybio,Sperm test cassette CS1,general,reag
 cellavision-hemaprep,CellaVision,HemaPrep,hematology,,4,product_type analyte sample_type pack_size,/products/cellavision-hemaprep/
 cepheid-genexpert-infinity-48s,Cepheid,GeneXpert Infinity-48s,molecular,,4,product_type analyte sample_type pack_size,/products/cepheid-genexpert-infinity-48s/
 cepheid-genexpertn-xvi-16-module-instrument,Cepheid,GeneXpertn XVI 16 Module Instrument,general,instrument,4,category technology analyte catalogue_no,/products/cepheid-genexpertn-xvi-16-module-instrument/
+cepheid-xpert-fii-and-fv,Cepheid,Xpert FII & FV,molecular,,4,product_type analyte sample_type pack_size,/products/cepheid-xpert-fii-and-fv/
+cepheid-xpert-mtb-rif-ultra,Cepheid,Xpert MTB/RIF Ultra,molecular,,4,product_type sample_type catalogue_no pack_size,/products/cepheid-xpert-mtb-rif-ultra/
+cepheid-xpert-mtb-xdr,Cepheid,Xpert MTB/XDR,molecular,,4,product_type sample_type catalogue_no pack_size,/products/cepheid-xpert-mtb-xdr/
 dr-fooke-total-ige-basic-set,Dr. Fooke,Total IgE basic set,general,reagent,4,category technology catalogue_no pack_size,/products/dr-fooke-total-ige-basic-set/
 ekf-diagnostics-biosen-chip-sensor-glucose-type-ii-grouped,EKF Diagnostics,Biosen Chip sensor glucose (type II) - Grouped,diabetes,,4,product_type sample_type catalogue_no pack_size,/products/ekf-diagnostics-biosen-chip-sensor-glucose-type-ii-grouped/
 ekf-diagnostics-biosen-easycon-norm,EKF Diagnostics,Biosen EasyCon Norm,diabetes,,4,product_type sample_type catalogue_no pack_size,/products/ekf-diagnostics-biosen-easycon-norm/
@@ -275,6 +328,9 @@ eppendorf-mastercycler-nexus-gx2-pcr-thermal-cycler,Eppendorf,Mastercycler nexus
 eppendorf-mastercycler-nexus-pcr-thermal-cycler,Eppendorf,Mastercycler nexus - PCR Thermal Cycler,molecular,,4,product_type analyte sample_type pack_size,/products/eppendorf-mastercycler-nexus-pcr-thermal-cycler/
 eppendorf-mastercycler-nexus-x2-pcr-thermal-cycler,Eppendorf,Mastercycler nexus X2 - PCR Thermal Cycler,molecular,,4,product_type analyte sample_type pack_size,/products/eppendorf-mastercycler-nexus-x2-pcr-thermal-cycler/
 eppendorf-mastercycler-x40-pcr-thermocycler,Eppendorf,Mastercycler X40 - PCR Thermocycler,molecular,,4,product_type analyte sample_type pack_size,/products/eppendorf-mastercycler-x40-pcr-thermocycler/
+erba-mannheim-auto-wash-kit,Erba Mannheim,Auto Wash Kit,general,reagent,4,category technology analyte sample_type,/products/erba-mannheim-auto-wash-kit/
+erba-mannheim-h560-lyse-1,Erba Mannheim,H560 Lyse 1,hematology,,4,product_type sample_type catalogue_no pack_size,/products/erba-mannheim-h560-lyse-1/
+erba-mannheim-wash-kit,Erba Mannheim,Wash Kit,general,reagent,4,category technology analyte sample_type,/products/erba-mannheim-wash-kit/
 fujifilm-dri-chem-nx700,Fujifilm,DRI-CHEM NX700,clinical-chemistry,,4,product_type analyte sample_type pack_size,/products/fujifilm-dri-chem-nx700/
 hemocue-albumin-201-control-set,HemoCue,Albumin 201 Control Set,general,reagent,4,category technology sample_type pack_size,/products/hemocue-albumin-201-control-set/
 hemocue-cleaner,HemoCue,Cleaner,hematology,,4,product_type analyte sample_type pack_size,/products/hemocue-cleaner/
@@ -291,6 +347,7 @@ horiba-ral-stainer,Horiba,RAL STAINER,hematology,,4,product_type analyte sample_
 horiba-yumizen-e60-tri-level-control,Horiba,Yumizen E60 Tri-Level Control,general,reagent,4,category technology analyte sample_type,/products/horiba-yumizen-e60-tri-level-control/
 horiba-yumizen-g-auxiliary-reagents,Horiba,Yumizen G Auxiliary Reagents,coagulation,reagent,4,analyte sample_type catalogue_no pack_size,/products/horiba-yumizen-g-auxiliary-reagents/
 horiba-yumizen-g-controls-and-calibrators,Horiba,Yumizen G Controls & Calibrators,coagulation,reagent,4,analyte sample_type catalogue_no pack_size,/products/horiba-yumizen-g-controls-and-calibrators/
+horiba-yumizen-g-extrinsic-plasmas,Horiba,Yumizen G Extrinsic plasmas,coagulation,,4,product_type analyte catalogue_no pack_size,/products/horiba-yumizen-g-extrinsic-plasmas/
 horiba-yumizen-g800,Horiba,Yumizen G800,coagulation,,4,product_type analyte catalogue_no pack_size,/products/horiba-yumizen-g800/
 horiba-yumizen-h1500,Horiba,Yumizen H1500,hematology,,4,product_type analyte sample_type pack_size,/products/horiba-yumizen-h1500/
 j-mitra-elisa-reader,J. Mitra,ELISA Reader,immunoassays,reagent,4,analyte sample_type catalogue_no pack_size,/products/j-mitra-elisa-reader/
@@ -306,8 +363,12 @@ mindray-estradiol-clia,Mindray,Estradiol (CLIA),immunoassays,reagent,4,specs sam
 mindray-ggt-reagent-kits,Mindray,GGT Reagent Kits,general,reagent,4,category technology catalogue_no pack_size,/products/mindray-ggt-reagent-kits/
 mindray-m-30-cfl-lyse-hematology-reagent,Mindray,M-30 CFL LYSE Hematology Reagent,hematology,reagent,4,analyte sample_type catalogue_no pack_size,/products/mindray-m-30-cfl-lyse-hematology-reagent/
 mindray-m-52-diff-lyse-hematology-reagent,Mindray,M-52 DIFF Lyse Hematology Reagent,hematology,reagent,4,analyte sample_type catalogue_no pack_size,/products/mindray-m-52-diff-lyse-hematology-reagent/
+mindray-m-53d-diluent-hematology-reagent,Mindray,M-53D Diluent Hematology Reagent,hematology,reagent,4,analyte sample_type catalogue_no pack_size,/products/mindray-m-53d-diluent-hematology-reagent/
+mindray-m-6-ld-lyse-hematology-reagent,Mindray,M-6 LD Lyse Hematology Reagent,hematology,reagent,4,analyte sample_type catalogue_no pack_size,/products/mindray-m-6-ld-lyse-hematology-reagent/
 mindray-m-6-ln-lyse-hematology-reagent,Mindray,M-6 LN Lyse Hematology Reagent,hematology,reagent,4,analyte sample_type catalogue_no pack_size,/products/mindray-m-6-ln-lyse-hematology-reagent/
+mindray-m-6dr-diluent-hematology-reagent,Mindray,M-6DR Diluent Hematology Reagent,hematology,reagent,4,analyte sample_type catalogue_no pack_size,/products/mindray-m-6dr-diluent-hematology-reagent/
 mindray-m-6fn-dye-hematology-reagent,Mindray,M-6FN DYE Hematology Reagent,hematology,reagent,4,analyte sample_type catalogue_no pack_size,/products/mindray-m-6fn-dye-hematology-reagent/
+mindray-m30-diluent-hematology-reagent,Mindray,M30 Diluent Hematology Reagent,hematology,reagent,4,analyte sample_type catalogue_no pack_size,/products/mindray-m30-diluent-hematology-reagent/
 mindray-rheumatoid-factor-reagent-kits,Mindray,Rheumatoid Factor Reagent Kits,general,reagent,4,category technology analyte pack_size,/products/mindray-rheumatoid-factor-reagent-kits/
 qiagen-alltaq-pcr-core-kit-5000-u,Qiagen,AllTaq PCR Core Kit (5000 U),molecular,reagent,4,analyte sample_type catalogue_no pack_size,/products/qiagen-alltaq-pcr-core-kit-5000-u/
 qiagen-dneasy-blood-and-tissue-kit,Qiagen,DNeasy Blood & Tissue Kit,general,reagent,4,category technology analyte sample_type,/products/qiagen-dneasy-blood-and-tissue-kit/
@@ -320,6 +381,7 @@ qiagen-hot-startaq-master-mix-kit-2500-u,Qiagen,Hot StarTaq Master Mix Kit (2500
 qiagen-microbial-dna-qpcr-assay-kit,Qiagen,Microbial DNA qPCR Assay Kit,molecular,reagent,4,analyte sample_type catalogue_no pack_size,/products/qiagen-microbial-dna-qpcr-assay-kit/
 qiagen-minelute-96-uf-pcr-purification-kit-24,Qiagen,MinElute 96 UF PCR Purification Kit (24),molecular,reagent,4,analyte sample_type catalogue_no pack_size,/products/qiagen-minelute-96-uf-pcr-purification-kit-24/
 qiagen-mircury-lna-sybr-green-pcr-kit,Qiagen,miRCURY LNA SYBR Green PCR Kit,molecular,reagent,4,analyte sample_type catalogue_no pack_size,/products/qiagen-mircury-lna-sybr-green-pcr-kit/
+qiagen-qiaamp-dna-mini-kit-250,Qiagen,QIAamp DNA Mini Kit (250),general,reagent,4,category technology analyte sample_type,/products/qiagen-qiaamp-dna-mini-kit-250/
 qiagen-qiaamp-viral-rna-mini-kit-250,Qiagen,QIAamp Viral RNA Mini Kit (250),general,reagent,4,category technology analyte sample_type,/products/qiagen-qiaamp-viral-rna-mini-kit-250/
 qiagen-qiacuity-eg-pcr-kit-1-ml,Qiagen,QIAcuity EG PCR Kit (1 ml),molecular,reagent,4,analyte sample_type catalogue_no pack_size,/products/qiagen-qiacuity-eg-pcr-kit-1-ml/
 qiagen-qiacuity-onestep-advanced-probe-kit-1-ml,Qiagen,QIAcuity OneStep Advanced Probe Kit (1 ml),molecular,reagent,4,analyte sample_type catalogue_no pack_size,/products/qiagen-qiacuity-onestep-advanced-probe-kit-1-ml/
@@ -340,6 +402,7 @@ quantstudio-3-real-time-pcr-system-0-2-ml-96-wells,,Quantstudio 3 Real Time Pcr 
 quidelortho-quidel-s-triage-system,QuidelOrtho,Quidel's Triage System,general,instrument,4,category technology analyte catalogue_no,/products/quidelortho-quidel-s-triage-system/
 quidelortho-triage-meter-pro,QuidelOrtho,Triage Meter Pro,general,instrument,4,category technology analyte catalogue_no,/products/quidelortho-triage-meter-pro/
 roche-accu-chek-accu-fine-insulin-pen-needles,Roche,Accu-Chek Accu-Fine insulin pen needles,general,,4,category technology product_type sample_type,/products/roche-accu-chek-accu-fine-insulin-pen-needles/
+roche-cobas-u-pack,Roche,Cobas U pack,clinical-chemistry,,4,product_type analyte sample_type catalogue_no,/products/roche-cobas-u-pack/
 roche-combur-10-test-strip,Roche,Combur 10 Test Strip,urinalysis,reagent,4,analyte sample_type catalogue_no pack_size,/products/roche-combur-10-test-strip/
 roche-combur-10-ux-test-strip,Roche,Combur 10 UX Test strip,urinalysis,reagent,4,analyte sample_type catalogue_no pack_size,/products/roche-combur-10-ux-test-strip/
 roche-combur-9-test-strip,Roche,Combur 9 Test Strip,urinalysis,reagent,4,analyte sample_type catalogue_no pack_size,/products/roche-combur-9-test-strip/
@@ -348,14 +411,26 @@ snibe-maglumi-reaction-cup,Snibe,MAGLUMI Reaction Cup,immunoassays,reagent,4,ana
 snibe-maglumi-starter-1-plus-2,Snibe,MAGLUMI Starter 1+2,immunoassays,reagent,4,analyte sample_type catalogue_no pack_size,/products/snibe-maglumi-starter-1-plus-2/
 strandard-f-u-albumin-fia,,Strandard F U-Albumin FIA,immunoassays,reagent,4,brand sample_type catalogue_no pack_size,/products/strandard-f-u-albumin-fia/
 sysmex-ca-104,Sysmex,CA 104,coagulation,,4,product_type sample_type catalogue_no pack_size,/products/sysmex-ca-104/
+thermo-fisher-applied-biosystems-bigdye-terminator-v3-1-cycle-sequencing-kit,Thermo Fisher,Applied Biosystems BigDye Terminator v3.1 Cycle Sequencing Kit,general,reagent,4,category technology analyte sample_type,/products/thermo-fisher-applied-biosystems-bigdye-terminator-v3-1-cycle-sequencing-kit/
+thermo-fisher-applied-biosystems-magmax-96-ai-nd-viral-rna-isolation-kit,Thermo Fisher,Applied Biosystems MagMAX-96 AI/ND Viral RNA Isolation Kit,general,reagent,4,category technology analyte sample_type,/products/thermo-fisher-applied-biosystems-magmax-96-ai-nd-viral-rna-isolation-kit/
 thermo-fisher-applied-biosystems-quantstudio-3-5-spectral-calibration-plate-1-96-well-0-2-ml,Thermo Fisher,"Applied Biosystems QuantStudio 3/5 Spectral Calibration Plate 1, 96-well, 0.2 mL",general,reagent,4,category technology analyte sample_type,/products/thermo-fisher-applied-biosystems-quantstudio-3-5-spectral-calibration-plate-1-96-well-0-2-ml/
 thermo-fisher-applied-biosystems-quantstudio-3-5-spectral-calibration-plate-2-96-well-0-2-ml,Thermo Fisher,"Applied Biosystems QuantStudio 3/5 Spectral Calibration Plate 2, 96-well, 0.2 mL",general,reagent,4,category technology analyte sample_type,/products/thermo-fisher-applied-biosystems-quantstudio-3-5-spectral-calibration-plate-2-96-well-0-2-ml/
+thermo-fisher-applied-biosystems-quantstudio-3-5-spectral-calibration-plate-3,Thermo Fisher,Applied Biosystems QuantStudio 3/5 Spectral Calibration Plate 3,general,reagent,4,category technology analyte sample_type,/products/thermo-fisher-applied-biosystems-quantstudio-3-5-spectral-calibration-plate-3/
+thermo-fisher-applied-biosystems-taqman-preamp-master-mix-cdna-pre-amplification-for-qpcr,Thermo Fisher,Applied Biosystems TaqMan PreAmp Master Mix (cDNA pre-amplification for qPCR),molecular,,4,product_type analyte sample_type pack_size,/products/thermo-fisher-applied-biosystems-taqman-preamp-master-mix-cdna-pre-amplification-for-qpcr/
 thermo-fisher-invitrogen-alamarblue-and-alamarblue-hs-cell-viability-reagents,Thermo Fisher,Invitrogen alamarBlue and alamarBlue HS Cell Viability Reagents,general,reagent,4,category technology analyte sample_type,/products/thermo-fisher-invitrogen-alamarblue-and-alamarblue-hs-cell-viability-reagents/
 thermo-fisher-invitrogen-dynabeads-streptavidin-trial-kit,Thermo Fisher,Invitrogen Dynabeads Streptavidin Trial Kit,general,reagent,4,category technology analyte sample_type,/products/thermo-fisher-invitrogen-dynabeads-streptavidin-trial-kit/
 thermo-fisher-invitrogen-magmax-96-blood-rna-isolation-kit,Thermo Fisher,Invitrogen MagMAX-96 Blood RNA Isolation Kit,general,reagent,4,category technology analyte sample_type,/products/thermo-fisher-invitrogen-magmax-96-blood-rna-isolation-kit/
+thermo-fisher-invitrogen-magmax-96-for-microarrays-total-rna-isolation-kit,Thermo Fisher,Invitrogen MagMAX-96 for Microarrays Total RNA Isolation Kit,general,reagent,4,category technology analyte sample_type,/products/thermo-fisher-invitrogen-magmax-96-for-microarrays-total-rna-isolation-kit/
+thermo-fisher-invitrogen-magmax-96-total-rna-isolation-kit,Thermo Fisher,Invitrogen MagMAX-96 Total RNA Isolation Kit,general,reagent,4,category technology analyte sample_type,/products/thermo-fisher-invitrogen-magmax-96-total-rna-isolation-kit/
+thermo-fisher-invitrogen-neon-nxt-electroporation-system-100-micro-liter-kit-with-1-channel-tubes,Thermo Fisher,Invitrogen Neon NxT Electroporation System 100-micro Liter Kit with 1-Channel Tubes,general,reagent,4,category technology analyte sample_type,/products/thermo-fisher-invitrogen-neon-nxt-electroporation-system-100-micro-liter-kit-with-1-channel-tubes/
+thermo-fisher-invitrogen-procartaplex-human-immune-response-panel-80plex,Thermo Fisher,"Invitrogen ProcartaPlex Human Immune Response Panel, 80plex",general,reagent,4,category technology analyte pack_size,/products/thermo-fisher-invitrogen-procartaplex-human-immune-response-panel-80plex/
 thermo-fisher-invitrogen-purelink-pro-96-total-rna-purification-kit,Thermo Fisher,Invitrogen PureLink Pro 96 total RNA Purification Kit,general,reagent,4,category technology analyte sample_type,/products/thermo-fisher-invitrogen-purelink-pro-96-total-rna-purification-kit/
 thermo-fisher-invitrogen-purelink-rna-micro-scale-kit,Thermo Fisher,Invitrogen PureLink RNA Micro Scale Kit,general,reagent,4,category technology analyte sample_type,/products/thermo-fisher-invitrogen-purelink-rna-micro-scale-kit/
 thermo-fisher-invitrogen-purelink-rna-mini-kit,Thermo Fisher,Invitrogen PureLink RNA Mini Kit,general,reagent,4,category technology analyte sample_type,/products/thermo-fisher-invitrogen-purelink-rna-mini-kit/
+thermo-fisher-invitrogen-quant-it-protein-assay-kit,Thermo Fisher,Invitrogen Quant-iT Protein Assay Kit,general,reagent,4,category technology analyte sample_type,/products/thermo-fisher-invitrogen-quant-it-protein-assay-kit/
+thermo-fisher-invitrogen-rnasealert-lab-test-kit-v2,Thermo Fisher,Invitrogen RNaseAlert Lab Test Kit v2,general,reagent,4,category technology analyte sample_type,/products/thermo-fisher-invitrogen-rnasealert-lab-test-kit-v2/
+thermo-fisher-ion-torrent-ion-ampliseq-carrierseq-ecs-panel,Thermo Fisher,Ion Torrent Ion AmpliSeq CarrierSeq ECS Panel,general,reagent,4,category technology analyte sample_type,/products/thermo-fisher-ion-torrent-ion-ampliseq-carrierseq-ecs-panel/
+thermo-fisher-ion-torrent-oncomine-myeloid-mrd-dna-assay-ruo,Thermo Fisher,Ion Torrent Oncomine Myeloid MRD DNA Assay (RUO),general,reagent,4,category technology analyte sample_type,/products/thermo-fisher-ion-torrent-oncomine-myeloid-mrd-dna-assay-ruo/
 ustar-bp-assay,Ustar,BP Assay,molecular,reagent,4,specs sample_type catalogue_no pack_size,/products/ustar-bp-assay/
 ustar-hpv-16-18-assay,Ustar,HPV 16/18 Assay,molecular,reagent,4,specs sample_type catalogue_no pack_size,/products/ustar-hpv-16-18-assay/
 ustar-hpv-6-11-assay,Ustar,HPV 6/11 Assay,molecular,reagent,4,specs sample_type catalogue_no pack_size,/products/ustar-hpv-6-11-assay/
@@ -368,7 +443,9 @@ ustar-uu-mh-assay,Ustar,UU/MH Assay,molecular,reagent,4,specs sample_type catalo
 ustar-vibrio-cholerae-assay,Ustar,Vibrio Cholerae Assay,molecular,reagent,4,specs sample_type catalogue_no pack_size,/products/ustar-vibrio-cholerae-assay/
 zybio-cystatin-c-colloidal-gold-immunoturbidimetric,Zybio,Cystatin C (Colloidal Gold Immunoturbidimetric),general,,4,category technology product_type pack_size,/products/zybio-cystatin-c-colloidal-gold-immunoturbidimetric/
 zybio-exc-gamma-glutamyl-transferase-ggt,Zybio,EXC Gamma-Glutamyl Transferase (GGT),clinical-chemistry,,4,product_type sample_type catalogue_no pack_size,/products/zybio-exc-gamma-glutamyl-transferase-ggt/
+zybio-ext-antithrombin-iii,Zybio,EXT Antithrombin III,coagulation,,4,product_type analyte sample_type pack_size,/products/zybio-ext-antithrombin-iii/
 zybio-ext-fibrin-degradation-product-fdp,Zybio,EXT Fibrin Degradation Product (FDP),coagulation,,4,product_type analyte sample_type pack_size,/products/zybio-ext-fibrin-degradation-product-fdp/
+zybio-ext-thrombin-time-tt,Zybio,EXT Thrombin Time (TT),coagulation,,4,product_type analyte sample_type pack_size,/products/zybio-ext-thrombin-time-tt/
 zybio-z50-z5-diluent,Zybio,Z50 - Z5 Diluent,hematology,,4,product_type analyte sample_type pack_size,/products/zybio-z50-z5-diluent/
 abbott-abon-hcg-one-step-pregnancy-tests-for-professional-use,Abbott,ABON hCG One Step Pregnancy Tests - For Professional Use,rapid-tests,reagent,3,sample_type catalogue_no pack_size,/products/abbott-abon-hcg-one-step-pregnancy-tests-for-professional-use/
 abbott-bioline-chlamydia,Abbott,Bioline CHLAMYDIA,rapid-tests,reagent,3,sample_type catalogue_no pack_size,/products/abbott-bioline-chlamydia/
@@ -387,15 +464,24 @@ arkray-ammoniak-test-kit,Arkray,Ammoniak Test Kit,clinical-chemistry,reagent,3,s
 arkray-autochem-ingeniious-clinical-chemistry-analyser,Arkray,Autochem Ingeniious Clinical Chemistry Analyser,clinical-chemistry,instrument,3,specs analyte catalogue_no,/products/arkray-autochem-ingeniious-clinical-chemistry-analyser/
 arkray-autochem-xact-pro-clinical-chemistry-analyzer,Arkray,Autochem Xact Pro Clinical Chemistry Analyzer,clinical-chemistry,instrument,3,specs analyte catalogue_no,/products/arkray-autochem-xact-pro-clinical-chemistry-analyzer/
 arkray-blood-lactate-meter-lactate-pro-2-lt-1730,Arkray,Blood Lactate Meter Lactate Pro 2 LT-1730,general,instrument,3,category technology catalogue_no,/products/arkray-blood-lactate-meter-lactate-pro-2-lt-1730/
+arkray-creatinine-reagent,Arkray,Creatinine Reagent,clinical-chemistry,reagent,3,sample_type catalogue_no pack_size,/products/arkray-creatinine-reagent/
 arkray-glucocard-01-mini-50-strips-bottlepack,Arkray,Glucocard 01 Mini 50 Strips Bottlepack,diabetes,reagent,3,sample_type catalogue_no pack_size,/products/arkray-glucocard-01-mini-50-strips-bottlepack/
 arkray-glucocard-01-sensor-100-test-strips,Arkray,Glucocard 01 sensor 100 Test Strips,diabetes,reagent,3,sample_type catalogue_no pack_size,/products/arkray-glucocard-01-sensor-100-test-strips/
+arkray-glucose-liquid-reagent,Arkray,Glucose Liquid Reagent,clinical-chemistry,reagent,3,sample_type catalogue_no pack_size,/products/arkray-glucose-liquid-reagent/
+arkray-homocysteine-liquid-reagent,Arkray,Homocysteine Liquid Reagent,clinical-chemistry,reagent,3,sample_type catalogue_no pack_size,/products/arkray-homocysteine-liquid-reagent/
+arkray-ldh-liquid-reagent,Arkray,LDH Liquid Reagent,clinical-chemistry,reagent,3,sample_type catalogue_no pack_size,/products/arkray-ldh-liquid-reagent/
+arkray-lipase-liquid-reagent,Arkray,Lipase Liquid Reagent,clinical-chemistry,reagent,3,sample_type catalogue_no pack_size,/products/arkray-lipase-liquid-reagent/
 arkray-orinasys-urine-test-strip-4s,Arkray,Orinasys Urine Test Strip - 4S,rapid-tests,reagent,3,analyte catalogue_no pack_size,/products/arkray-orinasys-urine-test-strip-4s/
 arkray-orinasys-urine-test-strip-b10,Arkray,Orinasys Urine Test Strip - B10,rapid-tests,reagent,3,analyte catalogue_no pack_size,/products/arkray-orinasys-urine-test-strip-b10/
 arkray-orinasys-urine-test-strip-gp,Arkray,Orinasys Urine Test Strip - GP,rapid-tests,reagent,3,analyte catalogue_no pack_size,/products/arkray-orinasys-urine-test-strip-gp/
 arkray-pocketchem-a1c-hba1c-test-kit,Arkray,PocketChem A1c HbA1c Test Kit,diabetes,reagent,3,sample_type catalogue_no pack_size,/products/arkray-pocketchem-a1c-hba1c-test-kit/
+arkray-sgot-reagent,Arkray,SGOT Reagent,clinical-chemistry,reagent,3,sample_type catalogue_no pack_size,/products/arkray-sgot-reagent/
 arkray-spanclone-anti-a-b-d-monoclonal-blood-grouping-reagent,Arkray,Spanclone Anti A B D Monoclonal Blood Grouping Reagent,general,reagent,3,category technology analyte,/products/arkray-spanclone-anti-a-b-d-monoclonal-blood-grouping-reagent/
 arkray-thrombospan-ls-coagulation-kit,Arkray,Thrombospan LS Coagulation Kit,coagulation,reagent,3,sample_type catalogue_no pack_size,/products/arkray-thrombospan-ls-coagulation-kit/
 arkray-total-protein,Arkray,Total-Protein,clinical-chemistry,reagent,3,analyte catalogue_no pack_size,/products/arkray-total-protein/
+arkray-triglycerides-liquid-reagent,Arkray,Triglycerides Liquid Reagent,clinical-chemistry,reagent,3,sample_type catalogue_no pack_size,/products/arkray-triglycerides-liquid-reagent/
+arkray-urea-dry-reagent,Arkray,Urea Dry Reagent,clinical-chemistry,reagent,3,sample_type catalogue_no pack_size,/products/arkray-urea-dry-reagent/
+arkray-urea-liquid-reagent,Arkray,Urea Liquid Reagent,clinical-chemistry,reagent,3,sample_type catalogue_no pack_size,/products/arkray-urea-liquid-reagent/
 arkray-uriflet-s-11ua-urine-test-strip,Arkray,Uriflet S 11UA Urine Test Strip,rapid-tests,reagent,3,analyte catalogue_no pack_size,/products/arkray-uriflet-s-11ua-urine-test-strip/
 arkray-urine-test-strips-aution-screen,Arkray,Urine test strips AUTION SCREEN,general,reagent,3,category technology analyte,/products/arkray-urine-test-strips-aution-screen/
 awareness-technology-chemwell-2910-pc-controlled-elisa-biochemistry-analyzer,Awareness Technology,ChemWell 2910- PC Controlled ELISA/ BIOCHEMISTRY ANALYZER,immunoassays,reagent,3,analyte sample_type pack_size,/products/awareness-technology-chemwell-2910-pc-controlled-elisa-biochemistry-analyzer/
@@ -405,8 +491,28 @@ awareness-technology-chemwell-t-4625-ics-pc-controlled-chemistry-plus-turbidmetr
 awareness-technology-selectalyte-3910-ise-analyzer,Awareness Technology,Selectalyte 3910- ISE Analyzer,general,instrument,3,category technology analyte,/products/awareness-technology-selectalyte-3910-ise-analyzer/
 awareness-technology-stat-fax-4200-stand-alone-microplate-reader,Awareness Technology,Stat Fax 4200 - Stand-alone Microplate Reader,general,instrument,3,category technology analyte,/products/awareness-technology-stat-fax-4200-stand-alone-microplate-reader/
 beckman-coulter-access-waste-bags,Beckman Coulter,Access WASTE BAGS,immunoassays,reagent,3,analyte sample_type pack_size,/products/beckman-coulter-access-waste-bags/
+becton-dickinson-acd-solution-a-blood-collection-tubes,Becton Dickinson,ACD Solution A Blood Collection Tubes,general,consumable,3,category technology pack_size,/products/becton-dickinson-acd-solution-a-blood-collection-tubes/
 becton-dickinson-bactec-fx40-instrument,Becton Dickinson,BACTEC FX40 instrument,general,instrument,3,category technology analyte,/products/becton-dickinson-bactec-fx40-instrument/
+becton-dickinson-bactec-plus-aerobic-f-culture-vials,Becton Dickinson,BACTEC Plus Aerobic/F culture vials,microbiology,,3,product_type analyte pack_size,/products/becton-dickinson-bactec-plus-aerobic-f-culture-vials/
+becton-dickinson-bactec-standard-10-aerobic-f-culture-vials,Becton Dickinson,BACTEC Standard/10 Aerobic/F culture vials,microbiology,,3,product_type analyte pack_size,/products/becton-dickinson-bactec-standard-10-aerobic-f-culture-vials/
+becton-dickinson-bactec-standard-anaerobic-f-culture-vials,Becton Dickinson,BACTEC Standard Anaerobic/F culture vials,microbiology,,3,product_type analyte pack_size,/products/becton-dickinson-bactec-standard-anaerobic-f-culture-vials/
+becton-dickinson-cpt-blood-collection-tube-with-sodium-citrate,Becton Dickinson,CPT Blood Collection tube with Sodium Citrate,general,consumable,3,category technology pack_size,/products/becton-dickinson-cpt-blood-collection-tube-with-sodium-citrate/
+becton-dickinson-eclipse-blood-collection-needle,Becton Dickinson,Eclipse Blood Collection Needle,general,consumable,3,category technology pack_size,/products/becton-dickinson-eclipse-blood-collection-needle/
+becton-dickinson-flashback-blood-collection-needle-22g,Becton Dickinson,"flashback Blood Collection needle, 22G",general,consumable,3,category technology pack_size,/products/becton-dickinson-flashback-blood-collection-needle-22g/
+becton-dickinson-flashback-blood-collection-needles-21g,Becton Dickinson,"flashback Blood Collection needles, 21G",general,consumable,3,category technology pack_size,/products/becton-dickinson-flashback-blood-collection-needles-21g/
+becton-dickinson-k2e-edta-18mg-plus-blood-collection-tube,Becton Dickinson,K2E (EDTA) 18mg plus Blood Collection Tube,general,consumable,3,category technology pack_size,/products/becton-dickinson-k2e-edta-18mg-plus-blood-collection-tube/
+becton-dickinson-k2e-edta-5-4mg-plus-blood-collection-tube,Becton Dickinson,K2E (EDTA) 5.4mg plus Blood Collection Tube,general,consumable,3,category technology pack_size,/products/becton-dickinson-k2e-edta-5-4mg-plus-blood-collection-tube/
+becton-dickinson-max-pcr-cartridge,Becton Dickinson,MAX PCR Cartridge,molecular,reagent,3,analyte sample_type pack_size,/products/becton-dickinson-max-pcr-cartridge/
 becton-dickinson-max-system,Becton Dickinson,MAX System,general,instrument,3,category technology analyte,/products/becton-dickinson-max-system/
+becton-dickinson-multi-sample-blood-collection-needle-22g,Becton Dickinson,"Multi Sample Blood Collection Needle, 22G",general,consumable,3,category technology pack_size,/products/becton-dickinson-multi-sample-blood-collection-needle-22g/
+becton-dickinson-multi-sample-blood-collection-needles-21g,Becton Dickinson,"Multi Sample Blood Collection Needles, 21G",general,consumable,3,category technology pack_size,/products/becton-dickinson-multi-sample-blood-collection-needles-21g/
+becton-dickinson-safety-lok-blood-collection-set-21g,Becton Dickinson,"Safety-Lok Blood Collection Set , 21G",general,consumable,3,category technology pack_size,/products/becton-dickinson-safety-lok-blood-collection-set-21g/
+becton-dickinson-safety-lok-blood-collection-set-23g,Becton Dickinson,"Safety-Lok Blood Collection Set, 23G",general,consumable,3,category technology pack_size,/products/becton-dickinson-safety-lok-blood-collection-set-23g/
+becton-dickinson-serum-blood-collection-tube,Becton Dickinson,Serum Blood Collection Tube,general,consumable,3,category technology pack_size,/products/becton-dickinson-serum-blood-collection-tube/
+becton-dickinson-sodium-heparin-nh-158-usp-units-blood-collection-tube,Becton Dickinson,Sodium Heparin (NH)158 USP units Blood Collection Tube,general,consumable,3,category technology pack_size,/products/becton-dickinson-sodium-heparin-nh-158-usp-units-blood-collection-tube/
+becton-dickinson-sodium-heparin-nh-75-usp-units-blood-collection-tube,Becton Dickinson,Sodium Heparin (NH) 75 USP units Blood Collection Tube,general,consumable,3,category technology pack_size,/products/becton-dickinson-sodium-heparin-nh-75-usp-units-blood-collection-tube/
+becton-dickinson-sst-ii-advance-blood-collection-tube,Becton Dickinson,SST II Advance Blood Collection Tube,general,consumable,3,category technology pack_size,/products/becton-dickinson-sst-ii-advance-blood-collection-tube/
+bio-rad-quick-start-bradford-protein-assay-kit-4,Bio-Rad,Quick Start Bradford Protein Assay Kit 4,clinical-chemistry,reagent,3,sample_type catalogue_no pack_size,/products/bio-rad-quick-start-bradford-protein-assay-kit-4/
 bio-rad-qx200-droplet-digital-pcr-system,Bio-Rad,QX200 Droplet Digital PCR System,molecular,instrument,3,specs analyte catalogue_no,/products/bio-rad-qx200-droplet-digital-pcr-system/
 bio-rad-qx600-droplet-digital-pcr-system,Bio-Rad,QX600 Droplet Digital PCR System,molecular,instrument,3,specs analyte catalogue_no,/products/bio-rad-qx600-droplet-digital-pcr-system/
 bio-rad-readyprep-protein-extraction-kit-total-protein,Bio-Rad,ReadyPrep Protein Extraction Kit (Total Protein),clinical-chemistry,reagent,3,sample_type catalogue_no pack_size,/products/bio-rad-readyprep-protein-extraction-kit-total-protein/
@@ -443,6 +549,7 @@ cepheid-bladder-cancer-monitor,Cepheid,Bladder Cancer Monitor,molecular,reagent,
 cepheid-carba-r,Cepheid,Carba-R,molecular,reagent,3,sample_type catalogue_no pack_size,/products/cepheid-carba-r/
 cepheid-fii-and-fv,Cepheid,FII & FV,molecular,reagent,3,analyte catalogue_no pack_size,/products/cepheid-fii-and-fv/
 cepheid-mrsa-sa-bc,Cepheid,MRSA/SA BC,molecular,reagent,3,sample_type catalogue_no pack_size,/products/cepheid-mrsa-sa-bc/
+cepheid-xpert-xpress-cov-2-flu-rsv-plus,Cepheid,Xpert Xpress CoV-2/Flu/RSV plus,molecular,,3,product_type catalogue_no pack_size,/products/cepheid-xpert-xpress-cov-2-flu-rsv-plus/
 ctk-biotech-onsite-chikungunya-igm-combo-rapid-test,CTK Biotech,OnSite Chikungunya IgM Combo Rapid Test,rapid-tests,reagent,3,sample_type catalogue_no pack_size,/products/ctk-biotech-onsite-chikungunya-igm-combo-rapid-test/
 dr-fooke-alfa,Dr. Fooke,ALFA,general,instrument,3,category technology catalogue_no,/products/dr-fooke-alfa/
 edan-bg9-i15-test-cartridge,EDAN,BG9 i15 Test Cartridge,general,reagent,3,category technology analyte,/products/edan-bg9-i15-test-cartridge/
@@ -453,14 +560,19 @@ erba-mannheim-aso-crp-rf-control-kit,Erba Mannheim,ASO/CRP/RF Control kit,genera
 erba-mannheim-ec-90-next-generation-electrolyte-analyzer,Erba Mannheim,EC 90 Next Generation Electrolyte Analyzer,general,instrument,3,category technology analyte,/products/erba-mannheim-ec-90-next-generation-electrolyte-analyzer/
 erba-mannheim-ec-cartridge-m,Erba Mannheim,EC Cartridge M,general,reagent,3,category technology analyte,/products/erba-mannheim-ec-cartridge-m/
 erba-mannheim-ec-cartridge-s,Erba Mannheim,EC Cartridge S,general,reagent,3,category technology analyte,/products/erba-mannheim-ec-cartridge-s/
+erba-mannheim-ec-cartridge-xs,Erba Mannheim,EC Cartridge XS,general,reagent,3,category technology analyte,/products/erba-mannheim-ec-cartridge-xs/
 erba-mannheim-ecl-105-single-channel-cogulation-analyzer,Erba Mannheim,ECL 105 Single Channel Cogulation Analyzer,general,instrument,3,category technology analyte,/products/erba-mannheim-ecl-105-single-channel-cogulation-analyzer/
 erba-mannheim-ecl-760-seven-channel-fully-automated-random-access-analyzer,Erba Mannheim,ECL 760 Seven Channel Fully Automated Random Access Analyzer,general,instrument,3,category technology analyte,/products/erba-mannheim-ecl-760-seven-channel-fully-automated-random-access-analyzer/
 erba-mannheim-elan-30s-fully-automated-elisa-microstrip-processor,Erba Mannheim,ELAN 30s Fully Automated ELISA Microstrip Processor,immunoassays,reagent,3,analyte sample_type pack_size,/products/erba-mannheim-elan-30s-fully-automated-elisa-microstrip-processor/
 erba-mannheim-esl-30-fully-automated-walk-away-system,Erba Mannheim,ESL 30 Fully Automated walk-away System,general,instrument,3,category technology analyte,/products/erba-mannheim-esl-30-fully-automated-walk-away-system/
+erba-mannheim-liquixx-bilirubin-total-and-direct,Erba Mannheim,LIQUIXX Bilirubin Total & Direct,general,,3,category technology product_type,/products/erba-mannheim-liquixx-bilirubin-total-and-direct/
 erba-mannheim-liquixx-creatinine-kit,Erba Mannheim,LIQUIXX Creatinine Kit,clinical-chemistry,reagent,3,sample_type catalogue_no pack_size,/products/erba-mannheim-liquixx-creatinine-kit/
 erba-mannheim-liquixx-phosphorous-kit,Erba Mannheim,LIQUIXX Phosphorous Kit,general,reagent,3,category technology analyte,/products/erba-mannheim-liquixx-phosphorous-kit/
+erba-mannheim-liquixx-sgot-r-kit,Erba Mannheim,LIQUIXX SGOT-R Kit,general,reagent,3,category technology analyte,/products/erba-mannheim-liquixx-sgot-r-kit/
+erba-mannheim-liquixx-t-ltx-aso-kit,Erba Mannheim,LIQUIXX T-LTX ASO Kit,general,reagent,3,category technology analyte,/products/erba-mannheim-liquixx-t-ltx-aso-kit/
 erba-mannheim-microprotein-reagent-kit,Erba Mannheim,Microprotein Reagent Kit,general,reagent,3,category technology analyte,/products/erba-mannheim-microprotein-reagent-kit/
-erba-mannheim-sgpt-kit,Erba Mannheim,SGPT Kit,general,reagent,3,category technology analyte,/products/erba-mannheim-sgpt-kit/
+erba-mannheim-system-pack-creatinine-kit,Erba Mannheim,System Pack Creatinine Kit,general,reagent,3,category technology catalogue_no,/products/erba-mannheim-system-pack-creatinine-kit/
+erba-mannheim-system-pack-sgpt-kit,Erba Mannheim,System Pack SGPT Kit,general,reagent,3,category technology analyte,/products/erba-mannheim-system-pack-sgpt-kit/
 fujifilm-che-p-s,Fujifilm,CHE-P S,clinical-chemistry,reagent,3,analyte catalogue_no pack_size,/products/fujifilm-che-p-s/
 fujifilm-dri-chem-reference-fluid-re,Fujifilm,DRI-CHEM REFERENCE FLUID RE,clinical-chemistry,,3,product_type analyte sample_type,/products/fujifilm-dri-chem-reference-fluid-re/
 haemonetics-global-hemostasis-cartridge,Haemonetics,Global Hemostasis Cartridge,coagulation,reagent,3,analyte catalogue_no pack_size,/products/haemonetics-global-hemostasis-cartridge/
@@ -475,6 +587,7 @@ hemocue-wbc-diff-microcuvettes-ae5f21,HemoCue,WBC DIFF Microcuvettes (25 tests),
 hemosonics-qplus-cartridge,HemoSonics,QPlus Cartridge,coagulation,reagent,3,analyte catalogue_no pack_size,/products/hemosonics-qplus-cartridge/
 hemosonics-qstat-cartridge,HemoSonics,QStat Cartridge,coagulation,reagent,3,analyte catalogue_no pack_size,/products/hemosonics-qstat-cartridge/
 horiba-abx-basolyse-ii-1l,Horiba,ABX BASOLYSE II 1L,hematology,,3,product_type analyte pack_size,/products/horiba-abx-basolyse-ii-1l/
+horiba-abx-diluent,Horiba,ABX Diluent,hematology,,3,product_type analyte pack_size,/products/horiba-abx-diluent/
 horiba-abx-eosinofix,Horiba,ABX EOSINOFIX,hematology,,3,product_type analyte pack_size,/products/horiba-abx-eosinofix/
 horiba-abx-minotrol-crp-controls,Horiba,ABX Minotrol CRP Controls,hematology,reagent,3,sample_type catalogue_no pack_size,/products/horiba-abx-minotrol-crp-controls/
 horiba-actichrome-heparin-anti-fxa-lyophilized,Horiba,ACTICHROME Heparin (Anti-FXa) Lyophilized,coagulation,,3,product_type analyte sample_type,/products/horiba-actichrome-heparin-anti-fxa-lyophilized/
@@ -482,6 +595,7 @@ horiba-crp-unit-50,Horiba,CRP Unit 50,general,,3,category technology product_typ
 horiba-kit-ral-stainbox-bbm,Horiba,Kit RAL StainBox BBM,hematology,reagent,3,analyte sample_type pack_size,/products/horiba-kit-ral-stainbox-bbm/
 horiba-lysebio,Horiba,LYSEBIO,hematology,,3,product_type analyte pack_size,/products/horiba-lysebio/
 horiba-nucediff-1l,Horiba,Nucediff 1L,hematology,,3,product_type analyte pack_size,/products/horiba-nucediff-1l/
+horiba-whitediff,Horiba,Whitediff,hematology,,3,product_type analyte pack_size,/products/horiba-whitediff/
 horiba-yumizen-g-aptt-reagents,Horiba,Yumizen G APTT Reagents,coagulation,reagent,3,sample_type catalogue_no pack_size,/products/horiba-yumizen-g-aptt-reagents/
 horiba-yumizen-g-ddi-2-liquid,Horiba,Yumizen G DDi 2 Liquid,coagulation,,3,product_type analyte pack_size,/products/horiba-yumizen-g-ddi-2-liquid/
 horiba-yumizen-g200,Horiba,Yumizen G200,coagulation,,3,product_type analyte pack_size,/products/horiba-yumizen-g200/
@@ -524,6 +638,7 @@ mindray-estriol-clia,Mindray,Estriol (CLIA),immunoassays,reagent,3,analyte catal
 mindray-m-52-diluent-hematology-reagent,Mindray,M-52 Diluent Hematology Reagent,hematology,reagent,3,analyte sample_type pack_size,/products/mindray-m-52-diluent-hematology-reagent/
 mindray-m-52-lh-lyse-hematology-reagent,Mindray,M-52 LH Lyse Hematology Reagent,hematology,reagent,3,sample_type catalogue_no pack_size,/products/mindray-m-52-lh-lyse-hematology-reagent/
 mindray-m-6-fd-dye-hematology-reagent,Mindray,M-6 FD DYE Hematology Reagent,hematology,reagent,3,sample_type catalogue_no pack_size,/products/mindray-m-6-fd-dye-hematology-reagent/
+mindray-m-6-lh-lyse-hematology-reagent,Mindray,M-6 LH Lyse Hematology Reagent,hematology,reagent,3,sample_type catalogue_no pack_size,/products/mindray-m-6-lh-lyse-hematology-reagent/
 mindray-magnesium-reagent-kits,Mindray,Magnesium Reagent Kits,clinical-chemistry,reagent,3,sample_type catalogue_no pack_size,/products/mindray-magnesium-reagent-kits/
 mindray-microalbumin-c-reagent-kits,Mindray,Microalbumin (C) Reagent Kits,clinical-chemistry,reagent,3,sample_type catalogue_no pack_size,/products/mindray-microalbumin-c-reagent-kits/
 mindray-phosphorus-reagent-kits,Mindray,Phosphorus Reagent Kits,clinical-chemistry,reagent,3,analyte catalogue_no pack_size,/products/mindray-phosphorus-reagent-kits/
@@ -537,6 +652,8 @@ noul-milab-cartridge-cer,Noul,miLab Cartridge CER,hematology,reagent,3,analyte c
 philips-everflo-home-oxygen-system,Philips,EverFlo Home oxygen system,general,instrument,3,category technology analyte,/products/philips-everflo-home-oxygen-system/
 premier-medical-first-response-syphilis-anti-tp-card-test-f2d9bd,Premier Medical,First Response Syphilis Anti TP Card Test,rapid-tests,reagent,3,sample_type catalogue_no pack_size,/products/premier-medical-first-response-syphilis-anti-tp-card-test-f2d9bd/
 qiagen-mircury-lna-mirna-pcr-assay,Qiagen,miRCURY LNA miRNA PCR Assay,molecular,reagent,3,analyte catalogue_no pack_size,/products/qiagen-mircury-lna-mirna-pcr-assay/
+qiagen-qpcr-384-well-plate-white-skirted,Qiagen,"qPCR 384-well plate white, skirted",molecular,consumable,3,specs catalogue_no pack_size,/products/qiagen-qpcr-384-well-plate-white-skirted/
+qiagen-qpcr-96-well-plate-white-skirted,Qiagen,"qPCR 96-well plate, white, skirted",molecular,consumable,3,specs catalogue_no pack_size,/products/qiagen-qpcr-96-well-plate-white-skirted/
 qiagen-rotor-gene-q-5plex-hrm-system,Qiagen,Rotor-Gene Q 5plex HRM System,general,instrument,3,category technology analyte,/products/qiagen-rotor-gene-q-5plex-hrm-system/
 qiagenq-pcr-384-well-plate-white-skirted,,"Qiagenq PCR 384-well plate white, skirted",molecular,consumable,3,brand catalogue_no pack_size,/products/qiagenq-pcr-384-well-plate-white-skirted/
 quidelortho-triage-cardiac-panel,QuidelOrtho,Triage Cardiac Panel,general,reagent,3,category technology analyte,/products/quidelortho-triage-cardiac-panel/
@@ -576,14 +693,37 @@ snibe-maglumi-x6-fully-auto-chemiluminescence-immunoassay-clia-system,Snibe,MAGL
 snibe-maglumi-x8-fully-auto-chemiluminescence-immunoassay-clia-system,Snibe,MAGLUMI X8 Fully-auto Chemiluminescence Immunoassay (CLIA) System,immunoassays,reagent,3,analyte sample_type pack_size,/products/snibe-maglumi-x8-fully-auto-chemiluminescence-immunoassay-clia-system/
 standrard-f-hba1c,,Standrard F HbA1c,immunoassays,reagent,3,brand catalogue_no pack_size,/products/standrard-f-hba1c/
 sysmex-ca-660-automated-haemostasis-analyzer,Sysmex,CA-660 Automated Haemostasis Analyzer,general,instrument,3,category technology analyte,/products/sysmex-ca-660-automated-haemostasis-analyzer/
+thermo-fisher-absolute-qpcr-mix-low-rox,Thermo Fisher,"ABsolute QPCR Mix, low ROX",molecular,,3,product_type analyte sample_type,/products/thermo-fisher-absolute-qpcr-mix-low-rox/
+thermo-fisher-applied-biosystems-absolute-q-1-step-rt-dpcr-master-mix-4x,Thermo Fisher,Applied Biosystems Absolute Q 1-step RT-dPCR Master Mix (4X),molecular,,3,product_type analyte sample_type,/products/thermo-fisher-applied-biosystems-absolute-q-1-step-rt-dpcr-master-mix-4x/
+thermo-fisher-applied-biosystems-absolute-q-universal-dna-digital-pcr-master-mix-5x,Thermo Fisher,Applied Biosystems Absolute Q Universal DNA Digital PCR Master Mix (5X),molecular,,3,product_type analyte sample_type,/products/thermo-fisher-applied-biosystems-absolute-q-universal-dna-digital-pcr-master-mix-5x/
+thermo-fisher-applied-biosystems-fast-sybr-green-master-mix,Thermo Fisher,Applied Biosystems Fast SYBR Green Master Mix,molecular,,3,product_type analyte sample_type,/products/thermo-fisher-applied-biosystems-fast-sybr-green-master-mix/
+thermo-fisher-applied-biosystems-magmax-96-viral-rna-isolation-kit,Thermo Fisher,Applied Biosystems MagMAX-96 Viral RNA Isolation Kit,general,reagent,3,category technology analyte,/products/thermo-fisher-applied-biosystems-magmax-96-viral-rna-isolation-kit/
+thermo-fisher-applied-biosystems-power-sybr-green-pcr-master-mix,Thermo Fisher,Applied Biosystems Power SYBR Green PCR Master Mix,molecular,,3,product_type analyte sample_type,/products/thermo-fisher-applied-biosystems-power-sybr-green-pcr-master-mix/
+thermo-fisher-applied-biosystems-powertrack-sybr-green-master-mix-for-qpcr,Thermo Fisher,Applied Biosystems PowerTrack SYBR Green Master Mix for qPCR,molecular,,3,product_type analyte sample_type,/products/thermo-fisher-applied-biosystems-powertrack-sybr-green-master-mix-for-qpcr/
+thermo-fisher-applied-biosystems-powerup-sybr-green-master-mix-for-qpcr,Thermo Fisher,Applied Biosystems PowerUp SYBR Green Master Mix for qPCR,molecular,,3,product_type analyte sample_type,/products/thermo-fisher-applied-biosystems-powerup-sybr-green-master-mix-for-qpcr/
 thermo-fisher-applied-biosystems-quantstudio-1-real-time-pcr-system-96well-0-2-ml,Thermo Fisher,Applied Biosystems QuantStudio 1 Real Time PCR System 96well 0.2 mL,molecular,instrument,3,specs analyte catalogue_no,/products/thermo-fisher-applied-biosystems-quantstudio-1-real-time-pcr-system-96well-0-2-ml/
 thermo-fisher-applied-biosystems-quantstudio-7-flex-real-time-pcr-system,Thermo Fisher,Applied Biosystems QuantStudio 7 Flex Real Time PCR System,molecular,instrument,3,specs analyte catalogue_no,/products/thermo-fisher-applied-biosystems-quantstudio-7-flex-real-time-pcr-system/
 thermo-fisher-applied-biosystems-quantstudio-absolute-q-digital-pcr-system-desktop,Thermo Fisher,"Applied Biosystems QuantStudio Absolute Q Digital PCR System, desktop",molecular,instrument,3,specs analyte catalogue_no,/products/thermo-fisher-applied-biosystems-quantstudio-absolute-q-digital-pcr-system-desktop/
+thermo-fisher-applied-biosystems-sybr-green-universal-master-mix,Thermo Fisher,Applied Biosystems SYBR Green Universal Master Mix,molecular,,3,product_type analyte sample_type,/products/thermo-fisher-applied-biosystems-sybr-green-universal-master-mix/
+thermo-fisher-applied-biosystems-taqman-fast-advanced-master-mix-for-qpcr,Thermo Fisher,Applied Biosystems TaqMan Fast Advanced Master Mix for qPCR,molecular,,3,product_type analyte sample_type,/products/thermo-fisher-applied-biosystems-taqman-fast-advanced-master-mix-for-qpcr/
+thermo-fisher-applied-biosystems-taqman-fast-virus-1-step-master-mix-for-qpcr,Thermo Fisher,Applied Biosystems TaqMan Fast Virus 1-Step Master Mix for qPCR,molecular,,3,product_type analyte sample_type,/products/thermo-fisher-applied-biosystems-taqman-fast-virus-1-step-master-mix-for-qpcr/
+thermo-fisher-applied-biosystems-taqman-gene-expression-master-mix,Thermo Fisher,Applied Biosystems TaqMan Gene Expression Master Mix,molecular,,3,product_type analyte sample_type,/products/thermo-fisher-applied-biosystems-taqman-gene-expression-master-mix/
+thermo-fisher-applied-biosystems-taqman-genotyping-master-mix,Thermo Fisher,Applied Biosystems TaqMan Genotyping Master Mix,molecular,,3,product_type analyte sample_type,/products/thermo-fisher-applied-biosystems-taqman-genotyping-master-mix/
+thermo-fisher-applied-biosystems-taqman-gtxpress-master-mix,Thermo Fisher,Applied Biosystems TaqMan GTXpress Master Mix,molecular,,3,product_type analyte sample_type,/products/thermo-fisher-applied-biosystems-taqman-gtxpress-master-mix/
+thermo-fisher-applied-biosystems-taqman-universal-master-mix-ii-with-ung,Thermo Fisher,"Applied Biosystems TaqMan Universal Master Mix II, with UNG",molecular,,3,product_type analyte sample_type,/products/thermo-fisher-applied-biosystems-taqman-universal-master-mix-ii-with-ung/
+thermo-fisher-applied-biosystems-taqpath-1-step-multiplex-master-mix-no-rox-ed97b6,Thermo Fisher,Applied Biosystems TaqPath 1-Step Multiplex Master Mix (No ROX),molecular,,3,product_type analyte sample_type,/products/thermo-fisher-applied-biosystems-taqpath-1-step-multiplex-master-mix-no-rox-ed97b6/
 thermo-fisher-applied-biosystems-taqpath-proamp-master-mix,Thermo Fisher,Applied Biosystems TaqPath ProAmp Master Mix,molecular,,3,product_type analyte sample_type,/products/thermo-fisher-applied-biosystems-taqpath-proamp-master-mix/
 thermo-fisher-applied-biosystems-veritipro-thermal-cycler,Thermo Fisher,Applied Biosystems VeritiPro Thermal Cycler (96 wells),molecular,,3,product_type analyte sample_type,/products/thermo-fisher-applied-biosystems-veritipro-thermal-cycler/
+thermo-fisher-invitrogen-dnazap-pcr-dna-degradation-solutions,Thermo Fisher,Invitrogen DNAZap PCR DNA Degradation Solutions,molecular,,3,product_type analyte sample_type,/products/thermo-fisher-invitrogen-dnazap-pcr-dna-degradation-solutions/
+thermo-fisher-invitrogen-ercc-rna-spike-in-mix,Thermo Fisher,Invitrogen ERCC RNA Spike-In Mix,molecular,,3,product_type analyte sample_type,/products/thermo-fisher-invitrogen-ercc-rna-spike-in-mix/
+thermo-fisher-invitrogen-platinum-pcr-supermix-high-fidelity,Thermo Fisher,Invitrogen Platinum PCR SuperMix High Fidelity,molecular,,3,product_type analyte sample_type,/products/thermo-fisher-invitrogen-platinum-pcr-supermix-high-fidelity/
+thermo-fisher-invitrogen-platinum-superfi-ii-dna-polymerase,Thermo Fisher,Invitrogen Platinum SuperFi II DNA Polymerase,molecular,,3,product_type analyte sample_type,/products/thermo-fisher-invitrogen-platinum-superfi-ii-dna-polymerase/
 thermo-fisher-invitrogen-platinum-superfi-ii-pcr-master-mix,Thermo Fisher,Invitrogen Platinum SuperFi II PCR Master Mix,molecular,,3,product_type analyte sample_type,/products/thermo-fisher-invitrogen-platinum-superfi-ii-pcr-master-mix/
+thermo-fisher-invitrogen-platinum-sybr-green-qpcr-supermix-udg,Thermo Fisher,Invitrogen Platinum SYBR Green qPCR SuperMix-UDG,molecular,,3,product_type analyte sample_type,/products/thermo-fisher-invitrogen-platinum-sybr-green-qpcr-supermix-udg/
+thermo-fisher-invitrogen-purelink-total-rna-blood-kit,Thermo Fisher,Invitrogen PureLink Total RNA Blood Kit,general,reagent,3,category technology analyte,/products/thermo-fisher-invitrogen-purelink-total-rna-blood-kit/
 thermo-fisher-invitrogen-ultrapure-1-m-tris-hci-buffer-ph-7-5,Thermo Fisher,"Invitrogen UltraPure 1 M Tris-HCI Buffer, pH 7.5",general,consumable,3,category technology pack_size,/products/thermo-fisher-invitrogen-ultrapure-1-m-tris-hci-buffer-ph-7-5/
 thermo-fisher-kingfisher-flex-purification-system,Thermo Fisher,KingFisher Flex Purification System,general,instrument,3,category technology analyte,/products/thermo-fisher-kingfisher-flex-purification-system/
+thermo-fisher-maxima-sybr-green-rox-qpcr-master-mix-2x,Thermo Fisher,Maxima SYBR Green/ROX qPCR Master Mix (2X),molecular,,3,product_type analyte sample_type,/products/thermo-fisher-maxima-sybr-green-rox-qpcr-master-mix-2x/
 thermo-fisher-multiskan-fc-microplate-photometer,Thermo Fisher,Multiskan FC Microplate Photometer,general,instrument,3,category technology analyte,/products/thermo-fisher-multiskan-fc-microplate-photometer/
 thermo-fisher-quantstudio-12k-flex-real-time-pcr-system-0-2-ml-96-wells,Thermo Fisher,Quantstudio 12k Flex Real Time PCR System 0.2 mL 96 wells,molecular,instrument,3,specs analyte catalogue_no,/products/thermo-fisher-quantstudio-12k-flex-real-time-pcr-system-0-2-ml-96-wells/
 thermo-fisher-seqstudio-8-flex-genetic-analyzer,Thermo Fisher,SeqStudio 8 Flex Genetic Analyzer,general,instrument,3,category technology analyte,/products/thermo-fisher-seqstudio-8-flex-genetic-analyzer/
@@ -604,6 +744,7 @@ werfen-r-ex-tem,Werfen,R EX-TEM,coagulation,reagent,3,analyte catalogue_no pack_
 wondfo-blood-gas-analyzer-calibration-tape,Wondfo,Blood Gas Analyzer Calibration Tape,blood-gas,reagent,3,sample_type catalogue_no pack_size,/products/wondfo-blood-gas-analyzer-calibration-tape/
 zybio-exi-1800-system-clia,Zybio,EXI 1800 System (CLIA),immunoassays,reagent,3,analyte sample_type pack_size,/products/zybio-exi-1800-system-clia/
 zybio-ext-activated-partial-thromboplastin-time-aptt,Zybio,EXT Activated Partial Thromboplastin Time (APTT),coagulation,,3,product_type sample_type pack_size,/products/zybio-ext-activated-partial-thromboplastin-time-aptt/
+zybio-ext-d-dimer-reagent,Zybio,EXT D-Dimer Reagent,coagulation,reagent,3,sample_type catalogue_no pack_size,/products/zybio-ext-d-dimer-reagent/
 zybio-ext-fibrinogen,Zybio,EXT Fibrinogen,coagulation,,3,product_type sample_type pack_size,/products/zybio-ext-fibrinogen/
 zybio-ext-prothrombin-time-pt,Zybio,EXT Prothrombin Time (PT),coagulation,,3,product_type sample_type pack_size,/products/zybio-ext-prothrombin-time-pt/
 zybio-z50-z5-lyse-ld,Zybio,Z50 Z5 Lyse LD,hematology,,3,product_type analyte sample_type,/products/zybio-z50-z5-lyse-ld/
@@ -712,6 +853,7 @@ arkray-albumin,Arkray,Albumin,clinical-chemistry,reagent,2,catalogue_no pack_siz
 arkray-albumin-alb-single-strips,Arkray,Albumin (Alb) single strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-albumin-alb-single-strips/
 arkray-albumin-liquid-reagent,Arkray,Albumin Liquid Reagent,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-albumin-liquid-reagent/
 arkray-alkaline-phosphatase-alp-single-strips,Arkray,Alkaline phosphatase (ALP) single strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-alkaline-phosphatase-alp-single-strips/
+arkray-alkaline-phosphatase-dry-reagent,Arkray,Alkaline Phosphatase Dry Reagent,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-alkaline-phosphatase-dry-reagent/
 arkray-alp,Arkray,ALP,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-alp/
 arkray-alt-gpt-single-strips,Arkray,ALT/GPT single strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-alt-gpt-single-strips/
 arkray-amylase,Arkray,Amylase,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-amylase/
@@ -727,19 +869,23 @@ arkray-aution-sticks-7ea,Arkray,Aution Sticks 7EA,urinalysis,reagent,2,catalogue
 arkray-automatic-glycohemoglobin-analyzer-adams-a1c-lite-ha-8380v,Arkray,Automatic Glycohemoglobin Analyzer ADAMS A1c Lite HA-8380V,diabetes,instrument,2,specs catalogue_no,/products/arkray-automatic-glycohemoglobin-analyzer-adams-a1c-lite-ha-8380v/
 arkray-calcium,Arkray,Calcium,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-calcium/
 arkray-calcium-ca-single-strips,Arkray,Calcium (Ca) single strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-calcium-ca-single-strips/
+arkray-cholesterol-liquid-reagent,Arkray,Cholesterol Liquid Reagent,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-cholesterol-liquid-reagent/
 arkray-ck,Arkray,CK,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-ck/
 arkray-creatine-kinase-ck-single-strips,Arkray,Creatine kinase (CK) single strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-creatine-kinase-ck-single-strips/
 arkray-creatinine-cre-single-strips,Arkray,Creatinine (Cre) single strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-creatinine-cre-single-strips/
 arkray-crp-cartridge,Arkray,CRP cartridge,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-crp-cartridge/
+arkray-direct-ldl-cholesterol-liquid-reagent,Arkray,Direct LDL-Cholesterol Liquid Reagent,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-direct-ldl-cholesterol-liquid-reagent/
 arkray-electrolyte-reagent,Arkray,Electrolyte reagent,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-electrolyte-reagent/
 arkray-electrolytes-na-plus-k-plus-cl,Arkray,"Electrolytes (Na+,K+,Cl-)",clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-electrolytes-na-plus-k-plus-cl/
 arkray-fructosamine,Arkray,Fructosamine,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-fructosamine/
 arkray-fructosamine-fru-single-strips,Arkray,Fructosamine (Fru) single strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-fructosamine-fru-single-strips/
 arkray-fully-automated-urine-analyzer-aution-max-ax-4060,Arkray,Fully Automated Urine Analyzer AUTION MAX AX-4060,urinalysis,instrument,2,analyte catalogue_no,/products/arkray-fully-automated-urine-analyzer-aution-max-ax-4060/
+arkray-g6pd-dry-reagent,Arkray,G6PD Dry Reagent,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-g6pd-dry-reagent/
 arkray-gamma-gt-ggt-single-strips,Arkray,Gamma GT (GGT) single strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-gamma-gt-ggt-single-strips/
 arkray-ggt,Arkray,GGT,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-ggt/
 arkray-glucocard-vital-gt-1050,Arkray,GLUCOCARD Vital GT-1050,diabetes,,2,product_type pack_size,/products/arkray-glucocard-vital-gt-1050/
 arkray-glucose,Arkray,Glucose,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-glucose/
+arkray-glucose-dry-reagent,Arkray,Glucose Dry Reagent,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-glucose-dry-reagent/
 arkray-glucose-glu-single-strips,Arkray,Glucose (Glu) single strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-glucose-glu-single-strips/
 arkray-hdl,Arkray,HDL,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-hdl/
 arkray-hdl-cholesterol-direct-hdl-single-strips,Arkray,"HDL cholesterol, direct (HDL) single strips",clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-hdl-cholesterol-direct-hdl-single-strips/
@@ -759,6 +905,7 @@ arkray-panel-v,Arkray,Panel-V,clinical-chemistry,reagent,2,catalogue_no pack_siz
 arkray-panel-v2-multi-strips,Arkray,Panel-V2 multi strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-panel-v2-multi-strips/
 arkray-phosphate,Arkray,Phosphate,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-phosphate/
 arkray-phosphorus-ip-single-strips,Arkray,Phosphorus (IP) single strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-phosphorus-ip-single-strips/
+arkray-sgpt-reagent,Arkray,SGPT Reagent,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-sgpt-reagent/
 arkray-spotchem-e-plate,Arkray,SPOTCHEM E- Plate,clinical-chemistry,consumable,2,catalogue_no pack_size,/products/arkray-spotchem-e-plate/
 arkray-spotchem-el-se-1520-electrolyte-test-analyzer,Arkray,Spotchem EL SE-1520 Electrolyte Test Analyzer,general,instrument,2,category technology,/products/arkray-spotchem-el-se-1520-electrolyte-test-analyzer/
 arkray-test-strip,Arkray,Test Strip,rapid-tests,reagent,2,catalogue_no pack_size,/products/arkray-test-strip/
@@ -782,6 +929,7 @@ becton-dickinson-flu-a-plus-b,Becton Dickinson,Flu A+B,clinical-chemistry,reagen
 becton-dickinson-group-a-strep,Becton Dickinson,Group A Strep,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/becton-dickinson-group-a-strep/
 becton-dickinson-phoenix-m50-instrument,Becton Dickinson,Phoenix M50 Instrument,general,instrument,2,category technology,/products/becton-dickinson-phoenix-m50-instrument/
 becton-dickinson-rsv,Becton Dickinson,RSV,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/becton-dickinson-rsv/
+becton-dickinson-safety-lok-blood-collection-set-25g,Becton Dickinson,"Safety-Lok Blood Collection Set, 25G",general,consumable,2,category technology,/products/becton-dickinson-safety-lok-blood-collection-set-25g/
 becton-dickinson-sars-cov-2,Becton Dickinson,SARS-CoV-2,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/becton-dickinson-sars-cov-2/
 becton-dickinson-sars-cov-2-and-flu-a-plus-b,Becton Dickinson,SARS-CoV-2 & Flu A+B,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/becton-dickinson-sars-cov-2-and-flu-a-plus-b/
 bilimetrix-test-strips,Bilimetrix,Test strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/bilimetrix-test-strips/
@@ -899,6 +1047,12 @@ cepheid-npm1-mutation,Cepheid,NPM1 Mutation,molecular,reagent,2,catalogue_no pac
 cepheid-resistanceplus-mg-flexible,Cepheid,ResistancePlus MG FleXible,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-resistanceplus-mg-flexible/
 cepheid-tv,Cepheid,TV,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-tv/
 cepheid-vana-vanb,Cepheid,vanA/vanB,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-vana-vanb/
+cepheid-xpert-carba-r,Cepheid,Xpert Carba-R,molecular,,2,product_type sample_type,/products/cepheid-xpert-carba-r/
+cepheid-xpert-gbs,Cepheid,Xpert GBS,molecular,,2,product_type analyte,/products/cepheid-xpert-gbs/
+cepheid-xpert-mrsa-nxg,Cepheid,Xpert MRSA NxG,molecular,,2,product_type sample_type,/products/cepheid-xpert-mrsa-nxg/
+cepheid-xpert-mrsa-sa-ssti,Cepheid,Xpert MRSA/SA SSTI,molecular,,2,product_type sample_type,/products/cepheid-xpert-mrsa-sa-ssti/
+cepheid-xpert-mtb-rif,Cepheid,Xpert MTB/RIF,molecular,,2,product_type sample_type,/products/cepheid-xpert-mtb-rif/
+cepheid-xpert-xpress-sars-cov-2,Cepheid,Xpert Xpress SARS-CoV-2,molecular,,2,product_type sample_type,/products/cepheid-xpert-xpress-sars-cov-2/
 cepheid-xpress-cov-2-plus,Cepheid,Xpress CoV-2 plus,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-xpress-cov-2-plus/
 cepheid-xpress-flu-rsv,Cepheid,Xpress Flu/RSV,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-xpress-flu-rsv/
 concile-bodycheck-ferritin,Concile,BodyCheck Ferritin,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/concile-bodycheck-ferritin/
@@ -1000,17 +1154,38 @@ erba-mannheim-actime,Erba Mannheim,Actime,coagulation,,2,product_type analyte,/p
 erba-mannheim-erbaqik-hbsag-test-card,Erba Mannheim,ErbaQik HBsAg Test Card,rapid-tests,reagent,2,catalogue_no pack_size,/products/erba-mannheim-erbaqik-hbsag-test-card/
 erba-mannheim-erbaqik-malaria-pan-antigen-test-pan-pldh,Erba Mannheim,ErbaQik Malaria Pan Antigen test (Pan pLDH),rapid-tests,reagent,2,catalogue_no pack_size,/products/erba-mannheim-erbaqik-malaria-pan-antigen-test-pan-pldh/
 erba-mannheim-erbaqik-syphilis-test-card,Erba Mannheim,ErbaQik Syphilis Test Card,rapid-tests,reagent,2,catalogue_no pack_size,/products/erba-mannheim-erbaqik-syphilis-test-card/
+erba-mannheim-liquixx-albumin-kit,Erba Mannheim,LIQUIXX Albumin Kit,general,reagent,2,category technology,/products/erba-mannheim-liquixx-albumin-kit/
+erba-mannheim-liquixx-amylase-kit,Erba Mannheim,LIQUIXX Amylase Kit,general,reagent,2,category technology,/products/erba-mannheim-liquixx-amylase-kit/
 erba-mannheim-liquixx-calcium-kit,Erba Mannheim,LIQUIXX Calcium Kit,general,reagent,2,category technology,/products/erba-mannheim-liquixx-calcium-kit/
+erba-mannheim-liquixx-ck-mb-kit,Erba Mannheim,LIQUIXX CK-MB Kit,general,reagent,2,category technology,/products/erba-mannheim-liquixx-ck-mb-kit/
+erba-mannheim-liquixx-creatinine-enzymatic-kit,Erba Mannheim,LIQUIXX Creatinine Enzymatic Kit,general,reagent,2,category technology,/products/erba-mannheim-liquixx-creatinine-enzymatic-kit/
 erba-mannheim-liquixx-creatinine-kinase-kit,Erba Mannheim,LIQUIXX Creatinine Kinase Kit,general,reagent,2,category technology,/products/erba-mannheim-liquixx-creatinine-kinase-kit/
+erba-mannheim-liquixx-gamma-gt-kit,Erba Mannheim,LIQUIXX Gamma GT Kit,general,reagent,2,category technology,/products/erba-mannheim-liquixx-gamma-gt-kit/
+erba-mannheim-liquixx-hdl-cholesterol-kit,Erba Mannheim,LIQUIXX HDL-Cholesterol Kit,general,reagent,2,category technology,/products/erba-mannheim-liquixx-hdl-cholesterol-kit/
+erba-mannheim-liquixx-hdl-direct-kit,Erba Mannheim,LIQUIXX HDL-Direct Kit,general,reagent,2,category technology,/products/erba-mannheim-liquixx-hdl-direct-kit/
 erba-mannheim-liquixx-m-uric-acid-kit,Erba Mannheim,LIQUIXX-M Uric Acid Kit,general,reagent,2,category technology,/products/erba-mannheim-liquixx-m-uric-acid-kit/
+erba-mannheim-liquixx-t-ltx-crp-kit,Erba Mannheim,LIQUIXX T-LTX CRP Kit,general,reagent,2,category technology,/products/erba-mannheim-liquixx-t-ltx-crp-kit/
+erba-mannheim-liquixx-t-ltx-rf-kit,Erba Mannheim,LIQUIXX T-LTX RF Kit,general,reagent,2,category technology,/products/erba-mannheim-liquixx-t-ltx-rf-kit/
+erba-mannheim-liquixx-total-protein-kit,Erba Mannheim,LIQUIXX Total Protein Kit,general,reagent,2,category technology,/products/erba-mannheim-liquixx-total-protein-kit/
 erba-mannheim-microalbumin-kit,Erba Mannheim,Microalbumin Kit,general,reagent,2,category technology,/products/erba-mannheim-microalbumin-kit/
+erba-mannheim-sgpt-kit-687f2f,Erba Mannheim,SGPT Kit,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/erba-mannheim-sgpt-kit-687f2f/
 erba-mannheim-system-pack-albumin-kit,Erba Mannheim,System Pack Albumin Kit,general,reagent,2,category technology,/products/erba-mannheim-system-pack-albumin-kit/
+erba-mannheim-system-pack-alkaline-phosphatase-kit,Erba Mannheim,System Pack Alkaline Phosphatase Kit,general,reagent,2,category technology,/products/erba-mannheim-system-pack-alkaline-phosphatase-kit/
+erba-mannheim-system-pack-c-reactive-protein-crp,Erba Mannheim,System Pack C-Reactive Protein (CRP),general,instrument,2,category technology,/products/erba-mannheim-system-pack-c-reactive-protein-crp/
+erba-mannheim-system-pack-chloride-kit,Erba Mannheim,System Pack Chloride Kit,general,reagent,2,category technology,/products/erba-mannheim-system-pack-chloride-kit/
+erba-mannheim-system-pack-ck-mb-kit,Erba Mannheim,System Pack CK-MB Kit,general,reagent,2,category technology,/products/erba-mannheim-system-pack-ck-mb-kit/
+erba-mannheim-system-pack-ck-nac,Erba Mannheim,System Pack CK NAC,general,instrument,2,category technology,/products/erba-mannheim-system-pack-ck-nac/
 erba-mannheim-system-pack-ferritin-kit,Erba Mannheim,System Pack Ferritin Kit,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/erba-mannheim-system-pack-ferritin-kit/
 erba-mannheim-system-pack-gama-glutamyl-transferase-ggt,Erba Mannheim,System Pack Gama Glutamyl transferase (GGT),general,instrument,2,category technology,/products/erba-mannheim-system-pack-gama-glutamyl-transferase-ggt/
+erba-mannheim-system-pack-hdl-cholesterol-kit,Erba Mannheim,System Pack HDL Cholesterol Kit,general,reagent,2,category technology,/products/erba-mannheim-system-pack-hdl-cholesterol-kit/
 erba-mannheim-system-pack-iron-fe-125-kit,Erba Mannheim,System Pack Iron - FE 125 Kit,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/erba-mannheim-system-pack-iron-fe-125-kit/
 erba-mannheim-system-pack-norm-kit,Erba Mannheim,System Pack NORM Kit,clinical-chemistry,reagent,2,analyte sample_type,/products/erba-mannheim-system-pack-norm-kit/
 erba-mannheim-system-pack-path-kit,Erba Mannheim,System Pack Path Kit,clinical-chemistry,reagent,2,analyte sample_type,/products/erba-mannheim-system-pack-path-kit/
+erba-mannheim-system-pack-sgot-kit,Erba Mannheim,System Pack SGOT Kit,general,reagent,2,category technology,/products/erba-mannheim-system-pack-sgot-kit/
+erba-mannheim-system-pack-uibc-125,Erba Mannheim,System Pack UIBC 125,general,instrument,2,category technology,/products/erba-mannheim-system-pack-uibc-125/
+erba-mannheim-system-pack-urea-kit,Erba Mannheim,System Pack Urea Kit,general,reagent,2,category technology,/products/erba-mannheim-system-pack-urea-kit/
 erba-mannheim-system-pack-uric-acid-kit,Erba Mannheim,System Pack Uric Acid Kit,general,reagent,2,category technology,/products/erba-mannheim-system-pack-uric-acid-kit/
+erba-mannheim-system-pack-xl-multical-kit,Erba Mannheim,System Pack XL Multical Kit,clinical-chemistry,reagent,2,analyte sample_type,/products/erba-mannheim-system-pack-xl-multical-kit/
 essenlix-q-test-card,Essenlix,Q-Test card,rapid-tests,reagent,2,catalogue_no pack_size,/products/essenlix-q-test-card/
 eurolyser-crp,Eurolyser,CRP,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/eurolyser-crp/
 eurolyser-cystatin-c,Eurolyser,Cystatin C,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/eurolyser-cystatin-c/
@@ -1034,7 +1209,12 @@ fujifilm-ckmb-p-s,Fujifilm,CKMB-P S,clinical-chemistry,reagent,2,catalogue_no pa
 fujifilm-cpk-piiis,Fujifilm,CPK-PIIIS,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/fujifilm-cpk-piiis/
 fujifilm-cre-piiis,Fujifilm,CRE-PIIIS,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/fujifilm-cre-piiis/
 fujifilm-crp-siiis,Fujifilm,CRP-SIIIS,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/fujifilm-crp-siiis/
+fujifilm-dri-chem-slide-che-p,Fujifilm,DRI-CHEM SLIDE CHE-P,clinical-chemistry,,2,product_type analyte,/products/fujifilm-dri-chem-slide-che-p/
+fujifilm-dri-chem-slide-cpk-p-iii,Fujifilm,DRI-CHEM SLIDE CPK-P III,clinical-chemistry,,2,product_type analyte,/products/fujifilm-dri-chem-slide-cpk-p-iii/
+fujifilm-dri-chem-slide-hdl-c-p-iii-d,Fujifilm,DRI-CHEM SLIDE HDL-C-P III D,clinical-chemistry,,2,product_type catalogue_no,/products/fujifilm-dri-chem-slide-hdl-c-p-iii-d/
 fujifilm-dri-chem-slide-ip-p,Fujifilm,DRI-CHEM SLIDE IP-P,clinical-chemistry,,2,product_type analyte,/products/fujifilm-dri-chem-slide-ip-p/
+fujifilm-dri-chem-slide-lap-p,Fujifilm,DRI-CHEM SLIDE LAP-P,clinical-chemistry,,2,product_type analyte,/products/fujifilm-dri-chem-slide-lap-p/
+fujifilm-dri-chem-slide-tco2-p,Fujifilm,DRI-CHEM SLIDE TCO2-P,clinical-chemistry,,2,product_type analyte,/products/fujifilm-dri-chem-slide-tco2-p/
 fujifilm-ggt-piiis,Fujifilm,GGT-PIIIS,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/fujifilm-ggt-piiis/
 fujifilm-glu-piiis,Fujifilm,GLU-PIIIS,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/fujifilm-glu-piiis/
 fujifilm-got-piiis,Fujifilm,GOT-PIIIS,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/fujifilm-got-piiis/
@@ -1514,7 +1694,11 @@ tascom-uric-acid-ua,Tascom,Uric acid (UA),clinical-chemistry,reagent,2,catalogue
 thermo-fisher-7500-thermo-fisher-fast-real-time-pcr-system,Thermo Fisher,7500 Thermo Fisher Fast Real Time PCR System,molecular,instrument,2,analyte catalogue_no,/products/thermo-fisher-7500-thermo-fisher-fast-real-time-pcr-system/
 thermo-fisher-applied-biosystems-7500-fast-real-time-pcr-systems-spectral-calibration-kit-i,Thermo Fisher,Applied Biosystems 7500 Fast Real-Time PCR Systems Spectral Calibration Kit I,molecular,reagent,2,analyte sample_type,/products/thermo-fisher-applied-biosystems-7500-fast-real-time-pcr-systems-spectral-calibration-kit-i/
 thermo-fisher-applied-biosystems-7500-fast-real-time-pcr-systems-spectral-calibration-kit-ii,Thermo Fisher,Applied Biosystems 7500 Fast Real-Time PCR Systems Spectral Calibration Kit II,molecular,reagent,2,analyte sample_type,/products/thermo-fisher-applied-biosystems-7500-fast-real-time-pcr-systems-spectral-calibration-kit-ii/
+thermo-fisher-applied-biosystems-ampflstr-identifiler-plus-pcr-amplification-kit,Thermo Fisher,Applied Biosystems AmpFLSTR Identifiler Plus PCR Amplification Kit,molecular,reagent,2,analyte sample_type,/products/thermo-fisher-applied-biosystems-ampflstr-identifiler-plus-pcr-amplification-kit/
+thermo-fisher-applied-biosystems-globalfiler-express-pcr-amplification-kit,Thermo Fisher,Applied Biosystems GlobalFiler Express PCR Amplification Kit,molecular,reagent,2,analyte sample_type,/products/thermo-fisher-applied-biosystems-globalfiler-express-pcr-amplification-kit/
+thermo-fisher-applied-biosystems-globalfiler-iqc-pcr-amplification-kit,Thermo Fisher,Applied Biosystems GlobalFiler IQC PCR Amplification Kit,molecular,reagent,2,analyte sample_type,/products/thermo-fisher-applied-biosystems-globalfiler-iqc-pcr-amplification-kit/
 thermo-fisher-applied-biosystems-globalfiler-pcr-amplification-kit,Thermo Fisher,Applied Biosystems GlobalFiler PCR Amplification Kit,molecular,reagent,2,analyte sample_type,/products/thermo-fisher-applied-biosystems-globalfiler-pcr-amplification-kit/
+thermo-fisher-applied-biosystems-microamp-fast-optical-96-well-reaction-plate,Thermo Fisher,Applied Biosystems MicroAmp Fast Optical 96-Well Reaction Plate,general,consumable,2,category technology,/products/thermo-fisher-applied-biosystems-microamp-fast-optical-96-well-reaction-plate/
 thermo-fisher-applied-biosystems-region-of-interest-roi-and-background-plates-96-well,Thermo Fisher,"Applied Biosystems Region of Interest (ROI) and Background Plates, 96-well",general,consumable,2,category technology,/products/thermo-fisher-applied-biosystems-region-of-interest-roi-and-background-plates-96-well/
 thermo-fisher-human-egfr-full-length-elisa-kit,Thermo Fisher,Human EGFR (Full-length) ELISA Kit,immunoassays,reagent,2,analyte pack_size,/products/thermo-fisher-human-egfr-full-length-elisa-kit/
 thermo-fisher-human-rarres2-tig2-elisa-kit,Thermo Fisher,Human RARRES2/TIG2 ELISA Kit,immunoassays,reagent,2,analyte pack_size,/products/thermo-fisher-human-rarres2-tig2-elisa-kit/
@@ -1601,11 +1785,15 @@ wondfo-finecare-fia-meter-plus,Wondfo,Finecare FIA Meter Plus,immunoassays,instr
 zybio-exc-anti-streptolysin-o,Zybio,EXC Anti-streptolysin O,clinical-chemistry,,2,product_type analyte,/products/zybio-exc-anti-streptolysin-o/
 zybio-exc-apolipoprotein-a1,Zybio,EXC Apolipoprotein A1,clinical-chemistry,,2,product_type analyte,/products/zybio-exc-apolipoprotein-a1/
 zybio-exc-apolipoprotein-b,Zybio,EXC Apolipoprotein B,clinical-chemistry,,2,product_type analyte,/products/zybio-exc-apolipoprotein-b/
+zybio-exc-cholyglycine,Zybio,EXC Cholyglycine,clinical-chemistry,,2,product_type analyte,/products/zybio-exc-cholyglycine/
 zybio-exc-complement-3,Zybio,EXC Complement 3,clinical-chemistry,,2,product_type analyte,/products/zybio-exc-complement-3/
 zybio-exc-complement-4,Zybio,EXC Complement 4,clinical-chemistry,,2,product_type analyte,/products/zybio-exc-complement-4/
+zybio-exc-d-dimer,Zybio,EXC D-Dimer,clinical-chemistry,,2,product_type catalogue_no,/products/zybio-exc-d-dimer/
 zybio-exc-glutathione-reductase,Zybio,EXC Glutathione Reductase,clinical-chemistry,,2,product_type analyte,/products/zybio-exc-glutathione-reductase/
 zybio-exc-high-density-lipoprotein-cholesterol-hdl-c,Zybio,EXC High Density Lipoprotein Cholesterol (HDL-C),clinical-chemistry,,2,product_type sample_type,/products/zybio-exc-high-density-lipoprotein-cholesterol-hdl-c/
 zybio-exc-immunoglobulin-a,Zybio,EXC Immunoglobulin A,clinical-chemistry,,2,product_type analyte,/products/zybio-exc-immunoglobulin-a/
+zybio-exc-immunoglobulin-g,Zybio,EXC Immunoglobulin G,clinical-chemistry,,2,product_type analyte,/products/zybio-exc-immunoglobulin-g/
+zybio-exc-immunoglobulin-m,Zybio,EXC Immunoglobulin M,clinical-chemistry,,2,product_type analyte,/products/zybio-exc-immunoglobulin-m/
 zybio-exc-lipoprotein-a,Zybio,EXC Lipoprotein (a),clinical-chemistry,,2,product_type analyte,/products/zybio-exc-lipoprotein-a/
 zybio-exc-n-acetyl-beta-d-glucosaminidase,Zybio,EXC N-acetyl-Beta-D-glucosaminidase,clinical-chemistry,,2,product_type analyte,/products/zybio-exc-n-acetyl-beta-d-glucosaminidase/
 zybio-exc-prealbumin,Zybio,EXC Prealbumin,clinical-chemistry,,2,product_type analyte,/products/zybio-exc-prealbumin/
@@ -1705,7 +1893,9 @@ beckman-coulter-access-substrate-clia,Beckman Coulter,Access Substrate (CLIA),im
 beckman-coulter-access-t-uptake-clia,Beckman Coulter,Access T-Uptake (CLIA),immunoassays,reagent,1,analyte,/products/beckman-coulter-access-t-uptake-clia/
 beckman-coulter-access-thyroglobulin-ab-ii-clia,Beckman Coulter,Access Thyroglobulin Ab II (CLIA),immunoassays,reagent,1,analyte,/products/beckman-coulter-access-thyroglobulin-ab-ii-clia/
 beckman-coulter-access-vitamin-b12-clia,Beckman Coulter,Access Vitamin B12 (CLIA),immunoassays,reagent,1,analyte,/products/beckman-coulter-access-vitamin-b12-clia/
+beckman-coulter-alanine-transaminase,Beckman Coulter,Alanine Transaminase,clinical-chemistry,,1,product_type,/products/beckman-coulter-alanine-transaminase/
 beckman-coulter-alkaline-phosphatase,Beckman Coulter,Alkaline Phosphatase,clinical-chemistry,,1,product_type,/products/beckman-coulter-alkaline-phosphatase/
+beckman-coulter-alpha-amylase,Beckman Coulter,Alpha Amylase,clinical-chemistry,,1,product_type,/products/beckman-coulter-alpha-amylase/
 beckman-coulter-aspartate-aminotransferase,Beckman Coulter,Aspartate Aminotransferase,clinical-chemistry,,1,product_type,/products/beckman-coulter-aspartate-aminotransferase/
 beckman-coulter-au480-chemistry-analyzer,Beckman Coulter,AU480 Chemistry Analyzer,clinical-chemistry,instrument,1,analyte,/products/beckman-coulter-au480-chemistry-analyzer/
 beckman-coulter-calcium,Beckman Coulter,Calcium,clinical-chemistry,,1,product_type,/products/beckman-coulter-calcium/
@@ -1720,6 +1910,7 @@ beckman-coulter-hba1c,Beckman Coulter,HbA1C,clinical-chemistry,,1,product_type,/
 beckman-coulter-hdl-cholesterol,Beckman Coulter,HDL-Cholesterol,clinical-chemistry,,1,product_type,/products/beckman-coulter-hdl-cholesterol/
 beckman-coulter-hdl-cholesterol-calibrator,Beckman Coulter,HDL-Cholesterol Calibrator,clinical-chemistry,reagent,1,sample_type,/products/beckman-coulter-hdl-cholesterol-calibrator/
 beckman-coulter-ldl-cholesterol-calibrator,Beckman Coulter,LDL Cholesterol Calibrator,clinical-chemistry,reagent,1,sample_type,/products/beckman-coulter-ldl-cholesterol-calibrator/
+becton-dickinson-sodium-fluoride-3mg-na2-edta-6mg-blood-collection-tube,Becton Dickinson,"Sodium fluoride 3mg , Na2 EDTA 6mg Blood Collection Tube",diabetes,consumable,1,pack_size,/products/becton-dickinson-sodium-fluoride-3mg-na2-edta-6mg-blood-collection-tube/
 becton-dickinson-veritor-plus,Becton Dickinson,Veritor Plus,clinical-chemistry,instrument,1,catalogue_no,/products/becton-dickinson-veritor-plus/
 bilimetrix-bilistick,Bilimetrix,Bilistick,clinical-chemistry,instrument,1,catalogue_no,/products/bilimetrix-bilistick/
 bio-rad-cfx-duet-real-time-pcr-system,Bio-Rad,CFX Duet Real-Time PCR System,molecular,instrument,1,analyte,/products/bio-rad-cfx-duet-real-time-pcr-system/
@@ -1797,10 +1988,19 @@ cepheid-genexpert-iv,Cepheid,GeneXpert IV,molecular,instrument,1,catalogue_no,/p
 cepheid-genexpert-iv-4-module-instrument,Cepheid,GeneXpert IV 4 Module Instrument,molecular,instrument,1,analyte,/products/cepheid-genexpert-iv-4-module-instrument/
 cepheid-mrsa-sa-ssti,Cepheid,MRSA/SA SSTI,molecular,reagent,1,pack_size,/products/cepheid-mrsa-sa-ssti/
 cepheid-sa-nasal-complete,Cepheid,SA Nasal Complete,molecular,reagent,1,pack_size,/products/cepheid-sa-nasal-complete/
+cepheid-xpert-bcr-abl-ultra,Cepheid,Xpert BCR-ABL Ultra,molecular,,1,product_type,/products/cepheid-xpert-bcr-abl-ultra/
+cepheid-xpert-c-difficile,Cepheid,Xpert C. difficile,molecular,,1,product_type,/products/cepheid-xpert-c-difficile/
+cepheid-xpert-ct-ng,Cepheid,Xpert CT/NG,molecular,,1,product_type,/products/cepheid-xpert-ct-ng/
+cepheid-xpert-ev,Cepheid,Xpert EV,molecular,,1,product_type,/products/cepheid-xpert-ev/
 cepheid-xpert-hbv-viral-load,Cepheid,Xpert HBV Viral Load,molecular,,1,product_type,/products/cepheid-xpert-hbv-viral-load/
 cepheid-xpert-hcv-viral-load,Cepheid,Xpert HCV Viral Load,molecular,,1,product_type,/products/cepheid-xpert-hcv-viral-load/
+cepheid-xpert-hiv-1-qual,Cepheid,Xpert HIV-1 Qual,molecular,,1,product_type,/products/cepheid-xpert-hiv-1-qual/
 cepheid-xpert-hiv-1-viral-load,Cepheid,Xpert HIV-1 Viral Load,molecular,,1,product_type,/products/cepheid-xpert-hiv-1-viral-load/
 cepheid-xpert-hpv,Cepheid,Xpert HPV,molecular,,1,product_type,/products/cepheid-xpert-hpv/
+cepheid-xpert-mrsa-sa-blood-culture,Cepheid,Xpert MRSA/SA Blood Culture,molecular,,1,product_type,/products/cepheid-xpert-mrsa-sa-blood-culture/
+cepheid-xpert-sa-nasal-complete,Cepheid,Xpert SA Nasal Complete,molecular,,1,product_type,/products/cepheid-xpert-sa-nasal-complete/
+cepheid-xpert-vana-vanb,Cepheid,Xpert vanA/vanB,molecular,,1,product_type,/products/cepheid-xpert-vana-vanb/
+cepheid-xpert-xpress-flu-rsv,Cepheid,Xpert Xpress Flu/RSV,molecular,,1,product_type,/products/cepheid-xpert-xpress-flu-rsv/
 cepheid-xpress-cov-2-flu-rsv-plus,Cepheid,Xpress CoV-2/Flu/RSV plus,molecular,reagent,1,pack_size,/products/cepheid-xpress-cov-2-flu-rsv-plus/
 cepheid-xpress-gbs,Cepheid,Xpress GBS,molecular,reagent,1,pack_size,/products/cepheid-xpress-gbs/
 cepheid-xpress-strep-a,Cepheid,Xpress Strep A,molecular,reagent,1,pack_size,/products/cepheid-xpress-strep-a/
@@ -1839,6 +2039,7 @@ ekf-diagnostics-biosen-glucose-lactate-system-solution,EKF Diagnostics,Biosen Gl
 ekf-diagnostics-hemo-control-hemoglobin-analyzer,EKF Diagnostics,Hemo Control Hemoglobin Analyzer,hematology,reagent,1,pack_size,/products/ekf-diagnostics-hemo-control-hemoglobin-analyzer/
 ekf-diagnostics-lactate-scout-sport,EKF Diagnostics,Lactate Scout Sport,clinical-chemistry,instrument,1,catalogue_no,/products/ekf-diagnostics-lactate-scout-sport/
 ekf-diagnostics-quo-lab-a1c,EKF Diagnostics,Quo-Lab A1c,diabetes,instrument,1,catalogue_no,/products/ekf-diagnostics-quo-lab-a1c/
+eppendorf-pcr-tubes,Eppendorf,PCR Tubes,molecular,consumable,1,pack_size,/products/eppendorf-pcr-tubes/
 erba-mannheim-chem-5x-clinical-chemistry-analyzer,Erba Mannheim,CHEM 5X Clinical Chemistry Analyzer,clinical-chemistry,instrument,1,analyte,/products/erba-mannheim-chem-5x-clinical-chemistry-analyzer/
 erba-mannheim-chem-6-semi-automated-clinical-chemistry-analyzer,Erba Mannheim,CHEM 6 Semi-automated Clinical Chemistry Analyzer,clinical-chemistry,instrument,1,analyte,/products/erba-mannheim-chem-6-semi-automated-clinical-chemistry-analyzer/
 erba-mannheim-chem-7-first-class-semi-automated-clinical-chemistry-analyzer,Erba Mannheim,CHEM 7 First class semi automated clinical chemistry Analyzer,clinical-chemistry,instrument,1,analyte,/products/erba-mannheim-chem-7-first-class-semi-automated-clinical-chemistry-analyzer/
@@ -1863,18 +2064,31 @@ eurolyser-cube-s,Eurolyser,Cube-S,clinical-chemistry,instrument,1,catalogue_no,/
 exias-medical-exias-e-1,Exias Medical,Exias e|1,clinical-chemistry,instrument,1,catalogue_no,/products/exias-medical-exias-e-1/
 flashdx-1000-e,FlashDx,1000-E,molecular,instrument,1,catalogue_no,/products/flashdx-1000-e/
 fujifilm-dri-chem-fdc-nx700i,Fujifilm,Dri-Chem FDC NX700i,clinical-chemistry,instrument,1,catalogue_no,/products/fujifilm-dri-chem-fdc-nx700i/
+fujifilm-dri-chem-slide-alb-p,Fujifilm,DRI-CHEM SLIDE ALB-P,clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-alb-p/
+fujifilm-dri-chem-slide-alp-p-iii,Fujifilm,DRI-CHEM SLIDE ALP-P III,clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-alp-p-iii/
 fujifilm-dri-chem-slide-amyl-p-iii,Fujifilm,DRI-CHEM SLIDE AMYL-P III,clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-amyl-p-iii/
 fujifilm-dri-chem-slide-auto-tips,Fujifilm,DRI-CHEM SLIDE AUTO TIPS,clinical-chemistry,consumable,1,pack_size,/products/fujifilm-dri-chem-slide-auto-tips/
+fujifilm-dri-chem-slide-bun-p-iii,Fujifilm,DRI-CHEM SLIDE BUN-P III,clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-bun-p-iii/
 fujifilm-dri-chem-slide-ca-p-iii,Fujifilm,DRI-CHEM SLIDE CA-P III,clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-ca-p-iii/
+fujifilm-dri-chem-slide-ckmb-p,Fujifilm,DRI-CHEM SLIDE CKMB-P,clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-ckmb-p/
 fujifilm-dri-chem-slide-cre-p-iii,Fujifilm,DRI-CHEM SLIDE CRE-P III,clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-cre-p-iii/
+fujifilm-dri-chem-slide-crp-s-iii,Fujifilm,DRI-CHEM SLIDE CRP-S III,clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-crp-s-iii/
 fujifilm-dri-chem-slide-dbil-p-ii,Fujifilm,DRI-CHEM SLIDE DBIL-P II,clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-dbil-p-ii/
+fujifilm-dri-chem-slide-ggt-p-iii-biochemistry-reagent-kit,Fujifilm,DRI-CHEM SLIDE GGT-P III Biochemistry Reagent Kit,immunoassays,reagent,1,catalogue_no,/products/fujifilm-dri-chem-slide-ggt-p-iii-biochemistry-reagent-kit/
 fujifilm-dri-chem-slide-glu-p-iii,Fujifilm,DRI-CHEM SLIDE GLU-P III,clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-glu-p-iii/
 fujifilm-dri-chem-slide-got-ast-p-iii,Fujifilm,DRI-CHEM SLIDE GOT/AST-P III,clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-got-ast-p-iii/
+fujifilm-dri-chem-slide-gpt-alt-p-iii,Fujifilm,DRI-CHEM SLIDE GPT/ALT-P III,clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-gpt-alt-p-iii/
 fujifilm-dri-chem-slide-ldh-p-iii,Fujifilm,DRI-CHEM SLIDE LDH-P III,clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-ldh-p-iii/
+fujifilm-dri-chem-slide-lip-p,Fujifilm,DRI-CHEM SLIDE LIP-P,clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-lip-p/
 fujifilm-dri-chem-slide-mg-p-iii,Fujifilm,DRI-CHEM SLIDE Mg-P III,clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-mg-p-iii/
 fujifilm-dri-chem-slide-na-k-cl,Fujifilm,DRI-CHEM SLIDE Na-K-Cl,clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-na-k-cl/
+fujifilm-dri-chem-slide-nh3-p-ii,Fujifilm,DRI-CHEM SLIDE NH3-P II,clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-nh3-p-ii/
 fujifilm-dri-chem-slide-nh3-wii-for-whole-blood-and-nh3-pii-for-plasma,Fujifilm,DRI-CHEM SLIDE NH3-WII (for whole blood) and NH3-PII (for plasma),clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-nh3-wii-for-whole-blood-and-nh3-pii-for-plasma/
 fujifilm-dri-chem-slide-tbil-p-iii,Fujifilm,DRI-CHEM SLIDE TBIL-P III,clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-tbil-p-iii/
+fujifilm-dri-chem-slide-tcho-p-iii,Fujifilm,DRI-CHEM SLIDE TCHO-P III,clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-tcho-p-iii/
+fujifilm-dri-chem-slide-tg-p-iii,Fujifilm,DRI-CHEM SLIDE TG-P III,clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-tg-p-iii/
+fujifilm-dri-chem-slide-tp-p-iii,Fujifilm,DRI-CHEM SLIDE TP-P III,clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-tp-p-iii/
+fujifilm-dri-chem-slide-ua-p-iii,Fujifilm,DRI-CHEM SLIDE UA-P III,clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-ua-p-iii/
 getein-1100-immunofluorescence-quantitative-analyzer,Getein,1100 Immunofluorescence Quantitative Analyzer,immunoassays,instrument,1,analyte,/products/getein-1100-immunofluorescence-quantitative-analyzer/
 getein-1160-immunofluorescence-quantitative-analyzer,Getein,1160 Immunofluorescence Quantitative Analyzer,immunoassays,instrument,1,analyte,/products/getein-1160-immunofluorescence-quantitative-analyzer/
 getein-1180-immunofluorescence-quantitative-analyzer,Getein,1180 Immunofluorescence Quantitative Analyzer,immunoassays,instrument,1,analyte,/products/getein-1180-immunofluorescence-quantitative-analyzer/
@@ -2205,6 +2419,9 @@ thermo-fisher-accula-system-rapid-reliable-rt-pcr-test,Thermo Fisher,Accula Syst
 thermo-fisher-applied-biosystems-agpath-id-one-step-rt-pcr-reagents,Thermo Fisher,Applied Biosystems AgPath-ID One-Step RT-PCR Reagents,molecular,reagent,1,analyte,/products/thermo-fisher-applied-biosystems-agpath-id-one-step-rt-pcr-reagents/
 thermo-fisher-invitrogen-human-tnf-alpha-elisa-kit,Thermo Fisher,Invitrogen Human TNF alpha ELISA Kit,immunoassays,reagent,1,analyte,/products/thermo-fisher-invitrogen-human-tnf-alpha-elisa-kit/
 thermo-fisher-invitrogen-malondialdehyde-competitive-elisa-kit,Thermo Fisher,Invitrogen Malondialdehyde Competitive ELISA Kit,immunoassays,reagent,1,analyte,/products/thermo-fisher-invitrogen-malondialdehyde-competitive-elisa-kit/
+thermo-fisher-invitrogen-superscript-iii-one-step-rt-pcr-system-with-platinum-taq-dna-polymerase,Thermo Fisher,Invitrogen SuperScript III One-Step RT-PCR System with Platinum Taq DNA Polymerase,molecular,instrument,1,analyte,/products/thermo-fisher-invitrogen-superscript-iii-one-step-rt-pcr-system-with-platinum-taq-dna-polymerase/
+thermo-fisher-invitrogen-superscript-iv-one-step-rt-pcr-system-with-platinum-taq-dna-polymerase,Thermo Fisher,Invitrogen SuperScript IV One-Step RT-PCR System with Platinum Taq DNA Polymerase,molecular,instrument,1,analyte,/products/thermo-fisher-invitrogen-superscript-iv-one-step-rt-pcr-system-with-platinum-taq-dna-polymerase/
+thermo-fisher-invitrogen-superscript-iv-uniprime-one-step-rt-pcr-system,Thermo Fisher,Invitrogen SuperScript IV UniPrime One-Step RT-PCR System,molecular,instrument,1,analyte,/products/thermo-fisher-invitrogen-superscript-iv-uniprime-one-step-rt-pcr-system/
 thermo-fisher-invitrogen-superscript-one-step-rt-pcr-system-with-platinum-taq-dna-polymerase,Thermo Fisher,Invitrogen SuperScript One-Step RT-PCR System with Platinum Taq DNA Polymerase,molecular,instrument,1,analyte,/products/thermo-fisher-invitrogen-superscript-one-step-rt-pcr-system-with-platinum-taq-dna-polymerase/
 thermo-fisher-proflex-3-x-32-well-pcr-system,Thermo Fisher,ProFlex 3 x 32-well PCR System,molecular,instrument,1,analyte,/products/thermo-fisher-proflex-3-x-32-well-pcr-system/
 thermo-fisher-proflex-96-well-pcr-system,Thermo Fisher,ProFlex 96-well PCR System,molecular,instrument,1,analyte,/products/thermo-fisher-proflex-96-well-pcr-system/
@@ -2235,6 +2452,7 @@ werfen-hemochron-signature-elite,Werfen,Hemochron Signature Elite,clinical-chemi
 werfen-verifynow,Werfen,VerifyNow,coagulation,instrument,1,catalogue_no,/products/werfen-verifynow/
 wondfo-accre-8-automatic-chemiluminescence-immunoassay-analyzer,Wondfo,Accre 8 Automatic Chemiluminescence Immunoassay Analyzer,immunoassays,instrument,1,analyte,/products/wondfo-accre-8-automatic-chemiluminescence-immunoassay-analyzer/
 wondfo-activated-clotting-time-act,Wondfo,Activated Clotting Time (ACT),coagulation,,1,product_type,/products/wondfo-activated-clotting-time-act/
+wondfo-activated-partial-thromboplastin-aptt,Wondfo,Activated Partial Thromboplastin (APTT),coagulation,,1,product_type,/products/wondfo-activated-partial-thromboplastin-aptt/
 wondfo-blood-gas-analyzer-test-card,Wondfo,Blood Gas Analyzer Test Card,blood-gas,reagent,1,pack_size,/products/wondfo-blood-gas-analyzer-test-card/
 wondfo-finecare-cys-c-rapid-quantitative-test,Wondfo,Finecare Cys C Rapid Quantitative Test,immunoassays,reagent,1,analyte,/products/wondfo-finecare-cys-c-rapid-quantitative-test/
 wondfo-finecare-fia-meter-ii-plus-se,Wondfo,Finecare FIA Meter II Plus SE,immunoassays,instrument,1,analyte,/products/wondfo-finecare-fia-meter-ii-plus-se/
@@ -2242,32 +2460,39 @@ wondfo-finecare-fia-meter-iii-plus,Wondfo,Finecare FIA Meter III Plus,immunoassa
 wondfo-finecare-t4-rapid-quantitative-test,Wondfo,Finecare T4 Rapid Quantitative Test,immunoassays,reagent,1,sample_type,/products/wondfo-finecare-t4-rapid-quantitative-test/
 wondfo-finecare-vitamin-b12-rapid-quantitative-test,Wondfo,Finecare Vitamin B12 Rapid Quantitative Test,immunoassays,reagent,1,analyte,/products/wondfo-finecare-vitamin-b12-rapid-quantitative-test/
 wondfo-optical-coagulation-analyzer,Wondfo,Optical Coagulation Analyzer,coagulation,instrument,1,analyte,/products/wondfo-optical-coagulation-analyzer/
+wondfo-prothrombin-time-pt,Wondfo,Prothrombin Time (PT),coagulation,,1,product_type,/products/wondfo-prothrombin-time-pt/
 wondfo-thrombin-time-tt,Wondfo,Thrombin Time (TT),rapid-tests,reagent,1,analyte,/products/wondfo-thrombin-time-tt/
 wondfo-ucare-6000-automatic-blood-gas-analyzer,Wondfo,Ucare-6000 Automatic Blood Gas Analyzer,blood-gas,instrument,1,catalogue_no,/products/wondfo-ucare-6000-automatic-blood-gas-analyzer/
 zybio-exc-200-automated-desktop-analyzer,Zybio,EXC 200 Automated Desktop Analyzer,clinical-chemistry,instrument,1,analyte,/products/zybio-exc-200-automated-desktop-analyzer/
 zybio-exc-400-automated-floor-standing-analyzer,Zybio,EXC 400 Automated Floor Standing Analyzer,clinical-chemistry,instrument,1,analyte,/products/zybio-exc-400-automated-floor-standing-analyzer/
+zybio-exc-alanine-aminotransferase-alt,Zybio,EXC Alanine Aminotransferase (ALT),clinical-chemistry,,1,product_type,/products/zybio-exc-alanine-aminotransferase-alt/
+zybio-exc-albumin-alb,Zybio,EXC Albumin (ALB),clinical-chemistry,,1,product_type,/products/zybio-exc-albumin-alb/
 zybio-exc-alkaline-phosphatase-alp,Zybio,EXC Alkaline Phosphatase ( ALP),clinical-chemistry,,1,product_type,/products/zybio-exc-alkaline-phosphatase-alp/
+zybio-exc-alpha-amylase,Zybio,EXC Alpha-Amylase,clinical-chemistry,,1,product_type,/products/zybio-exc-alpha-amylase/
 zybio-exc-aspartate-aminotransferase-ast,Zybio,EXC Aspartate Aminotransferase (AST),clinical-chemistry,,1,product_type,/products/zybio-exc-aspartate-aminotransferase-ast/
 zybio-exc-c-reactive-protein,Zybio,EXC C-reactive Protein,clinical-chemistry,,1,product_type,/products/zybio-exc-c-reactive-protein/
 zybio-exc-calcium,Zybio,EXC Calcium,clinical-chemistry,,1,product_type,/products/zybio-exc-calcium/
 zybio-exc-creatine-kinase,Zybio,EXC Creatine Kinase,clinical-chemistry,,1,product_type,/products/zybio-exc-creatine-kinase/
 zybio-exc-creatinine-crea,Zybio,EXC Creatinine (CREA),clinical-chemistry,,1,product_type,/products/zybio-exc-creatinine-crea/
 zybio-exc-cystatin-c,Zybio,EXC Cystatin C,clinical-chemistry,,1,product_type,/products/zybio-exc-cystatin-c/
-zybio-exc-d-dimer,Zybio,EXC D-Dimer,clinical-chemistry,,1,product_type,/products/zybio-exc-d-dimer/
 zybio-exc-direct-bilirubin-dbil,Zybio,EXC Direct Bilirubin (DBIL),clinical-chemistry,,1,product_type,/products/zybio-exc-direct-bilirubin-dbil/
 zybio-exc-ferritin,Zybio,EXC Ferritin,clinical-chemistry,,1,product_type,/products/zybio-exc-ferritin/
 zybio-exc-high-sensitive-c-reactive-protein,Zybio,EXC High sensitive C-Reactive Protein,clinical-chemistry,,1,product_type,/products/zybio-exc-high-sensitive-c-reactive-protein/
 zybio-exc-immunoglobulin-e,Zybio,EXC Immunoglobulin E,clinical-chemistry,,1,product_type,/products/zybio-exc-immunoglobulin-e/
+zybio-exc-inorganic-phosphorus,Zybio,EXC Inorganic Phosphorus,clinical-chemistry,,1,product_type,/products/zybio-exc-inorganic-phosphorus/
 zybio-exc-lactate-dehydrogenase,Zybio,EXC Lactate Dehydrogenase,clinical-chemistry,,1,product_type,/products/zybio-exc-lactate-dehydrogenase/
 zybio-exc-lactate-dehydrogenase-isoenzyme-1,Zybio,EXC Lactate Dehydrogenase Isoenzyme 1,clinical-chemistry,,1,product_type,/products/zybio-exc-lactate-dehydrogenase-isoenzyme-1/
 zybio-exc-lipase,Zybio,EXC Lipase,clinical-chemistry,,1,product_type,/products/zybio-exc-lipase/
+zybio-exc-low-density-lipoprotein-cholesterol,Zybio,EXC Low Density Lipoprotein Cholesterol,clinical-chemistry,,1,product_type,/products/zybio-exc-low-density-lipoprotein-cholesterol/
 zybio-exc-magnesium,Zybio,EXC Magnesium,clinical-chemistry,,1,product_type,/products/zybio-exc-magnesium/
 zybio-exc-microalbuminuria,Zybio,EXC Microalbuminuria,clinical-chemistry,,1,product_type,/products/zybio-exc-microalbuminuria/
 zybio-exc-myoglobin-myo,Zybio,EXC Myoglobin (MYO),clinical-chemistry,,1,product_type,/products/zybio-exc-myoglobin-myo/
 zybio-exc-serum-amyloid-a,Zybio,EXC Serum Amyloid A,clinical-chemistry,,1,product_type,/products/zybio-exc-serum-amyloid-a/
 zybio-exc-total-cholesterol-chol,Zybio,EXC Total Cholesterol (CHOL),clinical-chemistry,,1,product_type,/products/zybio-exc-total-cholesterol-chol/
 zybio-exc-total-protein-tp,Zybio,EXC Total Protein (TP),clinical-chemistry,,1,product_type,/products/zybio-exc-total-protein-tp/
+zybio-exc-triglycerides-tg,Zybio,EXC Triglycerides(TG),clinical-chemistry,,1,product_type,/products/zybio-exc-triglycerides-tg/
 zybio-exc-urea,Zybio,EXC Urea,clinical-chemistry,,1,product_type,/products/zybio-exc-urea/
+zybio-exc-uric-acid-ua,Zybio,EXC Uric acid (UA),clinical-chemistry,,1,product_type,/products/zybio-exc-uric-acid-ua/
 zybio-exi-anti-thyroglobulin-anti-tg-clia,Zybio,EXI Anti-Thyroglobulin [Anti-TG] (CLIA),immunoassays,reagent,1,analyte,/products/zybio-exi-anti-thyroglobulin-anti-tg-clia/
 zybio-exi-anti-tpo-clia,Zybio,EXI Anti-TPO (CLIA),immunoassays,reagent,1,analyte,/products/zybio-exi-anti-tpo-clia/
 zybio-exi-cyfra-21-1-clia,Zybio,EXI CYFRA 21-1 (CLIA),immunoassays,reagent,1,analyte,/products/zybio-exi-cyfra-21-1-clia/

@@ -6,14 +6,14 @@ Generated 2026-11-25 from `data/products.json`.
 
 | Metric | Value |
 | --- | ---: |
-| Listings (records) | 3036 |
-| Canonical products | 2947 |
-| Flagged duplicate listings (hidden, redirect) | 89 |
-| Duplicate groups | 84 |
+| Listings (records) | 3279 |
+| Canonical products | 3184 |
+| Flagged duplicate listings (hidden, redirect) | 95 |
+| Duplicate groups | 90 |
 | Cross-source merges | 25 |
-| Complete listings (all required fields) | 652 (22.1%) |
-| Incomplete listings | 2295 (77.9%) |
-| Complete on core facts (ignoring catalogue no. & pack size) | 1828 (62.0%) |
+| Complete listings (all required fields) | 664 (20.9%) |
+| Incomplete listings | 2520 (79.1%) |
+| Complete on core facts (ignoring catalogue no. & pack size) | 1850 (58.1%) |
 | Brands in catalogue | 118 |
 | Brands verified (domain resolves or confirmed by web search) | 109 |
 | Brands not verified | 2 — Keul, Jungbrunnen |
@@ -34,27 +34,28 @@ Each brand is mapped to its official website domain in `pipeline/config/brands.y
 | Snibe | 177 | snibe.com | ✅ verified (domain resolves) |  |
 | Boditech | 161 | boditech.co.kr | ✅ verified (domain resolves) |  |
 | SD Biosensor | 152 | sdbiosensor.com | ✅ verified (domain resolves) |  |
-| Qiagen | 121 | qiagen.com | ✅ verified (domain resolves) |  |
-| Mindray | 115 | mindray.com | ✅ verified (domain resolves) |  |
-| Arkray | 113 | arkray.co.jp | ✅ verified (domain resolves) |  |
-| Zybio | 112 | zybio.com | ✅ verified (domain resolves) |  |
-| Roche | 109 | roche.com | ✅ verified (domain resolves) |  |
+| Qiagen | 135 | qiagen.com | ✅ verified (domain resolves) |  |
+| Thermo Fisher | 131 | thermofisher.com | ✅ verified (domain resolves) |  |
+| Arkray | 130 | arkray.co.jp | ✅ verified (domain resolves) |  |
+| Zybio | 125 | zybio.com | ✅ verified (domain resolves) |  |
+| Mindray | 121 | mindray.com | ✅ verified (domain resolves) |  |
+| Erba Mannheim | 115 | erbamannheim.com | ✅ verified (domain resolves) |  |
+| Roche | 111 | roche.com | ✅ verified (domain resolves) |  |
 | Calbiotech | 98 | calbiotech.com | ✅ verified (domain resolves) |  |
-| Thermo Fisher | 80 | thermofisher.com | ✅ verified (domain resolves) |  |
-| Erba Mannheim | 70 | erbamannheim.com | ✅ verified (domain resolves) |  |
-| Horiba | 67 | horiba.com | ✅ verified (domain resolves) |  |
-| Beckman Coulter | 65 | beckmancoulter.com | ✅ verified (domain resolves) |  |
+| Horiba | 70 | horiba.com | ✅ verified (domain resolves) |  |
+| Beckman Coulter | 67 | beckmancoulter.com | ✅ verified (domain resolves) |  |
+| Cepheid | 62 | cepheid.com | ✅ verified (domain resolves) |  |
+| Fujifilm | 61 | fujifilm.com | ✅ verified (domain resolves) |  |
+| Siemens Healthineers | 59 | siemens-healthineers.com | ✅ verified (domain resolves) |  |
 | Getein | 58 | getein.com.cn | ✅ verified (domain resolves) |  |
-| Wondfo | 54 | wondfo.com | ✅ verified (domain resolves) |  |
-| Siemens Healthineers | 54 | siemens-healthineers.com | ✅ verified (domain resolves) |  |
-| Acon | 50 | aconlabs.com | ✅ verified (domain resolves) |  |
+| Wondfo | 56 | wondfo.com | ✅ verified (domain resolves) |  |
+| Acon | 52 | aconlabs.com | ✅ verified (domain resolves) |  |
 | CTK Biotech | 49 | ctkbiotech.com | ✅ verified (domain resolves) |  |
-| Fujifilm | 44 | fujifilm.com | ✅ verified (domain resolves) |  |
-| Cepheid | 43 | cepheid.com | ✅ verified (domain resolves) |  |
+| Becton Dickinson | 49 | bd.com | ✅ verified (domain resolves) |  |
+| Bio-Rad | 45 | bio-rad.com | ✅ verified (domain resolves) |  |
 | Vedalab | 43 | vedalab.com | ✅ verified (domain resolves) |  |
 | HemoCue | 42 | hemocue.com | ✅ verified (domain resolves) |  |
 | QuidelOrtho | 41 | quidelortho.com | ✅ verified (domain resolves) |  |
-| Bio-Rad | 38 | bio-rad.com | ✅ verified (domain resolves) |  |
 | Werfen | 35 | werfen.com | ✅ verified (domain resolves) |  |
 | EDAN | 31 | edan.com | ✅ verified (domain resolves) |  |
 | Molbio | 30 | molbiodiagnostics.com | ✅ verified (domain resolves) |  |
@@ -68,7 +69,6 @@ Each brand is mapped to its official website domain in `pipeline/config/brands.y
 | InBios | 21 | inbios.com | ✅ verified (domain resolves) |  |
 | Hitado | 20 | hitado.de | ✅ verified (domain resolves) |  |
 | Sysmex | 20 | sysmex.com | ✅ verified (domain resolves) |  |
-| Becton Dickinson | 18 | bd.com | ✅ verified (domain resolves) |  |
 | Coyote | 17 | coyotebio.com | ✅ verified (domain resolves) |  |
 | Medtronic | 17 | medtronic.com | ✅ verified (domain resolves) |  |
 | Micropoint | 15 | micropointbio.com | ✅ verified (domain resolves) |  |
@@ -138,7 +138,7 @@ Each brand is mapped to its official website domain in `pipeline/config/brands.y
 
 Brands used by products but missing from brands.yaml: ALTA, Awareness Technology, Eppendorf, Leica BIOSYSTEM, Medica, Philips, Spinreact
 
-Stated brands not in brands.yaml (passed through): Awareness Technology (17), Medica (4), Leica BIOSYSTEM (4), Eppendorf (4), Philips (4), Spinreact (1), ALTA (1)
+Stated brands not in brands.yaml (passed through): Awareness Technology (17), Eppendorf (5), Medica (4), Leica BIOSYSTEM (4), Philips (4), Spinreact (1), ALTA (1)
 
 Products with no brand: Eppendorf Mastercycler X50 - PCR Thermocycler, Qiagenq PCR 384-well plate white, skirted, Eppendorf epMotion 5070 MultiCon PCR Solution, Hepa card, Standrard F HbA1c, Philips EverFlo 5 LPM Oxygen Concentrator, Quantstudio 3 Real Time Pcr System 0.2 mL 96 wells, QIAquant 96 Real time PCR System, LightCycler 96 Real-Time PCR System, Applied Biosystem ProFlex 3 x 32-well PCR System, Philips SimplyGo Mini Portable Oxygen Concentrator, Philips Trilogy EV300 Ventilator, ALTA Nucleic Acid extractor, Forma Steri-Cult CO2 Incubators, Strandard F U-Albumin FIA, KingFisher Flex Purification System King Fisher with 96 PCR Head, SimpliAmp Thermal Cycler
 
@@ -151,6 +151,7 @@ Name-derived brand differs from the brand the source stated (name wins):
 - Calbiotech Free Testosterone ELISA: **Calbiotech** (source: InBios)
 - ZYBIO EXR 25-OH-VITAMIN-D: **Zybio** (source: Serum/ Plasma/WB)
 - ZYBIO EXR T3: **Zybio** (source: Serum/ Plasma/ WB)
+- BioRad Mini-PROTEANTGX Precast Protein Gels: **Bio-Rad** (source: Refer Below)
 - Mindray CLIA Hormone Calibrator: **Mindray** (source: Calibrator)
 - Mindray CLIA Thyroid Calibrator: **Mindray** (source: Calibrator)
 - ichroma Beta-HCG Test: **Boditech** (source: Boditech Med Incorporated)
@@ -168,15 +169,17 @@ Name-derived brand differs from the brand the source stated (name wins):
 
 Automatic fixes applied in `build-data`, and items left for review.
 
-- **Catalogue-number conflicts** (same brand + number on clearly different products — number withheld on all of them until corrected via `overrides.yaml`): 32
+- **Catalogue-number conflicts** (same brand + number on clearly different products — number withheld on all of them until corrected via `overrides.yaml`): 35
   - `55071` — QuidelOrtho Quidel's Triage System / QuidelOrtho Triage Meter Pro
   - `12011319` — Bio-Rad CFX Opus 96 Real-Time PCR System / Bio-Rad CFX Opus 96 Real-Time PCR Instrument 0.2 mL 96 Wells
   - `GXXVI-16-D-10C, GXXVI-16-L-10C` — Cepheid GeneXpertn XVI 16 Module Instrument / Cepheid GeneXpert XVI 16 Module Instrument
+  - `15809736` — Fujifilm DRI-CHEM SLIDE HDL-C-P III D / Fujifilm DRI-CHEM SLIDE GGT-P III Biochemistry Reagent Kit
   - `BS-230` — Mindray Clinical Chemistry Analyzer BS-230 / Mindray Clinical Chemistry Analyzer BS-450
   - `BC-5150` — Mindray Auto Hematology Analyzer BC-5150 / Mindray Auto Hematology Analyzer BC-6000
   - `G136-142` — Acon On Call MultiPro ACR / Acon On Call MultiPro CRP
   - `130270001M` — Snibe MAGLUMI GH (CLIA) / Snibe MAGLUMI HA (CLIA)
   - `130211003M` — Snibe MAGLUMI Osteocalcin (CLIA) / Snibe MAGLUMI PAPP-A (CLIA)
+  - `A27828` — Thermo Fisher Applied Biosystems MagMAX Dx Prefilled Viral/Pathogen Nucleic Acid Isolation Kit / Thermo Fisher Applied Biosystems MagMAX mirVana Total RNA Isolation Kit
   - `304-08POR` — Medtronic HMS Plus Cartridges - Gold - 1.5-4.0 mg/kg / Medtronic HMS Plus Cartridges - Heparin Dose Response (HDR) - 6-Channel
   - `10500566000, 10500567700` — Mindray B-type natriuretic peptide (CLIA) / Mindray Cancer Antigen 125 (CLIA)
   - `10500566900, 10500568600` — Mindray Neuron-specific enolase (CLIA) / Mindray Parathyroid hormone (CLIA)
@@ -188,6 +191,7 @@ Automatic fixes applied in `build-data`, and items left for review.
   - `1300015831` — Horiba ABX Micro es 60 / Horiba ABX Micros ES60
   - `1300036318` — Horiba Yumizen G800 / Horiba Yumizen G800h
   - `44FK30` — Abbott Bioline CHOLERA Ag 01/0139 / Abbott BINAXNOW INFLUENZA A&B CARD
+  - `D-DIMER` — Zybio EXC D-Dimer / Zybio EXT D-Dimer Reagent
   - `DCT-A102` — Abbott ABON Urine Test Drug Screen Cassette / Abbott ABON COT One Step Cotinine Test Device Urine
   - `4000073828` — Horiba Anti-TPO (CLIA) / Horiba hs-Troponin I (CLIA)
   - `R0063C` — CTK Biotech OnSite Duo Dengue Ag IgG IgM Rapid Test / CTK Biotech OnSite Dengue Ag Rapid Test / CTK Biotech OnSite Dengue Ag Rapid Test CE
@@ -209,12 +213,12 @@ Automatic fixes applied in `build-data`, and items left for review.
   - MG Assay: removed urine
   - MG Assay: removed urine
   - ResistancePlus MG FleXible: removed urine
-- **Out of scope (non-diagnostic) dropped**: 5 — ARKRAY Insulin Cooling Pouch - Uno Z (keyword "insulin cooling pouch"); ARKRAY Insulin Cooling Pouch - Duo Z for Travel (keyword "insulin cooling pouch"); Bio-Rad Gene Pulser / MicroPulser Electroporation Cuvettes (source category "Medical LAB"); Erba H360 Control (source category "Medical Accesories"); Eppendorf Refrigerated Centrifuge 5425 R (keyword "centrifuge")
+- **Out of scope (non-diagnostic) dropped**: 6 — Abbott GRAFTMASTER RX Coronary Stent Graft System (SD 3.5) (keyword "stent"); ARKRAY Insulin Cooling Pouch - Uno Z (keyword "insulin cooling pouch"); ARKRAY Insulin Cooling Pouch - Duo Z for Travel (keyword "insulin cooling pouch"); Bio-Rad Gene Pulser / MicroPulser Electroporation Cuvettes (source category "Medical LAB"); Erba H360 Control (source category "Medical Accesories"); Eppendorf Refrigerated Centrifuge 5425 R (keyword "centrifuge")
 - **Untranslated (non-English) text**: 0
 - **Very short product names** (≤ 2 letters/digits; shown with brand): 24 — Abbott G, Abbott G3+, Arkray CK, Biosurfit BC, Boditech LH, Boditech T3, Boditech T4, Cepheid GI, Cepheid TV, Concile α1+, Dr. Müller Hb, MeMed BV, OPTI Medical B, Roche Li+, Roche PT, SD Biosensor T3, SD Biosensor T4, Tascom CK, Tascom Hb, Tascom K, Tascom TC, Tascom TG, Vedalab LH, Werfen PT
-- **Listings with several catalogue numbers** (pack variants, kept as listed): 70
+- **Listings with several catalogue numbers** (pack variants, kept as listed): 73
 - **Same-named different products** given a pack-size / Cat. no. suffix: 30
-- **Low classification confidence** (< 0.6): 371
+- **Low classification confidence** (< 0.6): 487
   - Arkray Urine test strips AUTION SCREEN (0.59)
   - Awareness Technology ChemWell RPR 5801 (0.33)
   - Awareness Technology ChemWell-T 4620- PC Controlled Chemistry + Turbidmetric Analyzer (0.45)
@@ -250,7 +254,7 @@ Automatic fixes applied in `build-data`, and items left for review.
 
 Listings are grouped by brand + normalised name (spelling, punctuation, plurals, pack sizes, word order ignored). Same brand + same catalogue number also groups spelling variants, unless the names differ in a distinguishing word (IgG/IgM/Ag/Ab/Duo/Combo/Self) or the analytes differ. Instruments and reagents are never merged; different catalogue numbers are never merged.
 
-Possible duplicates for review (same brand, ≥ 80% name overlap, same or unknown catalogue number, not merged): **33**
+Possible duplicates for review (same brand, ≥ 80% name overlap, same or unknown catalogue number, not merged): **36**
 
 | Product A | Product B | Overlap |
 | --- | --- | ---: |
@@ -258,14 +262,17 @@ Possible duplicates for review (same brand, ≥ 80% name overlap, same or unknow
 | `werfen-blood-gas-electrolytes-hct-thb-o2hb-hhb-cohb-methb-so2-tbili` | `werfen-blood-gas-hct-thb-o2hb-hhb-cohb-methb-so2-tbili` | 91% |
 | `werfen-blood-gases-electrolytes-hct-thb-o2hb-hhb-cohb-methb-so2-tbili` | `werfen-blood-gases-hct-thb-o2hb-hhb-cohb-methb-so2-tbili` | 91% |
 | `bio-rad-c1000-touch-thermal-cycler-with-96-well-fast-reaction-module` | `bio-rad-c1000-touch-thermal-cycler-with-96-well-fast-reaction-module-1851196` | 90% |
+| `thermo-fisher-applied-biosystems-microamp-fast-optical-96-well-reaction-plate` | `thermo-fisher-applied-biosystems-microamp-optical-96-well-reaction-plate` | 89% |
 | `boditech-afias-covid-19-flu-a-plus-b-rsv-ag` | `boditech-covid-19-flu-a-plus-b-rsv-ag-0b251a` | 86% |
 | `boditech-covid-19-flu-a-plus-b-rsv-ag` | `boditech-covid-19-flu-a-plus-b-rsv-ag-0b251a` | 86% |
+| `cepheid-xpert-xpress-cov-2-flu-rsv-plus` | `cepheid-xpress-cov-2-flu-rsv-plus` | 86% |
 | `roche-bg-plus-hct-plus-electrolytes-plus-glu-plus-lac` | `roche-bg-plus-hct-plus-electrolytes-plus-glu-plus-lac-plus-coox` | 86% |
 | `sd-biosensor-standard-i-q-covid-flu-ag-combo-test` | `sd-biosensor-standard-q-covid-flu-ag-combo` | 86% |
 | `thermo-fisher-7500-fast-dx-real-time-pcr-system` | `thermo-fisher-7500-thermo-fisher-fast-real-time-pcr-system` | 86% |
 | `werfen-blood-gas-electrolytes-glu-lac-hct-thb-o2hb-hhb-cohb-methb-so2-tbili` | `werfen-blood-gases-electrolytes-glu-lac-hct-thb-o2hb-hhb-cohb-methb-so2-tbili` | 86% |
 | `werfen-blood-gas-electrolytes-glu-lac-hct-thb-o2hb-hhb-cohb-methb-so2-tbili` | `werfen-blood-gas-electrolytes-hct-thb-o2hb-hhb-cohb-methb-so2-tbili` | 85% |
 | `werfen-blood-gases-electrolytes-glu-lac-hct-thb-o2hb-hhb-cohb-methb-so2-tbili` | `werfen-blood-gases-electrolytes-hct-thb-o2hb-hhb-cohb-methb-so2-tbili` | 85% |
+| `bio-rad-mini-proteantgx-precast-protein-gels` | `bio-rad-mini-proteantgx-precast-protein-gels-12` | 83% |
 | `boditech-afias-thyroid-stimulating-hormone-tsh` | `boditech-afias-thyroid-stimulating-hormone-tsh-plus` | 83% |
 | `inbios-scrub-typhus-detect-igg-elisa-kit` | `inbios-scrub-typhus-detect-igg-elisa-system` | 83% |
 | `mindray-total-beta-human-chorionic-gonadotropin-clia` | `mindray-total-human-chorionic-gonadotropin-clia` | 83% |
@@ -294,31 +301,31 @@ A listing is **complete** when it has every field required for its type. All: br
 
 | Field | Required for | Missing | % of those listings |
 | --- | ---: | ---: | ---: |
-| brand | 2947 | 17 | 0.6% |
-| category | 2947 | 355 | 12.0% |
-| technology | 2947 | 352 | 11.9% |
-| summary | 2947 | 97 | 3.3% |
-| specs | 2947 | 110 | 3.7% |
-| product_type | 2451 | 280 | 11.4% |
-| analyte | 2926 | 794 | 27.1% |
-| sample_type | 2451 | 457 | 18.6% |
-| catalogue_no | 2947 | 1520 | 51.6% |
-| pack_size | 2472 | 1444 | 58.4% |
+| brand | 3184 | 17 | 0.5% |
+| category | 3184 | 454 | 14.3% |
+| technology | 3184 | 451 | 14.2% |
+| summary | 3184 | 120 | 3.8% |
+| specs | 3184 | 121 | 3.8% |
+| product_type | 2656 | 398 | 15.0% |
+| analyte | 3138 | 908 | 28.9% |
+| sample_type | 2656 | 565 | 21.3% |
+| catalogue_no | 3184 | 1593 | 50.0% |
+| pack_size | 2702 | 1549 | 57.3% |
 
 Listings by number of missing fields:
 
 | Missing fields | Listings |
 | ---: | ---: |
-| 0 | 652 |
-| 1 | 679 |
-| 2 | 1008 |
-| 3 | 237 |
-| 4 | 142 |
-| 5 | 70 |
-| 6 | 72 |
-| 7 | 54 |
-| 8 | 11 |
-| 9 | 16 |
+| 0 | 664 |
+| 1 | 716 |
+| 2 | 1055 |
+| 3 | 301 |
+| 4 | 172 |
+| 5 | 87 |
+| 6 | 79 |
+| 7 | 63 |
+| 8 | 20 |
+| 9 | 21 |
 | 10 | 6 |
 
 Note: the second source publishes no catalogue numbers or pack sizes, so most of its listings miss exactly those two fields. Add them by hand (`data/manual/`) or from another source to raise completeness.
@@ -327,62 +334,63 @@ Note: the second source publishes no catalogue numbers or pack sizes, so most of
 
 | Source | Listings | Incomplete | % |
 | --- | ---: | ---: | ---: |
-| src-a | 1875 | 1234 | 65.8% |
+| src-a | 2112 | 1459 | 69.1% |
 | src-b | 1097 | 1071 | 97.6% |
 
 ### Incomplete listings by category
 
 | Category | Listings | Incomplete | % |
 | --- | ---: | ---: | ---: |
-| clinical-chemistry | 558 | 531 | 95.2% |
-| immunoassays | 914 | 514 | 56.2% |
-| general | 355 | 355 | 100.0% |
-| molecular | 293 | 289 | 98.6% |
+| clinical-chemistry | 617 | 579 | 93.8% |
+| immunoassays | 914 | 515 | 56.3% |
+| general | 454 | 454 | 100.0% |
+| molecular | 346 | 341 | 98.6% |
 | rapid-tests | 296 | 152 | 51.4% |
-| hematology | 129 | 109 | 84.5% |
+| hematology | 142 | 122 | 85.9% |
 | urinalysis | 113 | 108 | 95.6% |
 | blood-gas | 114 | 100 | 87.7% |
-| coagulation | 90 | 80 | 88.9% |
-| diabetes | 82 | 54 | 65.9% |
-| microbiology | 3 | 3 | 100.0% |
+| coagulation | 96 | 86 | 89.6% |
+| diabetes | 84 | 55 | 65.5% |
+| microbiology | 8 | 8 | 100.0% |
 
 ### Incomplete listings by product type
 
 | Product type | Listings | Incomplete | % |
 | --- | ---: | ---: | ---: |
-| reagent | 2130 | 1548 | 72.7% |
-| instrument | 475 | 412 | 86.7% |
-| (unknown) | 280 | 280 | 100.0% |
-| control | 41 | 38 | 92.7% |
-| consumable | 21 | 17 | 81.0% |
+| reagent | 2215 | 1624 | 73.3% |
+| instrument | 482 | 418 | 86.7% |
+| (unknown) | 398 | 398 | 100.0% |
+| consumable | 46 | 41 | 89.1% |
+| control | 43 | 39 | 90.7% |
 
 ### Incomplete listings by brand
 
 | Brand | Listings | Incomplete | % |
 | --- | ---: | ---: | ---: |
-| Qiagen | 121 | 121 | 100.0% |
+| Qiagen | 135 | 135 | 100.0% |
+| Thermo Fisher | 131 | 125 | 95.4% |
+| Arkray | 130 | 123 | 94.6% |
 | Boditech | 161 | 116 | 72.0% |
 | Abbott | 195 | 114 | 58.5% |
-| Arkray | 113 | 106 | 93.8% |
 | Snibe | 177 | 102 | 57.6% |
 | SD Biosensor | 152 | 99 | 65.1% |
-| Roche | 109 | 92 | 84.4% |
-| Mindray | 115 | 89 | 77.4% |
-| Zybio | 112 | 76 | 67.9% |
-| Thermo Fisher | 80 | 75 | 93.8% |
-| Horiba | 67 | 50 | 74.6% |
-| Erba Mannheim | 70 | 48 | 68.6% |
-| Siemens Healthineers | 54 | 46 | 85.2% |
+| Mindray | 121 | 95 | 78.5% |
+| Roche | 111 | 94 | 84.7% |
+| Zybio | 125 | 89 | 71.2% |
+| Erba Mannheim | 115 | 81 | 70.4% |
+| Cepheid | 62 | 62 | 100.0% |
+| Fujifilm | 61 | 59 | 96.7% |
+| Horiba | 70 | 53 | 75.7% |
+| Siemens Healthineers | 59 | 51 | 86.4% |
+| Becton Dickinson | 49 | 49 | 100.0% |
+| Bio-Rad | 45 | 43 | 95.6% |
 | Calbiotech | 98 | 43 | 43.9% |
-| Cepheid | 43 | 43 | 100.0% |
 | Vedalab | 43 | 43 | 100.0% |
-| Fujifilm | 44 | 41 | 93.2% |
 | QuidelOrtho | 41 | 41 | 100.0% |
-| Acon | 50 | 36 | 72.0% |
-| Bio-Rad | 38 | 36 | 94.7% |
+| Acon | 52 | 38 | 73.1% |
 | HemoCue | 42 | 35 | 83.3% |
 | Werfen | 35 | 35 | 100.0% |
-| Beckman Coulter | 65 | 30 | 46.2% |
+| Beckman Coulter | 67 | 32 | 47.8% |
 | Molbio | 30 | 30 | 100.0% |
 | EDAN | 31 | 29 | 93.5% |
 | Seamaty | 27 | 27 | 100.0% |
@@ -395,11 +403,10 @@ Note: the second source publishes no catalogue numbers or pack sizes, so most of
 | CTK Biotech | 49 | 22 | 44.9% |
 | Hitado | 20 | 20 | 100.0% |
 | Sysmex | 20 | 20 | 100.0% |
-| Becton Dickinson | 18 | 18 | 100.0% |
+| Wondfo | 56 | 18 | 32.1% |
 | (no brand) | 17 | 17 | 100.0% |
 | Awareness Technology | 17 | 17 | 100.0% |
 | Coyote | 17 | 17 | 100.0% |
-| InBios | 21 | 16 | 76.2% |
 
 Full list: [`docs/missing-data.csv`](missing-data.csv) — one row per incomplete listing.
 

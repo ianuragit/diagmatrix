@@ -2,14 +2,14 @@
 ## Source `src-a`
 
 - Nav entries: 3234
-- Parsed records: 1969
-- Parse failures: 1265
+- Parsed records: 2213
+- Parse failures: 1021
 
 ### Categories
 
 | Category | In nav | Parsed |
 |---|---:|---:|
-| Medical Reagents | 550 | 353 |
+| Medical Reagents | 550 | 553 |
 | Medical CLIA | 329 | 332 |
 | Medical POCT | 311 | 308 |
 | Medical FIA | 311 | 305 |
@@ -21,23 +21,23 @@
 | Medical ELISA | 170 | 172 |
 | Medical RTD | 150 | 152 |
 | Medical IVD | 82 | 82 |
-| Medical Consumables | 46 | 1 |
+| Medical Consumables | 46 | 45 |
 
 ### Field coverage
 
 | Field | Records | % |
 |---|---:|---:|
-| brand (stated) | 1522 | 77.3% |
-| catalogue_no | 1492 | 75.8% |
-| fact table | 1535 | 78.0% |
-| spec rows | 1724 | 87.6% |
-| image | 1969 | 100.0% |
+| brand (stated) | 1701 | 76.9% |
+| catalogue_no | 1671 | 75.5% |
+| fact table | 1715 | 77.5% |
+| spec rows | 1956 | 88.4% |
+| image | 2213 | 100.0% |
 | documents | 0 | 0.0% |
 | components | 0 | 0.0% |
 | related (source-linked) | 0 | 0.0% |
-| description | 1946 | 98.8% |
+| description | 2190 | 99.0% |
 
-Top fact-table keys: Brand (1522), Sample Type (1137), Pack Size (1135), CAT No (1045), Application (556), CAT No. (405), Model (193), Biomarker (175), Capacity (169), Test Type (86), Number of Reactions(Preps)/Kit (44), Product Type (43), Result Time (Rapid Kits) (32), Cat. No (20), CAT No.Â (20)
+Top fact-table keys: Brand (1701), Pack Size (1297), Sample Type (1224), CAT No (1216), Application (684), CAT No. (413), Model (193), Biomarker (175), Capacity (170), Product Type (108), Test Type (87), Number of Reactions(Preps)/Kit (44), Result Time (Rapid Kits) (32), Product Size (22), Cat. No (20)
 
 ### Sample records
 
@@ -100,30 +100,30 @@ Top fact-table keys: Brand (1522), Sample Type (1137), Pack Size (1135), CAT No 
 ```json
 {
   "source": "src-a",
-  "fetched_at": "2026-11-25T10:21:09.597Z",
-  "name": "Acon Cyto-Diluent for Mission HA-360",
+  "fetched_at": "2026-11-25T11:06:51.456Z",
+  "name": "Abbott GRAFTMASTER RX Coronary Stent Graft System (SD 3.5)",
   "category": "Medical Reagents",
   "subcategory": null,
-  "brand": "Acon",
-  "catalogue_no": "C121-9011",
+  "brand": "Abbott",
+  "catalogue_no": "1012818-16, 1012818-19, 1012818-26, 1012818-29",
   "facts": {
-    "Brand": "Acon",
-    "Sample Type": "Diluent",
-    "Pack Size": "20L",
-    "CAT No": "C121-9011",
-    "Application": "Hematology"
+    "Brand": "Abbott",
+    "Stent Diameter (mm)": "3.50",
+    "Stent Length (mm)": "16, 19, 26, 29",
+    "CAT No": "1012818-16, 1012818-19, 1012818-26, 1012818-29",
+    "Catheter Length": "143 cm"
   },
   "image": "(present)",
   "documents": 0,
   "components": [],
-  "spec_rows": 29,
+  "spec_rows": 34,
   "specs_preview": {
-    "Features": "Ready-to-use, High Purity, Reliable Performance",
-    "Operating Type": "Automatic",
-    "Portable": "Yes",
-    "Frequency": "Single-use per test"
+    "Instruments Type": "Interventional Cardiology Device",
+    "Function": "Seals vessel perforations, supports vessel wall",
+    "Real-Time Operation": "Yes",
+    "Measurement Range": "Stent Diameter 3.5 mm, length 16 mm"
   },
-  "description_chars": 1267
+  "description_chars": 1231
 }
 ```
 ```json
@@ -237,19 +237,29 @@ Top fact-table keys: Brand (1522), Sample Type (1137), Pack Size (1135), CAT No 
 ```json
 {
   "source": "src-a",
-  "fetched_at": "2026-11-24T20:48:47.418Z",
-  "name": "Qiagen Filter-Tips, 1000 l",
+  "fetched_at": "2026-11-25T11:21:40.532Z",
+  "name": "Applied Biosystems MicroAmp Clear Adhesive Film",
   "category": "Medical Consumables",
   "subcategory": null,
-  "brand": null,
-  "catalogue_no": null,
-  "facts": {},
+  "brand": "Thermo Fisher Scientific",
+  "catalogue_no": "4306311",
+  "facts": {
+    "Brand": "Thermo Fisher Scientific",
+    "Product Type": "Clear Adhesive Film",
+    "Pack Size": "100 films",
+    "CAT No.": "4306311"
+  },
   "image": "(present)",
   "documents": 0,
   "components": [],
-  "spec_rows": 0,
-  "specs_preview": {},
-  "description_chars": 1703
+  "spec_rows": 7,
+  "specs_preview": {
+    "Portable": "Yes",
+    "Use": "Labouratory",
+    "Usage Type": "Hospital and Lab",
+    "Noise Level": "No"
+  },
+  "description_chars": 1183
 }
 ```
 ```json
@@ -306,7 +316,7 @@ Top fact-table keys: Brand (1522), Sample Type (1137), Pack Size (1135), CAT No 
 
 ### Parse failures by reason
 
-- 1265 × Not in cache and network is disabled (offline): <url>
+- 1021 × Not in cache and network is disabled (offline): <url>
 
 ## Source `src-b`
 
@@ -673,24 +683,24 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 
 ## Catalogue
 
-- Records: 3036 (2947 canonical, 89 flagged duplicates)
-- Canonical products by source: src-b 1097, src-a 1875 (in more than one source: 25)
+- Records: 3279 (3184 canonical, 95 flagged duplicates)
+- Canonical products by source: src-b 1097, src-a 2112 (in more than one source: 25)
 
 ### By category / product type
 
 | Category | Instruments | Tests & reagents | Controls | Consumables | Unknown | Total |
 |---|---:|---:|---:|---:|---:|---:|
 | immunoassays | 34 | 863 | 11 | 6 | 0 | 914 |
-| clinical-chemistry | 108 | 374 | 6 | 2 | 68 | 558 |
-| general | 73 | 149 | 9 | 5 | 119 | 355 |
+| clinical-chemistry | 109 | 401 | 7 | 2 | 98 | 617 |
+| general | 76 | 196 | 10 | 25 | 147 | 454 |
+| molecular | 65 | 202 | 2 | 6 | 71 | 346 |
 | rapid-tests | 2 | 293 | 0 | 1 | 0 | 296 |
-| molecular | 62 | 198 | 2 | 2 | 29 | 293 |
-| hematology | 67 | 25 | 8 | 1 | 28 | 129 |
+| hematology | 67 | 30 | 8 | 1 | 36 | 142 |
 | blood-gas | 38 | 70 | 4 | 1 | 1 | 114 |
 | urinalysis | 35 | 74 | 0 | 0 | 4 | 113 |
-| coagulation | 24 | 47 | 1 | 0 | 18 | 90 |
-| diabetes | 32 | 34 | 0 | 3 | 13 | 82 |
-| microbiology | 0 | 3 | 0 | 0 | 0 | 3 |
+| coagulation | 24 | 48 | 1 | 0 | 23 | 96 |
+| diabetes | 32 | 35 | 0 | 4 | 13 | 84 |
+| microbiology | 0 | 3 | 0 | 0 | 5 | 8 |
 
 ### Brands
 
@@ -700,27 +710,28 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 | Snibe | 177 | 1 | 176 |
 | Boditech | 161 | 9 | 150 |
 | SD Biosensor | 152 | 11 | 139 |
-| Qiagen | 121 | 12 | 88 |
-| Mindray | 115 | 15 | 98 |
-| Arkray | 113 | 22 | 81 |
-| Zybio | 112 | 6 | 61 |
-| Roche | 109 | 34 | 70 |
+| Qiagen | 135 | 12 | 91 |
+| Thermo Fisher | 131 | 27 | 50 |
+| Arkray | 130 | 22 | 96 |
+| Zybio | 125 | 6 | 62 |
+| Mindray | 121 | 15 | 103 |
+| Erba Mannheim | 115 | 29 | 75 |
+| Roche | 111 | 34 | 70 |
 | Calbiotech | 98 | 0 | 98 |
-| Thermo Fisher | 80 | 24 | 28 |
-| Erba Mannheim | 70 | 25 | 40 |
-| Horiba | 67 | 4 | 30 |
-| Beckman Coulter | 65 | 1 | 52 |
+| Horiba | 70 | 4 | 30 |
+| Beckman Coulter | 67 | 1 | 52 |
+| Cepheid | 62 | 6 | 31 |
+| Fujifilm | 61 | 3 | 26 |
+| Siemens Healthineers | 59 | 23 | 28 |
 | Getein | 58 | 4 | 54 |
-| Siemens Healthineers | 54 | 23 | 27 |
-| Wondfo | 54 | 10 | 43 |
-| Acon | 50 | 11 | 32 |
+| Wondfo | 56 | 10 | 43 |
+| Acon | 52 | 11 | 32 |
+| Becton Dickinson | 49 | 4 | 9 |
 | CTK Biotech | 49 | 0 | 49 |
-| Fujifilm | 44 | 3 | 26 |
-| Cepheid | 43 | 6 | 31 |
+| Bio-Rad | 45 | 19 | 4 |
 | Vedalab | 43 | 1 | 42 |
 | HemoCue | 42 | 21 | 10 |
 | QuidelOrtho | 41 | 5 | 36 |
-| Bio-Rad | 38 | 19 | 3 |
 | Werfen | 35 | 10 | 24 |
 | EDAN | 31 | 6 | 23 |
 | Molbio | 30 | 4 | 26 |
@@ -734,7 +745,6 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 | InBios | 21 | 0 | 21 |
 | Hitado | 20 | 0 | 20 |
 | Sysmex | 20 | 14 | 4 |
-| Becton Dickinson | 18 | 4 | 5 |
 | (none) | 17 | 5 | 3 |
 | Awareness Technology | 17 | 9 | 3 |
 | Coyote | 17 | 2 | 14 |
@@ -767,10 +777,10 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 | FlashDx | 6 | 1 | 5 |
 | J. Mitra | 6 | 0 | 6 |
 | Actim | 5 | 1 | 4 |
+| Eppendorf | 5 | 0 | 0 |
 | OPTI Medical | 5 | 1 | 4 |
 | Biosurfit | 4 | 1 | 3 |
 | DiaSys | 4 | 2 | 2 |
-| Eppendorf | 4 | 0 | 0 |
 | iLine | 4 | 3 | 1 |
 | Leica BIOSYSTEM | 4 | 0 | 0 |
 | Medica | 4 | 4 | 0 |
@@ -820,32 +830,38 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 
 | Field | Filled | % |
 |---|---:|---:|
-| name | 2947 | 100.0% |
-| brand | 2930 | 99.4% |
-| product_line | 891 | 30.2% |
-| category | 2592 | 88.0% |
-| subcategory | 2667 | 90.5% |
-| technology | 2595 | 88.1% |
-| analyte | 2142 | 72.7% |
-| sample_type | 2276 | 77.2% |
-| product_type | 2667 | 90.5% |
-| subtype | 195 | 6.6% |
-| pack_size | 1038 | 35.2% |
-| catalogue_no | 1427 | 48.4% |
-| specs (≥1 row) | 2876 | 97.6% |
-| summary | 2850 | 96.7% |
+| name | 3184 | 100.0% |
+| brand | 3167 | 99.5% |
+| product_line | 965 | 30.3% |
+| category | 2730 | 85.7% |
+| subcategory | 2786 | 87.5% |
+| technology | 2733 | 85.8% |
+| analyte | 2244 | 70.5% |
+| sample_type | 2378 | 74.7% |
+| product_type | 2786 | 87.5% |
+| subtype | 200 | 6.3% |
+| pack_size | 1169 | 36.7% |
+| catalogue_no | 1591 | 50.0% |
+| specs (≥1 row) | 3102 | 97.4% |
+| summary | 3064 | 96.2% |
 | image_local | 0 | 0.0% |
-| documents | 239 | 8.1% |
-| related | 2155 | 73.1% |
-| classification_confidence ≥ 0.7 | 2297 | 77.9% |
+| documents | 239 | 7.5% |
+| related | 2260 | 71.0% |
+| classification_confidence ≥ 0.7 | 2382 | 74.8% |
 
-### Duplicate groups (84) — non-canonical records are hidden and redirect
+### Duplicate groups (90) — non-canonical records are hidden and redirect
 
 - **Thermo Fisher 7500 Thermo Fisher Fast Real Time PCR System** ← `thermo-fisher-7500-fast-real-time-pcr-system`
 - **Thermo Fisher QuantStudio 7 Pro Real-Time PCR System** ← `thermo-fisher-quantstudio-7-pro-real-time-pcr-system-41a477`
 - **Thermo Fisher Applied Biosystems VeritiPro Thermal Cycler** ← `thermo-fisher-veritipro-thermal-cycler`
+- **Thermo Fisher Applied Biosystems AmpFLSTR Identifiler Plus PCR Amplification Kit** ← `thermo-fisher-applied-biosystems-ampflstr-identifiler-plus-pcr-amplification-kit-17c62e`
+- **Thermo Fisher Applied Biosystems MagMAX-96 Viral RNA Isolation Kit** ← `thermo-fisher-applied-biosystems-magmax-96-viral-rna-isolation-kit-dfa5ec`
+- **Thermo Fisher Invitrogen ERCC RNA Spike-In Mix** ← `thermo-fisher-invitrogen-ercc-rna-spike-in-mix-6508b3`
+- **Thermo Fisher Invitrogen RNaseZap RNase Decontamination Solution** ← `thermo-fisher-invitrogen-rnasezap-rnase-decontamination-solution-952e4a`
 - **Roche CoaguChek Pro II** ← `roche-coagu-chek-pro-ii`
 - **Roche Coagu Chek Xs Plus System** ← `roche-coaguchek-xs-plus-system`
+- **Erba Mannheim SGPT Kit** ← `erba-mannheim-sgpt-kit`
+- **Thermo Fisher Applied Biosystems TaqPath 1-Step Multiplex Master Mix (No ROX)** ← `thermo-fisher-applied-biosystems-taqpath-1-step-multiplex-master-mix-no-rox`
 - **Thermo Fisher Applied Biosystems MagMAX Viral** ← `thermo-fisher-applied-biosystems`
 - **Snibe MAGLUMI Cholylglycine (CLIA)** ← `snibe-maglumi-cholylglycine-clia-9386c6`
 - **Snibe MAGLUMI EBV EA IgA (CLIA)** ← `snibe-maglumi-ebv-ea-iga-clia-138161`
@@ -956,7 +972,8 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 
 ### Scope filter
 
-- Dropped as non-diagnostic: 5
+- Dropped as non-diagnostic: 6
+  - Abbott GRAFTMASTER RX Coronary Stent Graft System (SD 3.5) — keyword "stent"
   - ARKRAY Insulin Cooling Pouch - Uno Z — keyword "insulin cooling pouch"
   - ARKRAY Insulin Cooling Pouch - Duo Z for Travel — keyword "insulin cooling pouch"
   - Bio-Rad Gene Pulser / MicroPulser Electroporation Cuvettes — source category "Medical LAB"
@@ -966,7 +983,7 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 
 ### Brand checks
 
-- Name-derived brand disagreed with the stated brand (19):
+- Name-derived brand disagreed with the stated brand (20):
   - Abbott Alere h 380-3-part differential hematology Analyzer: using **Abbott**, source said Abbott Alere
   - Abbott Alere h s 30-3-part differential hematology Analyzer: using **Abbott**, source said Abbott Alere
   - Abbott Alere Easy Microplate Washer: using **Abbott**, source said Abbott Alere
@@ -974,6 +991,7 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
   - Calbiotech Free Testosterone ELISA: using **Calbiotech**, source said InBios
   - ZYBIO EXR 25-OH-VITAMIN-D: using **Zybio**, source said Serum/ Plasma/WB
   - ZYBIO EXR T3: using **Zybio**, source said Serum/ Plasma/ WB
+  - BioRad Mini-PROTEANTGX Precast Protein Gels: using **Bio-Rad**, source said Refer Below
   - Mindray CLIA Hormone Calibrator: using **Mindray**, source said Calibrator
   - Mindray CLIA Thyroid Calibrator: using **Mindray**, source said Calibrator
   - ichroma Beta-HCG Test: using **Boditech**, source said Boditech Med Incorporated
@@ -986,10 +1004,10 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
   - LumiraDx: using **LumiraDx**, source said Roche
   - Xprecia Prime: using **Siemens Healthineers**, source said Universal Biosensors (OEM/distributor)
   - Xprecia Stride: using **Siemens Healthineers**, source said Universal Biosensors (OEM/distributor)
-- Stated brands not in brands.yaml (passed through, tidied): 7 — Awareness Technology (17), Medica (4), Leica BIOSYSTEM (4), Eppendorf (4), Philips (4), Spinreact (1), ALTA (1)
+- Stated brands not in brands.yaml (passed through, tidied): 7 — Awareness Technology (17), Eppendorf (5), Medica (4), Leica BIOSYSTEM (4), Philips (4), Spinreact (1), ALTA (1)
 - Products with no brand: 17 — Eppendorf Mastercycler X50 - PCR Thermocycler, Qiagenq PCR 384-well plate white, skirted, Eppendorf epMotion 5070 MultiCon PCR Solution, Hepa card, Standrard F HbA1c, Philips EverFlo 5 LPM Oxygen Concentrator, Quantstudio 3 Real Time Pcr System 0.2 mL 96 wells, QIAquant 96 Real time PCR System, LightCycler 96 Real-Time PCR System, Applied Biosystem ProFlex 3 x 32-well PCR System, Philips SimplyGo Mini Portable Oxygen Concentrator, Philips Trilogy EV300 Ventilator, ALTA Nucleic Acid extractor, Forma Steri-Cult CO2 Incubators, Strandard F U-Albumin FIA, KingFisher Flex Purification System King Fisher with 96 PCR Head, SimpliAmp Thermal Cycler
 
-### Low classification confidence (< 0.6): 371
+### Low classification confidence (< 0.6): 487
 
 - Arkray Urine test strips AUTION SCREEN — 0.59 (tech: none, analyte: none, sample: structured, type: keyword)
 - Awareness Technology ChemWell RPR 5801 — 0.33 (tech: none, analyte: none, sample: none, type: none)

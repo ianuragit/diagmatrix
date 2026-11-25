@@ -46,6 +46,66 @@
       ]
     },
     {
+      "key": "ampflstr amplification applied biosystem identifiler pcr plus",
+      "brand": "Thermo Fisher",
+      "canonical": "thermo-fisher-applied-biosystems-ampflstr-identifiler-plus-pcr-amplification-kit",
+      "members": [
+        {
+          "id": "thermo-fisher-applied-biosystems-ampflstr-identifiler-plus-pcr-amplification-kit",
+          "name": "Thermo Fisher Applied Biosystems AmpFLSTR Identifiler Plus PCR Amplification Kit"
+        },
+        {
+          "id": "thermo-fisher-applied-biosystems-ampflstr-identifiler-plus-pcr-amplification-kit-17c62e",
+          "name": "Thermo Fisher Applied Biosystems AmpFLSTR Identifiler Plus PCR Amplification Kit"
+        }
+      ]
+    },
+    {
+      "key": "96 applied biosystem isolation magmax rna viral",
+      "brand": "Thermo Fisher",
+      "canonical": "thermo-fisher-applied-biosystems-magmax-96-viral-rna-isolation-kit",
+      "members": [
+        {
+          "id": "thermo-fisher-applied-biosystems-magmax-96-viral-rna-isolation-kit",
+          "name": "Thermo Fisher Applied Biosystems MagMAX-96 Viral RNA Isolation Kit"
+        },
+        {
+          "id": "thermo-fisher-applied-biosystems-magmax-96-viral-rna-isolation-kit-dfa5ec",
+          "name": "Thermo Fisher Applied Biosystems MagMAX-96 Viral RNA Isolation Kit"
+        }
+      ]
+    },
+    {
+      "key": "ercc in invitrogen mix rna spike",
+      "brand": "Thermo Fisher",
+      "canonical": "thermo-fisher-invitrogen-ercc-rna-spike-in-mix",
+      "members": [
+        {
+          "id": "thermo-fisher-invitrogen-ercc-rna-spike-in-mix",
+          "name": "Thermo Fisher Invitrogen ERCC RNA Spike-In Mix"
+        },
+        {
+          "id": "thermo-fisher-invitrogen-ercc-rna-spike-in-mix-6508b3",
+          "name": "Thermo Fisher Invitrogen ERCC RNA Spike-In Mix"
+        }
+      ]
+    },
+    {
+      "key": "decontamination invitrogen rnase rnasezap solution",
+      "brand": "Thermo Fisher",
+      "canonical": "thermo-fisher-invitrogen-rnasezap-rnase-decontamination-solution",
+      "members": [
+        {
+          "id": "thermo-fisher-invitrogen-rnasezap-rnase-decontamination-solution",
+          "name": "Thermo Fisher Invitrogen RNaseZap RNase Decontamination Solution"
+        },
+        {
+          "id": "thermo-fisher-invitrogen-rnasezap-rnase-decontamination-solution-952e4a",
+          "name": "Thermo Fisher Invitrogen RNaseZap RNase Decontamination Solution"
+        }
+      ]
+    },
+    {
       "key": "coaguchek ii pro",
       "brand": "Roche",
       "canonical": "roche-coaguchek-pro-ii-2dc743",
@@ -72,6 +132,36 @@
         {
           "id": "roche-coaguchek-xs-plus-system",
           "name": "Roche CoaguChek XS Plus system"
+        }
+      ]
+    },
+    {
+      "key": "sgpt",
+      "brand": "Erba Mannheim",
+      "canonical": "erba-mannheim-sgpt-kit-687f2f",
+      "members": [
+        {
+          "id": "erba-mannheim-sgpt-kit-687f2f",
+          "name": "Erba Mannheim SGPT Kit"
+        },
+        {
+          "id": "erba-mannheim-sgpt-kit",
+          "name": "Erba Mannheim SGPT Kit"
+        }
+      ]
+    },
+    {
+      "key": "1 applied biosystem master mix multiplex no rox step taqpath",
+      "brand": "Thermo Fisher",
+      "canonical": "thermo-fisher-applied-biosystems-taqpath-1-step-multiplex-master-mix-no-rox-ed97b6",
+      "members": [
+        {
+          "id": "thermo-fisher-applied-biosystems-taqpath-1-step-multiplex-master-mix-no-rox-ed97b6",
+          "name": "Thermo Fisher Applied Biosystems TaqPath 1-Step Multiplex Master Mix (No ROX)"
+        },
+        {
+          "id": "thermo-fisher-applied-biosystems-taqpath-1-step-multiplex-master-mix-no-rox",
+          "name": "Thermo Fisher Applied Biosystems TaqPath 1-Step Multiplex Master Mix (No ROX)"
         }
       ]
     },
