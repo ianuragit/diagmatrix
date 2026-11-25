@@ -29,6 +29,14 @@ import type { BrandConfig } from './normalise/brand.ts';
 import type { Taxonomy } from './normalise/classify.ts';
 import { Translator, type TranslationConfig } from './normalise/translate.ts';
 import { buildAudit, checkBrands, type AuditInput, type BrandCheck } from './quality/audit.ts';
+import {
+  US_PRIORITY,
+  buildQuery,
+  matchRecords,
+  queryWords,
+  type EnrichmentEntry,
+  type GudidRecord,
+} from './enrich/fda-gudid.ts';
 import { filesToScan, scanForTerms } from './core/privacy.ts';
 import {
   CacheMissError,
@@ -631,6 +639,9 @@ async function cmdBuildData() {
     privateTerms: loadLocalSources().private_terms,
     translations: loadYaml<TranslationConfig>(join(CONFIG_DIR, 'translations.yaml')),
     reslug: values.reslug,
+    catalogueEnrichment: existsSync(FDA_ENRICH)
+      ? JSON.parse(await readFile(FDA_ENRICH, 'utf8'))
+      : {},
   });
   // Guard: a refresh with a missing cache or a broken source must not silently delete products.
   if (existsSync(PRODUCTS_JSON) && !values['allow-shrink']) {
@@ -724,6 +735,99 @@ async function cmdAudit() {
   });
 }
 
+const FDA_ENRICH = join(ROOT, 'data', 'enrichment', 'fda-gudid.json');
+
+/** Catalogue numbers from FDA GUDID (openFDA) for products that have none. Resumable, rate-limited. */
+async function cmdEnrichFda() {
+  const products = CatalogueSchema.parse(JSON.parse(await readFile(PRODUCTS_JSON, 'utf8')));
+  const store: Record<string, EnrichmentEntry> = existsSync(FDA_ENRICH)
+    ? JSON.parse(await readFile(FDA_ENRICH, 'utf8'))
+    : {};
+  const prio = (b: string | null) => (b && US_PRIORITY.includes(b) ? US_PRIORITY.indexOf(b) : 999);
+  const todo = products
+    .filter(
+      (p) => !p.duplicate_of && !p.catalogue_no && p.brand && (values.refresh || !store[p.id]),
+    )
+    .sort((a, b) => prio(a.brand) - prio(b.brand) || a.id.localeCompare(b.id));
+  const max = values['max-requests'] ? Number(values['max-requests']) : 900;
+  const http = new HttpClient({
+    userAgent: buildUserAgent(loadProjectConfig().contact_email),
+    cacheDir: join(ROOT, '.cache', 'http'),
+    log: log.child('fda'),
+    minIntervalMs: 1100,
+    offline: values.offline,
+  });
+  log.info(
+    `enrich-fda: ${todo.length} products without catalogue number to check (budget ${max} requests)`,
+  );
+  let checked = 0;
+  for (const p of todo) {
+    if (http.stats.network >= max) {
+      log.info(`request budget reached (${max}); re-run later to continue`);
+      break;
+    }
+    const words = queryWords(p);
+    if (!words.length) {
+      store[p.id] = {
+        status: 'skipped',
+        catalogue_no: null,
+        candidates: [],
+        query: null,
+        checked_at: new Date().toISOString(),
+      };
+      continue;
+    }
+    const q = buildQuery(words);
+    let records: GudidRecord[] = [];
+    try {
+      const res = await http.get(`https://api.fda.gov/device/udi.json?search=${q}&limit=100`);
+      if (res.status === 200)
+        records = (JSON.parse(res.body) as { results?: GudidRecord[] }).results ?? [];
+    } catch (err) {
+      if (err instanceof HostBlockedError) {
+        log.error('openFDA is refusing requests (rate limit) — stopping; re-run later');
+        break;
+      }
+      log.warn('openFDA request failed', { id: p.id, error: String(err) });
+      continue;
+    }
+    store[p.id] = matchRecords(p, records, q);
+    if (++checked % 50 === 0) {
+      await writeJson(FDA_ENRICH, store);
+      log.info(`checked ${checked}`, { network: http.stats.network });
+    }
+  }
+  await writeJson(FDA_ENRICH, Object.fromEntries(Object.entries(store).sort()));
+  const c = (s: string) => Object.values(store).filter((e) => e.status === s).length;
+  log.info('enrich-fda done', {
+    checked_total: Object.keys(store).length,
+    match: c('match'),
+    variants: c('match-variants'),
+    ambiguous: c('ambiguous'),
+    none: c('none'),
+    skipped: c('skipped'),
+    network: http.stats.network,
+  });
+  // Review list for ambiguous results.
+  const rows = Object.entries(store)
+    .filter(([, e]) => e.status === 'ambiguous')
+    .map(([id, e]) => [
+      id,
+      e.candidates
+        .map((c) => `${c.catalogue_no}: ${c.brand_name} — ${c.description}`.replace(/[\n,]/g, ' '))
+        .join(' | '),
+    ]);
+  await mkdir(join(ROOT, 'docs'), { recursive: true });
+  await writeFile(
+    join(ROOT, 'docs', 'catalogue-review.csv'),
+    [
+      'product_id,fda_candidates',
+      ...rows.map((r) => r.map((v) => `"${v.replace(/"/g, '""')}"`).join(',')),
+    ].join('\n') + '\n',
+    'utf8',
+  );
+}
+
 const commands: Record<string, () => Promise<void>> = {
   crawl: cmdCrawl,
   parse: cmdParse,
@@ -731,6 +835,7 @@ const commands: Record<string, () => Promise<void>> = {
   validate: cmdValidate,
   'privacy-check': async () => void (await cmdPrivacyCheck()),
   audit: cmdAudit,
+  'enrich-fda': cmdEnrichFda,
   report: cmdReport,
 };
 

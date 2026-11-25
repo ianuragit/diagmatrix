@@ -1,0 +1,1035 @@
+{
+  "abbott-abon-chlamydia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:abon+OR+device_description:abon)+AND+(brand_name:chlamydia+OR+device_description:chlamydia)",
+    "checked_at": "2026-11-25T08:29:58.901Z"
+  },
+  "abbott-abon-cot-one-step-cotinine-test-device-urine": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:abon+OR+device_description:abon)+AND+(brand_name:cot+OR+device_description:cot)+AND+(brand_name:cotinine+OR+device_description:cotinine)",
+    "checked_at": "2026-11-25T08:29:58.905Z"
+  },
+  "abbott-abon-hcg-one-step-pregnancy-tests-for-professional-use": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:abon+OR+device_description:abon)+AND+(brand_name:hcg+OR+device_description:hcg)+AND+(brand_name:pregnancy+OR+device_description:pregnancy)",
+    "checked_at": "2026-11-25T08:29:58.906Z"
+  },
+  "abbott-abon-syphilis-ultra-rapid-tests-whole-blood-serum-plasma": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:abon+OR+device_description:abon)+AND+(brand_name:plasma+OR+device_description:plasma)+AND+(brand_name:serum+OR+device_description:serum)",
+    "checked_at": "2026-11-25T08:29:58.906Z"
+  },
+  "abbott-abon-urine-test-drug-screen-cassette": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:abon+OR+device_description:abon)+AND+(brand_name:drug+OR+device_description:drug)+AND+(brand_name:screen+OR+device_description:screen)",
+    "checked_at": "2026-11-25T08:29:58.908Z"
+  },
+  "abbott-acr": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:acr+OR+device_description:acr)",
+    "checked_at": "2026-11-25T08:29:58.910Z"
+  },
+  "abbott-actc": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:actc+OR+device_description:actc)",
+    "checked_at": "2026-11-25T08:29:58.911Z"
+  },
+  "abbott-actk": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:actk+OR+device_description:actk)",
+    "checked_at": "2026-11-25T08:29:58.911Z"
+  },
+  "abbott-afinion-2": {
+    "status": "ambiguous",
+    "catalogue_no": null,
+    "candidates": [
+      {
+        "catalogue_no": "1116482",
+        "di": "07070060012889",
+        "brand_name": "Afinion HbA1c Dx",
+        "description": "Hemoglobin A1c test kit. Intended use: For determination of hemoglobin A1c in human whole blood including diagnosis. Contents: 15 Test Cartridges. 1 Package Insert.",
+        "company": "Abbott Diagnostics Technologies AS",
+        "score": 1
+      },
+      {
+        "catalogue_no": "1115020",
+        "di": "07070060005744",
+        "brand_name": "Alere Afinion™ ACR",
+        "description": "Albumin/Creatinine Ratio test kit. Intended use: For the determination of albumin, creatinine and the albumin/creatinine ratio in human urine. Contents: 15 Test Cartridges. 1 Package insert. DI covers",
+        "company": "Abbott Diagnostics Technologies AS",
+        "score": 1
+      },
+      {
+        "catalogue_no": "1116974",
+        "di": "07070060014654",
+        "brand_name": "Afinion HbA1c",
+        "description": "Hemoglobin A1c test kit. Intended use: For determination of hemoglobin A1c in human whole blood. Contents: 15 test cartridges, 1 package insert",
+        "company": "Abbott Diagnostics Technologies AS",
+        "score": 1
+      },
+      {
+        "catalogue_no": "1115015",
+        "di": "07070060005683",
+        "brand_name": "Alere Afinion™ HbA1c",
+        "description": "Hemoglobin A1c test kit. Intended use: For determination of hemoglobin A1c in human whole blood. Contents: 15 Test Cartridges. 1 Package Insert. DI covers Alere Afinion HbA1c and Afinion HbA1c.",
+        "company": "Abbott Diagnostics Technologies AS",
+        "score": 1
+      },
+      {
+        "catalogue_no": "1116794",
+        "di": "07070060014555",
+        "brand_name": "Afinion HbA1c Dx",
+        "description": "Hemoglobin A1c test kit. Intended use: For determination of hemogobin A1c in human whole blood including diagnosis. COntetns: 15 test cartridges, 1 package insert.",
+        "company": "Abbott Diagnostics Technologies AS",
+        "score": 1
+      },
+      {
+        "catalogue_no": "1116972",
+        "di": "07070060014630",
+        "brand_name": "Afinion ACR",
+        "description": "Albumin/Creatinine ration test kit. Intended use: For the determination of albumin, creatinine and albumin/creatinine ration in human urine. Contetns: 15 test cartridges. 1 package insert.",
+        "company": "Abbott Diagnostics Technologies AS",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:afinion+OR+device_description:afinion)",
+    "checked_at": "2026-11-25T08:29:58.913Z"
+  },
+  "abbott-afinion-hba-1-c-human-whole-blood-test-kit": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afinion+OR+device_description:afinion)+AND+(brand_name:hba+OR+device_description:hba)",
+    "checked_at": "2026-11-25T08:29:58.914Z"
+  },
+  "abbott-amlyte-13": {
+    "status": "match",
+    "catalogue_no": "400-0041",
+    "candidates": [
+      {
+        "catalogue_no": "400-0041",
+        "di": "EABA40000411",
+        "brand_name": "Piccolo AmLyte 13",
+        "description": "The Piccolo® AmLyte 13 , used with the Piccolo Xpress® chemistry analyzer, is intended to be used for the in vitro quantitative determination of alanine aminotransferase (ALT), albumin, amylase, aspar",
+        "company": "ABAXIS, INC.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:amlyte+OR+device_description:amlyte)",
+    "checked_at": "2026-11-25T08:29:58.914Z"
+  },
+  "abbott-basic-metabolic-panel": {
+    "status": "ambiguous",
+    "catalogue_no": null,
+    "candidates": [
+      {
+        "catalogue_no": "400-0024",
+        "di": "EABA40000241",
+        "brand_name": "Piccolo Basic Metabolic Panel",
+        "description": "The Piccolo® Basic Metabolic Panel, used with the Piccolo blood chemistry analyzer or the PiccoloXpress® chemistry analyzer, is intended to be used for the in vitro quantitative determination of calci",
+        "company": "ABAXIS, INC.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "400-0031",
+        "di": "EABA40000311",
+        "brand_name": "Piccolo Basic Metabolic Panel Plus",
+        "description": "The Piccolo® Basic Metabolic Panel Plus, used with the Piccolo blood chemistry analyzer or Piccolo Xpress® chemistry analyzer, is intended to be used for the in vitro quantitative determination of cal",
+        "company": "ABAXIS, INC.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:basic+OR+device_description:basic)+AND+(brand_name:metabolic+OR+device_description:metabolic)",
+    "checked_at": "2026-11-25T08:29:58.915Z"
+  },
+  "abbott-basic-metabolic-panel-plus": {
+    "status": "ambiguous",
+    "catalogue_no": null,
+    "candidates": [
+      {
+        "catalogue_no": "400-0024",
+        "di": "EABA40000241",
+        "brand_name": "Piccolo Basic Metabolic Panel",
+        "description": "The Piccolo® Basic Metabolic Panel, used with the Piccolo blood chemistry analyzer or the PiccoloXpress® chemistry analyzer, is intended to be used for the in vitro quantitative determination of calci",
+        "company": "ABAXIS, INC.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "400-0031",
+        "di": "EABA40000311",
+        "brand_name": "Piccolo Basic Metabolic Panel Plus",
+        "description": "The Piccolo® Basic Metabolic Panel Plus, used with the Piccolo blood chemistry analyzer or Piccolo Xpress® chemistry analyzer, is intended to be used for the in vitro quantitative determination of cal",
+        "company": "ABAXIS, INC.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:basic+OR+device_description:basic)+AND+(brand_name:metabolic+OR+device_description:metabolic)",
+    "checked_at": "2026-11-25T08:29:58.916Z"
+  },
+  "abbott-beta-hcg": {
+    "status": "ambiguous",
+    "catalogue_no": null,
+    "candidates": [
+      {
+        "catalogue_no": "07K7830",
+        "di": "00380740014971",
+        "brand_name": "ARCHITECT",
+        "description": "ARCHITECT Total Beta hCG Reagent Kit (2000T)",
+        "company": "ABBOTT IRELAND",
+        "score": 1
+      },
+      {
+        "catalogue_no": "07K7825",
+        "di": "00380740014964",
+        "brand_name": "ARCHITECT",
+        "description": "ARCHITECT Total Beta hCG Reagent Kit (100T)",
+        "company": "ABBOTT IRELAND",
+        "score": 1
+      },
+      {
+        "catalogue_no": "07K7835",
+        "di": "00380740106003",
+        "brand_name": "ARCHITECT",
+        "description": "ARCHITECT Total Beta hCG Reagent Kit (500T)",
+        "company": "ABBOTT IRELAND",
+        "score": 1
+      },
+      {
+        "catalogue_no": "07K7801",
+        "di": "00380740014933",
+        "brand_name": "ARCHITECT",
+        "description": "ARCHITECT Total Beta hCG Calibrators",
+        "company": "ABBOTT IRELAND",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:beta+OR+device_description:beta)+AND+(brand_name:hcg+OR+device_description:hcg)",
+    "checked_at": "2026-11-25T08:29:58.917Z"
+  },
+  "abbott-binaxnow-covid-19-ag-card": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:binaxnow+OR+device_description:binaxnow)+AND+(brand_name:covid19+OR+device_description:covid19)",
+    "checked_at": "2026-11-25T08:29:58.918Z"
+  },
+  "abbott-binaxnow-covid-19-rapid-antigen-card-test-kit": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:antigen+OR+device_description:antigen)+AND+(brand_name:binaxnow+OR+device_description:binaxnow)+AND+(brand_name:covid19+OR+device_description:covid19)",
+    "checked_at": "2026-11-25T08:29:58.918Z"
+  },
+  "abbott-binaxnow-influenza-a-and-b-card": {
+    "status": "ambiguous",
+    "catalogue_no": null,
+    "candidates": [
+      {
+        "catalogue_no": "295-362",
+        "di": "00811877012122",
+        "brand_name": "BinaxNOW COVID-19/Flu A&B Combo Self Test",
+        "description": "Intended for detection of proteins from Influenza A, Influenza B and SARS-CoV-2, not for any other viruses or pathogens - display",
+        "company": "Alere Scarborough, Inc.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "20002052",
+        "di": "00811877012078",
+        "brand_name": "BinaxNOW COVID-19/Flu A&B Combo Self Test",
+        "description": "Intended for detection of proteins from Influenza A, Influenza B and SARS-CoV-2, not for any other viruses or pathogens",
+        "company": "Alere Scarborough, Inc.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "20002057",
+        "di": "00811877012061",
+        "brand_name": "BinaxNOW COVID-19/Flu A&B Combo Self Test",
+        "description": "Intended for detection of proteins from Influenza A, Influenza B and SARS-CoV-2, not for any other viruses or pathogens",
+        "company": "Alere Scarborough, Inc.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "20002054",
+        "di": "00811877012092",
+        "brand_name": "BinaxNOW COVID-19/Flu A&B",
+        "description": "Intended for detection of proteins from Influenza A, Influenza B and SARS-CoV-2, not for any other viruses or pathogens",
+        "company": "Alere Scarborough, Inc.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "20002056",
+        "di": "00811877012047",
+        "brand_name": "BinaxNOW COVID-19/Flu A&B Combo Self Test",
+        "description": "Intended for detection of proteins from Influenza A, Influenza B and SARS-CoV-2, not for any other viruses or pathogens",
+        "company": "Alere Scarborough, Inc.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "575-000",
+        "di": "10811877010156",
+        "brand_name": "Alere BinaxNOW Influenza A & B Card 2",
+        "description": "A rapid test for the qualitative detection of Influenza A & B antigens with NP swab and nasal swab specimens",
+        "company": "Alere Scarborough, Inc.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:binaxnow+OR+device_description:binaxnow)+AND+(brand_name:influenza+OR+device_description:influenza)",
+    "checked_at": "2026-11-25T08:29:58.919Z"
+  },
+  "abbott-binaxnow-legionella": {
+    "status": "match",
+    "catalogue_no": "852-000",
+    "candidates": [
+      {
+        "catalogue_no": "852-000",
+        "di": "10811877010477",
+        "brand_name": "Alere™ BinaxNOW® Legionella Urinary Antigen Card",
+        "description": "The Alere BinaxNOW® Legionella Urinary Antigen Card is an in vitro rapid immunochromatographic assay for the qualitative detection of Legionella pneumophila serogroup 1 antigen in urine specimens from",
+        "company": "Alere Scarborough, Inc.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "852-000",
+        "di": "10811877011023",
+        "brand_name": "BinaxNOW Legionella Urinary Antigen Card",
+        "description": "The  BinaxNOW Legionella Urinary Antigen Card is an in vitro rapid immunochromatographic assay for the qualitative detection of Legionella pneumophila serogroup 1 antigen in urine specimens from patie",
+        "company": "Alere Scarborough, Inc.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:binaxnow+OR+device_description:binaxnow)+AND+(brand_name:legionella+OR+device_description:legionella)",
+    "checked_at": "2026-11-25T08:29:58.920Z"
+  },
+  "abbott-biochemistry-panel-plus": {
+    "status": "match",
+    "catalogue_no": "400-0035",
+    "candidates": [
+      {
+        "catalogue_no": "400-0035",
+        "di": "EABA40000351",
+        "brand_name": "Piccolo BioChemistry Panel Plus",
+        "description": "The Piccolo® BioChemistry Panel Plus, used with the Piccolo Xpress® chemistry analyzer, is intended to be used for the in vitro quantitative determination of alanine aminotransferase (ALT), albumin, a",
+        "company": "ABAXIS, INC.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:biochemistry+OR+device_description:biochemistry)",
+    "checked_at": "2026-11-25T08:29:58.921Z"
+  },
+  "abbott-bioline-chlamydia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:bioline+OR+device_description:bioline)+AND+(brand_name:chlamydia+OR+device_description:chlamydia)",
+    "checked_at": "2026-11-25T08:29:58.921Z"
+  },
+  "abbott-bioline-cholera-ag-01-0139": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:bioline+OR+device_description:bioline)+AND+(brand_name:cholera+OR+device_description:cholera)",
+    "checked_at": "2026-11-25T08:29:58.922Z"
+  },
+  "abbott-cg4-plus": {
+    "status": "ambiguous",
+    "catalogue_no": null,
+    "candidates": [
+      {
+        "catalogue_no": "03P85-50",
+        "di": "10054749002266",
+        "brand_name": "i-STAT",
+        "description": "CARTRIDGE, CG4+",
+        "company": "ABBOTT POINT OF CARE INC.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "03P85-25",
+        "di": "10054749000132",
+        "brand_name": "i-STAT",
+        "description": "CG4+ CARTRIDGE",
+        "company": "ABBOTT POINT OF CARE INC.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "03P85-51",
+        "di": "10054749005502",
+        "brand_name": "i-STAT",
+        "description": "Cartridge, CG4+",
+        "company": "ABBOTT POINT OF CARE INC.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:cg4+OR+device_description:cg4)",
+    "checked_at": "2026-11-25T08:29:58.922Z"
+  },
+  "abbott-cg8-plus": {
+    "status": "match",
+    "catalogue_no": "03P88-25",
+    "candidates": [
+      {
+        "catalogue_no": "03P88-25",
+        "di": "10054749000163",
+        "brand_name": "i-STAT",
+        "description": "CG8+ CARTRIDGE",
+        "company": "ABBOTT POINT OF CARE INC.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:cg8+OR+device_description:cg8)",
+    "checked_at": "2026-11-25T08:29:58.923Z"
+  },
+  "abbott-chem8-plus": {
+    "status": "ambiguous",
+    "catalogue_no": null,
+    "candidates": [
+      {
+        "catalogue_no": "09P31-25",
+        "di": "10054749001917",
+        "brand_name": "i-STAT",
+        "description": "CARTRIDGE, CHEM8+",
+        "company": "ABBOTT POINT OF CARE INC.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "06F12-14",
+        "di": "00054749000562",
+        "brand_name": "i-STAT",
+        "description": "CHEM8+ Lvl 1B CalVer",
+        "company": "ABBOTT POINT OF CARE INC.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "09P31-26",
+        "di": "10054749005519",
+        "brand_name": "i-STAT",
+        "description": "Cartridge, Chem8+",
+        "company": "ABBOTT POINT OF CARE INC.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:chem8+OR+device_description:chem8)",
+    "checked_at": "2026-11-25T08:29:58.924Z"
+  },
+  "abbott-cholestech-ldx": {
+    "status": "ambiguous",
+    "catalogue_no": null,
+    "candidates": [
+      {
+        "catalogue_no": "10-987",
+        "di": "00893038002616",
+        "brand_name": "Alere Cholestech LDX®",
+        "description": "Alere Cholestech LDX® TC HDL",
+        "company": "Alere San Diego, Inc.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "97987",
+        "di": "00893038002890",
+        "brand_name": "Cholestech LDX™",
+        "description": "Cholestech LDX™ TC HDL",
+        "company": "Alere San Diego, Inc.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "10228MR",
+        "di": "00893038002944",
+        "brand_name": "Cholestech LDX™",
+        "description": "Cholestech LDX™ Optics Check Cassette",
+        "company": "Alere San Diego, Inc.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "14875",
+        "di": "00854361008003",
+        "brand_name": "Alere Cholestech LDX®",
+        "description": "Alere Cholestech LDX® Analyzer",
+        "company": "Alere San Diego, Inc.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "99020",
+        "di": "00899722002337",
+        "brand_name": "Alere Cholestech LDX®",
+        "description": "Alere Cholestech LDX® Lipid Profile",
+        "company": "Alere San Diego, Inc.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "10-990",
+        "di": "00893038002647",
+        "brand_name": "Alere Cholestech LDX®",
+        "description": "Alere Cholestech LDX® TC HDL GLU",
+        "company": "Alere San Diego, Inc.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:cholestech+OR+device_description:cholestech)+AND+(brand_name:ldx+OR+device_description:ldx)",
+    "checked_at": "2026-11-25T08:29:58.925Z"
+  },
+  "abbott-clearview-pbp2a": {
+    "status": "match",
+    "catalogue_no": "893-000",
+    "candidates": [
+      {
+        "catalogue_no": "893-000",
+        "di": "10811877011238",
+        "brand_name": "Clearview PBP2a SA Culture Colony Test",
+        "description": "A rapid test for the qualitative detection of PBP2a in Staphylococcus aureus isolates.",
+        "company": "Alere Scarborough, Inc.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:clearview+OR+device_description:clearview)+AND+(brand_name:pbp2a+OR+device_description:pbp2a)",
+    "checked_at": "2026-11-25T08:29:58.926Z"
+  },
+  "abbott-comprehensive-metabolic-panel": {
+    "status": "match",
+    "catalogue_no": "400-0028",
+    "candidates": [
+      {
+        "catalogue_no": "400-0028",
+        "di": "EABA40000281",
+        "brand_name": "Piccolo Comprehensive Metabolic Panel",
+        "description": "The Piccolo® Comprehensive Metabolic Panel, used with the Piccolo® blood chemistry analyzer or the Piccolo Xpress® chemistry analyzer, is intended to be used for the in vitro quantitative determinatio",
+        "company": "ABAXIS, INC.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:comprehensive+OR+device_description:comprehensive)+AND+(brand_name:metabolic+OR+device_description:metabolic)",
+    "checked_at": "2026-11-25T08:29:58.926Z"
+  },
+  "abbott-covid-19-2-0": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:2_0+OR+device_description:2_0)+AND+(brand_name:covid19+OR+device_description:covid19)",
+    "checked_at": "2026-11-25T08:29:58.927Z"
+  },
+  "abbott-crea": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:crea+OR+device_description:crea)",
+    "checked_at": "2026-11-25T08:29:58.928Z"
+  },
+  "abbott-crp": {
+    "status": "ambiguous",
+    "catalogue_no": null,
+    "candidates": [
+      {
+        "catalogue_no": "06K2630",
+        "di": "00380740010485",
+        "brand_name": "ARCHITECT",
+        "description": "CRP Vario",
+        "company": "ABBOTT LABORATORIES",
+        "score": 1
+      },
+      {
+        "catalogue_no": "06K2614",
+        "di": "00380740010461",
+        "brand_name": "ARCHITECT",
+        "description": "CRP Calibrator HS",
+        "company": "ABBOTT LABORATORIES",
+        "score": 1
+      },
+      {
+        "catalogue_no": "06K2631",
+        "di": "00380740158491",
+        "brand_name": "ARCHITECT",
+        "description": "CRP Vario",
+        "company": "ABBOTT LABORATORIES",
+        "score": 1
+      },
+      {
+        "catalogue_no": "71S2",
+        "di": "10859035006016",
+        "brand_name": "IMMUNEX CRP®",
+        "description": "",
+        "company": "ALERE NORTH AMERICA, LLC",
+        "score": 1
+      },
+      {
+        "catalogue_no": "07P5604",
+        "di": "00380740180348",
+        "brand_name": "Alinity",
+        "description": "Alinity c CRP Vario High Sensitivity Calibrator Kit",
+        "company": "ABBOTT LABORATORIES",
+        "score": 1
+      },
+      {
+        "catalogue_no": "06K2610",
+        "di": "00380740010447",
+        "brand_name": "ARCHITECT",
+        "description": "CRP Calibrator Set",
+        "company": "ABBOTT LABORATORIES",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:crp+OR+device_description:crp)",
+    "checked_at": "2026-11-25T08:29:58.933Z"
+  },
+  "abbott-ctni": {
+    "status": "match",
+    "catalogue_no": "06P23-25",
+    "candidates": [
+      {
+        "catalogue_no": "06P23-25",
+        "di": "10054749001986",
+        "brand_name": "i-STAT",
+        "description": "CARTRIDGE, cTnI",
+        "company": "ABBOTT POINT OF CARE INC.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:ctni+OR+device_description:ctni)",
+    "checked_at": "2026-11-25T08:29:58.937Z"
+  },
+  "abbott-determine-chase-buffer": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:buffer+OR+device_description:buffer)+AND+(brand_name:chase+OR+device_description:chase)+AND+(brand_name:determine+OR+device_description:determine)",
+    "checked_at": "2026-11-25T08:29:58.937Z"
+  },
+  "abbott-determine-combo-4th-generation-test-kit-for-clinical": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:4th+OR+device_description:4th)+AND+(brand_name:clinical+OR+device_description:clinical)+AND+(brand_name:combo+OR+device_description:combo)",
+    "checked_at": "2026-11-25T08:29:58.938Z"
+  },
+  "abbott-determine-hbsag": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:determine+OR+device_description:determine)+AND+(brand_name:hbsag+OR+device_description:hbsag)",
+    "checked_at": "2026-11-25T08:29:58.940Z"
+  },
+  "abbott-digival": {
+    "status": "ambiguous",
+    "catalogue_no": null,
+    "candidates": [
+      {
+        "catalogue_no": "LFR-003",
+        "di": "10811877010798",
+        "brand_name": "DIGIVAL Calibration Check Card Pack",
+        "description": "A calibration check card verifies that the DIGIVAL is functioning correctly",
+        "company": "Alere Scarborough, Inc.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "EQ00600X",
+        "di": "00811877010623",
+        "brand_name": "DIGIVAL",
+        "description": "DIGIVAL is a small bench top instrument to be used in conjunction with Abbott™ rapid tests.",
+        "company": "Alere Scarborough, Inc.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:digival+OR+device_description:digival)",
+    "checked_at": "2026-11-25T08:29:58.941Z"
+  },
+  "abbott-digival-970304": {
+    "status": "ambiguous",
+    "catalogue_no": null,
+    "candidates": [
+      {
+        "catalogue_no": "LFR-003",
+        "di": "10811877010798",
+        "brand_name": "DIGIVAL Calibration Check Card Pack",
+        "description": "A calibration check card verifies that the DIGIVAL is functioning correctly",
+        "company": "Alere Scarborough, Inc.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "EQ00600X",
+        "di": "00811877010623",
+        "brand_name": "DIGIVAL",
+        "description": "DIGIVAL is a small bench top instrument to be used in conjunction with Abbott™ rapid tests.",
+        "company": "Alere Scarborough, Inc.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:digival+OR+device_description:digival)",
+    "checked_at": "2026-11-25T08:29:58.941Z"
+  },
+  "abbott-ec8-plus": {
+    "status": "match",
+    "catalogue_no": "03P79-25",
+    "candidates": [
+      {
+        "catalogue_no": "03P79-25",
+        "di": "10054749000071",
+        "brand_name": "i-STAT",
+        "description": "EC8+ CARTRIDGE",
+        "company": "ABBOTT POINT OF CARE INC.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:ec8+OR+device_description:ec8)",
+    "checked_at": "2026-11-25T08:29:58.943Z"
+  },
+  "abbott-eg7-plus": {
+    "status": "match",
+    "catalogue_no": "03P76-25",
+    "candidates": [
+      {
+        "catalogue_no": "03P76-25",
+        "di": "10054749000040",
+        "brand_name": "i-STAT",
+        "description": "EG7+ CARTRIDGE",
+        "company": "ABBOTT POINT OF CARE INC.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:eg7+OR+device_description:eg7)",
+    "checked_at": "2026-11-25T08:29:58.944Z"
+  },
+  "abbott-electrolyte-panel": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:electrolyte+OR+device_description:electrolyte)",
+    "checked_at": "2026-11-25T08:29:58.947Z"
+  },
+  "abbott-freestyle-optium-neo-meter": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:freestyle+OR+device_description:freestyle)+AND+(brand_name:meter+OR+device_description:meter)+AND+(brand_name:neo+OR+device_description:neo)",
+    "checked_at": "2026-11-25T08:29:58.947Z"
+  },
+  "abbott-g": {
+    "status": "skipped",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T08:29:58.948Z"
+  },
+  "abbott-g3-plus": {
+    "status": "skipped",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T08:29:58.948Z"
+  },
+  "abbott-general-chemistry-13": {
+    "status": "match",
+    "catalogue_no": "400-0029",
+    "candidates": [
+      {
+        "catalogue_no": "400-0029",
+        "di": "EABA40000291",
+        "brand_name": "Piccolo General Chemistry 13",
+        "description": "The Piccolo® General Chemistry 13 used with the Piccolo blood chemistry analyzer or the Piccolo Xpress® chemistry analyzer, is intended to be used for the in vitro quantitative determination of alanin",
+        "company": "ABAXIS, INC.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:chemistry+OR+device_description:chemistry)+AND+(brand_name:general+OR+device_description:general)",
+    "checked_at": "2026-11-25T08:29:58.949Z"
+  },
+  "abbott-general-chemistry-6": {
+    "status": "ambiguous",
+    "catalogue_no": null,
+    "candidates": [
+      {
+        "catalogue_no": "400-0029",
+        "di": "EABA40000291",
+        "brand_name": "Piccolo General Chemistry 13",
+        "description": "The Piccolo® General Chemistry 13 used with the Piccolo blood chemistry analyzer or the Piccolo Xpress® chemistry analyzer, is intended to be used for the in vitro quantitative determination of alanin",
+        "company": "ABAXIS, INC.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "400-0006",
+        "di": "EABA40000061",
+        "brand_name": "Piccolo General Chemistry 6",
+        "description": "The Piccolo® General Chemistry 6 , used with the Piccolo® blood chemistry analyzer or the Piccolo Xpress® chemistry analyzer, is intended to be used for the in vitro quantitative determination of alan",
+        "company": "ABAXIS, INC.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:chemistry+OR+device_description:chemistry)+AND+(brand_name:general+OR+device_description:general)",
+    "checked_at": "2026-11-25T08:29:58.951Z"
+  },
+  "abbott-hba1c": {
+    "status": "ambiguous",
+    "catalogue_no": null,
+    "candidates": [
+      {
+        "catalogue_no": "04P7235",
+        "di": "00380740007843",
+        "brand_name": "ARCHITECT",
+        "description": "ARCHITECT HbA1c Reagent Kit",
+        "company": "Abbott GmbH",
+        "score": 1
+      },
+      {
+        "catalogue_no": "04P7225",
+        "di": "00380740007836",
+        "brand_name": "ARCHITECT",
+        "description": "ARCHITECT HbA1c Reagents Kit",
+        "company": "Abbott GmbH",
+        "score": 1
+      },
+      {
+        "catalogue_no": "1116482",
+        "di": "07070060012889",
+        "brand_name": "Afinion HbA1c Dx",
+        "description": "Hemoglobin A1c test kit. Intended use: For determination of hemoglobin A1c in human whole blood including diagnosis. Contents: 15 Test Cartridges. 1 Package Insert.",
+        "company": "Abbott Diagnostics Technologies AS",
+        "score": 1
+      },
+      {
+        "catalogue_no": "1116974",
+        "di": "07070060014654",
+        "brand_name": "Afinion HbA1c",
+        "description": "Hemoglobin A1c test kit. Intended use: For determination of hemoglobin A1c in human whole blood. Contents: 15 test cartridges, 1 package insert",
+        "company": "Abbott Diagnostics Technologies AS",
+        "score": 1
+      },
+      {
+        "catalogue_no": "04P7201",
+        "di": "00380740007812",
+        "brand_name": "ARCHITECT",
+        "description": "ARCHITECT HbA1c Calibrators",
+        "company": "Abbott GmbH",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:hba1c+OR+device_description:hba1c)",
+    "checked_at": "2026-11-25T08:29:58.953Z"
+  },
+  "abbott-hepatic-function-panel": {
+    "status": "match",
+    "catalogue_no": "400-0026",
+    "candidates": [
+      {
+        "catalogue_no": "400-0026",
+        "di": "EABA40000261",
+        "brand_name": "Piccolo Hepatic Function Panel",
+        "description": "The Piccolo® Hepatic Function Panel, used with the Piccolo Xpress® chemistry analyzer, is intended to be used for the in vitro\nquantitative determinations of alanine aminotransferase, albumin, alkalin",
+        "company": "ABAXIS, INC.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:function+OR+device_description:function)+AND+(brand_name:hepatic+OR+device_description:hepatic)",
+    "checked_at": "2026-11-25T08:29:58.954Z"
+  },
+  "abbott-hs-tni": {
+    "status": "match",
+    "catalogue_no": "09P81-25",
+    "candidates": [
+      {
+        "catalogue_no": "09P81-25",
+        "di": "10054749003058",
+        "brand_name": "i-STAT hs-TnI cartridge",
+        "description": "i-STAT hs-TnI cartridge",
+        "company": "Abbott Point of Care Inc.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:tni+OR+device_description:tni)",
+    "checked_at": "2026-11-25T08:29:58.955Z"
+  },
+  "abbott-i-stat-1": {
+    "status": "ambiguous",
+    "catalogue_no": null,
+    "candidates": [
+      {
+        "catalogue_no": "02R60-01",
+        "di": "00054749002597",
+        "brand_name": "i-STAT",
+        "description": "I-STAT ALINITY INSTRUMENT (MODEL 500)",
+        "company": "ABBOTT POINT OF CARE INC.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "02K4137",
+        "di": "00380740052836",
+        "brand_name": "ARCHITECT",
+        "description": "ARCHITECT STAT Troponin-I  Reagent Kit",
+        "company": "ABBOTT LABORATORIES",
+        "score": 1
+      },
+      {
+        "catalogue_no": "04Z2101",
+        "di": "00380740194048",
+        "brand_name": "Alinity",
+        "description": "Alinity i STAT High Sensitivity Troponin-I Calibrators",
+        "company": "ABBOTT IRELAND",
+        "score": 1
+      },
+      {
+        "catalogue_no": "06P17-08",
+        "di": "00054749001125",
+        "brand_name": "i-STAT",
+        "description": "",
+        "company": "ABBOTT POINT OF CARE INC.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "03P75-06",
+        "di": "00054749002528",
+        "brand_name": "i-STAT",
+        "description": "i-Stat 1 Wireless Analyzer",
+        "company": "ABBOTT POINT OF CARE INC.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:stat+OR+device_description:stat)",
+    "checked_at": "2026-11-25T08:29:58.958Z"
+  },
+  "abbott-i-stat-300-handheld-blood-analyzer": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:handheld+OR+device_description:handheld)+AND+(brand_name:stat+OR+device_description:stat)",
+    "checked_at": "2026-11-25T08:30:00.029Z"
+  },
+  "abbott-i-stat-6-plus-cartridge": {
+    "status": "ambiguous",
+    "catalogue_no": null,
+    "candidates": [
+      {
+        "catalogue_no": "03P85-50",
+        "di": "10054749002266",
+        "brand_name": "i-STAT",
+        "description": "CARTRIDGE, CG4+",
+        "company": "ABBOTT POINT OF CARE INC.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "03P85-25",
+        "di": "10054749000132",
+        "brand_name": "i-STAT",
+        "description": "CG4+ CARTRIDGE",
+        "company": "ABBOTT POINT OF CARE INC.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "03P85-51",
+        "di": "10054749005502",
+        "brand_name": "i-STAT",
+        "description": "Cartridge, CG4+",
+        "company": "ABBOTT POINT OF CARE INC.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "03S09-25",
+        "di": "10054749005779",
+        "brand_name": "i-STAT TBI cartridge",
+        "description": "i-STAT TBI cartridge",
+        "company": "Abbott Point of Care Inc.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "03P76-25",
+        "di": "10054749000040",
+        "brand_name": "i-STAT",
+        "description": "EG7+ CARTRIDGE",
+        "company": "ABBOTT POINT OF CARE INC.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "03P92-25",
+        "di": "10054749000200",
+        "brand_name": "i-STAT",
+        "description": "CK-MB Cartridge",
+        "company": "ABBOTT POINT OF CARE INC.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:cartridge+OR+device_description:cartridge)+AND+(brand_name:stat+OR+device_description:stat)",
+    "checked_at": "2026-11-25T08:30:00.031Z"
+  },
+  "abbott-i-stat-alinity": {
+    "status": "ambiguous",
+    "catalogue_no": null,
+    "candidates": [
+      {
+        "catalogue_no": "02R60-01",
+        "di": "00054749002597",
+        "brand_name": "i-STAT",
+        "description": "I-STAT ALINITY INSTRUMENT (MODEL 500)",
+        "company": "ABBOTT POINT OF CARE INC.",
+        "score": 1
+      },
+      {
+        "catalogue_no": "04Z2101",
+        "di": "00380740194048",
+        "brand_name": "Alinity",
+        "description": "Alinity i STAT High Sensitivity Troponin-I Calibrators",
+        "company": "ABBOTT IRELAND",
+        "score": 1
+      },
+      {
+        "catalogue_no": "04V381A",
+        "di": "00380740162849",
+        "brand_name": "Alinity",
+        "description": "Alinity i CK-MB STAT Assay File",
+        "company": "Abbott GmbH",
+        "score": 1
+      },
+      {
+        "catalogue_no": "04V3730",
+        "di": "00380740174910",
+        "brand_name": "Alinity",
+        "description": "Alinity i STAT Myoglobin Reagent Kit 1000 Tests",
+        "company": "Abbott Ireland Diagnostics",
+        "score": 1
+      },
+      {
+        "catalogue_no": "04V3801",
+        "di": "00380740165482",
+        "brand_name": "Alinity",
+        "description": "Alinity i STAT CK-MB Calibrators",
+        "company": "Abbott Ireland Diagnostics",
+        "score": 1
+      },
+      {
+        "catalogue_no": "04Z211B",
+        "di": "00380740209438",
+        "brand_name": "Alinity",
+        "description": "Alinity i STAT High Sensitivity Troponin-I",
+        "company": "Abbott GmbH",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:alinity+OR+device_description:alinity)+AND+(brand_name:stat+OR+device_description:stat)",
+    "checked_at": "2026-11-25T08:30:00.033Z"
+  },
+  "abbott-i-stat-eg7-plus-cartridge": {
+    "status": "match",
+    "catalogue_no": "03P76-25",
+    "candidates": [
+      {
+        "catalogue_no": "03P76-25",
+        "di": "10054749000040",
+        "brand_name": "i-STAT",
+        "description": "EG7+ CARTRIDGE",
+        "company": "ABBOTT POINT OF CARE INC.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:cartridge+OR+device_description:cartridge)+AND+(brand_name:eg7+OR+device_description:eg7)+AND+(brand_name:stat+OR+device_description:stat)",
+    "checked_at": "2026-11-25T08:30:00.033Z"
+  }
+}

@@ -53,6 +53,8 @@ export interface BuildInput {
    * matches their name; the old slug becomes a redirect. One-off, opt-in.
    */
   reslug?: boolean;
+  /** Catalogue numbers found for products that have none (product id → entry), e.g. FDA GUDID. */
+  catalogueEnrichment?: Record<string, { status: string; catalogue_no: string | null }>;
   /** Extra private terms (company names) that must never be published. */
   privateTerms: string[];
   /** German → English for display text (pipeline/config/translations.yaml). */
@@ -81,6 +83,8 @@ export interface BuildReport {
   sampleContradictions: { name: string; removed: string[] }[];
   /** Products whose name was suffixed (pack size / Cat. no.) to tell same-named products apart. */
   sameNameDisambiguated: number;
+  /** Catalogue numbers filled from enrichment sources (FDA GUDID). */
+  catalogueEnriched: number;
   /** Display text that still looks non-English after translation. */
   untranslated: { id: string; field: string; text: string; words: string[] }[];
 }
@@ -173,6 +177,7 @@ export function build(input: BuildInput): BuildOutput {
     catalogueConflicts: [],
     sampleContradictions: [],
     sameNameDisambiguated: 0,
+    catalogueEnriched: 0,
   };
   const tr = new Translator(input.translations ?? {});
 
@@ -612,6 +617,16 @@ export function build(input: BuildInput): BuildOutput {
     for (const r of reps) {
       if (r.c.parentRefKey) pendingParent.push([id, r.c.parentRefKey]);
       if (r.c.relatedRefKeys.length) pendingRelated.push([id, r.c.relatedRefKeys]);
+    }
+  }
+
+  // Enrichment: fill missing catalogue numbers only (source data always wins).
+  for (const p of products) {
+    if (p.catalogue_no || p.duplicate_of) continue;
+    const e = input.catalogueEnrichment?.[p.id];
+    if (e && (e.status === 'match' || e.status === 'match-variants') && e.catalogue_no) {
+      p.catalogue_no = e.catalogue_no;
+      report.catalogueEnriched++;
     }
   }
 
