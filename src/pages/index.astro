@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import { homeJsonLd } from '../lib/seo';
 import RequestInfo from '../components/RequestInfo.astro';
 import {
   analyteLabel,
@@ -26,6 +27,7 @@ const instruments = live.filter((p) => p.product_type === 'instrument').length;
 ---
 
 <Base
+  jsonLd={homeJsonLd(Astro.site)}
   title={`${site.name} – in-vitro diagnostic products directory`}
   description={`Search and compare ${live.length} in-vitro diagnostic products from ${brands.length} brands: rapid tests, immunoassays, molecular tests, analysers and consumables. Request information or build a quote.`}
 >

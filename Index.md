@@ -5,7 +5,7 @@ Every folder and key file, mirroring the tree. Keep current.
 | Path | Purpose |
 |---|---|
 | `project.config.yaml` | Project-wide settings (site name/URL, form, WhatsApp, contact email, AI-crawler flag). No source URLs. |
-| `astro.config.ts` | Astro config; derives `site` + `base` from `site_url`. |
+| `astro.config.ts` | Astro config; derives `site` + `base` from `site_url`; sitemap with noindex pages excluded. |
 | `package.json` / `pnpm-lock.yaml` | Scripts (`crawl`, `parse`, `build-data`, `validate`, `report`, `privacy-check`, `build`, `test`, `typecheck`) and deps. |
 | `tsconfig.json` | Strictest TS config (extends `astro/tsconfigs/strictest`). |
 | `vitest.config.ts` | Unit test config. |
@@ -46,6 +46,11 @@ Every folder and key file, mirroring the tree. Keep current.
 | `src/components/` | Header (search, basket badge), Footer (disclaimer), InquiryModal, RequestInfo (all CTA variants), AddToQuote, WhatsAppLink, ProductCard, ProductImage (placeholder), Breadcrumbs (+ JSON-LD), Pagination, Listing (static list + facet island), HubLayout. |
 | `src/scripts/` | Client code: `basket.ts` (quote_basket_v1), `inquiry.ts` (modal, validation, request_info event, Web3Forms/Formspree), `search.ts` (Pagefind), `facets.ts` (filters with URL state), `forms.ts` (shared validation + Web3Forms/Formspree submit). |
 | `src/pages/` | Home; `/products/` (paginated) + `/products/{slug}/`; `/categories/{cat}/[{sub}/]`; `/brands/`; `/analytes/`; `/technology/`; `/search/`; `/basket/`; `/contact/`; `/about/`; 404; `/data/facets.json`. |
+| `src/lib/seo.ts` | Absolute URLs + JSON-LD builders (Product, ItemList, Organization, WebSite/SearchAction). |
+| `src/lib/og.ts` | Build-time Open Graph card renderer (SVG → PNG with resvg). |
+| `src/pages/og/` | `/og/{slug}.png` per product + `/og/default.png`. |
+| `src/pages/robots.txt.ts`, `llms.txt.ts`, `llms-full.txt.ts` | robots (AI-crawler flag), LLM site summary, per-product text list. |
+| `src/pages/data/products.json.ts`, `src/pages/products/[slug].json.ts` | Public catalogue JSON and per-product JSON twins. |
 | `src/styles/` | `tokens.css` (design tokens), `global.css` (base, buttons, cards, listing/facets). |
 | `playwright.config.ts`, `tests/e2e/` | Browser smoke tests against the built site under the real base path. |
 | `public/` | Static files (`.nojekyll`, later robots.txt, fonts). |

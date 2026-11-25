@@ -171,3 +171,58 @@ test('empty filter results link to the request-a-product page', async ({ page })
   await expect(link).toBeVisible();
   await expect(link).toHaveAttribute('href', /q=zzzz-no-such-product/);
 });
+
+test.describe('SEO / GEO outputs', () => {
+  test('product page has Product JSON-LD (no offers), OG image and JSON alternate', async ({
+    page,
+    request,
+  }) => {
+    await page.goto(`./products/${sample.slug}/`);
+    const ld = await page.locator('script[type="application/ld+json"]').allTextContents();
+    const product = ld.map((t) => JSON.parse(t)).find((d) => d['@type'] === 'Product');
+    expect(product).toBeTruthy();
+    expect(product.name).toBe(display(sample));
+    expect(product.sku).toBe(sample.catalogue_no);
+    expect(product.offers).toBeUndefined();
+    const og = await page.locator('meta[property="og:image"]').getAttribute('content');
+    expect(og).toMatch(new RegExp(`/og/${sample.slug}\\.png$`));
+    const alt = await page
+      .locator('link[rel=alternate][type="application/json"]')
+      .getAttribute('href');
+    const json = await (await request.get(new URL(alt!).pathname)).json();
+    expect(json.id).toBe(sample.id);
+    expect(json).not.toHaveProperty('sources');
+    const img = await request.get(new URL(og!).pathname);
+    expect(img.headers()['content-type']).toContain('image/png');
+  });
+
+  test('home has Organization + WebSite SearchAction; hubs have ItemList', async ({ page }) => {
+    await page.goto('./');
+    const types = (await page.locator('script[type="application/ld+json"]').allTextContents()).map(
+      (t) => JSON.parse(t)['@type'],
+    );
+    expect(types).toEqual(expect.arrayContaining(['Organization', 'WebSite']));
+    await page.goto(`./categories/${sample.category}/`);
+    const hub = (await page.locator('script[type="application/ld+json"]').allTextContents()).map(
+      (t) => JSON.parse(t)['@type'],
+    );
+    expect(hub).toContain('ItemList');
+    await expect(page.locator('.compare table th[scope=row]').first()).toBeVisible();
+  });
+
+  test('robots.txt, llms.txt, llms-full.txt, sitemap', async ({ request, baseURL }) => {
+    const base = new URL(baseURL!).pathname;
+    const robots = await (await request.get(`${base}robots.txt`)).text();
+    expect(robots).toMatch(/User-agent: GPTBot\nAllow:/);
+    expect(robots).toMatch(/Sitemap: .*sitemap-index\.xml/);
+    const llms = await (await request.get(`${base}llms.txt`)).text();
+    expect(llms).toMatch(/^# /);
+    expect(llms).toContain('## Categories');
+    const full = await (await request.get(`${base}llms-full.txt`)).text();
+    expect(full).toContain(`## ${display(sample)}`);
+    const sm = await (await request.get(`${base}sitemap-0.xml`)).text();
+    expect(sm).toContain(`/products/${sample.slug}/`);
+    if (dup) expect(sm).not.toContain(`/products/${dup.slug}/`);
+    expect(sm).not.toMatch(/\/(search|basket)\//);
+  });
+});

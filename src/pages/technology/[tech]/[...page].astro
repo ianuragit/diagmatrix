@@ -14,11 +14,11 @@ import { site } from '../../../lib/site';
 export const getStaticPaths = (async ({ paginate }) => {
   const live = await liveProducts();
   return [...groupBy(live, (p) => p.technology)].flatMap(([tech, list]) =>
-    paginate(list, { params: { tech }, pageSize: PAGE_SIZE }),
+    paginate(list, { params: { tech }, pageSize: PAGE_SIZE, props: { all: list } }),
   );
 }) satisfies GetStaticPaths;
 const { tech } = Astro.params;
-const { page } = Astro.props;
+const { page, all } = Astro.props;
 const label = techLabel(tech);
 const cat = taxonomy.technology[tech]?.category;
 ---
@@ -30,6 +30,7 @@ const cat = taxonomy.technology[tech]?.category;
   intro={cat ? categoryIntro(cat) : undefined}
   crumbs={[{ label: 'Technologies', href: '/technology/' }, { label }]}
   page={page}
+  all={all}
   locked={{ technology: [tech] }}
   subject={label}
   basePath={`/technology/${tech}/`}

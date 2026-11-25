@@ -19,13 +19,14 @@ export const getStaticPaths = (async ({ paginate }) => {
       params: { cat },
       pageSize: PAGE_SIZE,
       props: {
+        all: list,
         subs: [...groupBy(list, (p) => p.subcategory)].map(([s, l]) => [s, l.length] as const),
       },
     }),
   );
 }) satisfies GetStaticPaths;
 const { cat } = Astro.params;
-const { page, subs } = Astro.props;
+const { page, subs, all } = Astro.props;
 const label = categoryLabel(cat);
 ---
 
@@ -39,6 +40,7 @@ const label = categoryLabel(cat);
   intro={categoryIntro(cat)}
   crumbs={[{ label: 'Categories', href: '/categories/' }, { label }]}
   page={page}
+  all={all}
   locked={{ category: [cat] }}
   subject={label}
   basePath={`/categories/${cat}/`}

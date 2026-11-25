@@ -18,13 +18,13 @@ export const getStaticPaths = (async ({ paginate }) => {
       paginate(l, {
         params: { cat, sub: SUB_SLUGS[sub]! },
         pageSize: PAGE_SIZE,
-        props: { subKey: sub },
+        props: { all: l, subKey: sub },
       }),
     ),
   );
 }) satisfies GetStaticPaths;
 const { cat, sub } = Astro.params;
-const { page, subKey } = Astro.props;
+const { page, subKey, all } = Astro.props;
 const label = `${categoryLabel(cat)}: ${subLabel(subKey)}`;
 ---
 
@@ -38,6 +38,7 @@ const label = `${categoryLabel(cat)}: ${subLabel(subKey)}`;
     { label: subLabel(subKey) },
   ]}
   page={page}
+  all={all}
   locked={{ category: [cat], type: [subKey] }}
   subject={label}
   basePath={`/categories/${cat}/${sub}/`}

@@ -5,14 +5,31 @@ import Listing from './Listing.astro';
 import RequestInfo from './RequestInfo.astro';
 import type { Page } from 'astro';
 import type { Product } from '../lib/catalogue';
-import { THIN_HUB } from '../lib/catalogue';
+import {
+  THIN_HUB,
+  analyteLabel,
+  categoryLabel,
+  displayName,
+  groupBy,
+  packLabel,
+  sampleLabel,
+  subLabel,
+  techLabel,
+} from '../lib/catalogue';
+import { itemListJsonLd } from '../lib/seo';
+import { url } from '../lib/url';
 export interface Props {
   title: string;
   heading: string;
   description: string;
+  /** Curated intro (taxonomy); a factual summary is always generated from the data too. */
   intro?: string;
+  /** Plain-language question heading for the intro, e.g. "What is a dengue test?" */
+  question?: string;
   crumbs: { label: string; href?: string }[];
   page: Page<Product>;
+  /** Every product in this hub (all pages) — used for the factual summary. */
+  all: Product[];
   locked: Record<string, string[]>;
   subject: string;
   fallbackLinks?: { href: string; label: string }[];
@@ -23,14 +40,48 @@ const {
   heading,
   description,
   intro,
+  question,
   crumbs,
   page,
+  all,
   locked,
   subject,
   fallbackLinks,
   basePath,
 } = Astro.props;
 const thin = page.total < THIN_HUB;
+
+const top = <K extends string>(m: Map<K, Product[]>, n: number, label: (k: K) => string) =>
+  [...m]
+    .sort((a, b) => b[1].length - a[1].length)
+    .slice(0, n)
+    .map(([k, l]) => `${label(k)} (${l.length})`);
+const brands = groupBy(all, (p) => p.brand);
+const techs = top(
+  groupBy(all, (p) => p.technology),
+  4,
+  techLabel,
+);
+const samples = top(
+  groupBy(all, (p) => p.sample_type),
+  4,
+  sampleLabel,
+);
+const subs = top(
+  groupBy(all, (p) => p.subcategory),
+  4,
+  (k) => subLabel(k).toLowerCase(),
+);
+const join = (xs: string[]) =>
+  xs.length > 1 ? `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}` : (xs[0] ?? '');
+const facts = [
+  `This page lists ${all.length} product${all.length === 1 ? '' : 's'} from ${brands.size} brand${brands.size === 1 ? '' : 's'}${subs.length ? `: ${join(subs)}` : ''}.`,
+  techs.length ? `Technologies: ${join(techs)}.` : '',
+  samples.length ? `Sample types: ${join(samples)}.` : '',
+]
+  .filter(Boolean)
+  .join(' ');
+const offset = (page.currentPage - 1) * page.size;
 ---
 
 <Base
@@ -38,18 +89,62 @@ const thin = page.total < THIN_HUB;
   description={description}
   noindex={thin || page.currentPage > 1}
   canonicalPath={page.currentPage > 1 ? undefined : basePath}
+  jsonLd={[itemListJsonLd(heading, page.data, Astro.site, offset)]}
 >
   <div class="container">
     <Breadcrumbs items={crumbs} />
     <header class="hub-head">
       <div>
         <h1>{heading}</h1>
+        {question && <h2 class="q">{question}</h2>}
         {intro && <p class="lede">{intro}</p>}
+        <p class="lede facts">{facts}</p>
       </div>
       <RequestInfo variant="hub" subject={subject} />
     </header>
     <slot />
     <Listing page={page} locked={locked} fallbackLinks={fallbackLinks} />
+
+    <section class="compare" aria-labelledby="cmp-h">
+      <h2 id="cmp-h">
+        Compare {subject} products
+        {page.lastPage > 1 && ` (page ${page.currentPage} of ${page.lastPage})`}
+      </h2>
+      <div class="table-wrap">
+        <table class="table">
+          <caption class="visually-hidden">
+            Comparison of{subject}products: brand, type, technology, analytes, sample type, pack
+            size and catalogue number
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Product</th>
+              <th scope="col">Type</th>
+              <th scope="col">Technology</th>
+              <th scope="col">Analytes</th>
+              <th scope="col">Sample</th>
+              <th scope="col">Pack</th>
+              <th scope="col">Cat. no.</th>
+            </tr>
+          </thead>
+          <tbody>
+            {page.data.map((p) => (
+              <tr>
+                <th scope="row">
+                  <a href={url(`/products/${p.slug}/`)}>{displayName(p)}</a>
+                </th>
+                <td>{subLabel(p.subcategory)}</td>
+                <td>{p.technology ? techLabel(p.technology) : categoryLabel(p.category)}</td>
+                <td>{p.analyte.slice(0, 4).map(analyteLabel).join(', ') || '—'}</td>
+                <td>{p.sample_type.map(sampleLabel).join(', ') || '—'}</td>
+                <td>{packLabel(p) ?? '—'}</td>
+                <td>{p.catalogue_no ?? '—'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
   </div>
 </Base>
 
@@ -61,9 +156,23 @@ const thin = page.total < THIN_HUB;
     gap: var(--s-4);
     margin-bottom: var(--s-5);
   }
+  .q {
+    font-size: var(--fs-lg);
+    margin-top: var(--s-3);
+  }
   .lede {
-    max-width: 70ch;
+    max-width: 75ch;
     color: var(--ink-muted);
+  }
+  .facts {
+    font-size: var(--fs-sm);
+  }
+  .compare {
+    margin-top: var(--s-6);
+  }
+  .compare th[scope='row'] {
+    width: auto;
+    font-weight: 600;
   }
   @media (max-width: 720px) {
     .hub-head {

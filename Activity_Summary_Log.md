@@ -2,6 +2,28 @@
 
 Newest first.
 
+## 2026-11-25 — Phase 6: SEO / GEO
+
+**Done**
+- Per-page titles/descriptions from templates; canonical URLs; Open Graph + Twitter cards on every page.
+- Generated OG image per product (1,219) + site card, rendered at build with resvg (system fonts).
+- JSON-LD: Product (brand, sku/mpn = catalogue no., category, description, additionalProperty for
+  facts + specs, isRelatedTo, dateModified; no price/offer fields), BreadcrumbList, ItemList on hubs,
+  Organization + WebSite with SearchAction on home. FAQPage not emitted: the catalogue has no FAQs.
+- `@astrojs/sitemap` (1,449 URLs) excluding every noindex page (duplicates, thin hubs < 3 products,
+  page 2+, search, basket). robots.txt with explicit AI-crawler allow/deny from `allow_ai_crawlers`.
+- GEO: hub pages get a factual summary generated from their products (count, brands, product types,
+  technologies, sample types), a "What is a {analyte} test?" heading on analyte hubs, and a comparison
+  table (product, type, technology, analytes, sample, pack, Cat. no.).
+- `/llms.txt`, `/llms-full.txt`, `/data/products.json`, `/products/{slug}.json` (+ rel="alternate").
+- 3 Playwright SEO tests (16 total).
+- History: `main` and the branch rewritten to a clean linear history (no commit names a source);
+  PR #2 closed as its commits are on `main`.
+
+**Notes**
+- robots.txt is only honoured at a host root: it takes effect on a custom domain, not under `/diagmatrix/`.
+- Build is ~60 s, mostly OG image rendering.
+
 ## 2026-11-25 — Request-a-product page; branch reconciled with main
 
 **Done**

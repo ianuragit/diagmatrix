@@ -1,5 +1,6 @@
 ---
 import { url } from '../lib/url';
+import { ldJson } from '../lib/seo';
 export interface Props {
   items: { label: string; href?: string }[];
 }
@@ -30,7 +31,7 @@ const ld = {
     ))}
   </ol>
 </nav>
-<script type="application/ld+json" set:html={JSON.stringify(ld)} />
+<script type="application/ld+json" set:html={ldJson(ld)} />
 <style>
   .crumbs ol {
     display: flex;

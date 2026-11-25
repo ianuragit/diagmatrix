@@ -4,7 +4,7 @@ A static directory of in-vitro diagnostic products. A polite scraping pipeline
 (robots.txt-first, 1 req/s per host, disk-cached) builds `data/products.json`;
 Astro renders it to GitHub Pages.
 
-> Status: Phase 5 done (site with search, filters, basket, inquiry modal, request-a-product page). See `Activity_Summary_Log.md`.
+> Status: Phase 6 done (SEO/GEO: JSON-LD, OG images, sitemap, robots, llms.txt, JSON endpoints). See `Activity_Summary_Log.md`.
 
 ## Setup
 
@@ -128,6 +128,16 @@ as scraped ones, and win over scraped values field by field.
     same analyte from other brands.
 11. **Summary**: 1–3 sentences generated only from the fields above.
 12. **Overrides** (`overrides.yaml`), applied last.
+
+## SEO / GEO outputs
+
+| URL | What |
+|---|---|
+| `/sitemap-index.xml` | Sitemap of indexable pages only |
+| `/robots.txt` | Crawl rules; AI crawlers allowed/blocked by `allow_ai_crawlers` (effective at a host root) |
+| `/llms.txt`, `/llms-full.txt` | Site summary and per-product facts for LLMs |
+| `/data/products.json`, `/products/{slug}.json` | Public machine-readable catalogue |
+| `/og/{slug}.png` | Generated social card per product |
 
 ## Frozen sources
 

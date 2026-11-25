@@ -23,6 +23,7 @@ import {
 } from '../../../lib/catalogue';
 import { site } from '../../../lib/site';
 import { url } from '../../../lib/url';
+import { productJsonLd } from '../../../lib/seo';
 
 export const getStaticPaths = (async () => {
   const all = await allProducts();
@@ -78,6 +79,7 @@ const updated = new Date(p.updated_at).toLocaleDateString('en-GB', {
     title={`${displayName(canonical)} | ${site.name}`}
     description={`This listing has moved to ${displayName(canonical)}.`}
     canonicalPath={`/products/${canonical.slug}/`}
+    ogImage={`/og/${canonical.slug}.png`}
     noindex
   >
     <meta
@@ -94,7 +96,15 @@ const updated = new Date(p.updated_at).toLocaleDateString('en-GB', {
     </div>
   </Base>
 ) : (
-  <Base title={title} description={description} bodyClass="has-sticky">
+  <Base
+    title={title}
+    description={description}
+    bodyClass="has-sticky"
+    ogType="product"
+    ogImage={`/og/${p.slug}.png`}
+    alternateJson={`/products/${p.slug}.json`}
+    jsonLd={[productJsonLd(p, Astro.site)]}
+  >
     <div class="container">
       <Breadcrumbs items={crumbs} />
       <article class="product" data-pagefind-body data-pagefind-meta={`title:${name}`}>

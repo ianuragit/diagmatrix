@@ -7,11 +7,11 @@ import { site } from '../../../lib/site';
 export const getStaticPaths = (async ({ paginate }) => {
   const live = await liveProducts();
   return [...groupBy(live, (p) => p.analyte)].flatMap(([analyte, list]) =>
-    paginate(list, { params: { analyte }, pageSize: PAGE_SIZE }),
+    paginate(list, { params: { analyte }, pageSize: PAGE_SIZE, props: { all: list } }),
   );
 }) satisfies GetStaticPaths;
 const { analyte } = Astro.params;
-const { page } = Astro.props;
+const { page, all } = Astro.props;
 const label = analyteLabel(analyte);
 ---
 
@@ -21,6 +21,9 @@ const label = analyteLabel(analyte);
   description={`Compare ${page.total} ${label} diagnostic products — rapid tests, assays and analysers — by brand, technology and sample type.`}
   crumbs={[{ label: 'Analytes', href: '/analytes/' }, { label }]}
   page={page}
+  all={all}
+  question={`What is a ${label} test?`}
+  intro={`${label} tests detect or measure ${label.replace(/ \(.*\)$/, '')} in a patient sample.`}
   locked={{ analyte: [analyte] }}
   subject={label}
   basePath={`/analytes/${analyte}/`}
