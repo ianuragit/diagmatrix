@@ -18,7 +18,7 @@
     "dev": "astro dev",
     "build": "astro build && pagefind --site dist",
     "preview": "astro preview",
-    "typecheck": "tsc --noEmit && astro check",
+    "typecheck": "astro sync && tsc --noEmit && astro check",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
