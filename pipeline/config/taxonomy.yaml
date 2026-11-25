@@ -311,6 +311,7 @@ text_fixes:
   - ['\.$', '']
   - ['\bHIV 1-2\.O\b', 'HIV 1-2.0']
   - ['\bCartrdige\b', 'Cartridge']
+  - ['\bAccu-Check\b', 'Accu-Chek']
   - ['\b[Cc][Oo][Vv][Ii][Dd]\s*-\s*19\b', 'COVID-19']
 
 # Scope: diagnostics only (decision 2026-11-25). Records are dropped in build-data

@@ -1,21 +1,32 @@
 {
   "duplicate_groups": [
     {
-      "key": "combur strip",
-      "brand": "Roche",
-      "canonical": "roche-combur-7-test-strip",
+      "key": "31 analyzer urine",
+      "brand": "URIT",
+      "canonical": "urit-31-urine-analyzer-1a3bbe",
       "members": [
         {
-          "id": "roche-combur-7-test-strip",
-          "name": "Roche Combur 7 Test Strip"
+          "id": "urit-31-urine-analyzer-1a3bbe",
+          "name": "URIT 31 Urine Analyzer"
         },
         {
-          "id": "roche-combur-9-test-strip",
-          "name": "Roche Combur 9 Test Strip"
+          "id": "urit-31-urine-analyzer",
+          "name": "URIT 31 Urine Analyzer"
+        }
+      ]
+    },
+    {
+      "key": "chikjj detect elisa igm",
+      "brand": "InBios",
+      "canonical": "inbios-chikjj-detect-igm-elisa-kit-971058",
+      "members": [
+        {
+          "id": "inbios-chikjj-detect-igm-elisa-kit-971058",
+          "name": "InBios CHIKjj Detect IgM ELISA Kit"
         },
         {
-          "id": "roche-combur-10-test-strip",
-          "name": "Roche Combur 10 Test Strip"
+          "id": "inbios-chikjj-detect-igm-elisa-kit",
+          "name": "InBios CHIKjj Detect IgM ELISA Kit"
         }
       ]
     },
@@ -568,32 +579,17 @@
       ]
     },
     {
-      "key": "analyzer clinitek status",
-      "brand": "Siemens Healthineers",
-      "canonical": "siemens-healthineers-clinitek-status-plus-analyzer",
-      "members": [
-        {
-          "id": "siemens-healthineers-clinitek-status-plus-analyzer",
-          "name": "Siemens Healthineers CLINITEK Status+ Analyzer"
-        },
-        {
-          "id": "siemens-healthineers-clinitek-status-analyzer",
-          "name": "Siemens Healthineers CLINITEK Status Analyzer"
-        }
-      ]
-    },
-    {
-      "key": "color gmbh heamoglobin scale",
+      "key": "color heamoglobin scale",
       "brand": "Copack",
-      "canonical": "copack-gmbh-heamoglobin-color-scale",
+      "canonical": "copack-heamoglobin-color-scale",
       "members": [
         {
-          "id": "copack-gmbh-heamoglobin-color-scale",
-          "name": "Copack GMBH Heamoglobin Color Scale"
+          "id": "copack-heamoglobin-color-scale",
+          "name": "Copack Heamoglobin Color Scale"
         },
         {
-          "id": "copack-gmbh-heamoglobin-color-scale-bc01bb",
-          "name": "Copack GMBH Heamoglobin Color Scale"
+          "id": "copack-heamoglobin-color-scale-bc01bb",
+          "name": "Copack Heamoglobin Color Scale"
         }
       ]
     },
@@ -614,11 +610,6 @@
     }
   ],
   "cross_source_merges": [
-    {
-      "id": "hemocue-wbc-diff-microcuvettes-ae5f21",
-      "name": "HemoCue WBC DIFF Microcuvettes",
-      "listings": 2
-    },
     {
       "id": "roche-coaguchek-pro-ii-2dc743",
       "name": "Roche CoaguChek Pro II",
@@ -657,11 +648,6 @@
     {
       "id": "arkray-spotchem-el-se-1520-4a3605",
       "name": "Arkray Spotchem El Se-1520",
-      "listings": 2
-    },
-    {
-      "id": "boditech-afias-6-dd2320",
-      "name": "Boditech AFIAS 6",
       "listings": 2
     },
     {
@@ -717,11 +703,6 @@
     {
       "id": "fujifilm-dri-chem-nx10n-459053",
       "name": "Fujifilm DRI-CHEM NX10N",
-      "listings": 2
-    },
-    {
-      "id": "abbott-digival-970304",
-      "name": "Abbott DIGIVAL",
       "listings": 2
     },
     {

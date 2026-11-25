@@ -225,6 +225,8 @@ export function build(input: BuildInput): BuildOutput {
       for (const comp of r.components) {
         const compKey = `${src.id}:${comp.source_id}`;
         if (compKey === parentKey) continue; // a page listing itself as its own "test"
+        // Same name as the instrument page itself (e.g. "XN-330" under "XN-330"): a self-listing, not a reagent.
+        if (dedupeKey(fixText(comp.name), null) === dedupeKey(fixText(r.name), null)) continue;
         parentsOf.set(compKey, parentKey);
         if (byId.has(comp.source_id)) {
           report.componentsMatchedToPages++;
@@ -423,6 +425,23 @@ export function build(input: BuildInput): BuildOutput {
   for (const n of normalised) {
     const k = `${(n.brand ?? '').toLowerCase()}|${n.key || hashKey(n.c.refKey)}`;
     (groups.get(k) ?? groups.set(k, []).get(k)!).push(n);
+  }
+  // An instrument and a reagent/consumable are never the same product.
+  for (const [k, members] of [...groups]) {
+    const types = [
+      ...new Set(
+        members.map((m) => m.cls.product_type).filter((t): t is NonNullable<typeof t> => !!t),
+      ),
+    ];
+    if (types.length < 2) continue;
+    groups.delete(k);
+    for (const t of types)
+      groups.set(
+        `${k}|${t}`,
+        members.filter((m) => m.cls.product_type === t),
+      );
+    const untyped = members.filter((m) => !m.cls.product_type);
+    if (untyped.length) groups.get(`${k}|${types[0]}`)!.push(...untyped);
   }
   // Different manufacturer catalogue numbers are never the same product.
   for (const [k, members] of [...groups]) {

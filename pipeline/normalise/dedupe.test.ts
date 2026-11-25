@@ -23,6 +23,20 @@ describe('dedupeKey', () => {
       dedupeKey('Bioline Dengue NS1 Ag', 'Abbott'),
     );
   });
+  it('does not mistake a model number before "Test" for a pack size', () => {
+    expect(dedupeKey('Combur 7 Test Strip', 'Roche')).not.toBe(
+      dedupeKey('Combur 10 Test Strip', 'Roche'),
+    );
+    expect(dedupeKey('Glucose 50 strips', null)).toBe(dedupeKey('Glucose', null));
+  });
+  it('keeps a trailing "+" model marker but treats "Ag+Ab" like "Ag Ab"', () => {
+    expect(dedupeKey('CLINITEK Status+ Analyzer', 'Siemens')).not.toBe(
+      dedupeKey('CLINITEK Status Analyzer', 'Siemens'),
+    );
+    expect(dedupeKey('STANDARD Q Dengue Ag+Ab Duo', null)).toBe(
+      dedupeKey('STANDARD Q Dengue Ag Ab Duo', null),
+    );
+  });
   it('is order-insensitive', () => {
     expect(dedupeKey('Dengue IgM IgG', null)).toBe(dedupeKey('Dengue IgG/IgM', null));
   });

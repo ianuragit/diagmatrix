@@ -197,6 +197,9 @@ describe('build()', () => {
     );
     expect(byId.get('roche-urisys-1100')!.related).toContain('roche-combur10');
     expect(out.products.filter((p) => p.name === 'Combur10')).toHaveLength(1);
+    // An instrument listing itself as one of its own tests is not turned into a reagent.
+    expect(out.products.filter((p) => p.name === 'cobas u 411')).toHaveLength(1);
+    expect(byId.get('roche-cobas-u-411')!.product_type).toBe('instrument');
   });
 
   it('never leaks provenance into public records', () => {

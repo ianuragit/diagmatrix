@@ -32,7 +32,9 @@ export function dedupeKey(name: string, brand: string | null, productLine?: stri
       ' ',
     );
   s = s
-    .replace(/\(\s*\d+\s*t\s*\)|\b\d+\s*(tests?|strips?|t)\b/g, ' ') // pack sizes
+    // Pack sizes only: "(48T)" or plural counts like "50 strips" — never "Combur 10 Test".
+    .replace(/\(\s*\d+\s*t\s*\)|\b\d{2,}\s*(tests|strips)\b/g, ' ')
+    .replace(/\+(?=\s|$|\))/g, ' plus ') // "Status+" is a model; "Ag+Ab" is just a separator
     .replace(/covid[\s-]*19/g, 'covid19')
     .replace(/sars[\s-]*cov[\s-]*2/g, 'sarscov2')
     .replace(/\bhiv[\s-]*1[\s/-]*2\b/g, 'hiv12')

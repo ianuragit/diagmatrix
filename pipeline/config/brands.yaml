@@ -11,9 +11,9 @@
 brands:
   - name: Abbott
     aliases: [Abbott Diagnostics, Alere, ABBOTT, Abaxis]
-    lines: [Bioline, Determine, Panbio, BinaxNOW, i-STAT, Afinion, ID NOW, ABON, SureStep, TestPack, CheckNOW, NxTek, Realtime, Cholestech, Piccolo]
+    lines: [Pima, Bioline, Determine, Panbio, BinaxNOW, i-STAT, Afinion, ID NOW, ABON, SureStep, TestPack, CheckNOW, NxTek, Realtime, Cholestech, Piccolo]
   - name: SD Biosensor
-    aliases: [SDBiosensor, SD BIOSENSOR]
+    aliases: [SDBiosensor, SD BIOSENSOR, SD Biosensors, SD]
     lines: [STANDARD Q, STANDARD F, STANDARD E, STANDARD M, STANDARD i-Q, STANDARD M10, STANDARD]
   - name: Boditech
     aliases: [Boditech Med, BODITECH]
@@ -22,14 +22,14 @@ brands:
     aliases: [Guangzhou Wondfo]
     lines: [Finecare]
   - name: CTK Biotech
-    aliases: [CTK]
-    lines: [OnSite, TRUSTline, TRUSTwell, RecombiLISA]
+    aliases: [CTK, CTK Biotech-Athenese Dx, Athenese-Dx, Athenese Dx]
+    lines: [OnSite, TRUSTline, TRUST line, TRUSTwell, RecombiLISA]
   - name: Premier Medical
     aliases: [Premier Medical Corporation, Premier]
     lines: [First Response]
   - name: Acon
     aliases: [Acon Laboratories, ACON]
-    lines: [Flowflex, Mission]
+    lines: [Flowflex, Mission, On Call]
   - name: Acro Biotech
     aliases: []
     lines: [JusChek]
@@ -38,7 +38,7 @@ brands:
     lines: [ErbaQik]
   - name: InBios
     aliases: [Inbios, InBios International]
-    lines: [Kalazar Detect, Scrub Typhus Detect]
+    lines: [Kalazar Detect, Scrub Typhus Detect, CHIKjj Detect, DENV Detect, ZIKV Detect]
   - name: Calbiotech
     aliases: [Calbiotech Inc]
     lines: []
@@ -313,6 +313,34 @@ brands:
     lines: []
   - name: Medical Electronic Systems
     aliases: []
+    lines: []
+
+  - name: Medtronic
+    aliases: []
+    lines: []
+  - name: J. Mitra
+    aliases: [J.Mithra, J Mitra, J.Mitra, J. Mithra]
+    lines: []
+  - name: OraSure Technologies
+    aliases: [OraSure]
+    lines: [OraQuick]
+  - name: URIT
+    aliases: [URIT Medical]
+    lines: []
+  - name: HiMedia
+    aliases: [HiMEDIA, Himedia]
+    lines: [Hi-PCR, HiPurA]
+  - name: Skyla
+    aliases: []
+    lines: []
+  - name: Bio-Rad
+    aliases: [BioRad, Bio Rad]
+    lines: [iScript]
+  - name: Copack
+    aliases: [Copack GmbH, Copack GMBH]
+    lines: []
+  - name: Hemax Health
+    aliases: [Hemax health]
     lines: []
 
 # Stated brands that are really distributors or OEMs of a product line listed
