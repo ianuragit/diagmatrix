@@ -37,6 +37,20 @@ describe('dedupeKey', () => {
       dedupeKey('STANDARD Q Dengue Ag Ab Duo', null),
     );
   });
+  it('normalises "P.f/P.v", "HIV 1+2" and "Coagu Chek" spellings', () => {
+    expect(dedupeKey('STANDARD Q Malaria P.F/P.V Ag', null)).toBe(
+      dedupeKey('STANDARD Q Malaria PF PV Ag', null),
+    );
+    expect(dedupeKey('TRUSTwell HIV 1+2 Ab ELISA', null)).toBe(
+      dedupeKey('TRUSTwell HIV 1 2 Ab ELISA Kit', null),
+    );
+    expect(dedupeKey('Coagu Chek Pro II', null)).toBe(dedupeKey('CoaguChek Pro II', null));
+  });
+  it('treats plurals as the same word', () => {
+    expect(dedupeKey('i15 Controls Level -2', 'EDAN')).toBe(
+      dedupeKey('i15 control level -2', 'EDAN'),
+    );
+  });
   it('is order-insensitive', () => {
     expect(dedupeKey('Dengue IgM IgG', null)).toBe(dedupeKey('Dengue IgG/IgM', null));
   });

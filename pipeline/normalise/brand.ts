@@ -9,6 +9,8 @@ export interface BrandEntry {
   lines: string[];
   /** Ordinary-word brand names: only used when a source states them. */
   stated_only?: boolean;
+  /** Names a source may state as the brand that must stay in product names (product lines, e.g. "RADI"). */
+  stated_aliases?: string[];
 }
 
 export interface BrandConfig {
@@ -64,6 +66,7 @@ export class BrandMatcher {
         });
         this.byNorm.set(norm(text), b.name);
       }
+      for (const text of b.stated_aliases ?? []) this.byNorm.set(norm(text), b.name);
       for (const text of b.lines) {
         this.lineOwner.set(norm(text), b.name);
         this.lines.push({
@@ -101,7 +104,30 @@ export class BrandMatcher {
     }
 
     let product_line: string | null = null;
-    const l = this.lines.find((x) => x.re.test(name));
+    // "<line> <brand> <line> …" (source prefixed line + brand): drop the leading "<line> <brand>".
+    const lead = this.lines.find((x) => x.re.test(name));
+    if (lead) {
+      const rest = name.replace(lead.re, '').replace(/^[\s\-:,]+/, '');
+      const p = this.prefixes.find((x) => x.brand === lead.brand && x.re.test(rest));
+      if (p) {
+        const tail = rest
+          .replace(p.re, '')
+          .replace(/^[\s\-:,]+/, '')
+          .trim();
+        // Keep the product line once: "HemaPrep CellaVision HemaPrep" → "HemaPrep";
+        // "First Response Premier Medical Syphilis…" → "First Response Syphilis…".
+        if (tail) name = lead.re.test(tail) ? tail : `${name.match(lead.re)![0]} ${tail}`;
+        brand = brand ?? lead.brand;
+        if (method === 'none') method = 'line';
+      }
+    }
+    let l = this.lines.find((x) => x.re.test(name));
+    // "HemoTypeSC HemoTypeSC Sickle Cell" → "HemoTypeSC Sickle Cell"
+    if (l) {
+      const rest = name.replace(l.re, '').replace(/^[\s\-:,]+/, '');
+      if (l.re.test(rest)) name = rest;
+      l = this.lines.find((x) => x.re.test(name));
+    }
     if (l && (!brand || l.brand === brand)) {
       product_line = l.text;
       if (!brand) {

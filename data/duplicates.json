@@ -1,6 +1,36 @@
 {
   "duplicate_groups": [
     {
+      "key": "coaguchek ii pro",
+      "brand": "Roche",
+      "canonical": "roche-coaguchek-pro-ii-2dc743",
+      "members": [
+        {
+          "id": "roche-coaguchek-pro-ii-2dc743",
+          "name": "Roche CoaguChek Pro II"
+        },
+        {
+          "id": "roche-coagu-chek-pro-ii",
+          "name": "Roche Coagu Chek Pro II"
+        }
+      ]
+    },
+    {
+      "key": "coaguchek plus system xs",
+      "brand": "Roche",
+      "canonical": "roche-coagu-chek-xs-plus-system",
+      "members": [
+        {
+          "id": "roche-coagu-chek-xs-plus-system",
+          "name": "Roche Coagu Chek Xs Plus System"
+        },
+        {
+          "id": "roche-coaguchek-xs-plus-system",
+          "name": "Roche CoaguChek XS Plus system"
+        }
+      ]
+    },
+    {
       "key": "31 analyzer urine",
       "brand": "URIT",
       "canonical": "urit-31-urine-analyzer-1a3bbe",
@@ -61,7 +91,7 @@
       ]
     },
     {
-      "key": "detect kalazar leishmaniasis visceral",
+      "key": "detect kalazar leishmaniasi visceral",
       "brand": "InBios",
       "canonical": "inbios-kalazar-detect-rapid-test-for-visceral-leishmaniasis",
       "members": [
@@ -151,6 +181,36 @@
       ]
     },
     {
+      "key": "2 control i15 level",
+      "brand": "EDAN",
+      "canonical": "edan-i15-control-level-2",
+      "members": [
+        {
+          "id": "edan-i15-control-level-2",
+          "name": "EDAN i15 control level -2"
+        },
+        {
+          "id": "edan-i15-controls-level-2",
+          "name": "EDAN i15 Controls Level -2"
+        }
+      ]
+    },
+    {
+      "key": "3 control i15 level",
+      "brand": "EDAN",
+      "canonical": "edan-i15-control-level-3",
+      "members": [
+        {
+          "id": "edan-i15-control-level-3",
+          "name": "EDAN i15 control level -3"
+        },
+        {
+          "id": "edan-i15-controls-level-3",
+          "name": "EDAN i15 Controls Level -3"
+        }
+      ]
+    },
+    {
       "key": "biosen glucose lactate solution system",
       "brand": "EKF Diagnostics",
       "canonical": "ekf-diagnostics-biosen-glucose-lactate-system-solution",
@@ -196,6 +256,44 @@
       ]
     },
     {
+      "key": "color hemoglobin scale",
+      "brand": "Copack",
+      "canonical": "copack-hemoglobin-color-scale",
+      "members": [
+        {
+          "id": "copack-hemoglobin-color-scale",
+          "name": "Copack Hemoglobin Color Scale"
+        },
+        {
+          "id": "copack-hemoglobin-color-scale-cfbea8",
+          "name": "Copack Hemoglobin Color Scale"
+        },
+        {
+          "id": "copack-hemoglobin-color-scale-e8f655",
+          "name": "Copack Hemoglobin Color Scale"
+        },
+        {
+          "id": "copack-hemoglobin-color-scale-bc01bb",
+          "name": "Copack Hemoglobin Color Scale"
+        }
+      ]
+    },
+    {
+      "key": "a1c call hba1c on",
+      "brand": "Acon",
+      "canonical": "acon-on-call-a1c-hba1c-test-kit-a5431d",
+      "members": [
+        {
+          "id": "acon-on-call-a1c-hba1c-test-kit-a5431d",
+          "name": "Acon On Call A1c HbA1c Test Kit"
+        },
+        {
+          "id": "acon-on-call-a1c-hba1c-test-kit",
+          "name": "Acon On Call A1c HbA1c Test Kit"
+        }
+      ]
+    },
+    {
       "key": "binaxnow g6pd",
       "brand": "Abbott",
       "canonical": "abbott-binaxnow-g6pd",
@@ -226,7 +324,37 @@
       ]
     },
     {
-      "key": "ag f malaria p pan q standard",
+      "key": "ag dengue duo iggigm onsite",
+      "brand": "CTK Biotech",
+      "canonical": "ctk-biotech-onsite-duo-dengue-ag-igg-igm-rapid-test",
+      "members": [
+        {
+          "id": "ctk-biotech-onsite-duo-dengue-ag-igg-igm-rapid-test",
+          "name": "CTK Biotech OnSite Duo Dengue Ag IgG IgM Rapid Test"
+        },
+        {
+          "id": "ctk-biotech-onsite-duo-dengue-ag-igg-igm-rapid-test-ce",
+          "name": "CTK Biotech OnSite Duo Dengue Ag-IgG/IgM Rapid Test CE"
+        }
+      ]
+    },
+    {
+      "key": "iggigm q standard tsutsugmushi",
+      "brand": "SD Biosensor",
+      "canonical": "sd-biosensor-standard-q-tsutsugmushi-igm-igg",
+      "members": [
+        {
+          "id": "sd-biosensor-standard-q-tsutsugmushi-igm-igg",
+          "name": "SD Biosensor STANDARD Q Tsutsugmushi IgM IgG"
+        },
+        {
+          "id": "sd-biosensor-standard-q-tsutsugamushi-igm-igg",
+          "name": "SD Biosensor STANDARD Q TSUTSUGAMUSHI IgM/IgG"
+        }
+      ]
+    },
+    {
+      "key": "ag malaria pan pf q standard",
       "brand": "SD Biosensor",
       "canonical": "sd-biosensor-standard-q-malaria-p-f-pan-ag",
       "members": [
@@ -252,6 +380,21 @@
         {
           "id": "sd-biosensor-standard-q-dengue-ag-plus-ab-duo",
           "name": "SD Biosensor STANDARD Q Dengue Ag+Ab Duo"
+        }
+      ]
+    },
+    {
+      "key": "ag malaria pf pv q standard",
+      "brand": "SD Biosensor",
+      "canonical": "sd-biosensor-standard-q-malaria-pf-pv-ag",
+      "members": [
+        {
+          "id": "sd-biosensor-standard-q-malaria-pf-pv-ag",
+          "name": "SD Biosensor STANDARD Q Malaria PF PV Ag"
+        },
+        {
+          "id": "sd-biosensor-standard-q-malaria-p-f-p-v-ag",
+          "name": "SD Biosensor STANDARD Q Malaria P.F/P.V Ag"
         }
       ]
     },
@@ -361,6 +504,21 @@
       ]
     },
     {
+      "key": "combo dengue iggigm onsite",
+      "brand": "CTK Biotech",
+      "canonical": "ctk-biotech-onsite-dengue-igg-igm-3-0-combo-rapid-test-ce",
+      "members": [
+        {
+          "id": "ctk-biotech-onsite-dengue-igg-igm-3-0-combo-rapid-test-ce",
+          "name": "CTK Biotech OnSite Dengue IgG/IgM 3.0 Combo Rapid Test CE"
+        },
+        {
+          "id": "ctk-biotech-onsite-dengue-igg-igm-combo-rapid-test",
+          "name": "CTK Biotech OnSite Dengue IgG IgM Combo Rapid Test"
+        }
+      ]
+    },
+    {
       "key": "ag dengue onsite",
       "brand": "CTK Biotech",
       "canonical": "ctk-biotech-onsite-dengue-ag-rapid-test",
@@ -406,7 +564,7 @@
       ]
     },
     {
-      "key": "combo hiv q standard syphilis",
+      "key": "combo hiv q standard syphili",
       "brand": "SD Biosensor",
       "canonical": "sd-biosensor-standard-q-hiv-syphilis-combo",
       "members": [
@@ -436,7 +594,22 @@
       ]
     },
     {
-      "key": "iggigm scrub trustline typhus",
+      "key": "iggigm lepospira q standard",
+      "brand": "SD Biosensor",
+      "canonical": "sd-biosensor-standard-q-lepospira-igg-igm",
+      "members": [
+        {
+          "id": "sd-biosensor-standard-q-lepospira-igg-igm",
+          "name": "SD Biosensor Standard Q Lepospira Igg Igm"
+        },
+        {
+          "id": "sd-biosensor-standard-q-leptospira-igm-igg",
+          "name": "SD Biosensor STANDARD Q Leptospira IgM/IgG"
+        }
+      ]
+    },
+    {
+      "key": "iggigm scrub trustline typhu",
       "brand": "CTK Biotech",
       "canonical": "ctk-biotech-trustline-scrub-typhus-igg-igm-rapid-test-bff502",
       "members": [
@@ -504,6 +677,21 @@
       ]
     },
     {
+      "key": "ab elisa hiv12 trustwell",
+      "brand": "CTK Biotech",
+      "canonical": "ctk-biotech-trustwell-hiv-1-2-ab-elisa-kit",
+      "members": [
+        {
+          "id": "ctk-biotech-trustwell-hiv-1-2-ab-elisa-kit",
+          "name": "CTK Biotech TRUSTwell HIV 1 2 Ab ELISA Kit"
+        },
+        {
+          "id": "ctk-biotech-trustwell-hiv-1-plus-2-ab-elisa",
+          "name": "CTK Biotech TRUSTwell HIV 1+2 Ab ELISA"
+        }
+      ]
+    },
+    {
       "key": "dengue elisa igg trustwell",
       "brand": "CTK Biotech",
       "canonical": "ctk-biotech-trustwell-dengue-igg-elisa-kit",
@@ -549,6 +737,96 @@
       ]
     },
     {
+      "key": "ab syphili trustwell",
+      "brand": "CTK Biotech",
+      "canonical": "ctk-biotech-trustwell-syphilis-ab-kit",
+      "members": [
+        {
+          "id": "ctk-biotech-trustwell-syphilis-ab-kit",
+          "name": "CTK Biotech TRUSTwell Syphilis Ab kit"
+        },
+        {
+          "id": "ctk-biotech-trustwell-syphilis-ab-elisa-ce",
+          "name": "CTK Biotech TRUSTwell Syphilis Ab ELISA CE"
+        }
+      ]
+    },
+    {
+      "key": "combo first hiv12 response syphili",
+      "brand": "Premier Medical",
+      "canonical": "premier-medical-first-response-hiv-12-syphilis-combo-card-test",
+      "members": [
+        {
+          "id": "premier-medical-first-response-hiv-12-syphilis-combo-card-test",
+          "name": "Premier Medical FIRST RESPONSE HIV 12 SYPHILIS Combo Card Test"
+        },
+        {
+          "id": "premier-medical-first-response-hiv-1-plus-2-syphilis-combo-card-test",
+          "name": "Premier Medical First Response HIV 1+2/Syphilis Combo Card Test"
+        }
+      ]
+    },
+    {
+      "key": "ag first malaria pf pv response",
+      "brand": "Premier Medical",
+      "canonical": "premier-medical-first-response-malaria-ag-p-f-p-v-card-test",
+      "members": [
+        {
+          "id": "premier-medical-first-response-malaria-ag-p-f-p-v-card-test",
+          "name": "Premier Medical First Response Malaria Ag. P.f. P.v. Card Test"
+        },
+        {
+          "id": "premier-medical-first-response-malaria-ag-pf-pv-card-test",
+          "name": "Premier Medical First Response Malaria Ag pf/pv Card Test"
+        }
+      ]
+    },
+    {
+      "key": "anti cardtest first response syphili tp",
+      "brand": "Premier Medical",
+      "canonical": "premier-medical-first-response-syphilis-anti-tp-cardtest",
+      "members": [
+        {
+          "id": "premier-medical-first-response-syphilis-anti-tp-cardtest",
+          "name": "Premier Medical First Response SyphiliS Anti-TP CardTest"
+        },
+        {
+          "id": "premier-medical-first-response-syphilis-anti-tp-card-test",
+          "name": "Premier Medical First Response Syphilis Anti TP Card Test"
+        }
+      ]
+    },
+    {
+      "key": "binaxnow pneumoniae streptococcu",
+      "brand": "Abbott",
+      "canonical": "abbott-binaxnow-streptococcus-pneumoniae",
+      "members": [
+        {
+          "id": "abbott-binaxnow-streptococcus-pneumoniae",
+          "name": "Abbott Binaxnow Streptococcus Pneumoniae"
+        },
+        {
+          "id": "abbott-binaxnow-streptococcus-pneumoniae-antigen-card",
+          "name": "Abbott BINAXNOW STREPTOCOCCUS PNEUMONIAE ANTIGEN CARD"
+        }
+      ]
+    },
+    {
+      "key": "cardiac sensitive t trop",
+      "brand": "Roche",
+      "canonical": "roche-cardiac-troponin-t-sensitive-test-visual",
+      "members": [
+        {
+          "id": "roche-cardiac-troponin-t-sensitive-test-visual",
+          "name": "Roche cardiac Troponin T sensitive test (visual)"
+        },
+        {
+          "id": "roche-cardiac-trop-t-sensitive-test",
+          "name": "Roche Cardiac Trop T Sensitive Test"
+        }
+      ]
+    },
+    {
       "key": "a1c hba1c pocketchem",
       "brand": "Arkray",
       "canonical": "arkray-pocketchem-a1c-hba1c-test-kit",
@@ -560,6 +838,21 @@
         {
           "id": "arkray-pocketchem-a1c-hba1c-device",
           "name": "Arkray PocketChem A1C HbA1c - Device"
+        }
+      ]
+    },
+    {
+      "key": "4010 pocketchem pu ua",
+      "brand": "Arkray",
+      "canonical": "arkray-compact-urine-analyzer-pocketchem-ua-pu-4010",
+      "members": [
+        {
+          "id": "arkray-compact-urine-analyzer-pocketchem-ua-pu-4010",
+          "name": "Arkray Compact Urine Analyzer PocketChem UA PU-4010"
+        },
+        {
+          "id": "arkray-pocketchem-ua-pu-4010-329320",
+          "name": "Arkray PocketChem UA PU-4010"
         }
       ]
     },
@@ -579,17 +872,51 @@
       ]
     },
     {
-      "key": "color heamoglobin scale",
-      "brand": "Copack",
-      "canonical": "copack-heamoglobin-color-scale",
+      "key": "hb hemoglobin mission strip",
+      "brand": "Acon",
+      "canonical": "acon-mission-hemoglobin-hb-and-test-strip",
       "members": [
         {
-          "id": "copack-heamoglobin-color-scale",
-          "name": "Copack Heamoglobin Color Scale"
+          "id": "acon-mission-hemoglobin-hb-and-test-strip",
+          "name": "Acon Mission Hemoglobin Hb And Test Strip"
         },
         {
-          "id": "copack-heamoglobin-color-scale-bc01bb",
-          "name": "Copack Heamoglobin Color Scale"
+          "id": "acon-mission-hb-hemoglobin-test-strips",
+          "name": "Acon Mission Hb Hemoglobin Test Strips"
+        }
+      ]
+    },
+    {
+      "key": "community hiv home in oraquick version",
+      "brand": "OraSure Technologies",
+      "canonical": "orasure-technologies-oraquick-in-home-hiv-test-pharmacy-version",
+      "members": [
+        {
+          "id": "orasure-technologies-oraquick-in-home-hiv-test-pharmacy-version",
+          "name": "OraSure Technologies ORAQUICK IN-HOME HIV TEST (Pharmacy Version)"
+        },
+        {
+          "id": "orasure-technologies-oraquick-in-home-hiv-test-community-version",
+          "name": "OraSure Technologies ORAQUICK IN-HOME HIV TEST (Community Version)"
+        },
+        {
+          "id": "orasure-technologies-oraquick-in-home-hiv-test-us-fda-version",
+          "name": "OraSure Technologies ORAQUICK IN-HOME HIV TEST (US FDA Version)"
+        }
+      ]
+    },
+    {
+      "key": "1050 blood glucocard glucose gt meter vital",
+      "brand": "Arkray",
+      "canonical": "arkray-glucocard-vital-gt-1050",
+      "members": [
+        {
+          "id": "arkray-glucocard-vital-gt-1050",
+          "name": "Arkray GLUCOCARD Vital GT-1050"
+        },
+        {
+          "id": "arkray-blood-glucose-test-meter-glucocard-vital-gt-1050",
+          "name": "Arkray Blood Glucose Test Meter GLUCOCARD Vital GT-1050"
         }
       ]
     },
@@ -626,6 +953,11 @@
       "listings": 2
     },
     {
+      "id": "sd-biosensor-standard-q-malaria-pf-pv-ag",
+      "name": "SD Biosensor STANDARD Q Malaria PF PV Ag",
+      "listings": 2
+    },
+    {
       "id": "sd-biosensor-standard-q-dengue-igm-igg",
       "name": "SD Biosensor STANDARD Q Dengue IgM/IgG",
       "listings": 2
@@ -641,8 +973,8 @@
       "listings": 2
     },
     {
-      "id": "arkray-pocketchem-ua-pu-4010-329320",
-      "name": "Arkray PocketChem UA PU-4010",
+      "id": "arkray-compact-urine-analyzer-pocketchem-ua-pu-4010",
+      "name": "Arkray Compact Urine Analyzer PocketChem UA PU-4010",
       "listings": 2
     },
     {
@@ -676,11 +1008,6 @@
       "listings": 2
     },
     {
-      "id": "sd-biosensor-standard-q-malaria-p-f-p-v-ag",
-      "name": "SD Biosensor STANDARD Q Malaria P.F/P.V Ag",
-      "listings": 2
-    },
-    {
       "id": "abbott-bioline-rotavirus",
       "name": "Abbott Bioline ROTAVIRUS",
       "listings": 2
@@ -708,6 +1035,11 @@
     {
       "id": "abbott-nycocard-reader-ii-e1cda3",
       "name": "Abbott NYCOCARD READER II",
+      "listings": 2
+    },
+    {
+      "id": "hemocue-hba1c-501-test-cartridge",
+      "name": "HemoCue HbA1c 501 Test Cartridge",
       "listings": 2
     },
     {

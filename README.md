@@ -70,6 +70,7 @@ Things deliberately left unset for now — fill in before launch.
 | `pnpm build-data` | Normalise, classify, dedupe, merge (+ `data/manual/*.yaml`) → `data/products.json`, `data/duplicates.json`, `data/id-map.json`; private provenance and build report in `data/private/`. No network. Refuses to shrink the catalogue by more than 2% (max 20) unless `--allow-shrink`. |
 | `pnpm validate` | Schema-check `data/products.json`; fails on errors, duplicate slugs, private terms, or non-English text. |
 | `pnpm report` | Markdown report: raw counts and coverage per source; catalogue brand table, categories, field coverage, duplicate groups, merges, scope drops, brand conflicts, low-confidence items. Never prints source URLs or ids. |
+| `pnpm quality` | Data-quality audit → `docs/data-quality-report.md` + `docs/missing-data.csv`: brand verification (official domains, DNS), sanity checks, dedupe review, missing data by field/source/category/brand. |
 | `pnpm privacy-check` | Scan committable files and `dist/` for private terms. |
 | `pnpm dev` / `pnpm build` / `pnpm preview` | Astro site; `build` also runs Pagefind. |
 | `pnpm test` / `pnpm typecheck` | Vitest; `tsc` + `astro check`. |
@@ -169,6 +170,21 @@ a broken source from deleting products.
 | Browser | `pnpm test:e2e` | search, `/` shortcut, facet narrowing + URL + back, basket persistence, modal prefill + event + validation, request-a-product page, duplicate redirect, no-JS pagination, mobile sticky CTA, JSON-LD / OG / robots / llms.txt / sitemap |
 | Links | `pnpm linkcheck` | every internal link and anchor in `dist/` |
 | Lighthouse (mobile) | manual | 100 / 100 / 100 / 100 on home, listing, product, category, brand, analyte, request pages |
+
+## Data quality
+
+`pnpm quality` writes [`docs/data-quality-report.md`](docs/data-quality-report.md) and
+[`docs/missing-data.csv`](docs/missing-data.csv). Automatic safeguards in `build-data`:
+
+- **Dedupe:** brand + normalised name (spelling, punctuation, plurals, word order, pack sizes);
+  same brand + catalogue number merges spelling variants unless a distinguishing word (IgG/IgM/Ag/
+  Ab/Duo/Combo/Self) or the analytes differ; instruments and reagents never merge; different
+  catalogue numbers never merge; same-named different products get a pack-size/Cat. no. suffix.
+- **Catalogue numbers:** placeholders ("REFER BELOW", "N/A") removed; a number the source gives to
+  two clearly different products is withheld on both (fix with `overrides.yaml`).
+- **Sample types** that contradict the analyte (stool for influenza) are removed.
+- **Brands:** every brand has its official domain in `brands.yaml` (checked by DNS) or a recorded
+  web-search confirmation; product lines a source states as a brand map to the real company.
 
 ## Language: English only
 

@@ -1,0 +1,772 @@
+[
+  {
+    "brand": "77 Elektronika",
+    "website": "e77.hu",
+    "resolves": true,
+    "note": "77 Elektronika Kft., Budapest, Hungary (urine analysers, founded 1986) — confirmed by web search",
+    "checked_at": "2026-11-25T07:42:31.299Z"
+  },
+  {
+    "brand": "Abbott",
+    "website": "abbott.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:10.029Z"
+  },
+  {
+    "brand": "Acon",
+    "website": "aconlabs.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:11.499Z"
+  },
+  {
+    "brand": "Acro Biotech",
+    "website": "acrobiotech.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:11.521Z"
+  },
+  {
+    "brand": "Actim",
+    "website": "actimtest.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:14.638Z"
+  },
+  {
+    "brand": "Aidian",
+    "website": "aidian.eu",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:12.436Z"
+  },
+  {
+    "brand": "Analyticon",
+    "website": "analyticon-diagnostics.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:15.203Z"
+  },
+  {
+    "brand": "Apexbio",
+    "website": "apexbio.com.tw",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:40.926Z"
+  },
+  {
+    "brand": "Arkray",
+    "website": "arkray.co.jp",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:12.937Z"
+  },
+  {
+    "brand": "Becton Dickinson",
+    "website": "bd.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:13.190Z"
+  },
+  {
+    "brand": "Bilimetrix",
+    "website": "bilimetrix.com",
+    "resolves": false,
+    "note": "Bilimetrix s.r.l., Trieste, Italy (Bilistick, CE marked) — confirmed by web search",
+    "checked_at": "2026-11-25T07:40:41.521Z"
+  },
+  {
+    "brand": "Bio-Rad",
+    "website": "bio-rad.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:42.469Z"
+  },
+  {
+    "brand": "Bioantibody",
+    "website": "bioantibody.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:17.263Z"
+  },
+  {
+    "brand": "bioMérieux",
+    "website": "biomerieux.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:13.177Z"
+  },
+  {
+    "brand": "Biosurfit",
+    "website": "biosurfit.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:41.747Z"
+  },
+  {
+    "brand": "Boditech",
+    "website": "boditech.co.kr",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:11.176Z"
+  },
+  {
+    "brand": "Bonraybio",
+    "website": "bonraybio.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:40.067Z"
+  },
+  {
+    "brand": "Bosch",
+    "website": "bosch-vivalytic.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:13.350Z"
+  },
+  {
+    "brand": "Bühlmann",
+    "website": "buhlmannlabs.ch",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:37.977Z"
+  },
+  {
+    "brand": "Calbiotech",
+    "website": "calbiotech.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:11.601Z"
+  },
+  {
+    "brand": "CellaVision",
+    "website": "cellavision.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:42.587Z"
+  },
+  {
+    "brand": "Cepheid",
+    "website": "cepheid.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:13.205Z"
+  },
+  {
+    "brand": "Concile",
+    "website": "concile.de",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:15.746Z"
+  },
+  {
+    "brand": "Copack",
+    "website": "copack.de",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:42.580Z"
+  },
+  {
+    "brand": "Coyote",
+    "website": "coyotebio.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:17.516Z"
+  },
+  {
+    "brand": "Credo",
+    "website": "credodxbiomed.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:12.279Z"
+  },
+  {
+    "brand": "CTK Biotech",
+    "website": "ctkbiotech.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:11.453Z"
+  },
+  {
+    "brand": "DiaSys",
+    "website": "diasys-diagnostics.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:38.911Z"
+  },
+  {
+    "brand": "Diesse",
+    "website": "diesse.it",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:39.471Z"
+  },
+  {
+    "brand": "Doasense",
+    "website": "doasense.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:39.140Z"
+  },
+  {
+    "brand": "Dr. Fooke",
+    "website": "fooke-labs.de",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:14.905Z"
+  },
+  {
+    "brand": "Dr. Müller",
+    "website": "dr-mueller-geraetebau.de",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:37.020Z"
+  },
+  {
+    "brand": "Dräger",
+    "website": "draeger.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:14.794Z"
+  },
+  {
+    "brand": "Dymind",
+    "website": "dymind.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:40.142Z"
+  },
+  {
+    "brand": "EDAN",
+    "website": "edan.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:11.913Z"
+  },
+  {
+    "brand": "EKF Diagnostics",
+    "website": "ekfdiagnostics.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:14.672Z"
+  },
+  {
+    "brand": "Erba Mannheim",
+    "website": "erbamannheim.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:11.564Z"
+  },
+  {
+    "brand": "Eschweiler",
+    "website": "eschweiler.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:41.779Z"
+  },
+  {
+    "brand": "Essenlix",
+    "website": "essenlix.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:38.980Z"
+  },
+  {
+    "brand": "Eurolyser",
+    "website": "eurolyser.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:37.105Z"
+  },
+  {
+    "brand": "Exias Medical",
+    "website": "exias-medical.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:15.296Z"
+  },
+  {
+    "brand": "FlashDx",
+    "website": "flashdx.com",
+    "resolves": true,
+    "note": "FlashDx (sSPRT point-of-care PCR) — confirmed by web search",
+    "checked_at": "2026-11-25T07:40:38.076Z"
+  },
+  {
+    "brand": "Fujifilm",
+    "website": "fujifilm.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:15.526Z"
+  },
+  {
+    "brand": "Getein",
+    "website": "getein.com.cn",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:13.920Z"
+  },
+  {
+    "brand": "Haemonetics",
+    "website": "haemonetics.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:37.131Z"
+  },
+  {
+    "brand": "Hemex Health",
+    "website": "hemexhealth.com",
+    "resolves": true,
+    "note": "Hemex Health, Portland OR (Gazelle reader); source spells it 'Hemax' — confirmed by web search",
+    "checked_at": "2026-11-25T07:40:42.583Z"
+  },
+  {
+    "brand": "HemoCue",
+    "website": "hemocue.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:37.016Z"
+  },
+  {
+    "brand": "HemoSonics",
+    "website": "hemosonics.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:39.167Z"
+  },
+  {
+    "brand": "HiMedia",
+    "website": "himedialabs.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:42.064Z"
+  },
+  {
+    "brand": "Hitado",
+    "website": "hitado.de",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:17.208Z"
+  },
+  {
+    "brand": "Horiba",
+    "website": "horiba.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:12.246Z"
+  },
+  {
+    "brand": "Human",
+    "website": "human.de",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:38.050Z"
+  },
+  {
+    "brand": "iHealth",
+    "website": "ihealthlabs.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:14.185Z"
+  },
+  {
+    "brand": "iLine",
+    "website": "ilinemicrosystems.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:38.174Z"
+  },
+  {
+    "brand": "InBios",
+    "website": "inbios.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:11.598Z"
+  },
+  {
+    "brand": "J. Mitra",
+    "website": "jmitra.co.in",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:41.890Z"
+  },
+  {
+    "brand": "Jungbrunnen",
+    "website": null,
+    "resolves": null,
+    "note": "Not found by web search; listed by the source for VHC reader products — unverified",
+    "checked_at": "2026-11-25T07:40:39.167Z"
+  },
+  {
+    "brand": "Keul",
+    "website": null,
+    "resolves": null,
+    "note": "Not found by web search; listed by the source for o-test products — unverified",
+    "checked_at": "2026-11-25T07:40:38.076Z"
+  },
+  {
+    "brand": "KH Medical",
+    "website": "khmedical.co.kr",
+    "resolves": true,
+    "note": "KH Medical Co., Ltd., South Korea — maker of RADI PCR kits (WHO EUL 0538-214-00); confirmed by web search",
+    "checked_at": "2026-11-25T07:42:31.022Z"
+  },
+  {
+    "brand": "Lepzi",
+    "website": "lepzi.com",
+    "resolves": true,
+    "note": "Lepzi Diagnostika Ltd (CE-marked BTA test) — confirmed by web search",
+    "checked_at": "2026-11-25T07:40:39.807Z"
+  },
+  {
+    "brand": "Liofilchem",
+    "website": "liofilchem.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:38.884Z"
+  },
+  {
+    "brand": "LSI Medience",
+    "website": "medience.co.jp",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:36.990Z"
+  },
+  {
+    "brand": "LumiraDx",
+    "website": "lumiradx.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:14.724Z"
+  },
+  {
+    "brand": "Macherey-Nagel",
+    "website": "mn-net.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:36.790Z"
+  },
+  {
+    "brand": "Medcaptain",
+    "website": "medcaptain.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:40.063Z"
+  },
+  {
+    "brand": "Medical Electronic Systems",
+    "website": "mes-global.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:41.832Z"
+  },
+  {
+    "brand": "Medtronic",
+    "website": "medtronic.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:41.835Z"
+  },
+  {
+    "brand": "Melet Schloesing",
+    "website": "melet-schloesing.com",
+    "resolves": false,
+    "note": "Melet Schloesing Laboratoires, France (MS4 haematology analysers, FDA K050421) — confirmed by web search",
+    "checked_at": "2026-11-25T07:40:38.465Z"
+  },
+  {
+    "brand": "MeMed",
+    "website": "me-med.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:39.498Z"
+  },
+  {
+    "brand": "Meridian Bioscience",
+    "website": "meridianbioscience.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:14.781Z"
+  },
+  {
+    "brand": "Micropoint",
+    "website": "micropointbio.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:36.786Z"
+  },
+  {
+    "brand": "Mindray",
+    "website": "mindray.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:11.684Z"
+  },
+  {
+    "brand": "MNCHIP",
+    "website": "mnchip.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:38.742Z"
+  },
+  {
+    "brand": "Molbio",
+    "website": "molbiodiagnostics.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:11.628Z"
+  },
+  {
+    "brand": "NAL von minden",
+    "website": "nal-vonminden.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:15.199Z"
+  },
+  {
+    "brand": "Nihon Kohden",
+    "website": "nihonkohden.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:13.025Z"
+  },
+  {
+    "brand": "Noul",
+    "website": "noul.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:38.101Z"
+  },
+  {
+    "brand": "Nova Biomedical",
+    "website": "novabiomedical.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:17.087Z"
+  },
+  {
+    "brand": "OPTI Medical",
+    "website": "optimedical.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:38.104Z"
+  },
+  {
+    "brand": "OraSure Technologies",
+    "website": "orasure.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:41.893Z"
+  },
+  {
+    "brand": "Orphée",
+    "website": "orphee-medical.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:38.436Z"
+  },
+  {
+    "brand": "PixCell",
+    "website": "pixcell-medical.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:39.215Z"
+  },
+  {
+    "brand": "Pluslife",
+    "website": "pluslife.com",
+    "resolves": true,
+    "note": "Guangzhou Pluslife Biotech Co., Ltd., China (Mini Dock molecular POCT) — confirmed by web search",
+    "checked_at": "2026-11-25T07:42:31.583Z"
+  },
+  {
+    "brand": "Precision Biosensor",
+    "website": "precisionbiosensor.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:15.247Z"
+  },
+  {
+    "brand": "Premier Medical",
+    "website": "premiermedcorp.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:11.481Z"
+  },
+  {
+    "brand": "PTS Diagnostics",
+    "website": "ptsdiagnostics.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:14.705Z"
+  },
+  {
+    "brand": "Qiagen",
+    "website": "qiagen.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:14.169Z"
+  },
+  {
+    "brand": "Qualigen",
+    "website": "qualigeninc.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:37.785Z"
+  },
+  {
+    "brand": "QuidelOrtho",
+    "website": "quidelortho.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:15.773Z"
+  },
+  {
+    "brand": "Radiometer",
+    "website": "radiometer.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:11.927Z"
+  },
+  {
+    "brand": "Rapha Diagnostics",
+    "website": null,
+    "resolves": null,
+    "note": "Rapha Diagnostics, Mumbai, India (urinalysis, founded 2002) — confirmed by web search",
+    "checked_at": "2026-11-25T07:42:31.583Z"
+  },
+  {
+    "brand": "Roche",
+    "website": "roche.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:11.634Z"
+  },
+  {
+    "brand": "Schebo",
+    "website": "schebo.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:38.140Z"
+  },
+  {
+    "brand": "SD Biosensor",
+    "website": "sdbiosensor.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:10.208Z"
+  },
+  {
+    "brand": "Seamaty",
+    "website": "seamaty.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:17.058Z"
+  },
+  {
+    "brand": "Servoprax",
+    "website": "servoprax.de",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:36.793Z"
+  },
+  {
+    "brand": "Siemens Healthineers",
+    "website": "siemens-healthineers.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:11.649Z"
+  },
+  {
+    "brand": "Silver Lake Research",
+    "website": "silverlakeresearch.com",
+    "resolves": true,
+    "note": "Silver Lake Research Corp., Los Angeles/Azusa CA — maker of HemoTypeSC; confirmed by web search",
+    "checked_at": "2026-11-25T07:42:30.471Z"
+  },
+  {
+    "brand": "Skyla",
+    "website": "skyla.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:42.435Z"
+  },
+  {
+    "brand": "Snibe",
+    "website": "snibe.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:14.155Z"
+  },
+  {
+    "brand": "Sysmex",
+    "website": "sysmex.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:37.023Z"
+  },
+  {
+    "brand": "Tascom",
+    "website": "tascom.co.kr",
+    "resolves": false,
+    "note": "TASCOM Co., Ltd, Anyang, South Korea (SimplexTAS analysers) — confirmed by web search",
+    "checked_at": "2026-11-25T07:40:36.527Z"
+  },
+  {
+    "brand": "Thermo Fisher",
+    "website": "thermofisher.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:11.631Z"
+  },
+  {
+    "brand": "Trivitron",
+    "website": "trivitron.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:14.189Z"
+  },
+  {
+    "brand": "URIT",
+    "website": "urit.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:42.026Z"
+  },
+  {
+    "brand": "Ustar",
+    "website": "bioustar.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:15.522Z"
+  },
+  {
+    "brand": "Vedalab",
+    "website": "vedalab.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:15.652Z"
+  },
+  {
+    "brand": "Werfen",
+    "website": "werfen.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:13.353Z"
+  },
+  {
+    "brand": "Wondfo",
+    "website": "wondfo.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:11.418Z"
+  },
+  {
+    "brand": "Zybio",
+    "website": "zybio.com",
+    "resolves": true,
+    "note": null,
+    "checked_at": "2026-11-25T07:40:40.276Z"
+  }
+]

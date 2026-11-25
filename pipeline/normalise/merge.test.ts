@@ -290,4 +290,61 @@ describe('build()', () => {
       'arkray-uric-acid-ua-single-strips',
     );
   });
+
+  it('catalogue numbers: merge spelling variants, flag conflicts between different products', () => {
+    const rec = (id: string, name: string, cat: string, category = 'Medical RTD') =>
+      raw('src-a', id, { name, category, catalogue_no: cat });
+    const out = build(
+      input({
+        sources: [
+          {
+            id: 'src-a',
+            priority: 10,
+            hosts: [],
+            records: [
+              rec('1', 'Acme Compact Urine Analyzer UA-100', 'UA-100', 'Medical Analyzer'),
+              rec('2', 'Acme UA-100 Analyzer', 'UA-100', 'Medical Analyzer'),
+              rec('3', 'Acme Dengue Ag Rapid Test', 'D-1'),
+              rec('4', 'Acme Duo Dengue Ag IgG IgM Rapid Test', 'D-1'),
+              rec('5', 'Acme REFER BELOW kit', 'REFER BELOW'),
+            ],
+          },
+        ],
+        manual: [],
+        brands: { brands: [{ name: 'Acme', aliases: [], lines: [] }] },
+      }),
+    );
+    const live = out.products.filter((p) => !p.duplicate_of);
+    expect(live.filter((p) => p.name.includes('UA-100'))).toHaveLength(1);
+    expect(live.filter((p) => p.name.includes('Dengue'))).toHaveLength(2);
+    expect(
+      live.filter((p) => p.name.includes('Dengue')).every((p) => p.catalogue_no === null),
+    ).toBe(true);
+    expect(out.report.catalogueConflicts).toHaveLength(1);
+    expect(live.find((p) => p.name.includes('REFER'))!.catalogue_no).toBeNull();
+  });
+
+  it('drops a sample type that contradicts the analyte', () => {
+    const out = build(
+      input({
+        sources: [
+          {
+            id: 'src-a',
+            priority: 10,
+            hosts: [],
+            records: [
+              raw('src-a', '9', {
+                name: 'Abbott BinaxNOW Influenza A&B Card',
+                category: 'Medical IVD',
+                facts: { 'Sample Type': 'Fecal' },
+              }),
+            ],
+          },
+        ],
+        manual: [],
+      }),
+    );
+    expect(out.products[0]!.sample_type).not.toContain('stool');
+    expect(out.report.sampleContradictions[0]!.removed).toEqual(['stool']);
+  });
 });

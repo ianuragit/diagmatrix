@@ -1,4 +1,7 @@
-# Canonical brands. Matching (normalise/brand.ts). `stated_only: true` marks brand
+# Canonical brands. `website` is the company's official domain (checked by `pnpm audit`, DNS only);
+# `verification` records how an unusual brand was confirmed.
+#
+# Matching (normalise/brand.ts). `stated_only: true` marks brand
 # names that are ordinary words (never matched from a product name).
 #
 #   1. longest-prefix match of the name against canonical names + aliases,
@@ -12,336 +15,471 @@ brands:
   - name: Abbott
     aliases: [Abbott Diagnostics, Alere, ABBOTT, Abaxis]
     lines: [Pima, Bioline, Determine, Panbio, BinaxNOW, i-STAT, Afinion, ID NOW, ABON, SureStep, TestPack, CheckNOW, NxTek, Realtime, Cholestech, Piccolo]
+    website: abbott.com
   - name: SD Biosensor
     aliases: [SDBiosensor, SD BIOSENSOR, SD Biosensors, SD]
     lines: [STANDARD Q, STANDARD F, STANDARD E, STANDARD M, STANDARD i-Q, STANDARD M10, STANDARD]
+    website: sdbiosensor.com
   - name: Boditech
     aliases: [Boditech Med, BODITECH]
     lines: [ichroma, AFIAS]
+    website: boditech.co.kr
   - name: Wondfo
     aliases: [Guangzhou Wondfo]
     lines: [Finecare]
+    website: wondfo.com
   - name: CTK Biotech
     aliases: [CTK, CTK Biotech-Athenese Dx, Athenese-Dx, Athenese Dx]
     lines: [OnSite, TRUSTline, TRUST line, TRUSTwell, RecombiLISA]
+    website: ctkbiotech.com
   - name: Premier Medical
     aliases: [Premier Medical Corporation, Premier]
     lines: [First Response]
+    website: premiermedcorp.com
   - name: Acon
     aliases: [Acon Laboratories, ACON]
     lines: [Flowflex, Mission, On Call]
+    website: aconlabs.com
   - name: Acro Biotech
     aliases: []
     lines: [JusChek]
+    website: acrobiotech.com
   - name: Erba Mannheim
     aliases: [Erba]
     lines: [ErbaQik]
+    website: erbamannheim.com
   - name: InBios
     aliases: [Inbios, InBios International]
     lines: [Kalazar Detect, Scrub Typhus Detect, CHIKjj Detect, DENV Detect, ZIKV Detect]
+    website: inbios.com
   - name: Calbiotech
     aliases: [Calbiotech Inc]
     lines: []
+    website: calbiotech.com
   - name: Molbio
     aliases: [Molbio Diagnostics]
     lines: [Truenat, Truelab]
+    website: molbiodiagnostics.com
   - name: Thermo Fisher
     aliases: [ThermoFisher, Thermo Fisher Scientific, Thermo Scientific]
     lines: [TaqPath, Applied Biosystems, Invitrogen]
+    website: thermofisher.com
   - name: Roche
     aliases: [Roche Diagnostics, ROCHE]
     lines: [cobas, CoaguChek, Accu-Chek, Urisys, Combur, Elecsys, cobas Liat]
+    website: roche.com
   - name: Siemens Healthineers
     aliases: [Siemens, SIEMENS]
     lines: [Xprecia, Clinitek, CLINITEK, Multistix, DCA Vantage, Atellica, epoc, RAPIDPoint, Stratus]
+    website: siemens-healthineers.com
   - name: Universal Biosensors
     aliases: [UNIVERSAL BIOSENSORS]
     lines: []
+    website: universalbiosensors.com
   - name: Mindray
     aliases: []
     lines: []
+    website: mindray.com
   - name: EDAN
     aliases: [EDAN Instruments]
     lines: []
+    website: edan.com
   - name: Radiometer
     aliases: [RADIOMETER]
     lines: [ABL, AQT90]
+    website: radiometer.com
   - name: Horiba
     aliases: [HORIBA, Horiba Medical]
     lines: [Yumizen, ABX Micros, Microsemi]
+    website: horiba.com
   - name: Credo
     aliases: [CREDO, Credo Diagnostics]
     lines: [VitaPCR]
+    website: credodxbiomed.com
   - name: Aidian
     aliases: [AIDIAN]
     lines: [Uricult, QuikRead]
+    website: aidian.eu
   - name: Arkray
     aliases: [ARKRAY]
     lines: [Spotchem, Aution, PocketChem]
+    website: arkray.co.jp
   - name: Nihon Kohden
     aliases: [NIHON KOHDEN]
     lines: []
+    website: nihonkohden.com
   - name: bioMérieux
     aliases: [BIOMERIEUX, bioMerieux, Biomerieux]
     lines: [BioFire, VIDAS]
+    website: biomerieux.com
   - name: Becton Dickinson
     aliases: [BD, BECTON DICKINSON]
     lines: [Veritor]
+    website: bd.com
   - name: Cepheid
     aliases: []
     lines: [GeneXpert, Xpert]
+    website: cepheid.com
   - name: Bosch
     aliases: [Bosch Healthcare Solutions]
     lines: [Vivalytic]
+    website: bosch-vivalytic.com
   - name: Werfen
     aliases: [WERFEN, Instrumentation Laboratory]
     lines: [GEM Premier]
+    website: werfen.com
   - name: Getein
     aliases: [Getein Biotech]
     lines: []
+    website: getein.com.cn
   - name: Snibe
     aliases: []
     lines: [Maglumi, MAGLUMI]
+    website: snibe.com
   - name: Beckman Coulter
     aliases: []
     lines: []
+    website: beckmancoulter.com
   - name: Qiagen
     aliases: [QIAGEN]
     lines: [QIAstat-Dx]
+    website: qiagen.com
   - name: iHealth
     aliases: []
     lines: []
+    website: ihealthlabs.com
   - name: Trivitron
     aliases: [TRIVITRON]
     lines: []
-  - name: HemoTypeSC
-    aliases: []
-    lines: []
-  - name: RADI
-    aliases: [RADI Diagnostics]
-    lines: []
+    website: trivitron.com
+  - name: Silver Lake Research
+    aliases: [Silver Lake Research Corporation]
+    stated_aliases: [HemoTypeSC]
+    lines: [HemoTypeSC]
+    website: silverlakeresearch.com
+    verification: "Silver Lake Research Corp., Los Angeles/Azusa CA — maker of HemoTypeSC; confirmed by web search"
+  - name: KH Medical
+    aliases: [KH Medical Co., Ltd.]
+    stated_aliases: [RADI, RADI Diagnostics]
+    lines: [RADI]
+    website: khmedical.co.kr
+    verification: "KH Medical Co., Ltd., South Korea — maker of RADI PCR kits (WHO EUL 0538-214-00); confirmed by web search"
   - name: Actim
     aliases: [ACTIM OY, Actim Oy]
     lines: []
+    website: actimtest.com
   - name: EKF Diagnostics
     aliases: [EKF]
     lines: []
+    website: ekfdiagnostics.com
   - name: PTS Diagnostics
     aliases: [PTS]
     lines: [CardioChek, A1CNow]
+    website: ptsdiagnostics.com
   - name: LumiraDx
     aliases: []
     lines: []
+    website: lumiradx.com
   - name: Meridian Bioscience
     aliases: [MERIDIAN]
     lines: []
+    website: meridianbioscience.com
   - name: Dräger
     aliases: [DRAEGER, Draeger]
     lines: []
+    website: draeger.com
   - name: Dr. Fooke
     aliases: [DR. FOOKE]
     lines: []
+    website: fooke-labs.de
   - name: 77 Elektronika
     aliases: [77 ELEKTRONIKA]
     lines: []
+    website: e77.hu
+    verification: "77 Elektronika Kft., Budapest, Hungary (urine analysers, founded 1986) — confirmed by web search"
   - name: NAL von minden
     aliases: [NAL VON MINDEN]
     lines: []
+    website: nal-vonminden.com
   - name: Analyticon
     aliases: [ANALYTICON]
     lines: []
+    website: analyticon-diagnostics.com
   - name: Precision Biosensor
     aliases: [PRECISION BIOSENSOR]
     lines: []
+    website: precisionbiosensor.com
   - name: Exias Medical
     aliases: [EXIAS MEDICAL]
     lines: []
+    website: exias-medical.com
 
   - name: Ustar
     aliases: [USTAR Biotech]
     lines: []
+    website: bioustar.com
   - name: Fujifilm
     aliases: [FUJI]
     lines: []
+    website: fujifilm.com
   - name: Vedalab
     aliases: []
     lines: []
+    website: vedalab.com
   - name: Concile
     aliases: []
     lines: []
+    website: concile.de
   - name: QuidelOrtho
     aliases: [Quidel]
     lines: []
+    website: quidelortho.com
   - name: Seamaty
     aliases: []
     lines: []
+    website: seamaty.com
   - name: Nova Biomedical
     aliases: [NOVA Biomedical]
     lines: []
+    website: novabiomedical.com
   - name: Hitado
     aliases: []
     lines: []
+    website: hitado.de
   - name: Bioantibody
     aliases: []
     lines: []
+    website: bioantibody.com
   - name: Coyote
     aliases: []
     lines: []
+    website: coyotebio.com
   - name: Tascom
     aliases: []
     lines: []
+    website: tascom.co.kr
+    verification: "TASCOM Co., Ltd, Anyang, South Korea (SimplexTAS analysers) — confirmed by web search"
   - name: Micropoint
     aliases: []
     lines: []
+    website: micropointbio.com
   - name: Macherey-Nagel
     aliases: []
     lines: []
+    website: mn-net.com
   - name: Servoprax
     aliases: []
     lines: []
+    website: servoprax.de
   - name: LSI Medience
     aliases: [LSI]
     lines: []
+    website: medience.co.jp
   - name: HemoCue
     aliases: []
     lines: []
+    website: hemocue.com
   - name: Dr. Müller
     aliases: []
     lines: []
+    website: dr-mueller-geraetebau.de
   - name: Sysmex
     aliases: []
     lines: []
+    website: sysmex.com
   - name: Eurolyser
     aliases: []
     lines: []
+    website: eurolyser.com
   - name: Haemonetics
     aliases: []
     lines: []
+    website: haemonetics.com
   - name: Pluslife
     aliases: [Guangzhou Pluslife]
     lines: []
+    website: pluslife.com
+    verification: "Guangzhou Pluslife Biotech Co., Ltd., China (Mini Dock molecular POCT) — confirmed by web search"
   - name: Qualigen
     aliases: []
     lines: []
+    website: qualigeninc.com
   - name: Bühlmann
     aliases: [BüHLMANN]
     lines: []
+    website: buhlmannlabs.ch
   - name: Human
     aliases: []
     lines: []
+    website: human.de
     stated_only: true   # an ordinary English word: never matched from a product name
   - name: FlashDx
     aliases: [Flashdx]
     lines: []
+    website: flashdx.com
+    verification: "FlashDx (sSPRT point-of-care PCR) — confirmed by web search"
   - name: Keul
     aliases: []
     lines: []
+    website: null
+    verification: "Not found by web search; listed by the source for o-test products — unverified"
   - name: Noul
     aliases: []
     lines: []
+    website: noul.com
   - name: OPTI Medical
     aliases: [Optimedical]
     lines: []
+    website: optimedical.com
   - name: Schebo
     aliases: []
     lines: []
+    website: schebo.com
   - name: iLine
     aliases: [Iline]
     lines: []
+    website: ilinemicrosystems.com
   - name: Orphée
     aliases: [Orphee]
     lines: []
+    website: orphee-medical.com
   - name: Melet Schloesing
     aliases: []
     lines: []
+    website: melet-schloesing.com
+    verification: "Melet Schloesing Laboratoires, France (MS4 haematology analysers, FDA K050421) — confirmed by web search"
   - name: MNCHIP
     aliases: [Mnchip]
     lines: []
+    website: mnchip.com
   - name: Liofilchem
     aliases: []
     lines: []
+    website: liofilchem.com
   - name: DiaSys
     aliases: [Diasys]
     lines: []
+    website: diasys-diagnostics.com
   - name: Essenlix
     aliases: []
     lines: []
+    website: essenlix.com
   - name: Doasense
     aliases: []
     lines: []
+    website: doasense.com
   - name: HemoSonics
     aliases: [Hemosonics]
     lines: []
+    website: hemosonics.com
   - name: Jungbrunnen
     aliases: []
     lines: []
+    website: null
+    verification: "Not found by web search; listed by the source for VHC reader products — unverified"
   - name: PixCell
     aliases: [Pixcell]
     lines: []
+    website: pixcell-medical.com
   - name: Diesse
     aliases: []
     lines: []
+    website: diesse.it
   - name: MeMed
     aliases: [Memed]
     lines: []
+    website: me-med.com
   - name: Lepzi
     aliases: []
     lines: []
+    website: lepzi.com
+    verification: "Lepzi Diagnostika Ltd (CE-marked BTA test) — confirmed by web search"
   - name: Medcaptain
     aliases: []
     lines: []
+    website: medcaptain.com
   - name: Bonraybio
     aliases: []
     lines: []
+    website: bonraybio.com
   - name: Dymind
     aliases: []
     lines: []
+    website: dymind.com
   - name: Zybio
     aliases: []
     lines: []
+    website: zybio.com
   - name: Apexbio
     aliases: []
     lines: []
+    website: apexbio.com.tw
   - name: Bilimetrix
     aliases: []
     lines: []
+    website: bilimetrix.com
+    verification: "Bilimetrix s.r.l., Trieste, Italy (Bilistick, CE marked) — confirmed by web search"
   - name: Biosurfit
     aliases: []
     lines: []
+    website: biosurfit.com
   - name: Eschweiler
     aliases: []
     lines: []
+    website: eschweiler.com
   - name: Medical Electronic Systems
     aliases: []
     lines: []
+    website: mes-global.com
 
   - name: Medtronic
     aliases: []
     lines: []
+    website: medtronic.com
   - name: J. Mitra
     aliases: [J.Mithra, J Mitra, J.Mitra, J. Mithra]
     lines: []
+    website: jmitra.co.in
   - name: OraSure Technologies
     aliases: [OraSure]
     lines: [OraQuick]
+    website: orasure.com
   - name: URIT
     aliases: [URIT Medical]
     lines: []
+    website: urit.com
   - name: HiMedia
     aliases: [HiMEDIA, Himedia]
     lines: [Hi-PCR, HiPurA]
+    website: himedialabs.com
   - name: Skyla
     aliases: []
     lines: []
+    website: skyla.com
   - name: Bio-Rad
     aliases: [BioRad, Bio Rad]
     lines: [iScript]
+    website: bio-rad.com
   - name: Copack
     aliases: [Copack GmbH, Copack GMBH]
     lines: []
-  - name: Hemax Health
-    aliases: [Hemax health]
+    website: copack.de
+  - name: Hemex Health
+    aliases: [Hemax Health, Hemax health, Hemex]
+    lines: [Gazelle]
+    website: hemexhealth.com
+    verification: "Hemex Health, Portland OR (Gazelle reader); source spells it 'Hemax' — confirmed by web search"
+  - name: CellaVision
+    aliases: [CellaVision AB]
+    stated_aliases: [HemaPrep]
+    lines: [HemaPrep]
+    website: cellavision.com
+
+  - name: Rapha Diagnostics
+    aliases: [Rapha]
     lines: []
+    website: null
+    verification: "Rapha Diagnostics, Mumbai, India (urinalysis, founded 2002) — confirmed by web search"
 
 # Stated brands that are really distributors or OEMs of a product line listed
 # above. When the name gives a different brand, the name wins (reported).

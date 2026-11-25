@@ -673,43 +673,43 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 
 ## Catalogue
 
-- Records: 1816 (1774 canonical, 42 flagged duplicates)
-- Canonical products by source: src-b 1097, src-a 698 (in more than one source: 21)
+- Records: 1815 (1749 canonical, 66 flagged duplicates)
+- Canonical products by source: src-b 1097, src-a 674 (in more than one source: 22)
 
 ### By category / product type
 
 | Category | Instruments | Tests & reagents | Controls | Consumables | Unknown | Total |
 |---|---:|---:|---:|---:|---:|---:|
 | clinical-chemistry | 80 | 339 | 0 | 1 | 4 | 424 |
-| immunoassays | 13 | 297 | 3 | 5 | 0 | 318 |
-| rapid-tests | 2 | 287 | 0 | 1 | 0 | 290 |
+| immunoassays | 13 | 295 | 3 | 5 | 0 | 316 |
+| rapid-tests | 2 | 275 | 0 | 1 | 0 | 278 |
 | molecular | 26 | 172 | 0 | 0 | 3 | 201 |
-| urinalysis | 35 | 74 | 0 | 0 | 4 | 113 |
+| urinalysis | 34 | 74 | 0 | 0 | 4 | 112 |
 | blood-gas | 32 | 70 | 4 | 1 | 1 | 108 |
-| general | 19 | 35 | 6 | 2 | 26 | 88 |
-| hematology | 44 | 16 | 8 | 1 | 14 | 83 |
-| diabetes | 28 | 33 | 0 | 3 | 13 | 77 |
-| coagulation | 21 | 44 | 0 | 0 | 4 | 69 |
+| general | 19 | 35 | 4 | 2 | 26 | 86 |
+| hematology | 44 | 15 | 8 | 1 | 12 | 80 |
+| diabetes | 27 | 31 | 0 | 3 | 13 | 74 |
+| coagulation | 20 | 44 | 0 | 0 | 3 | 67 |
 | microbiology | 0 | 3 | 0 | 0 | 0 | 3 |
 
 ### Brands
 
 | Brand | Products | Instruments | Tests & reagents |
 |---|---:|---:|---:|
-| Abbott | 192 | 19 | 162 |
-| SD Biosensor | 125 | 9 | 114 |
-| Arkray | 105 | 18 | 79 |
-| Roche | 99 | 25 | 71 |
+| Abbott | 191 | 19 | 161 |
+| SD Biosensor | 122 | 9 | 111 |
+| Arkray | 103 | 16 | 79 |
 | Calbiotech | 96 | 0 | 96 |
+| Roche | 96 | 24 | 70 |
 | Boditech | 53 | 6 | 46 |
-| CTK Biotech | 53 | 0 | 53 |
+| CTK Biotech | 49 | 0 | 49 |
 | Siemens Healthineers | 45 | 18 | 27 |
-| HemoCue | 43 | 21 | 11 |
 | Vedalab | 43 | 1 | 42 |
-| Acon | 35 | 9 | 20 |
+| HemoCue | 42 | 21 | 10 |
 | Werfen | 35 | 10 | 24 |
+| Acon | 33 | 9 | 18 |
 | Cepheid | 33 | 2 | 31 |
-| EDAN | 33 | 6 | 25 |
+| EDAN | 31 | 6 | 23 |
 | QuidelOrtho | 31 | 3 | 28 |
 | EKF Diagnostics | 29 | 7 | 10 |
 | Fujifilm | 29 | 3 | 25 |
@@ -728,7 +728,6 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 | Micropoint | 15 | 3 | 12 |
 | Erba Mannheim | 14 | 2 | 11 |
 | Bosch | 13 | 1 | 12 |
-| Premier Medical | 13 | 0 | 13 |
 | Radiometer | 13 | 4 | 9 |
 | Aidian | 12 | 2 | 10 |
 | Horiba | 12 | 4 | 2 |
@@ -737,6 +736,7 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 | Meridian Bioscience | 11 | 2 | 9 |
 | Sysmex | 11 | 6 | 4 |
 | Thermo Fisher | 11 | 1 | 10 |
+| Premier Medical | 10 | 0 | 10 |
 | PTS Diagnostics | 10 | 2 | 8 |
 | Eurolyser | 9 | 1 | 8 |
 | Haemonetics | 9 | 2 | 7 |
@@ -759,7 +759,6 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 | J. Mitra | 6 | 0 | 6 |
 | Actim | 5 | 1 | 4 |
 | OPTI Medical | 5 | 1 | 4 |
-| OraSure Technologies | 5 | 0 | 5 |
 | bioMérieux | 4 | 2 | 2 |
 | Biosurfit | 4 | 1 | 3 |
 | DiaSys | 4 | 2 | 2 |
@@ -768,12 +767,12 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 | MNCHIP | 4 | 1 | 3 |
 | Noul | 4 | 1 | 3 |
 | 77 Elektronika | 3 | 2 | 1 |
-| Copack | 3 | 0 | 0 |
 | HemoSonics | 3 | 1 | 2 |
 | HiMedia | 3 | 0 | 2 |
 | Jungbrunnen | 3 | 1 | 2 |
 | Mindray | 3 | 1 | 0 |
 | Nihon Kohden | 3 | 3 | 0 |
+| OraSure Technologies | 3 | 0 | 3 |
 | Orphée | 3 | 3 | 0 |
 | Schebo | 3 | 0 | 3 |
 | Apexbio | 2 | 1 | 1 |
@@ -785,25 +784,26 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 | Dräger | 2 | 1 | 1 |
 | Eschweiler | 2 | 2 | 0 |
 | Essenlix | 2 | 1 | 1 |
-| Hemax Health | 2 | 1 | 1 |
+| Hemex Health | 2 | 1 | 1 |
 | Keul | 2 | 0 | 2 |
+| KH Medical | 2 | 0 | 2 |
 | Liofilchem | 2 | 2 | 0 |
 | MeMed | 2 | 1 | 1 |
-| RADI | 2 | 0 | 2 |
 | Zybio | 2 | 2 | 0 |
 | Bio-Rad | 1 | 0 | 0 |
+| CellaVision | 1 | 0 | 0 |
+| Copack | 1 | 0 | 0 |
 | Dymind | 1 | 1 | 0 |
 | Exias Medical | 1 | 1 | 0 |
 | Getein | 1 | 0 | 1 |
-| HemaPrep | 1 | 0 | 0 |
-| HemoTypeSC | 1 | 0 | 1 |
 | (none) | 1 | 0 | 1 |
 | iHealth | 1 | 0 | 1 |
 | Lepzi | 1 | 0 | 1 |
 | Medcaptain | 1 | 1 | 0 |
 | Medical Electronic Systems | 1 | 1 | 0 |
 | PixCell | 1 | 1 | 0 |
-| Rapha | 1 | 0 | 1 |
+| Rapha Diagnostics | 1 | 0 | 1 |
+| Silver Lake Research | 1 | 0 | 1 |
 | Skyla | 1 | 1 | 0 |
 | Snibe | 1 | 0 | 1 |
 | Trivitron | 1 | 0 | 1 |
@@ -812,27 +812,29 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 
 | Field | Filled | % |
 |---|---:|---:|
-| name | 1774 | 100.0% |
-| brand | 1773 | 99.9% |
-| product_line | 465 | 26.2% |
-| category | 1686 | 95.0% |
-| subcategory | 1705 | 96.1% |
-| technology | 1689 | 95.2% |
-| analyte | 1579 | 89.0% |
-| sample_type | 1590 | 89.6% |
-| product_type | 1705 | 96.1% |
-| subtype | 173 | 9.8% |
-| pack_size | 389 | 21.9% |
-| catalogue_no | 544 | 30.7% |
-| specs (≥1 row) | 1773 | 99.9% |
-| summary | 1761 | 99.3% |
+| name | 1749 | 100.0% |
+| brand | 1748 | 99.9% |
+| product_line | 454 | 26.0% |
+| category | 1663 | 95.1% |
+| subcategory | 1683 | 96.2% |
+| technology | 1666 | 95.3% |
+| analyte | 1561 | 89.3% |
+| sample_type | 1569 | 89.7% |
+| product_type | 1683 | 96.2% |
+| subtype | 169 | 9.7% |
+| pack_size | 376 | 21.5% |
+| catalogue_no | 493 | 28.2% |
+| specs (≥1 row) | 1748 | 99.9% |
+| summary | 1736 | 99.3% |
 | image_local | 0 | 0.0% |
-| documents | 239 | 13.5% |
-| related | 1616 | 91.1% |
-| classification_confidence ≥ 0.7 | 1643 | 92.6% |
+| documents | 239 | 13.7% |
+| related | 1594 | 91.1% |
+| classification_confidence ≥ 0.7 | 1622 | 92.7% |
 
-### Duplicate groups (40) — non-canonical records are hidden and redirect
+### Duplicate groups (61) — non-canonical records are hidden and redirect
 
+- **Roche CoaguChek Pro II** ← `roche-coagu-chek-pro-ii`
+- **Roche Coagu Chek Xs Plus System** ← `roche-coaguchek-xs-plus-system`
 - **URIT 31 Urine Analyzer** ← `urit-31-urine-analyzer`
 - **InBios CHIKjj Detect IgM ELISA Kit** ← `inbios-chikjj-detect-igm-elisa-kit`
 - **InBios DENV Detect IgM Capture ELISA Kit** ← `inbios-denv-detect-igm-capture-elisa`
@@ -843,13 +845,20 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 - **EDAN BG10 i15 Test Cartridge** ← `edan-bg10-i15-test-cartridge-05c906`
 - **EDAN CP50 i15 calibrant fluid pack** ← `edan-cp50-i15-calibrant-fluid-pack-4f2b7f`
 - **EDAN i15 control level -1** ← `edan-i15-control-level-1`
+- **EDAN i15 control level -2** ← `edan-i15-controls-level-2`
+- **EDAN i15 control level -3** ← `edan-i15-controls-level-3`
 - **EKF Diagnostics Biosen Glucose/Lactate system solution** ← `ekf-diagnostics-biosen-glucose-lactate-system-solution-338428`
 - **Abbott Bioline Strep A** ← `abbott-bioline-strep-a-0cf4c0`
 - **Abbott Bioline HIV 1 2 3.0** ← `abbott-bioline-hiv-1-2-3-0-89bfd7`
+- **Copack Hemoglobin Color Scale** ← `copack-hemoglobin-color-scale-cfbea8`, `copack-hemoglobin-color-scale-e8f655`, `copack-hemoglobin-color-scale-bc01bb`
+- **Acon On Call A1c HbA1c Test Kit** ← `acon-on-call-a1c-hba1c-test-kit`
 - **Abbott BinaxNOW G6PD** ← `abbott-binaxnow-g6pd-bc031e`
 - **SD Biosensor STANDARD GlucoNavii NFC Blood Glucose Test Strip** ← `sd-biosensor-standard-gluconavii-nfc-blood-glucose-test-strip-02a6f3`
+- **CTK Biotech OnSite Duo Dengue Ag IgG IgM Rapid Test** ← `ctk-biotech-onsite-duo-dengue-ag-igg-igm-rapid-test-ce`
+- **SD Biosensor STANDARD Q Tsutsugmushi IgM IgG** ← `sd-biosensor-standard-q-tsutsugamushi-igm-igg`
 - **SD Biosensor STANDARD Q Malaria P.F/Pan Ag** ← `sd-biosensor-standard-q-malaria-p-f-pan-ag-3e7693`
 - **SD Biosensor STANDARD Q Dengue Ag Ab Duo** ← `sd-biosensor-standard-q-dengue-ag-plus-ab-duo`
+- **SD Biosensor STANDARD Q Malaria PF PV Ag** ← `sd-biosensor-standard-q-malaria-p-f-p-v-ag`
 - **SD Biosensor STANDARD Q Dengue IgM/IgG** ← `sd-biosensor-standard-q-dengue-igm-igg-96fb0d`
 - **CTK Biotech Onsite HEV IgM Rapid Test CE** ← `ctk-biotech-onsite-hev-igm-rapid-test`
 - **CTK Biotech OnSite H.Pylori Ag Rapid Test** ← `ctk-biotech-onsite-h-pylori-ag-rapid-test`
@@ -857,45 +866,58 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 - **CTK Biotech OnSite Leptospira IgG IgM Combo Rapid Test** ← `ctk-biotech-onsite-leptospira-igg-igm-combo-rapid-test`
 - **CTK Biotech OnSite S.Typhi Paratyphi Ag Rapid Test** ← `ctk-biotech-onsite-s-typhi-paratyphi-ag-rapid-test-68e100`
 - **CTK Biotech OnSite Typhoid IgG IgM Rapid Test** ← `ctk-biotech-onsite-typhoid-igg-igm-rapid-test`
+- **CTK Biotech OnSite Dengue IgG/IgM 3.0 Combo Rapid Test CE** ← `ctk-biotech-onsite-dengue-igg-igm-combo-rapid-test`
 - **CTK Biotech OnSite Dengue Ag Rapid Test** ← `ctk-biotech-onsite-dengue-ag-rapid-test-ce`
 - **SD Biosensor STANDARD Q Chikungunya IgM IgG** ← `sd-biosensor-standard-q-chikungunya-igm-igg-746165`
 - **SD Biosensor STANDARD Q Ultra Dot HCV** ← `sd-biosensor-standard-q-ultra-dot-hcv-261382`
 - **SD Biosensor STANDARD Q - HIV Syphilis Combo** ← `sd-biosensor-standard-q-hiv-syphilis-combo-6e8efe`
 - **CTK Biotech OnSite Toxo IgG/IgM Combo Rapid Test** ← `ctk-biotech-onsite-toxo-igg-igm-combo-rapid-test-387f3b`
+- **SD Biosensor Standard Q Lepospira Igg Igm** ← `sd-biosensor-standard-q-leptospira-igm-igg`
 - **CTK Biotech TRUSTline Scrub typhus IgG IgM Rapid Test** ← `ctk-biotech-trustline-scrub-typhus-igg-igm-rapid-test`
 - **SD Biosensor Standard Q COVID-19 Ag** ← `sd-biosensor-standard-q-covid-19-ag-6bf968`, `sd-biosensor-standard-q-covid-19-ag-7a88d5`, `sd-biosensor-standard-q-covid-19-ag-814d4a`
 - **SD Biosensor Ultra COVID-19 Ag** ← `sd-biosensor-ultra-covid-19-ag`
 - **CTK Biotech TRUSTwell CHIK IgM ELISA Kit** ← `ctk-biotech-trustwell-chik-igm-elisa-ce`
+- **CTK Biotech TRUSTwell HIV 1 2 Ab ELISA Kit** ← `ctk-biotech-trustwell-hiv-1-plus-2-ab-elisa`
 - **CTK Biotech TRUSTwell Dengue IgG ELISA Kit** ← `ctk-biotech-trustwell-dengue-igg-elisa-ce`
 - **CTK Biotech RecombiLISA HAV IgM ELISA Kit** ← `ctk-biotech-recombilisa-hav-igm-elisa-ce`
 - **CTK Biotech TRUSTwell Dengue IgM ELISA Kit** ← `ctk-biotech-trustwell-dengue-igm-elisa-ce`
+- **CTK Biotech TRUSTwell Syphilis Ab kit** ← `ctk-biotech-trustwell-syphilis-ab-elisa-ce`
+- **Premier Medical FIRST RESPONSE HIV 12 SYPHILIS Combo Card Test** ← `premier-medical-first-response-hiv-1-plus-2-syphilis-combo-card-test`
+- **Premier Medical First Response Malaria Ag. P.f. P.v. Card Test** ← `premier-medical-first-response-malaria-ag-pf-pv-card-test`
+- **Premier Medical First Response SyphiliS Anti-TP CardTest** ← `premier-medical-first-response-syphilis-anti-tp-card-test`
+- **Abbott Binaxnow Streptococcus Pneumoniae** ← `abbott-binaxnow-streptococcus-pneumoniae-antigen-card`
+- **Roche cardiac Troponin T sensitive test (visual)** ← `roche-cardiac-trop-t-sensitive-test`
 - **Arkray PocketChem A1c HbA1c Test Kit** ← `arkray-pocketchem-a1c-hba1c-device`
+- **Arkray Compact Urine Analyzer PocketChem UA PU-4010** ← `arkray-pocketchem-ua-pu-4010-329320`
 - **HemoCue Plasma Low Hb System** ← `hemocue-plasma-low-hb-system-dd8a26`
-- **Copack Heamoglobin Color Scale** ← `copack-heamoglobin-color-scale-bc01bb`
+- **Acon Mission Hemoglobin Hb And Test Strip** ← `acon-mission-hb-hemoglobin-test-strips`
+- **OraSure Technologies ORAQUICK IN-HOME HIV TEST (Pharmacy Version)** ← `orasure-technologies-oraquick-in-home-hiv-test-community-version`, `orasure-technologies-oraquick-in-home-hiv-test-us-fda-version`
+- **Arkray GLUCOCARD Vital GT-1050** ← `arkray-blood-glucose-test-meter-glucocard-vital-gt-1050`
 - **Abbott DETERMINE HBsAg 2** ← `abbott-determine-hbsag-2-7da385`
 
-### Cross-source merges (21)
+### Cross-source merges (22)
 
 - Roche CoaguChek Pro II (2 listings)
 - Horiba Microsemi CRP (2 listings)
 - SD Biosensor STANDARD Q Malaria P.F/Pan Ag (2 listings)
+- SD Biosensor STANDARD Q Malaria PF PV Ag (2 listings)
 - SD Biosensor STANDARD Q Dengue IgM/IgG (2 listings)
 - SD Biosensor STANDARD Q Chikungunya IgM IgG (2 listings)
 - Abbott Binaxnow Streptococcus Pneumoniae (2 listings)
-- Arkray PocketChem UA PU-4010 (2 listings)
+- Arkray Compact Urine Analyzer PocketChem UA PU-4010 (2 listings)
 - Arkray Spotchem El Se-1520 (2 listings)
 - Siemens Healthineers Clinitek Microalbumin 2 (2 listings)
 - Abbott NMP22 BLADDERCHEK (2 listings)
 - SD Biosensor STANDARD Q COVID/Flu Ag Combo (2 listings)
 - SD Biosensor STANDARD Q Dengue NS1 Ag (2 listings)
 - SD Biosensor STANDARD Q Malaria P.f Ag (2 listings)
-- SD Biosensor STANDARD Q Malaria P.F/P.V Ag (2 listings)
 - Abbott Bioline ROTAVIRUS (2 listings)
 - Abbott BINAXNOW INFLUENZA A&B CARD (2 listings)
 - Abbott BINAXNOW MALARIA (2 listings)
 - Abbott BINAXNOW RSV CARD (2 listings)
 - Fujifilm DRI-CHEM NX10N (2 listings)
 - Abbott NYCOCARD READER II (2 listings)
+- HemoCue HbA1c 501 Test Cartridge (2 listings)
 - Abbott DETERMINE SYPHILIS TP (2 listings)
 
 ### Scope filter
@@ -915,10 +937,10 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
   - LumiraDx: using **LumiraDx**, source said Roche
   - Xprecia Prime: using **Siemens Healthineers**, source said Universal Biosensors (OEM/distributor)
   - Xprecia Stride: using **Siemens Healthineers**, source said Universal Biosensors (OEM/distributor)
-- Stated brands not in brands.yaml (passed through, tidied): 2 — Rapha (1), HemaPrep (1)
+- Stated brands not in brands.yaml (passed through, tidied): 0 — 
 - Products with no brand: 1 — Hepa card
 
-### Low classification confidence (< 0.6): 67
+### Low classification confidence (< 0.6): 64
 
 - Arkray Urine test strips AUTION SCREEN — 0.59 (tech: none, analyte: none, sample: structured, type: keyword)
 - Acon On Call MultiPro ACR — 0.59 (tech: none, analyte: keyword, sample: structured, type: none)
@@ -942,8 +964,6 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 - EDAN BG9 i15 Test Cartridge — 0.59 (tech: none, analyte: none, sample: structured, type: keyword)
 - EDAN CP50 i15 calibrant fluid pack — 0.54 (tech: analyte, analyte: keyword, sample: none, type: none)
 - EDAN CP100 i15 calibrant fluid pack — 0.33 (tech: none, analyte: none, sample: none, type: none)
-- EDAN i15 Controls Level -2 — 0.46 (tech: none, analyte: none, sample: none, type: keyword:control)
-- EDAN i15 Controls Level -3 — 0.46 (tech: none, analyte: none, sample: none, type: keyword:control)
 - Mindray Wash Buffer — 0.56 (tech: category, analyte: none, sample: none, type: keyword)
 - EKF Diagnostics Biosen S-Line Lab+ — 0.33 (tech: none, analyte: none, sample: none, type: none)
 - EKF Diagnostics EasyCon Norm (QC material) — 0.33 (tech: none, analyte: none, sample: none, type: none)
@@ -960,3 +980,5 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 - J. Mitra Advantage MAL Card — 0.56 (tech: category, analyte: none, sample: none, type: keyword)
 - Hepa card — 0.56 (tech: category, analyte: none, sample: none, type: keyword)
 - HiMedia HIPurA Viral RNA Purification Kit — 0.56 (tech: category, analyte: none, sample: none, type: keyword)
+- Bio-Rad iScript Reverse Transcription Supermix — 0.53 (tech: structured, analyte: none, sample: none, type: none)
+- HemoCue WBC System — 0.45 (tech: none, analyte: none, sample: none, type: keyword)

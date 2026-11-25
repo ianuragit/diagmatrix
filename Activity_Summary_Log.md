@@ -2,6 +2,23 @@
 
 Newest first.
 
+## 2026-11-25 — Data sanity, deduplication, brand verification, missing-data report
+
+**Done**
+- `pnpm quality` (`pipeline/quality/audit.ts`) → `docs/data-quality-report.md` + `docs/missing-data.csv`.
+- Dedupe: catalogue-number grouping with guards (distinguishing words, analytes, subset names), plurals,
+  "P.f/P.v", "HIV 1+2", "Coagu Chek" normalisation, model "+" kept, instruments ≠ reagents,
+  self-listed instrument components skipped, same-named products disambiguated. Fixed a bug that
+  merged Roche Combur 7/9/10. 24 genuine duplicates merged this round; 10 catalogue conflicts flagged.
+- Sanity: placeholder catalogue numbers removed; contradictory sample types removed (7); spelling
+  fixes (Hemoglobin/Color/Variant/Detection, HbA1c, Accu-Chek, CoaguChek).
+- Brands: official domain for all 111 brands; 108/110 in use verified (DNS or web search). Corrected:
+  HemoTypeSC → Silver Lake Research, RADI → KH Medical, HemaPrep → CellaVision, "Hemax" → Hemex Health,
+  + Rapha Diagnostics, J. Mitra, OraSure, URIT, HiMedia, Skyla, Bio-Rad, Medtronic, Copack. Unverified:
+  Keul, Jungbrunnen (5 products). New `stated_aliases` keep product-line names in product names.
+- Missing data: 294 / 1,749 complete on all fields (16.8%); 1,389 (79.4%) complete on core facts —
+  the gap is catalogue numbers (72% missing) and pack sizes (74%), which source B never publishes.
+
 ## 2026-11-25 — English-only site
 
 **Done**

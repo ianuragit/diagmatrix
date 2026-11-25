@@ -15,6 +15,7 @@
     "validate": "tsx pipeline/cli.ts validate",
     "report": "tsx pipeline/cli.ts report",
     "privacy-check": "tsx pipeline/cli.ts privacy-check",
+    "quality": "tsx pipeline/cli.ts audit",
     "dev": "astro dev",
     "build": "astro build && pagefind --site dist",
     "preview": "astro preview",

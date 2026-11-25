@@ -19,6 +19,7 @@ Every folder and key file, mirroring the tree. Keep current.
 | `pipeline/core/log.ts` | Structured logger. |
 | `pipeline/core/privacy.ts` | Privacy guard: no source names/hosts in tracked files or `dist/`. |
 | `pipeline/core/*.test.ts` | Unit tests for the core (incl. registry extensibility proof). |
+| `pipeline/quality/audit.ts` | Data-quality audit: brand verification, sanity, dedupe review, missing data. |
 | `pipeline/sources/_template/` | Copy to add a source (adapter, selectors, README). |
 | `pipeline/sources/src-a/` | Source A adapter (homepage-nav discovery, product parser), selectors with snippet comments, scrubbed fixtures, tests. |
 | `pipeline/sources/src-b/` | Source B adapter (sitemap discovery, embedded Nuxt payload parser), `devalue.ts` payload decoder/encoder, selectors, scrubbed fixtures, tests. |
@@ -62,6 +63,8 @@ Every folder and key file, mirroring the tree. Keep current.
 | `.github/workflows/data-refresh.yml` | Manual re-crawl that opens a data PR. |
 | `.cache/http/` (git-ignored) | HTTP response cache: `{sha1(url)}.html.br` (Brotli) + `.meta.json`. |
 | `scripts/linkcheck.ts` | Offline link + anchor checker for `dist/`. |
+| `docs/data-quality-report.md`, `docs/missing-data.csv` | Data-quality audit output (`pnpm quality`). |
+| `data/brand-verification.json` | Cached brand domain checks used by the audit. |
 | `docs/catalogue-report.md` | Latest `pnpm report` output (no source URLs/ids). |
 | `scripts/make-fixture.ts` | Builds scrubbed, trimmed HTML fixtures from the cache (no network). |
 | `scripts/make-fixture-nuxt.ts` | Builds scrubbed fixtures for Nuxt-payload sources (trimmed payload, fake ids, sitemap pair). |

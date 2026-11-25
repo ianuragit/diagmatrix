@@ -79,13 +79,35 @@ describe('brand split', () => {
     });
   });
 
-  it('strips doubled brand prefixes', () => {
-    expect(m.match('HemoTypeSC HemoTypeSC Sickle Cell Disease').name).toBe('Sickle Cell Disease');
+  it('collapses doubled product-line prefixes', () => {
+    expect(m.match('HemoTypeSC HemoTypeSC Sickle Cell Disease').name).toBe(
+      'HemoTypeSC Sickle Cell Disease',
+    );
   });
 
   it('tidies all-caps brands but keeps short acronyms', () => {
     expect(tidyBrandCase('SD BIOSENSOR')).toBe('SD Biosensor');
     expect(tidyBrandCase('EDAN')).toBe('EDAN');
     expect(tidyBrandCase('Mindray')).toBe('Mindray');
+  });
+
+  it('keeps product-line names that a source states as the brand', () => {
+    expect(m.match('RADI COVID-19 Detection Kit', 'RADI')).toMatchObject({
+      brand: 'KH Medical',
+      name: 'RADI COVID-19 Detection Kit',
+      product_line: 'RADI',
+    });
+    expect(m.match('HemoTypeSC HemoTypeSC Sickle Cell Disease', 'HemoTypeSC')).toMatchObject({
+      brand: 'Silver Lake Research',
+      product_line: 'HemoTypeSC',
+    });
+    expect(m.match('HemaPrep CellaVision HemaPrep', 'HemaPrep')).toMatchObject({
+      brand: 'CellaVision',
+      name: 'HemaPrep',
+    });
+    expect(m.match('First Response Premier Medical Syphilis Anti TP Card Test')).toMatchObject({
+      brand: 'Premier Medical',
+      name: 'First Response Syphilis Anti TP Card Test',
+    });
   });
 });

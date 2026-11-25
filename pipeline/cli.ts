@@ -28,6 +28,7 @@ import { build, type BuildReport, type ManualProduct } from './normalise/merge.t
 import type { BrandConfig } from './normalise/brand.ts';
 import type { Taxonomy } from './normalise/classify.ts';
 import { Translator, type TranslationConfig } from './normalise/translate.ts';
+import { buildAudit, checkBrands, type AuditInput, type BrandCheck } from './quality/audit.ts';
 import { filesToScan, scanForTerms } from './core/privacy.ts';
 import {
   CacheMissError,
@@ -681,12 +682,55 @@ async function cmdBuildData() {
   });
 }
 
+async function cmdAudit() {
+  const products = CatalogueSchema.parse(JSON.parse(await readFile(PRODUCTS_JSON, 'utf8')));
+  const readOpt = async <T>(path: string): Promise<T | null> =>
+    existsSync(path) ? (JSON.parse(await readFile(path, 'utf8')) as T) : null;
+  const report = await readOpt<BuildReport>(join(PRIVATE_DIR, 'build-report.json'));
+  const duplicates = await readOpt<AuditInput['duplicates']>(DUPLICATES_JSON);
+  const prov = await readOpt<Record<string, { source: string }[]>>(
+    join(PRIVATE_DIR, 'provenance.json'),
+  );
+  const brands = loadYaml<AuditInput['brands']>(join(CONFIG_DIR, 'brands.yaml'));
+  const cachePath = join(ROOT, 'data', 'brand-verification.json');
+  const cached = new Map(((await readOpt<BrandCheck[]>(cachePath)) ?? []).map((c) => [c.brand, c]));
+  const inUse = new Set(products.filter((p) => !p.duplicate_of && p.brand).map((p) => p.brand!));
+  const brandChecks = await checkBrands(brands.brands, inUse, cached, {
+    refresh: values.refresh,
+    offline: values.offline,
+  });
+  await writeJson(
+    cachePath,
+    [...brandChecks.values()].sort((a, b) => a.brand.localeCompare(b.brand)),
+  );
+  const { markdown, csv } = buildAudit({
+    products,
+    report,
+    duplicates,
+    brands,
+    brandChecks,
+    ...(prov
+      ? { sourcesOf: (id: string) => [...new Set((prov[id] ?? []).map((r) => r.source))] }
+      : {}),
+  });
+  await mkdir(join(ROOT, 'docs'), { recursive: true });
+  await writeFile(join(ROOT, 'docs', 'data-quality-report.md'), markdown, 'utf8');
+  await writeFile(join(ROOT, 'docs', 'missing-data.csv'), csv, 'utf8');
+  const bad = [...brandChecks.values()].filter((c) => !c.resolves);
+  log.info('audit written: docs/data-quality-report.md, docs/missing-data.csv', {
+    brands: brandChecks.size,
+    brands_not_resolving: bad.map((b) => b.brand),
+    incomplete: csv.split('\n').length - 2,
+  });
+}
+
 const commands: Record<string, () => Promise<void>> = {
   crawl: cmdCrawl,
   parse: cmdParse,
   'build-data': cmdBuildData,
   validate: cmdValidate,
   'privacy-check': async () => void (await cmdPrivacyCheck()),
+  audit: cmdAudit,
   report: cmdReport,
 };
 

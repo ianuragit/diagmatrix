@@ -37,11 +37,18 @@ export function dedupeKey(name: string, brand: string | null, productLine?: stri
     .replace(/\+(?=\s|$|\))/g, ' plus ') // "Status+" is a model; "Ag+Ab" is just a separator
     .replace(/covid[\s-]*19/g, 'covid19')
     .replace(/sars[\s-]*cov[\s-]*2/g, 'sarscov2')
-    .replace(/\bhiv[\s-]*1[\s/-]*2\b/g, 'hiv12')
+    .replace(/\bhiv[\s-]*1[\s/+-]*2\b/g, 'hiv12')
+    .replace(/\bp\.\s?([fv])\b\.?/g, 'p$1') // "P.f." → "pf"
+    .replace(/\bcoagu\s+chek\b/g, 'coaguchek')
     .replace(/\bigg[\s/]*igm\b|\bigm[\s/]*igg\b/g, 'iggigm')
     .replace(/(\d)\.(\d)/g, '$1_$2') // keep versions like 3.0 together
     .replace(/[^a-z0-9_]+/g, ' ');
-  const tokens = s.split(/\s+/).filter((t) => t && !FILLER.has(t));
+  const singular = (t: string) =>
+    t.length > 4 && t.endsWith('s') && !t.endsWith('ss') ? t.slice(0, -1) : t;
+  const tokens = s
+    .split(/\s+/)
+    .filter((t) => t && !FILLER.has(t))
+    .map(singular);
   void productLine;
   return [...new Set(tokens)].sort().join(' ');
 }

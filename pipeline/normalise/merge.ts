@@ -75,6 +75,12 @@ export interface BuildReport {
   componentsMatchedToPages: number;
   overridesApplied: string[];
   overridesUnknown: string[];
+  /** Same brand + catalogue number on clearly different products (number withheld). */
+  catalogueConflicts: { catalogue_no: string; brand: string | null; names: string[] }[];
+  /** Sample types removed because they contradict the analyte (e.g. a stool sample for influenza). */
+  sampleContradictions: { name: string; removed: string[] }[];
+  /** Products whose name was suffixed (pack size / Cat. no.) to tell same-named products apart. */
+  sameNameDisambiguated: number;
   /** Display text that still looks non-English after translation. */
   untranslated: { id: string; field: string; text: string; words: string[] }[];
 }
@@ -164,6 +170,9 @@ export function build(input: BuildInput): BuildOutput {
     overridesApplied: [],
     overridesUnknown: [],
     untranslated: [],
+    catalogueConflicts: [],
+    sampleContradictions: [],
+    sameNameDisambiguated: 0,
   };
   const tr = new Translator(input.translations ?? {});
 
@@ -203,8 +212,7 @@ export function build(input: BuildInput): BuildOutput {
         priority: src.priority,
         name: tr.name(fixText(r.name)),
         statedBrand: r.brand,
-        catalogue_no:
-          r.catalogue_no && r.catalogue_no !== r.source_id ? r.catalogue_no.trim() : null,
+        catalogue_no: cleanCatalogue(r.catalogue_no, r.source_id),
         specs: r.specs,
         facts: r.facts,
         sourceCategories: [r.category, r.subcategory, ...splitList(r.facts['Categories'])].filter(
@@ -378,6 +386,11 @@ export function build(input: BuildInput): BuildOutput {
       };
       cls.confidence = Math.round(Math.min(1, cls.confidence + 0.1) * 100) / 100;
     }
+    const contradiction = implausibleSamples(cls.analyte, cls.sample_type);
+    if (contradiction.length) {
+      cls = { ...cls, sample_type: cls.sample_type.filter((x) => !contradiction.includes(x)) };
+      report.sampleContradictions.push({ name: c.name, removed: contradiction });
+    }
     clsByRef.set(c.refKey, cls);
     if (c.manual?.product_type)
       cls = {
@@ -421,6 +434,31 @@ export function build(input: BuildInput): BuildOutput {
     .sort((a, b) => b.count - a.count);
 
   // 6–7. Group, merge, flag duplicates, allocate ids ---------------------------
+  // Same brand + same catalogue number: similar names → one product (dedupe key unified);
+  // clearly different products → the number is wrong for at least one, so withhold it.
+  const byCat = new Map<string, Normalised[]>();
+  for (const n of normalised) {
+    if (!n.catalogue_no || !n.brand) continue;
+    const k = `${n.brand.toLowerCase()}|${n.catalogue_no.toUpperCase()}`;
+    (byCat.get(k) ?? byCat.set(k, []).get(k)!).push(n);
+  }
+  for (const [k, list] of byCat) {
+    const keys = [...new Set(list.map((n) => n.key))];
+    if (keys.length < 2) continue;
+    const first = list[0]!;
+    const different = list.filter((n) => n.key !== first.key && !sameProduct(n, first));
+    if (different.length) {
+      report.catalogueConflicts.push({
+        catalogue_no: k.split('|')[1]!,
+        brand: first.brand,
+        names: list.map(displayName),
+      });
+      for (const n of list) n.catalogue_no = null;
+    } else {
+      for (const n of list) n.key = first.key;
+    }
+  }
+
   const groups = new Map<string, Normalised[]>();
   for (const n of normalised) {
     const k = `${(n.brand ?? '').toLowerCase()}|${n.key || hashKey(n.c.refKey)}`;
@@ -577,6 +615,29 @@ export function build(input: BuildInput): BuildOutput {
     }
   }
 
+  // Different products that would show the same name (e.g. two pack sizes with their
+  // own catalogue numbers) get a distinguishing suffix so they don't look like duplicates.
+  {
+    const live = products.filter((p) => !p.duplicate_of);
+    const byName = new Map<string, Product[]>();
+    for (const p of live) {
+      const k = `${p.brand ?? ''}|${p.name}`.toLowerCase();
+      (byName.get(k) ?? byName.set(k, []).get(k)!).push(p);
+    }
+    for (const list of byName.values()) {
+      if (list.length < 2) continue;
+      const packs = new Set(
+        list.map((p) => (p.pack_size ? `${p.pack_size.value} ${p.pack_size.unit}` : '')),
+      );
+      for (const p of list) {
+        const pack = p.pack_size ? `${p.pack_size.value} ${p.pack_size.unit}` : '';
+        if (pack && packs.size === list.length) p.name = `${p.name} (${pack})`;
+        else if (p.catalogue_no) p.name = `${p.name} (Cat. ${p.catalogue_no})`;
+      }
+      report.sameNameDisambiguated += list.length;
+    }
+  }
+
   // 8. Related ------------------------------------------------------------------
   const byId = new Map(products.map((p) => [p.id, p]));
   const childrenOf = new Map<string, Set<string>>();
@@ -717,6 +778,94 @@ export function build(input: BuildInput): BuildOutput {
 // ---------------------------------------------------------------------------
 // helpers
 // ---------------------------------------------------------------------------
+
+/** Catalogue numbers that are placeholders or the source's own record id are not published. */
+export function cleanCatalogue(raw: string | null, sourceId: string): string | null {
+  if (!raw) return null;
+  const v = raw.replace(/\s+/g, ' ').trim();
+  if (!v || v === sourceId) return null;
+  if (
+    /^(n\/?a|na|nil|none|-+|\.+|0+|tbd|refer.*|see .*|as per .*|on request|not (available|applicable))$/i.test(
+      v,
+    )
+  )
+    return null;
+  if (v.length > 60) return null;
+  return v;
+}
+
+/** Token-set Jaccard similarity of two dedupe keys. */
+export function similarity(a: string, b: string): number {
+  const A = new Set(a.split(' ').filter(Boolean));
+  const B = new Set(b.split(' ').filter(Boolean));
+  if (!A.size || !B.size) return 0;
+  let inter = 0;
+  for (const t of A) if (B.has(t)) inter++;
+  return inter / (A.size + B.size - inter);
+}
+
+/** Words that make two otherwise-similar names different products. */
+const DISTINGUISHING = new Set([
+  'igg',
+  'igm',
+  'iga',
+  'ige',
+  'ag',
+  'ab',
+  'duo',
+  'combo',
+  'ns1',
+  'trio',
+  'quad',
+  'self',
+]);
+/** Same brand + catalogue number: only merge when names are similar, analytes match and no distinguishing word differs. */
+function sameProduct(a: Normalised, b: Normalised): boolean {
+  const A = new Set(a.key.split(' '));
+  const B = new Set(b.key.split(' '));
+  const diff = [...A].filter((t) => !B.has(t)).concat([...B].filter((t) => !A.has(t)));
+  // A differing IgG/IgM/Ag/Duo/Self… word always means a different product.
+  if (diff.some((t) => DISTINGUISHING.has(t))) return false;
+  // One name is the other plus descriptive words ("Compact Urine Analyzer PocketChem UA PU-4010").
+  const subset = [...A].every((t) => B.has(t)) || [...B].every((t) => A.has(t));
+  if (subset && Math.min(A.size, B.size) >= 2) return true;
+  if (similarity(a.key, b.key) < 0.5) return false;
+  // One listing lacks analyte data: then the names must be much closer.
+  if (!a.cls.analyte.length || !b.cls.analyte.length) return similarity(a.key, b.key) >= 0.75;
+  const sa = [...a.cls.analyte].sort().join(',');
+  const sb = [...b.cls.analyte].sort().join(',');
+  return sa === sb;
+}
+
+const RESPIRATORY = new Set([
+  'influenza',
+  'rsv',
+  'sars-cov-2',
+  'strep-a',
+  'adenovirus',
+  'mycoplasma',
+  'bordetella',
+]);
+const GASTRO = new Set([
+  'rotavirus',
+  'norovirus',
+  'cholera',
+  'calprotectin',
+  'fob',
+  'c-difficile',
+  'campylobacter',
+]);
+/** Sample types that cannot be right for the analytes (only when every analyte agrees). */
+export function implausibleSamples(analytes: string[], samples: string[]): string[] {
+  if (!analytes.length || samples.length < 1) return [];
+  if (analytes.every((a) => RESPIRATORY.has(a)))
+    return samples.filter((x) => x === 'stool' || x === 'urine');
+  if (analytes.every((a) => GASTRO.has(a)))
+    return samples.filter((x) =>
+      ['nasal-swab', 'nasopharyngeal-swab', 'throat-swab', 'csf'].includes(x),
+    );
+  return [];
+}
 
 function displayName(n: Normalised): string {
   return [n.brand, n.name].filter(Boolean).join(' ');

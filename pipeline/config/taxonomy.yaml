@@ -117,6 +117,8 @@ analytes:
   chagas: { label: Chagas disease, group: Infectious disease, keywords: [chagas] }
   toxoplasma: { label: Toxoplasma, group: Infectious disease, keywords: [toxo, toxoplasma] }
   rubella: { label: Rubella, group: Infectious disease, keywords: [rubella] }
+  mumps: { label: Mumps, group: Infectious disease, keywords: [mumps] }
+  measles: { label: Measles, group: Infectious disease, keywords: [measles, rubeola] }
   hantavirus: { label: Hantavirus, group: Infectious disease, keywords: [hantaan, hantavirus] }
   enterovirus: { label: Enterovirus, group: Infectious disease, keywords: [enterovirus, ev71] }
   ebv: { label: Infectious mononucleosis (EBV), group: Infectious disease, keywords: [mononukleose, mononucleosis, ebv, mono] }
@@ -312,6 +314,12 @@ text_fixes:
   - ['\bHIV 1-2\.O\b', 'HIV 1-2.0']
   - ['\bCartrdige\b', 'Cartridge']
   - ['\bAccu-Check\b', 'Accu-Chek']
+  - ['\bHa?ea?moglobin\b', 'Hemoglobin']
+  - ['\bColour\b', 'Color']
+  - ['\bVarient\b', 'Variant']
+  - ['\bPregnancy Detention\b', 'Pregnancy Detection']
+  - ['\bHbAl c\b', 'HbA1c']
+  - ['\bMedicalSyphilis\b', 'Medical Syphilis']
   - ['\b[Cc][Oo][Vv][Ii][Dd]\s*-\s*19\b', 'COVID-19']
 
 # Scope: diagnostics only (decision 2026-11-25). Records are dropped in build-data
