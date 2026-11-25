@@ -58,6 +58,7 @@ const { positionals, values } = parseArgs({
     offline: { type: 'boolean', default: false },
     'discover-only': { type: 'boolean', default: false },
     'download-images': { type: 'boolean', default: false },
+    'allow-shrink': { type: 'boolean', default: false },
     limit: { type: 'string' },
   },
 });
@@ -135,7 +136,15 @@ async function cmdCrawl() {
   const cache = makeClient(true, log.child('http'), sources);
   for (const src of sources) {
     if (src.config.frozen) log.info(`${src.config.id} is frozen: cache only, no network requests`);
-    await crawlSource(src, src.config.frozen ? cache : http);
+    try {
+      await crawlSource(src, src.config.frozen ? cache : http);
+    } catch (err) {
+      // One source failing (e.g. a frozen source with no cache on a CI runner) must not stop the others.
+      log.error(`crawl of ${src.config.id} failed; continuing with other sources`, {
+        error: err instanceof Error ? err.message : String(err),
+      });
+      process.exitCode = 1;
+    }
   }
   const net = http.stats;
   log.info('crawl finished', {
@@ -146,6 +155,8 @@ async function cmdCrawl() {
   });
   if (http.stats.disallowed.length)
     await writeJson(join(RAW_DIR, '_robots-skipped.json'), http.stats.disallowed);
+  // Parse straight away so `pnpm crawl && pnpm build-data` works (raw records are git-ignored).
+  if (!values['discover-only']) await cmdParse();
 }
 
 async function cmdParse() {
@@ -329,13 +340,26 @@ async function reportRaw() {
     }
     console.log('\n### Sample records\n');
     for (const r of sample) {
-      const { url: _u, source_id: _s, image: _i, description_raw: d, specs, ...rest } = r;
+      // Never print source URLs/ids, images, prose, document lists or related ids.
+      const {
+        url: _u,
+        source_id: _s,
+        image: _i,
+        description_raw: d,
+        specs,
+        documents,
+        components,
+        related_source_ids: _r,
+        ...rest
+      } = r;
       console.log(
         '```json\n' +
           JSON.stringify(
             {
               ...rest,
               image: r.image ? '(present)' : null,
+              documents: documents.length,
+              components: components.map((c) => c.name).slice(0, 5),
               spec_rows: Object.keys(specs).length,
               specs_preview: Object.fromEntries(Object.entries(specs).slice(0, 4)),
               description_chars: d?.length ?? 0,
@@ -559,6 +583,18 @@ async function cmdBuildData() {
     idMap,
     privateTerms: loadLocalSources().private_terms,
   });
+  // Guard: a refresh with a missing cache or a broken source must not silently delete products.
+  if (existsSync(PRODUCTS_JSON) && !values['allow-shrink']) {
+    const before = (
+      JSON.parse(await readFile(PRODUCTS_JSON, 'utf8')) as { duplicate_of: string | null }[]
+    ).filter((p) => !p.duplicate_of).length;
+    const after = result.products.filter((p) => !p.duplicate_of).length;
+    if (before > 0 && before - after > Math.min(20, before * 0.02)) {
+      throw new Error(
+        `catalogue would shrink from ${before} to ${after} canonical products (allowed drop: 2% or 20, whichever is smaller). Check sources/cache, or re-run with --allow-shrink.`,
+      );
+    }
+  }
   await writeJson(PRODUCTS_JSON, result.products);
   await writeJson(DUPLICATES_JSON, result.duplicates);
   await writeJson(

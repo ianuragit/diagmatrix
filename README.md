@@ -4,7 +4,14 @@ A static directory of in-vitro diagnostic products. A polite scraping pipeline
 (robots.txt-first, 1 req/s per host, disk-cached) builds `data/products.json`;
 Astro renders it to GitHub Pages.
 
-> Status: Phase 6 done (SEO/GEO: JSON-LD, OG images, sitemap, robots, llms.txt, JSON endpoints). See `Activity_Summary_Log.md`.
+> Status: all 7 phases done. Live at https://ianuragit.github.io/diagmatrix/ · latest catalogue
+> report: [`docs/catalogue-report.md`](docs/catalogue-report.md) · history: `Activity_Summary_Log.md`.
+
+**Quick start (with an HTTP cache present):**
+
+```bash
+pnpm crawl && pnpm build-data && pnpm build
+``` See `Activity_Summary_Log.md`.
 
 ## Setup
 
@@ -59,14 +66,15 @@ Things deliberately left unset for now — fill in before launch.
 | Command | What it does |
 |---|---|
 | `pnpm crawl` | Discover product URLs for every enabled source and fetch them into `.cache/http/`. Cached URLs are not re-fetched; `frozen` sources never touch the network. Stops a source at the first sustained block (401/403/429). Flags: `--source a,b`, `--refresh` (conditional revalidation), `--offline` (cache only), `--discover-only`, `--limit N`. |
-| `pnpm parse` | Turn cached pages into `data/raw/{source}/products/*.json`. Never uses the network. |
-| `pnpm build-data` | Normalise, classify, dedupe, merge (+ `data/manual/*.yaml`) → `data/products.json`, `data/duplicates.json`, `data/id-map.json`; private provenance and build report in `data/private/`. No network. |
+| `pnpm parse` | Turn cached pages into `data/raw/{source}/products/*.json` (also run automatically at the end of `crawl`). Never uses the network. |
+| `pnpm build-data` | Normalise, classify, dedupe, merge (+ `data/manual/*.yaml`) → `data/products.json`, `data/duplicates.json`, `data/id-map.json`; private provenance and build report in `data/private/`. No network. Refuses to shrink the catalogue by more than 2% (max 20) unless `--allow-shrink`. |
 | `pnpm validate` | Schema-check `data/products.json`; fails on errors or duplicate slugs. |
 | `pnpm report` | Markdown report: raw counts and coverage per source; catalogue brand table, categories, field coverage, duplicate groups, merges, scope drops, brand conflicts, low-confidence items. Never prints source URLs or ids. |
 | `pnpm privacy-check` | Scan committable files and `dist/` for private terms. |
 | `pnpm dev` / `pnpm build` / `pnpm preview` | Astro site; `build` also runs Pagefind. |
 | `pnpm test` / `pnpm typecheck` | Vitest; `tsc` + `astro check`. |
-| `pnpm test:e2e` | Playwright smoke tests against the built site (run `pnpm build` first). |
+| `pnpm test:e2e` | Playwright smoke tests against the built site (run `pnpm build` first). `PW_BASE_URL=https://… pnpm test:e2e` tests a deployed site. |
+| `pnpm linkcheck` | Offline check of every internal link and `#fragment` in `dist/`. |
 
 Behind an HTTP proxy, run the crawler with `NODE_USE_ENV_PROXY=1`.
 
@@ -138,6 +146,29 @@ as scraped ones, and win over scraped values field by field.
 | `/llms.txt`, `/llms-full.txt` | Site summary and per-product facts for LLMs |
 | `/data/products.json`, `/products/{slug}.json` | Public machine-readable catalogue |
 | `/og/{slug}.png` | Generated social card per product |
+
+## Deploy (GitHub Pages)
+
+Push to `main` → `.github/workflows/deploy.yml`: install → tests → validate → build (Astro + Pagefind)
+→ link check → upload → deploy. The build never touches the network; it uses the committed
+`data/products.json`. Pages source must be **GitHub Actions** (Settings → Pages).
+`site`/`base` come from `site_url` in `project.config.yaml`; for a custom domain set `site_url` and `cname`.
+
+## Data refresh
+
+`.github/workflows/data-refresh.yml` (manual trigger only) crawls with the Actions-cached HTTP cache,
+parses, rebuilds, validates and opens a PR with the data diff and `pnpm report` as the body. Needs repo
+secrets `SOURCE_SRC_A_URL` / `SOURCE_SRC_B_URL`. The shrink guard stops a run with a missing cache or
+a broken source from deleting products.
+
+## Testing
+
+| Layer | Command | Covers |
+|---|---|---|
+| Unit | `pnpm test` | robots, HTTP client (throttle, retries, cache, blocks), slug/id stability, both adapters against scrubbed fixtures, brand split, pack size, classification, dedupe key, full `build()`, third-source extensibility, privacy guard |
+| Browser | `pnpm test:e2e` | search, `/` shortcut, facet narrowing + URL + back, basket persistence, modal prefill + event + validation, request-a-product page, duplicate redirect, no-JS pagination, mobile sticky CTA, JSON-LD / OG / robots / llms.txt / sitemap |
+| Links | `pnpm linkcheck` | every internal link and anchor in `dist/` |
+| Lighthouse (mobile) | manual | 100 / 100 / 100 / 100 on home, listing, product, category, brand, analyte, request pages |
 
 ## Frozen sources
 

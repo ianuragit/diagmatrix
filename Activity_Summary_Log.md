@@ -2,6 +2,25 @@
 
 Newest first.
 
+## 2026-11-25 — Phase 7: tests, Lighthouse, deploy, docs
+
+**Done**
+- Site deployed to GitHub Pages (https://ianuragit.github.io/diagmatrix/); the full Playwright suite
+  (16 tests) also passes against the live site (`PW_BASE_URL`).
+- `pnpm linkcheck`: 1,789 pages, ~78k internal links, 0 broken; added to CI and deploy.
+- Lighthouse (mobile): 100/100/100/100 on home, listing, product, category, brand, analyte and request
+  pages. Fixed a 0.415 layout shift on listings (filters are now a "Filters" disclosure on phones, opened
+  pre-paint on desktop), heading order (hidden h2), and reserved space on basket/search results.
+- CI now runs typecheck, unit tests, validate, build, link check and Playwright.
+- Extensibility proof extended: a copied `_template` source registered only in a sources.yaml goes
+  through parse → build() → a published product with private provenance.
+- Safety: `build-data` refuses to shrink the catalogue by >2% (max 20) without `--allow-shrink`; a
+  failing source no longer aborts the whole crawl; `crawl` now parses at the end.
+- Verified "done means" in a clean clone with cache: crawl = 0 network requests, build-data reproduces
+  the committed products.json byte-for-byte, build indexes 1,219 pages.
+- `docs/catalogue-report.md` committed; README gained deploy, data refresh and testing sections.
+- `main` kept in step with the working branch (fast-forward after each phase).
+
 ## 2026-11-25 — Phase 6: SEO / GEO
 
 **Done**

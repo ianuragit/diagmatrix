@@ -9,6 +9,10 @@ import { tmpdir } from 'node:os';
 import { ROOT } from './config.ts';
 import { loadEnabledSources } from './registry.ts';
 import { RawProductSchema } from './types.ts';
+import { loadYaml, CONFIG_DIR } from './config.ts';
+import { build } from '../normalise/merge.ts';
+import type { BrandConfig } from '../normalise/brand.ts';
+import type { Taxonomy } from '../normalise/classify.ts';
 
 const ID = 'zz_dummy_source_test';
 const dir = join(ROOT, 'pipeline', 'sources', ID);
@@ -38,5 +42,31 @@ describe('source registry', () => {
     const raw = RawProductSchema.parse({ ...parsed, fetched_at: new Date().toISOString() });
     expect(raw.name).toBe('Widget Rapid Test');
     expect(raw.specs).toEqual({ Format: 'Cassette' });
+
+    // …and flows through build-data unchanged: normalise/merge know nothing about it.
+    const out = build({
+      sources: [
+        {
+          id: ID,
+          priority: 99,
+          hosts: ['dummy.test'],
+          records: [{ ...raw, name: 'Acme Widget Dengue NS1 Rapid Test' }],
+        },
+      ],
+      manual: [],
+      brands: loadYaml<BrandConfig>(join(CONFIG_DIR, 'brands.yaml')),
+      taxonomy: loadYaml<Taxonomy>(join(CONFIG_DIR, 'taxonomy.yaml')),
+      overrides: {},
+      idMap: new Map(),
+      privateTerms: [],
+    });
+    expect(out.products).toHaveLength(1);
+    expect(out.products[0]).toMatchObject({
+      technology: 'rdt',
+      analyte: ['dengue'],
+      source_count: 1,
+    });
+    expect(out.provenance[out.products[0]!.id]![0]!.source).toBe(ID);
+    expect(JSON.stringify(out.products)).not.toContain('dummy.test');
   });
 });

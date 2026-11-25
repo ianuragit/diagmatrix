@@ -58,6 +58,8 @@ Every folder and key file, mirroring the tree. Keep current.
 | `.github/workflows/ci.yml` | Typecheck, test, validate, build on PRs/branches. |
 | `.github/workflows/data-refresh.yml` | Manual re-crawl that opens a data PR. |
 | `.cache/http/` (git-ignored) | HTTP response cache: `{sha1(url)}.html.br` (Brotli) + `.meta.json`. |
+| `scripts/linkcheck.ts` | Offline link + anchor checker for `dist/`. |
+| `docs/catalogue-report.md` | Latest `pnpm report` output (no source URLs/ids). |
 | `scripts/make-fixture.ts` | Builds scrubbed, trimmed HTML fixtures from the cache (no network). |
 | `scripts/make-fixture-nuxt.ts` | Builds scrubbed fixtures for Nuxt-payload sources (trimmed payload, fake ids, sitemap pair). |
 | `scripts/fetch.ts` | Dev helper: fetch URLs through the polite cached client. |

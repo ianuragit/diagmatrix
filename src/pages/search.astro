@@ -122,6 +122,8 @@ import { url } from '../lib/url';
     border-radius: var(--radius-sm);
   }
   .sp-results {
+    min-height: 60vh; /* reserve space: results render client-side */
+    align-content: start;
     display: grid;
     gap: var(--s-2);
   }

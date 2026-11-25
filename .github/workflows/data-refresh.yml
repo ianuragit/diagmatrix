@@ -2,6 +2,11 @@ name: Data refresh
 
 # Manual trigger only. Re-crawls politely (robots + 1 req/s + cache), rebuilds
 # data/products.json and opens a PR with the diff and the report as its body.
+#
+# The HTTP cache lives in the Actions cache (never in git). On a first run there
+# is no cache: frozen sources then yield nothing, and build-data refuses to
+# shrink the catalogue by more than 2% (max 20 products) — so no destructive PR is opened.
+# Source URLs come from repository secrets SOURCE_SRC_A_URL / SOURCE_SRC_B_URL.
 on:
   workflow_dispatch:
     inputs:
@@ -36,6 +41,7 @@ jobs:
           key: http-cache-${{ github.run_id }}
           restore-keys: http-cache-
       - name: Crawl
+        continue-on-error: true # a blocked/frozen source must not stop the others
         env:
           # Source URLs come from repository secrets, never from the repo.
           SOURCE_SRC_A_URL: ${{ secrets.SOURCE_SRC_A_URL }}

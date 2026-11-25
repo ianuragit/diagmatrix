@@ -31,20 +31,32 @@ const { page, locked = {}, fallbackLinks = [] } = Astro.props;
     </label>
   </div>
   <div class="listing-layout">
-    <aside class="facets" data-facet-panel aria-label="Filters">
-      {fallbackLinks.length > 0 && (
-        <nav aria-label="Browse">
-          <ul class="fallback">
-            {fallbackLinks.map((l) => (
-              <li>
-                <a href={url(l.href)}>{l.label}</a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      )}
+    <aside class="facets" aria-label="Filters">
+      <details class="facet-wrap">
+        <summary class="facet-toggle">Filters</summary>
+        <div data-facet-panel>
+          {fallbackLinks.length > 0 && (
+            <nav aria-label="Browse">
+              <ul class="fallback">
+                {fallbackLinks.map((l) => (
+                  <li>
+                    <a href={url(l.href)}>{l.label}</a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )}
+        </div>
+      </details>
+      <script is:inline>
+        // Open the filter panel on wide screens before first paint (no layout shift);
+        // on phones it stays a collapsed "Filters" disclosure.
+        document.currentScript.previousElementSibling.open =
+          matchMedia('(min-width: 861px)').matches;
+      </script>
     </aside>
     <div>
+      <h2 class="visually-hidden">Product list</h2>
       <div class="grid" data-results>
         {page.data.map((p) => (
           <ProductCard p={p} />

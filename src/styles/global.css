@@ -274,7 +274,18 @@ a.chip:hover {
   overflow: auto;
   font-size: var(--fs-sm);
 }
-.facets:empty {
+.facet-toggle {
+  display: none;
+}
+.facet-wrap:not([open]) > .facet-toggle {
+  display: flex;
+  min-height: 40px;
+  align-items: center;
+  font-weight: 700;
+  color: var(--navy);
+  cursor: pointer;
+}
+.facet-wrap > summary::-webkit-details-marker {
   display: none;
 }
 .facet {
@@ -370,5 +381,25 @@ a.chip:hover {
   .facets {
     position: static;
     max-height: none;
+  }
+  .facet-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 44px;
+    padding: 0 var(--s-4);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    font-weight: 700;
+    color: var(--navy);
+    cursor: pointer;
+    list-style: none;
+  }
+  .facet-toggle::after {
+    content: '▾';
+  }
+  .facet-wrap[open] > .facet-toggle {
+    margin-bottom: var(--s-3);
   }
 }

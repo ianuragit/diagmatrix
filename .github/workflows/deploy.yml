@@ -29,6 +29,7 @@ jobs:
       # The build never touches the network for data: it uses committed data/products.json.
       - run: pnpm validate
       - run: pnpm build # astro build && pagefind --site dist
+      - run: pnpm linkcheck
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

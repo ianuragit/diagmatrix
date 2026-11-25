@@ -1,6 +1,8 @@
 # Learnings and Backlog
 
 ## Learnings
+- 2026-11-25 — Lighthouse CLS on listings came from swapping a small static filter list for the full facet panel above the results on phones; a collapsed disclosure opened pre-paint on desktop removes it.
+- 2026-11-25 — A percentage-only shrink guard (10%) let a whole source disappear (9.9%); use min(2%, 20 products).
 - 2026-11-25 — GitHub keeps `refs/pull/1/head` for merged PRs, so the original Phase 1 commit stays reachable by SHA via PR #1 even after rewriting `main`; only GitHub Support can purge it.
 - 2026-11-25 — `tsc` in a clean checkout needs `astro sync` first, or `astro:content` types don't exist.
 - 2026-11-25 — Astro 7 `astro preview` daemonises by default; Playwright's webServer needs `--ignore-lock` (foreground).
@@ -33,10 +35,11 @@
 - 2026-11-25 — Source A: 3,093 pages not fetched (site firewall). Revisit only with owner permission or a much slower rate.
 - 2026-11-24 — Phase 2: `src-a` selectors + adapter + scrubbed fixtures.
 - 2026-11-24 — Set `contact_email` (User-Agent) and `whatsapp_number` when available.
-- 2026-11-24 — Phase 7: Lighthouse, deploy, link check, docs.
 - 2026-11-24 — `--download-images` flag is parsed but not yet wired (Phase 4/5).
 
 ## Implemented
+- 2026-11-25 — Phase 7: deploy, link check, Lighthouse fixes, CI e2e, shrink guard, docs.
+- 2026-11-25 — Phase 6: SEO/GEO. Request-a-product page.
 - 2026-11-25 — Phase 4 normalise/enrich/dedupe; frozen sources; manual products.
 - 2026-11-25 — Phase 3 Source B adapter (sitemap + Nuxt payload) with scrubbed fixtures.
 - 2026-11-24 — Privacy layer: neutral source ids, local-only URLs/provenance, privacy-check + hook.
