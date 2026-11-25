@@ -64,6 +64,7 @@ const LocalSourcesSchema = z.object({
         baseUrl: z.url().optional(),
         enabled: z.boolean().optional(),
         minIntervalMs: z.number().int().min(1000).optional(),
+        frozen: z.boolean().optional(),
       }),
     )
     .default({}),

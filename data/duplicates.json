@@ -1,0 +1,165 @@
+{
+  "duplicate_groups": [
+    {
+      "key": "detect kalazar leishmaniasis visceral",
+      "brand": "InBios",
+      "canonical": "inbios-kalazar-detect-rapid-test-for-visceral-leishmaniasis",
+      "members": [
+        {
+          "id": "inbios-kalazar-detect-rapid-test-for-visceral-leishmaniasis",
+          "name": "InBios Kalazar Detect Rapid Test for Visceral Leishmaniasis"
+        },
+        {
+          "id": "inbios-kalazar-detect-rapid-test-for-visceral-leishmaniasis-032ddb",
+          "name": "InBios Kalazar Detect Rapid Test for Visceral Leishmaniasis"
+        }
+      ]
+    },
+    {
+      "key": "a bioline strep",
+      "brand": "Abbott",
+      "canonical": "abbott-bioline-strep-a",
+      "members": [
+        {
+          "id": "abbott-bioline-strep-a",
+          "name": "Abbott Bioline Strep A"
+        },
+        {
+          "id": "abbott-bioline-strep-a-0cf4c0",
+          "name": "Abbott Bioline STREP A"
+        }
+      ]
+    },
+    {
+      "key": "3_0 bioline hiv12",
+      "brand": "Abbott",
+      "canonical": "abbott-bioline-hiv-1-2-3-0",
+      "members": [
+        {
+          "id": "abbott-bioline-hiv-1-2-3-0",
+          "name": "Abbott Bioline HIV 1 2 3.0"
+        },
+        {
+          "id": "abbott-bioline-hiv-1-2-3-0-89bfd7",
+          "name": "Abbott Bioline HIV 1/2 3.0"
+        }
+      ]
+    },
+    {
+      "key": "binaxnow g6pd",
+      "brand": "Abbott",
+      "canonical": "abbott-binaxnow-g6pd",
+      "members": [
+        {
+          "id": "abbott-binaxnow-g6pd",
+          "name": "Abbott BinaxNOW G6PD"
+        },
+        {
+          "id": "abbott-binaxnow-g6pd-bc031e",
+          "name": "Abbott BinaxNOW G6PD"
+        }
+      ]
+    },
+    {
+      "key": "ag covid19 q standard",
+      "brand": "SD Biosensor",
+      "canonical": "sd-biosensor-standard-q-covid-19-ag",
+      "members": [
+        {
+          "id": "sd-biosensor-standard-q-covid-19-ag",
+          "name": "SD Biosensor Standard Q COVID-19 Ag"
+        },
+        {
+          "id": "sd-biosensor-standard-q-covid-19-ag-6bf968",
+          "name": "SD Biosensor STANDARD Q COVID 19 Ag"
+        },
+        {
+          "id": "sd-biosensor-standard-q-covid-19-ag-7a88d5",
+          "name": "SD Biosensor STANDARD Q COVID-19 Ag"
+        }
+      ]
+    },
+    {
+      "key": "2 determine hbsag",
+      "brand": "Abbott",
+      "canonical": "abbott-determine-hbsag-2",
+      "members": [
+        {
+          "id": "abbott-determine-hbsag-2",
+          "name": "Abbott DETERMINE HBsAg 2"
+        },
+        {
+          "id": "abbott-determine-hbsag-2-7da385",
+          "name": "Abbott DETERMINE HBsAg 2"
+        }
+      ]
+    }
+  ],
+  "cross_source_merges": [
+    {
+      "id": "abbott-binaxnow-streptococcus-pneumoniae",
+      "name": "Abbott Binaxnow Streptococcus Pneumoniae",
+      "listings": 2
+    },
+    {
+      "id": "abbott-nmp22-bladderchek",
+      "name": "Abbott NMP22 BLADDERCHEK",
+      "listings": 2
+    },
+    {
+      "id": "sd-biosensor-standard-q-covid-flu-ag-combo",
+      "name": "SD Biosensor STANDARD Q COVID/Flu Ag Combo",
+      "listings": 2
+    },
+    {
+      "id": "sd-biosensor-standard-q-dengue-igm-igg",
+      "name": "SD Biosensor STANDARD Q Dengue IgM/IgG",
+      "listings": 2
+    },
+    {
+      "id": "sd-biosensor-standard-q-dengue-ns1-ag",
+      "name": "SD Biosensor STANDARD Q Dengue NS1 Ag",
+      "listings": 2
+    },
+    {
+      "id": "sd-biosensor-standard-q-malaria-p-f-ag",
+      "name": "SD Biosensor STANDARD Q Malaria P.f Ag",
+      "listings": 2
+    },
+    {
+      "id": "sd-biosensor-standard-q-malaria-p-f-p-v-ag",
+      "name": "SD Biosensor STANDARD Q Malaria P.F/P.V Ag",
+      "listings": 2
+    },
+    {
+      "id": "sd-biosensor-standard-q-malaria-p-f-pan-ag",
+      "name": "SD Biosensor STANDARD Q Malaria P.F/Pan Ag",
+      "listings": 2
+    },
+    {
+      "id": "abbott-bioline-rotavirus",
+      "name": "Abbott Bioline ROTAVIRUS",
+      "listings": 2
+    },
+    {
+      "id": "abbott-binaxnow-influenza-a-and-b-card",
+      "name": "Abbott BINAXNOW INFLUENZA A&B CARD",
+      "listings": 2
+    },
+    {
+      "id": "abbott-binaxnow-malaria",
+      "name": "Abbott BINAXNOW MALARIA",
+      "listings": 2
+    },
+    {
+      "id": "abbott-binaxnow-rsv-card",
+      "name": "Abbott BINAXNOW RSV CARD",
+      "listings": 2
+    },
+    {
+      "id": "abbott-determine-syphilis-tp",
+      "name": "Abbott DETERMINE SYPHILIS TP",
+      "listings": 2
+    }
+  ]
+}

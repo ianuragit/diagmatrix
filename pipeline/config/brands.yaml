@@ -1,17 +1,22 @@
-# Canonical brands. Matching (normalise/brand.ts, Phase 4):
-#   1. longest-prefix match of `name` against canonical names + aliases,
-#   2. else product-line match (lines map a product family to its brand).
-# The matched brand text is stripped from `name`; the line is kept as product_line.
-# Unmatched names go to the report — never guessed.
+# Canonical brands. Matching (normalise/brand.ts). `stated_only: true` marks brand
+# names that are ordinary words (never matched from a product name).
+#
+#   1. longest-prefix match of the name against canonical names + aliases,
+#   2. else a product line at the start of the (remaining) name,
+#   3. else the brand the source states (mapped through aliases; unknown stated
+#      brands pass through with tidied casing and are listed in the report).
+# Name-derived brands beat stated ones; disagreements are reported, never hidden.
+# The matched brand text is stripped from `name`; the line stays in the name and
+# is also stored as `product_line`.
 brands:
   - name: Abbott
-    aliases: [Abbott Diagnostics, Alere]
-    lines: [Bioline, Determine, DETERMINE, Panbio, BinaxNOW, i-STAT, Afinion]
+    aliases: [Abbott Diagnostics, Alere, ABBOTT, Abaxis]
+    lines: [Bioline, Determine, Panbio, BinaxNOW, i-STAT, Afinion, ID NOW, ABON, SureStep, TestPack, CheckNOW, NxTek, Realtime, Cholestech, Piccolo]
   - name: SD Biosensor
-    aliases: [SD BIOSENSOR, SDBiosensor]
-    lines: [STANDARD Q, STANDARD F, STANDARD E, STANDARD M]
+    aliases: [SDBiosensor, SD BIOSENSOR]
+    lines: [STANDARD Q, STANDARD F, STANDARD E, STANDARD M, STANDARD i-Q, STANDARD M10, STANDARD]
   - name: Boditech
-    aliases: [Boditech Med]
+    aliases: [Boditech Med, BODITECH]
     lines: [ichroma, AFIAS]
   - name: Wondfo
     aliases: [Guangzhou Wondfo]
@@ -20,11 +25,296 @@ brands:
     aliases: [CTK]
     lines: [OnSite, TRUSTline, TRUSTwell, RecombiLISA]
   - name: Premier Medical
-    aliases: [Premier Medical Corporation]
+    aliases: [Premier Medical Corporation, Premier]
     lines: [First Response]
+  - name: Acon
+    aliases: [Acon Laboratories, ACON]
+    lines: [Flowflex, Mission]
+  - name: Acro Biotech
+    aliases: []
+    lines: [JusChek]
+  - name: Erba Mannheim
+    aliases: [Erba]
+    lines: [ErbaQik]
+  - name: InBios
+    aliases: [Inbios, InBios International]
+    lines: [Kalazar Detect, Scrub Typhus Detect]
+  - name: Calbiotech
+    aliases: [Calbiotech Inc]
+    lines: []
+  - name: Molbio
+    aliases: [Molbio Diagnostics]
+    lines: [Truenat, Truelab]
+  - name: Thermo Fisher
+    aliases: [ThermoFisher, Thermo Fisher Scientific, Thermo Scientific]
+    lines: [TaqPath, Applied Biosystems, Invitrogen]
+  - name: Roche
+    aliases: [Roche Diagnostics, ROCHE]
+    lines: [cobas, CoaguChek, Accu-Chek, Urisys, Combur, Elecsys, cobas Liat]
+  - name: Siemens Healthineers
+    aliases: [Siemens, SIEMENS]
+    lines: [Xprecia, Clinitek, CLINITEK, Multistix, DCA Vantage, Atellica, epoc, RAPIDPoint, Stratus]
+  - name: Universal Biosensors
+    aliases: [UNIVERSAL BIOSENSORS]
+    lines: []
+  - name: Mindray
+    aliases: []
+    lines: []
   - name: EDAN
     aliases: [EDAN Instruments]
     lines: []
-  - name: Thermo Fisher
-    aliases: [ThermoFisher, Thermo Fisher Scientific, Thermo Scientific]
+  - name: Radiometer
+    aliases: [RADIOMETER]
+    lines: [ABL, AQT90]
+  - name: Horiba
+    aliases: [HORIBA, Horiba Medical]
+    lines: [Yumizen, ABX Micros, Microsemi]
+  - name: Credo
+    aliases: [CREDO, Credo Diagnostics]
+    lines: [VitaPCR]
+  - name: Aidian
+    aliases: [AIDIAN]
+    lines: [Uricult, QuikRead]
+  - name: Arkray
+    aliases: [ARKRAY]
+    lines: [Spotchem, Aution, PocketChem]
+  - name: Nihon Kohden
+    aliases: [NIHON KOHDEN]
     lines: []
+  - name: bioMérieux
+    aliases: [BIOMERIEUX, bioMerieux, Biomerieux]
+    lines: [BioFire, VIDAS]
+  - name: Becton Dickinson
+    aliases: [BD, BECTON DICKINSON]
+    lines: [Veritor]
+  - name: Cepheid
+    aliases: []
+    lines: [GeneXpert, Xpert]
+  - name: Bosch
+    aliases: [Bosch Healthcare Solutions]
+    lines: [Vivalytic]
+  - name: Werfen
+    aliases: [WERFEN, Instrumentation Laboratory]
+    lines: [GEM Premier]
+  - name: Getein
+    aliases: [Getein Biotech]
+    lines: []
+  - name: Snibe
+    aliases: []
+    lines: [Maglumi, MAGLUMI]
+  - name: Beckman Coulter
+    aliases: []
+    lines: []
+  - name: Qiagen
+    aliases: [QIAGEN]
+    lines: [QIAstat-Dx]
+  - name: iHealth
+    aliases: []
+    lines: []
+  - name: Trivitron
+    aliases: [TRIVITRON]
+    lines: []
+  - name: HemoTypeSC
+    aliases: []
+    lines: []
+  - name: RADI
+    aliases: [RADI Diagnostics]
+    lines: []
+  - name: Actim
+    aliases: [ACTIM OY, Actim Oy]
+    lines: []
+  - name: EKF Diagnostics
+    aliases: [EKF]
+    lines: []
+  - name: PTS Diagnostics
+    aliases: [PTS]
+    lines: [CardioChek, A1CNow]
+  - name: LumiraDx
+    aliases: []
+    lines: []
+  - name: Meridian Bioscience
+    aliases: [MERIDIAN]
+    lines: []
+  - name: Dräger
+    aliases: [DRAEGER, Draeger]
+    lines: []
+  - name: Dr. Fooke
+    aliases: [DR. FOOKE]
+    lines: []
+  - name: 77 Elektronika
+    aliases: [77 ELEKTRONIKA]
+    lines: []
+  - name: NAL von minden
+    aliases: [NAL VON MINDEN]
+    lines: []
+  - name: Analyticon
+    aliases: [ANALYTICON]
+    lines: []
+  - name: Precision Biosensor
+    aliases: [PRECISION BIOSENSOR]
+    lines: []
+  - name: Exias Medical
+    aliases: [EXIAS MEDICAL]
+    lines: []
+
+  - name: Ustar
+    aliases: [USTAR Biotech]
+    lines: []
+  - name: Fujifilm
+    aliases: [FUJI]
+    lines: []
+  - name: Vedalab
+    aliases: []
+    lines: []
+  - name: Concile
+    aliases: []
+    lines: []
+  - name: QuidelOrtho
+    aliases: [Quidel]
+    lines: []
+  - name: Seamaty
+    aliases: []
+    lines: []
+  - name: Nova Biomedical
+    aliases: [NOVA Biomedical]
+    lines: []
+  - name: Hitado
+    aliases: []
+    lines: []
+  - name: Bioantibody
+    aliases: []
+    lines: []
+  - name: Coyote
+    aliases: []
+    lines: []
+  - name: Tascom
+    aliases: []
+    lines: []
+  - name: Micropoint
+    aliases: []
+    lines: []
+  - name: Macherey-Nagel
+    aliases: []
+    lines: []
+  - name: Servoprax
+    aliases: []
+    lines: []
+  - name: LSI Medience
+    aliases: [LSI]
+    lines: []
+  - name: HemoCue
+    aliases: []
+    lines: []
+  - name: Dr. Müller
+    aliases: []
+    lines: []
+  - name: Sysmex
+    aliases: []
+    lines: []
+  - name: Eurolyser
+    aliases: []
+    lines: []
+  - name: Haemonetics
+    aliases: []
+    lines: []
+  - name: Pluslife
+    aliases: [Guangzhou Pluslife]
+    lines: []
+  - name: Qualigen
+    aliases: []
+    lines: []
+  - name: Bühlmann
+    aliases: [BüHLMANN]
+    lines: []
+  - name: Human
+    aliases: []
+    lines: []
+    stated_only: true   # an ordinary English word: never matched from a product name
+  - name: FlashDx
+    aliases: [Flashdx]
+    lines: []
+  - name: Keul
+    aliases: []
+    lines: []
+  - name: Noul
+    aliases: []
+    lines: []
+  - name: OPTI Medical
+    aliases: [Optimedical]
+    lines: []
+  - name: Schebo
+    aliases: []
+    lines: []
+  - name: iLine
+    aliases: [Iline]
+    lines: []
+  - name: Orphée
+    aliases: [Orphee]
+    lines: []
+  - name: Melet Schloesing
+    aliases: []
+    lines: []
+  - name: MNCHIP
+    aliases: [Mnchip]
+    lines: []
+  - name: Liofilchem
+    aliases: []
+    lines: []
+  - name: DiaSys
+    aliases: [Diasys]
+    lines: []
+  - name: Essenlix
+    aliases: []
+    lines: []
+  - name: Doasense
+    aliases: []
+    lines: []
+  - name: HemoSonics
+    aliases: [Hemosonics]
+    lines: []
+  - name: Jungbrunnen
+    aliases: []
+    lines: []
+  - name: PixCell
+    aliases: [Pixcell]
+    lines: []
+  - name: Diesse
+    aliases: []
+    lines: []
+  - name: MeMed
+    aliases: [Memed]
+    lines: []
+  - name: Lepzi
+    aliases: []
+    lines: []
+  - name: Medcaptain
+    aliases: []
+    lines: []
+  - name: Bonraybio
+    aliases: []
+    lines: []
+  - name: Dymind
+    aliases: []
+    lines: []
+  - name: Zybio
+    aliases: []
+    lines: []
+  - name: Apexbio
+    aliases: []
+    lines: []
+  - name: Bilimetrix
+    aliases: []
+    lines: []
+  - name: Biosurfit
+    aliases: []
+    lines: []
+  - name: Eschweiler
+    aliases: []
+    lines: []
+  - name: Medical Electronic Systems
+    aliases: []
+    lines: []
+
+# Stated brands that are really distributors or OEMs of a product line listed
+# above. When the name gives a different brand, the name wins (reported).
+oem_or_distributor: [Universal Biosensors]

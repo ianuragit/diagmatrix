@@ -1,0 +1,18 @@
+# Copy to <anything>.yaml (only *.yaml / *.yml files are loaded) and run `pnpm build-data`.
+# Hand-added products go through the same normalisation as scraped ones and win
+# over them field by field. Only `name` is required; unknown fields stay empty —
+# never guess a spec.
+products:
+  - name: Acme QuickCheck CRP            # brand prefix is stripped if it matches `brand`
+    brand: Acme Diagnostics             # canonical names/aliases come from pipeline/config/brands.yaml
+    catalogue_no: AC-CRP-25             # manufacturer REF only
+    pack_size: 25 tests                 # parsed: "(48T)", "25 tests", "50 strips", "5 x 2.5 mL"
+    sample_type: Whole blood / Serum    # matched against taxonomy.yaml sample types
+    analytes: [CRP]                     # matched against taxonomy.yaml analyte keywords
+    technology: fia                     # optional: a taxonomy.yaml technology id
+    product_type: reagent               # optional: instrument | reagent | consumable
+    specs:
+      Time to result: 3 min
+      Measuring range: 2.5–300 mg/L
+    documents:
+      - { title: Instructions for use, url: "https://www.example.com/ifu.pdf", type: ifu }

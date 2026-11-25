@@ -4,7 +4,7 @@ A static directory of in-vitro diagnostic products. A polite scraping pipeline
 (robots.txt-first, 1 req/s per host, disk-cached) builds `data/products.json`;
 Astro renders it to GitHub Pages.
 
-> Status: Phase 1 (scaffold). See `Activity_Summary_Log.md`.
+> Status: Phase 4 done (catalogue built). See `Activity_Summary_Log.md`.
 
 ## Setup
 
@@ -47,11 +47,11 @@ Things deliberately left unset for now — fill in before launch.
 
 | Command | What it does |
 |---|---|
-| `pnpm crawl` | Discover product URLs for every enabled source and fetch them into `.cache/http/`. Cached URLs are not re-fetched. Flags: `--source a,b`, `--refresh` (conditional revalidation), `--offline` (cache only), `--discover-only`, `--limit N`. |
+| `pnpm crawl` | Discover product URLs for every enabled source and fetch them into `.cache/http/`. Cached URLs are not re-fetched; `frozen` sources never touch the network. Stops a source at the first sustained block (401/403/429). Flags: `--source a,b`, `--refresh` (conditional revalidation), `--offline` (cache only), `--discover-only`, `--limit N`. |
 | `pnpm parse` | Turn cached pages into `data/raw/{source}/products/*.json`. Never uses the network. |
-| `pnpm build-data` | Normalise, enrich, dedupe, merge → `data/products.json` + `data/duplicates.json`. *(Phase 4)* |
+| `pnpm build-data` | Normalise, classify, dedupe, merge (+ `data/manual/*.yaml`) → `data/products.json`, `data/duplicates.json`, `data/id-map.json`; private provenance and build report in `data/private/`. No network. |
 | `pnpm validate` | Schema-check `data/products.json`; fails on errors or duplicate slugs. |
-| `pnpm report` | Counts per source/category (more in Phase 4). |
+| `pnpm report` | Markdown report: raw counts and coverage per source; catalogue brand table, categories, field coverage, duplicate groups, merges, scope drops, brand conflicts, low-confidence items. Never prints source URLs or ids. |
 | `pnpm privacy-check` | Scan committable files and `dist/` for private terms. |
 | `pnpm dev` / `pnpm build` / `pnpm preview` | Astro site; `build` also runs Pagefind. |
 | `pnpm test` / `pnpm typecheck` | Vitest; `tsc` + `astro check`. |
@@ -88,6 +88,36 @@ Nothing in `pipeline/core`, `pipeline/normalise` or `src/` changes.
 
 ## How to add a product by hand
 
-*(Format finalised in Phase 4.)* Create `data/manual/<anything>.yaml` with one or more
-products (name, brand, catalogue_no, specs, …) and run `pnpm build-data`. Manual
-records go through the same normalisation and take precedence over scraped ones.
+1. `cp data/manual/example.yaml.sample data/manual/<anything>.yaml`
+2. Fill in what you know — only `name` is required. Leave unknown fields out; never guess.
+3. If the brand is new, add it to `pipeline/config/brands.yaml` (canonical name, aliases, product lines).
+4. `pnpm build-data && pnpm validate`, then check the product in `pnpm report`.
+
+Manual products go through the same brand split, pack-size parsing and classification
+as scraped ones, and win over scraped values field by field.
+
+## How the catalogue is built (`pnpm build-data`)
+
+1. **Text fixes** (`taxonomy.yaml → text_fixes`): fused tokens and typos in names.
+2. **Components**: an instrument page's child tests/strips become their own products,
+   linked both ways; the same assay listed under several instruments becomes one product.
+3. **Scope**: diagnostics only (`taxonomy.yaml → scope`); every dropped record is reported.
+4. **Brand** (`brands.yaml`): name prefix → product line → stated brand. Name wins; conflicts are reported.
+5. **Pack size** from the fact table or the name; stripped from the name.
+6. **Classification** (`taxonomy.yaml`): technology, analytes, sample types, product type/subtype,
+   category (from technology) and subcategory (from product type), with a confidence score.
+7. **Public specs**: platform filler and commercial terms dropped, German keys/values translated,
+   fact-table values beat spec lists.
+8. **Dedupe/merge**: same brand + normalised name key. Within a source → duplicates (flagged,
+   `duplicate_of`, kept for redirects). Across sources → one product, fields by source priority.
+   Different manufacturer catalogue numbers are never merged.
+9. **Stable ids**: `{brand}-{name}` slug, persisted in `data/id-map.json` (keys are hashes, not source ids).
+10. **Related** (max 8): parent instrument ↔ tests, source-linked products, same product line,
+    same analyte from other brands.
+11. **Summary**: 1–3 sentences generated only from the fields above.
+12. **Overrides** (`overrides.yaml`), applied last.
+
+## Frozen sources
+
+A source with `frozen: true` (in `sources.yaml` or `sources.local.yaml`) is crawled from cache only.
+`src-a` is frozen: its site firewall blocks crawling, so we keep the pages already cached.

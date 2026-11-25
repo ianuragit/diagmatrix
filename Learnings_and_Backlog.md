@@ -1,6 +1,10 @@
 # Learnings and Backlog
 
 ## Learnings
+- 2026-11-25 — Source B lists the same assay under each compatible instrument with a different child id; treating those as duplicates produced 230 false groups. They are one product with several parents.
+- 2026-11-25 — YAML flow mappings split on commas: a label like `Blood gases (pH, pO2, pCO2)` must be quoted.
+- 2026-11-25 — Brand names that are ordinary words ("Human") or generic line names ("ULTRA") cause false brand matches from product names; mark them `stated_only` / don't list them as lines.
+- 2026-11-25 — On urine strips, "erythrocytes/leukocytes/haemoglobin" are strip pads; in a urine-only context they map to urine chemistry, not a blood count.
 - 2026-11-25 — Source B is a German POCT directory (Nuxt SSR). Each page embeds the full product record in `__NUXT_DATA__` (devalue-flattened JSON): manufacturer, categories, typed attributes with units, child tests/consumables, related products, document links. Reading that beats scraping prose. Attribute values are German ("Blut", "Urin", "Abstrich", "Schnelltest") — normalise must map them.
 - 2026-11-25 — Source B's robots.txt bans a list of named bots with `Disallow: /`. The conservative robots rule must not borrow such blanket bans (it did; fixed and tested).
 - 2026-11-25 — Source B's "manufacturer" is sometimes the OEM rather than the marketing brand (a coagulation meter sold by a large diagnostics company is listed under its OEM). Brand reconciliation in Phase 4.
@@ -15,17 +19,19 @@
 - 2026-11-24 — Zod 4: use `z.url()`; `z.string().url()` is deprecated.
 
 ## Backlog
-- 2026-11-25 — Phase 4: map Source B German attribute values to English taxonomy terms; expand components (child tests/strips) into reagent/consumable records linked to their instrument; publish only manufacturer documents (manuals, datasheets, brochures), keep the source's curated study lists private.
+- 2026-11-25 — Product names from Source B are often German ("Harnstoff (BUN), Kreatinin und eGFR", "PSA gesamt"); consider an English display-name map for common terms.
+- 2026-11-25 — 53 products still have no analyte (niche markers: mutation panels, TDM, AMR genes) and 9 are low-confidence; review via `pnpm report` and fix with taxonomy keywords or overrides.
+- 2026-11-25 — Brand ownership questions for a human: LumiraDx (now Roche?), Xprecia (Siemens vs OEM Universal Biosensors), Calbiotech vs InBios.
+- 2026-11-25 — Pack size (8%) and catalogue no (9%) are sparse: Source B publishes neither. Hand-added data or a third source would help.
 - 2026-11-25 — Source A: 3,093 pages not fetched (site firewall). Revisit only with owner permission or a much slower rate.
-- 2026-11-24 — Normalise: drop platform filler spec keys; prefer fact-table values; fix "µ" loss (e.g. "1000 l" → "1000 µL").
 - 2026-11-24 — Phase 2: `src-a` selectors + adapter + scrubbed fixtures.
-- 2026-11-24 — Phase 3: `src-b` adapter (base URL to be put in sources.local.yaml).
 - 2026-11-24 — Set `contact_email` (User-Agent) and `whatsapp_number` when available.
-- 2026-11-24 — Phase 4: normalise/enrich/dedupe, `build-data`.
 - 2026-11-24 — Phases 5–7: site, SEO/GEO, Playwright + Lighthouse + docs.
 - 2026-11-24 — `--download-images` flag is parsed but not yet wired (Phase 4/5).
 
 ## Implemented
+- 2026-11-25 — Phase 4 normalise/enrich/dedupe; frozen sources; manual products.
+- 2026-11-25 — Phase 3 Source B adapter (sitemap + Nuxt payload) with scrubbed fixtures.
 - 2026-11-24 — Privacy layer: neutral source ids, local-only URLs/provenance, privacy-check + hook.
 - 2026-11-24 — Polite HTTP client with robots, throttle, retry, disk cache, offline/refresh modes.
 - 2026-11-24 — Source registry + `_template`; extensibility test.

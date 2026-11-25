@@ -107,7 +107,7 @@ export type Product = z.infer<typeof ProductSchema>;
 export const SourceRefSchema = z.object({
   source: z.string(),
   source_id: z.string(),
-  url: z.url(),
+  url: z.url().nullable(), // null for hand-added products
   fetched_at: z.string(),
   image: z.url().nullable(),
 });
@@ -143,5 +143,7 @@ export const SourceConfigSchema = z.object({
   priority: z.number().int(), // lower = wins field-level precedence
   /** Minimum ms between requests to this source's host (default 1000; robots Crawl-delay still applies if larger). */
   minIntervalMs: z.number().int().min(1000).optional(),
+  /** Frozen sources are crawled from cache only: no network requests at all. */
+  frozen: z.boolean().optional(),
 });
 export type SourceConfig = z.infer<typeof SourceConfigSchema>;

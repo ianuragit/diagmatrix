@@ -9,6 +9,7 @@ sources:
   - id: src-a
     enabled: true
     priority: 10
+    frozen: true   # 2026-11-25: site firewall blocks crawling; keep the 141 cached pages, request nothing
   - id: src-b
     enabled: true
     priority: 20

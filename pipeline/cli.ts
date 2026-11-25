@@ -15,9 +15,21 @@ import { parseArgs } from 'node:util';
 import { mkdir, readFile, writeFile, readdir, rm } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
-import { ROOT, loadProjectConfig, privateTerms, LOCAL_SOURCES } from './core/config.ts';
+import {
+  ROOT,
+  CONFIG_DIR,
+  loadProjectConfig,
+  loadYaml,
+  loadLocalSources,
+  privateTerms,
+  LOCAL_SOURCES,
+} from './core/config.ts';
+import { build, type BuildReport, type ManualProduct } from './normalise/merge.ts';
+import type { BrandConfig } from './normalise/brand.ts';
+import type { Taxonomy } from './normalise/classify.ts';
 import { filesToScan, scanForTerms } from './core/privacy.ts';
 import {
+  CacheMissError,
   HttpClient,
   HostBlockedError,
   RobotsDisallowedError,
@@ -30,6 +42,7 @@ import {
   NavEntrySchema,
   RawProductSchema,
   type AdapterContext,
+  type Product,
   type RawProduct,
 } from './core/types.ts';
 import { z } from 'zod';
@@ -91,6 +104,7 @@ async function crawlSource(src: LoadedSource, http: HttpClient) {
 
   const limit = values.limit ? Number(values.limit) : Infinity;
   let done = 0;
+  let frozenSkipped = 0;
   for (const entry of unique.slice(0, limit)) {
     try {
       await http.get(entry.url);
@@ -101,19 +115,32 @@ async function crawlSource(src: LoadedSource, http: HttpClient) {
         );
         break;
       }
+      if (err instanceof CacheMissError && src.config.frozen) {
+        frozenSkipped++;
+        continue;
+      }
       if (!(err instanceof RobotsDisallowedError))
         slog.error('fetch failed', { url: entry.url, error: String(err) });
     }
-    if (++done % 50 === 0) slog.info(`fetched ${done}/${Math.min(limit, unique.length)}`);
+    if (++done % 50 === 0 && !src.config.frozen)
+      slog.info(`fetched ${done}/${Math.min(limit, unique.length)}`);
   }
+  if (frozenSkipped)
+    slog.info(`frozen: ${frozenSkipped} uncached pages skipped without any request`);
 }
 
 async function cmdCrawl() {
   const sources = await loadEnabledSources({ only });
   const http = makeClient(values.offline, log.child('http'), sources);
-  for (const src of sources) await crawlSource(src, http);
+  const cache = makeClient(true, log.child('http'), sources);
+  for (const src of sources) {
+    if (src.config.frozen) log.info(`${src.config.id} is frozen: cache only, no network requests`);
+    await crawlSource(src, src.config.frozen ? cache : http);
+  }
+  const net = http.stats;
   log.info('crawl finished', {
-    ...http.stats,
+    ...net,
+    cacheHits: net.cacheHits + cache.stats.cacheHits,
     disallowed: http.stats.disallowed.length,
     failures: http.stats.failures.length,
   });
@@ -218,6 +245,11 @@ async function loadRaw(sourceId: string): Promise<RawProduct[]> {
  * prints source URLs, record ids or image URLs.
  */
 async function cmdReport() {
+  await reportRaw();
+  await reportCatalogue();
+}
+
+async function reportRaw() {
   const sources = await loadEnabledSources({ only });
   const pct = (n: number, d: number) => (d ? `${((100 * n) / d).toFixed(1)}%` : '–');
   for (const src of sources) {
@@ -328,8 +360,223 @@ async function cmdReport() {
   }
 }
 
+/** Catalogue section of the report (Phase 4+). Publishes no source URLs or ids. */
+async function reportCatalogue() {
+  if (!existsSync(PRODUCTS_JSON)) return;
+  const all = CatalogueSchema.parse(JSON.parse(await readFile(PRODUCTS_JSON, 'utf8')));
+  const live = all.filter((p) => !p.duplicate_of);
+  const pct = (n: number) => `${((100 * n) / (live.length || 1)).toFixed(1)}%`;
+  console.log(
+    `\n## Catalogue\n\n- Records: ${all.length} (${live.length} canonical, ${all.length - live.length} flagged duplicates)`,
+  );
+
+  const provPath = join(PRIVATE_DIR, 'provenance.json');
+  if (existsSync(provPath)) {
+    const prov = JSON.parse(await readFile(provPath, 'utf8')) as Record<
+      string,
+      { source: string }[]
+    >;
+    const bySrc = new Map<string, number>();
+    for (const p of live)
+      for (const s of new Set((prov[p.id] ?? []).map((r) => r.source)))
+        bySrc.set(s, (bySrc.get(s) ?? 0) + 1);
+    const multi = live.filter(
+      (p) => new Set((prov[p.id] ?? []).map((r) => r.source)).size > 1,
+    ).length;
+    console.log(
+      `- Canonical products by source: ${[...bySrc].map(([s, n]) => `${s} ${n}`).join(', ')} (in more than one source: ${multi})`,
+    );
+  }
+  const count = (f: (p: Product) => string | null | undefined) => {
+    const m = new Map<string, number>();
+    for (const p of live) {
+      const k = f(p) ?? '(none)';
+      m.set(k, (m.get(k) ?? 0) + 1);
+    }
+    return [...m].sort((a, b) => b[1] - a[1]);
+  };
+  console.log(
+    '\n### By category / product type\n\n| Category | Instruments | Tests & reagents | Controls | Consumables | Unknown | Total |\n|---|---:|---:|---:|---:|---:|---:|',
+  );
+  for (const [cat, n] of count((p) => p.category)) {
+    const c = (sub: string | null) =>
+      live.filter((p) => (p.category ?? '(none)') === cat && p.subcategory === sub).length;
+    console.log(
+      `| ${cat} | ${c('instrument')} | ${c('reagent')} | ${c('control')} | ${c('consumable')} | ${c(null)} | ${n} |`,
+    );
+  }
+  console.log(
+    '\n### Brands\n\n| Brand | Products | Instruments | Tests & reagents |\n|---|---:|---:|---:|',
+  );
+  for (const [b, n] of count((p) => p.brand)) {
+    const inst = live.filter(
+      (p) => (p.brand ?? '(none)') === b && p.product_type === 'instrument',
+    ).length;
+    const reag = live.filter(
+      (p) => (p.brand ?? '(none)') === b && p.product_type === 'reagent',
+    ).length;
+    console.log(`| ${b} | ${n} | ${inst} | ${reag} |`);
+  }
+
+  const fields: [string, (p: Product) => boolean][] = [
+    ['name', (p) => !!p.name],
+    ['brand', (p) => !!p.brand],
+    ['product_line', (p) => !!p.product_line],
+    ['category', (p) => !!p.category && p.category !== 'general'],
+    ['subcategory', (p) => !!p.subcategory],
+    ['technology', (p) => !!p.technology],
+    ['analyte', (p) => p.analyte.length > 0],
+    ['sample_type', (p) => p.sample_type.length > 0],
+    ['product_type', (p) => !!p.product_type],
+    ['subtype', (p) => !!p.subtype],
+    ['pack_size', (p) => !!p.pack_size],
+    ['catalogue_no', (p) => !!p.catalogue_no],
+    ['specs (≥1 row)', (p) => Object.keys(p.specs).length > 0],
+    ['summary', (p) => !!p.summary],
+    ['image_local', (p) => !!p.image_local],
+    ['documents', (p) => p.documents.length > 0],
+    ['related', (p) => p.related.length > 0],
+    ['classification_confidence ≥ 0.7', (p) => p.classification_confidence >= 0.7],
+  ];
+  console.log(
+    '\n### Field coverage (canonical products)\n\n| Field | Filled | % |\n|---|---:|---:|',
+  );
+  for (const [f, test] of fields) {
+    const n = live.filter(test).length;
+    console.log(`| ${f} | ${n} | ${pct(n)} |`);
+  }
+
+  if (existsSync(DUPLICATES_JSON)) {
+    const d = JSON.parse(await readFile(DUPLICATES_JSON, 'utf8')) as {
+      duplicate_groups: { canonical: string; members: { id: string; name: string }[] }[];
+      cross_source_merges: { id: string; name: string; listings: number }[];
+    };
+    console.log(
+      `\n### Duplicate groups (${d.duplicate_groups.length}) — non-canonical records are hidden and redirect\n`,
+    );
+    for (const g of d.duplicate_groups)
+      console.log(
+        `- **${g.members[0]!.name}** ← ${g.members
+          .slice(1)
+          .map((m) => `\`${m.id}\``)
+          .join(', ')}`,
+      );
+    console.log(`\n### Cross-source merges (${d.cross_source_merges.length})\n`);
+    for (const m of d.cross_source_merges) console.log(`- ${m.name} (${m.listings} listings)`);
+  }
+  const brPath = join(PRIVATE_DIR, 'build-report.json');
+  if (existsSync(brPath)) {
+    const r = JSON.parse(await readFile(brPath, 'utf8')) as BuildReport;
+    console.log(`\n### Scope filter\n\n- Dropped as non-diagnostic: ${r.dropped.length}`);
+    for (const x of r.dropped.slice(0, 20)) console.log(`  - ${x.name} — ${x.reason}`);
+    console.log(
+      `- Instrument child tests expanded into own records: ${r.componentsExpanded}; matched to existing pages: ${r.componentsMatchedToPages}`,
+    );
+    console.log(
+      `\n### Brand checks\n\n- Name-derived brand disagreed with the stated brand (${r.brandConflicts.length}):`,
+    );
+    for (const c of r.brandConflicts)
+      console.log(`  - ${c.name}: using **${c.brand}**, source said ${c.stated}`);
+    console.log(
+      `- Stated brands not in brands.yaml (passed through, tidied): ${r.unknownStatedBrands.length} — ${r.unknownStatedBrands.map((b) => `${b.brand} (${b.count})`).join(', ')}`,
+    );
+    console.log(
+      `- Products with no brand: ${r.noBrand.length}${r.noBrand.length ? ' — ' + r.noBrand.map((b) => b.name).join(', ') : ''}`,
+    );
+    console.log(`\n### Low classification confidence (< 0.6): ${r.lowConfidence.length}\n`);
+    for (const l of r.lowConfidence.slice(0, 40))
+      console.log(
+        `- ${l.name} — ${l.confidence} (tech: ${l.basis.technology}, analyte: ${l.basis.analyte}, sample: ${l.basis.sample}, type: ${l.basis.type})`,
+      );
+    if (r.overridesUnknown.length)
+      console.log(`\nOverrides for unknown ids: ${r.overridesUnknown.join(', ')}`);
+  }
+}
+
+const ManualFileSchema = z.object({
+  products: z.array(
+    z.object({
+      name: z.string().min(1),
+      brand: z.string().nullable().optional(),
+      catalogue_no: z.string().nullable().optional(),
+      pack_size: z.string().nullable().optional(),
+      sample_type: z.string().nullable().optional(),
+      analytes: z.array(z.string()).optional(),
+      technology: z.string().nullable().optional(),
+      product_type: z.enum(['instrument', 'reagent', 'consumable']).nullable().optional(),
+      specs: z.record(z.string(), z.string()).optional(),
+      documents: z
+        .array(z.object({ title: z.string(), url: z.url(), type: z.string() }))
+        .optional(),
+    }),
+  ),
+});
+
+async function loadManual(): Promise<ManualProduct[]> {
+  const dir = join(ROOT, 'data', 'manual');
+  if (!existsSync(dir)) return [];
+  const out: ManualProduct[] = [];
+  for (const f of (await readdir(dir)).filter((f) => /\.ya?ml$/.test(f)).sort()) {
+    const doc = ManualFileSchema.parse(loadYaml(join(dir, f)) ?? { products: [] });
+    for (const p of doc.products)
+      out.push({ ...p, file: f.replace(/\.ya?ml$/, '') } as ManualProduct);
+  }
+  return out;
+}
+
+const ID_MAP = join(ROOT, 'data', 'id-map.json');
+const DUPLICATES_JSON = join(ROOT, 'data', 'duplicates.json');
+const PRIVATE_DIR = join(ROOT, 'data', 'private');
+
 async function cmdBuildData() {
-  throw new Error('build-data is implemented in Phase 4');
+  const sources = await loadEnabledSources({ only });
+  const inputs = [];
+  for (const s of sources) {
+    const records = await loadRaw(s.config.id);
+    inputs.push({
+      id: s.config.id,
+      priority: s.config.priority,
+      hosts: [new URL(s.config.baseUrl).hostname],
+      records,
+    });
+    log.info(`loaded ${records.length} raw records from ${s.config.id}`);
+  }
+  const manual = await loadManual();
+  const idMap = new Map<string, string>(
+    existsSync(ID_MAP)
+      ? Object.entries(JSON.parse(await readFile(ID_MAP, 'utf8')) as Record<string, string>)
+      : [],
+  );
+  const overridesDoc = loadYaml<{ overrides?: Record<string, Partial<Product>> }>(
+    join(CONFIG_DIR, 'overrides.yaml'),
+  );
+  const result = build({
+    sources: inputs,
+    manual,
+    brands: loadYaml<BrandConfig>(join(CONFIG_DIR, 'brands.yaml')),
+    taxonomy: loadYaml<Taxonomy>(join(CONFIG_DIR, 'taxonomy.yaml')),
+    overrides: overridesDoc?.overrides ?? {},
+    idMap,
+    privateTerms: loadLocalSources().private_terms,
+  });
+  await writeJson(PRODUCTS_JSON, result.products);
+  await writeJson(DUPLICATES_JSON, result.duplicates);
+  await writeJson(
+    ID_MAP,
+    Object.fromEntries([...result.idMap].sort((a, b) => a[0].localeCompare(b[0]))),
+  );
+  await writeJson(join(PRIVATE_DIR, 'provenance.json'), result.provenance);
+  await writeJson(join(PRIVATE_DIR, 'build-report.json'), result.report);
+  const live = result.products.filter((p) => !p.duplicate_of).length;
+  log.info('build-data finished', {
+    products: result.products.length,
+    canonical: live,
+    duplicates: result.products.length - live,
+    duplicate_groups: result.duplicates.duplicate_groups.length,
+    cross_source_merges: result.duplicates.cross_source_merges.length,
+    dropped_out_of_scope: result.report.dropped.length,
+    manual: manual.length,
+  });
 }
 
 const commands: Record<string, () => Promise<void>> = {

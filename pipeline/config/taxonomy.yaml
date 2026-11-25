@@ -1,65 +1,320 @@
-# Shared taxonomy. Every source maps onto these — no parallel category trees.
-# Keyword lists drive normalise/classify.ts (Phase 4); matching is case-insensitive
-# on whole words over name + category + specs. Expanded in Phase 4.
+# Shared taxonomy. Every source maps onto these ids — no parallel category trees.
+# Matching (normalise/classify.ts) is case-insensitive on word boundaries.
+# Structured source values (e.g. a source's "Parameter"/"Methode"/"Probentyp") are
+# matched against the same keyword lists, so German and English synonyms live here.
+
+# ---------------------------------------------------------------------------
+# Categories: derived from technology (each technology names its category).
+# Subcategory = product type (instruments / tests & reagents / controls … / consumables).
+# ---------------------------------------------------------------------------
 categories:
-  - id: rapid-tests
-    label: Rapid diagnostic tests
-    source_labels: { src-a: [Medical RTD, Medical RDT], src-b: [] }
-  - id: elisa
-    label: ELISA kits
-    source_labels: { src-a: [Medical ELISA], src-b: [] }
-  - id: poct
-    label: Point-of-care testing
-    source_labels: { src-a: [Medical POCT], src-b: [] }
-  - id: fia
-    label: Fluorescence immunoassay
-    source_labels: { src-a: [Medical FIA], src-b: [] }
-  - id: ivd
-    label: In-vitro diagnostics (general)
-    source_labels: { src-a: [Medical IVD], src-b: [] }
-  - id: clia
-    label: Chemiluminescence immunoassay (CLIA)
-    source_labels: { src-a: [Medical CLIA], src-b: [] }
-  - id: analyzers
-    label: Diagnostic analyzers
-    source_labels: { src-a: [Medical Analyzer], src-b: [] }
-  - id: reagents
-    label: Diagnostic reagents
-    source_labels: { src-a: [Medical Reagents], src-b: [] }
-  - id: consumables
-    label: Diagnostic consumables
-    source_labels: { src-a: [Medical Consumables], src-b: [] }
+  rapid-tests: { label: Rapid tests, intro: "Rapid tests are single-use lateral-flow or similar devices that give a visual or reader-based result in minutes, usually at the point of care." }
+  immunoassays: { label: Immunoassays, intro: "Immunoassays detect or measure analytes using antibody–antigen binding, in formats such as ELISA, chemiluminescence (CLIA) and fluorescence (FIA)." }
+  molecular: { label: Molecular diagnostics, intro: "Molecular tests detect pathogen or human nucleic acids, typically by PCR or isothermal amplification such as LAMP." }
+  clinical-chemistry: { label: Clinical chemistry, intro: "Clinical chemistry systems measure metabolites, enzymes, electrolytes and proteins in blood or other body fluids." }
+  hematology: { label: Hematology, intro: "Hematology analysers count and classify blood cells (complete blood count, 3-part or 5-part differential)." }
+  coagulation: { label: Coagulation, intro: "Coagulation tests measure how quickly blood clots, for example PT/INR for monitoring anticoagulant therapy." }
+  blood-gas: { label: Blood gas & electrolytes, intro: "Blood gas analysers measure pH, pO2, pCO2 and often electrolytes, metabolites and co-oximetry from whole blood." }
+  urinalysis: { label: Urinalysis, intro: "Urinalysis covers urine test strips, strip readers and urine sediment analysers." }
+  diabetes: { label: Glucose & diabetes, intro: "Diabetes testing covers blood glucose, HbA1c and ketone measurement, from meters to point-of-care analysers." }
+  microbiology: { label: Microbiology & culture, intro: "Microbiology products culture or identify microorganisms and test their antibiotic susceptibility." }
+  general: { label: General diagnostics, intro: "Diagnostic products that do not fit a more specific technology group." }
+
+subcategories:
+  instrument: Instruments
+  reagent: Tests & reagents
+  control: Controls & calibrators
+  consumable: Consumables
+
+# Hints from source category labels → technology (used when nothing better is known).
+source_category_hints:
+  src-a:
+    Medical RTD: rdt
+    Medical IVD: rdt
+    Medical ELISA: elisa
+    Medical CLIA: clia
+    Medical FIA: fia
+  src-b:
+    Schnelltests: rdt
+    Blutgase: blood-gas
+    Stationäre BGA-Geräte: blood-gas
+    Mobile BGA-Geräte: blood-gas
+    (Co) Oxymetrie: blood-gas
+    Blutbild: hematology
+    Urindiagnostik: urinalysis
+    Urinteststreifen: urinalysis
+    Urinsediment: urinalysis
+    HbA1c: diabetes-tech
+    Glukose: diabetes-tech
+    PCR: pcr
+    LAMP: lamp
+    CRP: clinical-chemistry
+    Cholesterin: clinical-chemistry
+    Kreatinin: clinical-chemistry
+    Laktat: clinical-chemistry
+
+# ---------------------------------------------------------------------------
+# Technologies. `keywords` match name/specs/structured method values.
+# ---------------------------------------------------------------------------
+technology:
+  rdt: { label: Rapid test (lateral flow), category: rapid-tests, keywords: [rapid test, rapid tests, rapid antigen, lateral flow, immunochromatographic, cassette, card test, test card, dipstick, test strip, self test, schnelltest, rdt, rapid] }
+  elisa: { label: ELISA, category: immunoassays, keywords: [elisa, eia, enzyme immunoassay] }
+  clia: { label: Chemiluminescence immunoassay (CLIA), category: immunoassays, keywords: [clia, chemiluminescence, chemiluminescent] }
+  fia: { label: Fluorescence immunoassay (FIA), category: immunoassays, keywords: [fia, fluorescence immunoassay, fluoreszenz-immunoassay, ichroma, afias, finecare] }
+  pcr: { label: PCR, category: molecular, keywords: [pcr, rt-pcr, qpcr, real-time pcr, real time pcr, multiplex-pcr, singleplex-pcr, real-time detection, truenat, genexpert] }
+  lamp: { label: Isothermal amplification (LAMP), category: molecular, keywords: [lamp, isothermal] }
+  clinical-chemistry: { label: Clinical chemistry, category: clinical-chemistry, keywords: [clinical chemistry, chemistry analyzer, chemistry analyser, biochemistry, multiparameter, trockenchemie, dry chemistry, dri-chem] }
+  hematology: { label: Hematology, category: hematology, keywords: [hematology, haematology, blood count, cbc, 3-diff, 5-diff, kl. blutbild, gr. blutbild, blutbild] }
+  coagulation: { label: Coagulation, category: coagulation, keywords: [coagulation, pt/inr, inr, aptt, gerinnung, viskoelastometrie, viscoelastometry, viscoelastic, plättchenfunktion, platelet function, hemostasis, act+, activated clotting time, fibrinogen, hemochron] }
+  blood-gas: { label: Blood gas analysis, category: blood-gas, keywords: [blood gas, blutgasanalyse, bga, co-oximetry, (co) oxymetrie, oxymetrie] }
+  urinalysis: { label: Urinalysis, category: urinalysis, keywords: [urinalysis, urine analyzer, urine analyser, urine strips, urine reagent strips, harnanalyse, urinsediment, multistix, combur] }
+  diabetes-tech: { label: Glucose / HbA1c measurement, category: diabetes, keywords: [glucometer, glucose meter, blood glucose, hba1c analyzer, hba1c analyser] }
+  culture: { label: Culture & susceptibility, category: microbiology, keywords: [culture, resistenztestung, susceptibility, uricult] }
+  semen-analysis: { label: Semen analysis, category: general, keywords: [spermiogramm, semen analysis, sperm, spermien] }
+  esr: { label: Erythrocyte sedimentation rate (ESR), category: hematology, keywords: [esr, blutsenkung, sedimentation rate] }
+
+# ---------------------------------------------------------------------------
+# Analytes: id → label, group (for hub pages), keywords (EN + DE synonyms).
+# ---------------------------------------------------------------------------
+analytes:
+  hiv: { label: HIV, group: Infectious disease, keywords: [hiv, hiv-1, hiv 1/2, hiv-1/2, hiv 1 2] }
+  hbsag: { label: Hepatitis B (HBsAg), group: Infectious disease, keywords: [hbsag, hepatitis b] }
+  hcv: { label: Hepatitis C (HCV), group: Infectious disease, keywords: [hcv, hepatitis c] }
+  hav: { label: Hepatitis A (HAV), group: Infectious disease, keywords: [hav, hepatitis a] }
+  hev: { label: Hepatitis E (HEV), group: Infectious disease, keywords: [hev, hepatitis e] }
+  syphilis: { label: Syphilis, group: Infectious disease, keywords: [syphilis, treponema, tp] }
+  dengue: { label: Dengue, group: Infectious disease, keywords: [dengue, ns1] }
+  chikungunya: { label: Chikungunya, group: Infectious disease, keywords: [chikungunya, chikungunyavirus, chikv] }
+  zika: { label: Zika, group: Infectious disease, keywords: [zika, zikv] }
+  malaria: { label: Malaria, group: Infectious disease, keywords: [malaria, plasmodium, p.f, p.v, pf, pv, hrp2, pldh] }
+  sars-cov-2: { label: SARS-CoV-2 (COVID-19), group: Respiratory, keywords: [sars-cov-2, covid-19, covid 19, covid, ncov, corona] }
+  influenza: { label: Influenza A/B, group: Respiratory, keywords: [influenza, influenza a, influenza b, flu, h1n1] }
+  rsv: { label: RSV, group: Respiratory, keywords: [rsv, respiratory syncytial] }
+  strep-a: { label: Strep A, group: Respiratory, keywords: [strep a, streptococcus a, group a strep] }
+  strep-b: { label: Strep B, group: Infectious disease, keywords: [strep b] }
+  s-pneumoniae: { label: Streptococcus pneumoniae, group: Respiratory, keywords: [streptococcus pneumoniae, s. pneumoniae, pneumococcal, strep pneumo] }
+  legionella: { label: Legionella, group: Respiratory, keywords: [legionella] }
+  tuberculosis: { label: Tuberculosis, group: Infectious disease, keywords: [tb, tuberculosis, m. tuberculosis, mpt64, lam] }
+  adenovirus: { label: Adenovirus, group: Respiratory, keywords: [adenovirus, adeno] }
+  rotavirus: { label: Rotavirus, group: Gastrointestinal, keywords: [rotavirus, rota] }
+  norovirus: { label: Norovirus, group: Gastrointestinal, keywords: [norovirus] }
+  h-pylori: { label: H. pylori, group: Gastrointestinal, keywords: [h. pylori, h.pylori, helicobacter, pylori] }
+  c-difficile: { label: C. difficile, group: Gastrointestinal, keywords: [c. difficile, clostridium difficile, clostridioides] }
+  cholera: { label: Cholera, group: Gastrointestinal, keywords: [cholera, vibrio] }
+  typhoid: { label: Typhoid, group: Infectious disease, keywords: [typhoid, salmonella typhi, s. typhi] }
+  fob: { label: Faecal occult blood, group: Gastrointestinal, keywords: [fob, ifobt, fecal occult, faecal occult, occult blood] }
+  calprotectin: { label: Calprotectin, group: Gastrointestinal, keywords: [calprotectin] }
+  chlamydia: { label: Chlamydia, group: Sexual health, keywords: [chlamydia] }
+  gonorrhea: { label: Gonorrhoea, group: Sexual health, keywords: [neisseria, gonorrhea, gonorrhoea] }
+  trichomonas: { label: Trichomonas, group: Sexual health, keywords: [t. vaginalis, trichomonas] }
+  hpv: { label: HPV, group: Sexual health, keywords: [hpv] }
+  hsv: { label: Herpes simplex, group: Infectious disease, keywords: [herpes simplex, hsv] }
+  mpox: { label: Mpox, group: Infectious disease, keywords: [mpox, monkeypox] }
+  leptospira: { label: Leptospirosis, group: Infectious disease, keywords: [leptospira, leptospirosis] }
+  scrub-typhus: { label: Scrub typhus, group: Infectious disease, keywords: [scrub typhus, tsutsugamushi] }
+  leishmania: { label: Leishmaniasis, group: Infectious disease, keywords: [leishmania, kalazar, leishmaniasis] }
+  filariasis: { label: Filariasis, group: Infectious disease, keywords: [filariasis, oncho, lf igg4] }
+  chagas: { label: Chagas disease, group: Infectious disease, keywords: [chagas] }
+  toxoplasma: { label: Toxoplasma, group: Infectious disease, keywords: [toxo, toxoplasma] }
+  rubella: { label: Rubella, group: Infectious disease, keywords: [rubella] }
+  hantavirus: { label: Hantavirus, group: Infectious disease, keywords: [hantaan, hantavirus] }
+  enterovirus: { label: Enterovirus, group: Infectious disease, keywords: [enterovirus, ev71] }
+  ebv: { label: Infectious mononucleosis (EBV), group: Infectious disease, keywords: [mononukleose, mononucleosis, ebv, mono] }
+  campylobacter: { label: Campylobacter, group: Gastrointestinal, keywords: [campylobacter, campy] }
+  amr: { label: Antimicrobial resistance genes, group: Infectious disease, keywords: [carba-r, carba c, carbapenemase, vana/vanb, vana, vanb, mrsa, c. auris, candida auris] }
+  mycoplasma: { label: Mycoplasma, group: Respiratory, keywords: [mycoplasma] }
+  bordetella: { label: Bordetella (pertussis), group: Respiratory, keywords: [bordetella, pertussis] }
+  s-aureus: { label: Staphylococcus aureus, group: Infectious disease, keywords: [s. aureus, staphylococcus] }
+  sleeping-sickness: { label: Human African trypanosomiasis, group: Infectious disease, keywords: [hat 2.0, trypanosomiasis] }
+  hcg: { label: hCG (pregnancy), group: Fertility & hormones, keywords: [hcg, β-hcg, ß-hcg, ßhcg, βhcg, pregnancy, pragnancy] }
+  lh: { label: LH, group: Fertility & hormones, keywords: [lh, luteinisierendes hormon, luteinizing hormone] }
+  fsh: { label: FSH, group: Fertility & hormones, keywords: [fsh, follikelstimulierendes hormon] }
+  amh: { label: AMH, group: Fertility & hormones, keywords: [amh, anti-müller-hormon, anti-mullerian] }
+  testosterone: { label: Testosterone, group: Fertility & hormones, keywords: [testosterone, testosteron] }
+  estradiol: { label: Estradiol, group: Fertility & hormones, keywords: [estradiol, e2] }
+  progesterone: { label: Progesterone, group: Fertility & hormones, keywords: [progesterone, progesteron] }
+  prolactin: { label: Prolactin, group: Fertility & hormones, keywords: [prolactin, prolaktin] }
+  cortisol: { label: Cortisol, group: Fertility & hormones, keywords: [cortisol] }
+  tsh: { label: TSH, group: Thyroid, keywords: [tsh, thyreoidea-stimulierendes hormon, thyroid stimulating hormone] }
+  t4: { label: T4 / FT4, group: Thyroid, keywords: [t4, ft4, thyroxin, thyroxine] }
+  t3: { label: T3 / FT3, group: Thyroid, keywords: [t3, ft3, trijodthyronin, triiodothyronine] }
+  troponin: { label: Troponin I/T, group: Cardiac, keywords: [troponin, ctni, ctnt, troponin i, troponin t] }
+  nt-probnp: { label: NT-proBNP, group: Cardiac, keywords: [nt-probnp, bnp] }
+  ck-mb: { label: CK-MB, group: Cardiac, keywords: [ck-mb] }
+  myoglobin: { label: Myoglobin, group: Cardiac, keywords: [myoglobin] }
+  d-dimer: { label: D-dimer, group: Cardiac, keywords: [d-dimer, d dimer] }
+  hfabp: { label: H-FABP, group: Cardiac, keywords: [hfabp, h-fabp, heart-type fatty acid binding protein] }
+  pt-inr: { label: PT/INR, group: Coagulation, keywords: [pt/inr, inr, prothrombin] }
+  aptt: { label: aPTT, group: Coagulation, keywords: [aptt] }
+  crp: { label: CRP, group: Inflammation, keywords: [crp, c-reaktives protein, c-reactive protein, hochsensitives crp, hs-crp] }
+  pct: { label: Procalcitonin, group: Inflammation, keywords: [procalcitonin, pct] }
+  saa: { label: Serum amyloid A, group: Inflammation, keywords: [saa, serumamyloid a, serum amyloid a] }
+  il-6: { label: Interleukin-6, group: Inflammation, keywords: [interleukin, il-6] }
+  ferritin: { label: Ferritin, group: Inflammation, keywords: [ferritin] }
+  hba1c: { label: HbA1c, group: Diabetes, keywords: [hba1c, a1c, glycated hemoglobin] }
+  glucose: { label: Glucose, group: Diabetes, keywords: [glucose, glukose, blood sugar] }
+  ketones: { label: Ketones, group: Diabetes, keywords: [ketone, ketones, ketonkörper, beta-hydroxybutyrate] }
+  c-peptide: { label: C-peptide, group: Diabetes, keywords: [c-peptid, c-peptide] }
+  insulin: { label: Insulin, group: Diabetes, keywords: [insulin] }
+  lipids: { label: Lipid panel, group: Clinical chemistry, keywords: [cholesterol, cholesterin, hdl-cholesterin, ldl-cholesterin, triglyceride, triglycerides, lipid] }
+  creatinine: { label: Creatinine, group: Clinical chemistry, keywords: [creatinine, kreatinin] }
+  urea: { label: Urea / BUN, group: Clinical chemistry, keywords: [urea, harnstoff, bun, harnstoff-stickstoff] }
+  uric-acid: { label: Uric acid, group: Clinical chemistry, keywords: [uric acid, harnsäure] }
+  liver-enzymes: { label: Liver enzymes (ALT/AST), group: Clinical chemistry, keywords: [alt, ast, alanin-aminotransferase, aspartat-aminotransferase] }
+  bilirubin: { label: Bilirubin, group: Clinical chemistry, keywords: [bilirubin, tbili] }
+  albumin: { label: Albumin, group: Clinical chemistry, keywords: [albumin, alb] }
+  total-protein: { label: Total protein, group: Clinical chemistry, keywords: [total protein, gesamtprotein, gesamteiweiß] }
+  alp: { label: Alkaline phosphatase (ALP), group: Clinical chemistry, keywords: [alp, alk. phosphatase, alkaline phosphatase, alkalische phosphatase] }
+  amylase: { label: Amylase, group: Clinical chemistry, keywords: [amylase, amy] }
+  lipase: { label: Lipase, group: Clinical chemistry, keywords: [lipase] }
+  ck: { label: Creatine kinase (CK), group: Clinical chemistry, keywords: [ck, creatine kinase, creatininkinase, kreatinkinase] }
+  ggt: { label: Gamma-GT (GGT), group: Clinical chemistry, keywords: [ggt, gamma gt, gamma-gt] }
+  ldh: { label: LDH, group: Clinical chemistry, keywords: [ldh, laktatdehydrogenase, lactate dehydrogenase] }
+  fructosamine: { label: Fructosamine, group: Diabetes, keywords: [fructosamin, fructosamine] }
+  magnesium: { label: Magnesium, group: Clinical chemistry, keywords: [magnesium, mg] }
+  phosphate: { label: Phosphate, group: Clinical chemistry, keywords: [phosphat, phosphate, phosphor] }
+  ammonia: { label: Ammonia, group: Clinical chemistry, keywords: [ammoniak, ammonia, nh3] }
+  iron: { label: Iron, group: Clinical chemistry, keywords: [eisen, iron] }
+  uti: { label: Urinary tract infection (bacteriuria), group: Urinalysis, keywords: [uricult, bacteriuria, harnwegsinfekt, harnwegsinfektion, uti] }
+  act: { label: Activated clotting time (ACT), group: Coagulation, keywords: [actc, actk, act+, activated clotting time] }
+  fibrinogen: { label: Fibrinogen, group: Coagulation, keywords: [fibrinogen, fib] }
+  esr-value: { label: ESR, group: Hematology, keywords: [esr, blutsenkung] }
+  semen: { label: Semen parameters, group: Fertility & hormones, keywords: [sperm, spermien, spermiogramm, semen] }
+  electrolytes: { label: Electrolytes, group: Clinical chemistry, keywords: [natrium, sodium, kalium, potassium, chlorid, chloride, kalzium, calcium, ionisiertes kalzium] }
+  lactate: { label: Lactate, group: Clinical chemistry, keywords: [lactate, laktat] }
+  cystatin-c: { label: Cystatin C, group: Clinical chemistry, keywords: [cystatin c] }
+  microalbumin: { label: Microalbumin, group: Clinical chemistry, keywords: [microalbumin, mikroalbumin] }
+  homocysteine: { label: Homocysteine, group: Clinical chemistry, keywords: [homocystein, homocysteine] }
+  vitamin-d: { label: Vitamin D, group: Clinical chemistry, keywords: [vitamin d] }
+  blood-gases: { label: 'Blood gases (pH/pO2/pCO2)', group: Blood gas, keywords: [pco2, po2, so2, o2ct, blood gas] }
+  hemoglobin: { label: Hemoglobin, group: Hematology, keywords: [hemoglobin, hämoglobin, haemoglobin, hb] }
+  blood-count: { label: Complete blood count, group: Hematology, keywords: [leukozyten (wbc), erythrozyten, thrombozyten, hämatokrit, lymphozyten (lym), neutrophile (neu), monozyten (mon), eosinophile (eos), basophile (baso), granulozyten (gran), cbc] }
+  g6pd: { label: G6PD, group: Hematology, keywords: [g6pd] }
+  sickle-cell: { label: Sickle cell disease, group: Hematology, keywords: [sickle cell, hemotypesc] }
+  psa: { label: PSA, group: Oncology, keywords: [psa, fpsa, freies psa, prostata-spezifisches antigen, prostate-specific antigen] }
+  cea: { label: CEA, group: Oncology, keywords: [cea, carcinoembryonales antigen] }
+  afp: { label: AFP, group: Oncology, keywords: [afp, alpha-fetoprotein] }
+  tumour-markers-ca: { label: CA tumour markers (CA 125 / 15-3 / 19-9), group: Oncology, keywords: [ca125, ca 125, ca15-3, ca 15-3, ca19-9, ca 19-9, cancer antigen] }
+  oncology-molecular: { label: Oncology gene markers, group: Oncology, keywords: [bcr-abl, npm1, hla-b27] }
+  bladder-markers: { label: Bladder cancer markers, group: Oncology, keywords: [nmp22, bladderchek, bta stat, hcfhrp, zytokeratin-fragmente (ubc), ubc] }
+  urine-chemistry: { label: Urine chemistry panel, group: Urinalysis, keywords: [nitrit, nitrite, urobilinogen, spezifisches gewicht, specific gravity, leukocytes] }
+  drugs-of-abuse: { label: Drugs of abuse, group: Toxicology, keywords: [drug screen, drug test, drugs of abuse, amphetamine, methamphetamine, benzodiazepine, kokain, cocaine, opiate, thc, methadon, ketamin, cotinine, cot] }
+  alcohol: { label: Alcohol, group: Toxicology, keywords: [alcohol, alc, ethanol] }
+  tdm-biologics: { label: Biologic drug levels (TDM), group: Therapeutic drug monitoring, keywords: [adalimumab, infliximab, anti-adalimumab, anti-infliximab] }
+  doac: { label: Direct oral anticoagulants (DOAC), group: Coagulation, keywords: [doac, doacs, direct oral anticoagulants] }
+  shbg: { label: SHBG, group: Fertility & hormones, keywords: [shbg, sexualhormon-bindendes globulin] }
+  sepsis-kidney: { label: Sepsis & kidney injury markers, group: Inflammation, keywords: [presepsin, ngal, neopterin, neopt, neopt] }
+  ige: { label: Total IgE, group: Allergy, keywords: [immunoglobulin e, ige] }
+  pprom: { label: Rupture of membranes (IGFBP-1), group: Fertility & hormones, keywords: [igfbp-1, phigfbp-1] }
+
+sample_types:
+  whole-blood: { label: Whole blood, keywords: [whole blood, wb, blood, blut, vollblut, capillary blood, venous blood] }
+  serum: { label: Serum, keywords: [serum] }
+  plasma: { label: Plasma, keywords: [plasma] }
+  urine: { label: Urine, keywords: [urine, urin, urinary] }
+  stool: { label: Stool, keywords: [fecal, faecal, feces, stool, stuhl] }
+  nasal-swab: { label: Nasal swab, keywords: [nasal swab, nasal, anterior nasal] }
+  nasopharyngeal-swab: { label: Nasopharyngeal swab, keywords: [nasopharyngeal, nasopharayngeal, np swab] }
+  throat-swab: { label: Throat swab, keywords: [throat, oropharyngeal, pharyngeal] }
+  swab: { label: Swab (other), keywords: [swab, abstrich, atemwegsproben, vaginal, cervical, urethral] }
+  saliva: { label: Saliva, keywords: [saliva, speichel, oral fluid] }
+  csf: { label: Cerebrospinal fluid, keywords: [csf, liquor, cerebrospinal] }
+  other-fluid: { label: Other body fluid, keywords: [dialysat, pleuraflüssigkeit, pleural] }
+
+# Product type / subtype keyword rules (first match wins in this order).
+product_types:
+  control: [control, controls, kontrolle, calibrator, kalibrator, calibration]
+  consumable: [tips, filter-tips, tube, tubes, lancet, lancets, cuvette, cuvettes, pipette, swabs, collection, chase buffer, buffer, plate, plates, microtubes]
+  instrument: [analyzer, analyser, analysegerät, reader, meter, messgerät, instrument, system, device reader, photometer, platform]
+  reagent: [test, tests, kit, assay, reagent, reagents, strips, strip, cassette, card, cartridge, elisa, clia, panel, self test, detection kit]
+subtypes:
+  control: [control, controls, kontrolle]
+  calibrator: [calibrator, kalibrator, calibration]
+  cartridge: [cartridge, cartridges, kassette]
+  strip: [strips, strip, teststreifen]
+  self-test: [self test, self-test, at home, home test]
+
+# Spec keys that are platform filler or commercial terms, never published.
+spec_filters:
+  drop_keys: [wall mounted, noise level, condition, color, colour, material, frequency, real-time operation,
+    operating type, portable, minimum order quantity, supply ability, delivery time, payment terms,
+    main domestic market, sample available, sample policy, packaging details, certified, lot number/expiry,
+    display type, disposability, weight, dimension (l*w*h), intended user, features]
+  drop_values: [lightweight, silent operation, other, new, n/a, na, '-']
+
+# Spec key translations (source-language → English display key).
+spec_key_map:
+  Parameter: Analytes
+  Methode: Method
+  Probentyp: Sample type
+  Konnektivität: Connectivity
+  Connectivity Info: Connectivity details
+  Data Manager: Data manager
+  Zeit bis zum Ergebnis (s): Time to result (s)
+  Probenvolumen (µL): Sample volume (µL)
+  Depth (cm): Depth (cm)
+  Width (cm): Width (cm)
+  Height (cm): Height (cm)
+  Weight (kg): Weight (kg)
+
+# Value translations for structured fields (exact match, case-insensitive).
+value_map:
+  Schnelltest: Rapid test
+  Multiparameter: Multi-parameter
+  Einzelparameter: Single-parameter
+  Harnanalyse: Urinalysis
+  Blutgasanalyse (BGA): Blood gas analysis
+  (Co) Oxymetrie: Co-oximetry
+  Fluoreszenz-Immunoassay (FIA): Fluorescence immunoassay (FIA)
+  kl. Blutbild: Small blood count
+  gr. Blutbild: Full blood count
+  Urinsediment: Urine sediment
+  Resistenztestung: Susceptibility testing
+  Trockenchemie: Dry chemistry
+  Spermiogramm: Semen analysis
+  Blutsenkung (ESR): Erythrocyte sedimentation rate (ESR)
+  KI: AI-assisted
+  Viskoelastometrie: Viscoelastometry
+  Plättchenfunktion: Platelet function
+  Singleplex-PCR: Singleplex PCR
+  3-Diff: 3-part differential
+  5-Diff: 5-part differential
+  Blut: Blood
+  Urin: Urine
+  Abstrich: Swab
+  Stuhl: Stool
+  Speichel: Saliva
+  Atemwegsproben: Respiratory samples
+  Dialysat: Dialysate
+  Pleuraflüssigkeit: Pleural fluid
+  Liquor (CSF): Cerebrospinal fluid (CSF)
+  Kulturmedium: Culture medium
+
+# Typos / fused tokens fixed in names before anything else (regex → replacement).
+text_fixes:
+  - ['\bEDANi15\b', 'EDAN i15']
+  - ['\bBinaxNOWG6PD\b', 'BinaxNOW G6PD']
+  - ['\bPragnancy\b', 'Pregnancy']
+  - ['\bThermoFisher\b', 'Thermo Fisher']
+  - ['\bTestTest\b', 'Test']
+  - ['\bfaciparum\b', 'falciparum']
+  - ['\bNasopharayngeal\b', 'Nasopharyngeal']
+  - ['\b(\d+) l\b', '$1 µl']
+  - ['\s+\.$', '']
+  - ['\.$', '']
+  - ['\bHIV 1-2\.O\b', 'HIV 1-2.0']
+  - ['\b[Cc][Oo][Vv][Ii][Dd]\s*-\s*19\b', 'COVID-19']
 
 # Scope: diagnostics only (decision 2026-11-25). Records are dropped in build-data
-# (Phase 4) if their source category is listed here, or — in any category — if
-# their name matches an exclude keyword and no diagnostic keyword. Dropped records
-# are listed in the report, never silently lost.
+# if their source category is listed here, or — in any category — if their name
+# matches an exclude keyword and no diagnostic keyword. Dropped records are listed
+# in the report, never silently lost.
 scope:
   exclude_source_categories:
     src-a: [Medical LAB, Medical Accesories, Medical Surgicals, Life Sciences]
     src-b: []
   exclude_keywords: [guidewire, catheter, stent, suture, closure system, pacing, implant, surgical,
     spectrometer, chromatograph, titrator, moisture analyzer, balance, autosampler, centrifuge,
-    incubator shaker, fume hood, biosafety cabinet, pipette controller]
+    incubator shaker, fume hood, biosafety cabinet, pipette controller, insulin cooling pouch]
   diagnostic_keywords: [test, assay, elisa, clia, rapid, kit, reagent, control, calibrator, analyzer,
     analyser, cartridge, strip, ivd, diagnostic, pcr, antigen, antibody, igg, igm]
-
-technology:
-  rdt: { label: Rapid test (lateral flow), keywords: [rapid test, rapid, cassette, card test, strip test, lateral flow, rdt] }
-  elisa: { label: ELISA, keywords: [elisa, eia] }
-  fia: { label: Fluorescence immunoassay, keywords: [fia, ichroma, afias, finecare, fluorescence] }
-  pcr: { label: PCR, keywords: [pcr, rt-pcr, qpcr, real-time pcr] }
-  blood-gas: { label: Blood gas, keywords: [blood gas, i15, i-stat, epoc] }
-  urinalysis: { label: Urinalysis, keywords: [urine strip, urinalysis, urine analyzer] }
-  glucometry: { label: Glucometry, keywords: [glucometer, glucose meter, glucose strips] }
-
-analytes: {}       # filled in Phase 4, e.g. hiv: { label: HIV, keywords: [hiv, hiv 1/2] }
-sample_types: {}   # e.g. whole-blood: { label: Whole blood, keywords: [whole blood, wb] }
-product_types:
-  instrument: [analyzer, analyser, reader, meter, instrument, device]
-  consumable: [cartridge, lancet, cuvette, tip, tube, swab]
-  reagent: [kit, test, reagent, control, calibrator, strip]
-subtypes:
-  control: [control]
-  calibrator: [calibrator]
-  cartridge: [cartridge]

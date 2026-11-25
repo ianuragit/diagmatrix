@@ -22,18 +22,24 @@ Every folder and key file, mirroring the tree. Keep current.
 | `pipeline/sources/_template/` | Copy to add a source (adapter, selectors, README). |
 | `pipeline/sources/src-a/` | Source A adapter (homepage-nav discovery, product parser), selectors with snippet comments, scrubbed fixtures, tests. |
 | `pipeline/sources/src-b/` | Source B adapter (sitemap discovery, embedded Nuxt payload parser), `devalue.ts` payload decoder/encoder, selectors, scrubbed fixtures, tests. |
-| `pipeline/normalise/` | brand / classify / packsize / dedupe / merge (Phase 4). |
+| `pipeline/normalise/brand.ts` | Brand split (prefix → product line → stated brand), conflicts reported. |
+| `pipeline/normalise/classify.ts` | Technology / analyte / sample / product-type classification + scope filter, from taxonomy.yaml. |
+| `pipeline/normalise/packsize.ts` | Pack-size parsing and stripping from names. |
+| `pipeline/normalise/dedupe.ts` | Normalised dedupe key + grouping. |
+| `pipeline/normalise/merge.ts` | build-data core: components, scope, merge by priority, duplicates, stable ids, related, overrides. |
+| `pipeline/normalise/summary.ts` | Factual summaries generated only from normalised fields. |
+| `pipeline/normalise/*.test.ts` | Unit tests incl. an end-to-end `build()` test with synthetic records. |
 | `pipeline/config/sources.yaml` | Source registry with neutral ids (id, enabled, priority). |
 | `pipeline/config/sources.local.example.yaml` | Template for the git-ignored `sources.local.yaml` (real base URLs + private terms). |
-| `pipeline/config/brands.yaml` | Canonical brands, aliases, product-line → brand. |
-| `pipeline/config/taxonomy.yaml` | Shared categories, technology/analyte/sample/product-type keywords. |
+| `pipeline/config/brands.yaml` | 101 canonical brands, aliases, product-line → brand, `stated_only` and OEM flags. |
+| `pipeline/config/taxonomy.yaml` | Categories, technologies, 129 analytes, 15 technologies, sample types, product types, spec filters, EN/DE translations, text fixes, scope rules. |
 | `pipeline/config/overrides.yaml` | Per-id manual corrections applied last. |
 | `data/raw/{source}/` (git-ignored) | `nav.json`, `products/*.json`, `parse-failures.json` per source. |
-| `data/private/` (git-ignored) | Provenance (source URLs/ids), never published. |
-| `data/id-map.json` | Stable product ids keyed by hashed source refs (Phase 4). |
-| `data/manual/` | Hand-added products (`*.yaml`), a first-class source. |
-| `data/products.json` | Final merged catalogue (Phase 4). |
-| `data/duplicates.json` | Flagged duplicate groups (Phase 4). |
+| `data/private/` (git-ignored) | `provenance.json` (source URLs/ids per product), `build-report.json`. Never published. |
+| `data/id-map.json` | Stable product ids keyed by hashed source refs. |
+| `data/manual/` | Hand-added products (`*.yaml`), a first-class source; `example.yaml.sample` shows the format. |
+| `data/products.json` | Final public catalogue (canonical + flagged duplicates). |
+| `data/duplicates.json` | Duplicate groups (same source) and cross-source merges, by public id. |
 | `src/` | Astro site: `pages/`, `layouts/`, `components/`, `styles/`, `lib/url.ts` (the one link helper). |
 | `public/` | Static files (`.nojekyll`, later robots.txt, fonts). |
 | `.github/workflows/deploy.yml` | Push to main → test → validate → build → Pages. |
