@@ -34,6 +34,17 @@ describe('robots', () => {
     expect(isAllowed(r, UA, '/inquiry.html', { conservative: false })).toBe(true);
   });
 
+  it('does not borrow a blanket ban aimed at other bots, nor borrow when * has its own list', () => {
+    const r = parseRobots(
+      `User-agent: BadBot\nUser-agent: OtherBot\nDisallow: /\nDisallow: /de/\n\nUser-agent: *\nDisallow: /login\n`,
+    );
+    expect(isAllowed(r, UA, '/')).toBe(true);
+    expect(isAllowed(r, UA, '/products/x')).toBe(true);
+    expect(isAllowed(r, UA, '/de/products')).toBe(true);
+    expect(isAllowed(r, UA, '/login')).toBe(false);
+    expect(isAllowed(r, 'BadBot/1.0', '/products/x')).toBe(false);
+  });
+
   it('treats empty Disallow and empty file as allow-all, collects sitemaps', () => {
     const r = parseRobots(`User-agent: *\nDisallow:\nSitemap: https://x.test/sitemap.xml`);
     expect(isAllowed(r, UA, '/anything')).toBe(true);

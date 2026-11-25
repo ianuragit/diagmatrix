@@ -46,6 +46,8 @@ export default function createAdapter(cfg: SourceConfig): SourceAdapter {
         catalogue_no: null,
         specs,
         facts: {},
+        components: [],
+        related_source_ids: [],
         image: null,
         documents: [],
         description_raw: null,

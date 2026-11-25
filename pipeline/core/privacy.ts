@@ -53,3 +53,28 @@ export function scanForTerms(files: string[], terms: string[], root: string): Pr
   }
   return hits;
 }
+
+const esc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+/**
+ * Generic scrub for committed fixtures: source host → `<sourceId>.example`, other
+ * hosts containing a private term → `img-cdn.example` (or `<sourceId>-api.example`
+ * when it is a subdomain of the source), private terms → "ExampleSource", emails redacted.
+ * Record-id remapping is source-specific and done by the caller.
+ */
+export function scrubText(
+  text: string,
+  opts: { terms: string[]; sourceHost: string; sourceId: string },
+): string {
+  const bare = opts.sourceHost.replace(/^www\./, '');
+  let out = text.replace(new RegExp(`\\b([a-z0-9-]+\\.)*${esc(bare)}\\b`, 'gi'), (host) => {
+    const h = host.toLowerCase().replace(/^www\./, '');
+    return h === bare ? `${opts.sourceId}.example` : `${opts.sourceId}-api.example`;
+  });
+  out = out.replace(/\b[a-z0-9-]+(?:\.[a-z0-9-]+)*\.(?:com|net|in|org|co|de|io)\b/gi, (host) =>
+    opts.terms.some((t) => host.toLowerCase().includes(t)) ? 'img-cdn.example' : host,
+  );
+  for (const t of [...opts.terms].sort((a, b) => b.length - a.length))
+    out = out.replace(new RegExp(esc(t), 'gi'), 'ExampleSource');
+  return out.replace(/[\w.+-]+@[\w-]+\.[\w.-]+/g, 'redacted@example.com');
+}

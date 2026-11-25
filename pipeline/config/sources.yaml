@@ -10,5 +10,5 @@ sources:
     enabled: true
     priority: 10
   - id: src-b
-    enabled: false
+    enabled: true
     priority: 20

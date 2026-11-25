@@ -83,8 +83,10 @@ function patternToRegex(pattern: string): RegExp {
 
 /**
  * conservative (default): when no group names our bot specifically (we fall
- * under `*`), also honour Disallow lines from every other group. Many real files put a shared Disallow list under
- * the last named bot, which strict RFC parsing would not apply to `*`.
+ * under `*`) AND that group has no Disallow lines of its own, also honour the
+ * Disallow lines of other groups — some files put a shared list under the last
+ * named bot. A blanket "Disallow: /" in another group is a targeted ban of that
+ * bot, not a shared list, so it is never borrowed.
  */
 export function isAllowed(
   robots: Robots,
@@ -94,11 +96,14 @@ export function isAllowed(
 ): boolean {
   const group = groupFor(robots, userAgent);
   const specific = !!group && !group.agents.includes('*');
-  const conservative = (opts.conservative ?? true) && !specific;
+  const ownDisallows = (group?.rules ?? []).some((r) => !r.allow);
+  const conservative = (opts.conservative ?? true) && !specific && !ownDisallows;
   const rules = [
     ...(group?.rules ?? []),
     ...(conservative
-      ? robots.groups.filter((g) => g !== group).flatMap((g) => g.rules.filter((r) => !r.allow))
+      ? robots.groups
+          .filter((g) => g !== group)
+          .flatMap((g) => g.rules.filter((r) => !r.allow && r.pattern !== '/'))
       : []),
   ];
   let decision: RobotsRule | null = null;

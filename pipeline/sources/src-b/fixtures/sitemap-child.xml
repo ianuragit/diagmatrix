@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://src-b.example/</loc></url>
+  <url><loc>https://src-b.example/faq</loc></url>
+  <url><loc>https://src-b.example/partners</loc></url>
+  <url><loc>https://src-b.example/products</loc></url>
+  <url><loc>https://src-b.example/products/abl9-blutgasanalysator</loc></url>
+  <url><loc>https://src-b.example/products/abl90-flex-plus-blutgasanalysator</loc></url>
+  <url><loc>https://src-b.example/products/abl800-flex-bga-geraet</loc></url>
+  <url><loc>https://src-b.example/products/abon-chlamydia-test</loc></url>
+  <url><loc>https://src-b.example/products/abx-micros-es-60</loc></url>
+  <url><loc>https://elsewhere.example/products/not-ours</loc></url>
+</urlset>

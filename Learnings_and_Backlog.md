@@ -1,6 +1,9 @@
 # Learnings and Backlog
 
 ## Learnings
+- 2026-11-25 — Source B is a German POCT directory (Nuxt SSR). Each page embeds the full product record in `__NUXT_DATA__` (devalue-flattened JSON): manufacturer, categories, typed attributes with units, child tests/consumables, related products, document links. Reading that beats scraping prose. Attribute values are German ("Blut", "Urin", "Abstrich", "Schnelltest") — normalise must map them.
+- 2026-11-25 — Source B's robots.txt bans a list of named bots with `Disallow: /`. The conservative robots rule must not borrow such blanket bans (it did; fixed and tested).
+- 2026-11-25 — Source B's "manufacturer" is sometimes the OEM rather than the marketing brand (a coagulation meter sold by a large diagnostics company is listed under its OEM). Brand reconciliation in Phase 4.
 - 2026-11-24 — Source A's CDN firewall blocks a client after ~140 requests at 1 req/s and then answers 403 to everything. The crawler originally kept going and cached the 403s; it now stops at the first sustained block and never caches 401/403.
 - 2026-11-24 — Source A pages embed the full ~3,200-link nav, so every page is ~1 MB; Brotli q9 caches them at ~150 KB.
 - 2026-11-24 — Source A's robots.txt puts its shared Disallow list under the last named Google bot; strict RFC parsing would leave `*` allow-all. We honour all Disallow lines when no group names us.
@@ -12,6 +15,7 @@
 - 2026-11-24 — Zod 4: use `z.url()`; `z.string().url()` is deprecated.
 
 ## Backlog
+- 2026-11-25 — Phase 4: map Source B German attribute values to English taxonomy terms; expand components (child tests/strips) into reagent/consumable records linked to their instrument; publish only manufacturer documents (manuals, datasheets, brochures), keep the source's curated study lists private.
 - 2026-11-25 — Source A: 3,093 pages not fetched (site firewall). Revisit only with owner permission or a much slower rate.
 - 2026-11-24 — Normalise: drop platform filler spec keys; prefer fact-table values; fix "µ" loss (e.g. "1000 l" → "1000 µL").
 - 2026-11-24 — Phase 2: `src-a` selectors + adapter + scrubbed fixtures.

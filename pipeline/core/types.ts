@@ -40,6 +40,15 @@ export const RawProductSchema = z.object({
   facts: z.record(z.string(), z.string()),
   image: z.url().nullable(),
   documents: z.array(DocumentSchema),
+  /**
+   * Sub-products listed on this page (e.g. an analyser's test cartridges/strips),
+   * with their own source-local id so they can be merged with standalone pages.
+   */
+  components: z.array(
+    z.object({ source_id: z.string(), name: z.string(), specs: z.record(z.string(), z.string()) }),
+  ),
+  /** Source-local ids/slugs of products the source itself links as related. Private. */
+  related_source_ids: z.array(z.string()),
   /** Raw description text, kept for fact extraction only — never published verbatim. */
   description_raw: z.string().nullable(),
 });

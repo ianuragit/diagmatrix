@@ -242,10 +242,18 @@ async function cmdReport() {
     const rawByCat = new Map<string, number>();
     for (const r of raw)
       rawByCat.set(r.category ?? '(none)', (rawByCat.get(r.category ?? '(none)') ?? 0) + 1);
-    console.log('### Categories\n\n| Category | In nav | Parsed |\n|---|---:|---:|');
-    for (const [cat, n] of [...navByCat].sort((a, b) => b[1] - a[1]))
-      console.log(`| ${cat} | ${n} | ${rawByCat.get(cat) ?? 0} |`);
-    const extra = [...rawByCat.keys()].filter((c) => !navByCat.has(c));
+    const navKnowsCategories = !(navByCat.size === 1 && navByCat.has('Uncategorised'));
+    if (navKnowsCategories) {
+      console.log('### Categories\n\n| Category | In nav | Parsed |\n|---|---:|---:|');
+      for (const [cat, n] of [...navByCat].sort((a, b) => b[1] - a[1]))
+        console.log(`| ${cat} | ${n} | ${rawByCat.get(cat) ?? 0} |`);
+    } else {
+      // Category only known after parsing (e.g. sitemap discovery).
+      console.log('### Categories (from parsed pages)\n\n| Category | Parsed |\n|---|---:|');
+      for (const [cat, n] of [...rawByCat].sort((a, b) => b[1] - a[1]))
+        console.log(`| ${cat} | ${n} |`);
+    }
+    const extra = navKnowsCategories ? [...rawByCat.keys()].filter((c) => !navByCat.has(c)) : [];
     if (extra.length) console.log(`\nBreadcrumb categories not in nav: ${extra.join(', ')}`);
 
     const cov: [string, (r: RawProduct) => boolean][] = [
@@ -255,6 +263,8 @@ async function cmdReport() {
       ['spec rows', (r) => Object.keys(r.specs).length > 0],
       ['image', (r) => !!r.image],
       ['documents', (r) => r.documents.length > 0],
+      ['components', (r) => r.components.length > 0],
+      ['related (source-linked)', (r) => r.related_source_ids.length > 0],
       ['description', (r) => !!r.description_raw],
     ];
     console.log('\n### Field coverage\n\n| Field | Records | % |\n|---|---:|---:|');

@@ -126,6 +126,8 @@ export function parseProductHtml(html: string, entry: NavEntry, sourceId: string
     facts,
     image,
     documents,
+    components: [],
+    related_source_ids: [],
     description_raw: description || null,
   };
 }
