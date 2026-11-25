@@ -1,0 +1,885 @@
+{
+  "Hitado": [],
+  "NAL von minden": [
+    {
+      "name": "ABO-trol forte II (ABO) Test",
+      "catalogue_no": "820001",
+      "url": "https://nal-vonminden.com/eng/abo-trol-blutgruppen-bestimmung.html"
+    },
+    {
+      "name": "Acmex HBsAg Test",
+      "catalogue_no": "21201A",
+      "url": "https://nal-vonminden.com/eng/acmex-hepatitis-b-surface-antigen-hbsag-test.html"
+    },
+    {
+      "name": "Acmex HCV Antibody Test",
+      "catalogue_no": "21101A",
+      "url": "https://nal-vonminden.com/eng/acmex-hepatitis-c-virus-hcv-antibody-test.html"
+    },
+    {
+      "name": "Acmex HIV Ab HBsAg HCV Ab 3H Combo Test",
+      "catalogue_no": "21002A",
+      "url": "https://nal-vonminden.com/eng/acmex-hiv-hbs-hcv-combo-test.html"
+    },
+    {
+      "name": "AFIAS-3 FIA Analysis System",
+      "catalogue_no": "63001",
+      "url": "https://nal-vonminden.com/eng/afias-3-fia-analysesystem.html"
+    },
+    {
+      "name": "AFIAS-6 Cleaning Cartridge",
+      "catalogue_no": "63016",
+      "url": "https://nal-vonminden.com/eng/afias-6-reinigungskassette.html"
+    },
+    {
+      "name": "AFIAS AFP Test | Alpha-Fetoprotein",
+      "catalogue_no": "3170208",
+      "url": "https://nal-vonminden.com/eng/afias-afp-testkit.html"
+    },
+    {
+      "name": "AFIAS AMH Test",
+      "catalogue_no": "3170226",
+      "url": "https://nal-vonminden.com/eng/afias-amh-test.html"
+    },
+    {
+      "name": "AFIAS CA125 Test",
+      "catalogue_no": "3170250",
+      "url": "https://nal-vonminden.com/eng/afias-ca125-test.html"
+    },
+    {
+      "name": "AFIAS CEA test | carcinoembryonic antigen",
+      "catalogue_no": "3170209",
+      "url": "https://nal-vonminden.com/eng/afias-cea-testkit.html"
+    },
+    {
+      "name": "AFIAS Cortisol Test",
+      "catalogue_no": "3170212",
+      "url": "https://nal-vonminden.com/eng/afias-cortisol-testkit.html"
+    },
+    {
+      "name": "AFIAS CRP Test",
+      "catalogue_no": "3170222",
+      "url": "https://nal-vonminden.com/eng/afias-crp-testkit.html"
+    },
+    {
+      "name": "AFIAS D-Dimer NEO Test",
+      "catalogue_no": "3170246",
+      "url": "https://nal-vonminden.com/eng/afias-d-dimer-neo.html"
+    },
+    {
+      "name": "AFIAS Ferritin Test",
+      "catalogue_no": "3170223",
+      "url": "https://nal-vonminden.com/eng/afias-ferritin-testkit.html"
+    },
+    {
+      "name": "AFIAS Free PSA Test",
+      "catalogue_no": "63201",
+      "url": "https://nal-vonminden.com/eng/afias-free-psa-test.html"
+    },
+    {
+      "name": "AFIAS FSH Test",
+      "catalogue_no": "3170220",
+      "url": "https://nal-vonminden.com/eng/afias-fsh-testkit.html"
+    },
+    {
+      "name": "AFIAS IL-6 Test",
+      "catalogue_no": "3170233",
+      "url": "https://nal-vonminden.com/eng/afias-il-6-test.html"
+    },
+    {
+      "name": "AFIAS LH Test",
+      "catalogue_no": "3170214",
+      "url": "https://nal-vonminden.com/eng/afias-lh-testkit.html"
+    },
+    {
+      "name": "AFIAS MxA/CRP Test",
+      "catalogue_no": "3170235",
+      "url": "https://nal-vonminden.com/eng/afias-mxa-crp-test.html"
+    },
+    {
+      "name": "AFIAS Myoglobin NEO Test",
+      "catalogue_no": "3170248",
+      "url": "https://nal-vonminden.com/eng/afias-myoglobin-neo.html"
+    },
+    {
+      "name": "AFIAS NT-proBNP Test",
+      "catalogue_no": "3170201",
+      "url": "https://nal-vonminden.com/eng/afias-nt-probnp-testkit.html"
+    },
+    {
+      "name": "AFIAS PCT Test",
+      "catalogue_no": "3170205",
+      "url": "https://nal-vonminden.com/eng/afias-pct-testkit.html"
+    },
+    {
+      "name": "AFIAS Pipettenspitzen",
+      "catalogue_no": "63069",
+      "url": "https://nal-vonminden.com/eng/afias-pipettenspitzen.html"
+    },
+    {
+      "name": "AFIAS PRL Test",
+      "catalogue_no": "3170218",
+      "url": "https://nal-vonminden.com/eng/afias-prl-test.html"
+    },
+    {
+      "name": "AFIAS Progesterone Test",
+      "catalogue_no": "3170251",
+      "url": "https://nal-vonminden.com/eng/afias-progesterone-test.html"
+    },
+    {
+      "name": "AFIAS PSA NEO Test",
+      "catalogue_no": "63200",
+      "url": "https://nal-vonminden.com/eng/afias-psa-neo-test.html"
+    },
+    {
+      "name": "AFIAS System Check Cartridge",
+      "catalogue_no": "63007",
+      "url": "https://nal-vonminden.com/eng/afias-system-check-cartridge.html"
+    },
+    {
+      "name": "AFIAS T3 Test",
+      "catalogue_no": "3170217",
+      "url": "https://nal-vonminden.com/eng/afias-t3-testkit.html"
+    },
+    {
+      "name": "AFIAS T4 Test",
+      "catalogue_no": "3170216",
+      "url": "https://nal-vonminden.com/eng/afias-t4-testkit.html"
+    },
+    {
+      "name": "AFIAS Testosterone Test",
+      "catalogue_no": "3170219",
+      "url": "https://nal-vonminden.com/eng/afias-testosterone-testkit.html"
+    },
+    {
+      "name": "AFIAS Tn-I Plus Test",
+      "catalogue_no": "3170200",
+      "url": "https://nal-vonminden.com/eng/afias-tn-i-plus-testkit.html"
+    },
+    {
+      "name": "AFIAS Total ß-hCG Test",
+      "catalogue_no": "3170213",
+      "url": "https://nal-vonminden.com/eng/afias-total-ss-hcg-testkit.html"
+    },
+    {
+      "name": "AFIAS Troponin T Test",
+      "catalogue_no": "3170232",
+      "url": "https://nal-vonminden.com/eng/afias-troponin-t.html"
+    },
+    {
+      "name": "AFIAS TSH Plus Test",
+      "catalogue_no": "3170228",
+      "url": "https://nal-vonminden.com/eng/afias-tsh-plus-test.html"
+    },
+    {
+      "name": "AFIAS Vitamin D Neo Test",
+      "catalogue_no": "3170243",
+      "url": "https://nal-vonminden.com/eng/afias-vitamin-d-neo.html"
+    },
+    {
+      "name": "Boditech Cardiac Control Kit",
+      "catalogue_no": "3170400",
+      "url": "https://nal-vonminden.com/eng/boditech-cardiac-kontrollkit.html"
+    },
+    {
+      "name": "Boditech CRP Control Kit",
+      "catalogue_no": "3170407",
+      "url": "https://nal-vonminden.com/eng/boditech-crp-kontrollkit.html"
+    },
+    {
+      "name": "Boditech D-Dimer Control Kit",
+      "catalogue_no": "3170401",
+      "url": "https://nal-vonminden.com/eng/boditech-d-dimer-kontrollkit.html"
+    },
+    {
+      "name": "Boditech Ferritin Control Kit",
+      "catalogue_no": "3170409",
+      "url": "https://nal-vonminden.com/eng/boditech-ferritin-kontrollkit.html"
+    },
+    {
+      "name": "Boditech HbA1c Control Kit",
+      "catalogue_no": "3170405",
+      "url": "https://nal-vonminden.com/eng/boditech-hba1c-kontrollkit.html"
+    },
+    {
+      "name": "Boditech Hormone Control Kit",
+      "catalogue_no": "3170404",
+      "url": "https://nal-vonminden.com/eng/boditech-hormone-kontrollkit.html"
+    },
+    {
+      "name": "Boditech MxA / CRP Control Kit",
+      "catalogue_no": "3170428",
+      "url": "https://nal-vonminden.com/eng/boditech-mxa-crp-kontrollkit.html"
+    },
+    {
+      "name": "Boditech PCT Control Kit",
+      "catalogue_no": "3170402",
+      "url": "https://nal-vonminden.com/eng/boditech-pct-kontrollkit.html"
+    },
+    {
+      "name": "Boditech Tn-I Plus Control Kit",
+      "catalogue_no": "3170412",
+      "url": "https://nal-vonminden.com/eng/boditech-tn-i-plus-kontrollkit.html"
+    },
+    {
+      "name": "Boditech Troponin T Control Kit",
+      "catalogue_no": "3170418",
+      "url": "https://nal-vonminden.com/eng/boditech-troponin-t-kontrollkit.html"
+    },
+    {
+      "name": "Boditech TSH Plus Control Kit",
+      "catalogue_no": "3170416",
+      "url": "https://nal-vonminden.com/eng/boditech-tsh-plus-kontrollkit.html"
+    },
+    {
+      "name": "Boditech Tumor Marker Control Kit",
+      "catalogue_no": "3170403",
+      "url": "https://nal-vonminden.com/eng/boditech-tumor-marker-kontrollkit.html"
+    },
+    {
+      "name": "Boditech Vitamin D Control Kit",
+      "catalogue_no": "3170410",
+      "url": "https://nal-vonminden.com/eng/boditech-vitamin-d-kontrollkit.html"
+    },
+    {
+      "name": "Lid for Urine Cup",
+      "catalogue_no": "85710, 85712",
+      "url": "https://nal-vonminden.com/eng/deckel-fuer-urinbecher.html"
+    },
+    {
+      "name": "Multistix 8SG Urinalysis Strips - 8 Parameters",
+      "catalogue_no": "40080-L",
+      "url": "https://nal-vonminden.com/eng/multistix-8sg-urinanalyse.html"
+    },
+    {
+      "name": "NADAL Adenovirus Test",
+      "catalogue_no": "481016",
+      "url": "https://nal-vonminden.com/eng/nadal-adenovirus-testkassette-10.html"
+    },
+    {
+      "name": "NADAL ASO Latex Test",
+      "catalogue_no": "795003",
+      "url": "https://nal-vonminden.com/eng/nadal-aso-latex-test.html"
+    },
+    {
+      "name": "NADAL Astrovirus Test",
+      "catalogue_no": "850003",
+      "url": "https://nal-vonminden.com/eng/nadal-astrovirus-testkassette.html"
+    },
+    {
+      "name": "NADAL Borreliosis Antigen Test",
+      "catalogue_no": "870002N-05",
+      "url": "https://nal-vonminden.com/eng/nadal-borreliosis-ag-testkassette.html"
+    },
+    {
+      "name": "NADAL C. difficile Toxin A/B+GDH Test",
+      "catalogue_no": "582022N-10",
+      "url": "https://nal-vonminden.com/eng/nadal-c-difficile-testkassette.html"
+    },
+    {
+      "name": "NADAL Calprotectin/Lactoferrin Test",
+      "catalogue_no": "1212002",
+      "url": "https://nal-vonminden.com/eng/nadal-calprotectin-lactoferrin-test.html"
+    },
+    {
+      "name": "NADAL Calprotectin Test",
+      "catalogue_no": "1212004N-10",
+      "url": "https://nal-vonminden.com/eng/nadal-calprotectin-test.html"
+    },
+    {
+      "name": "NADAL Campylobacter Test",
+      "catalogue_no": "1232001",
+      "url": "https://nal-vonminden.com/eng/nadal-campylobacter-testkassette-10.html"
+    },
+    {
+      "name": "NADAL Cardiac Combo test",
+      "catalogue_no": "282003",
+      "url": "https://nal-vonminden.com/eng/nadal-cardiac-combo-test.html"
+    },
+    {
+      "name": "NADAL C. difficile Toxin A/B Antigen Test",
+      "catalogue_no": "582008",
+      "url": "https://nal-vonminden.com/eng/nadal-cdifficile-nachweis.html"
+    },
+    {
+      "name": "NADAL C. difficile GDH Ag Test",
+      "catalogue_no": "582004",
+      "url": "https://nal-vonminden.com/eng/nadal-cdifficile-test.html"
+    },
+    {
+      "name": "NADAL Celiac Disease tTG IgA Test",
+      "catalogue_no": "790004N-10",
+      "url": "https://nal-vonminden.com/eng/nadal-celiac-disease-testkassette.html"
+    },
+    {
+      "name": "NADAL Chlamydia Plus Test",
+      "catalogue_no": "212011",
+      "url": "https://nal-vonminden.com/eng/nadal-chlamydia-plus-test.html"
+    },
+    {
+      "name": "NADAL Chlamydia Test",
+      "catalogue_no": "212007",
+      "url": "https://nal-vonminden.com/eng/nadal-chlamydia-test.html"
+    },
+    {
+      "name": "NADAL COVID-19 Ag Test",
+      "catalogue_no": "243137N-01PG",
+      "url": "https://nal-vonminden.com/eng/nadal-cov19-ag-pg.html"
+    },
+    {
+      "name": "NADAL COVID-19 Antigen Rapid Test (Prefilled Buffer)",
+      "catalogue_no": "243103N-25PA",
+      "url": "https://nal-vonminden.com/eng/nadal-cov19-ag-test-prefilled-buffer.html"
+    },
+    {
+      "name": "NADAL COVID-19, Influenza A/B & RSV Combo Test",
+      "catalogue_no": "243502N-20",
+      "url": "https://nal-vonminden.com/eng/nadal-cov19-influenza-rsv.html"
+    },
+    {
+      "name": "NADAL CRP Quant Test for Colibri",
+      "catalogue_no": "312024NBUL-20",
+      "url": "https://nal-vonminden.com/eng/nadal-crp-quant-testkassette-colibri-20.html"
+    },
+    {
+      "name": "NADAL CRP Test",
+      "catalogue_no": "311801N-20",
+      "url": "https://nal-vonminden.com/eng/nadal-crp-test.html"
+    },
+    {
+      "name": "NADAL Cryptosporidium test",
+      "catalogue_no": "511006",
+      "url": "https://nal-vonminden.com/eng/nadal-cryptosporidium-testkassette-10.html"
+    },
+    {
+      "name": "NADAL Dengue NS1 Ag + IgG/IgM Rapid Test",
+      "catalogue_no": "532919N-10",
+      "url": "https://nal-vonminden.com/eng/nadal-dengue-ns1-ag-igg-igm-testkassette.html"
+    },
+    {
+      "name": "NADAL E. coli O157 Test",
+      "catalogue_no": "501006",
+      "url": "https://nal-vonminden.com/eng/nadal-ecoli-testkassette.html"
+    },
+    {
+      "name": "NADAL Entamoeba Test",
+      "catalogue_no": "2090001",
+      "url": "https://nal-vonminden.com/eng/nadal-entamoeba-testkassette.html"
+    },
+    {
+      "name": "NADAL Enterovirus Test",
+      "catalogue_no": "1222001",
+      "url": "https://nal-vonminden.com/eng/nadal-enterovirus-testkassette.html"
+    },
+    {
+      "name": "NADAL FOB Quant Test for Colibri",
+      "catalogue_no": "272059NBUL-20",
+      "url": "https://nal-vonminden.com/eng/nadal-fob-quant-test.html"
+    },
+    {
+      "name": "NADAL FOB Test",
+      "catalogue_no": "272039N-20, 272901N-20, 272942N-20",
+      "url": "https://nal-vonminden.com/eng/nadal-fob-test.html"
+    },
+    {
+      "name": "NADAL Hb/Hp Complex Test",
+      "catalogue_no": "272011N-25",
+      "url": "https://nal-vonminden.com/eng/nadal-hb-hp-complex-stuhltest.html"
+    },
+    {
+      "name": "NADAL Hb/Hp Complex test",
+      "catalogue_no": "272015",
+      "url": "https://nal-vonminden.com/eng/nadal-hb-hp-complex-testkassette.html"
+    },
+    {
+      "name": "NADAL hLH Ovulation Test",
+      "catalogue_no": "165001",
+      "url": "https://nal-vonminden.com/eng/nadal-hlh-ovulation-teststreifen.html"
+    },
+    {
+      "name": "NADAL H. pylori Ab test",
+      "catalogue_no": "262001",
+      "url": "https://nal-vonminden.com/eng/nadal-hpylori-test.html"
+    },
+    {
+      "name": "NADAL HSV 1 IgG/IgM Test",
+      "catalogue_no": "1130004N-10",
+      "url": "https://nal-vonminden.com/eng/nadal-hsv1-testkassette-10.html"
+    },
+    {
+      "name": "NADAL HSV 2 IgG/IgM Rapid Test",
+      "catalogue_no": "1130005N-10",
+      "url": "https://nal-vonminden.com/eng/nadal-hsv2-testkassette-10.html"
+    },
+    {
+      "name": "NADAL Influenza A/B Scan Test for Colibri",
+      "catalogue_no": "242006NBUL-10",
+      "url": "https://nal-vonminden.com/eng/nadal-influenza-ab-testkassette-colibri.html"
+    },
+    {
+      "name": "NADAL Influenza A/B Test",
+      "catalogue_no": "242915N-10",
+      "url": "https://nal-vonminden.com/eng/nadal-influenza-ab-testkassette.html"
+    },
+    {
+      "name": "NADAL Legionella Rapid Test",
+      "catalogue_no": "552020",
+      "url": "https://nal-vonminden.com/eng/nadal-legionella-nachweis.html"
+    },
+    {
+      "name": "NADAL Legionella/S. pneumoniae Test",
+      "catalogue_no": "572005",
+      "url": "https://nal-vonminden.com/eng/nadal-legionella-pneumoniae-test.html"
+    },
+    {
+      "name": "NADAL Lyme Borreliosis IgG/IgM Test",
+      "catalogue_no": "870001N-10",
+      "url": "https://nal-vonminden.com/eng/nadal-lyme-borreliosis-nachweis.html"
+    },
+    {
+      "name": "NADAL Malaria Pf/Pan Ag 4 Species Plus Test",
+      "catalogue_no": "472040N-25",
+      "url": "https://nal-vonminden.com/eng/nadal-malaria-ag-4-species-plus-test.html"
+    },
+    {
+      "name": "NADAL Malaria Pf/Pan Ag 4 Species Test",
+      "catalogue_no": "472038N-25",
+      "url": "https://nal-vonminden.com/eng/nadal-malaria-pf-pan-testkassette-25.html"
+    },
+    {
+      "name": "NADAL Mononucleosis Test",
+      "catalogue_no": "252003N-20, 252017N-05",
+      "url": "https://nal-vonminden.com/eng/nadal-mononucleosis-rapid-test.html"
+    },
+    {
+      "name": "NADAL Mycoplasma Test Plate",
+      "catalogue_no": "1770001",
+      "url": "https://nal-vonminden.com/eng/nadal-mycoplasma-testplatte.html"
+    },
+    {
+      "name": "NADAL Norovirus GI/GII Test",
+      "catalogue_no": "920006N-10",
+      "url": "https://nal-vonminden.com/eng/nadal-norovirus-g1-g2-testkassette-10.html"
+    },
+    {
+      "name": "NADAL Norovirus GI/GII+Rota-Adenovirus test",
+      "catalogue_no": "920007N-10",
+      "url": "https://nal-vonminden.com/eng/nadal-norovirus-rota-adenovirus-testkassette-10.html"
+    },
+    {
+      "name": "NADAL Norovirus GI/GII Rapid Test",
+      "catalogue_no": "920002",
+      "url": "https://nal-vonminden.com/eng/nadal-norovirus-testkassette-10.html"
+    },
+    {
+      "name": "PoC-PCR device NADAL PCR Analyzer PRO1",
+      "catalogue_no": "65000",
+      "url": "https://nal-vonminden.com/eng/nadal-pcr-analyzer-pro-1.html"
+    },
+    {
+      "name": "NADAL PCR Analyzer PRO8",
+      "catalogue_no": "65001",
+      "url": "https://nal-vonminden.com/eng/nadal-pcr-analyzer-pro-8.html"
+    },
+    {
+      "name": "NADAL Vaginal pH Test",
+      "catalogue_no": "194002",
+      "url": "https://nal-vonminden.com/eng/nadal-ph-test-gyn.html"
+    },
+    {
+      "name": "NADAL S. pneumoniae Test",
+      "catalogue_no": "572004N-10",
+      "url": "https://nal-vonminden.com/eng/nadal-pneumoniae-test.html"
+    },
+    {
+      "name": "NADAL Procalcitonin Quant Test for Colibri",
+      "catalogue_no": "2190010NBUL-20",
+      "url": "https://nal-vonminden.com/eng/nadal-procalcitonin-quant-test-colibri.html"
+    },
+    {
+      "name": "NADAL PROM Amniotic Fluid Test",
+      "catalogue_no": "431006N-03, 431006N-10, 431006N-20",
+      "url": "https://nal-vonminden.com/eng/nadal-prom-amniotic-fluid-test.html"
+    },
+    {
+      "name": "NADAL PSA Rapid Test",
+      "catalogue_no": "602003",
+      "url": "https://nal-vonminden.com/eng/nadal-psa-testkassette.html"
+    },
+    {
+      "name": "NADAL Rotavirus Test",
+      "catalogue_no": "481017",
+      "url": "https://nal-vonminden.com/eng/nadal-rotavirus-testkassette-10.html"
+    },
+    {
+      "name": "NADAL RPR Carbon Agglutination Test",
+      "catalogue_no": "795011",
+      "url": "https://nal-vonminden.com/eng/nadal-rpr-carbon-latextest.html"
+    },
+    {
+      "name": "NADAL RSV Test",
+      "catalogue_no": "491905N-20",
+      "url": "https://nal-vonminden.com/eng/nadal-rsv-testkassetten.html"
+    },
+    {
+      "name": "NADAL Salmonella spp. Test",
+      "catalogue_no": "1242001",
+      "url": "https://nal-vonminden.com/eng/nadal-salmonella-testkassette.html"
+    },
+    {
+      "name": "NADAL Strep A Scan Test for Colibri",
+      "catalogue_no": "222049NBUL-20",
+      "url": "https://nal-vonminden.com/eng/nadal-strep-a-scan-test-colibri.html"
+    },
+    {
+      "name": "NADAL Strep A Rapid Test",
+      "catalogue_no": "221901N-40, 222901N-20",
+      "url": "https://nal-vonminden.com/eng/nadal-strep-a-test-viva.html"
+    },
+    {
+      "name": "NADAL Strep B Test",
+      "catalogue_no": "232001",
+      "url": "https://nal-vonminden.com/eng/nadal-strep-b-test.html"
+    },
+    {
+      "name": "NADAL Syphilis Antibody Test",
+      "catalogue_no": "203901N-40, 203902N-20",
+      "url": "https://nal-vonminden.com/eng/nadal-syphilis-sti-test.html"
+    },
+    {
+      "name": "NADAL Tetanus Test",
+      "catalogue_no": "542020N-25",
+      "url": "https://nal-vonminden.com/eng/nadal-tetanus-schnelltest.html"
+    },
+    {
+      "name": "NADAL TPHA Agglutination Test",
+      "catalogue_no": "795027",
+      "url": "https://nal-vonminden.com/eng/nadal-tpha-latextest-100-tests.html"
+    },
+    {
+      "name": "NADAL Trichomonas vaginalis Test",
+      "catalogue_no": "840003N-10",
+      "url": "https://nal-vonminden.com/eng/nadal-trichomonas-vaginalis-testkassette-10.html"
+    },
+    {
+      "name": "NADAL Troponin I Cut-off 0",
+      "catalogue_no": "282041N-10",
+      "url": "https://nal-vonminden.com/eng/nadal-troponin-i-testkassette-10.html"
+    },
+    {
+      "name": "NADAL VDRL Agglutination Test",
+      "catalogue_no": "795015",
+      "url": "https://nal-vonminden.com/eng/nadal-vdrl-agglutinationstest.html"
+    },
+    {
+      "name": "NADAL 25-OH Vitamin D Test for Colibri",
+      "catalogue_no": "2260004NBUL-10, 2260004NBUL-25",
+      "url": "https://nal-vonminden.com/eng/nadalr-25-oh-vitamin-d-test-fur-colibri-geraet.html"
+    },
+    {
+      "name": "NADAL Adenovirus/RSV Combo Rapid Test",
+      "catalogue_no": "491909N-20",
+      "url": "https://nal-vonminden.com/eng/nadalr-adenovirus-rsv-combo-rapid-test.html"
+    },
+    {
+      "name": "NADAL CRP plus Test",
+      "catalogue_no": "311804N-20",
+      "url": "https://nal-vonminden.com/eng/nadalr-crp-plus-test.html"
+    },
+    {
+      "name": "NADAL D-Dimer Test | 500 ng/mL",
+      "catalogue_no": "351003N-05, 351003N-10",
+      "url": "https://nal-vonminden.com/eng/nadalr-d-dimer-testkassette.html"
+    },
+    {
+      "name": "NADAL Epstein-Barr Virus (EBV) Rapid Test",
+      "catalogue_no": "252022N-20",
+      "url": "https://nal-vonminden.com/eng/nadalr-epstein-barr-virus-ebv-rapid-test.html"
+    },
+    {
+      "name": "NADAL FOB Plus Test | For Your Patients",
+      "catalogue_no": "272940N-20",
+      "url": "https://nal-vonminden.com/eng/nadalr-fob-plus-test.html"
+    },
+    {
+      "name": "NADAL Giardia Test",
+      "catalogue_no": "521011N-10",
+      "url": "https://nal-vonminden.com/eng/nadalr-giardia-test.html"
+    },
+    {
+      "name": "NADAL Gonorrhea Test",
+      "catalogue_no": "611905N-10",
+      "url": "https://nal-vonminden.com/eng/nadalr-gonorrhea-test.html"
+    },
+    {
+      "name": "NADAL GX COVID-19 Ag Test",
+      "catalogue_no": "243140N-01B, 243140N-05A, 243140N-05B, 243140N-05C",
+      "url": "https://nal-vonminden.com/eng/nadalr-gx-covid-19-ag-test-ce2934.html"
+    },
+    {
+      "name": "NADAL H. pylori Ag Test",
+      "catalogue_no": "262902N-20",
+      "url": "https://nal-vonminden.com/eng/nadalr-h-pylori-ag-test.html"
+    },
+    {
+      "name": "NADAL HAV IgG/IgM Test",
+      "catalogue_no": "622970N-30",
+      "url": "https://nal-vonminden.com/eng/nadalr-hav-igg-igm-test.html"
+    },
+    {
+      "name": "NADAL hCG Pregnancy test",
+      "catalogue_no": "141002-K",
+      "url": "https://nal-vonminden.com/eng/nadalr-hcg-schwangerschaftstest.html"
+    },
+    {
+      "name": "NADAL Microalbumin Test",
+      "catalogue_no": "331901N-50, 331904N-50",
+      "url": "https://nal-vonminden.com/eng/nadalr-microalbumin-test.html"
+    },
+    {
+      "name": "NADAL Nuclear Matrix Protein 22 Test",
+      "catalogue_no": "562011N-10, 562011N-20",
+      "url": "https://nal-vonminden.com/eng/nadalr-nuclear-matrix-protein-22-test.html"
+    },
+    {
+      "name": "NADAL Rota-Adenovirus Rapid test",
+      "catalogue_no": "481915N-10",
+      "url": "https://nal-vonminden.com/eng/nadalr-rota-adenovirus-ag-test.html"
+    },
+    {
+      "name": "NADAL RSV PCR Test",
+      "catalogue_no": "2710504",
+      "url": "https://nal-vonminden.com/eng/nadalr-rsv-pcr-test.html"
+    },
+    {
+      "name": "NADAL SARS-CoV-2 PCR Test",
+      "catalogue_no": "2710501",
+      "url": "https://nal-vonminden.com/eng/nadalr-sars-cov-2-pcr-test.html"
+    },
+    {
+      "name": "NADAL Strep A PCR Test",
+      "catalogue_no": "2710505",
+      "url": "https://nal-vonminden.com/eng/nadalr-strep-a-pcr-test.html"
+    },
+    {
+      "name": "NADAL Strep A Plus Test",
+      "catalogue_no": "222907N-20",
+      "url": "https://nal-vonminden.com/eng/nadalr-strep-a-plus-test.html"
+    },
+    {
+      "name": "NADAL Toxoplasma IgG/IgM Test",
+      "catalogue_no": "1670006N-10",
+      "url": "https://nal-vonminden.com/eng/nadalr-toxoplasma-igg-igm-test.html"
+    },
+    {
+      "name": "nal von minden Colibri plus Point-of-Care Reader",
+      "catalogue_no": "60100",
+      "url": "https://nal-vonminden.com/eng/nvm-colibri-plus-reader.html"
+    },
+    {
+      "name": "OraQuick ADVANCE Rapid HIV 1/2 Ab Test",
+      "catalogue_no": "452008",
+      "url": "https://nal-vonminden.com/eng/oraquick-advance-hiv-testkassette-25.html"
+    },
+    {
+      "name": "OraQuick HCV Test",
+      "catalogue_no": "622021",
+      "url": "https://nal-vonminden.com/eng/oraquick-hepatitis-c-testkassette.html"
+    },
+    {
+      "name": "NADAL Dry Bath Incubator",
+      "catalogue_no": "65002",
+      "url": "https://nal-vonminden.com/eng/pcr-dry-bath-incubator.html"
+    },
+    {
+      "name": "qLabs CoagPanel 2 Control Kit",
+      "catalogue_no": "374731",
+      "url": "https://nal-vonminden.com/eng/qlabs-coagpanel-2-kontrollkit.html"
+    },
+    {
+      "name": "qLabs MICROSAFE Pipettes 15 µL",
+      "catalogue_no": "77001",
+      "url": "https://nal-vonminden.com/eng/qlabs-pipetten.html"
+    },
+    {
+      "name": "qLabs Q3 PTZ-INR/aPTT Combo Test",
+      "catalogue_no": "374712",
+      "url": "https://nal-vonminden.com/eng/qlabs-ptz-inr-aptt-combo-teststreifen-12.html"
+    },
+    {
+      "name": "qLabs PTZ-INR Test Strips",
+      "catalogue_no": "374010, 374011",
+      "url": "https://nal-vonminden.com/eng/qlabs-ptz-inr-teststreifen-conf.html"
+    },
+    {
+      "name": "qLabs Q3 eStation",
+      "catalogue_no": "374603",
+      "url": "https://nal-vonminden.com/eng/qlabs-q3-estation.html"
+    },
+    {
+      "name": "qLabs Q3 Pro ElectroMeter (INR/PTZ/aPTT)",
+      "catalogue_no": "374609Q-01",
+      "url": "https://nal-vonminden.com/eng/qlabs-q3-pro-ptz-inr-electrometer.html"
+    },
+    {
+      "name": "qLabs PTZ-INR Control Kit",
+      "catalogue_no": "374013",
+      "url": "https://nal-vonminden.com/eng/qlabsr-ptz-inr-kontrollkit.html"
+    },
+    {
+      "name": "Rapid Slide Scanner (RSS) Voucher",
+      "catalogue_no": "61105",
+      "url": "https://nal-vonminden.com/eng/rapid-slide-scanner-rss-voucher-1.html"
+    },
+    {
+      "name": "Reactif 10SL Urinalysis Strips - 10 Parameters",
+      "catalogue_no": "41101-M",
+      "url": "https://nal-vonminden.com/eng/reactif-10sl-urinanalysestreifen-dose.html"
+    },
+    {
+      "name": "Reactif 10SL Urinalysis Strips – 10 Parameters",
+      "catalogue_no": "41501-L",
+      "url": "https://nal-vonminden.com/eng/reactif-10sl-urinanalysestreifen.html"
+    },
+    {
+      "name": "Reactif 13 Urinalysis Strips - 13 Parameters",
+      "catalogue_no": "41130-S",
+      "url": "https://nal-vonminden.com/eng/reactif-13-urinanalyse.html"
+    },
+    {
+      "name": "Reactif 14 Urinalysis Strips - 14 Parameters",
+      "catalogue_no": "41140-M",
+      "url": "https://nal-vonminden.com/eng/reactif-14-urinanalyse.html"
+    },
+    {
+      "name": "Reactif 2 Urinalysis Strips - 2 Parameters",
+      "catalogue_no": "41021-M",
+      "url": "https://nal-vonminden.com/eng/reactif-2-urinanalyse.html"
+    },
+    {
+      "name": "Reactif 7 Urinalysis Strips - 7 Parameters",
+      "catalogue_no": "41070-L",
+      "url": "https://nal-vonminden.com/eng/reactif-7-urinanalyse.html"
+    },
+    {
+      "name": "Reactif Urinalysis Strips Glucose",
+      "catalogue_no": "41512-L",
+      "url": "https://nal-vonminden.com/eng/reactif-glukose.html"
+    },
+    {
+      "name": "Reactif Smart Analyzer",
+      "catalogue_no": "40010",
+      "url": "https://nal-vonminden.com/eng/reactif-smart.html"
+    },
+    {
+      "name": "Urine Analyser Reactif Touch Plus",
+      "catalogue_no": "40002",
+      "url": "https://nal-vonminden.com/eng/reactif-touch-plus-urinanalysegeraet.html"
+    },
+    {
+      "name": "Reactif 8SG Urine Analysis Strips",
+      "catalogue_no": "41580-L",
+      "url": "https://nal-vonminden.com/eng/reactif-urintest-8-parameter.html"
+    },
+    {
+      "name": "RightSign HBsAg Test",
+      "catalogue_no": "622062",
+      "url": "https://nal-vonminden.com/eng/right-sign-hbv-25.html"
+    },
+    {
+      "name": "RightSign HCV Test",
+      "catalogue_no": "622061",
+      "url": "https://nal-vonminden.com/eng/right-sign-hcv-25.html"
+    },
+    {
+      "name": "RightSign HIV 1/2/O Rapid Test",
+      "catalogue_no": "452020",
+      "url": "https://nal-vonminden.com/eng/rightsignr-hiv-1-2-0-test-ce1434.html"
+    },
+    {
+      "name": "Roche CARDIAC D-Dimer Controls (cobas h 232)",
+      "catalogue_no": "351022",
+      "url": "https://nal-vonminden.com/eng/roche-cardiac-d-dimer-kontrolle.html"
+    },
+    {
+      "name": "Roche Combur 10 Urinalysis Strips - 10 Parameters",
+      "catalogue_no": "37101-L",
+      "url": "https://nal-vonminden.com/eng/roche-combur-10-urinanalyse-100.html"
+    },
+    {
+      "name": "Roche Combur 9 Urinalysis Strips - 9 Parameters",
+      "catalogue_no": "37090-M",
+      "url": "https://nal-vonminden.com/eng/roche-combur-9-urinanalyse-50.html"
+    },
+    {
+      "name": "Roche Combur 9 Urinalysis Strips - 9 Parameters",
+      "catalogue_no": "37090-L",
+      "url": "https://nal-vonminden.com/eng/roche-combur-9-urinanalyse.html"
+    },
+    {
+      "name": "RSS III (Rapid Slide Scanner)",
+      "catalogue_no": "61100",
+      "url": "https://nal-vonminden.com/eng/rss-3-rapid-slide-scanner.html"
+    },
+    {
+      "name": "RSS flash 2.0 Mobile Reader",
+      "catalogue_no": "61000",
+      "url": "https://nal-vonminden.com/eng/rss-flash-mobile-reader.html"
+    },
+    {
+      "name": "SARS-CoV-2/Influenza A/B/RSV Nucleic Acid PCR Kontrollkit",
+      "catalogue_no": "2710404",
+      "url": "https://nal-vonminden.com/eng/sars-cov-2-influenza-a-b-rsv-nucleic-acid-kontrollkit.html"
+    },
+    {
+      "name": "Strep A Nucleic Acid PCR Control Kit",
+      "catalogue_no": "2710405",
+      "url": "https://nal-vonminden.com/eng/strep-a-nucleic-acid-pcr-kontrollkit.html"
+    },
+    {
+      "name": "Thermal paper for AFIAS, RSS flash und Reactif",
+      "catalogue_no": "85911",
+      "url": "https://nal-vonminden.com/eng/thermopapier-fur-afias.html"
+    },
+    {
+      "name": "Unistik 3 Extra lancets",
+      "catalogue_no": "374535",
+      "url": "https://nal-vonminden.com/eng/unistik-3-extra-lanzetten.html"
+    },
+    {
+      "name": "Urine cup",
+      "catalogue_no": "85700, 85702",
+      "url": "https://nal-vonminden.com/eng/urinbecher.html"
+    },
+    {
+      "name": "Reactif 11M Urinalysis Strips - 11 Parameters",
+      "catalogue_no": "41511-L",
+      "url": "https://nal-vonminden.com/eng/urinteststreifen-kaufen.html"
+    },
+    {
+      "name": "VivaDiag COVID-19 Ag Negative Control Swab",
+      "catalogue_no": "243112",
+      "url": "https://nal-vonminden.com/eng/vivadiag-cv19ag-negativkontrolle.html"
+    },
+    {
+      "name": "VivaDiag COVID-19 Ag Positive Control Swab",
+      "catalogue_no": "243111",
+      "url": "https://nal-vonminden.com/eng/vivadiag-cv19ag-positivkontrolle.html"
+    },
+    {
+      "name": "VivaDiag Influenza A-/B+ Positive Control",
+      "catalogue_no": "242022",
+      "url": "https://nal-vonminden.com/eng/vivadiag-influenza-a-b-positivkontrolle.html"
+    },
+    {
+      "name": "VivaDiag Pro SARS-CoV-2 Ag - Self Test",
+      "catalogue_no": "243125AB2B",
+      "url": "https://nal-vonminden.com/eng/vivadiag-pro-sars-cov-2-ag-schnelltest.html"
+    },
+    {
+      "name": "VivaDiag Influenza A+/B- Positive Control",
+      "catalogue_no": "242021",
+      "url": "https://nal-vonminden.com/eng/vivadiagtm-influenza-a-b-positivkontrolle.html"
+    }
+  ]
+}

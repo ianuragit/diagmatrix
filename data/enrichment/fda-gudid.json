@@ -1384,12 +1384,117 @@
     "query": "(brand_name:chemistry+OR+device_description:chemistry)+AND+(brand_name:urine+OR+device_description:urine)+AND+(brand_name:urometer+OR+device_description:urometer)",
     "checked_at": "2026-11-25T08:49:32.258Z"
   },
+  "acon-fiaflex-beta-hcg-fia-test": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:beta+OR+device_description:beta)+AND+(brand_name:fia+OR+device_description:fia)+AND+(brand_name:fiaflex+OR+device_description:fiaflex)",
+    "checked_at": "2026-11-25T09:10:20.301Z"
+  },
+  "acon-fiaflex-ck-mb-fia-test": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:fia+OR+device_description:fia)+AND+(brand_name:fiaflex+OR+device_description:fiaflex)",
+    "checked_at": "2026-11-25T09:10:20.978Z"
+  },
+  "acon-fiaflex-crp-fia-test": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:crp+OR+device_description:crp)+AND+(brand_name:fia+OR+device_description:fia)+AND+(brand_name:fiaflex+OR+device_description:fiaflex)",
+    "checked_at": "2026-11-25T09:10:22.064Z"
+  },
+  "acon-fiaflex-ctni-ck-mb-myo-fia-test": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:ctni+OR+device_description:ctni)+AND+(brand_name:fia+OR+device_description:fia)+AND+(brand_name:fiaflex+OR+device_description:fiaflex)",
+    "checked_at": "2026-11-25T09:10:22.065Z"
+  },
   "acon-fiaflex-ctni-fia-test": {
     "status": "none",
     "catalogue_no": null,
     "candidates": [],
     "query": "(brand_name:ctni+OR+device_description:ctni)+AND+(brand_name:fia+OR+device_description:fia)+AND+(brand_name:fiaflex+OR+device_description:fiaflex)",
     "checked_at": "2026-11-25T08:49:32.950Z"
+  },
+  "acon-fiaflex-d-dimer-fia-test": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:dimer+OR+device_description:dimer)+AND+(brand_name:fia+OR+device_description:fia)+AND+(brand_name:fiaflex+OR+device_description:fiaflex)",
+    "checked_at": "2026-11-25T09:10:23.185Z"
+  },
+  "acon-fiaflex-fluorescent-immunoassay-analyzer": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:fiaflex+OR+device_description:fiaflex)+AND+(brand_name:fluorescent+OR+device_description:fluorescent)+AND+(brand_name:immunoassay+OR+device_description:immunoassay)",
+    "checked_at": "2026-11-25T09:10:24.262Z"
+  },
+  "acon-fiaflex-hba1c-fia-test": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:fia+OR+device_description:fia)+AND+(brand_name:fiaflex+OR+device_description:fiaflex)+AND+(brand_name:hba1c+OR+device_description:hba1c)",
+    "checked_at": "2026-11-25T09:10:25.364Z"
+  },
+  "acon-fiaflex-il-6-fia-test": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:fia+OR+device_description:fia)+AND+(brand_name:fiaflex+OR+device_description:fiaflex)",
+    "checked_at": "2026-11-25T09:10:25.364Z"
+  },
+  "acon-fiaflex-myoglobin-fia-test": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:fia+OR+device_description:fia)+AND+(brand_name:fiaflex+OR+device_description:fiaflex)+AND+(brand_name:myoglobin+OR+device_description:myoglobin)",
+    "checked_at": "2026-11-25T09:10:26.509Z"
+  },
+  "acon-fiaflex-nt-probnp-fia-test": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:fia+OR+device_description:fia)+AND+(brand_name:fiaflex+OR+device_description:fiaflex)+AND+(brand_name:probnp+OR+device_description:probnp)",
+    "checked_at": "2026-11-25T09:10:27.557Z"
+  },
+  "acon-fiaflex-pct-fia-test": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:fia+OR+device_description:fia)+AND+(brand_name:fiaflex+OR+device_description:fiaflex)+AND+(brand_name:pct+OR+device_description:pct)",
+    "checked_at": "2026-11-25T09:10:28.671Z"
+  },
+  "acon-fiaflex-t3-fia-test": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:fia+OR+device_description:fia)+AND+(brand_name:fiaflex+OR+device_description:fiaflex)",
+    "checked_at": "2026-11-25T09:10:28.672Z"
+  },
+  "acon-fiaflex-t4-fia-test": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:fia+OR+device_description:fia)+AND+(brand_name:fiaflex+OR+device_description:fiaflex)",
+    "checked_at": "2026-11-25T09:10:28.673Z"
+  },
+  "acon-fiaflex-tsh-fia-test": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:fia+OR+device_description:fia)+AND+(brand_name:fiaflex+OR+device_description:fiaflex)+AND+(brand_name:tsh+OR+device_description:tsh)",
+    "checked_at": "2026-11-25T09:10:29.781Z"
+  },
+  "acon-fiaflex-vitamin-d-fia-test": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:fia+OR+device_description:fia)+AND+(brand_name:fiaflex+OR+device_description:fiaflex)+AND+(brand_name:vitamin+OR+device_description:vitamin)",
+    "checked_at": "2026-11-25T09:10:30.867Z"
   },
   "acon-flowflex-sars-cov-2-antigen-rapid-test": {
     "status": "none",
@@ -3131,12 +3236,26 @@
     "query": "(brand_name:afia+OR+device_description:afia)",
     "checked_at": "2026-11-25T08:49:33.113Z"
   },
+  "boditech-afias-10-a362a6": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)",
+    "checked_at": "2026-11-25T09:10:33.074Z"
+  },
   "boditech-afias-3": {
     "status": "none",
     "catalogue_no": null,
     "candidates": [],
     "query": "(brand_name:afia+OR+device_description:afia)",
     "checked_at": "2026-11-25T08:49:33.114Z"
+  },
+  "boditech-afias-3-36d1e9": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)",
+    "checked_at": "2026-11-25T09:10:33.074Z"
   },
   "boditech-afias-6": {
     "status": "none",
@@ -3152,6 +3271,258 @@
     "query": "(brand_name:afia+OR+device_description:afia)",
     "checked_at": "2026-11-25T08:49:33.114Z"
   },
+  "boditech-afias-alpha-fetoprotein-afp": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:afp+OR+device_description:afp)+AND+(brand_name:alpha+OR+device_description:alpha)",
+    "checked_at": "2026-11-25T09:10:34.189Z"
+  },
+  "boditech-afias-anti-ccp-plus": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:anti+OR+device_description:anti)+AND+(brand_name:ccp+OR+device_description:ccp)",
+    "checked_at": "2026-11-25T09:10:35.300Z"
+  },
+  "boditech-afias-anti-mullerian-hormone-amh": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:amh+OR+device_description:amh)+AND+(brand_name:anti+OR+device_description:anti)",
+    "checked_at": "2026-11-25T09:10:36.443Z"
+  },
+  "boditech-afias-carcinoembryonic-antigen-cea": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:antigen+OR+device_description:antigen)+AND+(brand_name:carcinoembryonic+OR+device_description:carcinoembryonic)",
+    "checked_at": "2026-11-25T09:10:37.465Z"
+  },
+  "boditech-afias-cardiac-triple": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:cardiac+OR+device_description:cardiac)+AND+(brand_name:triple+OR+device_description:triple)",
+    "checked_at": "2026-11-25T09:10:38.572Z"
+  },
+  "boditech-afias-cortisol": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:cortisol+OR+device_description:cortisol)",
+    "checked_at": "2026-11-25T09:10:39.669Z"
+  },
+  "boditech-afias-covid-19-flu-a-plus-b-rsv-ag": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:covid19+OR+device_description:covid19)+AND+(brand_name:flu+OR+device_description:flu)",
+    "checked_at": "2026-11-25T09:10:40.769Z"
+  },
+  "boditech-afias-creatine-kinase-muscle-brain-ck-mb": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:brain+OR+device_description:brain)+AND+(brand_name:creatine+OR+device_description:creatine)",
+    "checked_at": "2026-11-25T09:10:41.878Z"
+  },
+  "boditech-afias-crp": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:crp+OR+device_description:crp)",
+    "checked_at": "2026-11-25T09:10:42.976Z"
+  },
+  "boditech-afias-d-dimer": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:dimer+OR+device_description:dimer)",
+    "checked_at": "2026-11-25T09:10:44.102Z"
+  },
+  "boditech-afias-ferritin": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:ferritin+OR+device_description:ferritin)",
+    "checked_at": "2026-11-25T09:10:45.167Z"
+  },
+  "boditech-afias-follicle-stimulating-hormone-fsh": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:follicle+OR+device_description:follicle)+AND+(brand_name:fsh+OR+device_description:fsh)",
+    "checked_at": "2026-11-25T09:10:46.281Z"
+  },
+  "boditech-afias-free-anti-infliximab": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:anti+OR+device_description:anti)+AND+(brand_name:free+OR+device_description:free)",
+    "checked_at": "2026-11-25T09:10:47.368Z"
+  },
+  "boditech-afias-hba1c": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:hba1c+OR+device_description:hba1c)",
+    "checked_at": "2026-11-25T09:10:48.472Z"
+  },
+  "boditech-afias-hscrp": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:hscrp+OR+device_description:hscrp)",
+    "checked_at": "2026-11-25T09:10:49.568Z"
+  },
+  "boditech-afias-human-chorionic-gonadotropin-beta-hcg": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:beta+OR+device_description:beta)+AND+(brand_name:chorionic+OR+device_description:chorionic)",
+    "checked_at": "2026-11-25T09:10:50.675Z"
+  },
+  "boditech-afias-infliximab": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:infliximab+OR+device_description:infliximab)",
+    "checked_at": "2026-11-25T09:10:51.779Z"
+  },
+  "boditech-afias-interleukin-6-il-6": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:interleukin+OR+device_description:interleukin)",
+    "checked_at": "2026-11-25T09:10:52.872Z"
+  },
+  "boditech-afias-luteinizing-hormone-lh": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:hormone+OR+device_description:hormone)+AND+(brand_name:luteinizing+OR+device_description:luteinizing)",
+    "checked_at": "2026-11-25T09:10:54.143Z"
+  },
+  "boditech-afias-microalbumin": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:microalbumin+OR+device_description:microalbumin)",
+    "checked_at": "2026-11-25T09:10:55.082Z"
+  },
+  "boditech-afias-mxa-crp": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:crp+OR+device_description:crp)+AND+(brand_name:mxa+OR+device_description:mxa)",
+    "checked_at": "2026-11-25T09:10:56.182Z"
+  },
+  "boditech-afias-myoglobin": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:myoglobin+OR+device_description:myoglobin)",
+    "checked_at": "2026-11-25T09:10:57.285Z"
+  },
+  "boditech-afias-norovirus-noro": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:noro+OR+device_description:noro)+AND+(brand_name:noroviru+OR+device_description:noroviru)",
+    "checked_at": "2026-11-25T09:10:58.385Z"
+  },
+  "boditech-afias-nt-probnp": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:probnp+OR+device_description:probnp)",
+    "checked_at": "2026-11-25T09:10:59.483Z"
+  },
+  "boditech-afias-pct": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:pct+OR+device_description:pct)",
+    "checked_at": "2026-11-25T09:11:00.883Z"
+  },
+  "boditech-afias-pct-plus": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:pct+OR+device_description:pct)",
+    "checked_at": "2026-11-25T09:11:00.884Z"
+  },
+  "boditech-afias-progesterone": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:progesterone+OR+device_description:progesterone)",
+    "checked_at": "2026-11-25T09:11:01.680Z"
+  },
+  "boditech-afias-prolactin-prl": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:prl+OR+device_description:prl)+AND+(brand_name:prolactin+OR+device_description:prolactin)",
+    "checked_at": "2026-11-25T09:11:02.795Z"
+  },
+  "boditech-afias-prostate-specific-antigen-psa": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:antigen+OR+device_description:antigen)+AND+(brand_name:prostate+OR+device_description:prostate)",
+    "checked_at": "2026-11-25T09:11:04.427Z"
+  },
+  "boditech-afias-rotavirus-adenovirus-rota-adeno": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:adeno+OR+device_description:adeno)+AND+(brand_name:adenoviru+OR+device_description:adenoviru)+AND+(brand_name:afia+OR+device_description:afia)",
+    "checked_at": "2026-11-25T09:11:04.981Z"
+  },
+  "boditech-afias-rotavirus-rota": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:rota+OR+device_description:rota)+AND+(brand_name:rotaviru+OR+device_description:rotaviru)",
+    "checked_at": "2026-11-25T09:11:06.089Z"
+  },
+  "boditech-afias-st2": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:st2+OR+device_description:st2)",
+    "checked_at": "2026-11-25T09:11:07.191Z"
+  },
+  "boditech-afias-t3": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)",
+    "checked_at": "2026-11-25T09:11:07.191Z"
+  },
+  "boditech-afias-t4": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)",
+    "checked_at": "2026-11-25T09:11:07.192Z"
+  },
+  "boditech-afias-testosterone": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:testosterone+OR+device_description:testosterone)",
+    "checked_at": "2026-11-25T09:11:08.293Z"
+  },
+  "boditech-afias-thyroid-stimulating-hormone-tsh": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:hormone+OR+device_description:hormone)+AND+(brand_name:stimulating+OR+device_description:stimulating)",
+    "checked_at": "2026-11-25T09:11:08.294Z"
+  },
   "boditech-afias-thyroid-stimulating-hormone-tsh-plus": {
     "status": "none",
     "catalogue_no": null,
@@ -3159,12 +3530,33 @@
     "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:hormone+OR+device_description:hormone)+AND+(brand_name:stimulating+OR+device_description:stimulating)",
     "checked_at": "2026-11-25T08:49:33.115Z"
   },
+  "boditech-afias-total-anti-infliximab": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:anti+OR+device_description:anti)+AND+(brand_name:infliximab+OR+device_description:infliximab)",
+    "checked_at": "2026-11-25T09:11:09.378Z"
+  },
   "boditech-afias-troponin-i-tn-i-plus": {
     "status": "none",
     "catalogue_no": null,
     "candidates": [],
     "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:troponin+OR+device_description:troponin)",
     "checked_at": "2026-11-25T08:49:33.115Z"
+  },
+  "boditech-afias-troponin-t-tn-t": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:troponin+OR+device_description:troponin)",
+    "checked_at": "2026-11-25T09:11:09.379Z"
+  },
+  "boditech-afias-vitamin-d-neo": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:afia+OR+device_description:afia)+AND+(brand_name:neo+OR+device_description:neo)+AND+(brand_name:vitamin+OR+device_description:vitamin)",
+    "checked_at": "2026-11-25T09:11:10.492Z"
   },
   "boditech-afp": {
     "status": "none",
@@ -3257,6 +3649,62 @@
     "query": "(brand_name:hba1c+OR+device_description:hba1c)",
     "checked_at": "2026-11-25T08:49:33.134Z"
   },
+  "boditech-i-chroma-iii-diagnostic-immuno-analyzer": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:chroma+OR+device_description:chroma)+AND+(brand_name:diagnostic+OR+device_description:diagnostic)+AND+(brand_name:iii+OR+device_description:iii)",
+    "checked_at": "2026-11-25T09:11:11.606Z"
+  },
+  "boditech-ichroma-amh-test": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:amh+OR+device_description:amh)+AND+(brand_name:ichroma+OR+device_description:ichroma)",
+    "checked_at": "2026-11-25T09:11:12.700Z"
+  },
+  "boditech-ichroma-anti-ccp-test": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:anti+OR+device_description:anti)+AND+(brand_name:ccp+OR+device_description:ccp)+AND+(brand_name:ichroma+OR+device_description:ichroma)",
+    "checked_at": "2026-11-25T09:11:13.828Z"
+  },
+  "boditech-ichroma-calprotectin": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:calprotectin+OR+device_description:calprotectin)+AND+(brand_name:ichroma+OR+device_description:ichroma)",
+    "checked_at": "2026-11-25T09:11:17.445Z"
+  },
+  "boditech-ichroma-d-dimer-test": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:dimer+OR+device_description:dimer)+AND+(brand_name:ichroma+OR+device_description:ichroma)",
+    "checked_at": "2026-11-25T09:11:17.572Z"
+  },
+  "boditech-ichroma-hba1c": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:hba1c+OR+device_description:hba1c)+AND+(brand_name:ichroma+OR+device_description:ichroma)",
+    "checked_at": "2026-11-25T09:11:19.053Z"
+  },
+  "boditech-ichroma-ii-anemia-controls": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:anemia+OR+device_description:anemia)+AND+(brand_name:control+OR+device_description:control)+AND+(brand_name:ichroma+OR+device_description:ichroma)",
+    "checked_at": "2026-11-25T09:11:19.837Z"
+  },
+  "boditech-ichroma-ii-cardiac-controls": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:cardiac+OR+device_description:cardiac)+AND+(brand_name:control+OR+device_description:control)+AND+(brand_name:ichroma+OR+device_description:ichroma)",
+    "checked_at": "2026-11-25T09:11:20.872Z"
+  },
   "boditech-ichroma-ii-controls": {
     "status": "none",
     "catalogue_no": null,
@@ -3264,12 +3712,86 @@
     "query": "(brand_name:control+OR+device_description:control)+AND+(brand_name:ichroma+OR+device_description:ichroma)",
     "checked_at": "2026-11-25T08:49:33.135Z"
   },
+  "boditech-ichroma-ii-diabetes-controls": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:control+OR+device_description:control)+AND+(brand_name:diabete+OR+device_description:diabete)+AND+(brand_name:ichroma+OR+device_description:ichroma)",
+    "checked_at": "2026-11-25T09:11:21.968Z"
+  },
+  "boditech-ichroma-ii-immuno-analyzer": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:ichroma+OR+device_description:ichroma)+AND+(brand_name:immuno+OR+device_description:immuno)",
+    "checked_at": "2026-11-25T09:11:23.092Z"
+  },
+  "boditech-ichroma-ii-infection-controls": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:control+OR+device_description:control)+AND+(brand_name:ichroma+OR+device_description:ichroma)+AND+(brand_name:infection+OR+device_description:infection)",
+    "checked_at": "2026-11-25T09:11:24.181Z"
+  },
   "boditech-ichroma-ii-tumor-marker-controls": {
     "status": "none",
     "catalogue_no": null,
     "candidates": [],
     "query": "(brand_name:control+OR+device_description:control)+AND+(brand_name:ichroma+OR+device_description:ichroma)+AND+(brand_name:marker+OR+device_description:marker)",
     "checked_at": "2026-11-25T08:49:33.137Z"
+  },
+  "boditech-ichroma-lh-test": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [
+      {
+        "catalogue_no": "CFPC-15",
+        "di": "08806679002718",
+        "brand_name": "ichroma™ iFOB",
+        "description": "",
+        "company": "Boditech Med Inc.",
+        "score": 0.5
+      }
+    ],
+    "query": "(brand_name:ichroma+OR+device_description:ichroma)",
+    "checked_at": "2026-11-25T09:11:25.293Z"
+  },
+  "boditech-ichroma-psa-test": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:ichroma+OR+device_description:ichroma)+AND+(brand_name:psa+OR+device_description:psa)",
+    "checked_at": "2026-11-25T09:11:26.372Z"
+  },
+  "boditech-ichroma-test": {
+    "status": "ambiguous",
+    "catalogue_no": null,
+    "candidates": [
+      {
+        "catalogue_no": "CFPC-15",
+        "di": "08806679002718",
+        "brand_name": "ichroma™ iFOB",
+        "description": "",
+        "company": "Boditech Med Inc.",
+        "score": 1
+      }
+    ],
+    "query": "(brand_name:ichroma+OR+device_description:ichroma)",
+    "checked_at": "2026-11-25T09:11:26.374Z"
+  },
+  "boditech-ichroma-testoste1-test": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:ichroma+OR+device_description:ichroma)+AND+(brand_name:testoste1+OR+device_description:testoste1)",
+    "checked_at": "2026-11-25T09:11:27.470Z"
+  },
+  "boditech-ichroma-tsh-test": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:ichroma+OR+device_description:ichroma)+AND+(brand_name:tsh+OR+device_description:tsh)",
+    "checked_at": "2026-11-25T09:11:28.570Z"
   },
   "boditech-il-6": {
     "status": "skipped",
@@ -5529,6 +6051,41 @@
     "query": "(brand_name:piii+OR+device_description:piii)",
     "checked_at": "2026-11-25T08:49:33.282Z"
   },
+  "getein-amh-fast-test-kit": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:amh+OR+device_description:amh)+AND+(brand_name:fast+OR+device_description:fast)",
+    "checked_at": "2026-11-25T09:11:29.700Z"
+  },
+  "getein-anti-hiv-fast-test-kit": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:anti+OR+device_description:anti)+AND+(brand_name:fast+OR+device_description:fast)+AND+(brand_name:hiv+OR+device_description:hiv)",
+    "checked_at": "2026-11-25T09:11:30.791Z"
+  },
+  "getein-e2-fast-test-kit": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:fast+OR+device_description:fast)",
+    "checked_at": "2026-11-25T09:11:32.012Z"
+  },
+  "getein-fsh-fast-test-kit": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:fast+OR+device_description:fast)+AND+(brand_name:fsh+OR+device_description:fsh)",
+    "checked_at": "2026-11-25T09:11:32.989Z"
+  },
+  "getein-saa-fast-test-kit": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:fast+OR+device_description:fast)+AND+(brand_name:saa+OR+device_description:saa)",
+    "checked_at": "2026-11-25T09:11:34.095Z"
+  },
   "haemonetics-global-hemostasis-cartridge": {
     "status": "none",
     "catalogue_no": null,
@@ -6083,6 +6640,20 @@
     ],
     "query": "(brand_name:abx+OR+device_description:abx)+AND+(brand_name:control+OR+device_description:control)+AND+(brand_name:crp+OR+device_description:crp)",
     "checked_at": "2026-11-25T08:49:32.983Z"
+  },
+  "horiba-anti-tpo-clia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:anti+OR+device_description:anti)+AND+(brand_name:clia+OR+device_description:clia)+AND+(brand_name:tpo+OR+device_description:tpo)",
+    "checked_at": "2026-11-25T09:10:31.997Z"
+  },
+  "horiba-hs-troponin-i-clia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:clia+OR+device_description:clia)+AND+(brand_name:troponin+OR+device_description:troponin)",
+    "checked_at": "2026-11-25T09:10:33.073Z"
   },
   "horiba-microsemi-crp-lc-7676": {
     "status": "none",
@@ -7265,6 +7836,55 @@
     "candidates": [],
     "query": "(brand_name:troponin+OR+device_description:troponin)",
     "checked_at": "2026-11-25T08:49:33.383Z"
+  },
+  "mindray-25-oh-vitamin-d-total-clia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:clia+OR+device_description:clia)+AND+(brand_name:vitamin+OR+device_description:vitamin)",
+    "checked_at": "2026-11-25T09:11:35.214Z"
+  },
+  "mindray-adrenocorticotropic-hormone-clia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:adrenocorticotropic+OR+device_description:adrenocorticotropic)+AND+(brand_name:clia+OR+device_description:clia)+AND+(brand_name:hormone+OR+device_description:hormone)",
+    "checked_at": "2026-11-25T09:11:36.280Z"
+  },
+  "mindray-alpha-fetoprotein-clia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:alpha+OR+device_description:alpha)+AND+(brand_name:clia+OR+device_description:clia)+AND+(brand_name:fetoprotein+OR+device_description:fetoprotein)",
+    "checked_at": "2026-11-25T09:11:37.386Z"
+  },
+  "mindray-b-type-natriuretic-peptide-clia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:clia+OR+device_description:clia)+AND+(brand_name:natriuretic+OR+device_description:natriuretic)+AND+(brand_name:peptide+OR+device_description:peptide)",
+    "checked_at": "2026-11-25T09:11:38.488Z"
+  },
+  "mindray-cancer-antigen-125-clia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:antigen+OR+device_description:antigen)+AND+(brand_name:cancer+OR+device_description:cancer)+AND+(brand_name:clia+OR+device_description:clia)",
+    "checked_at": "2026-11-25T09:11:39.597Z"
+  },
+  "mindray-neuron-specific-enolase-clia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:clia+OR+device_description:clia)+AND+(brand_name:enolase+OR+device_description:enolase)+AND+(brand_name:neuron+OR+device_description:neuron)",
+    "checked_at": "2026-11-25T09:11:40.816Z"
+  },
+  "mindray-parathyroid-hormone-clia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:clia+OR+device_description:clia)+AND+(brand_name:hormone+OR+device_description:hormone)+AND+(brand_name:parathyroid+OR+device_description:parathyroid)",
+    "checked_at": "2026-11-25T09:11:41.791Z"
   },
   "mindray-wash-buffer": {
     "status": "none",
@@ -11086,6 +11706,41 @@
     "query": "(brand_name:analyze+OR+device_description:analyze)+AND+(brand_name:dengue+OR+device_description:dengue)+AND+(brand_name:elisa+OR+device_description:elisa)",
     "checked_at": "2026-11-25T08:49:33.507Z"
   },
+  "sd-biosensor-standard-f-b-hcg-fia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:fia+OR+device_description:fia)+AND+(brand_name:hcg+OR+device_description:hcg)",
+    "checked_at": "2026-11-25T09:11:41.792Z"
+  },
+  "sd-biosensor-standard-f-chikungunya-igm-igg-fia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:chikungunya+OR+device_description:chikungunya)+AND+(brand_name:fia+OR+device_description:fia)+AND+(brand_name:iggigm+OR+device_description:iggigm)",
+    "checked_at": "2026-11-25T09:11:41.793Z"
+  },
+  "sd-biosensor-standard-f-dengue-igm-igg-fia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:dengue+OR+device_description:dengue)+AND+(brand_name:fia+OR+device_description:fia)+AND+(brand_name:iggigm+OR+device_description:iggigm)",
+    "checked_at": "2026-11-25T09:11:41.794Z"
+  },
+  "sd-biosensor-standard-f-s-pneumoniae-ag-fia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:fia+OR+device_description:fia)+AND+(brand_name:pneumoniae+OR+device_description:pneumoniae)",
+    "checked_at": "2026-11-25T09:11:41.795Z"
+  },
+  "sd-biosensor-standard-f-tb-feron-fia-ifn-gamma": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:feron+OR+device_description:feron)+AND+(brand_name:fia+OR+device_description:fia)+AND+(brand_name:gamma+OR+device_description:gamma)",
+    "checked_at": "2026-11-25T09:11:41.796Z"
+  },
   "sd-biosensor-standard-f200": {
     "status": "none",
     "catalogue_no": null,
@@ -12185,6 +12840,111 @@
     "candidates": [],
     "query": "(brand_name:auto+OR+device_description:auto)+AND+(brand_name:chemistry+OR+device_description:chemistry)+AND+(brand_name:clinical+OR+device_description:clinical)",
     "checked_at": "2026-11-25T08:49:33.551Z"
+  },
+  "snibe-maglumi-androstenedione-clia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:androstenedione+OR+device_description:androstenedione)+AND+(brand_name:clia+OR+device_description:clia)+AND+(brand_name:maglumi+OR+device_description:maglumi)",
+    "checked_at": "2026-11-25T09:11:42.926Z"
+  },
+  "snibe-maglumi-cmv-igm-clia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:clia+OR+device_description:clia)+AND+(brand_name:cmv+OR+device_description:cmv)+AND+(brand_name:igm+OR+device_description:igm)",
+    "checked_at": "2026-11-25T09:11:43.990Z"
+  },
+  "snibe-maglumi-ebv-ea-igg-clia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:clia+OR+device_description:clia)+AND+(brand_name:ebv+OR+device_description:ebv)+AND+(brand_name:igg+OR+device_description:igg)",
+    "checked_at": "2026-11-25T09:11:45.085Z"
+  },
+  "snibe-maglumi-epo-clia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:clia+OR+device_description:clia)+AND+(brand_name:epo+OR+device_description:epo)+AND+(brand_name:maglumi+OR+device_description:maglumi)",
+    "checked_at": "2026-11-25T09:11:46.187Z"
+  },
+  "snibe-maglumi-gh-clia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:clia+OR+device_description:clia)+AND+(brand_name:maglumi+OR+device_description:maglumi)",
+    "checked_at": "2026-11-25T09:11:47.284Z"
+  },
+  "snibe-maglumi-h-pylori-igm-clia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:clia+OR+device_description:clia)+AND+(brand_name:igm+OR+device_description:igm)+AND+(brand_name:maglumi+OR+device_description:maglumi)",
+    "checked_at": "2026-11-25T09:11:48.376Z"
+  },
+  "snibe-maglumi-ha-clia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:clia+OR+device_description:clia)+AND+(brand_name:maglumi+OR+device_description:maglumi)",
+    "checked_at": "2026-11-25T09:11:48.377Z"
+  },
+  "snibe-maglumi-he4-clia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:clia+OR+device_description:clia)+AND+(brand_name:he4+OR+device_description:he4)+AND+(brand_name:maglumi+OR+device_description:maglumi)",
+    "checked_at": "2026-11-25T09:11:49.483Z"
+  },
+  "snibe-maglumi-hsv-1-2-igm-clia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:clia+OR+device_description:clia)+AND+(brand_name:hsv+OR+device_description:hsv)+AND+(brand_name:igm+OR+device_description:igm)",
+    "checked_at": "2026-11-25T09:11:50.605Z"
+  },
+  "snibe-maglumi-osteocalcin-clia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:clia+OR+device_description:clia)+AND+(brand_name:maglumi+OR+device_description:maglumi)+AND+(brand_name:osteocalcin+OR+device_description:osteocalcin)",
+    "checked_at": "2026-11-25T09:11:51.745Z"
+  },
+  "snibe-maglumi-papp-a-clia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:clia+OR+device_description:clia)+AND+(brand_name:maglumi+OR+device_description:maglumi)+AND+(brand_name:papp+OR+device_description:papp)",
+    "checked_at": "2026-11-25T09:11:52.792Z"
+  },
+  "snibe-maglumi-reaction-cup": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:cup+OR+device_description:cup)+AND+(brand_name:maglumi+OR+device_description:maglumi)+AND+(brand_name:reaction+OR+device_description:reaction)",
+    "checked_at": "2026-11-25T09:11:53.927Z"
+  },
+  "snibe-maglumi-rubella-igg-clia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:clia+OR+device_description:clia)+AND+(brand_name:igg+OR+device_description:igg)+AND+(brand_name:maglumi+OR+device_description:maglumi)",
+    "checked_at": "2026-11-25T09:11:54.989Z"
+  },
+  "snibe-maglumi-starter-1-plus-2": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:maglumi+OR+device_description:maglumi)+AND+(brand_name:starter+OR+device_description:starter)",
+    "checked_at": "2026-11-25T09:11:56.089Z"
+  },
+  "snibe-maglumi-toxo-igm-clia": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:clia+OR+device_description:clia)+AND+(brand_name:igm+OR+device_description:igm)+AND+(brand_name:maglumi+OR+device_description:maglumi)",
+    "checked_at": "2026-11-25T09:11:56.089Z"
   },
   "sysmex-ca-104": {
     "status": "skipped",
@@ -13595,6 +14355,27 @@
     "candidates": [],
     "query": "(brand_name:dengue+OR+device_description:dengue)+AND+(brand_name:finecare+OR+device_description:finecare)+AND+(brand_name:ns1+OR+device_description:ns1)",
     "checked_at": "2026-11-25T08:49:33.663Z"
+  },
+  "wondfo-finecare-fia-meter-ll-plus-se": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:fia+OR+device_description:fia)+AND+(brand_name:finecare+OR+device_description:finecare)+AND+(brand_name:meter+OR+device_description:meter)",
+    "checked_at": "2026-11-25T09:11:57.183Z"
+  },
+  "wondfo-finecare-fia-meter-lll-plus": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:fia+OR+device_description:fia)+AND+(brand_name:finecare+OR+device_description:finecare)+AND+(brand_name:lll+OR+device_description:lll)",
+    "checked_at": "2026-11-25T09:11:58.311Z"
+  },
+  "wondfo-finecare-fia-meter-plus": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": "(brand_name:fia+OR+device_description:fia)+AND+(brand_name:finecare+OR+device_description:finecare)+AND+(brand_name:meter+OR+device_description:meter)",
+    "checked_at": "2026-11-25T09:11:58.312Z"
   },
   "zybio-z3-crp": {
     "status": "none",

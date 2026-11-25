@@ -83,7 +83,6 @@ j-mitra-elisa-washer,J. Mitra,ELISA Washer,immunoassays,reagent,4,analyte sample
 medtronic-act-plus-disposable-test-cartridges-hr-act,Medtronic,ACT PLUS Disposable Test Cartridges (HR ACT),coagulation,reagent,4,analyte sample_type catalogue_no pack_size,/products/medtronic-act-plus-disposable-test-cartridges-hr-act/
 medtronic-hms-plus-cartridges-gold-1-5-4-0-mg-kg,Medtronic,HMS Plus Cartridges - Gold - 1.5-4.0 mg/kg,general,reagent,4,category technology catalogue_no pack_size,/products/medtronic-hms-plus-cartridges-gold-1-5-4-0-mg-kg/
 micropoint-test-strips,Micropoint,Test strips,general,reagent,4,category technology catalogue_no pack_size,/products/micropoint-test-strips/
-nal-von-minden-rss-flash-2-0,NAL von minden,RSS flash 2.0,general,instrument,4,category technology analyte catalogue_no,/products/nal-von-minden-rss-flash-2-0/
 roche-accu-chek-accu-fine-insulin-pen-needles,Roche,Accu-Chek Accu-Fine insulin pen needles,general,,4,category technology product_type sample_type,/products/roche-accu-chek-accu-fine-insulin-pen-needles/
 roche-combur-10-test-strip,Roche,Combur 10 Test Strip,urinalysis,reagent,4,analyte sample_type catalogue_no pack_size,/products/roche-combur-10-test-strip/
 roche-combur-10-ux-test-strip,Roche,Combur 10 UX Test strip,urinalysis,reagent,4,analyte sample_type catalogue_no pack_size,/products/roche-combur-10-ux-test-strip/
@@ -205,6 +204,7 @@ molbio-nipah,Molbio,Nipah,molecular,reagent,3,analyte catalogue_no pack_size,/pr
 molbio-rabies,Molbio,Rabies,molecular,reagent,3,analyte catalogue_no pack_size,/products/molbio-rabies/
 molbio-salmonella,Molbio,Salmonella,molecular,reagent,3,analyte catalogue_no pack_size,/products/molbio-salmonella/
 molbio-truenat-covid-19-chip-based-real-time-pcr-test-kit,Molbio,Truenat COVID 19 Chip based Real Time PCR Test Kit,molecular,reagent,3,sample_type catalogue_no pack_size,/products/molbio-truenat-covid-19-chip-based-real-time-pcr-test-kit/
+nal-von-minden-rss-flash-2-0,NAL von minden,RSS flash 2.0,general,instrument,3,category technology analyte,/products/nal-von-minden-rss-flash-2-0/
 noul-milab-cartridge-cer,Noul,miLab Cartridge CER,hematology,reagent,3,analyte catalogue_no pack_size,/products/noul-milab-cartridge-cer/
 premier-medical-first-response-syphilis-anti-tp-card-test-f2d9bd,Premier Medical,First Response Syphilis Anti TP Card Test,rapid-tests,reagent,3,sample_type catalogue_no pack_size,/products/premier-medical-first-response-syphilis-anti-tp-card-test-f2d9bd/
 roche-accu-chek-test-strips,Roche,Accu-Chek Test Strips,diabetes,reagent,3,sample_type catalogue_no pack_size,/products/roche-accu-chek-test-strips/
@@ -794,30 +794,19 @@ molbio-neisseria-gonorrhoeae-ng,Molbio,Neisseria gonorrhoeae (NG),molecular,reag
 molbio-sars-cov-2,Molbio,SARS CoV-2,molecular,reagent,2,catalogue_no pack_size,/products/molbio-sars-cov-2/
 molbio-scrub-typhus,Molbio,Scrub Typhus,molecular,reagent,2,catalogue_no pack_size,/products/molbio-scrub-typhus/
 molbio-trichomonas,Molbio,Trichomonas,molecular,reagent,2,catalogue_no pack_size,/products/molbio-trichomonas/
-nal-von-minden-crp,NAL von minden,CRP,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/nal-von-minden-crp/
-nal-von-minden-fob,NAL von minden,FOB,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/nal-von-minden-fob/
 nal-von-minden-gbs-strep-b,NAL von minden,GBS (Strep B),molecular,reagent,2,catalogue_no pack_size,/products/nal-von-minden-gbs-strep-b/
 nal-von-minden-hpv-16-18-45,NAL von minden,HPV 16/18/45,molecular,reagent,2,catalogue_no pack_size,/products/nal-von-minden-hpv-16-18-45/
 nal-von-minden-hpv-6-11,NAL von minden,HPV 6/11,molecular,reagent,2,catalogue_no pack_size,/products/nal-von-minden-hpv-6-11/
-nal-von-minden-influenza-a-b,NAL von minden,Influenza A/B,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/nal-von-minden-influenza-a-b/
 nal-von-minden-ng-uu,NAL von minden,NG/UU,molecular,reagent,2,catalogue_no pack_size,/products/nal-von-minden-ng-uu/
 nal-von-minden-reactif,NAL von minden,Reactif,urinalysis,reagent,2,catalogue_no pack_size,/products/nal-von-minden-reactif/
 nal-von-minden-reactif-10sl,NAL von minden,Reactif 10SL,urinalysis,reagent,2,catalogue_no pack_size,/products/nal-von-minden-reactif-10sl/
-nal-von-minden-reactif-11m,NAL von minden,Reactif 11M,urinalysis,reagent,2,catalogue_no pack_size,/products/nal-von-minden-reactif-11m/
-nal-von-minden-reactif-13,NAL von minden,Reactif 13,urinalysis,reagent,2,catalogue_no pack_size,/products/nal-von-minden-reactif-13/
-nal-von-minden-reactif-14,NAL von minden,Reactif 14,urinalysis,reagent,2,catalogue_no pack_size,/products/nal-von-minden-reactif-14/
-nal-von-minden-reactif-2,NAL von minden,Reactif 2,urinalysis,reagent,2,catalogue_no pack_size,/products/nal-von-minden-reactif-2/
 nal-von-minden-reactif-4,NAL von minden,Reactif 4,urinalysis,reagent,2,catalogue_no pack_size,/products/nal-von-minden-reactif-4/
 nal-von-minden-reactif-5b,NAL von minden,Reactif 5B,urinalysis,reagent,2,catalogue_no pack_size,/products/nal-von-minden-reactif-5b/
-nal-von-minden-reactif-7,NAL von minden,Reactif 7,urinalysis,reagent,2,catalogue_no pack_size,/products/nal-von-minden-reactif-7/
 nal-von-minden-reactif-g,NAL von minden,Reactif G,urinalysis,reagent,2,catalogue_no pack_size,/products/nal-von-minden-reactif-g/
 nal-von-minden-reactif-gp,NAL von minden,Reactif GP,urinalysis,reagent,2,catalogue_no pack_size,/products/nal-von-minden-reactif-gp/
-nal-von-minden-rsv,NAL von minden,RSV,molecular,reagent,2,catalogue_no pack_size,/products/nal-von-minden-rsv/
-nal-von-minden-sars-cov-2,NAL von minden,SARS-CoV-2,molecular,reagent,2,catalogue_no pack_size,/products/nal-von-minden-sars-cov-2/
 nal-von-minden-sars-cov-2-influenza-a-b,NAL von minden,SARS-CoV-2/Influenza A/B,molecular,reagent,2,catalogue_no pack_size,/products/nal-von-minden-sars-cov-2-influenza-a-b/
 nal-von-minden-strep-a,NAL von minden,Strep A,molecular,reagent,2,catalogue_no pack_size,/products/nal-von-minden-strep-a/
 nal-von-minden-trichomonas-vaginalis,NAL von minden,Trichomonas Vaginalis,molecular,reagent,2,catalogue_no pack_size,/products/nal-von-minden-trichomonas-vaginalis/
-nal-von-minden-vitamin-d,NAL von minden,Vitamin D,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/nal-von-minden-vitamin-d/
 noul-milab-cartridge-bcm,Noul,miLab Cartridge BCM,hematology,reagent,2,catalogue_no pack_size,/products/noul-milab-cartridge-bcm/
 noul-milab-cartridge-mal,Noul,miLab Cartridge MAL,hematology,reagent,2,catalogue_no pack_size,/products/noul-milab-cartridge-mal/
 nova-biomedical-creatinine-test-strips,Nova Biomedical,Creatinine test strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/nova-biomedical-creatinine-test-strips/
@@ -1473,10 +1462,18 @@ mnchip-pointcare-m4,MNCHIP,Pointcare M4,clinical-chemistry,instrument,1,catalogu
 molbio-truelab-duo-dx,Molbio,Truelab Duo Dx,molecular,instrument,1,catalogue_no,/products/molbio-truelab-duo-dx/
 molbio-truelab-quattro-dx,Molbio,Truelab Quattro Dx,molecular,instrument,1,catalogue_no,/products/molbio-truelab-quattro-dx/
 molbio-truelab-uno-dx,Molbio,Truelab Uno Dx,molecular,instrument,1,catalogue_no,/products/molbio-truelab-uno-dx/
-nal-von-minden-colibri-plus,NAL von minden,Colibri+,clinical-chemistry,instrument,1,catalogue_no,/products/nal-von-minden-colibri-plus/
-nal-von-minden-nadal-pcr-pro1,NAL von minden,Nadal PCR Pro1,molecular,instrument,1,catalogue_no,/products/nal-von-minden-nadal-pcr-pro1/
+nal-von-minden-crp,NAL von minden,CRP,clinical-chemistry,reagent,1,pack_size,/products/nal-von-minden-crp/
+nal-von-minden-fob,NAL von minden,FOB,clinical-chemistry,reagent,1,pack_size,/products/nal-von-minden-fob/
+nal-von-minden-influenza-a-b,NAL von minden,Influenza A/B,clinical-chemistry,reagent,1,pack_size,/products/nal-von-minden-influenza-a-b/
 nal-von-minden-nadal-pcr-pro8,NAL von minden,Nadal PCR Pro8,molecular,instrument,1,catalogue_no,/products/nal-von-minden-nadal-pcr-pro8/
-nal-von-minden-reactif-touch-plus,NAL von minden,Reactif Touch plus,urinalysis,instrument,1,catalogue_no,/products/nal-von-minden-reactif-touch-plus/
+nal-von-minden-reactif-11m,NAL von minden,Reactif 11M,urinalysis,reagent,1,pack_size,/products/nal-von-minden-reactif-11m/
+nal-von-minden-reactif-13,NAL von minden,Reactif 13,urinalysis,reagent,1,pack_size,/products/nal-von-minden-reactif-13/
+nal-von-minden-reactif-14,NAL von minden,Reactif 14,urinalysis,reagent,1,pack_size,/products/nal-von-minden-reactif-14/
+nal-von-minden-reactif-2,NAL von minden,Reactif 2,urinalysis,reagent,1,pack_size,/products/nal-von-minden-reactif-2/
+nal-von-minden-reactif-7,NAL von minden,Reactif 7,urinalysis,reagent,1,pack_size,/products/nal-von-minden-reactif-7/
+nal-von-minden-rsv,NAL von minden,RSV,molecular,reagent,1,pack_size,/products/nal-von-minden-rsv/
+nal-von-minden-sars-cov-2,NAL von minden,SARS-CoV-2,molecular,reagent,1,pack_size,/products/nal-von-minden-sars-cov-2/
+nal-von-minden-vitamin-d,NAL von minden,Vitamin D,clinical-chemistry,reagent,1,pack_size,/products/nal-von-minden-vitamin-d/
 nihon-kohden-celltac-es-mek-7300,Nihon Kohden,Celltac Es MEK-7300,hematology,instrument,1,catalogue_no,/products/nihon-kohden-celltac-es-mek-7300/
 nihon-kohden-celltac-mek-1302,Nihon Kohden,Celltac α MEK-1302,hematology,instrument,1,catalogue_no,/products/nihon-kohden-celltac-mek-1302/
 nihon-kohden-celltac-plus-mek-1303,Nihon Kohden,Celltac α+ MEK-1303,hematology,instrument,1,catalogue_no,/products/nihon-kohden-celltac-plus-mek-1303/

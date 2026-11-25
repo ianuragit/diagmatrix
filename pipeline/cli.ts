@@ -37,6 +37,15 @@ import {
   type EnrichmentEntry,
   type GudidRecord,
 } from './enrich/fda-gudid.ts';
+import {
+  extractItem,
+  matchManufacturer,
+  productLinks,
+  sitemapLocs,
+  type ManufacturerConfig,
+  type ManufacturerItem,
+} from './enrich/manufacturer.ts';
+import { gunzipSync } from 'node:zlib';
 import { filesToScan, scanForTerms } from './core/privacy.ts';
 import {
   CacheMissError,
@@ -639,9 +648,18 @@ async function cmdBuildData() {
     privateTerms: loadLocalSources().private_terms,
     translations: loadYaml<TranslationConfig>(join(CONFIG_DIR, 'translations.yaml')),
     reslug: values.reslug,
-    catalogueEnrichment: existsSync(FDA_ENRICH)
-      ? JSON.parse(await readFile(FDA_ENRICH, 'utf8'))
-      : {},
+    // Manufacturer's own site first, then FDA GUDID; both only fill empty catalogue numbers.
+    catalogueEnrichment: {
+      ...(existsSync(FDA_ENRICH) ? JSON.parse(await readFile(FDA_ENRICH, 'utf8')) : {}),
+      ...Object.fromEntries(
+        Object.entries(
+          (existsSync(MFR_ENRICH) ? JSON.parse(await readFile(MFR_ENRICH, 'utf8')) : {}) as Record<
+            string,
+            EnrichmentEntry
+          >,
+        ).filter(([, e]) => e.status === 'match'),
+      ),
+    },
   });
   // Guard: a refresh with a missing cache or a broken source must not silently delete products.
   if (existsSync(PRODUCTS_JSON) && !values['allow-shrink']) {
@@ -828,7 +846,136 @@ async function cmdEnrichFda() {
   );
 }
 
+const MFR_ENRICH = join(ROOT, 'data', 'enrichment', 'manufacturers.json');
+const MFR_ITEMS = join(ROOT, 'data', 'enrichment', 'manufacturer-catalogues.json');
+
+/** Catalogue numbers from brands' own websites (pipeline/config/manufacturers.yaml). */
+async function cmdEnrichManufacturers() {
+  const cfgs = loadYaml<{ manufacturers: ManufacturerConfig[] }>(
+    join(CONFIG_DIR, 'manufacturers.yaml'),
+  ).manufacturers.filter((c) => !only || only.includes(c.brand));
+  const products = CatalogueSchema.parse(JSON.parse(await readFile(PRODUCTS_JSON, 'utf8')));
+  const items: Record<string, ManufacturerItem[]> = existsSync(MFR_ITEMS)
+    ? JSON.parse(await readFile(MFR_ITEMS, 'utf8'))
+    : {};
+  const store: Record<string, EnrichmentEntry> = existsSync(MFR_ENRICH)
+    ? JSON.parse(await readFile(MFR_ENRICH, 'utf8'))
+    : {};
+  const max = values['max-requests'] ? Number(values['max-requests']) : 600;
+  const userAgent = buildUserAgent(loadProjectConfig().contact_email);
+  const http = new HttpClient({
+    userAgent,
+    cacheDir: join(ROOT, '.cache', 'http'),
+    log: log.child('mfr'),
+    minIntervalMs: 2000,
+    offline: values.offline,
+    refresh: values.refresh,
+  });
+  const get = async (url: string): Promise<string | null> => {
+    if (!values.offline && http.stats.network >= max) throw new Error('budget');
+    try {
+      const r = await http.get(url);
+      return r.status === 200 ? r.body : null;
+    } catch (err) {
+      if (err instanceof HostBlockedError) throw err;
+      if (!(err instanceof RobotsDisallowedError || err instanceof CacheMissError))
+        log.warn('fetch failed', { url, error: String(err) });
+      return null;
+    }
+  };
+  for (const cfg of cfgs) {
+    const L = log.child(cfg.brand);
+    const urls = new Set<string>();
+    const productRe = new RegExp(cfg.product_url, 'i');
+    try {
+      if (cfg.sitemap) {
+        const queue = [cfg.sitemap];
+        while (queue.length) {
+          const sm = queue.shift()!;
+          let body: string | null;
+          if (sm.endsWith('.gz')) {
+            // Binary sitemap: robots already checked on the index; fetched once, politely.
+            if (values.offline) continue;
+            await new Promise((r) => setTimeout(r, 2000));
+            const res = await fetch(sm, { headers: { 'user-agent': userAgent } });
+            body = res.ok
+              ? gunzipSync(Buffer.from(await res.arrayBuffer())).toString('utf8')
+              : null;
+          } else body = await get(sm);
+          for (const loc of sitemapLocs(body ?? '')) {
+            if (/\.xml(\.gz)?$/.test(loc)) queue.push(loc);
+            else if (
+              productRe.test(loc) &&
+              !(cfg.exclude && new RegExp(cfg.exclude, 'i').test(loc))
+            )
+              urls.add(loc);
+          }
+        }
+      }
+      for (const start of cfg.start_urls ?? []) {
+        for (let page = 1; page <= 10; page++) {
+          const body = await get(page === 1 ? start : `${start}?p=${page}`);
+          if (!body) break;
+          const found = productLinks(body, start, cfg);
+          const before = urls.size;
+          found.forEach((u) => urls.add(u));
+          if (urls.size === before) break; // no new products → last page
+        }
+      }
+      L.info(`${urls.size} product pages`);
+      const list: ManufacturerItem[] = [];
+      for (const raw of [...urls].sort()) {
+        const url = cfg.rewrite ? raw.replace(new RegExp(cfg.rewrite[0]), cfg.rewrite[1]) : raw;
+        const body = await get(url);
+        const it = body ? extractItem(body, url, cfg) : null;
+        if (it) list.push(it);
+      }
+      items[cfg.brand] = list;
+      L.info(`${list.length} products with catalogue numbers`);
+    } catch (err) {
+      if (err instanceof HostBlockedError) L.error('site is refusing requests — skipped');
+      else if ((err as Error).message === 'budget') L.info(`request budget reached (${max})`);
+      else throw err;
+    }
+    const mine = products.filter((p) => p.brand === cfg.brand && !p.duplicate_of);
+    for (const p of mine) {
+      if (p.catalogue_no) continue;
+      const usedWith = (p.summary ?? '').match(/used with (?:the )?([^.]+)/i)?.[1] ?? '';
+      store[p.id] = matchManufacturer(
+        p,
+        items[cfg.brand] ?? [],
+        cfg,
+        `${usedWith} ${p.technology ?? ''}`,
+      );
+    }
+  }
+  await writeJson(MFR_ITEMS, Object.fromEntries(Object.entries(items).sort()));
+  await writeJson(MFR_ENRICH, Object.fromEntries(Object.entries(store).sort()));
+  const c = (s: string) => Object.values(store).filter((e) => e.status === s).length;
+  log.info('enrich-manufacturers done', {
+    match: c('match'),
+    ambiguous: c('ambiguous'),
+    none: c('none'),
+    network: http.stats.network,
+  });
+  const rows = Object.entries(store)
+    .filter(([, e]) => e.status === 'ambiguous')
+    .map(
+      ([id, e]) =>
+        `"${id}","${e.candidates
+          .map((x) => `${x.catalogue_no}: ${x.brand_name} (${x.description})`)
+          .join(' | ')
+          .replace(/"/g, '""')}"`,
+    );
+  await writeFile(
+    join(ROOT, 'docs', 'catalogue-review-manufacturers.csv'),
+    ['product_id,manufacturer_candidates', ...rows].join('\n') + '\n',
+    'utf8',
+  );
+}
+
 const commands: Record<string, () => Promise<void>> = {
+  'enrich-manufacturers': cmdEnrichManufacturers,
   crawl: cmdCrawl,
   parse: cmdParse,
   'build-data': cmdBuildData,

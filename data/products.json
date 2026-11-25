@@ -76058,7 +76058,7 @@
     "product_type": "instrument",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "60100",
     "specs": {
       "Analytes": "C-reactive protein (CRP), iFOBT, Influenza A, Influenza B, Strep A, Streptococcus, Vitamin D",
       "Method": "Reader, Multi-parameter",
@@ -76105,7 +76105,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "312024NBUL-20",
     "specs": {
       "Analytes": "C-reactive protein (CRP)",
       "Sample type": "Plasma, Serum, Blood",
@@ -76148,7 +76148,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "272059NBUL-20",
     "specs": {
       "Analytes": "iFOBT",
       "Sample type": "Stool",
@@ -76316,7 +76316,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "242006NBUL-10",
     "specs": {
       "Analytes": "Influenza A, Influenza B",
       "Sample type": "Swab, Respiratory samples",
@@ -76365,7 +76365,7 @@
     "product_type": "instrument",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "65000",
     "specs": {
       "Analytes": "HPV, Influenza A, Influenza B, Neisseria, RSV, SARS-CoV-2, Strep A, Strep B, Streptococcus, T. vaginalis, Ureaplasma",
       "Method": "LAMP",
@@ -76743,7 +76743,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "41511-L",
     "specs": {
       "Analytes": "Bilirubin, Erythrocytes (RBC), Glucose, Ketone bodies, Leukocytes (WBC), Nitrite, pH, Protein, Specific gravity, Urobilinogen, Vitamin C",
       "Sample type": "Urine",
@@ -76790,7 +76790,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "41130-S",
     "specs": {
       "Analytes": "Microalbumin, Bilirubin, Erythrocytes (RBC), Glucose, Ketone bodies, Creatinine, Leukocytes (WBC), Nitrite, pH, Protein, Specific gravity, Urobilinogen, Vitamin C",
       "Sample type": "Urine",
@@ -76838,7 +76838,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "41140-M",
     "specs": {
       "Analytes": "Microalbumin, Bilirubin, Erythrocytes (RBC), Glucose, Calcium, Ketone bodies, Creatinine, Leukocytes (WBC), Nitrite, pH, Protein, Specific gravity, Urobilinogen, Vitamin C",
       "Sample type": "Urine",
@@ -76881,7 +76881,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "41021-M",
     "specs": {
       "Analytes": "Microalbumin, Creatinine",
       "Sample type": "Urine",
@@ -77012,7 +77012,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "41070-L",
     "specs": {
       "Analytes": "Erythrocytes (RBC), Glucose, Ketone bodies, Leukocytes (WBC), Nitrite, pH, Protein",
       "Sample type": "Urine",
@@ -77144,7 +77144,7 @@
     "product_type": "instrument",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "40002",
     "specs": {
       "Analytes": "Microalbumin, Bilirubin, Erythrocytes (RBC), Glucose, Calcium, Ketone bodies, Creatinine, Leukocytes (WBC), Nitrite, pH, Protein, Specific gravity, Urobilinogen, Vitamin C",
       "Method": "Reader, Urinalysis",
@@ -77241,7 +77241,7 @@
     "product_type": "instrument",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "61000",
     "specs": {
       "Connectivity": "Bluetooth",
       "Method": "Reader",
@@ -77287,7 +77287,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "2710504",
     "specs": {
       "Analytes": "RSV",
       "Sample type": "Swab",
@@ -77329,7 +77329,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "2710501",
     "specs": {
       "Analytes": "SARS-CoV-2",
       "Sample type": "Swab",
@@ -77499,7 +77499,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "2260004NBUL-10, 2260004NBUL-25",
     "specs": {
       "Analytes": "Vitamin D",
       "Sample type": "Serum, Blood",

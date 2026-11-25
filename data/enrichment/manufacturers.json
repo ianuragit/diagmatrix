@@ -1,0 +1,563 @@
+{
+  "hitado-btastat": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:08:04.423Z"
+  },
+  "hitado-crp-10-60": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:08:04.423Z"
+  },
+  "hitado-d-dimer": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:08:04.423Z"
+  },
+  "hitado-hcg-combo": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:08:04.423Z"
+  },
+  "hitado-hcg-combo-cassettes": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:08:04.423Z"
+  },
+  "hitado-hcg-combo-strips": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:08:04.423Z"
+  },
+  "hitado-hcg-ultra": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:08:04.423Z"
+  },
+  "hitado-hcg-urine": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:08:04.423Z"
+  },
+  "hitado-hemohapto": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:08:04.423Z"
+  },
+  "hitado-hitadokkult-ii": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:08:04.423Z"
+  },
+  "hitado-microalbumin": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:08:04.423Z"
+  },
+  "hitado-mononucleosis": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:08:04.423Z"
+  },
+  "hitado-multi-10a": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:08:04.423Z"
+  },
+  "hitado-multi-6": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:08:04.423Z"
+  },
+  "hitado-multi-6a": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:08:04.423Z"
+  },
+  "hitado-nobistrip-expert": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:08:04.423Z"
+  },
+  "hitado-nobistrip-microalbumin-creatinine": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:08:04.423Z"
+  },
+  "hitado-nobistrip-u10": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:08:04.423Z"
+  },
+  "hitado-strep-a": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:08:04.423Z"
+  },
+  "hitado-troponin-i": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:08:04.423Z"
+  },
+  "nal-von-minden-colibri-plus": {
+    "status": "match",
+    "catalogue_no": "60100",
+    "candidates": [
+      {
+        "catalogue_no": "60100",
+        "di": null,
+        "brand_name": "nal von minden Colibri plus Point-of-Care Reader",
+        "description": "https://nal-vonminden.com/eng/nvm-colibri-plus-reader.html",
+        "company": "NAL von minden",
+        "score": 1
+      }
+    ],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.169Z"
+  },
+  "nal-von-minden-crp": {
+    "status": "match",
+    "catalogue_no": "312024NBUL-20",
+    "candidates": [
+      {
+        "catalogue_no": "312024NBUL-20",
+        "di": null,
+        "brand_name": "NADAL CRP Quant Test for Colibri",
+        "description": "https://nal-vonminden.com/eng/nadal-crp-quant-testkassette-colibri-20.html",
+        "company": "NAL von minden",
+        "score": 1
+      }
+    ],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.170Z"
+  },
+  "nal-von-minden-fob": {
+    "status": "match",
+    "catalogue_no": "272059NBUL-20",
+    "candidates": [
+      {
+        "catalogue_no": "272059NBUL-20",
+        "di": null,
+        "brand_name": "NADAL FOB Quant Test for Colibri",
+        "description": "https://nal-vonminden.com/eng/nadal-fob-quant-test.html",
+        "company": "NAL von minden",
+        "score": 1
+      }
+    ],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.171Z"
+  },
+  "nal-von-minden-gbs-strep-b": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.171Z"
+  },
+  "nal-von-minden-hpv-16-18-45": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.171Z"
+  },
+  "nal-von-minden-hpv-6-11": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.171Z"
+  },
+  "nal-von-minden-influenza-a-b": {
+    "status": "match",
+    "catalogue_no": "242006NBUL-10",
+    "candidates": [
+      {
+        "catalogue_no": "242006NBUL-10",
+        "di": null,
+        "brand_name": "NADAL Influenza A/B Scan Test for Colibri",
+        "description": "https://nal-vonminden.com/eng/nadal-influenza-ab-testkassette-colibri.html",
+        "company": "NAL von minden",
+        "score": 1
+      }
+    ],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.172Z"
+  },
+  "nal-von-minden-nadal-pcr-pro1": {
+    "status": "match",
+    "catalogue_no": "65000",
+    "candidates": [
+      {
+        "catalogue_no": "65000",
+        "di": null,
+        "brand_name": "PoC-PCR device NADAL PCR Analyzer PRO1",
+        "description": "https://nal-vonminden.com/eng/nadal-pcr-analyzer-pro-1.html",
+        "company": "NAL von minden",
+        "score": 1
+      }
+    ],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.172Z"
+  },
+  "nal-von-minden-nadal-pcr-pro8": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.172Z"
+  },
+  "nal-von-minden-ng-uu": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.172Z"
+  },
+  "nal-von-minden-reactif": {
+    "status": "ambiguous",
+    "catalogue_no": null,
+    "candidates": [
+      {
+        "catalogue_no": "41101-M",
+        "di": null,
+        "brand_name": "Reactif 10SL Urinalysis Strips - 10 Parameters",
+        "description": "https://nal-vonminden.com/eng/reactif-10sl-urinanalysestreifen-dose.html",
+        "company": "NAL von minden",
+        "score": 1
+      },
+      {
+        "catalogue_no": "41501-L",
+        "di": null,
+        "brand_name": "Reactif 10SL Urinalysis Strips – 10 Parameters",
+        "description": "https://nal-vonminden.com/eng/reactif-10sl-urinanalysestreifen.html",
+        "company": "NAL von minden",
+        "score": 1
+      },
+      {
+        "catalogue_no": "41130-S",
+        "di": null,
+        "brand_name": "Reactif 13 Urinalysis Strips - 13 Parameters",
+        "description": "https://nal-vonminden.com/eng/reactif-13-urinanalyse.html",
+        "company": "NAL von minden",
+        "score": 1
+      },
+      {
+        "catalogue_no": "41140-M",
+        "di": null,
+        "brand_name": "Reactif 14 Urinalysis Strips - 14 Parameters",
+        "description": "https://nal-vonminden.com/eng/reactif-14-urinanalyse.html",
+        "company": "NAL von minden",
+        "score": 1
+      },
+      {
+        "catalogue_no": "41021-M",
+        "di": null,
+        "brand_name": "Reactif 2 Urinalysis Strips - 2 Parameters",
+        "description": "https://nal-vonminden.com/eng/reactif-2-urinanalyse.html",
+        "company": "NAL von minden",
+        "score": 1
+      },
+      {
+        "catalogue_no": "41070-L",
+        "di": null,
+        "brand_name": "Reactif 7 Urinalysis Strips - 7 Parameters",
+        "description": "https://nal-vonminden.com/eng/reactif-7-urinanalyse.html",
+        "company": "NAL von minden",
+        "score": 1
+      }
+    ],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.172Z"
+  },
+  "nal-von-minden-reactif-10sl": {
+    "status": "ambiguous",
+    "catalogue_no": null,
+    "candidates": [
+      {
+        "catalogue_no": "41101-M",
+        "di": null,
+        "brand_name": "Reactif 10SL Urinalysis Strips - 10 Parameters",
+        "description": "https://nal-vonminden.com/eng/reactif-10sl-urinanalysestreifen-dose.html",
+        "company": "NAL von minden",
+        "score": 1
+      },
+      {
+        "catalogue_no": "41501-L",
+        "di": null,
+        "brand_name": "Reactif 10SL Urinalysis Strips – 10 Parameters",
+        "description": "https://nal-vonminden.com/eng/reactif-10sl-urinanalysestreifen.html",
+        "company": "NAL von minden",
+        "score": 1
+      }
+    ],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.173Z"
+  },
+  "nal-von-minden-reactif-11m": {
+    "status": "match",
+    "catalogue_no": "41511-L",
+    "candidates": [
+      {
+        "catalogue_no": "41511-L",
+        "di": null,
+        "brand_name": "Reactif 11M Urinalysis Strips - 11 Parameters",
+        "description": "https://nal-vonminden.com/eng/urinteststreifen-kaufen.html",
+        "company": "NAL von minden",
+        "score": 1
+      }
+    ],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.173Z"
+  },
+  "nal-von-minden-reactif-13": {
+    "status": "match",
+    "catalogue_no": "41130-S",
+    "candidates": [
+      {
+        "catalogue_no": "41130-S",
+        "di": null,
+        "brand_name": "Reactif 13 Urinalysis Strips - 13 Parameters",
+        "description": "https://nal-vonminden.com/eng/reactif-13-urinanalyse.html",
+        "company": "NAL von minden",
+        "score": 1
+      }
+    ],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.174Z"
+  },
+  "nal-von-minden-reactif-14": {
+    "status": "match",
+    "catalogue_no": "41140-M",
+    "candidates": [
+      {
+        "catalogue_no": "41140-M",
+        "di": null,
+        "brand_name": "Reactif 14 Urinalysis Strips - 14 Parameters",
+        "description": "https://nal-vonminden.com/eng/reactif-14-urinanalyse.html",
+        "company": "NAL von minden",
+        "score": 1
+      }
+    ],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.174Z"
+  },
+  "nal-von-minden-reactif-2": {
+    "status": "match",
+    "catalogue_no": "41021-M",
+    "candidates": [
+      {
+        "catalogue_no": "41021-M",
+        "di": null,
+        "brand_name": "Reactif 2 Urinalysis Strips - 2 Parameters",
+        "description": "https://nal-vonminden.com/eng/reactif-2-urinanalyse.html",
+        "company": "NAL von minden",
+        "score": 1
+      }
+    ],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.175Z"
+  },
+  "nal-von-minden-reactif-4": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.175Z"
+  },
+  "nal-von-minden-reactif-5b": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.176Z"
+  },
+  "nal-von-minden-reactif-7": {
+    "status": "match",
+    "catalogue_no": "41070-L",
+    "candidates": [
+      {
+        "catalogue_no": "41070-L",
+        "di": null,
+        "brand_name": "Reactif 7 Urinalysis Strips - 7 Parameters",
+        "description": "https://nal-vonminden.com/eng/reactif-7-urinanalyse.html",
+        "company": "NAL von minden",
+        "score": 1
+      }
+    ],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.176Z"
+  },
+  "nal-von-minden-reactif-g": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.177Z"
+  },
+  "nal-von-minden-reactif-gp": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.177Z"
+  },
+  "nal-von-minden-reactif-touch-plus": {
+    "status": "match",
+    "catalogue_no": "40002",
+    "candidates": [
+      {
+        "catalogue_no": "40002",
+        "di": null,
+        "brand_name": "Urine Analyser Reactif Touch Plus",
+        "description": "https://nal-vonminden.com/eng/reactif-touch-plus-urinanalysegeraet.html",
+        "company": "NAL von minden",
+        "score": 1
+      }
+    ],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.178Z"
+  },
+  "nal-von-minden-rss-flash-2-0": {
+    "status": "match",
+    "catalogue_no": "61000",
+    "candidates": [
+      {
+        "catalogue_no": "61000",
+        "di": null,
+        "brand_name": "RSS flash 2.0 Mobile Reader",
+        "description": "https://nal-vonminden.com/eng/rss-flash-mobile-reader.html",
+        "company": "NAL von minden",
+        "score": 1
+      }
+    ],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.178Z"
+  },
+  "nal-von-minden-rsv": {
+    "status": "match",
+    "catalogue_no": "2710504",
+    "candidates": [
+      {
+        "catalogue_no": "2710504",
+        "di": null,
+        "brand_name": "NADAL RSV PCR Test",
+        "description": "https://nal-vonminden.com/eng/nadalr-rsv-pcr-test.html",
+        "company": "NAL von minden",
+        "score": 1
+      }
+    ],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.178Z"
+  },
+  "nal-von-minden-sars-cov-2": {
+    "status": "match",
+    "catalogue_no": "2710501",
+    "candidates": [
+      {
+        "catalogue_no": "2710501",
+        "di": null,
+        "brand_name": "NADAL SARS-CoV-2 PCR Test",
+        "description": "https://nal-vonminden.com/eng/nadalr-sars-cov-2-pcr-test.html",
+        "company": "NAL von minden",
+        "score": 1
+      }
+    ],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.179Z"
+  },
+  "nal-von-minden-sars-cov-2-influenza-a-b": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.179Z"
+  },
+  "nal-von-minden-strep-a": {
+    "status": "ambiguous",
+    "catalogue_no": null,
+    "candidates": [
+      {
+        "catalogue_no": "222049NBUL-20",
+        "di": null,
+        "brand_name": "NADAL Strep A Scan Test for Colibri",
+        "description": "https://nal-vonminden.com/eng/nadal-strep-a-scan-test-colibri.html",
+        "company": "NAL von minden",
+        "score": 1
+      },
+      {
+        "catalogue_no": "2710505",
+        "di": null,
+        "brand_name": "NADAL Strep A PCR Test",
+        "description": "https://nal-vonminden.com/eng/nadalr-strep-a-pcr-test.html",
+        "company": "NAL von minden",
+        "score": 1
+      }
+    ],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.179Z"
+  },
+  "nal-von-minden-trichomonas-vaginalis": {
+    "status": "none",
+    "catalogue_no": null,
+    "candidates": [],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.179Z"
+  },
+  "nal-von-minden-vitamin-d": {
+    "status": "match",
+    "catalogue_no": "2260004NBUL-10, 2260004NBUL-25",
+    "candidates": [
+      {
+        "catalogue_no": "2260004NBUL-10, 2260004NBUL-25",
+        "di": null,
+        "brand_name": "NADAL 25-OH Vitamin D Test for Colibri",
+        "description": "https://nal-vonminden.com/eng/nadalr-25-oh-vitamin-d-test-fur-colibri-geraet.html",
+        "company": "NAL von minden",
+        "score": 1
+      }
+    ],
+    "query": null,
+    "checked_at": "2026-11-25T09:07:55.179Z"
+  }
+}

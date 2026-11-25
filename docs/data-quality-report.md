@@ -11,8 +11,8 @@ Generated 2026-11-25 from `data/products.json`.
 | Flagged duplicate listings (hidden, redirect) | 80 |
 | Duplicate groups | 75 |
 | Cross-source merges | 22 |
-| Complete listings (all required fields) | 615 (26.4%) |
-| Incomplete listings | 1718 (73.6%) |
+| Complete listings (all required fields) | 618 (26.5%) |
+| Incomplete listings | 1715 (73.5%) |
 | Complete on core facts (ignoring catalogue no. & pack size) | 1777 (76.2%) |
 | Brands in catalogue | 111 |
 | Brands verified (domain resolves or confirmed by web search) | 109 |
@@ -197,7 +197,7 @@ Automatic fixes applied in `build-data`, and items left for review.
 - **Out of scope (non-diagnostic) dropped**: 4 — ARKRAY Insulin Cooling Pouch - Uno Z (keyword "insulin cooling pouch"); ARKRAY Insulin Cooling Pouch - Duo Z for Travel (keyword "insulin cooling pouch"); Bio-Rad Gene Pulser / MicroPulser Electroporation Cuvettes (source category "Medical LAB"); Erba H360 Control (source category "Medical Accesories")
 - **Untranslated (non-English) text**: 0
 - **Very short product names** (≤ 2 letters/digits; shown with brand): 24 — Abbott G, Abbott G3+, Arkray CK, Biosurfit BC, Boditech LH, Boditech T3, Boditech T4, Cepheid GI, Cepheid TV, Concile α1+, Dr. Müller Hb, MeMed BV, OPTI Medical B, Roche Li+, Roche PT, SD Biosensor T3, SD Biosensor T4, Tascom CK, Tascom Hb, Tascom K, Tascom TC, Tascom TG, Vedalab LH, Werfen PT
-- **Listings with several catalogue numbers** (pack variants, kept as listed): 52
+- **Listings with several catalogue numbers** (pack variants, kept as listed): 53
 - **Same-named different products** given a pack-size / Cat. no. suffix: 26
 - **Low classification confidence** (< 0.6): 84
   - Arkray Urine test strips AUTION SCREEN (0.59)
@@ -279,18 +279,18 @@ A listing is **complete** when it has every field required for its type. All: br
 | product_type | 2004 | 66 | 3.3% |
 | analyte | 2318 | 347 | 15.0% |
 | sample_type | 2004 | 199 | 9.9% |
-| catalogue_no | 2333 | 1308 | 56.1% |
+| catalogue_no | 2333 | 1293 | 55.4% |
 | pack_size | 2019 | 1181 | 58.5% |
 
 Listings by number of missing fields:
 
 | Missing fields | Listings |
 | ---: | ---: |
-| 0 | 615 |
-| 1 | 532 |
-| 2 | 938 |
-| 3 | 144 |
-| 4 | 71 |
+| 0 | 618 |
+| 1 | 540 |
+| 2 | 927 |
+| 3 | 145 |
+| 4 | 70 |
 | 5 | 16 |
 | 6 | 1 |
 | 7 | 12 |
@@ -302,7 +302,7 @@ Note: the second source publishes no catalogue numbers or pack sizes, so most of
 
 | Source | Listings | Incomplete | % |
 | --- | ---: | ---: | ---: |
-| src-b | 1097 | 1075 | 98.0% |
+| src-b | 1097 | 1072 | 97.7% |
 | src-a | 1258 | 651 | 51.7% |
 
 ### Incomplete listings by category
@@ -310,10 +310,10 @@ Note: the second source publishes no catalogue numbers or pack sizes, so most of
 | Category | Listings | Incomplete | % |
 | --- | ---: | ---: | ---: |
 | immunoassays | 885 | 487 | 55.0% |
-| clinical-chemistry | 424 | 415 | 97.9% |
-| molecular | 201 | 198 | 98.5% |
+| clinical-chemistry | 424 | 414 | 97.6% |
+| molecular | 201 | 197 | 98.0% |
 | rapid-tests | 293 | 151 | 51.5% |
-| urinalysis | 112 | 108 | 96.4% |
+| urinalysis | 112 | 107 | 95.5% |
 | blood-gas | 108 | 97 | 89.8% |
 | general | 86 | 86 | 100.0% |
 | hematology | 80 | 64 | 80.0% |
@@ -326,7 +326,7 @@ Note: the second source publishes no catalogue numbers or pack sizes, so most of
 | Product type | Listings | Incomplete | % |
 | --- | ---: | ---: | ---: |
 | reagent | 1911 | 1349 | 70.6% |
-| instrument | 314 | 266 | 84.7% |
+| instrument | 314 | 263 | 83.8% |
 | (unknown) | 66 | 66 | 100.0% |
 | control | 27 | 26 | 96.3% |
 | consumable | 15 | 11 | 73.3% |
@@ -351,12 +351,12 @@ Note: the second source publishes no catalogue numbers or pack sizes, so most of
 | QuidelOrtho | 31 | 31 | 100.0% |
 | EDAN | 31 | 29 | 93.5% |
 | Molbio | 29 | 29 | 100.0% |
-| NAL von minden | 29 | 29 | 100.0% |
 | Fujifilm | 30 | 28 | 93.3% |
 | Seamaty | 27 | 27 | 100.0% |
 | Ustar | 27 | 27 | 100.0% |
 | Zybio | 63 | 27 | 42.9% |
 | Concile | 26 | 26 | 100.0% |
+| NAL von minden | 29 | 26 | 89.7% |
 | EKF Diagnostics | 29 | 24 | 82.8% |
 | Bioantibody | 23 | 23 | 100.0% |
 | Nova Biomedical | 23 | 23 | 100.0% |

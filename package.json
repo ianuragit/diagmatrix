@@ -17,6 +17,7 @@
     "privacy-check": "tsx pipeline/cli.ts privacy-check",
     "quality": "tsx pipeline/cli.ts audit",
     "enrich-fda": "tsx pipeline/cli.ts enrich-fda",
+    "enrich-manufacturers": "tsx pipeline/cli.ts enrich-manufacturers",
     "dev": "astro dev",
     "build": "astro build && pagefind --site dist",
     "preview": "astro preview",

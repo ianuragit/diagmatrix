@@ -232,3 +232,9 @@ about how (or whether) to continue crawling Source A.
 - New `pnpm enrich-fda` (openFDA device/udi, no key, cached, 1.1 s interval). 817 network requests; 1,255 products checked.
 - Strict matching (company, all name words and model digits, controls, lab platforms, instrument vs consumable, panels). 58 catalogue numbers filled (545 → 603 products with a number); 142 ambiguous to `docs/catalogue-review.csv`.
 - EUDAMED: public endpoint answers 429 and asks for the official data API, which needs registration. Not scraped.
+
+## 2026-11-25 — Catalogue numbers from manufacturer websites
+- New `pnpm enrich-manufacturers` + `pipeline/config/manufacturers.yaml`: brand's own site only, polite HttpClient, numbers stored with their page URL, applied only to empty catalogue numbers.
+- NAL von minden: 179 product pages read, 15 numbers filled (instrument-family check keeps Colibri/PCR reagents apart from visual rapid tests), 3 to review.
+- Not usable: Hitado (403 to our crawler — respected), Vedalab/Concile/EKF (no numbers in HTML), SD Biosensor (JS-only), Boditech (robots 403).
+- Source A batch 2 done: 2,413 listings / 2,333 canonical; 1,040 canonical products now have a catalogue number.

@@ -1,0 +1,46 @@
+# Manufacturer websites used to fill missing catalogue numbers (`pnpm enrich-manufacturers`).
+# Only a brand's own site, and only for that brand's products. robots.txt and rate limits apply
+# (HttpClient). Each number is stored with the page it came from (data/enrichment/).
+#
+#   brand:        brand name exactly as in brands.yaml
+#   sitemap:      sitemap (or sitemap index; .gz ok) listing product pages, or
+#   start_urls:   category pages whose links lead to product pages (followed with ?p=2.. pages)
+#   product_url:  regex a product page URL must match
+#   exclude:      optional regex for URLs that match product_url but are not products
+#   rewrite:      optional [from, to] regex applied to product URLs (e.g. pick the English store)
+#   name:         regex with one group for the product name (default: first <h1>)
+#   catalogue:    regexes tried in order on the raw HTML; group 1 = one or more numbers (comma-separated)
+#   name_prefix:  optional regex for a manufacturer line prefix to ignore when matching (e.g. NADAL)
+#   exclude_names: optional regex for names of other brands' products the site resells
+#   platforms:    optional instrument-family regexes (see matchManufacturer)
+#   only_prefix:  optional regex the catalogue number must match (keeps resold brands out)
+manufacturers:
+  - brand: NAL von minden
+    start_urls:
+      - https://nal-vonminden.com/deu/medizinische-schnelltests.html
+      - https://nal-vonminden.com/deu/medizinische-schnelltests/allgemeinmedizin.html
+      - https://nal-vonminden.com/deu/medizinische-schnelltests/blutanalyse.html
+      - https://nal-vonminden.com/deu/medizinische-schnelltests/geburtshilfe-fruchtbarkeit.html
+      - https://nal-vonminden.com/deu/medizinische-schnelltests/infektion-entzundung.html
+      - https://nal-vonminden.com/deu/medizinische-schnelltests/infektion-entzundung/sexuell-ubertragbare-infektionen.html
+      - https://nal-vonminden.com/deu/medizinische-schnelltests/infektion-entzundung/tropische-infektionen-parasiten.html
+      - https://nal-vonminden.com/deu/medizinische-schnelltests/kardiologie.html
+      - https://nal-vonminden.com/deu/medizinische-schnelltests/tumormarker.html
+      - https://nal-vonminden.com/deu/medizinische-schnelltests/urinteststreifen.html
+      - https://nal-vonminden.com/deu/point-of-care/geratespezifische-poc-tests.html
+      - https://nal-vonminden.com/deu/point-of-care/poct-geraete.html
+      - https://nal-vonminden.com/deu/point-of-care/zubehor.html
+    product_url: '^https://nal-vonminden\.com/deu/[a-z0-9-]+\.html$'
+    exclude: '/(drogenanalytik|inside-diagnostics|medizinische-schnelltests|point-of-care|made-in-germany|contract-manufacturing)\.html$'
+    rewrite: ['/deu/', '/eng/']
+    name: 'itemprop="name">([^<]+)</span>'
+    catalogue:
+      - '"variantSkus":\s*"([^"]+)"'
+      - '>SKU</th>\s*<td[^>]*>\s*([A-Z0-9][A-Z0-9.\-/]+)'
+    name_prefix: '^nadal\b'
+    platforms: ['\bcolibri', '\b(pcr|lamp)\b', '\b(rss|scan)\b']
+    exclude_names: '^(afias|boditech|qlabs|vivadiag|roche|acmex|rightsign|oraquick|abo-trol|multistix|unistik)\b'
+# Checked and not used:
+#   Hitado — answers our crawler's user agent with 403 (refused; not worked around).
+#   Vedalab, Concile — product pages carry no reference numbers (only in PDF leaflets).
+#   SD Biosensor — product list is loaded by JavaScript; Boditech — robots.txt refuses (403).

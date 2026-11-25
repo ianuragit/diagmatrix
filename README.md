@@ -206,6 +206,22 @@ match is strict:
 First run: 1,255 products checked, 58 catalogue numbers filled, 142 sent to review. EUDAMED (EU) blocks
 automated use of its public site and needs its official data API (registration), so it isn't used yet.
 
+## Catalogue-number enrichment (manufacturer websites)
+
+`pnpm enrich-manufacturers [--source "<brand>"] [--offline] [--refresh]` reads a brand's **own** website,
+configured in `pipeline/config/manufacturers.yaml` (sitemap or category pages, product-URL pattern,
+regexes for the name and the number). Pages go through the same polite `HttpClient` (robots.txt,
+2 s interval, cache); a site that refuses our user agent is skipped, never worked around. Output:
+`data/enrichment/manufacturer-catalogues.json` (name, number, page URL) and
+`data/enrichment/manufacturers.json` (per product). `build-data` uses it before FDA, again only for
+empty catalogue numbers. Matching needs every word of the product (single letters and "plus" count),
+prefers an exact word-set match, ignores products the site resells for other brands, and checks the
+instrument family (a Colibri reagent only takes a "for Colibri" number). Unclear cases go to
+`docs/catalogue-review-manufacturers.csv`.
+
+Configured: NAL von minden (15 numbers). Checked but not usable: Hitado (403 to our crawler), Vedalab,
+Concile, EKF (no numbers on product pages), SD Biosensor (JavaScript-only list), Boditech (robots 403).
+
 ## Language: English only
 
 The site is English-only. Source B publishes in German, so `build-data` translates every displayed

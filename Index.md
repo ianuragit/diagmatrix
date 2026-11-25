@@ -9,7 +9,11 @@ Every folder and key file, mirroring the tree. Keep current.
 | `package.json` / `pnpm-lock.yaml` | Scripts (`crawl`, `parse`, `build-data`, `validate`, `report`, `privacy-check`, `build`, `test`, `typecheck`) and deps. |
 | `tsconfig.json` | Strictest TS config (extends `astro/tsconfigs/strictest`). |
 | `vitest.config.ts` | Unit test config. |
-| `pipeline/cli.ts` | CLI entry: `crawl \| parse \| build-data \| validate \| report`. |
+| `pipeline/cli.ts` | CLI entry: `crawl \| parse \| build-data \| validate \| report \| quality \| enrich-fda \| enrich-manufacturers`. |
+| `pipeline/enrich/fda-gudid.ts` | FDA GUDID catalogue-number lookup: query building + strict matching. |
+| `pipeline/enrich/manufacturer.ts` | Manufacturer-site catalogue numbers: page extraction + strict matching (instrument families, resold brands). |
+| `pipeline/config/manufacturers.yaml` | Brands' own websites used for catalogue numbers (and those checked but not usable). |
+| `data/enrichment/` | Enrichment results (FDA, manufacturer catalogues), applied by `build-data` to empty catalogue numbers only. |
 | `pipeline/core/types.ts` | Zod schemas (NavEntry, RawProduct, Product, SourceConfig) + `SourceAdapter` interface. Single source of truth. |
 | `pipeline/core/http.ts` | Polite HTTP client: robots-first, 1 req/s/host throttle, retry/backoff, disk cache, UA with contact. |
 | `pipeline/core/robots.ts` | robots.txt parser (RFC 9309). |
