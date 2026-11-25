@@ -1,6 +1,55 @@
 {
   "duplicate_groups": [
     {
+      "key": "combur strip",
+      "brand": "Roche",
+      "canonical": "roche-combur-7-test-strip",
+      "members": [
+        {
+          "id": "roche-combur-7-test-strip",
+          "name": "Roche Combur 7 Test Strip"
+        },
+        {
+          "id": "roche-combur-9-test-strip",
+          "name": "Roche Combur 9 Test Strip"
+        },
+        {
+          "id": "roche-combur-10-test-strip",
+          "name": "Roche Combur 10 Test Strip"
+        }
+      ]
+    },
+    {
+      "key": "capture denv detect elisa igm",
+      "brand": "InBios",
+      "canonical": "inbios-denv-detect-igm-capture-elisa-kit",
+      "members": [
+        {
+          "id": "inbios-denv-detect-igm-capture-elisa-kit",
+          "name": "InBios DENV Detect IgM Capture ELISA Kit"
+        },
+        {
+          "id": "inbios-denv-detect-igm-capture-elisa",
+          "name": "InBios DENV Detect IgM Capture ELISA"
+        }
+      ]
+    },
+    {
+      "key": "2_0 capture detect elisa igm zikv",
+      "brand": "InBios",
+      "canonical": "inbios-zikv-detect-2-0-igm-capture-elisa-kit",
+      "members": [
+        {
+          "id": "inbios-zikv-detect-2-0-igm-capture-elisa-kit",
+          "name": "InBios ZIKV Detect 2.0 IgM Capture ELISA Kit"
+        },
+        {
+          "id": "inbios-zikv-detect-2-0-igm-capture-elisa",
+          "name": "InBios ZIKV Detect 2.0 IgM Capture ELISA"
+        }
+      ]
+    },
+    {
       "key": "detect kalazar leishmaniasis visceral",
       "brand": "InBios",
       "canonical": "inbios-kalazar-detect-rapid-test-for-visceral-leishmaniasis",
@@ -12,6 +61,96 @@
         {
           "id": "inbios-kalazar-detect-rapid-test-for-visceral-leishmaniasis-032ddb",
           "name": "InBios Kalazar Detect Rapid Test for Visceral Leishmaniasis"
+        }
+      ]
+    },
+    {
+      "key": "bg8 cartridge i15",
+      "brand": "EDAN",
+      "canonical": "edan-bg8-i15-test-cartridge",
+      "members": [
+        {
+          "id": "edan-bg8-i15-test-cartridge",
+          "name": "EDAN BG8 i15 Test Cartridge"
+        },
+        {
+          "id": "edan-bg8-i15-test-cartridge-d70e81",
+          "name": "EDAN BG8 i15 Test Cartridge"
+        }
+      ]
+    },
+    {
+      "key": "bg9 cartridge i15",
+      "brand": "EDAN",
+      "canonical": "edan-bg9-i15-test-cartridge",
+      "members": [
+        {
+          "id": "edan-bg9-i15-test-cartridge",
+          "name": "EDAN BG9 i15 Test Cartridge"
+        },
+        {
+          "id": "edan-bg9-i15-test-cartridge-5f44c8",
+          "name": "EDAN BG9 i15 Test Cartridge"
+        }
+      ]
+    },
+    {
+      "key": "bg10 cartridge i15",
+      "brand": "EDAN",
+      "canonical": "edan-bg10-i15-test-cartridge",
+      "members": [
+        {
+          "id": "edan-bg10-i15-test-cartridge",
+          "name": "EDAN BG10 i15 Test Cartridge"
+        },
+        {
+          "id": "edan-bg10-i15-test-cartridge-05c906",
+          "name": "EDAN BG10 i15 Test Cartridge"
+        }
+      ]
+    },
+    {
+      "key": "calibrant cp50 fluid i15 pack",
+      "brand": "EDAN",
+      "canonical": "edan-cp50-i15-calibrant-fluid-pack",
+      "members": [
+        {
+          "id": "edan-cp50-i15-calibrant-fluid-pack",
+          "name": "EDAN CP50 i15 calibrant fluid pack"
+        },
+        {
+          "id": "edan-cp50-i15-calibrant-fluid-pack-4f2b7f",
+          "name": "EDAN CP50 i15 calibrant fluid pack"
+        }
+      ]
+    },
+    {
+      "key": "1 control i15 level",
+      "brand": "EDAN",
+      "canonical": "edan-i15-control-level-1-6b9758",
+      "members": [
+        {
+          "id": "edan-i15-control-level-1-6b9758",
+          "name": "EDAN i15 control level -1"
+        },
+        {
+          "id": "edan-i15-control-level-1",
+          "name": "EDAN i15 control level -1"
+        }
+      ]
+    },
+    {
+      "key": "biosen glucose lactate solution system",
+      "brand": "EKF Diagnostics",
+      "canonical": "ekf-diagnostics-biosen-glucose-lactate-system-solution",
+      "members": [
+        {
+          "id": "ekf-diagnostics-biosen-glucose-lactate-system-solution",
+          "name": "EKF Diagnostics Biosen Glucose/Lactate system solution"
+        },
+        {
+          "id": "ekf-diagnostics-biosen-glucose-lactate-system-solution-338428",
+          "name": "EKF Diagnostics Biosen Glucose/Lactate system solution"
         }
       ]
     },
@@ -61,6 +200,246 @@
       ]
     },
     {
+      "key": "blood gluconavii glucose nfc standard strip",
+      "brand": "SD Biosensor",
+      "canonical": "sd-biosensor-standard-gluconavii-nfc-blood-glucose-test-strip",
+      "members": [
+        {
+          "id": "sd-biosensor-standard-gluconavii-nfc-blood-glucose-test-strip",
+          "name": "SD Biosensor STANDARD GlucoNavii NFC Blood Glucose Test Strip"
+        },
+        {
+          "id": "sd-biosensor-standard-gluconavii-nfc-blood-glucose-test-strip-02a6f3",
+          "name": "SD Biosensor STANDARD GlucoNavii NFC Blood Glucose Test Strip"
+        }
+      ]
+    },
+    {
+      "key": "ag f malaria p pan q standard",
+      "brand": "SD Biosensor",
+      "canonical": "sd-biosensor-standard-q-malaria-p-f-pan-ag",
+      "members": [
+        {
+          "id": "sd-biosensor-standard-q-malaria-p-f-pan-ag",
+          "name": "SD Biosensor STANDARD Q Malaria P.F/Pan Ag"
+        },
+        {
+          "id": "sd-biosensor-standard-q-malaria-p-f-pan-ag-3e7693",
+          "name": "SD Biosensor STANDARD Q Malaria P.f Pan Ag"
+        }
+      ]
+    },
+    {
+      "key": "ab ag dengue duo q standard",
+      "brand": "SD Biosensor",
+      "canonical": "sd-biosensor-standard-q-dengue-ag-ab-duo",
+      "members": [
+        {
+          "id": "sd-biosensor-standard-q-dengue-ag-ab-duo",
+          "name": "SD Biosensor STANDARD Q Dengue Ag Ab Duo"
+        },
+        {
+          "id": "sd-biosensor-standard-q-dengue-ag-plus-ab-duo",
+          "name": "SD Biosensor STANDARD Q Dengue Ag+Ab Duo"
+        }
+      ]
+    },
+    {
+      "key": "dengue iggigm q standard",
+      "brand": "SD Biosensor",
+      "canonical": "sd-biosensor-standard-q-dengue-igm-igg",
+      "members": [
+        {
+          "id": "sd-biosensor-standard-q-dengue-igm-igg",
+          "name": "SD Biosensor STANDARD Q Dengue IgM/IgG"
+        },
+        {
+          "id": "sd-biosensor-standard-q-dengue-igm-igg-96fb0d",
+          "name": "SD Biosensor STANDARD Q Dengue IgM IgG"
+        }
+      ]
+    },
+    {
+      "key": "hev igm onsite",
+      "brand": "CTK Biotech",
+      "canonical": "ctk-biotech-onsite-hev-igm-rapid-test-ce",
+      "members": [
+        {
+          "id": "ctk-biotech-onsite-hev-igm-rapid-test-ce",
+          "name": "CTK Biotech Onsite HEV IgM Rapid Test CE"
+        },
+        {
+          "id": "ctk-biotech-onsite-hev-igm-rapid-test",
+          "name": "CTK Biotech OnSite HEV IgM Rapid Test"
+        }
+      ]
+    },
+    {
+      "key": "ag h onsite pylori",
+      "brand": "CTK Biotech",
+      "canonical": "ctk-biotech-onsite-h-pylori-ag-rapid-test-eed8fc",
+      "members": [
+        {
+          "id": "ctk-biotech-onsite-h-pylori-ag-rapid-test-eed8fc",
+          "name": "CTK Biotech OnSite H.Pylori Ag Rapid Test"
+        },
+        {
+          "id": "ctk-biotech-onsite-h-pylori-ag-rapid-test",
+          "name": "CTK Biotech OnSite H. pylori Ag Rapid Test"
+        }
+      ]
+    },
+    {
+      "key": "hav iggigm onsite",
+      "brand": "CTK Biotech",
+      "canonical": "ctk-biotech-onsite-hav-igg-igm-rapid-test",
+      "members": [
+        {
+          "id": "ctk-biotech-onsite-hav-igg-igm-rapid-test",
+          "name": "CTK Biotech OnSite HAV IgG IgM Rapid Test"
+        },
+        {
+          "id": "ctk-biotech-onsite-hav-igg-igm-rapid-test-ce",
+          "name": "CTK Biotech OnSite HAV IgG/IgM Rapid Test CE"
+        }
+      ]
+    },
+    {
+      "key": "combo iggigm leptospira onsite",
+      "brand": "CTK Biotech",
+      "canonical": "ctk-biotech-onsite-leptospira-igg-igm-combo-rapid-test-e8979f",
+      "members": [
+        {
+          "id": "ctk-biotech-onsite-leptospira-igg-igm-combo-rapid-test-e8979f",
+          "name": "CTK Biotech OnSite Leptospira IgG IgM Combo Rapid Test"
+        },
+        {
+          "id": "ctk-biotech-onsite-leptospira-igg-igm-combo-rapid-test",
+          "name": "CTK Biotech OnSite Leptospira IgG/IgM Combo Rapid Test"
+        }
+      ]
+    },
+    {
+      "key": "ag onsite paratyphi s typhi",
+      "brand": "CTK Biotech",
+      "canonical": "ctk-biotech-onsite-s-typhi-paratyphi-ag-rapid-test",
+      "members": [
+        {
+          "id": "ctk-biotech-onsite-s-typhi-paratyphi-ag-rapid-test",
+          "name": "CTK Biotech OnSite S.Typhi Paratyphi Ag Rapid Test"
+        },
+        {
+          "id": "ctk-biotech-onsite-s-typhi-paratyphi-ag-rapid-test-68e100",
+          "name": "CTK Biotech OnSite S. Typhi/Paratyphi Ag Rapid Test"
+        }
+      ]
+    },
+    {
+      "key": "iggigm onsite typhoid",
+      "brand": "CTK Biotech",
+      "canonical": "ctk-biotech-onsite-typhoid-igg-igm-rapid-test-345ae9",
+      "members": [
+        {
+          "id": "ctk-biotech-onsite-typhoid-igg-igm-rapid-test-345ae9",
+          "name": "CTK Biotech OnSite Typhoid IgG IgM Rapid Test"
+        },
+        {
+          "id": "ctk-biotech-onsite-typhoid-igg-igm-rapid-test",
+          "name": "CTK Biotech OnSite Typhoid IgG/IgM Rapid Test"
+        }
+      ]
+    },
+    {
+      "key": "ag dengue onsite",
+      "brand": "CTK Biotech",
+      "canonical": "ctk-biotech-onsite-dengue-ag-rapid-test",
+      "members": [
+        {
+          "id": "ctk-biotech-onsite-dengue-ag-rapid-test",
+          "name": "CTK Biotech OnSite Dengue Ag Rapid Test"
+        },
+        {
+          "id": "ctk-biotech-onsite-dengue-ag-rapid-test-ce",
+          "name": "CTK Biotech OnSite Dengue Ag Rapid Test CE"
+        }
+      ]
+    },
+    {
+      "key": "chikungunya iggigm q standard",
+      "brand": "SD Biosensor",
+      "canonical": "sd-biosensor-standard-q-chikungunya-igm-igg-1879ea",
+      "members": [
+        {
+          "id": "sd-biosensor-standard-q-chikungunya-igm-igg-1879ea",
+          "name": "SD Biosensor STANDARD Q Chikungunya IgM IgG"
+        },
+        {
+          "id": "sd-biosensor-standard-q-chikungunya-igm-igg-746165",
+          "name": "SD Biosensor STANDARD Q Chikungunya IgM/IgG"
+        }
+      ]
+    },
+    {
+      "key": "dot hcv q standard ultra",
+      "brand": "SD Biosensor",
+      "canonical": "sd-biosensor-standard-q-ultra-dot-hcv",
+      "members": [
+        {
+          "id": "sd-biosensor-standard-q-ultra-dot-hcv",
+          "name": "SD Biosensor STANDARD Q Ultra Dot HCV"
+        },
+        {
+          "id": "sd-biosensor-standard-q-ultra-dot-hcv-261382",
+          "name": "SD Biosensor STANDARD Q Ultra-Dot HCV"
+        }
+      ]
+    },
+    {
+      "key": "combo hiv q standard syphilis",
+      "brand": "SD Biosensor",
+      "canonical": "sd-biosensor-standard-q-hiv-syphilis-combo",
+      "members": [
+        {
+          "id": "sd-biosensor-standard-q-hiv-syphilis-combo",
+          "name": "SD Biosensor STANDARD Q - HIV Syphilis Combo"
+        },
+        {
+          "id": "sd-biosensor-standard-q-hiv-syphilis-combo-6e8efe",
+          "name": "SD Biosensor STANDARD Q HIV/Syphilis Combo"
+        }
+      ]
+    },
+    {
+      "key": "combo iggigm onsite toxo",
+      "brand": "CTK Biotech",
+      "canonical": "ctk-biotech-onsite-toxo-igg-igm-combo-rapid-test",
+      "members": [
+        {
+          "id": "ctk-biotech-onsite-toxo-igg-igm-combo-rapid-test",
+          "name": "CTK Biotech OnSite Toxo IgG/IgM Combo Rapid Test"
+        },
+        {
+          "id": "ctk-biotech-onsite-toxo-igg-igm-combo-rapid-test-387f3b",
+          "name": "CTK Biotech OnSite Toxo IgG IgM Combo Rapid Test"
+        }
+      ]
+    },
+    {
+      "key": "iggigm scrub trustline typhus",
+      "brand": "CTK Biotech",
+      "canonical": "ctk-biotech-trustline-scrub-typhus-igg-igm-rapid-test-bff502",
+      "members": [
+        {
+          "id": "ctk-biotech-trustline-scrub-typhus-igg-igm-rapid-test-bff502",
+          "name": "CTK Biotech TRUSTline Scrub typhus IgG IgM Rapid Test"
+        },
+        {
+          "id": "ctk-biotech-trustline-scrub-typhus-igg-igm-rapid-test",
+          "name": "CTK Biotech TRUSTline Scrub typhus IgG/IgM Rapid Test"
+        }
+      ]
+    },
+    {
       "key": "ag covid19 q standard",
       "brand": "SD Biosensor",
       "canonical": "sd-biosensor-standard-q-covid-19-ag",
@@ -76,6 +455,145 @@
         {
           "id": "sd-biosensor-standard-q-covid-19-ag-7a88d5",
           "name": "SD Biosensor STANDARD Q COVID-19 Ag"
+        },
+        {
+          "id": "sd-biosensor-standard-q-covid-19-ag-814d4a",
+          "name": "SD Biosensor STANDARD Q COVID-19 Ag"
+        }
+      ]
+    },
+    {
+      "key": "ag covid19 ultra",
+      "brand": "SD Biosensor",
+      "canonical": "sd-biosensor-ultra-covid-19-ag-29ac24",
+      "members": [
+        {
+          "id": "sd-biosensor-ultra-covid-19-ag-29ac24",
+          "name": "SD Biosensor Ultra COVID-19 Ag"
+        },
+        {
+          "id": "sd-biosensor-ultra-covid-19-ag",
+          "name": "SD Biosensor Ultra COVID-19 Ag"
+        }
+      ]
+    },
+    {
+      "key": "chik elisa igm trustwell",
+      "brand": "CTK Biotech",
+      "canonical": "ctk-biotech-trustwell-chik-igm-elisa-kit",
+      "members": [
+        {
+          "id": "ctk-biotech-trustwell-chik-igm-elisa-kit",
+          "name": "CTK Biotech TRUSTwell CHIK IgM ELISA Kit"
+        },
+        {
+          "id": "ctk-biotech-trustwell-chik-igm-elisa-ce",
+          "name": "CTK Biotech TRUSTwell CHIK IgM ELISA CE"
+        }
+      ]
+    },
+    {
+      "key": "dengue elisa igg trustwell",
+      "brand": "CTK Biotech",
+      "canonical": "ctk-biotech-trustwell-dengue-igg-elisa-kit",
+      "members": [
+        {
+          "id": "ctk-biotech-trustwell-dengue-igg-elisa-kit",
+          "name": "CTK Biotech TRUSTwell Dengue IgG ELISA Kit"
+        },
+        {
+          "id": "ctk-biotech-trustwell-dengue-igg-elisa-ce",
+          "name": "CTK Biotech TRUSTwell Dengue IgG ELISA CE"
+        }
+      ]
+    },
+    {
+      "key": "elisa hav igm recombilisa",
+      "brand": "CTK Biotech",
+      "canonical": "ctk-biotech-recombilisa-hav-igm-elisa-kit",
+      "members": [
+        {
+          "id": "ctk-biotech-recombilisa-hav-igm-elisa-kit",
+          "name": "CTK Biotech RecombiLISA HAV IgM ELISA Kit"
+        },
+        {
+          "id": "ctk-biotech-recombilisa-hav-igm-elisa-ce",
+          "name": "CTK Biotech RecombiLISA HAV IgM ELISA CE"
+        }
+      ]
+    },
+    {
+      "key": "dengue elisa igm trustwell",
+      "brand": "CTK Biotech",
+      "canonical": "ctk-biotech-trustwell-dengue-igm-elisa-kit",
+      "members": [
+        {
+          "id": "ctk-biotech-trustwell-dengue-igm-elisa-kit",
+          "name": "CTK Biotech TRUSTwell Dengue IgM ELISA Kit"
+        },
+        {
+          "id": "ctk-biotech-trustwell-dengue-igm-elisa-ce",
+          "name": "CTK Biotech TRUSTwell Dengue IgM ELISA CE"
+        }
+      ]
+    },
+    {
+      "key": "a1c hba1c pocketchem",
+      "brand": "Arkray",
+      "canonical": "arkray-pocketchem-a1c-hba1c-test-kit",
+      "members": [
+        {
+          "id": "arkray-pocketchem-a1c-hba1c-test-kit",
+          "name": "Arkray PocketChem A1c HbA1c Test Kit"
+        },
+        {
+          "id": "arkray-pocketchem-a1c-hba1c-device",
+          "name": "Arkray PocketChem A1C HbA1c - Device"
+        }
+      ]
+    },
+    {
+      "key": "hb low plasma system",
+      "brand": "HemoCue",
+      "canonical": "hemocue-plasma-low-hb-system",
+      "members": [
+        {
+          "id": "hemocue-plasma-low-hb-system",
+          "name": "HemoCue Plasma Low Hb System"
+        },
+        {
+          "id": "hemocue-plasma-low-hb-system-dd8a26",
+          "name": "HemoCue Plasma/Low Hb System"
+        }
+      ]
+    },
+    {
+      "key": "analyzer clinitek status",
+      "brand": "Siemens Healthineers",
+      "canonical": "siemens-healthineers-clinitek-status-plus-analyzer",
+      "members": [
+        {
+          "id": "siemens-healthineers-clinitek-status-plus-analyzer",
+          "name": "Siemens Healthineers CLINITEK Status+ Analyzer"
+        },
+        {
+          "id": "siemens-healthineers-clinitek-status-analyzer",
+          "name": "Siemens Healthineers CLINITEK Status Analyzer"
+        }
+      ]
+    },
+    {
+      "key": "color gmbh heamoglobin scale",
+      "brand": "Copack",
+      "canonical": "copack-gmbh-heamoglobin-color-scale",
+      "members": [
+        {
+          "id": "copack-gmbh-heamoglobin-color-scale",
+          "name": "Copack GMBH Heamoglobin Color Scale"
+        },
+        {
+          "id": "copack-gmbh-heamoglobin-color-scale-bc01bb",
+          "name": "Copack GMBH Heamoglobin Color Scale"
         }
       ]
     },
@@ -97,8 +615,58 @@
   ],
   "cross_source_merges": [
     {
+      "id": "hemocue-wbc-diff-microcuvettes-ae5f21",
+      "name": "HemoCue WBC DIFF Microcuvettes",
+      "listings": 2
+    },
+    {
+      "id": "roche-coaguchek-pro-ii-2dc743",
+      "name": "Roche CoaguChek Pro II",
+      "listings": 2
+    },
+    {
+      "id": "horiba-microsemi-crp-d137e4",
+      "name": "Horiba Microsemi CRP",
+      "listings": 2
+    },
+    {
+      "id": "sd-biosensor-standard-q-malaria-p-f-pan-ag",
+      "name": "SD Biosensor STANDARD Q Malaria P.F/Pan Ag",
+      "listings": 2
+    },
+    {
+      "id": "sd-biosensor-standard-q-dengue-igm-igg",
+      "name": "SD Biosensor STANDARD Q Dengue IgM/IgG",
+      "listings": 2
+    },
+    {
+      "id": "sd-biosensor-standard-q-chikungunya-igm-igg-1879ea",
+      "name": "SD Biosensor STANDARD Q Chikungunya IgM IgG",
+      "listings": 2
+    },
+    {
       "id": "abbott-binaxnow-streptococcus-pneumoniae",
       "name": "Abbott Binaxnow Streptococcus Pneumoniae",
+      "listings": 2
+    },
+    {
+      "id": "arkray-pocketchem-ua-pu-4010-329320",
+      "name": "Arkray PocketChem UA PU-4010",
+      "listings": 2
+    },
+    {
+      "id": "arkray-spotchem-el-se-1520-4a3605",
+      "name": "Arkray Spotchem El Se-1520",
+      "listings": 2
+    },
+    {
+      "id": "boditech-afias-6-dd2320",
+      "name": "Boditech AFIAS 6",
+      "listings": 2
+    },
+    {
+      "id": "siemens-healthineers-clinitek-microalbumin-2-a56597",
+      "name": "Siemens Healthineers Clinitek Microalbumin 2",
       "listings": 2
     },
     {
@@ -109,11 +677,6 @@
     {
       "id": "sd-biosensor-standard-q-covid-flu-ag-combo",
       "name": "SD Biosensor STANDARD Q COVID/Flu Ag Combo",
-      "listings": 2
-    },
-    {
-      "id": "sd-biosensor-standard-q-dengue-igm-igg",
-      "name": "SD Biosensor STANDARD Q Dengue IgM/IgG",
       "listings": 2
     },
     {
@@ -129,11 +692,6 @@
     {
       "id": "sd-biosensor-standard-q-malaria-p-f-p-v-ag",
       "name": "SD Biosensor STANDARD Q Malaria P.F/P.V Ag",
-      "listings": 2
-    },
-    {
-      "id": "sd-biosensor-standard-q-malaria-p-f-pan-ag",
-      "name": "SD Biosensor STANDARD Q Malaria P.F/Pan Ag",
       "listings": 2
     },
     {
@@ -154,6 +712,21 @@
     {
       "id": "abbott-binaxnow-rsv-card",
       "name": "Abbott BINAXNOW RSV CARD",
+      "listings": 2
+    },
+    {
+      "id": "fujifilm-dri-chem-nx10n-459053",
+      "name": "Fujifilm DRI-CHEM NX10N",
+      "listings": 2
+    },
+    {
+      "id": "abbott-digival-970304",
+      "name": "Abbott DIGIVAL",
+      "listings": 2
+    },
+    {
+      "id": "abbott-nycocard-reader-ii-e1cda3",
+      "name": "Abbott NYCOCARD READER II",
       "listings": 2
     },
     {

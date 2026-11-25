@@ -2,24 +2,24 @@
 ## Source `src-a`
 
 - Nav entries: 3234
-- Parsed records: 141
-- Parse failures: 3093
+- Parsed records: 742
+- Parse failures: 2492
 
 ### Categories
 
 | Category | In nav | Parsed |
 |---|---:|---:|
-| Medical Reagents | 550 | 0 |
-| Medical CLIA | 329 | 0 |
-| Medical POCT | 311 | 1 |
-| Medical FIA | 311 | 0 |
+| Medical Reagents | 550 | 1 |
+| Medical CLIA | 329 | 2 |
+| Medical POCT | 311 | 308 |
+| Medical FIA | 311 | 27 |
 | Medical LAB | 310 | 0 |
 | Medical Accesories | 302 | 0 |
 | Medical Analyzer | 265 | 1 |
 | Life Sciences | 237 | 0 |
 | Medical Surgicals | 171 | 0 |
-| Medical ELISA | 170 | 1 |
-| Medical RTD | 150 | 55 |
+| Medical ELISA | 170 | 170 |
+| Medical RTD | 150 | 150 |
 | Medical IVD | 82 | 82 |
 | Medical Consumables | 46 | 1 |
 
@@ -27,41 +27,102 @@
 
 | Field | Records | % |
 |---|---:|---:|
-| brand (stated) | 110 | 78.0% |
-| catalogue_no | 111 | 78.7% |
-| fact table | 112 | 79.4% |
-| spec rows | 139 | 98.6% |
-| image | 141 | 100.0% |
+| brand (stated) | 596 | 80.3% |
+| catalogue_no | 568 | 76.5% |
+| fact table | 601 | 81.0% |
+| spec rows | 737 | 99.3% |
+| image | 742 | 100.0% |
 | documents | 0 | 0.0% |
 | components | 0 | 0.0% |
 | related (source-linked) | 0 | 0.0% |
-| description | 140 | 99.3% |
+| description | 732 | 98.7% |
 
-Top fact-table keys: Brand (110), Sample Type (102), Pack Size (100), CAT No (78), CAT No. (26), Number of Reactions(Preps)/Kit (9), Result Time (Rapid Kits) (7), Cat. No (6), Usage/Application (4), Application (2), Storage Temperature (2), Results (2), Certified (2), Model (1), Capacity (1)
+Top fact-table keys: Brand (596), Sample Type (496), CAT No (473), Pack Size (439), Test Type (79), CAT No. (65), Application (45), Number of Reactions(Preps)/Kit (42), Result Time (Rapid Kits) (32), Cat. No (18), Biomarker (17), CAT No.Â (16), Model (14), ICMR Approved (11), Cat No (10)
 
 ### Sample records
 
 ```json
 {
   "source": "src-a",
-  "fetched_at": "2026-11-24T20:57:19.662Z",
-  "name": "Acon Flowflex SARS-CoV-2 Antigen Rapid Test",
-  "category": "Medical RTD",
+  "fetched_at": "2026-11-25T06:23:56.919Z",
+  "name": "Abbott AFINION ACR",
+  "category": "Medical POCT",
   "subcategory": null,
-  "brand": null,
-  "catalogue_no": null,
-  "facts": {},
+  "brand": "Abbott",
+  "catalogue_no": "1116780",
+  "facts": {
+    "Brand": "Abbott",
+    "Sample Type": "Urine",
+    "Pack Size": "15T",
+    "CAT No": "1116780"
+  },
   "image": "(present)",
   "documents": 0,
   "components": [],
-  "spec_rows": 33,
+  "spec_rows": 40,
   "specs_preview": {
-    "Measurement Range": "Qualitative: Positive/Negative",
-    "Function": "Detects nucleocapsid protein antigen from SARS-CoV-2",
-    "Storage Instructions": "Store at 2C30C, avoid direct sunlight, do not freeze",
-    "Technology": "Lateral Flow Immunoassay"
+    "Wall Mounted": "No",
+    "Color": "White/Grey",
+    "Material": "Plastic and Electronic Components",
+    "Portable": "Yes"
   },
-  "description_chars": 1435
+  "description_chars": 1449
+}
+```
+```json
+{
+  "source": "src-a",
+  "fetched_at": "2026-11-25T06:00:55.769Z",
+  "name": "Abbott Bioline DENGUE IgG CAPTURE ELISA",
+  "category": "Medical ELISA",
+  "subcategory": null,
+  "brand": "Abbott",
+  "catalogue_no": "11EK10",
+  "facts": {
+    "Brand": "Abbott",
+    "Sample Type": "Serum",
+    "Pack Size": "96 Wells",
+    "CAT No": "11EK10"
+  },
+  "image": "(present)",
+  "documents": 0,
+  "components": [],
+  "spec_rows": 13,
+  "specs_preview": {
+    "Storage Instructions": "Store in a cool and dry place",
+    "Features": "High Accuracy Reliable Results",
+    "Accuracy": "High",
+    "Wall Mounted": "No"
+  },
+  "description_chars": 165
+}
+```
+```json
+{
+  "source": "src-a",
+  "fetched_at": "2026-11-25T05:28:46.001Z",
+  "name": "Abbott DETERMINE HIV-1/2 Set",
+  "category": "Medical RTD",
+  "subcategory": null,
+  "brand": "Abbott",
+  "catalogue_no": "7D2343SET",
+  "facts": {
+    "Brand": "Abbott",
+    "Sample Type": "Serum/ Plasma/ WB",
+    "Pack Size": "100T",
+    "CAT No": "7D2343SET"
+  },
+  "image": "(present)",
+  "documents": 0,
+  "components": [],
+  "spec_rows": 28,
+  "specs_preview": {
+    "Material": "Plastic and test strip membrane",
+    "Measurement Range": "Qualitative (Positive/Negative)",
+    "Storage Instructions": "Store at 2-30°C, avoid direct sunlight",
+    "Accuracy": ">99% (as per manufacturer studies)"
+  },
+  "description_chars": 1381
 }
 ```
 ```json
@@ -91,6 +152,29 @@ Top fact-table keys: Brand (110), Sample Type (102), Pack Size (100), CAT No (78
 ```json
 {
   "source": "src-a",
+  "fetched_at": "2026-11-25T07:03:17.140Z",
+  "name": "Acon FIAflex cTnI FIA Test",
+  "category": "Medical FIA",
+  "subcategory": null,
+  "brand": null,
+  "catalogue_no": null,
+  "facts": {},
+  "image": "(present)",
+  "documents": 0,
+  "components": [],
+  "spec_rows": 31,
+  "specs_preview": {
+    "Instruments Type": "Fluorescence Immunoassay Test Cassette",
+    "Portable": "Yes",
+    "Real-Time Operation": "Yes",
+    "Use": "For quantitative detection of cardiac Troponin I (cTnI) in human whole blood, serum or plasma"
+  },
+  "description_chars": 1528
+}
+```
+```json
+{
+  "source": "src-a",
   "fetched_at": "2026-11-24T20:48:47.418Z",
   "name": "Qiagen Filter-Tips, 1000 l",
   "category": "Medical Consumables",
@@ -109,29 +193,29 @@ Top fact-table keys: Brand (110), Sample Type (102), Pack Size (100), CAT No (78
 ```json
 {
   "source": "src-a",
-  "fetched_at": "2026-11-24T20:48:48.351Z",
-  "name": "EDAN i15 control level -1",
-  "category": "Medical POCT",
+  "fetched_at": "2026-11-25T06:14:38.996Z",
+  "name": "Mindray Reaction Cuvettes",
+  "category": "Medical CLIA",
   "subcategory": null,
-  "brand": "EDAN",
-  "catalogue_no": "83.67.241310",
+  "brand": "Mindray",
+  "catalogue_no": "115-035753-00",
   "facts": {
-    "Brand": "EDAN",
-    "Pack Size": "5 2.5ml",
-    "CAT No.": "83.67.241310",
-    "Application": "Control"
+    "Brand": "Mindray",
+    "Product Type": "Reaction Cuvettes",
+    "Pack Size": "3696",
+    "CAT No.": "115-035753-00"
   },
   "image": "(present)",
   "documents": 0,
   "components": [],
-  "spec_rows": 6,
+  "spec_rows": 13,
   "specs_preview": {
+    "Operating Type": "Automatic",
     "Wall Mounted": "No",
-    "Noise Level": "No",
-    "Use": "Labouratory",
-    "Usage Type": "Hospital and Lab"
+    "Use": "Used as reaction vessels for mixing patient samples and reagents",
+    "Real-Time Operation": "Y, e, s Hours"
   },
-  "description_chars": 196
+  "description_chars": 248
 }
 ```
 ```json
@@ -165,136 +249,64 @@ Top fact-table keys: Brand (110), Sample Type (102), Pack Size (100), CAT No (78
 ```json
 {
   "source": "src-a",
-  "fetched_at": "2026-11-24T20:48:45.436Z",
-  "name": "Calbiotech Free Testosterone ELISA",
-  "category": "Medical ELISA",
+  "fetched_at": "2026-11-25T07:02:39.801Z",
+  "name": "SNIBE MAGLUMI PlGF (CLIA)",
+  "category": "Medical Reagents",
   "subcategory": null,
-  "brand": "InBios",
-  "catalogue_no": "FT178S",
+  "brand": "Snibe",
+  "catalogue_no": "130212010M",
   "facts": {
-    "Brand": "InBios",
+    "Brand": "Snibe",
     "Sample Type": "Serum/ Plasma",
-    "Pack Size": "96 Wells",
-    "CAT No.": "FT178S"
+    "Pack Size": "100T",
+    "CAT No": "130212010M",
+    "Application": "Maternal Health and Pregnancy-Related Testing"
   },
   "image": "(present)",
   "documents": 0,
   "components": [],
-  "spec_rows": 6,
+  "spec_rows": 33,
   "specs_preview": {
-    "Portable": "Yes",
-    "Condition": "New",
-    "Wall Mounted": "No",
-    "Noise Level": "No"
-  },
-  "description_chars": 1055
-}
-```
-```json
-{
-  "source": "src-a",
-  "fetched_at": "2026-11-24T20:56:36.825Z",
-  "name": "Acon hCG (Urine)",
-  "category": "Medical RTD",
-  "subcategory": null,
-  "brand": "Acon",
-  "catalogue_no": "ACKCRDPC3",
-  "facts": {
-    "Brand": "Acon",
-    "Sample Type": "Urine",
-    "Pack Size": "50T",
-    "CAT No": "ACKCRDPC3"
-  },
-  "image": "(present)",
-  "documents": 0,
-  "components": [],
-  "spec_rows": 32,
-  "specs_preview": {
-    "Instruments Type": "Rapid Diagnostic Test",
-    "Frequency": "Single use",
-    "Storage Instructions": "Store at 2-30C, Do not freeze",
-    "Material": "Other"
-  },
-  "description_chars": 1219
-}
-```
-```json
-{
-  "source": "src-a",
-  "fetched_at": "2026-11-24T20:55:34.389Z",
-  "name": "Abbott ABON Urine Test E-Z Split Key Drug Screen Cup",
-  "category": "Medical IVD",
-  "subcategory": null,
-  "brand": null,
-  "catalogue_no": "DBD-1107",
-  "facts": {
-    "Sample Type": "Urine",
-    "Pack Size": "25T",
-    "CAT No.": "DBD-1107"
-  },
-  "image": "(present)",
-  "documents": 0,
-  "components": [],
-  "spec_rows": 6,
-  "specs_preview": {
-    "Wall Mounted": "No",
-    "Noise Level": "No",
-    "Portable": "Yes",
-    "Usage Type": "Hospital and Lab"
-  },
-  "description_chars": 357
-}
-```
-```json
-{
-  "source": "src-a",
-  "fetched_at": "2026-11-24T20:56:01.290Z",
-  "name": "Abbott BINAXNOW COVID-19 Ag CARD",
-  "category": "Medical IVD",
-  "subcategory": null,
-  "brand": null,
-  "catalogue_no": null,
-  "facts": {},
-  "image": "(present)",
-  "documents": 0,
-  "components": [],
-  "spec_rows": 31,
-  "specs_preview": {
-    "Real-Time Operation": "Yes",
-    "Color": "White card with printed panel",
-    "Technology": "Lateral Flow Immunoassay",
-    "Weight": "Lightweight, single-use"
-  },
-  "description_chars": 1498
-}
-```
-```json
-{
-  "source": "src-a",
-  "fetched_at": "2026-11-24T20:56:31.710Z",
-  "name": "Abbott BinaxNOW Covid-19 Rapid Antigen Card Test Kit",
-  "category": "Medical IVD",
-  "subcategory": null,
-  "brand": null,
-  "catalogue_no": null,
-  "facts": {},
-  "image": "(present)",
-  "documents": 0,
-  "components": [],
-  "spec_rows": 30,
-  "specs_preview": {
-    "Function": "Detects presence of COVID-19 viral antigens",
-    "Shelf Life": "12 months",
-    "Measurement Range": "Qualitative (Positive/Negative)",
+    "Weight": "Not specified by manufacturer Grams (g)",
+    "Power Consumption": "Not Applicable Volt (V)",
+    "Usage Type": "Laboratory",
     "Condition": "New"
   },
-  "description_chars": 1841
+  "description_chars": 292
+}
+```
+```json
+{
+  "source": "src-a",
+  "fetched_at": "2026-11-25T06:32:15.655Z",
+  "name": "Abbott AFINION CRP",
+  "category": "Medical POCT",
+  "subcategory": null,
+  "brand": "Abbott",
+  "catalogue_no": "1116786",
+  "facts": {
+    "Brand": "Abbott",
+    "Sample Type": "Serum/ Plasma/ Capillary Blood",
+    "Pack Size": "15T",
+    "CAT No": "1116786"
+  },
+  "image": "(present)",
+  "documents": 0,
+  "components": [],
+  "spec_rows": 41,
+  "specs_preview": {
+    "Power Consumption": "Approximately 40 VA",
+    "Voltage": "100-240 V AC, 50/60 Hz",
+    "Condition": "New",
+    "Dimension (L*W*H)": "27.5 cm x 21 cm x 21 cm"
+  },
+  "description_chars": 1401
 }
 ```
 
 ### Parse failures by reason
 
-- 3093 × Not in cache and network is disabled (offline): <url>
+- 2492 × Not in cache and network is disabled (offline): <url>
 
 ## Source `src-b`
 
@@ -661,71 +673,82 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 
 ## Catalogue
 
-- Records: 1224 (1217 canonical, 7 flagged duplicates)
-- Canonical products by source: src-b 1096, src-a 134 (in more than one source: 13)
+- Records: 1812 (1769 canonical, 43 flagged duplicates)
+- Canonical products by source: src-b 1096, src-a 697 (in more than one source: 24)
 
 ### By category / product type
 
 | Category | Instruments | Tests & reagents | Controls | Consumables | Unknown | Total |
 |---|---:|---:|---:|---:|---:|---:|
-| clinical-chemistry | 73 | 335 | 0 | 0 | 0 | 408 |
-| molecular | 24 | 169 | 0 | 0 | 0 | 193 |
-| rapid-tests | 0 | 186 | 0 | 1 | 0 | 187 |
-| immunoassays | 10 | 115 | 0 | 0 | 0 | 125 |
-| blood-gas | 24 | 61 | 0 | 1 | 0 | 86 |
-| urinalysis | 24 | 60 | 0 | 0 | 0 | 84 |
-| coagulation | 14 | 34 | 0 | 0 | 0 | 48 |
-| hematology | 31 | 12 | 1 | 1 | 0 | 45 |
-| diabetes | 11 | 9 | 0 | 1 | 0 | 21 |
-| general | 6 | 4 | 1 | 1 | 5 | 17 |
+| clinical-chemistry | 79 | 339 | 0 | 1 | 4 | 423 |
+| immunoassays | 13 | 296 | 3 | 5 | 0 | 317 |
+| rapid-tests | 2 | 286 | 0 | 1 | 0 | 289 |
+| molecular | 26 | 172 | 0 | 0 | 3 | 201 |
+| urinalysis | 36 | 72 | 0 | 0 | 4 | 112 |
+| blood-gas | 32 | 70 | 4 | 1 | 1 | 108 |
+| general | 18 | 35 | 6 | 2 | 26 | 87 |
+| hematology | 44 | 16 | 8 | 1 | 14 | 83 |
+| diabetes | 28 | 33 | 0 | 3 | 13 | 77 |
+| coagulation | 21 | 44 | 0 | 0 | 4 | 69 |
 | microbiology | 0 | 3 | 0 | 0 | 0 | 3 |
 
 ### Brands
 
 | Brand | Products | Instruments | Tests & reagents |
 |---|---:|---:|---:|
-| Abbott | 132 | 9 | 122 |
-| SD Biosensor | 86 | 3 | 83 |
-| Arkray | 72 | 7 | 65 |
-| Roche | 62 | 15 | 47 |
+| Abbott | 190 | 18 | 161 |
+| SD Biosensor | 122 | 7 | 113 |
+| Arkray | 105 | 18 | 79 |
+| Calbiotech | 96 | 0 | 96 |
+| Roche | 96 | 25 | 68 |
+| Boditech | 51 | 6 | 44 |
+| CTK Biotech | 51 | 0 | 51 |
+| Siemens Healthineers | 44 | 17 | 27 |
 | Vedalab | 43 | 1 | 42 |
-| Boditech | 35 | 4 | 31 |
+| HemoCue | 42 | 20 | 11 |
 | Werfen | 35 | 10 | 24 |
+| Acon | 34 | 9 | 19 |
 | Cepheid | 33 | 2 | 31 |
-| Siemens Healthineers | 32 | 13 | 19 |
+| EDAN | 33 | 6 | 25 |
 | QuidelOrtho | 31 | 3 | 28 |
+| EKF Diagnostics | 29 | 7 | 10 |
+| Fujifilm | 29 | 3 | 25 |
 | Molbio | 29 | 3 | 26 |
 | NAL von minden | 29 | 5 | 24 |
-| Fujifilm | 28 | 3 | 25 |
 | Seamaty | 27 | 2 | 25 |
 | Ustar | 27 | 3 | 24 |
 | Concile | 26 | 4 | 22 |
 | Bioantibody | 23 | 1 | 18 |
 | Nova Biomedical | 23 | 14 | 9 |
+| InBios | 21 | 0 | 21 |
+| (none) | 20 | 7 | 11 |
 | Hitado | 20 | 0 | 20 |
-| EDAN | 19 | 4 | 15 |
 | Coyote | 17 | 2 | 14 |
+| Medtronic | 16 | 1 | 14 |
 | Tascom | 16 | 1 | 15 |
 | Micropoint | 15 | 3 | 12 |
+| Erba Mannheim | 14 | 2 | 11 |
 | Bosch | 13 | 1 | 12 |
+| Premier Medical | 13 | 0 | 13 |
 | Radiometer | 13 | 4 | 9 |
 | Aidian | 12 | 2 | 10 |
-| CTK Biotech | 12 | 0 | 12 |
-| HemoCue | 12 | 8 | 4 |
+| Horiba | 12 | 4 | 2 |
 | Precision Biosensor | 12 | 1 | 11 |
 | Dr. Müller | 11 | 4 | 7 |
-| EKF Diagnostics | 11 | 4 | 6 |
 | Meridian Bioscience | 11 | 2 | 9 |
+| Sysmex | 11 | 6 | 4 |
+| Thermo Fisher | 11 | 1 | 10 |
 | PTS Diagnostics | 10 | 2 | 8 |
-| Sysmex | 10 | 6 | 4 |
 | Eurolyser | 9 | 1 | 8 |
 | Haemonetics | 9 | 2 | 7 |
 | LSI Medience | 9 | 1 | 8 |
 | LumiraDx | 9 | 1 | 8 |
+| Qiagen | 9 | 1 | 6 |
+| Wondfo | 9 | 2 | 7 |
+| Acro Biotech | 8 | 0 | 8 |
 | Analyticon | 8 | 2 | 6 |
 | Human | 8 | 3 | 4 |
 | Pluslife | 8 | 2 | 6 |
-| Qiagen | 8 | 1 | 6 |
 | Qualigen | 8 | 1 | 7 |
 | Credo | 7 | 1 | 6 |
 | Macherey-Nagel | 7 | 2 | 5 |
@@ -734,124 +757,232 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 | Bühlmann | 6 | 1 | 5 |
 | FlashDx | 6 | 1 | 5 |
 | Actim | 5 | 1 | 4 |
-| Horiba | 5 | 4 | 1 |
 | OPTI Medical | 5 | 1 | 4 |
-| Premier Medical | 5 | 0 | 5 |
-| Acon | 4 | 1 | 3 |
 | bioMérieux | 4 | 2 | 2 |
 | Biosurfit | 4 | 1 | 3 |
 | DiaSys | 4 | 2 | 2 |
 | iLine | 4 | 3 | 1 |
+| J.Mithra | 4 | 0 | 4 |
 | Melet Schloesing | 4 | 3 | 1 |
 | MNCHIP | 4 | 1 | 3 |
 | Noul | 4 | 1 | 3 |
+| OraSure Technologies | 4 | 0 | 4 |
 | 77 Elektronika | 3 | 2 | 1 |
-| Erba Mannheim | 3 | 0 | 3 |
 | HemoSonics | 3 | 1 | 2 |
 | Jungbrunnen | 3 | 1 | 2 |
+| Mindray | 3 | 1 | 0 |
 | Nihon Kohden | 3 | 3 | 0 |
 | Orphée | 3 | 3 | 0 |
 | Schebo | 3 | 0 | 3 |
+| URIT | 3 | 1 | 2 |
 | Apexbio | 2 | 1 | 1 |
 | Bilimetrix | 2 | 1 | 1 |
 | Bonraybio | 2 | 1 | 1 |
+| Copack | 2 | 0 | 0 |
 | Diesse | 2 | 1 | 1 |
 | Doasense | 2 | 1 | 1 |
 | Dr. Fooke | 2 | 1 | 1 |
 | Dräger | 2 | 1 | 1 |
 | Eschweiler | 2 | 2 | 0 |
 | Essenlix | 2 | 1 | 1 |
-| InBios | 2 | 0 | 2 |
 | Keul | 2 | 0 | 2 |
 | Liofilchem | 2 | 2 | 0 |
 | MeMed | 2 | 1 | 1 |
 | RADI | 2 | 0 | 2 |
-| Acro Biotech | 1 | 0 | 1 |
-| Calbiotech | 1 | 0 | 1 |
+| Zybio | 2 | 2 | 0 |
+| Athenese-Dx | 1 | 0 | 1 |
 | Dymind | 1 | 1 | 0 |
 | Exias Medical | 1 | 1 | 0 |
+| Getein | 1 | 0 | 1 |
+| HemaPrep | 1 | 0 | 0 |
+| Hemax health | 1 | 1 | 0 |
+| Hemax Health | 1 | 0 | 1 |
 | HemoTypeSC | 1 | 0 | 1 |
+| HiMEDIA | 1 | 0 | 0 |
 | iHealth | 1 | 0 | 1 |
+| J Mitra | 1 | 0 | 1 |
 | Lepzi | 1 | 0 | 1 |
 | Medcaptain | 1 | 1 | 0 |
 | Medical Electronic Systems | 1 | 1 | 0 |
-| Mindray | 1 | 1 | 0 |
 | PixCell | 1 | 1 | 0 |
-| Thermo Fisher | 1 | 0 | 1 |
+| Rapha | 1 | 0 | 1 |
+| SD Biosensors | 1 | 1 | 0 |
+| SD | 1 | 0 | 1 |
+| Snibe | 1 | 0 | 1 |
 | Trivitron | 1 | 0 | 1 |
-| Zybio | 1 | 1 | 0 |
 
 ### Field coverage (canonical products)
 
 | Field | Filled | % |
 |---|---:|---:|
-| name | 1217 | 100.0% |
-| brand | 1217 | 100.0% |
-| product_line | 209 | 17.2% |
-| category | 1200 | 98.6% |
-| subcategory | 1212 | 99.6% |
-| technology | 1203 | 98.8% |
-| analyte | 1164 | 95.6% |
-| sample_type | 1156 | 95.0% |
-| product_type | 1212 | 99.6% |
-| subtype | 59 | 4.8% |
-| pack_size | 96 | 7.9% |
-| catalogue_no | 106 | 8.7% |
-| specs (≥1 row) | 1216 | 99.9% |
-| summary | 1217 | 100.0% |
+| name | 1769 | 100.0% |
+| brand | 1749 | 98.9% |
+| product_line | 427 | 24.1% |
+| category | 1682 | 95.1% |
+| subcategory | 1700 | 96.1% |
+| technology | 1685 | 95.3% |
+| analyte | 1579 | 89.3% |
+| sample_type | 1588 | 89.8% |
+| product_type | 1700 | 96.1% |
+| subtype | 171 | 9.7% |
+| pack_size | 389 | 22.0% |
+| catalogue_no | 544 | 30.8% |
+| specs (≥1 row) | 1768 | 99.9% |
+| summary | 1756 | 99.3% |
 | image_local | 0 | 0.0% |
-| documents | 239 | 19.6% |
-| related | 1198 | 98.4% |
-| classification_confidence ≥ 0.7 | 1200 | 98.6% |
+| documents | 239 | 13.5% |
+| related | 1616 | 91.4% |
+| classification_confidence ≥ 0.7 | 1643 | 92.9% |
 
-### Duplicate groups (6) — non-canonical records are hidden and redirect
+### Duplicate groups (40) — non-canonical records are hidden and redirect
 
+- **Roche Combur 7 Test Strip** ← `roche-combur-9-test-strip`, `roche-combur-10-test-strip`
+- **InBios DENV Detect IgM Capture ELISA Kit** ← `inbios-denv-detect-igm-capture-elisa`
+- **InBios ZIKV Detect 2.0 IgM Capture ELISA Kit** ← `inbios-zikv-detect-2-0-igm-capture-elisa`
 - **InBios Kalazar Detect Rapid Test for Visceral Leishmaniasis** ← `inbios-kalazar-detect-rapid-test-for-visceral-leishmaniasis-032ddb`
+- **EDAN BG8 i15 Test Cartridge** ← `edan-bg8-i15-test-cartridge-d70e81`
+- **EDAN BG9 i15 Test Cartridge** ← `edan-bg9-i15-test-cartridge-5f44c8`
+- **EDAN BG10 i15 Test Cartridge** ← `edan-bg10-i15-test-cartridge-05c906`
+- **EDAN CP50 i15 calibrant fluid pack** ← `edan-cp50-i15-calibrant-fluid-pack-4f2b7f`
+- **EDAN i15 control level -1** ← `edan-i15-control-level-1`
+- **EKF Diagnostics Biosen Glucose/Lactate system solution** ← `ekf-diagnostics-biosen-glucose-lactate-system-solution-338428`
 - **Abbott Bioline Strep A** ← `abbott-bioline-strep-a-0cf4c0`
 - **Abbott Bioline HIV 1 2 3.0** ← `abbott-bioline-hiv-1-2-3-0-89bfd7`
 - **Abbott BinaxNOW G6PD** ← `abbott-binaxnow-g6pd-bc031e`
-- **SD Biosensor Standard Q COVID-19 Ag** ← `sd-biosensor-standard-q-covid-19-ag-6bf968`, `sd-biosensor-standard-q-covid-19-ag-7a88d5`
+- **SD Biosensor STANDARD GlucoNavii NFC Blood Glucose Test Strip** ← `sd-biosensor-standard-gluconavii-nfc-blood-glucose-test-strip-02a6f3`
+- **SD Biosensor STANDARD Q Malaria P.F/Pan Ag** ← `sd-biosensor-standard-q-malaria-p-f-pan-ag-3e7693`
+- **SD Biosensor STANDARD Q Dengue Ag Ab Duo** ← `sd-biosensor-standard-q-dengue-ag-plus-ab-duo`
+- **SD Biosensor STANDARD Q Dengue IgM/IgG** ← `sd-biosensor-standard-q-dengue-igm-igg-96fb0d`
+- **CTK Biotech Onsite HEV IgM Rapid Test CE** ← `ctk-biotech-onsite-hev-igm-rapid-test`
+- **CTK Biotech OnSite H.Pylori Ag Rapid Test** ← `ctk-biotech-onsite-h-pylori-ag-rapid-test`
+- **CTK Biotech OnSite HAV IgG IgM Rapid Test** ← `ctk-biotech-onsite-hav-igg-igm-rapid-test-ce`
+- **CTK Biotech OnSite Leptospira IgG IgM Combo Rapid Test** ← `ctk-biotech-onsite-leptospira-igg-igm-combo-rapid-test`
+- **CTK Biotech OnSite S.Typhi Paratyphi Ag Rapid Test** ← `ctk-biotech-onsite-s-typhi-paratyphi-ag-rapid-test-68e100`
+- **CTK Biotech OnSite Typhoid IgG IgM Rapid Test** ← `ctk-biotech-onsite-typhoid-igg-igm-rapid-test`
+- **CTK Biotech OnSite Dengue Ag Rapid Test** ← `ctk-biotech-onsite-dengue-ag-rapid-test-ce`
+- **SD Biosensor STANDARD Q Chikungunya IgM IgG** ← `sd-biosensor-standard-q-chikungunya-igm-igg-746165`
+- **SD Biosensor STANDARD Q Ultra Dot HCV** ← `sd-biosensor-standard-q-ultra-dot-hcv-261382`
+- **SD Biosensor STANDARD Q - HIV Syphilis Combo** ← `sd-biosensor-standard-q-hiv-syphilis-combo-6e8efe`
+- **CTK Biotech OnSite Toxo IgG/IgM Combo Rapid Test** ← `ctk-biotech-onsite-toxo-igg-igm-combo-rapid-test-387f3b`
+- **CTK Biotech TRUSTline Scrub typhus IgG IgM Rapid Test** ← `ctk-biotech-trustline-scrub-typhus-igg-igm-rapid-test`
+- **SD Biosensor Standard Q COVID-19 Ag** ← `sd-biosensor-standard-q-covid-19-ag-6bf968`, `sd-biosensor-standard-q-covid-19-ag-7a88d5`, `sd-biosensor-standard-q-covid-19-ag-814d4a`
+- **SD Biosensor Ultra COVID-19 Ag** ← `sd-biosensor-ultra-covid-19-ag`
+- **CTK Biotech TRUSTwell CHIK IgM ELISA Kit** ← `ctk-biotech-trustwell-chik-igm-elisa-ce`
+- **CTK Biotech TRUSTwell Dengue IgG ELISA Kit** ← `ctk-biotech-trustwell-dengue-igg-elisa-ce`
+- **CTK Biotech RecombiLISA HAV IgM ELISA Kit** ← `ctk-biotech-recombilisa-hav-igm-elisa-ce`
+- **CTK Biotech TRUSTwell Dengue IgM ELISA Kit** ← `ctk-biotech-trustwell-dengue-igm-elisa-ce`
+- **Arkray PocketChem A1c HbA1c Test Kit** ← `arkray-pocketchem-a1c-hba1c-device`
+- **HemoCue Plasma Low Hb System** ← `hemocue-plasma-low-hb-system-dd8a26`
+- **Siemens Healthineers CLINITEK Status+ Analyzer** ← `siemens-healthineers-clinitek-status-analyzer`
+- **Copack GMBH Heamoglobin Color Scale** ← `copack-gmbh-heamoglobin-color-scale-bc01bb`
 - **Abbott DETERMINE HBsAg 2** ← `abbott-determine-hbsag-2-7da385`
 
-### Cross-source merges (13)
+### Cross-source merges (24)
 
+- HemoCue WBC DIFF Microcuvettes (2 listings)
+- Roche CoaguChek Pro II (2 listings)
+- Horiba Microsemi CRP (2 listings)
+- SD Biosensor STANDARD Q Malaria P.F/Pan Ag (2 listings)
+- SD Biosensor STANDARD Q Dengue IgM/IgG (2 listings)
+- SD Biosensor STANDARD Q Chikungunya IgM IgG (2 listings)
 - Abbott Binaxnow Streptococcus Pneumoniae (2 listings)
+- Arkray PocketChem UA PU-4010 (2 listings)
+- Arkray Spotchem El Se-1520 (2 listings)
+- Boditech AFIAS 6 (2 listings)
+- Siemens Healthineers Clinitek Microalbumin 2 (2 listings)
 - Abbott NMP22 BLADDERCHEK (2 listings)
 - SD Biosensor STANDARD Q COVID/Flu Ag Combo (2 listings)
-- SD Biosensor STANDARD Q Dengue IgM/IgG (2 listings)
 - SD Biosensor STANDARD Q Dengue NS1 Ag (2 listings)
 - SD Biosensor STANDARD Q Malaria P.f Ag (2 listings)
 - SD Biosensor STANDARD Q Malaria P.F/P.V Ag (2 listings)
-- SD Biosensor STANDARD Q Malaria P.F/Pan Ag (2 listings)
 - Abbott Bioline ROTAVIRUS (2 listings)
 - Abbott BINAXNOW INFLUENZA A&B CARD (2 listings)
 - Abbott BINAXNOW MALARIA (2 listings)
 - Abbott BINAXNOW RSV CARD (2 listings)
+- Fujifilm DRI-CHEM NX10N (2 listings)
+- Abbott DIGIVAL (2 listings)
+- Abbott NYCOCARD READER II (2 listings)
 - Abbott DETERMINE SYPHILIS TP (2 listings)
 
 ### Scope filter
 
-- Dropped as non-diagnostic: 0
+- Dropped as non-diagnostic: 2
+  - ARKRAY Insulin Cooling Pouch - Uno Z — keyword "insulin cooling pouch"
+  - ARKRAY Insulin Cooling Pouch - Duo Z for Travel — keyword "insulin cooling pouch"
 - Instrument child tests expanded into own records: 1329; matched to existing pages: 0
 
 ### Brand checks
 
-- Name-derived brand disagreed with the stated brand (4):
+- Name-derived brand disagreed with the stated brand (27):
+  - Mindray Wash Buffer: using **Mindray**, source said EKF Diagnostics
   - Calbiotech Free Testosterone ELISA: using **Calbiotech**, source said InBios
+  - Standard E Dengue NS1 Elisa Analyzes Test Kit: using **SD Biosensor**, source said SD
+  - Standard E Dengue Elisa Analyzes IgM Test Kit: using **SD Biosensor**, source said SD
+  - AFIAS 6: using **Boditech**, source said Bio Technology Biotech
+  - CTK Biotech TRUSTwell Ferritin ELISA: using **CTK Biotech**, source said CTK Biotech-Athenese Dx
+  - CTK Biotech TRUSTwell Vitamin-D (Total) ELISA: using **CTK Biotech**, source said Athenese-Dx
+  - CTK Biotech TRUSTwell CHIK IgM ELISA CE: using **CTK Biotech**, source said CTK Biotech-Athenese Dx
+  - CTK Biotech TRUSTwell COVID-19 IgG ELISA: using **CTK Biotech**, source said CTK Biotech-Athenese Dx
+  - CTK Biotech TRUSTwell Dengue Ag ELISA: using **CTK Biotech**, source said CTK Biotech-Athenese Dx
+  - CTK Biotech TRUSTwell Dengue IgG ELISA CE: using **CTK Biotech**, source said CTK Biotech-Athenese Dx
+  - CTK Biotech TRUSTwell Dengue IgM ELISA CE: using **CTK Biotech**, source said CTK Biotech-Athenese Dx
+  - CTK Biotech TRUSTwell Anti-Mullerian hormone (AMH) ELISA: using **CTK Biotech**, source said CTK Biotech-Athenese Dx
+  - CTK Biotech TRUSTwell HBsAg ELISA: using **CTK Biotech**, source said CTK Biotech-Athenese Dx
+  - CTK Biotech TRUSTwell HCV Total Ab ELISA: using **CTK Biotech**, source said CTK Biotech-Athenese Dx
+  - CTK Biotech TRUSTwell HIV Ag-Ab ELISA: using **CTK Biotech**, source said CTK Biotech-Athenese Dx
+  - CTK Biotech TRUSTwell Malaria Ag ELISA: using **CTK Biotech**, source said CTK Biotech-Athenese Dx
+  - CTK Biotech TRUSTwell Syphilis Ab ELISA CE: using **CTK Biotech**, source said CTK Biotech-Athenese Dx
+  - CTK Biotech TRUSTwell Free T3 ELISA Kit: using **CTK Biotech**, source said CTK Biotech-Athenese Dx
+  - CTK Biotech TRUSTwell Free T4 (fT4) ELISA kit: using **CTK Biotech**, source said CTK Biotech-Athenese Dx
+  - CTK Biotech TRUSTwell Total T3 Elisa Kit: using **CTK Biotech**, source said CTK Biotech-Athenese Dx
+  - CTK Biotech TRUSTwell Total T4 ELISA Kit: using **CTK Biotech**, source said CTK Biotech-Athenese Dx
+  - CTK Biotech TRUSTwell TSH ELISA Kit: using **CTK Biotech**, source said CTK Biotech-Athenese Dx
+  - EKF Diagnostics DiaSpect T D24 Hemoglobin Microcuvettes: using **EKF Diagnostics**, source said EKFDiagnostics
   - LumiraDx: using **LumiraDx**, source said Roche
   - Xprecia Prime: using **Siemens Healthineers**, source said Universal Biosensors (OEM/distributor)
   - Xprecia Stride: using **Siemens Healthineers**, source said Universal Biosensors (OEM/distributor)
-- Stated brands not in brands.yaml (passed through, tidied): 0 — 
-- Products with no brand: 0
+- Stated brands not in brands.yaml (passed through, tidied): 14 — Medtronic (16), J.Mithra (4), OraSure Technologies (4), URIT (3), Copack (3), Hemax health (1), Hemax Health (1), SD (1), Rapha (1), J Mitra (1), HiMEDIA (1), Athenese-Dx (1), HemaPrep (1), SD Biosensors (1)
+- Products with no brand: 20 — URIT PFS - 30 Lipid Meter, URIT - 50 Urine Analyzer, URIT 12 Hemoglobin Strips, URIT - 12 Hemoglobin Meter, URIT - 31 Urine Analyzer, Medtronic ACT PLUS Disposable Test Cartridges (HR ACT), TRUST line Filariasis IgG IgM Combo Rapid Test, Hepa card, Hi-PCR Coronavirus (COVID-19) Multiplex Probe PCR Kit, HIPurA Viral RNA Purification Kit, J Mitra ELISA Washer, iScript Reverse Transcription Supermix, Pima CD4 Analyzer, Skyla HB1 POC Clinical Chemistry Auto Analyzer, SD Urometer 120 720 Analyzer For Laboratory, Accu-Check Test Strips, On Call Plus Glucometer Test Strips, CHIKjj Detect IgM ELISA Kit, COPACK Haemoglobin Colour Scale, OraSure Technologies ORAQUICK IN-HOME HIV TEST
 
-### Low classification confidence (< 0.6): 9
+### Low classification confidence (< 0.6): 65
 
+- Arkray Urine test strips AUTION SCREEN — 0.59 (tech: none, analyte: none, sample: structured, type: keyword)
+- Acon On Call MultiPro ACR — 0.59 (tech: none, analyte: keyword, sample: structured, type: none)
+- Acon On Call MultiPro CRP — 0.59 (tech: none, analyte: keyword, sample: structured, type: none)
+- Arkray Orinalyser U500 — 0.48 (tech: none, analyte: none, sample: structured, type: none)
+- Medtronic HMS Plus Cartridges - Heparin Dose Response (HDR) - 6-Channel — 0.59 (tech: none, analyte: none, sample: structured, type: keyword)
+- URIT PFS - 30 Lipid Meter — 0.56 (tech: none, analyte: keyword, sample: none, type: keyword)
 - Qiagen Filter-Tips, 1000 µl — 0.44 (tech: none, analyte: none, sample: none, type: keyword)
-- EDAN i15 control level -1 — 0.46 (tech: none, analyte: none, sample: none, type: keyword:control)
-- Bioantibody Total PSA — 0.5 (tech: none, analyte: structured, sample: none, type: none)
-- Bioantibody Testosterone — 0.5 (tech: none, analyte: structured, sample: none, type: none)
-- Bioantibody β-hCG — 0.5 (tech: none, analyte: structured, sample: none, type: none)
-- Bioantibody LH/FSH/Progesteron/Prolaktin — 0.5 (tech: none, analyte: structured, sample: none, type: none)
-- NAL von minden RSS flash 2.0 — 0.43 (tech: none, analyte: none, sample: none, type: structured)
-- Ustar SP Assay — 0.55 (tech: parent, analyte: none, sample: none, type: component)
-- Ustar UU Assay — 0.55 (tech: parent, analyte: none, sample: none, type: component)
+- Arkray Blood Lactate Meter Lactate Pro 2 LT-1730 — 0.56 (tech: none, analyte: keyword, sample: none, type: keyword)
+- Arkray Trustcheck BPM 3.0 Digital Blood Pressure Monitor — 0.33 (tech: none, analyte: none, sample: none, type: none)
+- Erba Mannheim DekaPHAN LAURA — 0.53 (tech: structured, analyte: none, sample: none, type: none)
+- SD Biosensor G6PD CONTROL — 0.57 (tech: none, analyte: keyword, sample: none, type: keyword:control)
+- Horiba ABX CRP STD — 0.44 (tech: none, analyte: keyword, sample: none, type: none)
+- Horiba ABX Miniclean — 0.33 (tech: none, analyte: none, sample: none, type: none)
+- Horiba ABX Minidil LMG — 0.53 (tech: structured, analyte: none, sample: none, type: none)
+- Horiba CRP Unit 50 — 0.59 (tech: none, analyte: keyword, sample: structured, type: none)
+- EKF Diagnostics Chip sensor glucose (type II) — 0.54 (tech: analyte, analyte: keyword, sample: none, type: none)
+- EDAN BC4 i15 Test Cartridge — 0.44 (tech: none, analyte: none, sample: none, type: keyword)
+- EDAN BG3 i15 Test Cartridge — 0.44 (tech: none, analyte: none, sample: none, type: keyword)
+- EDAN BG4 i15 Test Cartridge — 0.44 (tech: none, analyte: none, sample: none, type: keyword)
+- EDAN BG9 i15 Test Cartridge — 0.59 (tech: none, analyte: none, sample: structured, type: keyword)
+- EDAN CP50 i15 calibrant fluid pack — 0.54 (tech: analyte, analyte: keyword, sample: none, type: none)
+- EDAN CP100 i15 calibrant fluid pack — 0.33 (tech: none, analyte: none, sample: none, type: none)
+- EDAN i15 Controls Level -2 — 0.46 (tech: none, analyte: none, sample: none, type: keyword:control)
+- EDAN i15 Controls Level -3 — 0.46 (tech: none, analyte: none, sample: none, type: keyword:control)
+- Mindray Wash Buffer — 0.56 (tech: category, analyte: none, sample: none, type: keyword)
+- EKF Diagnostics Biosen S-Line Lab+ — 0.33 (tech: none, analyte: none, sample: none, type: none)
+- EKF Diagnostics EasyCon Norm (QC material) — 0.33 (tech: none, analyte: none, sample: none, type: none)
+- EKF Diagnostics Hemolyzing solution cups with 20 µl end-to-end capillaries (plastic capillaries) — 0.33 (tech: none, analyte: none, sample: none, type: none)
+- EKF Diagnostics Safecups micro test tubes 2.0 mL — 0.44 (tech: none, analyte: none, sample: none, type: keyword)
+- EKF Diagnostics Biosen Hemolyzing solution cups with 20 µl end-to-end capillaries — 0.48 (tech: none, analyte: none, sample: structured, type: none)
+- EKF Diagnostics Biosen C-Line GP+ (1 measuring channel) — 0.54 (tech: analyte, analyte: keyword, sample: none, type: none)
+- EKF Diagnostics Biosen C-Line Clinic — 0.54 (tech: analyte, analyte: keyword, sample: none, type: none)
+- Horiba ABX Microsemi CRP — 0.59 (tech: none, analyte: keyword, sample: structured, type: none)
+- EKF Diagnostics Biosen EasyCon Norm — 0.54 (tech: analyte, analyte: keyword, sample: none, type: none)
+- SD Biosensor Standard G6PD Control — 0.57 (tech: none, analyte: keyword, sample: none, type: keyword:control)
+- EKF Diagnostics Biosen Chip sensor glucose (type II) - Grouped — 0.54 (tech: analyte, analyte: keyword, sample: none, type: none)
+- Abbott I Stat Test Cartridges — 0.59 (tech: none, analyte: none, sample: structured, type: keyword)
+- J.Mithra Advantage MAL Card — 0.56 (tech: category, analyte: none, sample: none, type: keyword)
+- Hepa card — 0.56 (tech: category, analyte: none, sample: none, type: keyword)
+- HIPurA Viral RNA Purification Kit — 0.56 (tech: category, analyte: none, sample: none, type: keyword)
