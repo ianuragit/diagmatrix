@@ -18,6 +18,7 @@ horiba-abx-miniclean,Horiba,ABX Miniclean,general,,7,category technology summary
 arkray-orinalyser-u500,Arkray,Orinalyser U500,general,,6,category technology summary product_type analyte pack_size,/products/arkray-orinalyser-u500/
 abbott-i-stat-test-cartridges,Abbott,I Stat Test Cartridges,general,reagent,5,category technology analyte catalogue_no pack_size,/products/abbott-i-stat-test-cartridges/
 bio-rad-iscript-reverse-transcription-supermix,Bio-Rad,iScript Reverse Transcription Supermix,molecular,,5,product_type analyte sample_type catalogue_no pack_size,/products/bio-rad-iscript-reverse-transcription-supermix/
+boditech-ichroma-ii-anemia-controls,Boditech,ichroma II - Anemia Controls,immunoassays,reagent,5,specs analyte sample_type catalogue_no pack_size,/products/boditech-ichroma-ii-anemia-controls/
 boditech-ichroma-ii-tumor-marker-controls,Boditech,ichroma II - Tumor Marker Controls,immunoassays,reagent,5,specs analyte sample_type catalogue_no pack_size,/products/boditech-ichroma-ii-tumor-marker-controls/
 coyote-lyocarte-sars-cov-2-and-flu-a-and-flu-b,Coyote,LyocartE SARS-CoV-2 & Flu A & Flu B,general,,5,category technology product_type catalogue_no pack_size,/products/coyote-lyocarte-sars-cov-2-and-flu-a-and-flu-b/
 edan-bc4-i15-test-cartridge,EDAN,BC4 i15 Test Cartridge,general,reagent,5,category technology analyte sample_type catalogue_no,/products/edan-bc4-i15-test-cartridge/
@@ -60,7 +61,7 @@ bioantibody-uric-acid,Bioantibody,Uric acid,clinical-chemistry,reagent,4,specs s
 bioantibody-uric-acid-creatinine-urea,Bioantibody,Uric acid/creatinine/Urea,clinical-chemistry,reagent,4,specs sample_type catalogue_no pack_size,/products/bioantibody-uric-acid-creatinine-urea/
 bioantibody-vitamin-d,Bioantibody,Vitamin D,clinical-chemistry,reagent,4,specs sample_type catalogue_no pack_size,/products/bioantibody-vitamin-d/
 biomerieux-hs-ctni,bioMérieux,hs-cTnI,general,reagent,4,category technology catalogue_no pack_size,/products/biomerieux-hs-ctni/
-boditech-afias-6-dd2320,Boditech,AFIAS 6,immunoassays,reagent,4,analyte sample_type catalogue_no pack_size,/products/boditech-afias-6-dd2320/
+boditech-ichroma-test,Boditech,ichroma Test,immunoassays,reagent,4,analyte sample_type catalogue_no pack_size,/products/boditech-ichroma-test/
 bonraybio-sperm-test-cassette-cs1,Bonraybio,Sperm test cassette CS1,general,reagent,4,category sample_type catalogue_no pack_size,/products/bonraybio-sperm-test-cassette-cs1/
 cellavision-hemaprep,CellaVision,HemaPrep,hematology,,4,product_type analyte sample_type pack_size,/products/cellavision-hemaprep/
 dr-fooke-total-ige-basic-set,Dr. Fooke,Total IgE basic set,general,reagent,4,category technology catalogue_no pack_size,/products/dr-fooke-total-ige-basic-set/
@@ -88,6 +89,9 @@ roche-combur-10-test-strip,Roche,Combur 10 Test Strip,urinalysis,reagent,4,analy
 roche-combur-10-ux-test-strip,Roche,Combur 10 UX Test strip,urinalysis,reagent,4,analyte sample_type catalogue_no pack_size,/products/roche-combur-10-ux-test-strip/
 roche-combur-9-test-strip,Roche,Combur 9 Test Strip,urinalysis,reagent,4,analyte sample_type catalogue_no pack_size,/products/roche-combur-9-test-strip/
 sd-biosensor-standard-g6pd-control,SD Biosensor,Standard G6PD Control,general,reagent,4,category technology sample_type pack_size,/products/sd-biosensor-standard-g6pd-control/
+snibe-maglumi-reaction-cup,Snibe,MAGLUMI Reaction Cup,immunoassays,reagent,4,analyte sample_type catalogue_no pack_size,/products/snibe-maglumi-reaction-cup/
+snibe-maglumi-starter-1-plus-2,Snibe,MAGLUMI Starter 1+2,immunoassays,reagent,4,analyte sample_type catalogue_no pack_size,/products/snibe-maglumi-starter-1-plus-2/
+strandard-f-u-albumin-fia,,Strandard F U-Albumin FIA,immunoassays,reagent,4,brand sample_type catalogue_no pack_size,/products/strandard-f-u-albumin-fia/
 sysmex-ca-104,Sysmex,CA 104,coagulation,,4,product_type sample_type catalogue_no pack_size,/products/sysmex-ca-104/
 ustar-bp-assay,Ustar,BP Assay,molecular,reagent,4,specs sample_type catalogue_no pack_size,/products/ustar-bp-assay/
 ustar-hpv-16-18-assay,Ustar,HPV 16/18 Assay,molecular,reagent,4,specs sample_type catalogue_no pack_size,/products/ustar-hpv-16-18-assay/
@@ -103,6 +107,9 @@ abbott-abon-hcg-one-step-pregnancy-tests-for-professional-use,Abbott,ABON hCG On
 abbott-bioline-chlamydia,Abbott,Bioline CHLAMYDIA,rapid-tests,reagent,3,sample_type catalogue_no pack_size,/products/abbott-bioline-chlamydia/
 abbott-nycocard-crp,Abbott,NYCOCARD CRP,general,,3,category technology product_type,/products/abbott-nycocard-crp/
 abbott-tbi,Abbott,TBI,blood-gas,reagent,3,analyte catalogue_no pack_size,/products/abbott-tbi/
+acon-fiaflex-crp-fia-test,Acon,FIAflex CRP FIA Test,immunoassays,reagent,3,sample_type catalogue_no pack_size,/products/acon-fiaflex-crp-fia-test/
+acon-fiaflex-il-6-fia-test,Acon,FIAflex IL-6 FIA Test,immunoassays,reagent,3,sample_type catalogue_no pack_size,/products/acon-fiaflex-il-6-fia-test/
+acon-fiaflex-myoglobin-fia-test,Acon,FIAflex Myoglobin FIA Test,immunoassays,reagent,3,sample_type catalogue_no pack_size,/products/acon-fiaflex-myoglobin-fia-test/
 acon-mission-hemoglobin-hb-and-test-strip,Acon,Mission Hemoglobin Hb And Test Strip,rapid-tests,reagent,3,sample_type catalogue_no pack_size,/products/acon-mission-hemoglobin-hb-and-test-strip/
 acon-on-call-plus-glucometer-test-strips,Acon,On Call Plus Glucometer Test Strips,diabetes,reagent,3,sample_type catalogue_no pack_size,/products/acon-on-call-plus-glucometer-test-strips/
 aidian-uricult,Aidian,Uricult,microbiology,reagent,3,specs catalogue_no pack_size,/products/aidian-uricult/
@@ -119,9 +126,31 @@ arkray-thrombospan-ls-coagulation-kit,Arkray,Thrombospan LS Coagulation Kit,coag
 arkray-total-protein,Arkray,Total-Protein,clinical-chemistry,reagent,3,analyte catalogue_no pack_size,/products/arkray-total-protein/
 arkray-uriflet-s-11ua-urine-test-strip,Arkray,Uriflet S 11UA Urine Test Strip,rapid-tests,reagent,3,analyte catalogue_no pack_size,/products/arkray-uriflet-s-11ua-urine-test-strip/
 arkray-urine-test-strips-aution-screen,Arkray,Urine test strips AUTION SCREEN,general,reagent,3,category technology analyte,/products/arkray-urine-test-strips-aution-screen/
+beckman-coulter-access-waste-bags,Beckman Coulter,Access WASTE BAGS,immunoassays,reagent,3,analyte sample_type pack_size,/products/beckman-coulter-access-waste-bags/
 biomerieux-spinchip,bioMérieux,Spinchip,general,instrument,3,category technology catalogue_no,/products/biomerieux-spinchip/
+boditech-afias-1-358186,Boditech,AFIAS-1 (Cat. FPRR019),immunoassays,reagent,3,analyte sample_type pack_size,/products/boditech-afias-1-358186/
+boditech-afias-10-a362a6,Boditech,AFIAS-10,immunoassays,reagent,3,analyte catalogue_no pack_size,/products/boditech-afias-10-a362a6/
+boditech-afias-3-36d1e9,Boditech,AFIAS-3,immunoassays,reagent,3,analyte catalogue_no pack_size,/products/boditech-afias-3-36d1e9/
+boditech-afias-6-b99f66,Boditech,AFIAS-6 (Cat. FPRR020),immunoassays,reagent,3,analyte sample_type pack_size,/products/boditech-afias-6-b99f66/
+boditech-afias-anti-ccp-plus,Boditech,AFIAS Anti-CCP Plus,immunoassays,reagent,3,analyte catalogue_no pack_size,/products/boditech-afias-anti-ccp-plus/
+boditech-afias-cardiac-triple,Boditech,AFIAS Cardiac Triple,immunoassays,reagent,3,analyte catalogue_no pack_size,/products/boditech-afias-cardiac-triple/
+boditech-afias-free-anti-infliximab,Boditech,AFIAS Free Anti-Infliximab,immunoassays,reagent,3,sample_type catalogue_no pack_size,/products/boditech-afias-free-anti-infliximab/
+boditech-afias-hba1c,Boditech,AFIAS HbA1c,immunoassays,reagent,3,sample_type catalogue_no pack_size,/products/boditech-afias-hba1c/
+boditech-afias-interleukin-6-il-6,Boditech,AFIAS Interleukin-6 (IL-6),immunoassays,reagent,3,sample_type catalogue_no pack_size,/products/boditech-afias-interleukin-6-il-6/
+boditech-afias-myoglobin,Boditech,AFIAS Myoglobin,immunoassays,reagent,3,sample_type catalogue_no pack_size,/products/boditech-afias-myoglobin/
+boditech-afias-pct,Boditech,AFIAS PCT,immunoassays,reagent,3,sample_type catalogue_no pack_size,/products/boditech-afias-pct/
+boditech-afias-prolactin-prl,Boditech,AFIAS Prolactin (PRL),immunoassays,reagent,3,sample_type catalogue_no pack_size,/products/boditech-afias-prolactin-prl/
+boditech-afias-st2,Boditech,AFIAS ST2,immunoassays,reagent,3,analyte catalogue_no pack_size,/products/boditech-afias-st2/
+boditech-afias-testosterone,Boditech,AFIAS Testosterone,immunoassays,reagent,3,sample_type catalogue_no pack_size,/products/boditech-afias-testosterone/
 boditech-afias-troponin-i-tn-i-plus,Boditech,AFIAS Troponin I (Tn-I) Plus,immunoassays,reagent,3,sample_type catalogue_no pack_size,/products/boditech-afias-troponin-i-tn-i-plus/
+boditech-ichroma-anti-ccp-test,Boditech,ichroma Anti-CCP Test,immunoassays,reagent,3,analyte catalogue_no pack_size,/products/boditech-ichroma-anti-ccp-test/
+boditech-ichroma-i-chamber,Boditech,ichroma i-Chamber,immunoassays,reagent,3,analyte sample_type pack_size,/products/boditech-ichroma-i-chamber/
+boditech-ichroma-ii-autoimmune-controls,Boditech,ichroma II - Autoimmune Controls,immunoassays,reagent,3,analyte sample_type pack_size,/products/boditech-ichroma-ii-autoimmune-controls/
+boditech-ichroma-ii-cardiac-controls,Boditech,ichroma II - Cardiac Controls,immunoassays,reagent,3,analyte sample_type catalogue_no,/products/boditech-ichroma-ii-cardiac-controls/
 boditech-ichroma-ii-controls,Boditech,ichroma II Controls,immunoassays,reagent,3,analyte sample_type catalogue_no,/products/boditech-ichroma-ii-controls/
+boditech-ichroma-ii-diabetes-controls,Boditech,ichroma II - Diabetes Controls,immunoassays,reagent,3,analyte sample_type catalogue_no,/products/boditech-ichroma-ii-diabetes-controls/
+boditech-ichroma-ii-infection-controls,Boditech,ichroma II - Infection Controls,immunoassays,reagent,3,analyte sample_type catalogue_no,/products/boditech-ichroma-ii-infection-controls/
+boditech-ichroma-testoste1-test,Boditech,ichroma testoste1 Test,immunoassays,reagent,3,sample_type catalogue_no pack_size,/products/boditech-ichroma-testoste1-test/
 bonraybio-lenshooke-x3-pro,Bonraybio,LensHooke X3 Pro,general,instrument,3,category analyte catalogue_no,/products/bonraybio-lenshooke-x3-pro/
 bosch-mpxv,Bosch,MPXV,molecular,reagent,3,sample_type catalogue_no pack_size,/products/bosch-mpxv/
 calbiotech-c-peptide-elisa,Calbiotech,C-Peptide ELISA,immunoassays,reagent,3,sample_type catalogue_no pack_size,/products/calbiotech-c-peptide-elisa/
@@ -170,6 +199,8 @@ medtronic-hms-plus-cartridges-tan-1-5-3-0-mg-kg,Medtronic,HMS Plus Cartridges - 
 medtronic-hms-plus-cartridges-white-2-5-5-0-mg-kg,Medtronic,HMS Plus Cartridges - White - 2.5-5.0 mg/kg,general,reagent,3,category technology pack_size,/products/medtronic-hms-plus-cartridges-white-2-5-5-0-mg-kg/
 meridian-bioscience-carba-c,Meridian Bioscience,Carba C,molecular,reagent,3,sample_type catalogue_no pack_size,/products/meridian-bioscience-carba-c/
 micropoint-qlabs-fib,Micropoint,qLabs FIB,general,instrument,3,category technology catalogue_no,/products/micropoint-qlabs-fib/
+mindray-adrenocorticotropic-hormone-clia,Mindray,Adrenocorticotropic hormone (CLIA),immunoassays,reagent,3,analyte catalogue_no pack_size,/products/mindray-adrenocorticotropic-hormone-clia/
+mindray-cd-80-detergent,Mindray,CD 80 Detergent,immunoassays,reagent,3,analyte sample_type pack_size,/products/mindray-cd-80-detergent/
 molbio-nipah,Molbio,Nipah,molecular,reagent,3,analyte catalogue_no pack_size,/products/molbio-nipah/
 molbio-rabies,Molbio,Rabies,molecular,reagent,3,analyte catalogue_no pack_size,/products/molbio-rabies/
 molbio-salmonella,Molbio,Salmonella,molecular,reagent,3,analyte catalogue_no pack_size,/products/molbio-salmonella/
@@ -192,6 +223,15 @@ siemens-healthineers-col-adp-measuring-cell,Siemens Healthineers,COL/ADP-measuri
 siemens-healthineers-col-epi-measuring-cell,Siemens Healthineers,COL/EPI-measuring cell,coagulation,reagent,3,analyte catalogue_no pack_size,/products/siemens-healthineers-col-epi-measuring-cell/
 siemens-healthineers-multistix-10-sg-reagent-urine-analysis-strip,Siemens Healthineers,Multistix 10 SG Reagent Urine Analysis Strip,urinalysis,reagent,3,analyte catalogue_no pack_size,/products/siemens-healthineers-multistix-10-sg-reagent-urine-analysis-strip/
 siemens-healthineers-p2y-measuring-cell,Siemens Healthineers,P2Y-measuring cell,coagulation,reagent,3,analyte catalogue_no pack_size,/products/siemens-healthineers-p2y-measuring-cell/
+snibe-maglumi-2000-plus-chemiluminescence-immunoassay-clia-system,Snibe,Maglumi 2000 Plus Chemiluminescence Immunoassay (CLIA) System,immunoassays,reagent,3,analyte sample_type pack_size,/products/snibe-maglumi-2000-plus-chemiluminescence-immunoassay-clia-system/
+snibe-maglumi-600-chemiluminescence-immunoassay-clia-system,Snibe,Maglumi 600 Chemiluminescence Immunoassay (CLIA) System,immunoassays,reagent,3,analyte sample_type pack_size,/products/snibe-maglumi-600-chemiluminescence-immunoassay-clia-system/
+snibe-maglumi-800-chemiluminescence-immunoassay-clia-system,Snibe,Maglumi 800 Chemiluminescence Immunoassay (CLIA) System,immunoassays,reagent,3,analyte sample_type pack_size,/products/snibe-maglumi-800-chemiluminescence-immunoassay-clia-system/
+snibe-maglumi-androstenedione-clia,Snibe,MAGLUMI Androstenedione CLIA,immunoassays,reagent,3,analyte catalogue_no pack_size,/products/snibe-maglumi-androstenedione-clia/
+snibe-maglumi-tip,Snibe,MAGLUMI Tip,immunoassays,reagent,3,analyte sample_type pack_size,/products/snibe-maglumi-tip/
+snibe-maglumi-x3-fully-auto-chemiluminescence-immunoassay-clia-system,Snibe,MAGLUMI X3 Fully-auto Chemiluminescence Immunoassay (CLIA) System,immunoassays,reagent,3,analyte sample_type pack_size,/products/snibe-maglumi-x3-fully-auto-chemiluminescence-immunoassay-clia-system/
+snibe-maglumi-x6-fully-auto-chemiluminescence-immunoassay-clia-system,Snibe,MAGLUMI X6 Fully-auto Chemiluminescence Immunoassay (CLIA) System,immunoassays,reagent,3,analyte sample_type pack_size,/products/snibe-maglumi-x6-fully-auto-chemiluminescence-immunoassay-clia-system/
+snibe-maglumi-x8-fully-auto-chemiluminescence-immunoassay-clia-system,Snibe,MAGLUMI X8 Fully-auto Chemiluminescence Immunoassay (CLIA) System,immunoassays,reagent,3,analyte sample_type pack_size,/products/snibe-maglumi-x8-fully-auto-chemiluminescence-immunoassay-clia-system/
+standrard-f-hba1c,,Standrard F HbA1c,immunoassays,reagent,3,brand catalogue_no pack_size,/products/standrard-f-hba1c/
 thermo-fisher-taqpath-covid-19-combo-kit,Thermo Fisher,Taqpath COVID-19 Combo Kit,rapid-tests,reagent,3,sample_type catalogue_no pack_size,/products/thermo-fisher-taqpath-covid-19-combo-kit/
 urit-12-hemoglobin-strips,URIT,12 Hemoglobin Strips,clinical-chemistry,reagent,3,sample_type catalogue_no pack_size,/products/urit-12-hemoglobin-strips/
 urit-pfs-30-lipid-meter,URIT,PFS - 30 Lipid Meter,general,instrument,3,category technology catalogue_no,/products/urit-pfs-30-lipid-meter/
@@ -206,6 +246,7 @@ werfen-hep-tem,Werfen,HEP-TEM,coagulation,reagent,3,analyte catalogue_no pack_si
 werfen-in-tem,Werfen,IN-TEM,coagulation,reagent,3,analyte catalogue_no pack_size,/products/werfen-in-tem/
 werfen-r-ex-tem,Werfen,R EX-TEM,coagulation,reagent,3,analyte catalogue_no pack_size,/products/werfen-r-ex-tem/
 wondfo-blood-gas-analyzer-calibration-tape,Wondfo,Blood Gas Analyzer Calibration Tape,blood-gas,reagent,3,sample_type catalogue_no pack_size,/products/wondfo-blood-gas-analyzer-calibration-tape/
+zybio-exi-1800-system-clia,Zybio,EXI 1800 System (CLIA),immunoassays,reagent,3,analyte sample_type pack_size,/products/zybio-exi-1800-system-clia/
 77-elektronika-labstrip-u11-plus,77 Elektronika,LabStrip U11 Plus,urinalysis,reagent,2,catalogue_no pack_size,/products/77-elektronika-labstrip-u11-plus/
 abbott-abon-chlamydia,Abbott,Abon Chlamydia,rapid-tests,reagent,2,catalogue_no pack_size,/products/abbott-abon-chlamydia/
 abbott-abon-syphilis-ultra-rapid-tests-whole-blood-serum-plasma,Abbott,ABON Syphilis Ultra Rapid Tests (Whole Blood Serum Plasma),rapid-tests,reagent,2,catalogue_no pack_size,/products/abbott-abon-syphilis-ultra-rapid-tests-whole-blood-serum-plasma/
@@ -268,7 +309,19 @@ abbott-rsv,Abbott,RSV,molecular,reagent,2,catalogue_no pack_size,/products/abbot
 abbott-urocolor-10,Abbott,UroColor 10,clinical-chemistry,,2,product_type analyte,/products/abbott-urocolor-10/
 abbott-urometer-120-urine-chemistry-analyzer,Abbott,UROMETER 120 URINE CHEMISTRY ANALYZER,clinical-chemistry,instrument,2,analyte catalogue_no,/products/abbott-urometer-120-urine-chemistry-analyzer/
 abbott-urometer-720-urine-chemistry-analyzer,Abbott,UROMETER 720 URINE CHEMISTRY ANALYZER,clinical-chemistry,instrument,2,analyte catalogue_no,/products/abbott-urometer-720-urine-chemistry-analyzer/
+acon-fiaflex-beta-hcg-fia-test,Acon,FIAflex beta-hCG FIA Test,immunoassays,reagent,2,catalogue_no pack_size,/products/acon-fiaflex-beta-hcg-fia-test/
+acon-fiaflex-ck-mb-fia-test,Acon,FIAflex CK-MB FIA Test,immunoassays,reagent,2,catalogue_no pack_size,/products/acon-fiaflex-ck-mb-fia-test/
+acon-fiaflex-ctni-ck-mb-myo-fia-test,Acon,FIAflex cTnI/CK-MB/Myo FIA Test,immunoassays,reagent,2,catalogue_no pack_size,/products/acon-fiaflex-ctni-ck-mb-myo-fia-test/
 acon-fiaflex-ctni-fia-test,Acon,FIAflex cTnI FIA Test,immunoassays,reagent,2,catalogue_no pack_size,/products/acon-fiaflex-ctni-fia-test/
+acon-fiaflex-d-dimer-fia-test,Acon,FIAflex D-Dimer FIA Test,immunoassays,reagent,2,catalogue_no pack_size,/products/acon-fiaflex-d-dimer-fia-test/
+acon-fiaflex-fluorescent-immunoassay-analyzer,Acon,FIAflex Fluorescent Immunoassay Analyzer,immunoassays,instrument,2,analyte catalogue_no,/products/acon-fiaflex-fluorescent-immunoassay-analyzer/
+acon-fiaflex-hba1c-fia-test,Acon,FIAflex HbA1c FIA Test,immunoassays,reagent,2,catalogue_no pack_size,/products/acon-fiaflex-hba1c-fia-test/
+acon-fiaflex-nt-probnp-fia-test,Acon,FIAflex NT-proBNP FIA Test,immunoassays,reagent,2,catalogue_no pack_size,/products/acon-fiaflex-nt-probnp-fia-test/
+acon-fiaflex-pct-fia-test,Acon,FIAflex PCT FIA Test,immunoassays,reagent,2,catalogue_no pack_size,/products/acon-fiaflex-pct-fia-test/
+acon-fiaflex-t3-fia-test,Acon,FIAflex T3 FIA Test,immunoassays,reagent,2,catalogue_no pack_size,/products/acon-fiaflex-t3-fia-test/
+acon-fiaflex-t4-fia-test,Acon,FIAflex T4 FIA Test,immunoassays,reagent,2,catalogue_no pack_size,/products/acon-fiaflex-t4-fia-test/
+acon-fiaflex-tsh-fia-test,Acon,FIAflex TSH FIA Test,immunoassays,reagent,2,catalogue_no pack_size,/products/acon-fiaflex-tsh-fia-test/
+acon-fiaflex-vitamin-d-fia-test,Acon,FIAflex Vitamin D FIA Test,immunoassays,reagent,2,catalogue_no pack_size,/products/acon-fiaflex-vitamin-d-fia-test/
 acon-flowflex-sars-cov-2-antigen-rapid-test,Acon,Flowflex SARS-CoV-2 Antigen Rapid Test,rapid-tests,reagent,2,catalogue_no pack_size,/products/acon-flowflex-sars-cov-2-antigen-rapid-test/
 acon-mission-cholesterol-test-devices-3-in-1-lipid-panel,Acon,Mission Cholesterol Test Devices- 3-in-1 Lipid Panel,general,reagent,2,category technology,/products/acon-mission-cholesterol-test-devices-3-in-1-lipid-panel/
 acon-mission-ultra-cholesterol-monitoring-system,Acon,Mission Ultra Cholesterol Monitoring System,general,instrument,2,category technology,/products/acon-mission-ultra-cholesterol-monitoring-system/
@@ -360,6 +413,7 @@ arkray-urea,Arkray,Urea,clinical-chemistry,reagent,2,catalogue_no pack_size,/pro
 arkray-urea-bun-single-strips,Arkray,Urea (BUN) single strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-urea-bun-single-strips/
 arkray-uric-acid-ua-single-strips,Arkray,Uric acid (UA) single strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-uric-acid-ua-single-strips/
 arkray-uriflet-s-11-ua,Arkray,Uriflet S 11 UA,urinalysis,reagent,2,catalogue_no pack_size,/products/arkray-uriflet-s-11-ua/
+beckman-coulter-access-system-check-solution-clia,Beckman Coulter,Access System Check Solution (CLIA),immunoassays,reagent,2,analyte sample_type,/products/beckman-coulter-access-system-check-solution-clia/
 becton-dickinson-flu-a-plus-b,Becton Dickinson,Flu A+B,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/becton-dickinson-flu-a-plus-b/
 becton-dickinson-group-a-strep,Becton Dickinson,Group A Strep,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/becton-dickinson-group-a-strep/
 becton-dickinson-rsv,Becton Dickinson,RSV,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/becton-dickinson-rsv/
@@ -370,7 +424,36 @@ biomerieux-respiratory-panel,bioMérieux,Respiratory Panel,molecular,reagent,2,c
 biosurfit-bc,Biosurfit,BC,hematology,reagent,2,catalogue_no pack_size,/products/biosurfit-bc/
 biosurfit-crp,Biosurfit,CRP,hematology,reagent,2,catalogue_no pack_size,/products/biosurfit-crp/
 biosurfit-hba1c,Biosurfit,HbA1c,diabetes,reagent,2,catalogue_no pack_size,/products/biosurfit-hba1c/
+boditech-afias-alpha-fetoprotein-afp,Boditech,AFIAS Alpha-Fetoprotein (AFP),immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-alpha-fetoprotein-afp/
+boditech-afias-anti-mullerian-hormone-amh,Boditech,AFIAS Anti-Mullerian Hormone (AMH),immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-anti-mullerian-hormone-amh/
+boditech-afias-carcinoembryonic-antigen-cea,Boditech,AFIAS Carcinoembryonic antigen (CEA),immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-carcinoembryonic-antigen-cea/
+boditech-afias-cortisol,Boditech,AFIAS Cortisol,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-cortisol/
+boditech-afias-covid-19-flu-a-plus-b-rsv-ag,Boditech,AFIAS COVID-19/Flu A+B/RSV Ag,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-covid-19-flu-a-plus-b-rsv-ag/
+boditech-afias-creatine-kinase-muscle-brain-ck-mb,Boditech,AFIAS Creatine Kinase Muscle Brain (CK-MB),immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-creatine-kinase-muscle-brain-ck-mb/
+boditech-afias-crp,Boditech,AFIAS CRP,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-crp/
+boditech-afias-d-dimer,Boditech,AFIAS D-Dimer,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-d-dimer/
+boditech-afias-ferritin,Boditech,AFIAS Ferritin,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-ferritin/
+boditech-afias-follicle-stimulating-hormone-fsh,Boditech,AFIAS Follicle-stimulating Hormone (FSH),immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-follicle-stimulating-hormone-fsh/
+boditech-afias-hscrp,Boditech,AFIAS hsCRP,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-hscrp/
+boditech-afias-human-chorionic-gonadotropin-beta-hcg,Boditech,AFIAS Human Chorionic Gonadotropin (beta-hCG),immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-human-chorionic-gonadotropin-beta-hcg/
+boditech-afias-infliximab,Boditech,AFIAS Infliximab,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-infliximab/
+boditech-afias-luteinizing-hormone-lh,Boditech,AFIAS Luteinizing Hormone (LH),immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-luteinizing-hormone-lh/
+boditech-afias-microalbumin,Boditech,AFIAS Microalbumin,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-microalbumin/
+boditech-afias-mxa-crp,Boditech,AFIAS MxA/CRP,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-mxa-crp/
+boditech-afias-norovirus-noro,Boditech,AFIAS Norovirus (Noro),immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-norovirus-noro/
+boditech-afias-nt-probnp,Boditech,AFIAS NT-proBNP,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-nt-probnp/
+boditech-afias-pct-plus,Boditech,AFIAS PCT Plus,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-pct-plus/
+boditech-afias-progesterone,Boditech,AFIAS Progesterone,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-progesterone/
+boditech-afias-prostate-specific-antigen-psa,Boditech,AFIAS Prostate Specific Antigen (PSA),immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-prostate-specific-antigen-psa/
+boditech-afias-rotavirus-adenovirus-rota-adeno,Boditech,AFIAS Rotavirus/Adenovirus (Rota/Adeno),immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-rotavirus-adenovirus-rota-adeno/
+boditech-afias-rotavirus-rota,Boditech,AFIAS Rotavirus (Rota),immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-rotavirus-rota/
+boditech-afias-t3,Boditech,AFIAS T3,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-t3/
+boditech-afias-t4,Boditech,AFIAS T4,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-t4/
+boditech-afias-thyroid-stimulating-hormone-tsh,Boditech,AFIAS Thyroid Stimulating Hormone (TSH),immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-thyroid-stimulating-hormone-tsh/
 boditech-afias-thyroid-stimulating-hormone-tsh-plus,Boditech,AFIAS Thyroid Stimulating Hormone (TSH) Plus,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-thyroid-stimulating-hormone-tsh-plus/
+boditech-afias-total-anti-infliximab,Boditech,AFIAS Total Anti-Infliximab,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-total-anti-infliximab/
+boditech-afias-troponin-t-tn-t,Boditech,AFIAS Troponin T(Tn-T),immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-troponin-t-tn-t/
+boditech-afias-vitamin-d-neo,Boditech,AFIAS Vitamin D Neo,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afias-vitamin-d-neo/
 boditech-afp,Boditech,AFP,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-afp/
 boditech-amh,Boditech,AMH,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-amh/
 boditech-ca125,Boditech,CA125,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-ca125/
@@ -384,7 +467,14 @@ boditech-ferritin,Boditech,Ferritin,immunoassays,reagent,2,catalogue_no pack_siz
 boditech-free-psa,Boditech,Free PSA,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-free-psa/
 boditech-fsh,Boditech,FSH,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-fsh/
 boditech-hba1c,Boditech,HBA1c,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-hba1c/
+boditech-i-chroma-iii-diagnostic-immuno-analyzer,Boditech,I Chroma III Diagnostic Immuno Analyzer,immunoassays,instrument,2,analyte catalogue_no,/products/boditech-i-chroma-iii-diagnostic-immuno-analyzer/
+boditech-ichroma-amh-test,Boditech,Ichroma AMH Test,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-ichroma-amh-test/
+boditech-ichroma-d-dimer-test,Boditech,ichroma D Dimer Test,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-ichroma-d-dimer-test/
 boditech-ichroma-ii-hormone-controls,Boditech,ichroma II - Hormone Controls,immunoassays,reagent,2,analyte sample_type,/products/boditech-ichroma-ii-hormone-controls/
+boditech-ichroma-ii-immuno-analyzer,Boditech,Ichroma II Immuno Analyzer,immunoassays,instrument,2,analyte catalogue_no,/products/boditech-ichroma-ii-immuno-analyzer/
+boditech-ichroma-lh-test,Boditech,ichroma LH Test,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-ichroma-lh-test/
+boditech-ichroma-psa-test,Boditech,ichroma PSA Test,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-ichroma-psa-test/
+boditech-ichroma-tsh-test,Boditech,ichroma TSH Test,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-ichroma-tsh-test/
 boditech-il-6,Boditech,IL-6,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-il-6/
 boditech-interleukin-6,Boditech,Interleukin-6,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-interleukin-6/
 boditech-lh,Boditech,LH,immunoassays,reagent,2,catalogue_no pack_size,/products/boditech-lh/
@@ -608,7 +698,9 @@ hitado-nobistrip-microalbumin-creatinine,Hitado,NobiStrip Microalbumin/creatinin
 hitado-nobistrip-u10,Hitado,NobiStrip U10,urinalysis,reagent,2,catalogue_no pack_size,/products/hitado-nobistrip-u10/
 hitado-strep-a,Hitado,Strep A,rapid-tests,reagent,2,catalogue_no pack_size,/products/hitado-strep-a/
 hitado-troponin-i,Hitado,Troponin I,rapid-tests,reagent,2,catalogue_no pack_size,/products/hitado-troponin-i/
+horiba-25-hydroxyvitamin-d-clia,Horiba,25-Hydroxyvitamin D (CLIA),immunoassays,reagent,2,analyte sample_type,/products/horiba-25-hydroxyvitamin-d-clia/
 horiba-abx-minocal,Horiba,ABX Minocal,hematology,,2,product_type analyte,/products/horiba-abx-minocal/
+horiba-anti-tpo-clia,Horiba,Anti-TPO (CLIA),immunoassays,reagent,2,analyte catalogue_no,/products/horiba-anti-tpo-clia/
 horiba-microsemi-crp-lc-7676,Horiba,Microsemi CRP LC-7676,hematology,reagent,2,catalogue_no pack_size,/products/horiba-microsemi-crp-lc-7676/
 human-cholesterol,Human,Cholesterol,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/human-cholesterol/
 human-cuvettes,Human,Cuvettes,diabetes,consumable,2,catalogue_no pack_size,/products/human-cuvettes/
@@ -672,6 +764,10 @@ micropoint-pct,Micropoint,PCT,clinical-chemistry,reagent,2,catalogue_no pack_siz
 micropoint-ptz-inr,Micropoint,PTZ-INR,coagulation,reagent,2,catalogue_no pack_size,/products/micropoint-ptz-inr/
 micropoint-ptz-inr-aptt-combo,Micropoint,PTZ-INR/aPTT Combo,coagulation,reagent,2,catalogue_no pack_size,/products/micropoint-ptz-inr-aptt-combo/
 micropoint-troponin-i,Micropoint,Troponin-I,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/micropoint-troponin-i/
+mindray-25-oh-vitamin-d-total-clia,Mindray,25-OH-Vitamin D Total (CLIA),immunoassays,reagent,2,catalogue_no pack_size,/products/mindray-25-oh-vitamin-d-total-clia/
+mindray-alpha-fetoprotein-clia,Mindray,Alpha-fetoprotein (CLIA),immunoassays,reagent,2,catalogue_no pack_size,/products/mindray-alpha-fetoprotein-clia/
+mindray-neuron-specific-enolase-clia,Mindray,Neuron-specific enolase (CLIA),immunoassays,reagent,2,analyte catalogue_no,/products/mindray-neuron-specific-enolase-clia/
+mindray-parathyroid-hormone-clia,Mindray,Parathyroid hormone (CLIA),immunoassays,reagent,2,analyte catalogue_no,/products/mindray-parathyroid-hormone-clia/
 mindray-wash-buffer,Mindray,Wash Buffer,immunoassays,consumable,2,catalogue_no pack_size,/products/mindray-wash-buffer/
 mnchip-clinical-emergency-lyophilized-kit,MNCHIP,Clinical Emergency Lyophilized Kit,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/mnchip-clinical-emergency-lyophilized-kit/
 mnchip-electrolyte-panel-lypholized-kit,MNCHIP,Electrolyte Panel Lypholized Kit,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/mnchip-electrolyte-panel-lypholized-kit/
@@ -901,6 +997,12 @@ sd-biosensor-sars-cov-2,SD Biosensor,SARS-CoV-2,molecular,reagent,2,catalogue_no
 sd-biosensor-standard-e-dengue-elisa-analyzes-igm-test-kit,SD Biosensor,Standard E Dengue Elisa Analyzes IgM Test Kit,immunoassays,reagent,2,catalogue_no pack_size,/products/sd-biosensor-standard-e-dengue-elisa-analyzes-igm-test-kit/
 sd-biosensor-standard-e-dengue-igg-elisa-analyzes-test-kit,SD Biosensor,Standard E Dengue IgG Elisa Analyzes Test Kit,immunoassays,reagent,2,catalogue_no pack_size,/products/sd-biosensor-standard-e-dengue-igg-elisa-analyzes-test-kit/
 sd-biosensor-standard-e-dengue-ns1-elisa-analyzes-test-kit,SD Biosensor,Standard E Dengue NS1 Elisa Analyzes Test Kit,immunoassays,reagent,2,catalogue_no pack_size,/products/sd-biosensor-standard-e-dengue-ns1-elisa-analyzes-test-kit/
+sd-biosensor-standard-f-b-hcg-fia,SD Biosensor,Standard F B-hCG FIA,immunoassays,reagent,2,catalogue_no pack_size,/products/sd-biosensor-standard-f-b-hcg-fia/
+sd-biosensor-standard-f-chikungunya-igm-igg-fia,SD Biosensor,Standard F Chikungunya IgM IgG FIA,immunoassays,reagent,2,catalogue_no pack_size,/products/sd-biosensor-standard-f-chikungunya-igm-igg-fia/
+sd-biosensor-standard-f-d-dimer-fia,SD Biosensor,STANDARD F D-dimer FIA,immunoassays,reagent,2,sample_type pack_size,/products/sd-biosensor-standard-f-d-dimer-fia/
+sd-biosensor-standard-f-dengue-igm-igg-fia,SD Biosensor,Standard F Dengue IgM IgG FIA,immunoassays,reagent,2,catalogue_no pack_size,/products/sd-biosensor-standard-f-dengue-igm-igg-fia/
+sd-biosensor-standard-f-s-pneumoniae-ag-fia,SD Biosensor,Standard F S.Pneumoniae Ag FIA,immunoassays,reagent,2,catalogue_no pack_size,/products/sd-biosensor-standard-f-s-pneumoniae-ag-fia/
+sd-biosensor-standard-f-tb-feron-fia-ifn-gamma,SD Biosensor,STANDARD F TB-Feron FIA (IFN-gamma),immunoassays,reagent,2,catalogue_no pack_size,/products/sd-biosensor-standard-f-tb-feron-fia-ifn-gamma/
 sd-biosensor-standard-g6pd-analyzer,SD Biosensor,STANDARD G6PD Analyzer,general,instrument,2,category technology,/products/sd-biosensor-standard-g6pd-analyzer/
 sd-biosensor-standard-i-q-covid-flu-ag-combo-test,SD Biosensor,STANDARD i-Q COVID/Flu Ag Combo Test,immunoassays,reagent,2,catalogue_no pack_size,/products/sd-biosensor-standard-i-q-covid-flu-ag-combo-test/
 sd-biosensor-standard-m-ncov-real-time-detection-kit,SD Biosensor,STANDARD M nCoV Real-Time Detection kit,molecular,reagent,2,catalogue_no pack_size,/products/sd-biosensor-standard-m-ncov-real-time-detection-kit/
@@ -974,6 +1076,16 @@ siemens-healthineers-pt-inr-test-strips,Siemens Healthineers,PT/INR Test Strips,
 siemens-healthineers-rapidlab-1260,Siemens Healthineers,RapidLab 1260,blood-gas,reagent,2,catalogue_no pack_size,/products/siemens-healthineers-rapidlab-1260/
 siemens-healthineers-rapidlab-1265,Siemens Healthineers,RapidLab 1265,blood-gas,reagent,2,catalogue_no pack_size,/products/siemens-healthineers-rapidlab-1265/
 skyla-hb1-poc-clinical-chemistry-auto-analyzer,Skyla,HB1 POC Clinical Chemistry Auto Analyzer,clinical-chemistry,instrument,2,analyte catalogue_no,/products/skyla-hb1-poc-clinical-chemistry-auto-analyzer/
+snibe-maglumi-cmv-igm-clia,Snibe,MAGLUMI CMV IgM (CLIA),immunoassays,reagent,2,analyte catalogue_no,/products/snibe-maglumi-cmv-igm-clia/
+snibe-maglumi-epo-clia,Snibe,MAGLUMI EPO (CLIA),immunoassays,reagent,2,analyte catalogue_no,/products/snibe-maglumi-epo-clia/
+snibe-maglumi-gh-clia,Snibe,MAGLUMI GH (CLIA),immunoassays,reagent,2,analyte catalogue_no,/products/snibe-maglumi-gh-clia/
+snibe-maglumi-ha-clia,Snibe,MAGLUMI HA (CLIA),immunoassays,reagent,2,analyte catalogue_no,/products/snibe-maglumi-ha-clia/
+snibe-maglumi-he4-clia,Snibe,MAGLUMI HE4 (CLIA),immunoassays,reagent,2,analyte catalogue_no,/products/snibe-maglumi-he4-clia/
+snibe-maglumi-light-check,Snibe,MAGLUMI Light Check,immunoassays,reagent,2,analyte sample_type,/products/snibe-maglumi-light-check/
+snibe-maglumi-osteocalcin-clia,Snibe,MAGLUMI Osteocalcin (CLIA),immunoassays,reagent,2,analyte catalogue_no,/products/snibe-maglumi-osteocalcin-clia/
+snibe-maglumi-scca-clia,Snibe,MAGLUMI SCCA (CLIA),immunoassays,reagent,2,analyte pack_size,/products/snibe-maglumi-scca-clia/
+snibe-maglumi-tga-clia,Snibe,MAGLUMI TGA (CLIA),immunoassays,reagent,2,analyte pack_size,/products/snibe-maglumi-tga-clia/
+snibe-maglumi-wash-concentrate,Snibe,MAGLUMI Wash Concentrate,immunoassays,reagent,2,analyte sample_type,/products/snibe-maglumi-wash-concentrate/
 sysmex-meditape-uc,Sysmex,Meditape UC,urinalysis,reagent,2,catalogue_no pack_size,/products/sysmex-meditape-uc/
 sysmex-meditape-uc-10s,Sysmex,MEDITAPE UC-10S,urinalysis,reagent,2,catalogue_no pack_size,/products/sysmex-meditape-uc-10s/
 sysmex-meditape-uc-12s,Sysmex,MEDITAPE UC-12S,urinalysis,reagent,2,catalogue_no pack_size,/products/sysmex-meditape-uc-12s/
@@ -1068,6 +1180,11 @@ werfen-pt,Werfen,PT,clinical-chemistry,reagent,2,catalogue_no pack_size,/product
 werfen-rotem-delta,Werfen,ROTEM delta,coagulation,instrument,2,analyte catalogue_no,/products/werfen-rotem-delta/
 werfen-rotem-sigma,Werfen,ROTEM sigma,coagulation,instrument,2,analyte catalogue_no,/products/werfen-rotem-sigma/
 wondfo-finecare-dengue-ns1-ag-test,Wondfo,Finecare Dengue NS1 Ag Test,immunoassays,reagent,2,catalogue_no pack_size,/products/wondfo-finecare-dengue-ns1-ag-test/
+wondfo-finecare-fia-meter-ll-plus-se,Wondfo,Finecare FIA Meter ll Plus SE,immunoassays,instrument,2,analyte catalogue_no,/products/wondfo-finecare-fia-meter-ll-plus-se/
+wondfo-finecare-fia-meter-lll-plus,Wondfo,Finecare Fia Meter lll Plus,immunoassays,instrument,2,analyte catalogue_no,/products/wondfo-finecare-fia-meter-lll-plus/
+wondfo-finecare-fia-meter-plus,Wondfo,Finecare FIA Meter Plus,immunoassays,instrument,2,analyte catalogue_no,/products/wondfo-finecare-fia-meter-plus/
+zybio-exr-25-oh-vitamin-d,Zybio,EXR 25-OH-VITAMIN-D,immunoassays,reagent,2,analyte sample_type,/products/zybio-exr-25-oh-vitamin-d/
+zybio-exr-sars-cov-2-antibody,Zybio,EXR SARS-CoV-2 antibody,immunoassays,reagent,2,sample_type pack_size,/products/zybio-exr-sars-cov-2-antibody/
 77-elektronika-docureader-2-pro,77 Elektronika,DocUReader 2 Pro,urinalysis,instrument,1,catalogue_no,/products/77-elektronika-docureader-2-pro/
 77-elektronika-labureader-plus-2,77 Elektronika,LabUReader Plus 2,urinalysis,instrument,1,catalogue_no,/products/77-elektronika-labureader-plus-2/
 abbott-abon-cot-one-step-cotinine-test-device-urine,Abbott,ABON COT One Step Cotinine Test Device Urine,rapid-tests,reagent,1,catalogue_no,/products/abbott-abon-cot-one-step-cotinine-test-device-urine/
@@ -1127,6 +1244,7 @@ apexbio-eclipse-a1c,Apexbio,Eclipse A1c,diabetes,instrument,1,catalogue_no,/prod
 arkray-alt-gpt,Arkray,ALT/GPT,clinical-chemistry,reagent,1,pack_size,/products/arkray-alt-gpt/
 arkray-ast-got,Arkray,AST/GOT,clinical-chemistry,reagent,1,pack_size,/products/arkray-ast-got/
 arkray-aution-data-ae-4070,Arkray,Aution Data AE-4070,urinalysis,instrument,1,catalogue_no,/products/arkray-aution-data-ae-4070/
+arkray-autochem-multicheck-fia-analyzer,Arkray,AutoChem MultiCheck FIA Analyzer,immunoassays,instrument,1,analyte,/products/arkray-autochem-multicheck-fia-analyzer/
 arkray-blood-glucose-test-meter-glucocard-sigma-gt-1070,Arkray,Blood Glucose Test Meter GLUCOCARD Sigma GT-1070,diabetes,instrument,1,catalogue_no,/products/arkray-blood-glucose-test-meter-glucocard-sigma-gt-1070/
 arkray-compact-glycohemoglobin-analyzer-pocketchem-a1c,Arkray,Compact Glycohemoglobin Analyzer PocketChem A1c,diabetes,instrument,1,catalogue_no,/products/arkray-compact-glycohemoglobin-analyzer-pocketchem-a1c/
 arkray-glucocard-g-1070-test-strips,Arkray,GLUCOCARD G-1070 Test Strips,diabetes,reagent,1,pack_size,/products/arkray-glucocard-g-1070-test-strips/
@@ -1138,6 +1256,17 @@ arkray-spotchem-ez-sp-4430,Arkray,Spotchem EZ SP-4430,clinical-chemistry,instrum
 arkray-total-bilirubin,Arkray,Total-Bilirubin,clinical-chemistry,reagent,1,pack_size,/products/arkray-total-bilirubin/
 arkray-uric-acid,Arkray,Uric acid,clinical-chemistry,reagent,1,pack_size,/products/arkray-uric-acid/
 arkray-urine-test-strips-aution-sticks,Arkray,Urine test strips AUTION Sticks,rapid-tests,reagent,1,analyte,/products/arkray-urine-test-strips-aution-sticks/
+beckman-coulter-access-a-tpo-clia,Beckman Coulter,Access A-TPO (CLIA),immunoassays,reagent,1,analyte,/products/beckman-coulter-access-a-tpo-clia/
+beckman-coulter-access-cmv-igg-clia,Beckman Coulter,Access CMV IgG (CLIA),immunoassays,reagent,1,analyte,/products/beckman-coulter-access-cmv-igg-clia/
+beckman-coulter-access-cmv-igm-clia,Beckman Coulter,Access CMV IgM (CLIA),immunoassays,reagent,1,analyte,/products/beckman-coulter-access-cmv-igm-clia/
+beckman-coulter-access-dhea-s-clia,Beckman Coulter,Access DHEA-S (CLIA),immunoassays,reagent,1,analyte,/products/beckman-coulter-access-dhea-s-clia/
+beckman-coulter-access-digoxin-clia,Beckman Coulter,Access Digoxin (CLIA),immunoassays,reagent,1,analyte,/products/beckman-coulter-access-digoxin-clia/
+beckman-coulter-access-folate-clia,Beckman Coulter,Access Folate (CLIA),immunoassays,reagent,1,analyte,/products/beckman-coulter-access-folate-clia/
+beckman-coulter-access-free-estriol-clia,Beckman Coulter,Access Free Estriol (CLIA),immunoassays,reagent,1,analyte,/products/beckman-coulter-access-free-estriol-clia/
+beckman-coulter-access-substrate-clia,Beckman Coulter,Access Substrate (CLIA),immunoassays,reagent,1,analyte,/products/beckman-coulter-access-substrate-clia/
+beckman-coulter-access-t-uptake-clia,Beckman Coulter,Access T-Uptake (CLIA),immunoassays,reagent,1,analyte,/products/beckman-coulter-access-t-uptake-clia/
+beckman-coulter-access-thyroglobulin-ab-ii-clia,Beckman Coulter,Access Thyroglobulin Ab II (CLIA),immunoassays,reagent,1,analyte,/products/beckman-coulter-access-thyroglobulin-ab-ii-clia/
+beckman-coulter-access-vitamin-b12-clia,Beckman Coulter,Access Vitamin B12 (CLIA),immunoassays,reagent,1,analyte,/products/beckman-coulter-access-vitamin-b12-clia/
 becton-dickinson-veritor-plus,Becton Dickinson,Veritor Plus,clinical-chemistry,instrument,1,catalogue_no,/products/becton-dickinson-veritor-plus/
 bilimetrix-bilistick,Bilimetrix,Bilistick,clinical-chemistry,instrument,1,catalogue_no,/products/bilimetrix-bilistick/
 bioantibody-bk120,Bioantibody,BK120,clinical-chemistry,instrument,1,catalogue_no,/products/bioantibody-bk120/
@@ -1148,7 +1277,21 @@ boditech-afias-10,Boditech,AFIAS-10,immunoassays,instrument,1,catalogue_no,/prod
 boditech-afias-3,Boditech,AFIAS-3,immunoassays,instrument,1,catalogue_no,/products/boditech-afias-3/
 boditech-afias-6,Boditech,AFIAS-6,immunoassays,instrument,1,catalogue_no,/products/boditech-afias-6/
 boditech-hemochroma-plus-microcuvette,Boditech,Hemochroma PLUS Microcuvette,hematology,,1,product_type,/products/boditech-hemochroma-plus-microcuvette/
+boditech-ichroma-anti-ccp-plus,Boditech,ichroma Anti-CCP Plus,immunoassays,reagent,1,analyte,/products/boditech-ichroma-anti-ccp-plus/
+boditech-ichroma-anti-streptolysin-o-aso,Boditech,ichroma Anti-streptolysin O (ASO),immunoassays,reagent,1,analyte,/products/boditech-ichroma-anti-streptolysin-o-aso/
+boditech-ichroma-beta-hcg-test,Boditech,ichroma Beta-HCG Test,immunoassays,reagent,1,pack_size,/products/boditech-ichroma-beta-hcg-test/
+boditech-ichroma-calprotectin,Boditech,ichroma Calprotectin,immunoassays,reagent,1,catalogue_no,/products/boditech-ichroma-calprotectin/
+boditech-ichroma-cardiac-triple,Boditech,ichroma Cardiac Triple,immunoassays,reagent,1,analyte,/products/boditech-ichroma-cardiac-triple/
+boditech-ichroma-free-t4,Boditech,ichroma Free T4,immunoassays,reagent,1,pack_size,/products/boditech-ichroma-free-t4/
+boditech-ichroma-fsh-test,Boditech,ichroma FSH Test,immunoassays,reagent,1,pack_size,/products/boditech-ichroma-fsh-test/
+boditech-ichroma-hba1c,Boditech,ichroma HbA1c,immunoassays,reagent,1,catalogue_no,/products/boditech-ichroma-hba1c/
+boditech-ichroma-ii-fluorescence-immunoassay-analyzer,Boditech,ichroma II Fluorescence Immunoassay Analyzer,immunoassays,instrument,1,analyte,/products/boditech-ichroma-ii-fluorescence-immunoassay-analyzer/
 boditech-ichroma-iii-fluorescence-immunoassay-analyzer,Boditech,ichroma III Fluorescence Immunoassay Analyzer,immunoassays,instrument,1,analyte,/products/boditech-ichroma-iii-fluorescence-immunoassay-analyzer/
+boditech-ichroma-influenza-a-plus-b,Boditech,ichroma Influenza A+B,immunoassays,reagent,1,sample_type,/products/boditech-ichroma-influenza-a-plus-b/
+boditech-ichroma-prl-test,Boditech,ichroma PRL Test,immunoassays,reagent,1,pack_size,/products/boditech-ichroma-prl-test/
+boditech-ichroma-rheumatoid-arthritis-rf-igm,Boditech,ichroma Rheumatoid Arthritis (RF IgM),immunoassays,reagent,1,analyte,/products/boditech-ichroma-rheumatoid-arthritis-rf-igm/
+boditech-ichroma-st2,Boditech,ichroma ST2,immunoassays,reagent,1,analyte,/products/boditech-ichroma-st2/
+boditech-ichroma-tn-i-plus-test,Boditech,Ichroma Tn-I Plus Test,immunoassays,reagent,1,pack_size,/products/boditech-ichroma-tn-i-plus-test/
 bosch-vivalytic,Bosch,Vivalytic,molecular,instrument,1,catalogue_no,/products/bosch-vivalytic/
 calbiotech-ana-screen-igg-elisa,Calbiotech,ANA Screen IgG ELISA,immunoassays,reagent,1,analyte,/products/calbiotech-ana-screen-igg-elisa/
 calbiotech-androstenedione-elisa,Calbiotech,Androstenedione ELISA,immunoassays,reagent,1,analyte,/products/calbiotech-androstenedione-elisa/
@@ -1243,6 +1386,18 @@ flashdx-1000-e,FlashDx,1000-E,molecular,instrument,1,catalogue_no,/products/flas
 fujifilm-dri-chem-fdc-nx700i,Fujifilm,Dri-Chem FDC NX700i,clinical-chemistry,instrument,1,catalogue_no,/products/fujifilm-dri-chem-fdc-nx700i/
 fujifilm-dri-chem-nx600,Fujifilm,Dri-Chem NX600,clinical-chemistry,instrument,1,catalogue_no,/products/fujifilm-dri-chem-nx600/
 fujifilm-dri-chem-slide-nh3-wii-for-whole-blood-and-nh3-pii-for-plasma,Fujifilm,DRI-CHEM SLIDE NH3-WII (for whole blood) and NH3-PII (for plasma),clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-nh3-wii-for-whole-blood-and-nh3-pii-for-plasma/
+getein-1100-immunofluorescence-quantitative-analyzer,Getein,1100 Immunofluorescence Quantitative Analyzer,immunoassays,instrument,1,analyte,/products/getein-1100-immunofluorescence-quantitative-analyzer/
+getein-1160-immunofluorescence-quantitative-analyzer,Getein,1160 Immunofluorescence Quantitative Analyzer,immunoassays,instrument,1,analyte,/products/getein-1160-immunofluorescence-quantitative-analyzer/
+getein-1180-immunofluorescence-quantitative-analyzer,Getein,1180 Immunofluorescence Quantitative Analyzer,immunoassays,instrument,1,analyte,/products/getein-1180-immunofluorescence-quantitative-analyzer/
+getein-1600-immunofluorescence-quantitative-analyzer,Getein,1600 Immunofluorescence Quantitative Analyzer,immunoassays,instrument,1,analyte,/products/getein-1600-immunofluorescence-quantitative-analyzer/
+getein-amh-fast-test-kit,Getein,AMH Fast Test Kit,immunoassays,reagent,1,catalogue_no,/products/getein-amh-fast-test-kit/
+getein-anti-ccp-fast-test-kit,Getein,Anti-CCP Fast Test Kit,immunoassays,reagent,1,analyte,/products/getein-anti-ccp-fast-test-kit/
+getein-anti-hiv-fast-test-kit,Getein,Anti-HIV Fast Test Kit,immunoassays,reagent,1,catalogue_no,/products/getein-anti-hiv-fast-test-kit/
+getein-aso-fast-test-kit,Getein,ASO Fast Test Kit,rapid-tests,reagent,1,analyte,/products/getein-aso-fast-test-kit/
+getein-e2-fast-test-kit,Getein,E2 Fast Test Kit,immunoassays,reagent,1,catalogue_no,/products/getein-e2-fast-test-kit/
+getein-fsh-fast-test-kit,Getein,FSH Fast Test Kit,rapid-tests,reagent,1,catalogue_no,/products/getein-fsh-fast-test-kit/
+getein-rf-fast-test-kit,Getein,RF Fast Test Kit,immunoassays,reagent,1,analyte,/products/getein-rf-fast-test-kit/
+getein-saa-fast-test-kit,Getein,SAA Fast Test Kit,rapid-tests,reagent,1,catalogue_no,/products/getein-saa-fast-test-kit/
 haemonetics-teg-6s,Haemonetics,TEG 6s,coagulation,instrument,1,analyte,/products/haemonetics-teg-6s/
 hemocue-glucose-201-microcuvettes,HemoCue,Glucose 201 Microcuvettes,diabetes,,1,product_type,/products/hemocue-glucose-201-microcuvettes/
 hemocue-glucose-201-plus,HemoCue,Glucose 201+,diabetes,instrument,1,catalogue_no,/products/hemocue-glucose-201-plus/
@@ -1263,6 +1418,10 @@ hemocue-plasma-low-hb-system,HemoCue,Plasma Low Hb System,hematology,instrument,
 hemocue-safety-lancets,HemoCue,Safety Lancets,diabetes,consumable,1,catalogue_no,/products/hemocue-safety-lancets/
 hemocue-wbc-diff,HemoCue,WBC Diff,hematology,instrument,1,catalogue_no,/products/hemocue-wbc-diff/
 horiba-abx-micros-es-60,Horiba,ABX Micros ES 60,hematology,instrument,1,catalogue_no,/products/horiba-abx-micros-es-60/
+horiba-anti-tg-clia,Horiba,Anti-TG (CLIA),immunoassays,reagent,1,analyte,/products/horiba-anti-tg-clia/
+horiba-hs-troponin-i-clia,Horiba,hs-Troponin I (CLIA),immunoassays,reagent,1,catalogue_no,/products/horiba-hs-troponin-i-clia/
+horiba-intact-pth-clia,Horiba,Intact PTH (CLIA),immunoassays,reagent,1,analyte,/products/horiba-intact-pth-clia/
+horiba-lp-pla2-clia,Horiba,Lp-PLA2 (CLIA),immunoassays,reagent,1,analyte,/products/horiba-lp-pla2-clia/
 horiba-microsemi-crp-lc-767g,Horiba,Microsemi CRP LC-767G,hematology,instrument,1,catalogue_no,/products/horiba-microsemi-crp-lc-767g/
 horiba-yumizen-h500-ct,Horiba,Yumizen H500 CT,hematology,instrument,1,catalogue_no,/products/horiba-yumizen-h500-ct/
 human-humameter-a1c,Human,HumaMeter A1c,diabetes,instrument,1,catalogue_no,/products/human-humameter-a1c/
@@ -1295,8 +1454,21 @@ meridian-bioscience-tru-legionella,Meridian Bioscience,TRU Legionella,rapid-test
 meridian-bioscience-tru-rsv,Meridian Bioscience,TRU RSV,rapid-tests,reagent,1,pack_size,/products/meridian-bioscience-tru-rsv/
 micropoint-mlabs,Micropoint,mLabs,clinical-chemistry,instrument,1,catalogue_no,/products/micropoint-mlabs/
 micropoint-qlabs-q3-pro,Micropoint,qLabs Q3 Pro,clinical-chemistry,instrument,1,catalogue_no,/products/micropoint-qlabs-q3-pro/
+mindray-antibody-to-thyroglobulin-clia,Mindray,Antibody to thyroglobulin (CLIA),immunoassays,reagent,1,analyte,/products/mindray-antibody-to-thyroglobulin-clia/
+mindray-antibody-to-thyroid-peroxidase-clia,Mindray,Antibody to thyroid peroxidase (CLIA),immunoassays,reagent,1,analyte,/products/mindray-antibody-to-thyroid-peroxidase-clia/
+mindray-b-type-natriuretic-peptide-clia,Mindray,B-type natriuretic peptide (CLIA),immunoassays,reagent,1,catalogue_no,/products/mindray-b-type-natriuretic-peptide-clia/
+mindray-calcitonin-clia,Mindray,Calcitonin (CLIA),immunoassays,reagent,1,analyte,/products/mindray-calcitonin-clia/
+mindray-cancer-antigen-125-clia,Mindray,Cancer Antigen 125 (CLIA),immunoassays,reagent,1,catalogue_no,/products/mindray-cancer-antigen-125-clia/
+mindray-clia-hormone-calibrator,Mindray,CLIA Hormone Calibrator,immunoassays,reagent,1,analyte,/products/mindray-clia-hormone-calibrator/
+mindray-clia-thyroid-calibrator,Mindray,CLIA Thyroid Calibrator,immunoassays,reagent,1,sample_type,/products/mindray-clia-thyroid-calibrator/
+mindray-clia-tumor-calibrator,Mindray,CLIA Tumor Calibrator,immunoassays,reagent,1,analyte,/products/mindray-clia-tumor-calibrator/
 mindray-clinical-chemistry-analyzer-bs-230,Mindray,Clinical Chemistry Analyzer BS-230,clinical-chemistry,instrument,1,analyte,/products/mindray-clinical-chemistry-analyzer-bs-230/
+mindray-cyfra-21-1-clia,Mindray,CYFRA 21-1 (CLIA),immunoassays,reagent,1,analyte,/products/mindray-cyfra-21-1-clia/
+mindray-dehyro-epi-androsterone-sulfate-clia,Mindray,Dehyro-epi-androsterone sulfate (CLIA),immunoassays,reagent,1,analyte,/products/mindray-dehyro-epi-androsterone-sulfate-clia/
+mindray-folate-clia,Mindray,Folate (CLIA),immunoassays,reagent,1,analyte,/products/mindray-folate-clia/
 mindray-reaction-cuvettes,Mindray,Reaction Cuvettes,immunoassays,consumable,1,pack_size,/products/mindray-reaction-cuvettes/
+mindray-thyroglobulin-clia,Mindray,Thyroglobulin (CLIA),immunoassays,reagent,1,analyte,/products/mindray-thyroglobulin-clia/
+mindray-vitamin-b12-clia,Mindray,Vitamin B12 (CLIA),immunoassays,reagent,1,analyte,/products/mindray-vitamin-b12-clia/
 mnchip-pointcare-m4,MNCHIP,Pointcare M4,clinical-chemistry,instrument,1,catalogue_no,/products/mnchip-pointcare-m4/
 molbio-truelab-duo-dx,Molbio,Truelab Duo Dx,molecular,instrument,1,catalogue_no,/products/molbio-truelab-duo-dx/
 molbio-truelab-quattro-dx,Molbio,Truelab Quattro Dx,molecular,instrument,1,catalogue_no,/products/molbio-truelab-quattro-dx/
@@ -1380,7 +1552,11 @@ roche-sars-cov,Roche,SARS-CoV,molecular,reagent,1,catalogue_no,/products/roche-s
 roche-trop-t-sensitive,Roche,Trop T sensitive,rapid-tests,reagent,1,pack_size,/products/roche-trop-t-sensitive/
 roche-urisys-1100,Roche,Urisys 1100,urinalysis,instrument,1,catalogue_no,/products/roche-urisys-1100/
 roche-urisys-1100-urine-analyzer,Roche,Urisys 1100 urine analyzer,urinalysis,instrument,1,analyte,/products/roche-urisys-1100-urine-analyzer/
+sd-biosensor-standard-f-covid-19-ag-fia,SD Biosensor,STANDARD F COVID-19 Ag FIA,immunoassays,reagent,1,sample_type,/products/sd-biosensor-standard-f-covid-19-ag-fia/
+sd-biosensor-standard-f-rsv-ag-fia,SD Biosensor,STANDARD F RSV Ag FIA,immunoassays,reagent,1,sample_type,/products/sd-biosensor-standard-f-rsv-ag-fia/
+sd-biosensor-standard-f100-analyzer,SD Biosensor,STANDARD F100 Analyzer,immunoassays,instrument,1,analyte,/products/sd-biosensor-standard-f100-analyzer/
 sd-biosensor-standard-f200,SD Biosensor,Standard F200,immunoassays,instrument,1,catalogue_no,/products/sd-biosensor-standard-f200/
+sd-biosensor-standard-f200-analyzer,SD Biosensor,STANDARD F200 Analyzer,immunoassays,instrument,1,analyte,/products/sd-biosensor-standard-f200-analyzer/
 sd-biosensor-standard-f2400,SD Biosensor,Standard F2400,immunoassays,instrument,1,catalogue_no,/products/sd-biosensor-standard-f2400/
 sd-biosensor-standard-f2400-analyzer,SD Biosensor,STANDARD F2400 Analyzer,immunoassays,instrument,1,analyte,/products/sd-biosensor-standard-f2400-analyzer/
 sd-biosensor-standard-lipidocare-lipid-test-strip-lipid-profile,SD Biosensor,STANDARD LipidoCare Lipid Test Strip - Lipid Profile,rapid-tests,reagent,1,pack_size,/products/sd-biosensor-standard-lipidocare-lipid-test-strip-lipid-profile/
@@ -1414,6 +1590,76 @@ siemens-healthineers-rapidlab-348ex,Siemens Healthineers,RAPIDLab 348EX,blood-ga
 siemens-healthineers-uristix-reagent-urinalysis-strips,Siemens Healthineers,Uristix Reagent Urinalysis Strips,urinalysis,reagent,1,analyte,/products/siemens-healthineers-uristix-reagent-urinalysis-strips/
 siemens-healthineers-xprecia-prime,Siemens Healthineers,Xprecia Prime,coagulation,instrument,1,catalogue_no,/products/siemens-healthineers-xprecia-prime/
 siemens-healthineers-xprecia-stride,Siemens Healthineers,Xprecia Stride,coagulation,instrument,1,catalogue_no,/products/siemens-healthineers-xprecia-stride/
+snibe-maglumi-a-i-clia,Snibe,MAGLUMI A I (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-a-i-clia/
+snibe-maglumi-acth-clia,Snibe,MAGLUMI ACTH (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-acth-clia/
+snibe-maglumi-aldosterone-clia,Snibe,MAGLUMI Aldosterone (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-aldosterone-clia/
+snibe-maglumi-ana-screen-clia,Snibe,MAGLUMI ANA Screen (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-ana-screen-clia/
+snibe-maglumi-angiotensin-ii-a-ii-clia,Snibe,MAGLUMI Angiotensin II (A II) (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-angiotensin-ii-a-ii-clia/
+snibe-maglumi-anti-ccp-clia,Snibe,MAGLUMI Anti CCP (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-anti-ccp-clia/
+snibe-maglumi-anti-centromeres-igg-clia,Snibe,MAGLUMI Anti-Centromeres IgG (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-anti-centromeres-igg-clia/
+snibe-maglumi-anti-dsdna-igg-clia,Snibe,MAGLUMI Anti-dsDNA IgG (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-anti-dsdna-igg-clia/
+snibe-maglumi-anti-hbc-clia,Snibe,MAGLUMI anti-HBc (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-anti-hbc-clia/
+snibe-maglumi-anti-hbc-igm-clia,Snibe,MAGLUMI Anti-HBc IgM (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-anti-hbc-igm-clia/
+snibe-maglumi-anti-hbe-clia,Snibe,MAGLUMI anti-Hbe (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-anti-hbe-clia/
+snibe-maglumi-anti-hbs-clia,Snibe,MAGLUMI anti-HBs (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-anti-hbs-clia/
+snibe-maglumi-anti-jo-1-igg-clia,Snibe,MAGLUMI Anti-Jo-1 IgG (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-anti-jo-1-igg-clia/
+snibe-maglumi-anti-scl-70-igg-clia,Snibe,MAGLUMI Anti-Scl-70 IgG (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-anti-scl-70-igg-clia/
+snibe-maglumi-anti-tpo-clia,Snibe,MAGLUMI Anti-TPO (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-anti-tpo-clia/
+snibe-maglumi-beta-ctx-clia,Snibe,MAGLUMI Beta-CTx (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-beta-ctx-clia/
+snibe-maglumi-c-iv-clia,Snibe,MAGLUMI C IV (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-c-iv-clia/
+snibe-maglumi-ca-242-clia,Snibe,MAGLUMI CA 242 (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-ca-242-clia/
+snibe-maglumi-ca-72-4-clia,Snibe,MAGLUMI CA 72-4 (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-ca-72-4-clia/
+snibe-maglumi-calcitonin-clia,Snibe,MAGLUMI Calcitonin (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-calcitonin-clia/
+snibe-maglumi-cholylglycine-clia,Snibe,MAGLUMI Cholylglycine (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-cholylglycine-clia/
+snibe-maglumi-cmv-igg-clia,Snibe,MAGLUMI CMV IgG (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-cmv-igg-clia/
+snibe-maglumi-cyclosporine-a-csa-clia,Snibe,MAGLUMI Cyclosporine - A (CSA) (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-cyclosporine-a-csa-clia/
+snibe-maglumi-cyfra-21-1-clia,Snibe,MAGLUMI CYFRA 21-1 (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-cyfra-21-1-clia/
+snibe-maglumi-dhea-s-clia,Snibe,MAGLUMI DHEA-S (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-dhea-s-clia/
+snibe-maglumi-digoxin-clia,Snibe,MAGLUMI Digoxin (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-digoxin-clia/
+snibe-maglumi-direct-renin-clia,Snibe,MAGLUMI Direct Renin (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-direct-renin-clia/
+snibe-maglumi-ebv-ea-igg-clia,Snibe,MAGLUMI EBV EA IgG (CLIA),immunoassays,reagent,1,catalogue_no,/products/snibe-maglumi-ebv-ea-igg-clia/
+snibe-maglumi-ena-screen-clia,Snibe,MAGLUMI ENA Screen (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-ena-screen-clia/
+snibe-maglumi-fa-clia,Snibe,MAGLUMI FA (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-fa-clia/
+snibe-maglumi-free-estriol-clia,Snibe,MAGLUMI free Estriol (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-free-estriol-clia/
+snibe-maglumi-fsh-clia,Snibe,MAGLUMI FSH (CLIA),immunoassays,reagent,1,pack_size,/products/snibe-maglumi-fsh-clia/
+snibe-maglumi-gad65-clia,Snibe,MAGLUMI GAD65 (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-gad65-clia/
+snibe-maglumi-gastrin-17-clia,Snibe,MAGLUMI Gastrin-17 (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-gastrin-17-clia/
+snibe-maglumi-h-pylori-igm-clia,Snibe,MAGLUMI H.Pylori IgM CLIA,immunoassays,reagent,1,catalogue_no,/products/snibe-maglumi-h-pylori-igm-clia/
+snibe-maglumi-hbeag-clia,Snibe,MAGLUMI HBeAg (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-hbeag-clia/
+snibe-maglumi-her-2-clia,Snibe,MAGLUMI HER-2 (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-her-2-clia/
+snibe-maglumi-hs-ctnl-i-clia,Snibe,MAGLUMI hs-cTnl I (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-hs-ctnl-i-clia/
+snibe-maglumi-hsv-1-2-igm-clia,Snibe,MAGLUMI HSV 1/2 IgM (CLIA),immunoassays,reagent,1,catalogue_no,/products/snibe-maglumi-hsv-1-2-igm-clia/
+snibe-maglumi-ia-2-clia,Snibe,MAGLUMI IA 2 (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-ia-2-clia/
+snibe-maglumi-iga-clia,Snibe,MAGLUMI IgA (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-iga-clia/
+snibe-maglumi-igf-1-clia,Snibe,MAGLUMI IGF-1 (CLIA) (Cat. 1302162009M),immunoassays,reagent,1,analyte,/products/snibe-maglumi-igf-1-clia/
+snibe-maglumi-igfbp-3-clia,Snibe,MAGLUMI IGFBP-3 (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-igfbp-3-clia/
+snibe-maglumi-igg-urine-analysis-clia,Snibe,MAGLUMI IgG (Urine Analysis) (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-igg-urine-analysis-clia/
+snibe-maglumi-igm-clia,Snibe,MAGLUMI IgM (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-igm-clia/
+snibe-maglumi-intact-pth-clia,Snibe,MAGLUMI Intact PTH (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-intact-pth-clia/
+snibe-maglumi-laminin-clia,Snibe,MAGLUMI Laminin (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-laminin-clia/
+snibe-maglumi-lp-pla2-clia,Snibe,MAGLUMI Lp-PLA2 (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-lp-pla2-clia/
+snibe-maglumi-nse-clia,Snibe,MAGLUMI NSE (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-nse-clia/
+snibe-maglumi-pap-clia,Snibe,MAGLUMI PAP (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-pap-clia/
+snibe-maglumi-papp-a-clia,Snibe,MAGLUMI PAPP-A (CLIA),immunoassays,reagent,1,catalogue_no,/products/snibe-maglumi-papp-a-clia/
+snibe-maglumi-pg-i-clia,Snibe,MAGLUMI PG I (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-pg-i-clia/
+snibe-maglumi-pg-ii-clia,Snibe,MAGLUMI PG II (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-pg-ii-clia/
+snibe-maglumi-piiip-n-p-clia,Snibe,MAGLUMI PIIIP N-P (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-piiip-n-p-clia/
+snibe-maglumi-pivka-aca-a-clia,Snibe,MAGLUMI PIVKA-AcA A (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-pivka-aca-a-clia/
+snibe-maglumi-progrp-clia,Snibe,MAGLUMI ProGRP (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-progrp-clia/
+snibe-maglumi-proinsulin-clia,Snibe,MAGLUMI Proinsulin (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-proinsulin-clia/
+snibe-maglumi-rubella-igg-clia,Snibe,MAGLUMI Rubella IgG (CLIA),immunoassays,reagent,1,catalogue_no,/products/snibe-maglumi-rubella-igg-clia/
+snibe-maglumi-s-100-clia,Snibe,MAGLUMI S-100 (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-s-100-clia/
+snibe-maglumi-system-tubing-cleaning-solution,Snibe,MAGLUMI System Tubing Cleaning Solution,immunoassays,instrument,1,analyte,/products/snibe-maglumi-system-tubing-cleaning-solution/
+snibe-maglumi-t3-clia,Snibe,MAGLUMI T3 (CLIA),immunoassays,reagent,1,pack_size,/products/snibe-maglumi-t3-clia/
+snibe-maglumi-t4-clia,Snibe,MAGLUMI T4 (CLIA),immunoassays,reagent,1,pack_size,/products/snibe-maglumi-t4-clia/
+snibe-maglumi-testosterone-clia,Snibe,MAGLUMI Testosterone (CLIA),immunoassays,reagent,1,pack_size,/products/snibe-maglumi-testosterone-clia/
+snibe-maglumi-tg-clia,Snibe,MAGLUMI TG (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-tg-clia/
+snibe-maglumi-tma-clia,Snibe,MAGLUMI TMA (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-tma-clia/
+snibe-maglumi-total-p1np-clia,Snibe,MAGLUMI total P1NP (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-total-p1np-clia/
+snibe-maglumi-toxo-igg-clia,Snibe,MAGLUMI Toxo IgG (CLIA),immunoassays,reagent,1,sample_type,/products/snibe-maglumi-toxo-igg-clia/
+snibe-maglumi-toxo-igm-clia,Snibe,MAGLUMI Toxo IgM (CLIA),immunoassays,reagent,1,catalogue_no,/products/snibe-maglumi-toxo-igm-clia/
+snibe-maglumi-tpa-clia,Snibe,MAGLUMI TPA (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-tpa-clia/
+snibe-maglumi-vitamin-b12-clia,Snibe,MAGLUMI Vitamin B12 (CLIA),immunoassays,reagent,1,analyte,/products/snibe-maglumi-vitamin-b12-clia/
 sysmex-pa-100-ast,Sysmex,PA-100 AST,urinalysis,instrument,1,catalogue_no,/products/sysmex-pa-100-ast/
 sysmex-poch-100i,Sysmex,pocH-100i,hematology,instrument,1,catalogue_no,/products/sysmex-poch-100i/
 sysmex-uc-1000,Sysmex,UC-1000,hematology,instrument,1,catalogue_no,/products/sysmex-uc-1000/
@@ -1442,5 +1688,32 @@ werfen-gem-premier-chemstat,Werfen,GEM Premier ChemSTAT,clinical-chemistry,instr
 werfen-hemochron-signature-elite,Werfen,Hemochron Signature Elite,clinical-chemistry,instrument,1,catalogue_no,/products/werfen-hemochron-signature-elite/
 werfen-verifynow,Werfen,VerifyNow,coagulation,instrument,1,catalogue_no,/products/werfen-verifynow/
 wondfo-blood-gas-analyzer-test-card,Wondfo,Blood Gas Analyzer Test Card,blood-gas,reagent,1,pack_size,/products/wondfo-blood-gas-analyzer-test-card/
+wondfo-finecare-cys-c-rapid-quantitative-test,Wondfo,Finecare Cys C Rapid Quantitative Test,immunoassays,reagent,1,analyte,/products/wondfo-finecare-cys-c-rapid-quantitative-test/
+wondfo-finecare-fia-meter-ii-plus-se,Wondfo,Finecare FIA Meter II Plus SE,immunoassays,instrument,1,analyte,/products/wondfo-finecare-fia-meter-ii-plus-se/
+wondfo-finecare-fia-meter-iii-plus,Wondfo,Finecare FIA Meter III Plus,immunoassays,instrument,1,analyte,/products/wondfo-finecare-fia-meter-iii-plus/
+wondfo-finecare-t4-rapid-quantitative-test,Wondfo,Finecare T4 Rapid Quantitative Test,immunoassays,reagent,1,sample_type,/products/wondfo-finecare-t4-rapid-quantitative-test/
+wondfo-finecare-vitamin-b12-rapid-quantitative-test,Wondfo,Finecare Vitamin B12 Rapid Quantitative Test,immunoassays,reagent,1,analyte,/products/wondfo-finecare-vitamin-b12-rapid-quantitative-test/
+zybio-exi-anti-thyroglobulin-anti-tg-clia,Zybio,EXI Anti-Thyroglobulin [Anti-TG] (CLIA),immunoassays,reagent,1,analyte,/products/zybio-exi-anti-thyroglobulin-anti-tg-clia/
+zybio-exi-anti-tpo-clia,Zybio,EXI Anti-TPO (CLIA),immunoassays,reagent,1,analyte,/products/zybio-exi-anti-tpo-clia/
+zybio-exi-cyfra-21-1-clia,Zybio,EXI CYFRA 21-1 (CLIA),immunoassays,reagent,1,analyte,/products/zybio-exi-cyfra-21-1-clia/
+zybio-exi-folate-vitamin-b9-clia,Zybio,EXI Folate [Vitamin B9] (CLIA),immunoassays,reagent,1,analyte,/products/zybio-exi-folate-vitamin-b9-clia/
+zybio-exi-he4-clia,Zybio,EXI HE4 (CLIA),immunoassays,reagent,1,analyte,/products/zybio-exi-he4-clia/
+zybio-exi-ipth-clia,Zybio,EXI iPTH (CLIA),immunoassays,reagent,1,analyte,/products/zybio-exi-ipth-clia/
+zybio-exi-nse-clia,Zybio,EXI NSE (CLIA),immunoassays,reagent,1,analyte,/products/zybio-exi-nse-clia/
+zybio-exi-progrp-clia,Zybio,EXI ProGRP (CLIA),immunoassays,reagent,1,analyte,/products/zybio-exi-progrp-clia/
+zybio-exi-scca-clia,Zybio,EXI SCCA (CLIA),immunoassays,reagent,1,analyte,/products/zybio-exi-scca-clia/
+zybio-exi-thyroglobulin-tg-clia,Zybio,EXI Thyroglobulin [TG] (CLIA),immunoassays,reagent,1,analyte,/products/zybio-exi-thyroglobulin-tg-clia/
+zybio-exi-vitamin-b12-clia,Zybio,EXI Vitamin B12 (CLIA),immunoassays,reagent,1,analyte,/products/zybio-exi-vitamin-b12-clia/
 zybio-exr-110-120-fia-system,Zybio,EXR 110/120 FIA System,immunoassays,instrument,1,analyte,/products/zybio-exr-110-120-fia-system/
+zybio-exr-ctni,Zybio,EXR cTnI,immunoassays,reagent,1,sample_type,/products/zybio-exr-ctni/
+zybio-exr-ctnt,Zybio,EXR cTnT,immunoassays,reagent,1,sample_type,/products/zybio-exr-ctnt/
+zybio-exr-d-dimer,Zybio,EXR D-Dimer,immunoassays,reagent,1,sample_type,/products/zybio-exr-d-dimer/
+zybio-exr-hba1c,Zybio,EXR HbA1c,immunoassays,reagent,1,sample_type,/products/zybio-exr-hba1c/
+zybio-exr-nt-probnp,Zybio,EXR NT-proBNP,immunoassays,reagent,1,sample_type,/products/zybio-exr-nt-probnp/
+zybio-exr-pct,Zybio,EXR PCT,immunoassays,reagent,1,sample_type,/products/zybio-exr-pct/
+zybio-exr-sars-cov-2-antigen-assay-kit,Zybio,EXR SARS-CoV-2 Antigen Assay Kit,immunoassays,reagent,1,sample_type,/products/zybio-exr-sars-cov-2-antigen-assay-kit/
+zybio-exr-t3,Zybio,EXR T3,immunoassays,reagent,1,sample_type,/products/zybio-exr-t3/
+zybio-exr-t4,Zybio,EXR T4,immunoassays,reagent,1,sample_type,/products/zybio-exr-t4/
+zybio-exr-troponint-ck-mb-myoglobin,Zybio,EXR TroponinT/CK-MB/Myoglobin,immunoassays,reagent,1,sample_type,/products/zybio-exr-troponint-ck-mb-myoglobin/
+zybio-exr-tsh,Zybio,EXR TSH,immunoassays,reagent,1,sample_type,/products/zybio-exr-tsh/
 zybio-z3-crp,Zybio,Z3 CRP,hematology,instrument,1,catalogue_no,/products/zybio-z3-crp/

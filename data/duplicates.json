@@ -31,6 +31,51 @@
       ]
     },
     {
+      "key": "cholylglycine clia maglumi",
+      "brand": "Snibe",
+      "canonical": "snibe-maglumi-cholylglycine-clia",
+      "members": [
+        {
+          "id": "snibe-maglumi-cholylglycine-clia",
+          "name": "Snibe MAGLUMI Cholylglycine (CLIA)"
+        },
+        {
+          "id": "snibe-maglumi-cholylglycine-clia-9386c6",
+          "name": "Snibe MAGLUMI Cholylglycine (CLIA)"
+        }
+      ]
+    },
+    {
+      "key": "clia ea ebv iga maglumi",
+      "brand": "Snibe",
+      "canonical": "snibe-maglumi-ebv-ea-iga-clia",
+      "members": [
+        {
+          "id": "snibe-maglumi-ebv-ea-iga-clia",
+          "name": "Snibe MAGLUMI EBV EA IgA (CLIA)"
+        },
+        {
+          "id": "snibe-maglumi-ebv-ea-iga-clia-138161",
+          "name": "Snibe MAGLUMI EBV EA IgA (CLIA)"
+        }
+      ]
+    },
+    {
+      "key": "clia gad65 maglumi",
+      "brand": "Snibe",
+      "canonical": "snibe-maglumi-gad65-clia",
+      "members": [
+        {
+          "id": "snibe-maglumi-gad65-clia",
+          "name": "Snibe MAGLUMI GAD65 (CLIA)"
+        },
+        {
+          "id": "snibe-maglumi-anti-gad65-clia",
+          "name": "Snibe MAGLUMI ANTI GAD65 (CLIA)"
+        }
+      ]
+    },
+    {
       "key": "31 analyzer urine",
       "brand": "URIT",
       "canonical": "urit-31-urine-analyzer-1a3bbe",
@@ -256,6 +301,21 @@
       ]
     },
     {
+      "key": "chorionic gonadotropin human ichroma",
+      "brand": "Boditech",
+      "canonical": "boditech-ichroma-human-chorionic-gonadotropin-beta-hcg",
+      "members": [
+        {
+          "id": "boditech-ichroma-human-chorionic-gonadotropin-beta-hcg",
+          "name": "Boditech ichroma Human Chorionic Gonadotropin (beta-hCG)"
+        },
+        {
+          "id": "boditech-ichroma-human-chorionic-gonadotropin",
+          "name": "Boditech ichroma Human Chorionic Gonadotropin"
+        }
+      ]
+    },
+    {
       "key": "color hemoglobin scale",
       "brand": "Copack",
       "canonical": "copack-hemoglobin-color-scale",
@@ -305,6 +365,36 @@
         {
           "id": "abbott-binaxnow-g6pd-bc031e",
           "name": "Abbott BinaxNOW G6PD"
+        }
+      ]
+    },
+    {
+      "key": "beta2 finecare mg quantitative",
+      "brand": "Wondfo",
+      "canonical": "wondfo-finecare-2-mg-rapid-quantitative-test",
+      "members": [
+        {
+          "id": "wondfo-finecare-2-mg-rapid-quantitative-test",
+          "name": "Wondfo Finecare 2-MG Rapid Quantitative Test"
+        },
+        {
+          "id": "wondfo-finecare-beta2-mg-rapid-quantitative-test",
+          "name": "Wondfo Finecare Beta2-MG Rapid Quantitative Test"
+        }
+      ]
+    },
+    {
+      "key": "beta finecare hcg quantitative",
+      "brand": "Wondfo",
+      "canonical": "wondfo-finecare-beta-hcg-rapid-quantitative-test",
+      "members": [
+        {
+          "id": "wondfo-finecare-beta-hcg-rapid-quantitative-test",
+          "name": "Wondfo Finecare beta hCG Rapid Quantitative Test"
+        },
+        {
+          "id": "wondfo-finecare-beta-hcg-rapid-quantitative-test-99b724",
+          "name": "Wondfo Finecare Beta-hCG Rapid Quantitative Test"
         }
       ]
     },
@@ -662,6 +752,66 @@
       ]
     },
     {
+      "key": "beta hcg ichroma",
+      "brand": "Boditech",
+      "canonical": "boditech-ichroma-beta-hcg-test",
+      "members": [
+        {
+          "id": "boditech-ichroma-beta-hcg-test",
+          "name": "Boditech ichroma Beta-HCG Test"
+        },
+        {
+          "id": "boditech-ichroma-human-chorionic-gonadotropin-beta-hcg-plus",
+          "name": "Boditech ichroma Human Chorionic Gonadotropin (beta-hCG) Plus"
+        }
+      ]
+    },
+    {
+      "key": "dengue f fia iggigm standard",
+      "brand": "SD Biosensor",
+      "canonical": "sd-biosensor-standard-f-dengue-igm-igg-fia",
+      "members": [
+        {
+          "id": "sd-biosensor-standard-f-dengue-igm-igg-fia",
+          "name": "SD Biosensor Standard F Dengue IgM IgG FIA"
+        },
+        {
+          "id": "sd-biosensor-standard-f-dengue-igm-igg-fia-6bb735",
+          "name": "SD Biosensor STANDARD F Dengue IgM/IgG FIA"
+        }
+      ]
+    },
+    {
+      "key": "chikungunya f fia iggigm standard",
+      "brand": "SD Biosensor",
+      "canonical": "sd-biosensor-standard-f-chikungunya-igm-igg-fia",
+      "members": [
+        {
+          "id": "sd-biosensor-standard-f-chikungunya-igm-igg-fia",
+          "name": "SD Biosensor Standard F Chikungunya IgM IgG FIA"
+        },
+        {
+          "id": "sd-biosensor-standard-f-chikungunya-igm-igg-fia-8774b5",
+          "name": "SD Biosensor STANDARD F Chikungunya IgM/IgG FIA"
+        }
+      ]
+    },
+    {
+      "key": "ag f fia pneumoniae s standard",
+      "brand": "SD Biosensor",
+      "canonical": "sd-biosensor-standard-f-s-pneumoniae-ag-fia",
+      "members": [
+        {
+          "id": "sd-biosensor-standard-f-s-pneumoniae-ag-fia",
+          "name": "SD Biosensor Standard F S.Pneumoniae Ag FIA"
+        },
+        {
+          "id": "sd-biosensor-standard-f-s-pneumoniae-ag-fia-24d98d",
+          "name": "SD Biosensor STANDARD F S. pneumoniae Ag FIA"
+        }
+      ]
+    },
+    {
       "key": "chik elisa igm trustwell",
       "brand": "CTK Biotech",
       "canonical": "ctk-biotech-trustwell-chik-igm-elisa-kit",
@@ -887,6 +1037,51 @@
       ]
     },
     {
+      "key": "d dimer ichroma",
+      "brand": "Boditech",
+      "canonical": "boditech-ichroma-d-dimer-test",
+      "members": [
+        {
+          "id": "boditech-ichroma-d-dimer-test",
+          "name": "Boditech ichroma D Dimer Test"
+        },
+        {
+          "id": "boditech-ichroma-d-dimer",
+          "name": "Boditech ichroma D-Dimer"
+        }
+      ]
+    },
+    {
+      "key": "ichroma prl",
+      "brand": "Boditech",
+      "canonical": "boditech-ichroma-prl-test",
+      "members": [
+        {
+          "id": "boditech-ichroma-prl-test",
+          "name": "Boditech ichroma PRL Test"
+        },
+        {
+          "id": "boditech-ichroma-prolactin-prl",
+          "name": "Boditech ichroma Prolactin (PRL)"
+        }
+      ]
+    },
+    {
+      "key": "i ichroma plus tn",
+      "brand": "Boditech",
+      "canonical": "boditech-ichroma-tn-i-plus-test",
+      "members": [
+        {
+          "id": "boditech-ichroma-tn-i-plus-test",
+          "name": "Boditech Ichroma Tn-I Plus Test"
+        },
+        {
+          "id": "boditech-ichroma-troponin-i-tn-i-plus",
+          "name": "Boditech ichroma Troponin I (Tn-I) Plus"
+        }
+      ]
+    },
+    {
       "key": "community hiv home in oraquick version",
       "brand": "OraSure Technologies",
       "canonical": "orasure-technologies-oraquick-in-home-hiv-test-pharmacy-version",
@@ -917,6 +1112,21 @@
         {
           "id": "arkray-blood-glucose-test-meter-glucocard-vital-gt-1050",
           "name": "Arkray Blood Glucose Test Meter GLUCOCARD Vital GT-1050"
+        }
+      ]
+    },
+    {
+      "key": "6 afia",
+      "brand": "Boditech",
+      "canonical": "boditech-afias-6-b99f66",
+      "members": [
+        {
+          "id": "boditech-afias-6-b99f66",
+          "name": "Boditech AFIAS-6"
+        },
+        {
+          "id": "boditech-afias-6-dd2320",
+          "name": "Boditech AFIAS 6"
         }
       ]
     },
