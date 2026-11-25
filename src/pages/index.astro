@@ -118,7 +118,12 @@ const instruments = live.filter((p) => p.product_type === 'instrument').length;
           <li>Send one inquiry for pricing, availability and documents.</li>
         </ol>
       </div>
-      <RequestInfo variant="hub" subject="diagnostic" />
+      <div class="how-ctas">
+        <RequestInfo variant="hub" subject="diagnostic" />
+        <a class="btn" href={url('/request-product/')}>
+          Can't find a product? Request it
+        </a>
+      </div>
     </section>
   </div>
 </Base>
@@ -196,6 +201,10 @@ const instruments = live.filter((p) => p.product_type === 'instrument').length;
     gap: var(--s-4);
     padding: var(--s-5);
     flex-wrap: wrap;
+  }
+  .how-ctas {
+    display: grid;
+    gap: var(--s-2);
   }
   @media (max-width: 560px) {
     .hero-search {

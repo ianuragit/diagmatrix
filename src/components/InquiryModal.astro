@@ -38,7 +38,9 @@ const f = site.form;
     </div>
     <div class="row">
       <label>
-        Name <span aria-hidden="true">*</span>
+        <span>
+          Name <span aria-hidden="true">*</span>
+        </span>
         <input name="name" autocomplete="name" required data-label="Name" />
       </label>
       <label>
@@ -48,7 +50,9 @@ const f = site.form;
     </div>
     <div class="row">
       <label>
-        Email <span aria-hidden="true">*</span>
+        <span>
+          Email <span aria-hidden="true">*</span>
+        </span>
         <input name="email" type="email" autocomplete="email" required data-label="Email" />
       </label>
       <label>
@@ -61,7 +65,9 @@ const f = site.form;
       <input name="country" autocomplete="country-name" />
     </label>
     <label>
-      Message <span aria-hidden="true">*</span>
+      <span>
+        Message <span aria-hidden="true">*</span>
+      </span>
       <textarea name="message" rows="5" required data-label="Message"></textarea>
     </label>
     <p class="status" data-status role="status" aria-live="polite"></p>

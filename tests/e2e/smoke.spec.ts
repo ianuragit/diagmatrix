@@ -144,3 +144,30 @@ test('@mobile sticky CTA bar on product pages', async ({ page }) => {
   await page.locator('.sticky-cta [data-request-info]').click();
   await expect(page.locator('dialog#inquiry')).toBeVisible();
 });
+
+test('request-a-product page: prefilled from search, validates, offers copy fallback', async ({
+  page,
+}) => {
+  await page.goto('./request-product/?q=Widget%20analyser&type=Consumable');
+  await expect(page.locator('h1')).toHaveText('Request a product');
+  const form = page.locator('#product-request');
+  await expect(form.locator('input[name=product_name]')).toHaveValue('Widget analyser');
+  await expect(form.locator('input[name=product_type][value="Consumable"]')).toBeChecked();
+  await form.locator('button[type=submit]').click();
+  await expect(form.locator('input[name=name]')).toHaveAttribute('aria-invalid', 'true');
+  await expect(form.locator('input[name=email]')).toHaveAttribute('aria-invalid', 'true');
+  await expect(form.locator('input[name=product_name]')).toHaveAttribute('aria-invalid', 'false');
+  await form.locator('input[name=name]').fill('A Tester');
+  await form.locator('input[name=email]').fill('a@example.com');
+  await form.locator('button[type=submit]').click();
+  await expect(form.locator('[data-status]')).toContainText(
+    /not switched on|received your request/,
+  );
+});
+
+test('empty filter results link to the request-a-product page', async ({ page }) => {
+  await page.goto('./products/?q=zzzz-no-such-product');
+  const link = page.locator('[data-results] a[href*="request-product"]');
+  await expect(link).toBeVisible();
+  await expect(link).toHaveAttribute('href', /q=zzzz-no-such-product/);
+});

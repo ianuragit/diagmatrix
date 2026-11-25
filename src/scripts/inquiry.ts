@@ -5,6 +5,7 @@
  * when configured at build time; otherwise shows a copy-ready message.
  */
 import { basket, basketAsText } from './basket.ts';
+import { submitForm } from './forms.ts';
 
 interface Ctx {
   context: string; // product | basket | hub | search | general
@@ -122,52 +123,18 @@ export function initInquiry(): void {
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    status.className = 'status';
-    // Honeypot: real users never fill this.
-    if ((form.elements.namedItem('company_website') as HTMLInputElement).value) return;
-    const invalid: string[] = [];
-    for (const name of ['name', 'email', 'message']) {
-      const el = form.elements.namedItem(name) as HTMLInputElement;
-      const ok =
-        el.value.trim() !== '' &&
-        (name !== 'email' || /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(el.value.trim()));
-      el.setAttribute('aria-invalid', String(!ok));
-      if (!ok) invalid.push(el.dataset.label ?? name);
-    }
-    if (invalid.length) {
-      status.textContent = `Please check: ${invalid.join(', ')}.`;
-      status.classList.add('error');
-      (form.querySelector('[aria-invalid="true"]') as HTMLElement | null)?.focus();
-      return;
-    }
-    if (!endpoint) {
-      status.textContent =
-        'Online inquiries are not switched on yet. Use “Copy inquiry” and send it to us by email or message.';
-      status.classList.add('error');
-      return;
-    }
-    const data = Object.fromEntries(new FormData(form).entries()) as Record<string, string>;
-    delete data.company_website;
-    if (service === 'web3forms') data.access_key = accessKey;
-    const btn = form.querySelector<HTMLButtonElement>('button[type=submit]')!;
-    btn.disabled = true;
-    status.textContent = 'Sending…';
-    try {
-      const res = await fetch(endpoint, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(data),
-      });
-      if (!res.ok) throw new Error(String(res.status));
-      form.reset();
-      fields.message.dataset.auto = '1';
-      status.textContent = 'Thank you — your inquiry was sent. We will reply by email.';
-      status.classList.add('success');
-    } catch {
-      status.textContent = 'Sorry, sending failed. Please try again, or use “Copy inquiry”.';
-      status.classList.add('error');
-    } finally {
-      btn.disabled = false;
-    }
+    const r = await submitForm(
+      form,
+      status,
+      { endpoint, service, accessKey },
+      {
+        required: ['name', 'email', 'message'],
+        disabledMessage:
+          'Online inquiries are not switched on yet. Use “Copy inquiry” and send it to us by email or message.',
+        successMessage: 'Thank you — your inquiry was sent. We will reply by email.',
+        failMessage: 'Sorry, sending failed. Please try again, or use “Copy inquiry”.',
+      },
+    );
+    if (r === 'sent') fields.message.dataset.auto = '1';
   });
 }

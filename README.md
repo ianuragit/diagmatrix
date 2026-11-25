@@ -4,7 +4,7 @@ A static directory of in-vitro diagnostic products. A polite scraping pipeline
 (robots.txt-first, 1 req/s per host, disk-cached) builds `data/products.json`;
 Astro renders it to GitHub Pages.
 
-> Status: Phase 5 done (site with search, filters, basket, inquiry modal). See `Activity_Summary_Log.md`.
+> Status: Phase 5 done (site with search, filters, basket, inquiry modal, request-a-product page). See `Activity_Summary_Log.md`.
 
 ## Setup
 

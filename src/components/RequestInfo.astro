@@ -7,8 +7,10 @@
  *  hub     – "Request info on {name} products" on category/brand/analyte pages
  *  search  – "Can't find it? Ask us" for empty results
  *  sticky  – compact button for the mobile sticky bar
- * Opens the inquiry modal prefilled with context (see scripts/inquiry.ts).
+ * Opens the inquiry modal prefilled with context (see scripts/inquiry.ts);
+ * the search variant links to the request-a-product page instead.
  */
+import { url } from '../lib/url';
 export interface Props {
   variant: 'card' | 'hero' | 'spec' | 'hub' | 'search' | 'sticky';
   product?: string;
@@ -34,14 +36,20 @@ const context =
   variant === 'hub' ? 'hub' : variant === 'search' ? 'search' : product ? 'product' : 'general';
 ---
 
-<button
-  type="button"
-  class={cls}
-  data-request-info
-  data-context={context}
-  data-product={product}
-  data-catalogue={catalogue ?? undefined}
-  data-subject={subject}
->
-  {label}
-</button>
+{variant === 'search' ? (
+  <a class={cls} href={url('/request-product/')} data-request-product>
+    {label}
+  </a>
+) : (
+  <button
+    type="button"
+    class={cls}
+    data-request-info
+    data-context={context}
+    data-product={product}
+    data-catalogue={catalogue ?? undefined}
+    data-subject={subject}
+  >
+    {label}
+  </button>
+)}

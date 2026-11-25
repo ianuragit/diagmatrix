@@ -102,7 +102,7 @@ export function initHeaderSearch(): void {
     const all = `<a class="sr-all" href="${base}search/?q=${encodeURIComponent(q)}">See all ${res.results.length} results</a>`;
     panel.innerHTML = top.length
       ? top.map(renderResult).join('') + all
-      : `<div class="sr-empty"><p>No products match “${escapeHtml(q)}”.</p><button type="button" class="btn btn-sm" data-request-info data-context="search">Can't find it? Ask us</button></div>`;
+      : `<div class="sr-empty"><p>No products match “${escapeHtml(q)}”.</p><a class="btn btn-sm" href="${base}request-product/?q=${encodeURIComponent(q)}">Can't find it? Ask us</a></div>`;
     panel.hidden = false;
   });
   document.addEventListener('click', (e) => {

@@ -68,6 +68,12 @@ import { url } from '../lib/url';
     summary.textContent = `${res.results.length} result${res.results.length === 1 ? '' : 's'} for “${q}”${res.results.length > 60 ? ' (showing 60)' : ''}`;
     out.innerHTML = data.map(renderResult).join('');
     empty.hidden = res.results.length > 0;
+    empty
+      .querySelector<HTMLAnchorElement>('[data-request-product]')
+      ?.setAttribute(
+        'href',
+        `${location.pathname.replace(/search\/$/, '')}request-product/?q=${encodeURIComponent(q)}`,
+      );
     const f = res.filters ?? {};
     filtersEl.innerHTML = ['category', 'product_type', 'brand']
       .filter((k) => f[k] && Object.keys(f[k]!).length)

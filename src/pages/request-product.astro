@@ -1,0 +1,392 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { site } from '../lib/site';
+import { url } from '../lib/url';
+const f = site.form;
+---
+
+<Base
+  title={`Request a product we don't list | ${site.name}`}
+  description="Can't find a diagnostic device, reagent or consumable? Tell us what you need and we'll send you a product booklet with specifications, documents and pack sizes."
+>
+  <div class="container narrow">
+    <Breadcrumbs items={[{ label: 'Request a product' }]} />
+    <h1>Request a product</h1>
+    <p class="lede">
+      Looking for an instrument, test kit, reagent or consumable that isn't in our directory? Tell
+      us what you need. We'll source it and email you a <strong>product booklet</strong> with
+      specifications, available pack sizes, documentation and next steps for a quotation.
+    </p>
+
+    <ol class="steps" aria-label="How it works">
+      <li>
+        <strong>Describe the product</strong> — as much or as little as you know.
+      </li>
+      <li>
+        <strong>We identify it</strong> and check the manufacturer's information.
+      </li>
+      <li>
+        <strong>You receive a booklet</strong> by email (PDF) with the product details.
+      </li>
+    </ol>
+
+    {!f && (
+      <p class="notice">
+        Online requests are being set up. Fill in the form and use <strong>Copy request</strong> to
+        send it to us by email or message in the meantime.
+      </p>
+    )}
+
+    <form
+      id="product-request"
+      class="card rq"
+      novalidate
+      data-endpoint={f?.endpoint ?? ''}
+      data-service={f?.service ?? ''}
+      data-access-key={f?.accessKey ?? ''}
+    >
+      <input type="hidden" name="form_type" value="product_request" />
+      <input type="hidden" name="subject" value="Product request" />
+      <input type="hidden" name="from_name" value={site.name} />
+      <div class="hp" aria-hidden="true">
+        <label>
+          Leave this empty{' '}
+          <input type="text" name="company_website" tabindex="-1" autocomplete="off" />
+        </label>
+      </div>
+
+      <fieldset>
+        <legend>What are you looking for?</legend>
+        <div class="types" role="radiogroup" aria-label="Product type">
+          <label class="type">
+            <input type="radio" name="product_type" value="Instrument / device" checked />{' '}
+            <span>Instrument / device</span>
+          </label>
+          <label class="type">
+            <input type="radio" name="product_type" value="Reagent / test kit" />{' '}
+            <span>Reagent / test kit</span>
+          </label>
+          <label class="type">
+            <input type="radio" name="product_type" value="Consumable" /> <span>Consumable</span>
+          </label>
+          <label class="type">
+            <input type="radio" name="product_type" value="Not sure" /> <span>Not sure</span>
+          </label>
+        </div>
+        <label>
+          <span>
+            Product name or description <span aria-hidden="true">*</span>
+          </span>
+          <input
+            name="product_name"
+            required
+            data-label="Product name or description"
+            placeholder="e.g. HbA1c point-of-care analyser, dengue NS1 rapid test"
+          />
+        </label>
+        <div class="row">
+          <label>
+            Brand / manufacturer
+            <input name="brand" placeholder="if known" />
+          </label>
+          <label>
+            Catalogue no. / model
+            <input name="catalogue_no" placeholder="if known" />
+          </label>
+        </div>
+        <div class="row">
+          <label>
+            What should it detect or measure?
+            <input name="analyte" placeholder="e.g. CRP, HIV 1/2, glucose" />
+          </label>
+          <label>
+            Sample type
+            <select name="sample_type">
+              <option value="">Not specified</option>
+              <option>Whole blood</option>
+              <option>Serum / plasma</option>
+              <option>Urine</option>
+              <option>Swab</option>
+              <option>Stool</option>
+              <option>Saliva</option>
+              <option>Other</option>
+            </select>
+          </label>
+        </div>
+        <div class="row">
+          <label>
+            Quantity needed
+            <input name="quantity" placeholder="e.g. 10 kits, 2 analysers, 500 tests/month" />
+          </label>
+          <label>
+            Needed by
+            <input name="needed_by" type="date" />
+          </label>
+        </div>
+        <label>
+          Anything else?{' '}
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Intended use, setting (lab, clinic, pharmacy), certifications required (CE-IVD, FDA, WHO PQ)…"
+          ></textarea>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Where should we send the booklet?</legend>
+        <div class="row">
+          <label>
+            <span>
+              Name <span aria-hidden="true">*</span>
+            </span>
+            <input name="name" autocomplete="name" required data-label="Name" />
+          </label>
+          <label>
+            Organisation
+            <input name="organisation" autocomplete="organization" />
+          </label>
+        </div>
+        <div class="row">
+          <label>
+            <span>
+              Email <span aria-hidden="true">*</span>
+            </span>
+            <input name="email" type="email" autocomplete="email" required data-label="Email" />
+          </label>
+          <label>
+            Phone
+            <input name="phone" type="tel" autocomplete="tel" />
+          </label>
+        </div>
+        <label>
+          Country
+          <input name="country" autocomplete="country-name" />
+        </label>
+      </fieldset>
+
+      <p class="status" data-status role="status" aria-live="polite"></p>
+      <div class="actions">
+        <button type="button" class="btn" data-copy>
+          Copy request
+        </button>
+        <button type="submit" class="btn btn-primary">
+          Request product booklet
+        </button>
+      </div>
+      <p class="fine muted">
+        Fields marked * are required. We use your details only to answer this request. Prefer
+        browsing? <a href={url('/products/')}>See all products</a>.
+      </p>
+    </form>
+  </div>
+</Base>
+
+<script>
+  import { submitForm, targetFrom } from '../scripts/forms';
+  const form = document.getElementById('product-request') as HTMLFormElement;
+  const status = form.querySelector<HTMLElement>('[data-status]')!;
+  const params = new URLSearchParams(location.search);
+  const el = (n: string) => form.elements.namedItem(n) as HTMLInputElement;
+  if (params.get('q')) el('product_name').value = params.get('q')!.slice(0, 200);
+  const type = params.get('type');
+  if (type)
+    form
+      .querySelector<HTMLInputElement>(`input[name=product_type][value^="${CSS.escape(type)}" i]`)
+      ?.click();
+
+  function summary(): string {
+    const d = new FormData(form);
+    const lines = [
+      `Product request (${d.get('product_type')})`,
+      `Product: ${d.get('product_name') || '—'}`,
+      d.get('brand') && `Brand: ${d.get('brand')}`,
+      d.get('catalogue_no') && `Cat./model: ${d.get('catalogue_no')}`,
+      d.get('analyte') && `Detects/measures: ${d.get('analyte')}`,
+      d.get('sample_type') && `Sample: ${d.get('sample_type')}`,
+      d.get('quantity') && `Quantity: ${d.get('quantity')}`,
+      d.get('needed_by') && `Needed by: ${d.get('needed_by')}`,
+      d.get('message') && `Notes: ${d.get('message')}`,
+      'Please send the product booklet.',
+    ];
+    return lines.filter(Boolean).join('\n');
+  }
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    el('subject').value = `Product request: ${el('product_name').value.slice(0, 80)}`;
+    const r = await submitForm(form, status, targetFrom(form), {
+      required: ['product_name', 'name', 'email'],
+      disabledMessage:
+        'Online requests are not switched on yet. Use “Copy request” and send it to us by email or message.',
+      successMessage: 'Thank you — we received your request and will email your product booklet.',
+      failMessage: 'Sorry, sending failed. Please try again, or use “Copy request”.',
+    });
+    if (r === 'sent' || r === 'disabled') {
+      const detail = { context: 'product_request', product: el('product_name')?.value || null };
+      window.dispatchEvent(new CustomEvent('request_info', { detail }));
+    }
+  });
+  form.querySelector('[data-copy]')!.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(summary());
+      status.className = 'status';
+      status.textContent = 'Copied to clipboard.';
+    } catch {
+      status.textContent = 'Copy failed — select the text and copy it manually.';
+    }
+  });
+</script>
+
+<style>
+  .narrow {
+    max-width: 820px;
+  }
+  .lede {
+    font-size: var(--fs-lg);
+  }
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--s-3);
+    padding: 0;
+    list-style: none;
+    counter-reset: s;
+    margin: var(--s-5) 0;
+  }
+  .steps li {
+    counter-increment: s;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: var(--s-3) var(--s-4);
+    font-size: var(--fs-sm);
+  }
+  .steps li::before {
+    content: counter(s);
+    display: inline-grid;
+    place-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--teal-700);
+    color: #fff;
+    font-weight: 700;
+    margin-right: var(--s-2);
+  }
+  .notice {
+    background: var(--teal-50);
+    border-radius: var(--radius-sm);
+    padding: var(--s-3);
+    font-size: var(--fs-sm);
+  }
+  .rq {
+    padding: var(--s-5);
+    display: grid;
+    gap: var(--s-4);
+  }
+  fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: var(--s-3);
+  }
+  legend {
+    font-weight: 700;
+    color: var(--navy);
+    font-size: var(--fs-lg);
+    margin-bottom: var(--s-2);
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s-3);
+  }
+  label {
+    display: grid;
+    gap: 4px;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--navy);
+  }
+  input,
+  select,
+  textarea {
+    font: inherit;
+    font-weight: 400;
+    padding: var(--s-2) var(--s-3);
+    border: 1px solid #9aabbb;
+    border-radius: var(--radius-sm);
+    min-height: 44px;
+    color: var(--ink);
+    background: #fff;
+  }
+  .types {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--s-2);
+  }
+  .type {
+    display: flex;
+    align-items: center;
+    gap: var(--s-2);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    padding: var(--s-2) var(--s-3);
+    min-height: 44px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .type input {
+    min-height: auto;
+    accent-color: var(--teal);
+  }
+  .type:has(input:checked) {
+    border-color: var(--teal);
+    background: var(--teal-50);
+  }
+  [aria-invalid='true'] {
+    border-color: var(--danger);
+    box-shadow: 0 0 0 1px var(--danger);
+  }
+  .hp {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--s-2);
+    flex-wrap: wrap;
+  }
+  .status:empty {
+    display: none;
+  }
+  .status {
+    margin: 0;
+    font-size: var(--fs-sm);
+  }
+  .status.error {
+    color: var(--danger);
+  }
+  .status.success {
+    color: var(--success);
+  }
+  .fine {
+    font-size: var(--fs-xs);
+    margin: 0;
+  }
+  @media (max-width: 640px) {
+    .row,
+    .steps {
+      grid-template-columns: 1fr;
+    }
+    .types {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+</style>

@@ -44,7 +44,7 @@ Every folder and key file, mirroring the tree. Keep current.
 | `src/lib/` | `url.ts` (the one link helper), `site.ts` (project config, form/WhatsApp switches, disclaimer), `catalogue.ts` (collection, taxonomy labels, groupings). |
 | `src/layouts/Base.astro` | Page shell: head, header, footer, inquiry modal, client script init. |
 | `src/components/` | Header (search, basket badge), Footer (disclaimer), InquiryModal, RequestInfo (all CTA variants), AddToQuote, WhatsAppLink, ProductCard, ProductImage (placeholder), Breadcrumbs (+ JSON-LD), Pagination, Listing (static list + facet island), HubLayout. |
-| `src/scripts/` | Client code: `basket.ts` (quote_basket_v1), `inquiry.ts` (modal, validation, request_info event, Web3Forms/Formspree), `search.ts` (Pagefind), `facets.ts` (filters with URL state). |
+| `src/scripts/` | Client code: `basket.ts` (quote_basket_v1), `inquiry.ts` (modal, validation, request_info event, Web3Forms/Formspree), `search.ts` (Pagefind), `facets.ts` (filters with URL state), `forms.ts` (shared validation + Web3Forms/Formspree submit). |
 | `src/pages/` | Home; `/products/` (paginated) + `/products/{slug}/`; `/categories/{cat}/[{sub}/]`; `/brands/`; `/analytes/`; `/technology/`; `/search/`; `/basket/`; `/contact/`; `/about/`; 404; `/data/facets.json`. |
 | `src/styles/` | `tokens.css` (design tokens), `global.css` (base, buttons, cards, listing/facets). |
 | `playwright.config.ts`, `tests/e2e/` | Browser smoke tests against the built site under the real base path. |

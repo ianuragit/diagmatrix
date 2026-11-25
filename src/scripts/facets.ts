@@ -197,7 +197,7 @@ export async function initFacets(root: HTMLElement): Promise<void> {
     const slice = list.slice((state.page - 1) * PAGE, state.page * PAGE);
     results.innerHTML = slice.length
       ? slice.map(card).join('')
-      : `<div class="empty card"><p>No products match these filters.</p><button type="button" class="btn" data-request-info data-context="search">Can't find it? Ask us</button></div>`;
+      : `<div class="empty card"><p>No products match these filters.</p><a class="btn" href="${base}request-product/${state.q ? `?q=${encodeURIComponent(state.q)}` : ''}">Can't find it? Ask us</a></div>`;
     summary.textContent = `${list.length} product${list.length === 1 ? '' : 's'}${pages > 1 ? ` · page ${state.page} of ${pages}` : ''}`;
     if (pager) {
       const btn = (p: number, label: string, cur = false) =>

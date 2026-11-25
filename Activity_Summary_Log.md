@@ -2,6 +2,21 @@
 
 Newest first.
 
+## 2026-11-25 — Request-a-product page; branch reconciled with main
+
+**Done**
+- `/request-product/`: form for any device, reagent or consumable not in the directory (type, name,
+  brand, Cat./model, analyte, sample, quantity, date needed, notes + contact). Promise: a product
+  booklet (PDF) by email. Prefilled from `?q=`/`?type=`; same honeypot/validation/submit as the modal
+  via new `src/scripts/forms.ts`; "Copy request" fallback while no form key is set.
+- Every "Can't find it? Ask us" (search dropdown, search page, empty filters, 404) now links there with
+  the search text; added to header, footer and home.
+- 2 new Playwright tests (13 total).
+- Catalogue status recorded: Source A 141 of 2,214 in-scope pages (2,073 blocked, frozen; 1,020 out of
+  scope); Source B 304/304 fetched, 303 parsed; 1,219 canonical products.
+- `main` (which still held the original Phase 1 commit from PR #1) merged into the branch keeping the
+  branch's tree; PR #2 merged.
+
 ## 2026-11-25 — Phase 5: Astro site, search, filters, basket, forms
 
 **Done**
