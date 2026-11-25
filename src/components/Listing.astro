@@ -1,0 +1,61 @@
+---
+/**
+ * Product listing: static, paginated, fully usable without JS. With JS the
+ * facet island (scripts/facets.ts) takes over the same region. `locked`
+ * pins facets for hub pages (e.g. { category: ['molecular'] }).
+ */
+import type { Page } from 'astro';
+import type { Product } from '../lib/catalogue';
+import ProductCard from './ProductCard.astro';
+import Pagination from './Pagination.astro';
+import { url } from '../lib/url';
+export interface Props {
+  page: Pick<Page<Product>, 'data' | 'currentPage' | 'lastPage' | 'url' | 'total'>;
+  locked?: Record<string, string[]>;
+  fallbackLinks?: { href: string; label: string }[];
+}
+const { page, locked = {}, fallbackLinks = [] } = Astro.props;
+---
+
+<section class="listing" data-facets data-locked={JSON.stringify(locked)} aria-label="Products">
+  <div class="listing-tools">
+    <p data-summary class="muted" aria-live="polite">
+      {page.total} products{page.lastPage > 1 && ` · page ${page.currentPage} of ${page.lastPage}`}
+    </p>
+    <label class="js-only sort">
+      Sort{' '}
+      <select data-sort>
+        <option value="name">Name (A–Z)</option>
+        <option value="brand">Brand</option>
+      </select>
+    </label>
+  </div>
+  <div class="listing-layout">
+    <aside class="facets" data-facet-panel aria-label="Filters">
+      {fallbackLinks.length > 0 && (
+        <nav aria-label="Browse">
+          <ul class="fallback">
+            {fallbackLinks.map((l) => (
+              <li>
+                <a href={url(l.href)}>{l.label}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
+    </aside>
+    <div>
+      <div class="grid" data-results>
+        {page.data.map((p) => (
+          <ProductCard p={p} />
+        ))}
+      </div>
+      <div class="pager" data-pager></div>
+      <Pagination page={page} />
+    </div>
+  </div>
+</section>
+<script>
+  import { initFacets } from '../scripts/facets';
+  document.querySelectorAll<HTMLElement>('[data-facets]').forEach((el) => void initFacets(el));
+</script>

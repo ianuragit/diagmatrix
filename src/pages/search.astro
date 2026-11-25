@@ -1,0 +1,150 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import RequestInfo from '../components/RequestInfo.astro';
+import { site } from '../lib/site';
+import { url } from '../lib/url';
+---
+
+<Base
+  title={`Search | ${site.name}`}
+  description="Search diagnostic products by name, brand, analyte or catalogue number."
+  noindex
+>
+  <div class="container">
+    <Breadcrumbs items={[{ label: 'Search' }]} />
+    <h1>Search</h1>
+    <form id="search-page-form" class="sp-form" action={url('/search/')} method="get" role="search">
+      <label for="sp-q" class="visually-hidden">
+        Search products
+      </label>
+      <input id="sp-q" name="q" type="search" placeholder="Product, brand, analyte or Cat. no." />
+      <button class="btn btn-primary" type="submit">
+        Search
+      </button>
+    </form>
+    <div id="sp-filters" class="sp-filters"></div>
+    <p id="sp-summary" class="muted" aria-live="polite"></p>
+    <div id="sp-results" class="sp-results"></div>
+    <div id="sp-empty" class="card empty" hidden>
+      <p>No products found. We may still be able to source it.</p>
+      <RequestInfo variant="search" />
+    </div>
+    <noscript>
+      <p>
+        Search needs JavaScript. You can <a href={url('/products/')}>browse all products</a>{' '}
+        instead.
+      </p>
+    </noscript>
+  </div>
+</Base>
+
+<script>
+  import { loadPagefind, renderResult } from '../scripts/search';
+  const params = new URLSearchParams(location.search);
+  const q = params.get('q') ?? '';
+  const input = document.getElementById('sp-q') as HTMLInputElement;
+  const out = document.getElementById('sp-results')!;
+  const summary = document.getElementById('sp-summary')!;
+  const empty = document.getElementById('sp-empty')!;
+  const filtersEl = document.getElementById('sp-filters')!;
+  const active: Record<string, string[]> = {};
+  for (const k of ['category', 'brand', 'product_type'])
+    if (params.get(k)) active[k] = params.get(k)!.split('|');
+  input.value = q;
+
+  async function run() {
+    const pf = await loadPagefind();
+    if (!pf) {
+      summary.textContent = 'Search is available on the published site.';
+      return;
+    }
+    if (!q) {
+      summary.textContent = 'Type a product name, brand, analyte or catalogue number.';
+      return;
+    }
+    const res = await pf.search(q, { filters: active });
+    const data = await Promise.all(res.results.slice(0, 60).map((r) => r.data()));
+    summary.textContent = `${res.results.length} result${res.results.length === 1 ? '' : 's'} for “${q}”${res.results.length > 60 ? ' (showing 60)' : ''}`;
+    out.innerHTML = data.map(renderResult).join('');
+    empty.hidden = res.results.length > 0;
+    const f = res.filters ?? {};
+    filtersEl.innerHTML = ['category', 'product_type', 'brand']
+      .filter((k) => f[k] && Object.keys(f[k]!).length)
+      .map((k) => {
+        const opts = Object.entries(f[k]!)
+          .filter(([, n]) => n > 0)
+          .sort((a, b) => b[1] - a[1])
+          .slice(0, 12);
+        return `<fieldset><legend>${k === 'product_type' ? 'Type' : k[0]!.toUpperCase() + k.slice(1)}</legend>${opts
+          .map(
+            ([v, n]) =>
+              `<label><input type="checkbox" data-k="${k}" value="${v.replace(/"/g, '&quot;')}"${active[k]?.includes(v) ? ' checked' : ''}> ${v.replace(/</g, '&lt;')} <span class="count">${n}</span></label>`,
+          )
+          .join('')}</fieldset>`;
+      })
+      .join('');
+  }
+  filtersEl.addEventListener('change', (e) => {
+    const t = e.target as HTMLInputElement;
+    const k = t.dataset.k!;
+    const set = new Set(active[k] ?? []);
+    t.checked ? set.add(t.value) : set.delete(t.value);
+    if (set.size) active[k] = [...set];
+    else delete active[k];
+    const p = new URLSearchParams({ q });
+    for (const [key, v] of Object.entries(active)) p.set(key, v.join('|'));
+    history.replaceState(null, '', `?${p}`);
+    void run();
+  });
+  void run();
+</script>
+
+<style>
+  .sp-form {
+    display: flex;
+    gap: var(--s-2);
+    max-width: 680px;
+    margin-bottom: var(--s-4);
+  }
+  .sp-form input {
+    flex: 1;
+    min-height: 44px;
+    font: inherit;
+    padding: 0 var(--s-3);
+    border: 1px solid #9aabbb;
+    border-radius: var(--radius-sm);
+  }
+  .sp-results {
+    display: grid;
+    gap: var(--s-2);
+  }
+  .sp-results :global(.sr-item) {
+    background: var(--surface);
+    border: 1px solid var(--line);
+  }
+  .sp-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-4);
+    margin-bottom: var(--s-3);
+    font-size: var(--fs-sm);
+  }
+  .sp-filters :global(fieldset) {
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-2) var(--s-4);
+  }
+  .sp-filters :global(legend) {
+    font-weight: 700;
+    color: var(--navy);
+  }
+  .sp-filters :global(label) {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+</style>

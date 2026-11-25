@@ -1,0 +1,39 @@
+/* Design tokens — the only place colours, type and spacing are defined. */
+:root {
+  --navy: #0f2a43;
+  --navy-700: #183a5a;
+  --teal: #0e7c86;
+  --teal-700: #0a5f67; /* text-safe teal on light backgrounds (AA ≥ 4.5:1) */
+  --teal-50: #e6f4f5;
+  --amber: #f59e0b; /* CTA only — keep scarce; always with navy text */
+  --amber-600: #d97706;
+  --bg: #f6f8fa;
+  --surface: #ffffff;
+  --ink: #1b2733;
+  --ink-muted: #4a5a6a; /* AA on white and on --bg */
+  --line: #d8e0e8;
+  --danger: #b42318;
+  --success: #067647;
+
+  --font: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: clamp(1.75rem, 1.2rem + 2vw, 2.5rem);
+
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+
+  --radius: 10px;
+  --radius-sm: 6px;
+  --shadow: 0 1px 2px rgb(15 42 67 / 0.06), 0 4px 16px rgb(15 42 67 / 0.06);
+  --focus: 0 0 0 3px #fff, 0 0 0 5px var(--teal);
+  --max: 1200px;
+}

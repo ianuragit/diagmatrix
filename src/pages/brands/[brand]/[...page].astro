@@ -1,0 +1,26 @@
+---
+import type { GetStaticPaths } from 'astro';
+import HubLayout from '../../../components/HubLayout.astro';
+import { PAGE_SIZE, brandSlug, groupBy, liveProducts } from '../../../lib/catalogue';
+import { site } from '../../../lib/site';
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const live = await liveProducts();
+  return [...groupBy(live, (p) => p.brand)].flatMap(([name, list]) =>
+    paginate(list, { params: { brand: brandSlug(name) }, pageSize: PAGE_SIZE, props: { name } }),
+  );
+}) satisfies GetStaticPaths;
+const { brand } = Astro.params;
+const { page, name } = Astro.props;
+---
+
+<HubLayout
+  title={`${name} diagnostic products (${page.total}) | ${site.name}`}
+  heading={`${name} products`}
+  description={`${page.total} ${name} in-vitro diagnostic products: specifications, analytes, sample types and request for quotation.`}
+  crumbs={[{ label: 'Brands', href: '/brands/' }, { label: name }]}
+  page={page}
+  locked={{ brand: [brand] }}
+  subject={name}
+  basePath={`/brands/${brand}/`}
+/>

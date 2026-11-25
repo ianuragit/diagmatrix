@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import RequestInfo from '../components/RequestInfo.astro';
+import WhatsAppLink from '../components/WhatsAppLink.astro';
+import { site } from '../lib/site';
+---
+
+<Base
+  title={`Contact | ${site.name}`}
+  description={`Ask ${site.name} about diagnostic products, pricing, availability and documentation.`}
+>
+  <div class="container narrow">
+    <Breadcrumbs items={[{ label: 'Contact' }]} />
+    <h1>Contact us</h1>
+    <p>
+      Looking for a product, pricing, availability or documents? Send us an inquiry — add products
+      to your quote basket first to include them automatically.
+    </p>
+    <div class="ctas">
+      <RequestInfo variant="hub" subject="diagnostic" />
+      <WhatsAppLink
+        text={`Hello ${site.name}, I have a question about diagnostic products.`}
+        label="Message us on WhatsApp"
+      />
+    </div>
+    {site.email && (
+      <p>
+        Email: <a href={`mailto:${site.email}`}>{site.email}</a>
+      </p>
+    )}
+  </div>
+</Base>
+<style>
+  .narrow {
+    max-width: 760px;
+  }
+  .ctas {
+    display: flex;
+    gap: var(--s-2);
+    flex-wrap: wrap;
+    margin: var(--s-4) 0;
+  }
+</style>

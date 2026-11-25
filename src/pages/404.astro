@@ -1,0 +1,46 @@
+---
+import Base from '../layouts/Base.astro';
+import RequestInfo from '../components/RequestInfo.astro';
+import { site } from '../lib/site';
+import { url } from '../lib/url';
+---
+
+<Base
+  title={`Page not found | ${site.name}`}
+  description="The page you were looking for does not exist."
+  noindex
+>
+  <div class="container section">
+    <h1>Page not found</h1>
+    <p>
+      The page may have moved. Try searching, or browse <a href={url('/products/')}>all products</a>{' '}
+      and <a href={url('/categories/')}>categories</a>.
+    </p>
+    <form action={url('/search/')} method="get" role="search" class="f">
+      <label for="nf-q" class="visually-hidden">
+        Search products
+      </label>
+      <input id="nf-q" name="q" type="search" placeholder="Search products" />
+      <button class="btn btn-teal" type="submit">
+        Search
+      </button>
+    </form>
+    <RequestInfo variant="search" />
+  </div>
+</Base>
+<style>
+  .f {
+    display: flex;
+    gap: var(--s-2);
+    max-width: 520px;
+    margin: var(--s-4) 0;
+  }
+  .f input {
+    flex: 1;
+    min-height: 44px;
+    font: inherit;
+    padding: 0 var(--s-3);
+    border: 1px solid #9aabbb;
+    border-radius: var(--radius-sm);
+  }
+</style>

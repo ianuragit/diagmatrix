@@ -1,0 +1,72 @@
+---
+/** Branded placeholder (no hotlinking). Uses image_local when a self-hosted image exists. */
+import { url } from '../lib/url';
+export interface Props {
+  brand: string | null;
+  name: string;
+  category: string;
+  imageLocal: string | null;
+  size?: 'sm' | 'lg';
+}
+const { brand, name, category, imageLocal, size = 'sm' } = Astro.props;
+const initials =
+  (brand ?? name)
+    .replace(/[^A-Za-z0-9 ]/g, '')
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((w) => w[0]!.toUpperCase())
+    .join('') || 'Dx';
+---
+
+{imageLocal ? (
+  <img
+    class={`pimg ${size}`}
+    src={url(imageLocal)}
+    alt={`${brand ?? ''} ${name}`.trim()}
+    loading="lazy"
+    decoding="async"
+  />
+) : (
+  <div
+    class={`pimg ph ${size}`}
+    role="img"
+    aria-label={`Placeholder image for ${`${brand ?? ''} ${name}`.trim()}`}
+  >
+    <span class="ini">{initials}</span>
+    <span class="cat">{category}</span>
+  </div>
+)}
+
+<style>
+  .pimg {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: var(--radius-sm);
+    object-fit: contain;
+    background: var(--surface);
+  }
+  .ph {
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    gap: var(--s-1);
+    background: linear-gradient(135deg, var(--teal-50), #fff);
+    border: 1px solid var(--line);
+  }
+  .ini {
+    font-weight: 800;
+    color: var(--teal-700);
+    font-size: 2rem;
+    letter-spacing: 0.04em;
+  }
+  .lg .ini {
+    font-size: 3.5rem;
+  }
+  .cat {
+    font-size: var(--fs-xs);
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+</style>

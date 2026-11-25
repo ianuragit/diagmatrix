@@ -1,0 +1,48 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { liveProducts, groupBy } from '../lib/catalogue';
+import { site, DISCLAIMER } from '../lib/site';
+import { url } from '../lib/url';
+const live = await liveProducts();
+const brands = groupBy(live, (p) => p.brand).size;
+---
+
+<Base
+  title={`About | ${site.name}`}
+  description={`${site.name} is a directory of ${live.length} in-vitro diagnostic products from ${brands} brands.`}
+>
+  <div class="container narrow">
+    <Breadcrumbs items={[{ label: 'About' }]} />
+    <h1>About {site.name}</h1>
+    <p>
+      {site.name} is a searchable directory of in-vitro diagnostic (IVD) products for laboratories,
+      clinics, pharmacies and distributors: {live.length} products from {brands} brands, from
+      lateral-flow rapid tests and immunoassays to molecular tests, point-of-care analysers and
+      their reagents.
+    </p>
+    <h2>How the information is compiled</h2>
+    <p>
+      Product facts — brand, catalogue number, analytes, sample types, technology and specifications
+      — are compiled from manufacturer and distributor listings, normalised into one consistent
+      format, and checked for duplicates. Product summaries are written from those facts. Where a
+      fact is unknown, we leave it out rather than guess.
+    </p>
+    <p>
+      Each product page shows when its information was last updated. Spotted an error?{' '}
+      <a href={url('/contact/')}>Tell us</a>.
+    </p>
+    <h2>Prices and availability</h2>
+    <p>
+      We do not list prices. Add products to your <a href={url('/basket/')}>quote basket</a> and
+      send one inquiry for pricing and availability.
+    </p>
+    <h2>Disclaimer</h2>
+    <p>{DISCLAIMER}</p>
+  </div>
+</Base>
+<style>
+  .narrow {
+    max-width: 760px;
+  }
+</style>

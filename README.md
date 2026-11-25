@@ -4,7 +4,7 @@ A static directory of in-vitro diagnostic products. A polite scraping pipeline
 (robots.txt-first, 1 req/s per host, disk-cached) builds `data/products.json`;
 Astro renders it to GitHub Pages.
 
-> Status: Phase 4 done (catalogue built). See `Activity_Summary_Log.md`.
+> Status: Phase 5 done (site with search, filters, basket, inquiry modal). See `Activity_Summary_Log.md`.
 
 ## Setup
 
@@ -18,6 +18,17 @@ pnpm install
 2. `cp pipeline/config/sources.local.example.yaml pipeline/config/sources.local.yaml` and put
    the real source base URLs and any private terms in it. This file is git-ignored.
 3. `git config core.hooksPath .githooks` to enable the privacy pre-commit hook.
+
+## Switching on the inquiry form and WhatsApp
+
+Edit `project.config.yaml` and rebuild — no code changes:
+
+```yaml
+form:
+  service: web3forms        # or formspree
+  key: "<public access key>" # Formspree: the full https://formspree.io/f/... endpoint
+whatsapp_number: "919800000000"
+```
 
 ## Open TODOs
 
@@ -55,6 +66,7 @@ Things deliberately left unset for now — fill in before launch.
 | `pnpm privacy-check` | Scan committable files and `dist/` for private terms. |
 | `pnpm dev` / `pnpm build` / `pnpm preview` | Astro site; `build` also runs Pagefind. |
 | `pnpm test` / `pnpm typecheck` | Vitest; `tsc` + `astro check`. |
+| `pnpm test:e2e` | Playwright smoke tests against the built site (run `pnpm build` first). |
 
 Behind an HTTP proxy, run the crawler with `NODE_USE_ENV_PROXY=1`.
 

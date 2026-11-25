@@ -87,12 +87,12 @@
     "related": [
       "77-elektronika-labureader-plus-2",
       "77-elektronika-docureader-2-pro",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -961,8 +961,6 @@
     "subcategory": "reagent",
     "technology": "rdt",
     "analyte": [
-      "glucose",
-      "phosphate",
       "g6pd"
     ],
     "sample_type": [
@@ -997,19 +995,10 @@
       "Sample Volume Required": "10 L",
       "Pack Size": "25T"
     },
-    "summary": "Abbott BinaxNOW G6PD is a lateral-flow rapid test for Glucose, Phosphate and G6PD. Sample type: whole blood. Pack size: 25 tests.",
+    "summary": "Abbott BinaxNOW G6PD is a lateral-flow rapid test for G6PD. Sample type: whole blood. Pack size: 25 tests.",
     "image_local": null,
     "documents": [],
-    "related": [
-      "hitado-nobistrip-u10",
-      "hitado-nobistrip-expert",
-      "sysmex-meditape-uc",
-      "arkray-aution-sticks",
-      "analyticon-combiscreen",
-      "macherey-nagel-medi-test",
-      "nal-von-minden-reactif",
-      "servoprax-servotest-one-strip-reader"
-    ],
+    "related": [],
     "source_count": 2,
     "duplicate_of": null,
     "classification_confidence": 0.9,
@@ -1025,8 +1014,6 @@
     "subcategory": "reagent",
     "technology": "rdt",
     "analyte": [
-      "glucose",
-      "phosphate",
       "g6pd"
     ],
     "sample_type": [
@@ -1061,7 +1048,7 @@
       "Sample Volume Required": "10 L",
       "Pack Size": "25T"
     },
-    "summary": "Abbott BinaxNOW G6PD is a lateral-flow rapid test for Glucose, Phosphate and G6PD. Sample type: whole blood. Pack size: 25 tests.",
+    "summary": "Abbott BinaxNOW G6PD is a lateral-flow rapid test for G6PD. Sample type: whole blood. Pack size: 25 tests.",
     "image_local": null,
     "documents": [],
     "related": [],
@@ -4053,11 +4040,11 @@
       "abbott-i-stat-alinity",
       "abbott-i-stat-1",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
-      "sysmex-meditape-uc"
+      "sysmex-meditape-uc",
+      "arkray-aution-sticks"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -4164,11 +4151,11 @@
       "abbott-i-stat-alinity",
       "abbott-i-stat-1",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
-      "hitado-nobistrip-expert"
+      "hitado-nobistrip-expert",
+      "sysmex-meditape-uc"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -5194,12 +5181,12 @@
     "related": [
       "abbott-i-stat-1",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "ekf-diagnostics-hemo-control"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -5241,11 +5228,11 @@
       "abbott-i-stat-alinity",
       "abbott-i-stat-1",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "ekf-diagnostics-hemo-control",
       "nal-von-minden-reactif",
-      "siemens-healthineers-bgem-testkarte"
+      "siemens-healthineers-bgem-testkarte",
+      "siemens-healthineers-rapidlab-1240"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -7798,13 +7785,13 @@
     "documents": [],
     "related": [
       "acon-mission-u500",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
       "analyticon-combiscreen",
-      "macherey-nagel-medi-test"
+      "macherey-nagel-medi-test",
+      "nal-von-minden-reactif"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -8232,11 +8219,11 @@
       "aidian-quikread-go-plus",
       "aidian-quikread-go",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-crp-10-60",
       "hitado-hemohapto",
       "ekf-diagnostics-hemo-control",
-      "sd-biosensor-standard-q-malaria-crp-duo"
+      "sd-biosensor-standard-q-malaria-crp-duo",
+      "actim-crp"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -8705,11 +8692,11 @@
       "aidian-quikread-go-plus",
       "aidian-quikread-go",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-crp-10-60",
       "hitado-hemohapto",
       "ekf-diagnostics-hemo-control",
-      "sd-biosensor-standard-q-malaria-crp-duo"
+      "sd-biosensor-standard-q-malaria-crp-duo",
+      "actim-crp"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -8764,9 +8751,9 @@
       "analyticon-combiscreen-11sys-plus",
       "analyticon-combiscreen-11sys",
       "analyticon-combiscreen-malb-crea",
-      "abbott-binaxnow-g6pd",
       "hitado-microalbumin",
-      "hitado-nobistrip-mikroalbumin-kreatinin"
+      "hitado-nobistrip-mikroalbumin-kreatinin",
+      "hitado-nobistrip-u10"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -8807,11 +8794,11 @@
       "analyticon-combiscreen",
       "analyticon-urilyzer-500-pro",
       "analyticon-urilyzer-100-pro",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 3,
     "duplicate_of": null,
@@ -8852,11 +8839,11 @@
       "analyticon-combiscreen",
       "analyticon-urilyzer-500-pro",
       "analyticon-urilyzer-100-pro",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 3,
     "duplicate_of": null,
@@ -8894,12 +8881,12 @@
     "related": [
       "analyticon-combiscreen",
       "analyticon-urilyzer-100-pro",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "macherey-nagel-medi-test"
+      "macherey-nagel-medi-test",
+      "nal-von-minden-reactif"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -8938,12 +8925,12 @@
     "related": [
       "analyticon-combiscreen",
       "analyticon-urilyzer-100-pro",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "macherey-nagel-medi-test"
+      "macherey-nagel-medi-test",
+      "nal-von-minden-reactif"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -9842,7 +9829,7 @@
       "arkray-aution-screen",
       "arkray-aution-daten-ae-4070",
       "arkray-aution-sticks-4pa",
-      "abbott-binaxnow-g6pd"
+      "hitado-nobistrip-mikroalbumin-kreatinin"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -9887,7 +9874,7 @@
       "arkray-aution-sticks-4pa",
       "arkray-aution-sticks-7ea",
       "arkray-aution-sticks-4ea",
-      "abbott-binaxnow-g6pd"
+      "hitado-nobistrip-u10"
     ],
     "source_count": 3,
     "duplicate_of": null,
@@ -9975,8 +9962,8 @@
       "arkray-aution-sticks-10pa",
       "arkray-aution-sticks-4pa",
       "arkray-aution-sticks-7ea",
-      "abbott-binaxnow-g6pd",
-      "hitado-nobistrip-u10"
+      "hitado-nobistrip-u10",
+      "hitado-nobistrip-expert"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -10020,7 +10007,7 @@
       "arkray-aution-sticks-10pa",
       "arkray-aution-sticks-7ea",
       "arkray-aution-sticks-4ea",
-      "abbott-binaxnow-g6pd"
+      "hitado-nobistrip-u10"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -10064,8 +10051,8 @@
       "arkray-aution-sticks-10pa",
       "arkray-aution-sticks-4pa",
       "arkray-aution-sticks-4ea",
-      "abbott-binaxnow-g6pd",
-      "hitado-nobistrip-u10"
+      "hitado-nobistrip-u10",
+      "hitado-nobistrip-expert"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -10620,13 +10607,13 @@
     "documents": [],
     "related": [
       "arkray-spotchem-ez-sp-4430",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "analyticon-combiscreen",
       "macherey-nagel-medi-test",
-      "nal-von-minden-reactif"
+      "nal-von-minden-reactif",
+      "servoprax-servotest-one-strip-reader"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -10664,13 +10651,13 @@
     "documents": [],
     "related": [
       "arkray-spotchem-d-concept",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "analyticon-combiscreen",
       "macherey-nagel-medi-test",
-      "nal-von-minden-reactif"
+      "nal-von-minden-reactif",
+      "servoprax-servotest-one-strip-reader"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -11389,13 +11376,13 @@
     "documents": [],
     "related": [
       "arkray-spotchem-d-concept",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "analyticon-combiscreen",
-      "macherey-nagel-medi-test"
+      "macherey-nagel-medi-test",
+      "nal-von-minden-reactif"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -11484,13 +11471,13 @@
     "documents": [],
     "related": [
       "arkray-spotchem-ez-sp-4430",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "analyticon-combiscreen",
       "macherey-nagel-medi-test",
-      "nal-von-minden-reactif"
+      "nal-von-minden-reactif",
+      "servoprax-servotest-one-strip-reader"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -11532,13 +11519,13 @@
     "documents": [],
     "related": [
       "arkray-spotchem-ez-sp-4430",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "analyticon-combiscreen",
-      "macherey-nagel-medi-test"
+      "macherey-nagel-medi-test",
+      "nal-von-minden-reactif"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -11580,13 +11567,13 @@
     "documents": [],
     "related": [
       "arkray-spotchem-d-concept",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "analyticon-combiscreen",
-      "macherey-nagel-medi-test"
+      "macherey-nagel-medi-test",
+      "nal-von-minden-reactif"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -11624,13 +11611,13 @@
     "documents": [],
     "related": [
       "arkray-spotchem-ez-sp-4430",
-      "abbott-binaxnow-g6pd",
       "seamaty-19-general-chemistry-v-kit",
       "seamaty-8-renal-function-kit",
       "seamaty-18-general-chemistry-ii-kit",
       "seamaty-7-electrolyte-kit",
       "seamaty-13-health-check-kit",
-      "mnchip-electrolyte-panel-lypholized-kit"
+      "mnchip-electrolyte-panel-lypholized-kit",
+      "abbott-metlac-12-panel"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -11668,13 +11655,13 @@
     "documents": [],
     "related": [
       "arkray-spotchem-d-concept",
-      "abbott-binaxnow-g6pd",
       "seamaty-19-general-chemistry-v-kit",
       "seamaty-8-renal-function-kit",
       "seamaty-18-general-chemistry-ii-kit",
       "seamaty-7-electrolyte-kit",
       "seamaty-13-health-check-kit",
-      "mnchip-electrolyte-panel-lypholized-kit"
+      "mnchip-electrolyte-panel-lypholized-kit",
+      "abbott-metlac-12-panel"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -12056,13 +12043,13 @@
     "documents": [],
     "related": [
       "arkray-spotchem-d-concept",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "analyticon-combiscreen",
-      "macherey-nagel-medi-test"
+      "macherey-nagel-medi-test",
+      "nal-von-minden-reactif"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -12492,13 +12479,13 @@
     "documents": [],
     "related": [
       "arkray-aution-daten-ae-4070",
-      "abbott-binaxnow-g6pd",
       "hitado-microalbumin",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -13163,13 +13150,13 @@
     "documents": [],
     "related": [
       "bioantibody-bk120",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
       "analyticon-combiscreen",
-      "macherey-nagel-medi-test"
+      "macherey-nagel-medi-test",
+      "nal-von-minden-reactif"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -13202,13 +13189,13 @@
     "documents": [],
     "related": [
       "bioantibody-bk120",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
       "ekf-diagnostics-quo-test-a1c",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -13386,12 +13373,12 @@
     "related": [
       "bioantibody-bk120",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "ekf-diagnostics-hemo-control",
       "abbott-cg8-plus",
       "abbott-chem8-plus",
-      "abbott-eg7-plus"
+      "abbott-eg7-plus",
+      "abbott-ec8-plus"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -13978,12 +13965,12 @@
     "related": [
       "biosurfit-spinit-s",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "ekf-diagnostics-hemo-control",
       "abbott-cg8-plus",
       "abbott-chem8-plus",
-      "abbott-eg7-plus"
+      "abbott-eg7-plus",
+      "abbott-ec8-plus"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -20550,14 +20537,14 @@
     "image_local": null,
     "documents": [],
     "related": [
-      "hemotypesc-sickle-cell-disease",
       "schebo-2in1-quick",
       "hitado-hitadokkult-ii",
       "hitado-hemohapto",
       "ekf-diagnostics-hemo-control",
       "actim-fecal-blood",
       "abbott-cg8-plus",
-      "abbott-chem8-plus"
+      "abbott-chem8-plus",
+      "abbott-eg7-plus"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -21271,13 +21258,13 @@
     "documents": [],
     "related": [
       "diasys-respons-uds100",
-      "abbott-binaxnow-g6pd",
       "hitado-microalbumin",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "arkray-aution-screen"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -21618,13 +21605,13 @@
     "documents": [],
     "related": [
       "dr-muller-super-gl-compact",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
       "analyticon-combiscreen",
-      "macherey-nagel-medi-test"
+      "macherey-nagel-medi-test",
+      "nal-von-minden-reactif"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -21664,12 +21651,12 @@
     "related": [
       "dr-muller-super-gl-compact",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "ekf-diagnostics-hemo-control",
       "abbott-cg8-plus",
       "abbott-chem8-plus",
-      "abbott-eg7-plus"
+      "abbott-eg7-plus",
+      "abbott-ec8-plus"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -21797,12 +21784,12 @@
     "related": [
       "dr-muller-super-gl3",
       "dr-muller-super-gl2",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -21843,12 +21830,12 @@
     "related": [
       "dr-muller-super-gl3",
       "dr-muller-super-gl2",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -22262,12 +22249,12 @@
     "related": [
       "edan-i15",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "ekf-diagnostics-hemo-control",
       "nal-von-minden-reactif",
       "abbott-cg8-plus",
-      "abbott-chem8-plus"
+      "abbott-chem8-plus",
+      "abbott-eg7-plus"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -22309,13 +22296,13 @@
     "documents": [],
     "related": [
       "edan-i15",
-      "abbott-binaxnow-g6pd",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
-      "sysmex-meditape-uc"
+      "sysmex-meditape-uc",
+      "arkray-aution-sticks",
+      "ekf-diagnostics-hemo-control"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -22488,13 +22475,13 @@
     "documents": [],
     "related": [
       "edan-i15",
-      "abbott-binaxnow-g6pd",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
-      "sysmex-meditape-uc"
+      "sysmex-meditape-uc",
+      "arkray-aution-sticks",
+      "ekf-diagnostics-hemo-control"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -22535,13 +22522,13 @@
     "documents": [],
     "related": [
       "edan-i500",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
       "ekf-diagnostics-hemo-control",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -22991,12 +22978,12 @@
     "related": [
       "edan-i20",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "ekf-diagnostics-hemo-control",
       "abbott-cg8-plus",
       "abbott-chem8-plus",
-      "abbott-eg7-plus"
+      "abbott-eg7-plus",
+      "abbott-cg4-plus"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -23036,12 +23023,12 @@
     "related": [
       "edan-i20",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "ekf-diagnostics-hemo-control",
       "nal-von-minden-reactif",
       "abbott-cg8-plus",
-      "abbott-chem8-plus"
+      "abbott-chem8-plus",
+      "abbott-eg7-plus"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -23081,12 +23068,12 @@
     "related": [
       "edan-i20",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "ekf-diagnostics-hemo-control",
       "nal-von-minden-reactif",
       "abbott-cg8-plus",
-      "abbott-chem8-plus"
+      "abbott-chem8-plus",
+      "abbott-eg7-plus"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -23324,8 +23311,8 @@
       "nova-biomedical-statstrip-xpress-2-lac-hb-hct",
       "hemocue-hemoglobin-201-dm",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
-      "hitado-hemohapto"
+      "hitado-hemohapto",
+      "abbott-cg8-plus"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -23459,12 +23446,12 @@
     "related": [
       "ekf-diagnostics-hemo-control",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "abbott-cg8-plus",
       "abbott-chem8-plus",
       "abbott-eg7-plus",
-      "abbott-ec8-plus"
+      "abbott-ec8-plus",
+      "siemens-healthineers-bgem-testkarte"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -23996,12 +23983,12 @@
     "related": [
       "essenlix-imost-u",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "ekf-diagnostics-hemo-control",
       "abbott-cg8-plus",
       "abbott-chem8-plus",
-      "abbott-eg7-plus"
+      "abbott-eg7-plus",
+      "abbott-ec8-plus"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -25743,12 +25730,12 @@
     "related": [
       "fujifilm-dri-chem-fdc-nx700i",
       "fujifilm-dri-chem-nx600",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -25917,12 +25904,12 @@
     "related": [
       "fujifilm-dri-chem-fdc-nx700i",
       "fujifilm-dri-chem-nx600",
-      "abbott-binaxnow-g6pd",
       "arkray-phosphor-ip-einzel-streifen",
       "arkray-phosphat",
       "seamaty-19-general-chemistry-v-kit",
       "seamaty-8-renal-function-kit",
-      "seamaty-18-general-chemistry-ii-kit"
+      "seamaty-18-general-chemistry-ii-kit",
+      "seamaty-7-electrolyte-kit"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -27061,7 +27048,7 @@
       "hemocue-glucose-201-plus",
       "hemocue-hb-801",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease"
+      "hitado-hemohapto"
     ],
     "source_count": 6,
     "duplicate_of": null,
@@ -27394,7 +27381,6 @@
     "subcategory": "reagent",
     "technology": "rdt",
     "analyte": [
-      "hemoglobin",
       "sickle-cell"
     ],
     "sample_type": [
@@ -27428,19 +27414,10 @@
       "Specificity": ">99%",
       "Pack Size": "50T"
     },
-    "summary": "HemoTypeSC Sickle Cell Disease is a lateral-flow rapid test for Hemoglobin and Sickle cell disease. Sample type: whole blood. Pack size: 50 tests.",
+    "summary": "HemoTypeSC Sickle Cell Disease is a lateral-flow rapid test for Sickle cell disease. Sample type: whole blood. Pack size: 50 tests.",
     "image_local": null,
     "documents": [],
-    "related": [
-      "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hitado-hemohapto",
-      "ekf-diagnostics-hemo-control",
-      "abbott-cg8-plus",
-      "abbott-chem8-plus",
-      "abbott-eg7-plus",
-      "abbott-ec8-plus",
-      "siemens-healthineers-bgem-testkarte"
-    ],
+    "related": [],
     "source_count": 1,
     "duplicate_of": null,
     "classification_confidence": 0.9,
@@ -27855,13 +27832,13 @@
     ],
     "related": [
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "schebo-2in1-quick",
       "ekf-diagnostics-hemo-control",
       "actim-fecal-blood",
       "abbott-cg8-plus",
       "abbott-chem8-plus",
-      "abbott-eg7-plus"
+      "abbott-eg7-plus",
+      "abbott-ec8-plus"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -28173,14 +28150,14 @@
       }
     ],
     "related": [
-      "abbott-binaxnow-g6pd",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
       "analyticon-combiscreen",
       "macherey-nagel-medi-test",
       "nal-von-minden-reactif",
       "servoprax-servotest-one-strip-reader",
-      "servoprax-servotest"
+      "servoprax-servotest",
+      "roche-combur"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -28271,14 +28248,14 @@
       }
     ],
     "related": [
-      "abbott-binaxnow-g6pd",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
       "analyticon-combiscreen",
       "macherey-nagel-medi-test",
       "nal-von-minden-reactif",
       "servoprax-servotest-one-strip-reader",
-      "servoprax-servotest"
+      "servoprax-servotest",
+      "roche-combur"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -28522,11 +28499,11 @@
       "horiba-microsemi-crp-lc-767g",
       "horiba-microsemi-crp",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-crp-10-60",
       "hitado-hemohapto",
       "ekf-diagnostics-hemo-control",
-      "sd-biosensor-standard-q-malaria-crp-duo"
+      "sd-biosensor-standard-q-malaria-crp-duo",
+      "actim-crp"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -28715,13 +28692,13 @@
     "documents": [],
     "related": [
       "human-humasens2-0plus",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
       "analyticon-combiscreen",
-      "macherey-nagel-medi-test"
+      "macherey-nagel-medi-test",
+      "nal-von-minden-reactif"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -30683,10 +30660,10 @@
       "macherey-nagel-medi-test-mikroalbumin",
       "macherey-nagel-medi-test-combi-10l",
       "macherey-nagel-medi-test-combi-10-sgl",
-      "abbott-binaxnow-g6pd",
       "hitado-microalbumin",
       "hitado-nobistrip-mikroalbumin-kreatinin",
-      "hitado-nobistrip-u10"
+      "hitado-nobistrip-u10",
+      "hitado-nobistrip-expert"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -30727,11 +30704,11 @@
       "macherey-nagel-uryxxon-relax",
       "macherey-nagel-medi-test",
       "macherey-nagel-uryxxon-500",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "analyticon-combiscreen"
     ],
     "source_count": 3,
     "duplicate_of": null,
@@ -30772,11 +30749,11 @@
       "macherey-nagel-uryxxon-relax",
       "macherey-nagel-medi-test",
       "macherey-nagel-uryxxon-500",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "analyticon-combiscreen"
     ],
     "source_count": 3,
     "duplicate_of": null,
@@ -30860,11 +30837,11 @@
       "macherey-nagel-uryxxon-500",
       "macherey-nagel-medi-test",
       "macherey-nagel-uryxxon-relax",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "analyticon-combiscreen"
     ],
     "source_count": 3,
     "duplicate_of": null,
@@ -31139,12 +31116,12 @@
     "related": [
       "melet-schloesing-ms4crp",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-crp-10-60",
       "hitado-hemohapto",
       "ekf-diagnostics-hemo-control",
       "sd-biosensor-standard-q-malaria-crp-duo",
-      "actim-crp"
+      "actim-crp",
+      "abbott-cg8-plus"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -32711,13 +32688,13 @@
     "documents": [],
     "related": [
       "mnchip-pointcare-m4",
-      "abbott-binaxnow-g6pd",
       "abbott-bioline-malaria-ag-p-f-p-f-p-v",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "arkray-aution-screen"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -32759,13 +32736,13 @@
     "documents": [],
     "related": [
       "mnchip-pointcare-m4",
-      "abbott-binaxnow-g6pd",
       "nal-von-minden-reactif",
       "abbott-cg8-plus",
       "abbott-chem8-plus",
       "abbott-eg7-plus",
       "abbott-cg4-plus",
-      "abbott-g3-plus"
+      "abbott-g3-plus",
+      "abbott-ec8-plus"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -32813,13 +32790,13 @@
     "documents": [],
     "related": [
       "mnchip-pointcare-m4",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "arkray-aution-screen"
+      "arkray-aution-screen",
+      "analyticon-combiscreen"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -34897,12 +34874,12 @@
     "related": [
       "nal-von-minden-reactif",
       "nal-von-minden-reactif-touch-plus",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -34942,12 +34919,12 @@
     "related": [
       "nal-von-minden-reactif-touch-plus",
       "nal-von-minden-reactif",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -34989,12 +34966,12 @@
     "related": [
       "nal-von-minden-reactif-touch-plus",
       "nal-von-minden-reactif",
-      "abbott-binaxnow-g6pd",
       "hitado-microalbumin",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
-      "sysmex-meditape-uc"
+      "sysmex-meditape-uc",
+      "arkray-aution-sticks"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -35037,12 +35014,12 @@
     "related": [
       "nal-von-minden-reactif",
       "nal-von-minden-reactif-touch-plus",
-      "abbott-binaxnow-g6pd",
       "hitado-microalbumin",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
-      "sysmex-meditape-uc"
+      "sysmex-meditape-uc",
+      "arkray-aution-sticks"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -35123,12 +35100,12 @@
     "related": [
       "nal-von-minden-reactif-touch-plus",
       "nal-von-minden-reactif",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -35167,12 +35144,12 @@
     "related": [
       "nal-von-minden-reactif-touch-plus",
       "nal-von-minden-reactif",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -35211,12 +35188,12 @@
     "related": [
       "nal-von-minden-reactif",
       "nal-von-minden-reactif-touch-plus",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -35253,12 +35230,12 @@
     "related": [
       "nal-von-minden-reactif-touch-plus",
       "nal-von-minden-reactif",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -35295,12 +35272,12 @@
     "related": [
       "nal-von-minden-reactif-touch-plus",
       "nal-von-minden-reactif",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -35950,12 +35927,12 @@
     "related": [
       "noul-milab",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "ekf-diagnostics-hemo-control",
       "abbott-cg8-plus",
       "abbott-chem8-plus",
-      "abbott-eg7-plus"
+      "abbott-eg7-plus",
+      "abbott-ec8-plus"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -36068,12 +36045,12 @@
     "related": [
       "nova-biomedical-statstrip-glucose-ketone",
       "nova-biomedical-statstrip-xpress-2-glucose-ketone",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -36113,11 +36090,11 @@
       "nova-biomedical-statstrip-xpress-2-lac-hb-hct",
       "nova-biomedical-statstrip-lac-hb-hct",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "ekf-diagnostics-hemo-control",
       "abbott-cg8-plus",
-      "abbott-chem8-plus"
+      "abbott-chem8-plus",
+      "abbott-eg7-plus"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -36472,13 +36449,13 @@
     "documents": [],
     "related": [
       "nova-biomedical-stat-profile-prime",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
       "ekf-diagnostics-hemo-control",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -36575,13 +36552,13 @@
     "documents": [],
     "related": [
       "nova-biomedical-stat-profile-prime-plus",
-      "abbott-binaxnow-g6pd",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
-      "sysmex-meditape-uc"
+      "sysmex-meditape-uc",
+      "arkray-aution-sticks",
+      "ekf-diagnostics-hemo-control"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -37308,12 +37285,12 @@
     "related": [
       "opti-medical-opti-cca-ts2",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "ekf-diagnostics-hemo-control",
       "abbott-cg8-plus",
       "abbott-chem8-plus",
-      "abbott-eg7-plus"
+      "abbott-eg7-plus",
+      "abbott-cg4-plus"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -37398,12 +37375,12 @@
     "related": [
       "opti-medical-opti-cca-ts2",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "ekf-diagnostics-hemo-control",
       "nal-von-minden-reactif",
       "abbott-cg8-plus",
-      "abbott-chem8-plus"
+      "abbott-chem8-plus",
+      "abbott-eg7-plus"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -37445,12 +37422,12 @@
     "related": [
       "opti-medical-opti-cca-ts2",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "ekf-diagnostics-hemo-control",
       "nal-von-minden-reactif",
       "abbott-cg8-plus",
-      "abbott-chem8-plus"
+      "abbott-chem8-plus",
+      "abbott-eg7-plus"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -39155,12 +39132,12 @@
     "related": [
       "pts-diagnostics-cardiochek-plus",
       "pts-diagnostics-cardiochek-pa",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -39242,12 +39219,12 @@
     "related": [
       "pts-diagnostics-cardiochek-plus",
       "pts-diagnostics-cardiochek-pa",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -39328,12 +39305,12 @@
     "related": [
       "pts-diagnostics-cardiochek-plus",
       "pts-diagnostics-cardiochek-pa",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -39371,12 +39348,12 @@
     "related": [
       "pts-diagnostics-cardiochek-plus",
       "pts-diagnostics-cardiochek-pa",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -42034,13 +42011,13 @@
     "documents": [],
     "related": [
       "radiometer-abl90-flex-plus",
-      "abbott-binaxnow-g6pd",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
-      "hitado-nobistrip-expert"
+      "hitado-nobistrip-expert",
+      "sysmex-meditape-uc",
+      "arkray-aution-sticks"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -42757,12 +42734,12 @@
     "related": [
       "roche-cobas-b-123",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "ekf-diagnostics-hemo-control"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -42803,13 +42780,13 @@
     "documents": [],
     "related": [
       "roche-cobas-b-123",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
       "ekf-diagnostics-hemo-control",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -42852,13 +42829,13 @@
     "documents": [],
     "related": [
       "roche-cobas-b-123",
-      "abbott-binaxnow-g6pd",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
-      "sysmex-meditape-uc"
+      "sysmex-meditape-uc",
+      "arkray-aution-sticks",
+      "ekf-diagnostics-hemo-control"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -43664,11 +43641,11 @@
       "roche-combur",
       "roche-cobas-u-411",
       "roche-urisys-1100",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "analyticon-combiscreen"
     ],
     "source_count": 3,
     "duplicate_of": null,
@@ -43748,11 +43725,11 @@
       "roche-urisys-1100",
       "roche-combur",
       "roche-cobas-u-411",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "analyticon-combiscreen"
     ],
     "source_count": 3,
     "duplicate_of": null,
@@ -43791,11 +43768,11 @@
       "roche-urisys-1100",
       "roche-combur",
       "roche-cobas-u-411",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "analyticon-combiscreen"
     ],
     "source_count": 3,
     "duplicate_of": null,
@@ -43834,11 +43811,11 @@
       "roche-urisys-1100",
       "roche-combur",
       "roche-cobas-u-411",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "analyticon-combiscreen"
     ],
     "source_count": 3,
     "duplicate_of": null,
@@ -43877,11 +43854,11 @@
       "roche-urisys-1100",
       "roche-combur",
       "roche-cobas-u-411",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "analyticon-combiscreen"
     ],
     "source_count": 3,
     "duplicate_of": null,
@@ -43920,11 +43897,11 @@
       "roche-urisys-1100",
       "roche-combur",
       "roche-cobas-u-411",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "analyticon-combiscreen"
     ],
     "source_count": 3,
     "duplicate_of": null,
@@ -43965,11 +43942,11 @@
       "roche-urisys-1100",
       "roche-combur",
       "roche-cobas-u-411",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "analyticon-combiscreen"
     ],
     "source_count": 3,
     "duplicate_of": null,
@@ -44008,12 +43985,12 @@
     "related": [
       "roche-cobas-b-123",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "ekf-diagnostics-hemo-control"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -45215,12 +45192,12 @@
     "related": [
       "roche-cobas-pulse",
       "roche-accu-chek-inform-ii",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -49925,13 +49902,13 @@
     "documents": [],
     "related": [
       "seamaty-sd1",
-      "abbott-binaxnow-g6pd",
       "hitado-crp-10-60",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "arkray-aution-screen"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -49980,13 +49957,13 @@
     "documents": [],
     "related": [
       "seamaty-sd1",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "arkray-aution-screen"
+      "arkray-aution-screen",
+      "analyticon-combiscreen"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -50087,13 +50064,13 @@
     "documents": [],
     "related": [
       "seamaty-sd1",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "arkray-aution-screen"
+      "arkray-aution-screen",
+      "analyticon-combiscreen"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -50142,13 +50119,13 @@
     "documents": [],
     "related": [
       "seamaty-sd1",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "arkray-aution-screen"
+      "arkray-aution-screen",
+      "analyticon-combiscreen"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -50196,13 +50173,13 @@
     "documents": [],
     "related": [
       "seamaty-sd1",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "arkray-aution-screen"
+      "arkray-aution-screen",
+      "analyticon-combiscreen"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -50251,13 +50228,13 @@
     "documents": [],
     "related": [
       "seamaty-sd1",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "arkray-aution-screen"
+      "arkray-aution-screen",
+      "analyticon-combiscreen"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -50308,13 +50285,13 @@
     "documents": [],
     "related": [
       "seamaty-sd1",
-      "abbott-binaxnow-g6pd",
       "abbott-bioline-malaria-ag-p-f-p-f-p-v",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "arkray-aution-screen"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -50364,13 +50341,13 @@
     "documents": [],
     "related": [
       "seamaty-sd1",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "arkray-aution-screen"
+      "arkray-aution-screen",
+      "analyticon-combiscreen"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -50422,13 +50399,13 @@
     "documents": [],
     "related": [
       "seamaty-sd1",
-      "abbott-binaxnow-g6pd",
       "abbott-bioline-malaria-ag-p-f-p-f-p-v",
       "hitado-crp-10-60",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
-      "sysmex-meditape-uc"
+      "sysmex-meditape-uc",
+      "arkray-aution-sticks"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -50613,13 +50590,13 @@
     "documents": [],
     "related": [
       "seamaty-sd1",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
       "analyticon-combiscreen",
-      "macherey-nagel-medi-test"
+      "macherey-nagel-medi-test",
+      "nal-von-minden-reactif"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -50660,13 +50637,13 @@
     "documents": [],
     "related": [
       "seamaty-sd1",
-      "abbott-binaxnow-g6pd",
       "nal-von-minden-reactif",
       "abbott-cg8-plus",
       "abbott-chem8-plus",
       "abbott-eg7-plus",
       "abbott-ec8-plus",
-      "siemens-healthineers-bgem-testkarte"
+      "siemens-healthineers-bgem-testkarte",
+      "siemens-healthineers-rapidlab-1240"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -50711,13 +50688,13 @@
     "documents": [],
     "related": [
       "seamaty-sd1",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "arkray-aution-screen"
+      "arkray-aution-screen",
+      "analyticon-combiscreen"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -50844,13 +50821,13 @@
     "documents": [],
     "related": [
       "seamaty-sg1",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
       "ekf-diagnostics-hemo-control",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -51254,11 +51231,11 @@
       "servoprax-servotest-10",
       "servoprax-servotest-albucreal-ii",
       "servoprax-servotest-11",
-      "abbott-binaxnow-g6pd",
       "hitado-microalbumin",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
-      "hitado-nobistrip-expert"
+      "hitado-nobistrip-expert",
+      "sysmex-meditape-uc"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -51298,11 +51275,11 @@
       "servoprax-servotest",
       "servoprax-servotest-reader",
       "servoprax-servotest-one-strip-reader",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "analyticon-combiscreen"
     ],
     "source_count": 3,
     "duplicate_of": null,
@@ -51342,11 +51319,11 @@
       "servoprax-servotest",
       "servoprax-servotest-reader",
       "servoprax-servotest-one-strip-reader",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "analyticon-combiscreen"
     ],
     "source_count": 3,
     "duplicate_of": null,
@@ -51671,13 +51648,13 @@
     "documents": [],
     "related": [
       "siemens-healthineers-epoc",
-      "abbott-binaxnow-g6pd",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
-      "hitado-nobistrip-expert"
+      "hitado-nobistrip-expert",
+      "sysmex-meditape-uc",
+      "arkray-aution-sticks"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -51821,9 +51798,9 @@
       "siemens-healthineers-clinitek-status-plus",
       "siemens-healthineers-clinitek-advantus",
       "siemens-healthineers-clinitek-microalbumin-2",
-      "abbott-binaxnow-g6pd",
       "hitado-microalbumin",
-      "hitado-nobistrip-mikroalbumin-kreatinin"
+      "hitado-nobistrip-mikroalbumin-kreatinin",
+      "hitado-nobistrip-u10"
     ],
     "source_count": 3,
     "duplicate_of": null,
@@ -52395,11 +52372,11 @@
       "siemens-healthineers-multistix-10-sg",
       "siemens-healthineers-multistix-8-sg",
       "siemens-healthineers-multistix-5",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "analyticon-combiscreen"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -52445,7 +52422,7 @@
       "siemens-healthineers-clinitek-advantus",
       "siemens-healthineers-multistix-8-sg",
       "siemens-healthineers-multistix-5",
-      "abbott-binaxnow-g6pd"
+      "hitado-nobistrip-mikroalbumin-kreatinin"
     ],
     "source_count": 5,
     "duplicate_of": null,
@@ -52488,7 +52465,7 @@
       "siemens-healthineers-clinitek-status-plus",
       "siemens-healthineers-multistix-10-sg",
       "siemens-healthineers-multistix-8-sg",
-      "abbott-binaxnow-g6pd"
+      "hitado-nobistrip-u10"
     ],
     "source_count": 5,
     "duplicate_of": null,
@@ -52532,7 +52509,7 @@
       "siemens-healthineers-clinitek-status-plus",
       "siemens-healthineers-multistix-10-sg",
       "siemens-healthineers-multistix-5",
-      "abbott-binaxnow-g6pd"
+      "hitado-nobistrip-u10"
     ],
     "source_count": 5,
     "duplicate_of": null,
@@ -52710,13 +52687,13 @@
     "documents": [],
     "related": [
       "siemens-healthineers-rapidlab-1200",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
       "analyticon-combiscreen",
-      "macherey-nagel-medi-test"
+      "macherey-nagel-medi-test",
+      "nal-von-minden-reactif"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -52758,13 +52735,13 @@
     "documents": [],
     "related": [
       "siemens-healthineers-rapidlab-1200",
-      "abbott-binaxnow-g6pd",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
-      "sysmex-meditape-uc"
+      "sysmex-meditape-uc",
+      "arkray-aution-sticks",
+      "ekf-diagnostics-hemo-control"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -52804,13 +52781,13 @@
     "documents": [],
     "related": [
       "siemens-healthineers-rapidlab-1200",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
       "analyticon-combiscreen",
-      "macherey-nagel-medi-test"
+      "macherey-nagel-medi-test",
+      "nal-von-minden-reactif"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -52852,13 +52829,13 @@
     "documents": [],
     "related": [
       "siemens-healthineers-rapidlab-1200",
-      "abbott-binaxnow-g6pd",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
-      "sysmex-meditape-uc"
+      "sysmex-meditape-uc",
+      "arkray-aution-sticks",
+      "ekf-diagnostics-hemo-control"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -53133,12 +53110,12 @@
     "related": [
       "sysmex-meditape-uc-12s",
       "sysmex-meditape-uc-10s",
-      "abbott-binaxnow-g6pd",
       "hitado-microalbumin",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "arkray-aution-screen"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -53178,12 +53155,12 @@
     "related": [
       "sysmex-meditape-uc",
       "sysmex-uc-1100",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "arkray-aution-sticks",
       "analyticon-combiscreen",
-      "macherey-nagel-medi-test"
+      "macherey-nagel-medi-test",
+      "nal-von-minden-reactif"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -53225,12 +53202,12 @@
     "related": [
       "sysmex-meditape-uc",
       "sysmex-uc-1100",
-      "abbott-binaxnow-g6pd",
       "hitado-microalbumin",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "arkray-aution-screen"
     ],
     "source_count": 2,
     "duplicate_of": null,
@@ -53956,13 +53933,13 @@
     "documents": [],
     "related": [
       "tascom-simplextas-101",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
       "analyticon-combiscreen",
-      "macherey-nagel-medi-test"
+      "macherey-nagel-medi-test",
+      "nal-von-minden-reactif"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -54000,12 +53977,12 @@
     "related": [
       "tascom-simplextas-101",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "ekf-diagnostics-hemo-control",
       "abbott-cg8-plus",
       "abbott-chem8-plus",
-      "abbott-eg7-plus"
+      "abbott-eg7-plus",
+      "abbott-ec8-plus"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -56530,12 +56507,12 @@
     "related": [
       "vedalab-easy-reader-plus",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "ekf-diagnostics-hemo-control",
       "abbott-cg8-plus",
       "abbott-chem8-plus",
-      "abbott-eg7-plus"
+      "abbott-eg7-plus",
+      "abbott-ec8-plus"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -57784,13 +57761,13 @@
     "documents": [],
     "related": [
       "werfen-gem-premier-7000",
-      "abbott-binaxnow-g6pd",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
-      "sysmex-meditape-uc"
+      "sysmex-meditape-uc",
+      "arkray-aution-sticks",
+      "ekf-diagnostics-hemo-control"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -57830,12 +57807,12 @@
     "related": [
       "werfen-gem-premier-7000",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "ekf-diagnostics-hemo-control"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -57874,12 +57851,12 @@
     "related": [
       "werfen-gem-premier-7000",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "ekf-diagnostics-hemo-control"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -57918,13 +57895,13 @@
     "documents": [],
     "related": [
       "werfen-gem-premier-3500",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
       "ekf-diagnostics-hemo-control",
-      "analyticon-combiscreen"
+      "analyticon-combiscreen",
+      "macherey-nagel-medi-test"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -57965,13 +57942,13 @@
     "documents": [],
     "related": [
       "werfen-gem-premier-5000",
-      "abbott-binaxnow-g6pd",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
-      "sysmex-meditape-uc"
+      "sysmex-meditape-uc",
+      "arkray-aution-sticks",
+      "ekf-diagnostics-hemo-control"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -58054,12 +58031,12 @@
     "related": [
       "werfen-gem-premier-5000",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "ekf-diagnostics-hemo-control"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -58140,12 +58117,12 @@
     "related": [
       "werfen-gem-premier-5000",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
-      "arkray-aution-sticks"
+      "arkray-aution-sticks",
+      "ekf-diagnostics-hemo-control"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -58185,13 +58162,13 @@
     "documents": [],
     "related": [
       "werfen-gem-premier-chemstat",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "arkray-aution-screen"
+      "arkray-aution-screen",
+      "ekf-diagnostics-hemo-control"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -58234,13 +58211,13 @@
     "documents": [],
     "related": [
       "werfen-gem-premier-chemstat",
-      "abbott-binaxnow-g6pd",
       "hitado-nobistrip-mikroalbumin-kreatinin",
       "hitado-nobistrip-u10",
       "hitado-nobistrip-expert",
       "sysmex-meditape-uc",
       "arkray-aution-sticks",
-      "arkray-aution-screen"
+      "arkray-aution-screen",
+      "ekf-diagnostics-hemo-control"
     ],
     "source_count": 1,
     "duplicate_of": null,
@@ -58770,12 +58747,12 @@
     "related": [
       "werfen-avoximeter-1000e",
       "ctk-biotech-onsite-fob-hi-rapid-test",
-      "hemotypesc-sickle-cell-disease",
       "hitado-hemohapto",
       "ekf-diagnostics-hemo-control",
       "abbott-cg8-plus",
       "abbott-chem8-plus",
-      "abbott-eg7-plus"
+      "abbott-eg7-plus",
+      "abbott-cg4-plus"
     ],
     "source_count": 1,
     "duplicate_of": null,

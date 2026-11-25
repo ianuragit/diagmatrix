@@ -40,7 +40,14 @@ Every folder and key file, mirroring the tree. Keep current.
 | `data/manual/` | Hand-added products (`*.yaml`), a first-class source; `example.yaml.sample` shows the format. |
 | `data/products.json` | Final public catalogue (canonical + flagged duplicates). |
 | `data/duplicates.json` | Duplicate groups (same source) and cross-source merges, by public id. |
-| `src/` | Astro site: `pages/`, `layouts/`, `components/`, `styles/`, `lib/url.ts` (the one link helper). |
+| `src/content.config.ts` | Content collection over `data/products.json`, validated with the pipeline's `ProductSchema`. |
+| `src/lib/` | `url.ts` (the one link helper), `site.ts` (project config, form/WhatsApp switches, disclaimer), `catalogue.ts` (collection, taxonomy labels, groupings). |
+| `src/layouts/Base.astro` | Page shell: head, header, footer, inquiry modal, client script init. |
+| `src/components/` | Header (search, basket badge), Footer (disclaimer), InquiryModal, RequestInfo (all CTA variants), AddToQuote, WhatsAppLink, ProductCard, ProductImage (placeholder), Breadcrumbs (+ JSON-LD), Pagination, Listing (static list + facet island), HubLayout. |
+| `src/scripts/` | Client code: `basket.ts` (quote_basket_v1), `inquiry.ts` (modal, validation, request_info event, Web3Forms/Formspree), `search.ts` (Pagefind), `facets.ts` (filters with URL state). |
+| `src/pages/` | Home; `/products/` (paginated) + `/products/{slug}/`; `/categories/{cat}/[{sub}/]`; `/brands/`; `/analytes/`; `/technology/`; `/search/`; `/basket/`; `/contact/`; `/about/`; 404; `/data/facets.json`. |
+| `src/styles/` | `tokens.css` (design tokens), `global.css` (base, buttons, cards, listing/facets). |
+| `playwright.config.ts`, `tests/e2e/` | Browser smoke tests against the built site under the real base path. |
 | `public/` | Static files (`.nojekyll`, later robots.txt, fonts). |
 | `.github/workflows/deploy.yml` | Push to main → test → validate → build → Pages. |
 | `.github/workflows/ci.yml` | Typecheck, test, validate, build on PRs/branches. |

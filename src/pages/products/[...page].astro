@@ -1,0 +1,33 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Listing from '../../components/Listing.astro';
+import { PAGE_SIZE, categoryLabel, liveProducts, taxonomy } from '../../lib/catalogue';
+import { site } from '../../lib/site';
+
+export const getStaticPaths = (async ({ paginate }) =>
+  paginate(await liveProducts(), { pageSize: PAGE_SIZE })) satisfies GetStaticPaths;
+const { page } = Astro.props;
+const fallback = Object.keys(taxonomy.categories).map((c) => ({
+  href: `/categories/${c}/`,
+  label: categoryLabel(c),
+}));
+---
+
+<Base
+  title={
+    page.currentPage > 1
+      ? `All diagnostic products – page ${page.currentPage} | ${site.name}`
+      : `All diagnostic products | ${site.name}`
+  }
+  description={`Browse ${page.total} in-vitro diagnostic products — rapid tests, immunoassays, molecular tests, analysers and consumables — with filters by brand, analyte, technology and sample type.`}
+  noindex={page.currentPage > 1}
+  canonicalPath={page.currentPage > 1 ? undefined : '/products/'}
+>
+  <div class="container">
+    <Breadcrumbs items={[{ label: 'Products' }]} />
+    <h1>All products</h1>
+    <Listing page={page} fallbackLinks={fallback} />
+  </div>
+</Base>

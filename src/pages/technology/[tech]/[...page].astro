@@ -1,0 +1,36 @@
+---
+import type { GetStaticPaths } from 'astro';
+import HubLayout from '../../../components/HubLayout.astro';
+import {
+  PAGE_SIZE,
+  groupBy,
+  liveProducts,
+  techLabel,
+  taxonomy,
+  categoryIntro,
+} from '../../../lib/catalogue';
+import { site } from '../../../lib/site';
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const live = await liveProducts();
+  return [...groupBy(live, (p) => p.technology)].flatMap(([tech, list]) =>
+    paginate(list, { params: { tech }, pageSize: PAGE_SIZE }),
+  );
+}) satisfies GetStaticPaths;
+const { tech } = Astro.params;
+const { page } = Astro.props;
+const label = techLabel(tech);
+const cat = taxonomy.technology[tech]?.category;
+---
+
+<HubLayout
+  title={`${label} products (${page.total}) | ${site.name}`}
+  heading={label}
+  description={`${page.total} diagnostic products using ${label.toLowerCase()}: compare brands, analytes and sample types and request information.`}
+  intro={cat ? categoryIntro(cat) : undefined}
+  crumbs={[{ label: 'Technologies', href: '/technology/' }, { label }]}
+  page={page}
+  locked={{ technology: [tech] }}
+  subject={label}
+  basePath={`/technology/${tech}/`}
+/>

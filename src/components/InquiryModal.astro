@@ -1,0 +1,178 @@
+---
+import { site } from '../lib/site';
+const f = site.form;
+---
+
+<dialog
+  id="inquiry"
+  class="inquiry card"
+  aria-labelledby="inquiry-title"
+  data-endpoint={f?.endpoint ?? ''}
+  data-service={f?.service ?? ''}
+  data-access-key={f?.accessKey ?? ''}
+>
+  <div class="head">
+    <h2 id="inquiry-title" data-title>
+      Request information
+    </h2>
+    <button type="button" class="close" data-close aria-label="Close">
+      ×
+    </button>
+  </div>
+  {!f && (
+    <p class="notice">
+      Online inquiries are being set up. You can fill in the form and use{' '}
+      <strong>Copy inquiry</strong> to send it by email or message in the meantime.
+    </p>
+  )}
+  <form novalidate>
+    <input type="hidden" name="subject" />
+    <input type="hidden" name="context" />
+    <input type="hidden" name="basket" />
+    <input type="hidden" name="from_name" value={site.name} />
+    <div class="hp" aria-hidden="true">
+      <label>
+        Leave this empty{' '}
+        <input type="text" name="company_website" tabindex="-1" autocomplete="off" />
+      </label>
+    </div>
+    <div class="row">
+      <label>
+        Name <span aria-hidden="true">*</span>
+        <input name="name" autocomplete="name" required data-label="Name" />
+      </label>
+      <label>
+        Organisation
+        <input name="organisation" autocomplete="organization" />
+      </label>
+    </div>
+    <div class="row">
+      <label>
+        Email <span aria-hidden="true">*</span>
+        <input name="email" type="email" autocomplete="email" required data-label="Email" />
+      </label>
+      <label>
+        Phone
+        <input name="phone" type="tel" autocomplete="tel" />
+      </label>
+    </div>
+    <label>
+      Country
+      <input name="country" autocomplete="country-name" />
+    </label>
+    <label>
+      Message <span aria-hidden="true">*</span>
+      <textarea name="message" rows="5" required data-label="Message"></textarea>
+    </label>
+    <p class="status" data-status role="status" aria-live="polite"></p>
+    <div class="actions">
+      <button type="button" class="btn" data-copy>
+        Copy inquiry
+      </button>
+      <button type="submit" class="btn btn-primary">
+        Send inquiry
+      </button>
+    </div>
+    <p class="fine muted">
+      Fields marked * are required. We use your details only to answer this inquiry.
+    </p>
+  </form>
+</dialog>
+
+<style>
+  .inquiry {
+    width: min(640px, calc(100vw - 2rem));
+    padding: var(--s-5);
+    border: 0;
+  }
+  .inquiry::backdrop {
+    background: rgb(15 42 67 / 0.55);
+  }
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: var(--s-3);
+  }
+  .close {
+    border: 0;
+    background: none;
+    font-size: 1.75rem;
+    line-height: 1;
+    cursor: pointer;
+    color: var(--ink-muted);
+    min-width: 44px;
+    min-height: 44px;
+  }
+  .notice {
+    background: var(--teal-50);
+    border-radius: var(--radius-sm);
+    padding: var(--s-3);
+    font-size: var(--fs-sm);
+  }
+  form {
+    display: grid;
+    gap: var(--s-3);
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s-3);
+  }
+  label {
+    display: grid;
+    gap: 4px;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--navy);
+  }
+  input,
+  textarea {
+    font: inherit;
+    font-weight: 400;
+    padding: var(--s-2) var(--s-3);
+    border: 1px solid #9aabbb;
+    border-radius: var(--radius-sm);
+    min-height: 44px;
+    color: var(--ink);
+  }
+  [aria-invalid='true'] {
+    border-color: var(--danger);
+    box-shadow: 0 0 0 1px var(--danger);
+  }
+  .hp {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--s-2);
+    flex-wrap: wrap;
+  }
+  .status:empty {
+    display: none;
+  }
+  .status {
+    margin: 0;
+    font-size: var(--fs-sm);
+  }
+  .status.error {
+    color: var(--danger);
+  }
+  .status.success {
+    color: var(--success);
+  }
+  .fine {
+    font-size: var(--fs-xs);
+    margin: 0;
+  }
+  @media (max-width: 560px) {
+    .row {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

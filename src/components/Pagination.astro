@@ -1,0 +1,25 @@
+---
+import type { Page } from 'astro';
+export interface Props {
+  page: Pick<Page, 'currentPage' | 'lastPage' | 'url'>;
+}
+const { page } = Astro.props;
+---
+
+{page.lastPage > 1 && (
+  <nav class="pager" aria-label="Pagination" data-static-pager>
+    {page.url.prev && (
+      <a class="btn btn-sm" href={page.url.prev} rel="prev">
+        ‹ Prev
+      </a>
+    )}
+    <span class="muted">
+      Page {page.currentPage} of {page.lastPage}
+    </span>
+    {page.url.next && (
+      <a class="btn btn-sm" href={page.url.next} rel="next">
+        Next ›
+      </a>
+    )}
+  </nav>
+)}

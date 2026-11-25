@@ -1,0 +1,68 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import {
+  categoryIntro,
+  categoryLabel,
+  groupBy,
+  liveProducts,
+  SUB_SLUGS,
+  subLabel,
+  taxonomy,
+} from '../../lib/catalogue';
+import { site } from '../../lib/site';
+import { url } from '../../lib/url';
+const live = await liveProducts();
+const byCat = groupBy(live, (p) => p.category);
+const cats = Object.keys(taxonomy.categories)
+  .filter((c) => byCat.has(c))
+  .sort((a, b) => byCat.get(b)!.length - byCat.get(a)!.length);
+---
+
+<Base
+  title={`Diagnostic product categories | ${site.name}`}
+  description={`Browse ${live.length} diagnostic products by category: ${cats.map(categoryLabel).join(', ')}.`}
+>
+  <div class="container">
+    <Breadcrumbs items={[{ label: 'Categories' }]} />
+    <h1>Categories</h1>
+    <div class="grid">
+      {cats.map((c) => {
+        const list = byCat.get(c)!;
+        const subs = groupBy(list, (p) => p.subcategory);
+        return (
+          <section class="card cat">
+            <h2>
+              <a href={url(`/categories/${c}/`)}>{categoryLabel(c)}</a>{' '}
+              <span class="muted">({list.length})</span>
+            </h2>
+            <p class="muted">{categoryIntro(c)}</p>
+            <ul>
+              {[...subs].map(([s, l]) => (
+                <li>
+                  <a href={url(`/categories/${c}/${SUB_SLUGS[s]}/`)}>{subLabel(s)}</a>{' '}
+                  <span class="muted">({l.length})</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        );
+      })}
+    </div>
+  </div>
+</Base>
+<style>
+  .cat {
+    padding: var(--s-4);
+  }
+  .cat h2 {
+    font-size: var(--fs-lg);
+  }
+  .cat p {
+    font-size: var(--fs-sm);
+  }
+  .cat ul {
+    padding-left: var(--s-4);
+    margin: 0;
+  }
+</style>

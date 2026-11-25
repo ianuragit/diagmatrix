@@ -1,0 +1,227 @@
+---
+import { url } from '../lib/url';
+import { site } from '../lib/site';
+const nav = [
+  { href: '/products/', label: 'Products' },
+  { href: '/categories/', label: 'Categories' },
+  { href: '/brands/', label: 'Brands' },
+  { href: '/analytes/', label: 'Analytes' },
+  { href: '/about/', label: 'About' },
+  { href: '/contact/', label: 'Contact' },
+];
+const path = Astro.url.pathname;
+---
+
+<header class="site-header">
+  <div class="container bar">
+    <a class="logo" href={url('/')} aria-label={`${site.name} home`}>
+      <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="7" fill="#0E7C86"></rect>
+        <path d="M8 16h16M16 8v16" stroke="#fff" stroke-width="3.5" stroke-linecap="round"></path>
+        <circle cx="24" cy="8" r="3" fill="#F59E0B"></circle>
+      </svg>
+      <span>{site.name}</span>
+    </a>
+    <form id="site-search-form" class="search" action={url('/search/')} method="get" role="search">
+      <label for="site-search" class="visually-hidden">
+        Search products
+      </label>
+      <input
+        id="site-search"
+        name="q"
+        type="search"
+        placeholder="Search products, brands, Cat. no."
+        autocomplete="off"
+        aria-controls="site-search-results"
+      />
+      <kbd aria-hidden="true">/</kbd>
+      <div id="site-search-results" class="search-results card" hidden aria-live="polite"></div>
+    </form>
+    <a class="basket-link" href={url('/basket/')}>
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path d="M9 5h6M5 7h14l-1.5 12h-11z"></path>
+        <path d="M9 11v4M15 11v4"></path>
+      </svg>
+      <span>Quote</span>
+      <span class="badge" data-basket-count hidden>
+        0
+      </span>
+    </a>
+  </div>
+  <nav class="container nav" aria-label="Main">
+    <ul>
+      {nav.map((n) => (
+        <li>
+          <a href={url(n.href)} aria-current={path.startsWith(url(n.href)) ? 'page' : undefined}>
+            {n.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .site-header {
+    background: var(--navy);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+  .bar {
+    display: flex;
+    align-items: center;
+    gap: var(--s-4);
+    padding-top: var(--s-3);
+    padding-bottom: var(--s-2);
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: var(--s-2);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: var(--fs-lg);
+    letter-spacing: -0.01em;
+  }
+  .search {
+    position: relative;
+    flex: 1;
+    max-width: 560px;
+  }
+  .search input {
+    width: 100%;
+    min-height: 40px;
+    border-radius: var(--radius-sm);
+    border: 1px solid transparent;
+    padding: 0 2.25rem 0 var(--s-3);
+    font: inherit;
+    font-size: var(--fs-sm);
+  }
+  .search kbd {
+    position: absolute;
+    right: 8px;
+    top: 9px;
+    font: 600 12px/20px var(--font);
+    padding: 0 6px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    color: var(--ink-muted);
+    background: var(--bg);
+  }
+  .search-results {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(100% + 6px);
+    max-height: 70vh;
+    overflow: auto;
+    padding: var(--s-2);
+    color: var(--ink);
+  }
+  .basket-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: var(--fs-sm);
+    min-height: 40px;
+    padding: 0 var(--s-2);
+  }
+  .badge {
+    background: var(--amber);
+    color: var(--navy);
+    border-radius: 999px;
+    min-width: 22px;
+    padding: 0 6px;
+    text-align: center;
+    font-size: var(--fs-xs);
+    font-weight: 700;
+  }
+  .nav ul {
+    display: flex;
+    gap: var(--s-1);
+    list-style: none;
+    margin: 0;
+    padding: 0 0 var(--s-2);
+    overflow-x: auto;
+  }
+  .nav a {
+    display: block;
+    color: #dce6ef;
+    text-decoration: none;
+    padding: var(--s-1) var(--s-3);
+    border-radius: var(--radius-sm);
+    font-size: var(--fs-sm);
+    white-space: nowrap;
+  }
+  .nav a:hover,
+  .nav a[aria-current='page'] {
+    color: #fff;
+    background: var(--navy-700);
+  }
+  @media (max-width: 640px) {
+    .bar {
+      flex-wrap: wrap;
+    }
+    .search {
+      order: 3;
+      flex-basis: 100%;
+      max-width: none;
+    }
+    .basket-link {
+      margin-left: auto;
+    }
+  }
+  :global(.sr-item) {
+    display: grid;
+    gap: 2px;
+    padding: var(--s-2) var(--s-3);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    color: var(--ink);
+  }
+  :global(.sr-item:hover),
+  :global(.sr-item:focus-visible) {
+    background: var(--teal-50);
+  }
+  :global(.sr-title) {
+    font-weight: 600;
+    color: var(--navy);
+  }
+  :global(.sr-meta) {
+    display: flex;
+    gap: var(--s-3);
+    font-size: var(--fs-xs);
+    color: var(--ink-muted);
+  }
+  :global(.sr-excerpt) {
+    font-size: var(--fs-xs);
+    color: var(--ink-muted);
+  }
+  :global(.sr-excerpt mark) {
+    background: #fde68a;
+    color: inherit;
+  }
+  :global(.sr-all) {
+    display: block;
+    padding: var(--s-2) var(--s-3);
+    font-weight: 600;
+    font-size: var(--fs-sm);
+  }
+  :global(.sr-empty) {
+    padding: var(--s-3);
+  }
+</style>

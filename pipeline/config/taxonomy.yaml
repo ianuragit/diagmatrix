@@ -207,6 +207,13 @@ analytes:
   ige: { label: Total IgE, group: Allergy, keywords: [immunoglobulin e, ige] }
   pprom: { label: Rupture of membranes (IGFBP-1), group: Fertility & hormones, keywords: [igfbp-1, phigfbp-1] }
 
+# When the key analyte is found, drop these (their words appear inside its name,
+# e.g. "glucose-6-phosphate dehydrogenase").
+analyte_suppress:
+  g6pd: [glucose, phosphate]
+  hfabp: [lipids]
+  sickle-cell: [hemoglobin]
+
 sample_types:
   whole-blood: { label: Whole blood, keywords: [whole blood, wb, blood, blut, vollblut, capillary blood, venous blood] }
   serum: { label: Serum, keywords: [serum] }

@@ -1,0 +1,73 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { brandSlug, groupBy, liveProducts } from '../../lib/catalogue';
+import { site } from '../../lib/site';
+import { url } from '../../lib/url';
+const live = await liveProducts();
+const brands = [...groupBy(live, (p) => p.brand)].sort((a, b) =>
+  a[0].localeCompare(b[0], 'en', { sensitivity: 'base' }),
+);
+const letters = [...new Set(brands.map(([b]) => (/^[a-z]/i.test(b) ? b[0]!.toUpperCase() : '#')))];
+---
+
+<Base
+  title={`Diagnostic brands A–Z | ${site.name}`}
+  description={`${brands.length} in-vitro diagnostic manufacturers and brands, with their rapid tests, assays, analysers and consumables.`}
+>
+  <div class="container">
+    <Breadcrumbs items={[{ label: 'Brands' }]} />
+    <h1>Brands</h1>
+    <p class="muted">
+      {brands.length} brands, {live.length} products.
+    </p>
+    <nav aria-label="Jump to letter" class="letters">
+      {letters.map((l) => (
+        <a href={`#l-${l}`}>{l}</a>
+      ))}
+    </nav>
+    {letters.map((l) => (
+      <section id={`l-${l}`}>
+        <h2>{l}</h2>
+        <ul class="brand-list">
+          {brands
+            .filter(([b]) => (/^[a-z]/i.test(b) ? b[0]!.toUpperCase() : '#') === l)
+            .map(([b, list]) => (
+              <li>
+                <a href={url(`/brands/${brandSlug(b)}/`)}>{b}</a>{' '}
+                <span class="muted">({list.length})</span>
+              </li>
+            ))}
+        </ul>
+      </section>
+    ))}
+  </div>
+</Base>
+<style>
+  .letters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-2);
+    margin: var(--s-4) 0;
+  }
+  .letters a {
+    min-width: 32px;
+    min-height: 32px;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .brand-list {
+    columns: 3 220px;
+    padding: 0;
+    list-style: none;
+  }
+  .brand-list li {
+    padding: 2px 0;
+    break-inside: avoid;
+  }
+</style>

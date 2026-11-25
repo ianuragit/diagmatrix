@@ -2,6 +2,35 @@
 
 Newest first.
 
+## 2026-11-25 — Phase 5: Astro site, search, filters, basket, forms
+
+**Done**
+- Content collection over `data/products.json` using the pipeline's Zod schema.
+- Pages: home, products listing (24/page, static), 1,226 product pages (7 duplicates → meta refresh +
+  canonical + noindex), categories (+ product-type subcategories), brands A–Z, analytes by group,
+  technologies, search, basket, contact, about, 404 — 1,788 pages, ~4 s build.
+- Pagefind: 1,219 canonical product pages indexed with filters (brand, category, technology, analyte,
+  sample_type, product_type) and meta (title, brand, catalogue_no); header search with "/" shortcut,
+  dropdown, full search page with filters, "Can't find it? Ask us" on no results.
+- Facet island over `/data/facets.json` (120 KB): multi-select with counts, name/Cat. no. filter, sort,
+  pagination, URL query state (shareable, back/forward safe); static pages work without JS.
+- Quote basket (`quote_basket_v1`): header badge, add/remove/qty/note, CSV export (formula-injection safe),
+  copy as text, WhatsApp (hidden while no number is set).
+- `<RequestInfo>` with card / hero / spec / hub / search / sticky variants; one modal prefilled with
+  product or basket context; honeypot + client validation; `request_info` event (+ dataLayer).
+  Form posts to Web3Forms/Formspree once configured; until then "Copy inquiry" fallback.
+- Theme tokens (navy/teal/amber, Inter self-hosted), AA contrast, focus rings, reduced motion.
+- Playwright smoke tests (11): search, "/" shortcut, facet narrowing + URL + back, shareable URL,
+  basket persistence, modal prefill + event + validation, product page structure, duplicate redirect,
+  no-JS pagination, mobile sticky CTA.
+- Data fix: analyte suppression (G6PD no longer tagged glucose/phosphate).
+
+**Decisions**
+- No UI framework: islands are small TypeScript modules (keeps JS tiny for Lighthouse).
+- Cards show facts (category, type, analytes, Cat. no., pack) rather than summaries, so static and
+  client-rendered cards are identical and facets.json stays small.
+- Form and WhatsApp are switched on purely by config; nothing to change in code later.
+
 ## 2026-11-25 — Phase 4: normalise, enrich, dedupe → data/products.json
 
 **Done**

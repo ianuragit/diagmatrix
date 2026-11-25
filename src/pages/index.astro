@@ -1,17 +1,205 @@
 ---
+import Base from '../layouts/Base.astro';
+import RequestInfo from '../components/RequestInfo.astro';
+import {
+  analyteLabel,
+  brandSlug,
+  categoryIntro,
+  categoryLabel,
+  groupBy,
+  liveProducts,
+  taxonomy,
+} from '../lib/catalogue';
+import { site } from '../lib/site';
 import { url } from '../lib/url';
+
+const live = await liveProducts();
+const byCat = groupBy(live, (p) => p.category);
+const cats = Object.keys(taxonomy.categories)
+  .filter((c) => (byCat.get(c)?.length ?? 0) > 0)
+  .sort((a, b) => byCat.get(b)!.length - byCat.get(a)!.length);
+const brands = [...groupBy(live, (p) => p.brand)].sort((a, b) => b[1].length - a[1].length);
+const analytes = [...groupBy(live, (p) => p.analyte)]
+  .sort((a, b) => b[1].length - a[1].length)
+  .slice(0, 16);
+const instruments = live.filter((p) => p.product_type === 'instrument').length;
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Diagnostics product directory</title>
-  </head>
-  <body>
-    <h1>Diagnostics product directory</h1>
-    <p>Site scaffold — catalogue pages arrive in Phase 5.</p>
-    <a href={url('/')}>Home</a>
-  </body>
-</html>
+<Base
+  title={`${site.name} – in-vitro diagnostic products directory`}
+  description={`Search and compare ${live.length} in-vitro diagnostic products from ${brands.length} brands: rapid tests, immunoassays, molecular tests, analysers and consumables. Request information or build a quote.`}
+>
+  <section class="hero">
+    <div class="container">
+      <h1>Find and compare diagnostic products</h1>
+      <p class="lede">
+        {live.length.toLocaleString('en')} products from {brands.length} brands — rapid tests,
+        immunoassays, molecular tests, {instruments} analysers and their reagents. Build a quote
+        list and send one inquiry.
+      </p>
+      <form class="hero-search" action={url('/search/')} method="get" role="search">
+        <label for="hero-q" class="visually-hidden">
+          Search products
+        </label>
+        <input
+          id="hero-q"
+          name="q"
+          type="search"
+          placeholder="Try “dengue NS1”, “HbA1c analyser” or a catalogue number"
+        />
+        <button class="btn btn-primary" type="submit">
+          Search
+        </button>
+      </form>
+      <p class="quick">
+        Popular:{' '}
+        {analytes.slice(0, 6).map(([a], i) => (
+          <>
+            {i > 0 && ' · '}
+            <a href={url(`/analytes/${a}/`)}>{analyteLabel(a)}</a>
+          </>
+        ))}
+      </p>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="section" aria-labelledby="cat-h">
+      <h2 id="cat-h">Browse by category</h2>
+      <div class="grid">
+        {cats.map((c) => (
+          <a class="card tile" href={url(`/categories/${c}/`)}>
+            <span class="tile-title">{categoryLabel(c)}</span>
+            <span class="muted tile-n">{byCat.get(c)!.length} products</span>
+            <span class="tile-intro">{categoryIntro(c)}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="an-h">
+      <h2 id="an-h">Common analytes</h2>
+      <ul class="chips">
+        {analytes.map(([a, l]) => (
+          <li>
+            <a class="chip big" href={url(`/analytes/${a}/`)}>
+              {analyteLabel(a)} <span>({l.length})</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p>
+        <a href={url('/analytes/')}>All analytes →</a>
+      </p>
+    </section>
+
+    <section class="section" aria-labelledby="br-h">
+      <h2 id="br-h">Leading brands</h2>
+      <ul class="chips">
+        {brands.slice(0, 18).map(([b, l]) => (
+          <li>
+            <a class="chip big" href={url(`/brands/${brandSlug(b)}/`)}>
+              {b} <span>({l.length})</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p>
+        <a href={url('/brands/')}>All {brands.length} brands →</a>
+      </p>
+    </section>
+
+    <section class="section card how">
+      <div>
+        <h2>How it works</h2>
+        <ol>
+          <li>Search or filter by brand, analyte, technology and sample type.</li>
+          <li>Add products to your quote basket.</li>
+          <li>Send one inquiry for pricing, availability and documents.</li>
+        </ol>
+      </div>
+      <RequestInfo variant="hub" subject="diagnostic" />
+    </section>
+  </div>
+</Base>
+
+<style>
+  .hero {
+    background: linear-gradient(160deg, var(--navy) 0%, var(--navy-700) 100%);
+    color: #e7eef5;
+    padding: var(--s-7) 0;
+  }
+  .hero h1 {
+    color: #fff;
+  }
+  .lede {
+    max-width: 62ch;
+    font-size: var(--fs-lg);
+  }
+  .hero-search {
+    display: flex;
+    gap: var(--s-2);
+    max-width: 680px;
+    margin: var(--s-4) 0 var(--s-3);
+  }
+  .hero-search input {
+    flex: 1;
+    min-height: 48px;
+    border-radius: var(--radius-sm);
+    border: 0;
+    padding: 0 var(--s-4);
+    font: inherit;
+  }
+  .quick a {
+    color: #fff;
+  }
+  .tile {
+    display: grid;
+    gap: var(--s-1);
+    padding: var(--s-4);
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .tile:hover {
+    border-color: var(--teal);
+  }
+  .tile-title {
+    font-weight: 700;
+    color: var(--navy);
+    font-size: var(--fs-lg);
+  }
+  .tile-n {
+    font-size: var(--fs-sm);
+  }
+  .tile-intro {
+    font-size: var(--fs-sm);
+    color: var(--ink-muted);
+  }
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-2);
+    list-style: none;
+    padding: 0;
+  }
+  .chip.big {
+    font-size: var(--fs-sm);
+    padding: 6px 12px;
+  }
+  .chip span {
+    font-weight: 400;
+  }
+  .how {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--s-4);
+    padding: var(--s-5);
+    flex-wrap: wrap;
+  }
+  @media (max-width: 560px) {
+    .hero-search {
+      flex-direction: column;
+    }
+  }
+</style>

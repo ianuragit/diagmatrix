@@ -1,0 +1,55 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { analyteGroup, analyteLabel, groupBy, liveProducts } from '../../lib/catalogue';
+import { site } from '../../lib/site';
+import { url } from '../../lib/url';
+const live = await liveProducts();
+const byAnalyte = groupBy(live, (p) => p.analyte);
+const groups = new Map<string, { a: string }[]>();
+for (const a of byAnalyte.keys())
+  (groups.get(analyteGroup(a)) ?? groups.set(analyteGroup(a), []).get(analyteGroup(a))!).push({
+    a,
+  });
+const sortedGroups = [...groups].sort((a, b) => a[0].localeCompare(b[0]));
+---
+
+<Base
+  title={`Diagnostic tests by analyte | ${site.name}`}
+  description={`Find diagnostic tests and analysers by what they detect or measure — ${byAnalyte.size} analytes from HIV and dengue to HbA1c and troponin.`}
+>
+  <div class="container">
+    <Breadcrumbs items={[{ label: 'Analytes' }]} />
+    <h1>Analytes</h1>
+    <p class="muted">What the products detect or measure, grouped by clinical area.</p>
+    <div class="grid">
+      {sortedGroups.map(([g, items]) => (
+        <section class="card grp">
+          <h2>{g}</h2>
+          <ul>
+            {items
+              .sort((x, y) => analyteLabel(x.a).localeCompare(analyteLabel(y.a)))
+              .map(({ a }) => (
+                <li>
+                  <a href={url(`/analytes/${a}/`)}>{analyteLabel(a)}</a>{' '}
+                  <span class="muted">({byAnalyte.get(a)!.length})</span>
+                </li>
+              ))}
+          </ul>
+        </section>
+      ))}
+    </div>
+  </div>
+</Base>
+<style>
+  .grp {
+    padding: var(--s-4);
+  }
+  .grp h2 {
+    font-size: var(--fs-lg);
+  }
+  .grp ul {
+    margin: 0;
+    padding-left: var(--s-4);
+  }
+</style>

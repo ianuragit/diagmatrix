@@ -1,0 +1,101 @@
+---
+import { url } from '../lib/url';
+import { site, DISCLAIMER } from '../lib/site';
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container cols">
+    <div>
+      <p class="brand">{site.name}</p>
+      <p class="small">
+        An independent directory of in-vitro diagnostic products: rapid tests, immunoassays,
+        molecular tests, analysers and consumables.
+      </p>
+    </div>
+    <nav aria-label="Footer">
+      <ul>
+        <li>
+          <a href={url('/products/')}>All products</a>
+        </li>
+        <li>
+          <a href={url('/categories/')}>Categories</a>
+        </li>
+        <li>
+          <a href={url('/brands/')}>Brands</a>
+        </li>
+        <li>
+          <a href={url('/analytes/')}>Analytes</a>
+        </li>
+        <li>
+          <a href={url('/technology/')}>Technologies</a>
+        </li>
+      </ul>
+    </nav>
+    <nav aria-label="Company">
+      <ul>
+        <li>
+          <a href={url('/about/')}>About</a>
+        </li>
+        <li>
+          <a href={url('/contact/')}>Contact</a>
+        </li>
+        <li>
+          <a href={url('/basket/')}>Quote basket</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container disclaimer">
+    <p>
+      <strong>Medical disclaimer.</strong> {DISCLAIMER}
+    </p>
+    <p class="small">
+      © {year} {site.name}. Brand and product names belong to their respective owners.
+    </p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--navy);
+    color: #dce6ef;
+    margin-top: var(--s-7);
+    padding: var(--s-6) 0 var(--s-5);
+  }
+  .cols {
+    display: grid;
+    gap: var(--s-5);
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+  .brand {
+    color: #fff;
+    font-weight: 700;
+    font-size: var(--fs-lg);
+    margin-bottom: var(--s-2);
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--s-2);
+  }
+  a {
+    color: #fff;
+  }
+  .small {
+    font-size: var(--fs-sm);
+  }
+  .disclaimer {
+    border-top: 1px solid var(--navy-700);
+    margin-top: var(--s-5);
+    padding-top: var(--s-4);
+    font-size: var(--fs-sm);
+  }
+  @media (max-width: 720px) {
+    .cols {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

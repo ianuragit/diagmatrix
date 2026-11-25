@@ -1,0 +1,44 @@
+---
+import type { GetStaticPaths } from 'astro';
+import HubLayout from '../../../../components/HubLayout.astro';
+import {
+  PAGE_SIZE,
+  SUB_SLUGS,
+  categoryLabel,
+  groupBy,
+  liveProducts,
+  subLabel,
+} from '../../../../lib/catalogue';
+import { site } from '../../../../lib/site';
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const live = await liveProducts();
+  return [...groupBy(live, (p) => p.category)].flatMap(([cat, list]) =>
+    [...groupBy(list, (p) => p.subcategory)].flatMap(([sub, l]) =>
+      paginate(l, {
+        params: { cat, sub: SUB_SLUGS[sub]! },
+        pageSize: PAGE_SIZE,
+        props: { subKey: sub },
+      }),
+    ),
+  );
+}) satisfies GetStaticPaths;
+const { cat, sub } = Astro.params;
+const { page, subKey } = Astro.props;
+const label = `${categoryLabel(cat)}: ${subLabel(subKey)}`;
+---
+
+<HubLayout
+  title={`${label} | ${site.name}`}
+  heading={label}
+  description={`${page.total} ${subLabel(subKey).toLowerCase()} in ${categoryLabel(cat).toLowerCase()} — compare brands, analytes and sample types and request information.`}
+  crumbs={[
+    { label: 'Categories', href: '/categories/' },
+    { label: categoryLabel(cat), href: `/categories/${cat}/` },
+    { label: subLabel(subKey) },
+  ]}
+  page={page}
+  locked={{ category: [cat], type: [subKey] }}
+  subject={label}
+  basePath={`/categories/${cat}/${sub}/`}
+/>

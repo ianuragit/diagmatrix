@@ -1,6 +1,8 @@
 # Learnings and Backlog
 
 ## Learnings
+- 2026-11-25 — Astro 7 `astro preview` daemonises by default; Playwright's webServer needs `--ignore-lock` (foreground).
+- 2026-11-25 — Build-time file reads in Astro pages must use project-root paths (`process.cwd()`), not `import.meta.url` — pages are bundled into `dist/.prerender`.
 - 2026-11-25 — Source B lists the same assay under each compatible instrument with a different child id; treating those as duplicates produced 230 false groups. They are one product with several parents.
 - 2026-11-25 — YAML flow mappings split on commas: a label like `Blood gases (pH, pO2, pCO2)` must be quoted.
 - 2026-11-25 — Brand names that are ordinary words ("Human") or generic line names ("ULTRA") cause false brand matches from product names; mark them `stated_only` / don't list them as lines.
@@ -19,6 +21,7 @@
 - 2026-11-24 — Zod 4: use `z.url()`; `z.string().url()` is deprecated.
 
 ## Backlog
+- 2026-11-25 — Configure the inquiry form (Web3Forms/Formspree key) and WhatsApp number when ready — config only.
 - 2026-11-25 — Product names from Source B are often German ("Harnstoff (BUN), Kreatinin und eGFR", "PSA gesamt"); consider an English display-name map for common terms.
 - 2026-11-25 — 53 products still have no analyte (niche markers: mutation panels, TDM, AMR genes) and 9 are low-confidence; review via `pnpm report` and fix with taxonomy keywords or overrides.
 - 2026-11-25 — Brand ownership questions for a human: LumiraDx (now Roche?), Xprecia (Siemens vs OEM Universal Biosensors), Calbiotech vs InBios.
@@ -26,7 +29,7 @@
 - 2026-11-25 — Source A: 3,093 pages not fetched (site firewall). Revisit only with owner permission or a much slower rate.
 - 2026-11-24 — Phase 2: `src-a` selectors + adapter + scrubbed fixtures.
 - 2026-11-24 — Set `contact_email` (User-Agent) and `whatsapp_number` when available.
-- 2026-11-24 — Phases 5–7: site, SEO/GEO, Playwright + Lighthouse + docs.
+- 2026-11-24 — Phases 6–7: SEO/GEO, Lighthouse, deploy, docs.
 - 2026-11-24 — `--download-images` flag is parsed but not yet wired (Phase 4/5).
 
 ## Implemented

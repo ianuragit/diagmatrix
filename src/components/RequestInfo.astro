@@ -1,0 +1,47 @@
+---
+/**
+ * The one reusable call-to-action. Variants:
+ *  card    – "Request info" (secondary) on product cards
+ *  hero    – "Request info" (primary, amber) on product pages
+ *  spec    – "Get more info on this product" below the spec table
+ *  hub     – "Request info on {name} products" on category/brand/analyte pages
+ *  search  – "Can't find it? Ask us" for empty results
+ *  sticky  – compact button for the mobile sticky bar
+ * Opens the inquiry modal prefilled with context (see scripts/inquiry.ts).
+ */
+export interface Props {
+  variant: 'card' | 'hero' | 'spec' | 'hub' | 'search' | 'sticky';
+  product?: string;
+  catalogue?: string | null;
+  subject?: string;
+}
+const { variant, product, catalogue, subject } = Astro.props;
+const label = {
+  card: 'Request info',
+  hero: 'Request info',
+  spec: 'Get more info on this product',
+  hub: `Request info on ${subject ?? ''} products`,
+  search: "Can't find it? Ask us",
+  sticky: 'Request info',
+}[variant];
+const cls =
+  variant === 'hero' || variant === 'sticky'
+    ? 'btn btn-primary'
+    : variant === 'card'
+      ? 'btn btn-sm'
+      : 'btn';
+const context =
+  variant === 'hub' ? 'hub' : variant === 'search' ? 'search' : product ? 'product' : 'general';
+---
+
+<button
+  type="button"
+  class={cls}
+  data-request-info
+  data-context={context}
+  data-product={product}
+  data-catalogue={catalogue ?? undefined}
+  data-subject={subject}
+>
+  {label}
+</button>

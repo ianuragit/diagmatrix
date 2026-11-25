@@ -109,6 +109,13 @@ describe('classify', () => {
     expect(run({ name: 'Mystery Widget' }).confidence).toBeLessThan(0.5);
   });
 
+  it('suppresses analytes whose words sit inside a more specific one', () => {
+    expect(
+      run({ name: 'BinaxNOW G6PD', extraText: 'Glucose-6-Phosphate Dehydrogenase deficiency' })
+        .analyte,
+    ).toEqual(['g6pd']);
+  });
+
   it('scope filter: excluded categories and non-diagnostic keywords', () => {
     expect(c.outOfScope('src-a', ['Medical Surgicals'], 'Anything')).toMatch(/source category/);
     expect(c.outOfScope('src-a', ['Medical Reagents'], 'Coronary Guidewire')).toMatch(/guidewire/);

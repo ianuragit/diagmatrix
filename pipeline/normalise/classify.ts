@@ -15,6 +15,7 @@ export interface Taxonomy {
   technology: Record<string, { label: string; category: string; keywords: string[] }>;
   analytes: Record<string, { label: string; group: string; keywords: string[] }>;
   sample_types: Record<string, { label: string; keywords: string[] }>;
+  analyte_suppress?: Record<string, string[]>;
   product_types: Record<'control' | 'consumable' | 'instrument' | 'reagent', string[]>;
   subtypes: Record<string, string[]>;
   spec_filters: { drop_keys: string[]; drop_values: string[] };
@@ -140,7 +141,20 @@ export class Classifier {
     return list.filter((x) => x.res.some((r) => r.test(text))).map((x) => x.id);
   }
 
+  private suppress(ids: string[]): string[] {
+    const drop = new Set(ids.flatMap((id) => this.tax.analyte_suppress?.[id] ?? []));
+    return ids.filter((id) => !drop.has(id));
+  }
+
   analytesFrom(values: string[], text: string): { ids: string[]; conf: number; basis: string } {
+    const r = this.analytesRaw(values, text);
+    return { ...r, ids: this.suppress(r.ids) };
+  }
+
+  private analytesRaw(
+    values: string[],
+    text: string,
+  ): { ids: string[]; conf: number; basis: string } {
     const structured = [...new Set(values.flatMap((v) => this.matchAll(this.analytes, v)))];
     if (structured.length) return { ids: structured, conf: 1, basis: 'structured' };
     const fromText = this.matchAll(this.analytes, text);

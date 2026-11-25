@@ -1,0 +1,381 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Base from '../../../layouts/Base.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import ProductImage from '../../../components/ProductImage.astro';
+import ProductCard from '../../../components/ProductCard.astro';
+import RequestInfo from '../../../components/RequestInfo.astro';
+import AddToQuote from '../../../components/AddToQuote.astro';
+import WhatsAppLink from '../../../components/WhatsAppLink.astro';
+import {
+  allProducts,
+  analyteLabel,
+  brandSlug,
+  categoryLabel,
+  displayName,
+  packLabel,
+  sampleLabel,
+  SUB_SLUGS,
+  subLabel,
+  techLabel,
+  typeLabel,
+  type Product,
+} from '../../../lib/catalogue';
+import { site } from '../../../lib/site';
+import { url } from '../../../lib/url';
+
+export const getStaticPaths = (async () => {
+  const all = await allProducts();
+  const byId = new Map(all.map((p) => [p.id, p]));
+  return all.map((p) => ({
+    params: { slug: p.slug },
+    props: {
+      p,
+      canonical: p.duplicate_of ? (byId.get(p.duplicate_of) ?? null) : null,
+      related: p.related.map((id) => byId.get(id)).filter((x): x is Product => !!x),
+    },
+  }));
+}) satisfies GetStaticPaths;
+
+const { p, canonical, related } = Astro.props;
+const name = displayName(p);
+const analytes = p.analyte.map(analyteLabel);
+const samples = p.sample_type.map(sampleLabel);
+const pack = packLabel(p);
+const titleBits = [
+  name,
+  p.technology && techLabel(p.technology),
+  analytes.length ? `for ${analytes.slice(0, 2).join(', ')}` : null,
+].filter(Boolean);
+const title = `${titleBits.join(' – ')} | ${site.name}`.replace(' – for', ' for');
+const description = (
+  p.summary ?? `${name}: product information, specifications and request for quotation.`
+).slice(0, 158);
+const waText = `Hello, I'd like information about ${name}${p.catalogue_no ? ` (Cat. ${p.catalogue_no})` : ''}.`;
+const specRows = Object.entries(p.specs);
+const crumbs = [
+  { label: 'Products', href: '/products/' },
+  ...(p.category ? [{ label: categoryLabel(p.category), href: `/categories/${p.category}/` }] : []),
+  ...(p.category && p.subcategory
+    ? [
+        {
+          label: subLabel(p.subcategory),
+          href: `/categories/${p.category}/${SUB_SLUGS[p.subcategory]}/`,
+        },
+      ]
+    : []),
+  { label: name },
+];
+const updated = new Date(p.updated_at).toLocaleDateString('en-GB', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+{canonical ? (
+  <Base
+    title={`${displayName(canonical)} | ${site.name}`}
+    description={`This listing has moved to ${displayName(canonical)}.`}
+    canonicalPath={`/products/${canonical.slug}/`}
+    noindex
+  >
+    <meta
+      slot="head"
+      http-equiv="refresh"
+      content={`0; url=${url(`/products/${canonical.slug}/`)}`}
+    />
+    <div class="container section">
+      <h1>{displayName(canonical)}</h1>
+      <p>
+        This listing is a duplicate. Continue to{' '}
+        <a href={url(`/products/${canonical.slug}/`)}>{displayName(canonical)}</a>.
+      </p>
+    </div>
+  </Base>
+) : (
+  <Base title={title} description={description} bodyClass="has-sticky">
+    <div class="container">
+      <Breadcrumbs items={crumbs} />
+      <article class="product" data-pagefind-body data-pagefind-meta={`title:${name}`}>
+        {p.brand && (
+          <span hidden data-pagefind-meta="brand">
+            {p.brand}
+          </span>
+        )}
+        {p.catalogue_no && (
+          <span hidden data-pagefind-meta="catalogue_no">
+            {p.catalogue_no}
+          </span>
+        )}
+        {p.brand && (
+          <span hidden data-pagefind-filter="brand">
+            {p.brand}
+          </span>
+        )}
+        {p.category && (
+          <span hidden data-pagefind-filter="category">
+            {categoryLabel(p.category)}
+          </span>
+        )}
+        {p.technology && (
+          <span hidden data-pagefind-filter="technology">
+            {techLabel(p.technology)}
+          </span>
+        )}
+        {analytes.map((a) => (
+          <span hidden data-pagefind-filter="analyte">
+            {a}
+          </span>
+        ))}
+        {samples.map((s) => (
+          <span hidden data-pagefind-filter="sample_type">
+            {s}
+          </span>
+        ))}
+        {p.product_type && (
+          <span hidden data-pagefind-filter="product_type">
+            {typeLabel(p.product_type)}
+          </span>
+        )}
+
+        <div class="hero">
+          <div class="media" data-pagefind-ignore>
+            <ProductImage
+              brand={p.brand}
+              name={p.name}
+              category={categoryLabel(p.category)}
+              imageLocal={p.image_local}
+              size="lg"
+            />
+          </div>
+          <div class="intro">
+            <p class="kicker">
+              {p.brand && <a href={url(`/brands/${brandSlug(p.brand)}/`)}>{p.brand}</a>}
+              {p.product_line && <span> · {p.product_line}</span>}
+            </p>
+            <h1>{name}</h1>
+            {p.summary && <p class="summary">{p.summary}</p>}
+            <div class="ctas" data-pagefind-ignore>
+              <RequestInfo variant="hero" product={name} catalogue={p.catalogue_no} />
+              <AddToQuote id={p.slug} name={p.name} brand={p.brand} catalogue={p.catalogue_no} />
+              <WhatsAppLink text={waText} />
+            </div>
+          </div>
+        </div>
+
+        <section class="facts card" aria-labelledby="facts-h">
+          <h2 id="facts-h">Key facts</h2>
+          <dl>
+            {p.brand && (
+              <div>
+                <dt>Brand</dt>
+                <dd>
+                  <a href={url(`/brands/${brandSlug(p.brand)}/`)}>{p.brand}</a>
+                </dd>
+              </div>
+            )}
+            {p.technology && (
+              <div>
+                <dt>Technology</dt>
+                <dd>
+                  <a href={url(`/technology/${p.technology}/`)}>{techLabel(p.technology)}</a>
+                </dd>
+              </div>
+            )}
+            {p.analyte.length > 0 && (
+              <div>
+                <dt>Analyte{p.analyte.length > 1 ? 's' : ''}</dt>
+                <dd>
+                  {p.analyte.map((a, i) => (
+                    <>
+                      {i > 0 && ', '}
+                      <a href={url(`/analytes/${a}/`)}>{analyteLabel(a)}</a>
+                    </>
+                  ))}
+                </dd>
+              </div>
+            )}
+            {samples.length > 0 && (
+              <div>
+                <dt>Sample type</dt>
+                <dd>{samples.join(', ')}</dd>
+              </div>
+            )}
+            {p.product_type && (
+              <div>
+                <dt>Product type</dt>
+                <dd>
+                  {typeLabel(p.product_type)}
+                  {p.subtype && ` (${p.subtype})`}
+                </dd>
+              </div>
+            )}
+            {pack && (
+              <div>
+                <dt>Pack size</dt>
+                <dd>{pack}</dd>
+              </div>
+            )}
+            {p.catalogue_no && (
+              <div>
+                <dt>Catalogue no.</dt>
+                <dd>{p.catalogue_no}</dd>
+              </div>
+            )}
+            <div>
+              <dt>Last updated</dt>
+              <dd>
+                <time datetime={p.updated_at}>{updated}</time>
+              </dd>
+            </div>
+          </dl>
+        </section>
+
+        {specRows.length > 0 && (
+          <section class="specs" aria-labelledby="specs-h">
+            <h2 id="specs-h">Specifications</h2>
+            <div class="table-wrap">
+              <table class="table">
+                <caption class="visually-hidden">Specifications of {name}</caption>
+                <tbody>
+                  {specRows.map(([k, v]) => (
+                    <tr>
+                      <th scope="row">{k}</th>
+                      <td>{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <div class="after-specs" data-pagefind-ignore>
+              <RequestInfo variant="spec" product={name} catalogue={p.catalogue_no} />
+            </div>
+          </section>
+        )}
+
+        {p.documents.length > 0 && (
+          <section aria-labelledby="docs-h" data-pagefind-ignore>
+            <h2 id="docs-h">Documents</h2>
+            <ul class="docs">
+              {p.documents.map((d) => (
+                <li>
+                  <a href={d.url} rel="noopener nofollow" target="_blank">
+                    {d.title}
+                  </a>{' '}
+                  <span class="muted">({d.type})</span>
+                </li>
+              ))}
+            </ul>
+            <p class="muted small">
+              Documents are hosted by their publishers; links open in a new tab.
+            </p>
+          </section>
+        )}
+      </article>
+
+      {related.length > 0 && (
+        <section class="section" aria-labelledby="rel-h" data-pagefind-ignore>
+          <h2 id="rel-h">Related products</h2>
+          <div class="grid">
+            {related.map((r) => (
+              <ProductCard p={r} />
+            ))}
+          </div>
+        </section>
+      )}
+    </div>
+
+    <div class="sticky-cta" data-pagefind-ignore>
+      <RequestInfo variant="sticky" product={name} catalogue={p.catalogue_no} />
+      <AddToQuote id={p.slug} name={p.name} brand={p.brand} catalogue={p.catalogue_no} />
+    </div>
+  </Base>
+)}
+
+<style>
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(220px, 360px) 1fr;
+    gap: var(--s-6);
+    align-items: start;
+    margin-bottom: var(--s-5);
+  }
+  .kicker {
+    margin: 0 0 var(--s-2);
+    font-weight: 600;
+    font-size: var(--fs-sm);
+  }
+  .summary {
+    font-size: var(--fs-lg);
+    max-width: 65ch;
+  }
+  .ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-2);
+  }
+  .facts {
+    padding: var(--s-4) var(--s-5);
+    margin-bottom: var(--s-5);
+  }
+  .facts dl {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: var(--s-3) var(--s-5);
+    margin: 0;
+  }
+  .facts dt {
+    font-size: var(--fs-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ink-muted);
+  }
+  .facts dd {
+    margin: 2px 0 0;
+    font-weight: 600;
+  }
+  .specs {
+    margin-bottom: var(--s-5);
+  }
+  .after-specs {
+    margin-top: var(--s-3);
+  }
+  .docs {
+    padding-left: var(--s-5);
+  }
+  .small {
+    font-size: var(--fs-sm);
+  }
+  .sticky-cta {
+    display: none;
+  }
+  @media (max-width: 720px) {
+    .hero {
+      grid-template-columns: 1fr;
+      gap: var(--s-4);
+    }
+    .media {
+      max-width: 280px;
+    }
+    .sticky-cta {
+      display: flex;
+      gap: var(--s-2);
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: var(--s-2) var(--s-4) calc(var(--s-2) + env(safe-area-inset-bottom));
+      background: var(--surface);
+      border-top: 1px solid var(--line);
+      box-shadow: 0 -4px 16px rgb(15 42 67 / 0.08);
+      z-index: 15;
+    }
+    .sticky-cta :global(.btn) {
+      flex: 1;
+    }
+    :global(body.has-sticky) {
+      padding-bottom: 72px;
+    }
+  }
+</style>

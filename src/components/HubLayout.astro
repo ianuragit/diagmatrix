@@ -1,0 +1,73 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from './Breadcrumbs.astro';
+import Listing from './Listing.astro';
+import RequestInfo from './RequestInfo.astro';
+import type { Page } from 'astro';
+import type { Product } from '../lib/catalogue';
+import { THIN_HUB } from '../lib/catalogue';
+export interface Props {
+  title: string;
+  heading: string;
+  description: string;
+  intro?: string;
+  crumbs: { label: string; href?: string }[];
+  page: Page<Product>;
+  locked: Record<string, string[]>;
+  subject: string;
+  fallbackLinks?: { href: string; label: string }[];
+  basePath: string;
+}
+const {
+  title,
+  heading,
+  description,
+  intro,
+  crumbs,
+  page,
+  locked,
+  subject,
+  fallbackLinks,
+  basePath,
+} = Astro.props;
+const thin = page.total < THIN_HUB;
+---
+
+<Base
+  title={page.currentPage > 1 ? `${title} – page ${page.currentPage}` : title}
+  description={description}
+  noindex={thin || page.currentPage > 1}
+  canonicalPath={page.currentPage > 1 ? undefined : basePath}
+>
+  <div class="container">
+    <Breadcrumbs items={crumbs} />
+    <header class="hub-head">
+      <div>
+        <h1>{heading}</h1>
+        {intro && <p class="lede">{intro}</p>}
+      </div>
+      <RequestInfo variant="hub" subject={subject} />
+    </header>
+    <slot />
+    <Listing page={page} locked={locked} fallbackLinks={fallbackLinks} />
+  </div>
+</Base>
+
+<style>
+  .hub-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--s-4);
+    margin-bottom: var(--s-5);
+  }
+  .lede {
+    max-width: 70ch;
+    color: var(--ink-muted);
+  }
+  @media (max-width: 720px) {
+    .hub-head {
+      flex-direction: column;
+    }
+  }
+</style>

@@ -1,0 +1,39 @@
+---
+import type { Product } from '../lib/catalogue';
+import { analyteLabel, categoryLabel, displayName, packLabel, typeLabel } from '../lib/catalogue';
+import { url } from '../lib/url';
+import RequestInfo from './RequestInfo.astro';
+import AddToQuote from './AddToQuote.astro';
+export interface Props {
+  p: Product;
+}
+const { p } = Astro.props;
+const href = url(`/products/${p.slug}/`);
+const facts = [p.catalogue_no && `Cat. ${p.catalogue_no}`, packLabel(p)]
+  .filter(Boolean)
+  .join(' · ');
+---
+
+<article class="card pcard">
+  <div class="pcard-body">
+    <p class="pcard-kicker">
+      {categoryLabel(p.category)}
+      {p.product_type && ` · ${typeLabel(p.product_type)}`}
+    </p>
+    <h3 class="pcard-title">
+      <a href={href}>
+        {p.brand && <span class="pcard-brand">{p.brand}</span>} {p.name}
+      </a>
+    </h3>
+    <div class="pcard-chips">
+      {p.analyte.slice(0, 3).map((a) => (
+        <span class="chip">{analyteLabel(a)}</span>
+      ))}
+    </div>
+    <p class="pcard-facts muted">{facts}</p>
+  </div>
+  <div class="pcard-actions">
+    <RequestInfo variant="card" product={displayName(p)} catalogue={p.catalogue_no} />
+    <AddToQuote id={p.slug} name={p.name} brand={p.brand} catalogue={p.catalogue_no} size="sm" />
+  </div>
+</article>

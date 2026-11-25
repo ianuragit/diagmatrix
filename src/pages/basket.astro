@@ -1,0 +1,167 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { site } from '../lib/site';
+import { url } from '../lib/url';
+---
+
+<Base
+  title={`Quote basket | ${site.name}`}
+  description="Your list of products for a quotation request."
+  noindex
+>
+  <div class="container">
+    <Breadcrumbs items={[{ label: 'Quote basket' }]} />
+    <h1>Quote basket</h1>
+    <p class="muted">
+      Collect products here, then send one inquiry for pricing and availability. Your list is stored
+      only in this browser.
+    </p>
+    <div id="basket-app" data-whatsapp={site.whatsapp ?? ''}>
+      <div class="card empty" data-empty hidden>
+        <p>Your quote basket is empty.</p>
+        <a class="btn btn-teal" href={url('/products/')}>
+          Browse products
+        </a>
+      </div>
+      <div data-filled hidden>
+        <div class="table-wrap">
+          <table class="table">
+            <caption class="visually-hidden">Products in your quote basket</caption>
+            <thead>
+              <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Cat. no.</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Note</th>
+                <th scope="col">
+                  <span class="visually-hidden">Remove</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody data-rows></tbody>
+          </table>
+        </div>
+        <div class="actions">
+          <button type="button" class="btn btn-primary" data-request-info data-context="basket">
+            Request quote
+          </button>
+          <button type="button" class="btn" data-export-csv>
+            Export CSV
+          </button>
+          <button type="button" class="btn" data-copy-text>
+            Copy as text
+          </button>
+          {site.whatsapp && (
+            <a
+              class="btn"
+              data-wa
+              target="_blank"
+              rel="noopener"
+              href={`https://wa.me/${site.whatsapp}`}
+            >
+              Send via WhatsApp
+            </a>
+          )}
+          <button type="button" class="btn" data-clear>
+            Clear basket
+          </button>
+        </div>
+        <p data-msg class="muted" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+  </div>
+</Base>
+
+<script>
+  import { basket, basketAsCsv, basketAsText } from '../scripts/basket';
+  const app = document.getElementById('basket-app')!;
+  const rows = app.querySelector<HTMLTableSectionElement>('[data-rows]')!;
+  const msg = app.querySelector<HTMLElement>('[data-msg]')!;
+  const base = (document.documentElement.dataset.base ?? '/').replace(/\/?$/, '/');
+  const esc = (s: string) =>
+    s.replace(
+      /[&<>"']/g,
+      (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!,
+    );
+
+  function render() {
+    const items = basket.items();
+    app.querySelector<HTMLElement>('[data-empty]')!.hidden = items.length > 0;
+    app.querySelector<HTMLElement>('[data-filled]')!.hidden = items.length === 0;
+    rows.innerHTML = items
+      .map(
+        (i) => `<tr data-id="${esc(i.id)}">
+        <td><a href="${base}products/${encodeURIComponent(i.id)}/">${esc([i.brand, i.name].filter(Boolean).join(' '))}</a></td>
+        <td>${esc(i.catalogue_no) || '—'}</td>
+        <td><label class="visually-hidden" for="q-${esc(i.id)}">Quantity</label><input id="q-${esc(i.id)}" type="number" min="1" max="9999" value="${i.qty}" data-qty inputmode="numeric"></td>
+        <td><label class="visually-hidden" for="n-${esc(i.id)}">Note</label><input id="n-${esc(i.id)}" type="text" maxlength="500" value="${esc(i.note)}" data-note placeholder="e.g. pack size, delivery"></td>
+        <td><button type="button" class="btn btn-sm" data-remove aria-label="Remove ${esc(i.name)}">Remove</button></td>
+      </tr>`,
+      )
+      .join('');
+    const wa = app.querySelector<HTMLAnchorElement>('[data-wa]');
+    if (wa)
+      wa.href = `https://wa.me/${app.dataset.whatsapp}?text=${encodeURIComponent(`Hello, please quote for:\n${basketAsText(items)}`)}`;
+  }
+  rows.addEventListener('change', (e) => {
+    const t = e.target as HTMLInputElement;
+    const id = t.closest('tr')!.dataset.id!;
+    if ('qty' in t.dataset) basket.update(id, { qty: Number(t.value) || 1 });
+    if ('note' in t.dataset) basket.update(id, { note: t.value.slice(0, 500) });
+  });
+  rows.addEventListener('click', (e) => {
+    const b = (e.target as HTMLElement).closest('[data-remove]');
+    if (b) basket.remove(b.closest('tr')!.dataset.id!);
+  });
+  app.querySelector('[data-export-csv]')!.addEventListener('click', () => {
+    const blob = new Blob([basketAsCsv(basket.items())], { type: 'text/csv;charset=utf-8' });
+    const a = Object.assign(document.createElement('a'), {
+      href: URL.createObjectURL(blob),
+      download: 'quote-basket.csv',
+    });
+    a.click();
+    URL.revokeObjectURL(a.href);
+  });
+  app.querySelector('[data-copy-text]')!.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(basketAsText(basket.items()));
+      msg.textContent = 'Copied to clipboard.';
+    } catch {
+      msg.textContent = 'Copy failed.';
+    }
+  });
+  app.querySelector('[data-clear]')!.addEventListener('click', () => {
+    if (confirm('Remove all items from your quote basket?')) basket.clear();
+  });
+  window.addEventListener('basket:change', (e) => {
+    // Re-render only on structural changes so focus stays in inputs while typing.
+    const active = document.activeElement as HTMLElement | null;
+    if (active && rows.contains(active) && (e as CustomEvent).detail) {
+      const items = (e as CustomEvent).detail as unknown[];
+      if (items.length === rows.children.length) return;
+    }
+    render();
+  });
+  render();
+</script>
+
+<style>
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-2);
+    margin-top: var(--s-4);
+  }
+  td input {
+    font: inherit;
+    min-height: 40px;
+    padding: 0 var(--s-2);
+    border: 1px solid #9aabbb;
+    border-radius: var(--radius-sm);
+    width: 100%;
+  }
+  td input[type='number'] {
+    width: 5.5rem;
+  }
+</style>

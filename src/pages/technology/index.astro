@@ -1,0 +1,37 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { groupBy, liveProducts, techLabel } from '../../lib/catalogue';
+import { site } from '../../lib/site';
+import { url } from '../../lib/url';
+const live = await liveProducts();
+const techs = [...groupBy(live, (p) => p.technology)].sort((a, b) => b[1].length - a[1].length);
+---
+
+<Base
+  title={`Diagnostic technologies | ${site.name}`}
+  description={`Browse diagnostic products by technology: ${techs.map(([t]) => techLabel(t)).join(', ')}.`}
+>
+  <div class="container">
+    <Breadcrumbs items={[{ label: 'Technologies' }]} />
+    <h1>Technologies</h1>
+    <ul class="grid tech">
+      {techs.map(([t, list]) => (
+        <li class="card">
+          <a href={url(`/technology/${t}/`)}>{techLabel(t)}</a>{' '}
+          <span class="muted">({list.length})</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</Base>
+<style>
+  .tech {
+    list-style: none;
+    padding: 0;
+  }
+  .tech li {
+    padding: var(--s-4);
+    font-weight: 600;
+  }
+</style>
