@@ -2,6 +2,15 @@
 
 Newest first.
 
+## 2026-11-25 — Decisions after Phase 2
+
+- Source A: stop at the 141 records fetched (option c); remaining pages stay a backlog item.
+- Scope: diagnostics only. `taxonomy.yaml → scope` excludes Source A's LAB, Accessories, Surgicals and
+  Life Sciences categories and adds keyword rules for non-diagnostic items in kept categories; applied in
+  build-data (Phase 4) with dropped records listed in the report. Added CLIA, analyzer, reagent and
+  consumable categories to the shared taxonomy.
+- Phase 3 is waiting on Source B's homepage URL (a web search could not identify it).
+
 ## 2026-11-24 — Phase 2: Source A ingestion (partial — blocked by site firewall)
 
 **Done**

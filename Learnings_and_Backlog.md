@@ -12,9 +12,8 @@
 - 2026-11-24 — Zod 4: use `z.url()`; `z.string().url()` is deprecated.
 
 ## Backlog
-- 2026-11-24 — Finish Source A crawl (3,093 pages) — needs a decision: slower rate later, permission/feed from the owner, or stop at 141.
+- 2026-11-25 — Source A: 3,093 pages not fetched (site firewall). Revisit only with owner permission or a much slower rate.
 - 2026-11-24 — Normalise: drop platform filler spec keys; prefer fact-table values; fix "µ" loss (e.g. "1000 l" → "1000 µL").
-- 2026-11-24 — Decide scope: Source A also lists surgical devices, lab equipment and life-science instruments (not IVD).
 - 2026-11-24 — Phase 2: `src-a` selectors + adapter + scrubbed fixtures.
 - 2026-11-24 — Phase 3: `src-b` adapter (base URL to be put in sources.local.yaml).
 - 2026-11-24 — Set `contact_email` (User-Agent) and `whatsapp_number` when available.

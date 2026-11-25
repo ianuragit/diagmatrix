@@ -17,6 +17,32 @@ categories:
   - id: ivd
     label: In-vitro diagnostics (general)
     source_labels: { src-a: [Medical IVD], src-b: [] }
+  - id: clia
+    label: Chemiluminescence immunoassay (CLIA)
+    source_labels: { src-a: [Medical CLIA], src-b: [] }
+  - id: analyzers
+    label: Diagnostic analyzers
+    source_labels: { src-a: [Medical Analyzer], src-b: [] }
+  - id: reagents
+    label: Diagnostic reagents
+    source_labels: { src-a: [Medical Reagents], src-b: [] }
+  - id: consumables
+    label: Diagnostic consumables
+    source_labels: { src-a: [Medical Consumables], src-b: [] }
+
+# Scope: diagnostics only (decision 2026-11-25). Records are dropped in build-data
+# (Phase 4) if their source category is listed here, or — in any category — if
+# their name matches an exclude keyword and no diagnostic keyword. Dropped records
+# are listed in the report, never silently lost.
+scope:
+  exclude_source_categories:
+    src-a: [Medical LAB, Medical Accesories, Medical Surgicals, Life Sciences]
+    src-b: []
+  exclude_keywords: [guidewire, catheter, stent, suture, closure system, pacing, implant, surgical,
+    spectrometer, chromatograph, titrator, moisture analyzer, balance, autosampler, centrifuge,
+    incubator shaker, fume hood, biosafety cabinet, pipette controller]
+  diagnostic_keywords: [test, assay, elisa, clia, rapid, kit, reagent, control, calibrator, analyzer,
+    analyser, cartridge, strip, ivd, diagnostic, pcr, antigen, antibody, igg, igm]
 
 technology:
   rdt: { label: Rapid test (lateral flow), keywords: [rapid test, rapid, cassette, card test, strip test, lateral flow, rdt] }
