@@ -3,7 +3,6 @@ arkray-trustcheck-bpm-3-0-digital-blood-pressure-monitor,Arkray,Trustcheck BPM 3
 ekf-diagnostics-biosen-s-line-lab-plus,EKF Diagnostics,Biosen S-Line Lab+,general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/ekf-diagnostics-biosen-s-line-lab-plus/
 ekf-diagnostics-easycon-norm-qc-material,EKF Diagnostics,EasyCon Norm (QC material),general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/ekf-diagnostics-easycon-norm-qc-material/
 ekf-diagnostics-hemolyzing-solution-cups-with-20-l-end-to-end-capillaries-plastic-capillaries,EKF Diagnostics,Hemolyzing solution cups with 20 µl end-to-end capillaries (plastic capillaries),general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/ekf-diagnostics-hemolyzing-solution-cups-with-20-l-end-to-end-capillaries-plastic-capillaries/
-horiba-abx-miniclean,Horiba,ABX Miniclean,general,,8,category technology summary product_type analyte sample_type catalogue_no pack_size,/products/horiba-abx-miniclean/
 arkray-trustcheck-bca,Arkray,TRUSTCHECK BCA,general,,7,category technology summary product_type analyte sample_type pack_size,/products/arkray-trustcheck-bca/
 arkray-trustcheck-bpm-2-0-digital-blood-pressure-monitor,Arkray,Trustcheck BPM 2.0 Digital Blood Pressure Monitor,general,,7,category technology summary product_type analyte sample_type pack_size,/products/arkray-trustcheck-bpm-2-0-digital-blood-pressure-monitor/
 bioantibody-hcg,Bioantibody,β-hCG,general,,7,category technology specs product_type sample_type catalogue_no pack_size,/products/bioantibody-hcg/
@@ -15,6 +14,7 @@ ekf-diagnostics-biosen-hemolyzing-solution-cups-with-20-l-end-to-end-capillaries
 hemocue-cleaner-plus,HemoCue,Cleaner Plus,general,,7,category technology summary product_type analyte sample_type pack_size,/products/hemocue-cleaner-plus/
 hemocue-hardtop-carrying-case,HemoCue,Hardtop Carrying Case,general,,7,category technology summary product_type analyte sample_type pack_size,/products/hemocue-hardtop-carrying-case/
 himedia-insta-q96,HiMedia,Insta Q96,general,,7,category technology summary product_type analyte sample_type pack_size,/products/himedia-insta-q96/
+horiba-abx-miniclean,Horiba,ABX Miniclean,general,,7,category technology summary product_type analyte sample_type pack_size,/products/horiba-abx-miniclean/
 arkray-orinalyser-u500,Arkray,Orinalyser U500,general,,6,category technology summary product_type analyte pack_size,/products/arkray-orinalyser-u500/
 abbott-i-stat-test-cartridges,Abbott,I Stat Test Cartridges,general,reagent,5,category technology analyte catalogue_no pack_size,/products/abbott-i-stat-test-cartridges/
 bio-rad-iscript-reverse-transcription-supermix,Bio-Rad,iScript Reverse Transcription Supermix,molecular,,5,product_type analyte sample_type catalogue_no pack_size,/products/bio-rad-iscript-reverse-transcription-supermix/
@@ -84,8 +84,6 @@ medtronic-hms-plus-cartridges-gold-1-5-4-0-mg-kg,Medtronic,HMS Plus Cartridges -
 micropoint-test-strips,Micropoint,Test strips,general,reagent,4,category technology catalogue_no pack_size,/products/micropoint-test-strips/
 nal-von-minden-rss-flash-2-0,NAL von minden,RSS flash 2.0,general,instrument,4,category technology analyte catalogue_no,/products/nal-von-minden-rss-flash-2-0/
 roche-accu-chek-accu-fine-insulin-pen-needles,Roche,Accu-Chek Accu-Fine insulin pen needles,general,,4,category technology product_type sample_type,/products/roche-accu-chek-accu-fine-insulin-pen-needles/
-roche-accutrend-cholesterol-test-strips,Roche,Accutrend Cholesterol Test Strips,general,reagent,4,category technology catalogue_no pack_size,/products/roche-accutrend-cholesterol-test-strips/
-roche-chemstrip-10-md-test-strips,Roche,Chemstrip 10 MD Test Strips,rapid-tests,reagent,4,analyte sample_type catalogue_no pack_size,/products/roche-chemstrip-10-md-test-strips/
 roche-combur-10-test-strip,Roche,Combur 10 Test Strip,urinalysis,reagent,4,analyte sample_type catalogue_no pack_size,/products/roche-combur-10-test-strip/
 roche-combur-10-ux-test-strip,Roche,Combur 10 UX Test strip,urinalysis,reagent,4,analyte sample_type catalogue_no pack_size,/products/roche-combur-10-ux-test-strip/
 roche-combur-9-test-strip,Roche,Combur 9 Test Strip,urinalysis,reagent,4,analyte sample_type catalogue_no pack_size,/products/roche-combur-9-test-strip/
@@ -103,15 +101,12 @@ ustar-uu-mh-assay,Ustar,UU/MH Assay,molecular,reagent,4,specs sample_type catalo
 ustar-vibrio-cholerae-assay,Ustar,Vibrio Cholerae Assay,molecular,reagent,4,specs sample_type catalogue_no pack_size,/products/ustar-vibrio-cholerae-assay/
 abbott-abon-hcg-one-step-pregnancy-tests-for-professional-use,Abbott,ABON hCG One Step Pregnancy Tests - For Professional Use,rapid-tests,reagent,3,sample_type catalogue_no pack_size,/products/abbott-abon-hcg-one-step-pregnancy-tests-for-professional-use/
 abbott-bioline-chlamydia,Abbott,Bioline CHLAMYDIA,rapid-tests,reagent,3,sample_type catalogue_no pack_size,/products/abbott-bioline-chlamydia/
-abbott-clearview-pbp2a,Abbott,Clearview PBP2a,rapid-tests,reagent,3,sample_type catalogue_no pack_size,/products/abbott-clearview-pbp2a/
-abbott-i-stat-eg7-plus-cartridge,Abbott,i-STAT EG7+ CARTRIDGE,blood-gas,reagent,3,sample_type catalogue_no pack_size,/products/abbott-i-stat-eg7-plus-cartridge/
 abbott-nycocard-crp,Abbott,NYCOCARD CRP,general,,3,category technology product_type,/products/abbott-nycocard-crp/
 abbott-tbi,Abbott,TBI,blood-gas,reagent,3,analyte catalogue_no pack_size,/products/abbott-tbi/
 acon-mission-hemoglobin-hb-and-test-strip,Acon,Mission Hemoglobin Hb And Test Strip,rapid-tests,reagent,3,sample_type catalogue_no pack_size,/products/acon-mission-hemoglobin-hb-and-test-strip/
 acon-on-call-plus-glucometer-test-strips,Acon,On Call Plus Glucometer Test Strips,diabetes,reagent,3,sample_type catalogue_no pack_size,/products/acon-on-call-plus-glucometer-test-strips/
 aidian-uricult,Aidian,Uricult,microbiology,reagent,3,specs catalogue_no pack_size,/products/aidian-uricult/
 aidian-uricult-plus,Aidian,Uricult Plus,microbiology,reagent,3,specs catalogue_no pack_size,/products/aidian-uricult-plus/
-aidian-uricult-trio,Aidian,Uricult Trio,microbiology,reagent,3,specs catalogue_no pack_size,/products/aidian-uricult-trio/
 arkray-ammoniak-test-kit,Arkray,Ammoniak Test Kit,clinical-chemistry,reagent,3,sample_type catalogue_no pack_size,/products/arkray-ammoniak-test-kit/
 arkray-blood-lactate-meter-lactate-pro-2-lt-1730,Arkray,Blood Lactate Meter Lactate Pro 2 LT-1730,general,instrument,3,category technology catalogue_no,/products/arkray-blood-lactate-meter-lactate-pro-2-lt-1730/
 arkray-glucocard-01-mini-50-strips-bottlepack,Arkray,Glucocard 01 Mini 50 Strips Bottlepack,diabetes,reagent,3,sample_type catalogue_no pack_size,/products/arkray-glucocard-01-mini-50-strips-bottlepack/
@@ -158,13 +153,11 @@ horiba-abx-minotrol-crp-controls,Horiba,ABX Minotrol CRP Controls,hematology,rea
 horiba-crp-unit-50,Horiba,CRP Unit 50,general,,3,category technology product_type,/products/horiba-crp-unit-50/
 human-slide,Human,Slide,urinalysis,reagent,3,analyte catalogue_no pack_size,/products/human-slide/
 inbios-chikjj-detect-igg-elisa-kit,InBios,CHIKjj Detect IgG ELISA Kit,immunoassays,reagent,3,sample_type catalogue_no pack_size,/products/inbios-chikjj-detect-igg-elisa-kit/
-inbios-denv-detect-igm-capture-elisa-kit,InBios,DENV Detect IgM Capture ELISA Kit,immunoassays,reagent,3,sample_type catalogue_no pack_size,/products/inbios-denv-detect-igm-capture-elisa-kit/
 inbios-filaria-detect-igg4-elisa,InBios,Filaria Detect IgG4 ELISA,immunoassays,reagent,3,analyte catalogue_no pack_size,/products/inbios-filaria-detect-igg4-elisa/
 inbios-je-detect-igg-elisa,InBios,JE Detect IgG ELISA,immunoassays,reagent,3,analyte catalogue_no pack_size,/products/inbios-je-detect-igg-elisa/
 inbios-je-detect-igm-antibody-capture-elisa,InBios,JE Detect IgM Antibody Capture ELISA,immunoassays,reagent,3,analyte catalogue_no pack_size,/products/inbios-je-detect-igm-antibody-capture-elisa/
 inbios-scrub-typhus-detect-igg-elisa-system,InBios,Scrub Typhus Detect IgG ELISA System,immunoassays,reagent,3,sample_type catalogue_no pack_size,/products/inbios-scrub-typhus-detect-igg-elisa-system/
 inbios-west-nile-detect-igg-elisa,InBios,West Nile Detect IgG ELISA,immunoassays,reagent,3,analyte catalogue_no pack_size,/products/inbios-west-nile-detect-igg-elisa/
-inbios-west-nile-detect-igm-capture-elisa,InBios,West Nile Detect IgM Capture ELISA,immunoassays,reagent,3,analyte catalogue_no pack_size,/products/inbios-west-nile-detect-igm-capture-elisa/
 inbios-zikv-detect-2-0-igm-capture-elisa-kit,InBios,ZIKV Detect 2.0 IgM Capture ELISA Kit,immunoassays,reagent,3,sample_type catalogue_no pack_size,/products/inbios-zikv-detect-2-0-igm-capture-elisa-kit/
 j-mitra-advantage-mal-card,J. Mitra,Advantage MAL Card,rapid-tests,reagent,3,analyte sample_type pack_size,/products/j-mitra-advantage-mal-card/
 medical-electronic-systems-sqa-io,Medical Electronic Systems,SQA-iO,general,instrument,3,category analyte catalogue_no,/products/medical-electronic-systems-sqa-io/
@@ -184,6 +177,8 @@ molbio-truenat-covid-19-chip-based-real-time-pcr-test-kit,Molbio,Truenat COVID 1
 noul-milab-cartridge-cer,Noul,miLab Cartridge CER,hematology,reagent,3,analyte catalogue_no pack_size,/products/noul-milab-cartridge-cer/
 premier-medical-first-response-syphilis-anti-tp-card-test-f2d9bd,Premier Medical,First Response Syphilis Anti TP Card Test,rapid-tests,reagent,3,sample_type catalogue_no pack_size,/products/premier-medical-first-response-syphilis-anti-tp-card-test-f2d9bd/
 roche-accu-chek-test-strips,Roche,Accu-Chek Test Strips,diabetes,reagent,3,sample_type catalogue_no pack_size,/products/roche-accu-chek-test-strips/
+roche-accutrend-cholesterol-test-strips,Roche,Accutrend Cholesterol Test Strips,general,reagent,3,category technology pack_size,/products/roche-accutrend-cholesterol-test-strips/
+roche-chemstrip-10-md-test-strips,Roche,Chemstrip 10 MD Test Strips,rapid-tests,reagent,3,analyte sample_type pack_size,/products/roche-chemstrip-10-md-test-strips/
 roche-combur-7-test-strip,Roche,Combur 7 Test Strip,urinalysis,reagent,3,sample_type catalogue_no pack_size,/products/roche-combur-7-test-strip/
 roche-li-plus,Roche,Li+,clinical-chemistry,reagent,3,analyte catalogue_no pack_size,/products/roche-li-plus/
 roche-micral-test-strips,Roche,MICRAL-Test Strips,rapid-tests,reagent,3,sample_type catalogue_no pack_size,/products/roche-micral-test-strips/
@@ -218,19 +213,17 @@ abbott-acr,Abbott,ACR,clinical-chemistry,reagent,2,catalogue_no pack_size,/produ
 abbott-actc,Abbott,ACTc,blood-gas,reagent,2,catalogue_no pack_size,/products/abbott-actc/
 abbott-actk,Abbott,ACTk,blood-gas,reagent,2,catalogue_no pack_size,/products/abbott-actk/
 abbott-afinion-hba-1-c-human-whole-blood-test-kit,Abbott,Afinion Hba 1 C Human Whole Blood Test Kit,diabetes,reagent,2,catalogue_no pack_size,/products/abbott-afinion-hba-1-c-human-whole-blood-test-kit/
-abbott-amlyte-13,Abbott,Amlyte 13,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/abbott-amlyte-13/
 abbott-basic-metabolic-panel,Abbott,Basic Metabolic Panel,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/abbott-basic-metabolic-panel/
 abbott-basic-metabolic-panel-plus,Abbott,Basic Metabolic Panel Plus,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/abbott-basic-metabolic-panel-plus/
 abbott-beta-hcg,Abbott,beta-hCG,blood-gas,reagent,2,catalogue_no pack_size,/products/abbott-beta-hcg/
 abbott-binaxnow-covid-19-ag-card,Abbott,BINAXNOW COVID-19 Ag CARD,rapid-tests,reagent,2,catalogue_no pack_size,/products/abbott-binaxnow-covid-19-ag-card/
 abbott-binaxnow-covid-19-rapid-antigen-card-test-kit,Abbott,BinaxNOW COVID-19 Rapid Antigen Card Test Kit,rapid-tests,reagent,2,catalogue_no pack_size,/products/abbott-binaxnow-covid-19-rapid-antigen-card-test-kit/
-abbott-binaxnow-legionella,Abbott,BinaxNow Legionella,rapid-tests,reagent,2,catalogue_no pack_size,/products/abbott-binaxnow-legionella/
 abbott-biochemistry-panel-plus,Abbott,Biochemistry Panel Plus,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/abbott-biochemistry-panel-plus/
 abbott-bioline-tb-ag-mpt64,Abbott,Bioline TB Ag MPT64,rapid-tests,reagent,2,sample_type pack_size,/products/abbott-bioline-tb-ag-mpt64/
 abbott-cg4-plus,Abbott,CG4+,blood-gas,reagent,2,catalogue_no pack_size,/products/abbott-cg4-plus/
 abbott-cg8-plus,Abbott,CG8+,blood-gas,reagent,2,catalogue_no pack_size,/products/abbott-cg8-plus/
 abbott-chem8-plus,Abbott,Chem8+,blood-gas,reagent,2,catalogue_no pack_size,/products/abbott-chem8-plus/
-abbott-comprehensive-metabolic-panel,Abbott,Comprehensive Metabolic Panel,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/abbott-comprehensive-metabolic-panel/
+abbott-clearview-pbp2a,Abbott,Clearview PBP2a,rapid-tests,reagent,2,sample_type pack_size,/products/abbott-clearview-pbp2a/
 abbott-covid-19-2-0,Abbott,COVID-19 2.0,molecular,reagent,2,catalogue_no pack_size,/products/abbott-covid-19-2-0/
 abbott-crea,Abbott,Crea,blood-gas,reagent,2,catalogue_no pack_size,/products/abbott-crea/
 abbott-crp,Abbott,CRP,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/abbott-crp/
@@ -244,18 +237,14 @@ abbott-eg7-plus,Abbott,EG7+,blood-gas,reagent,2,catalogue_no pack_size,/products
 abbott-electrolyte-panel,Abbott,Electrolyte Panel,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/abbott-electrolyte-panel/
 abbott-g,Abbott,G,blood-gas,reagent,2,catalogue_no pack_size,/products/abbott-g/
 abbott-g3-plus,Abbott,G3+,blood-gas,reagent,2,catalogue_no pack_size,/products/abbott-g3-plus/
-abbott-general-chemistry-13,Abbott,General Chemistry 13,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/abbott-general-chemistry-13/
-abbott-general-chemistry-6,Abbott,General Chemistry 6,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/abbott-general-chemistry-6/
 abbott-hba1c,Abbott,HbA1c,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/abbott-hba1c/
-abbott-hepatic-function-panel,Abbott,Hepatic Function Panel,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/abbott-hepatic-function-panel/
-abbott-hs-tni,Abbott,hs-TnI,blood-gas,reagent,2,catalogue_no pack_size,/products/abbott-hs-tni/
-abbott-i-stat-6-plus-cartridge,Abbott,i-STAT 6+ CARTRIDGE,blood-gas,reagent,2,catalogue_no pack_size,/products/abbott-i-stat-6-plus-cartridge/
 abbott-i-stat-actc-cartridge,Abbott,i-STAT ACTc Cartridge,general,reagent,2,category technology,/products/abbott-i-stat-actc-cartridge/
 abbott-i-stat-actk-cartridge,Abbott,i-STAT ACTk Cartridge,general,reagent,2,category technology,/products/abbott-i-stat-actk-cartridge/
 abbott-i-stat-bnp-cartridge,Abbott,i-STAT BNP CARTRIDGE,general,reagent,2,category technology,/products/abbott-i-stat-bnp-cartridge/
 abbott-i-stat-ck-mb-cartridge,Abbott,i-STAT CK-MB CARTRIDGE,general,reagent,2,category technology,/products/abbott-i-stat-ck-mb-cartridge/
 abbott-i-stat-crea-cartridge,Abbott,i-STAT Crea Cartridge,general,reagent,2,category technology,/products/abbott-i-stat-crea-cartridge/
 abbott-i-stat-ctni-cartridge,Abbott,i-STAT cTnI CARTRIDGE,general,reagent,2,category technology,/products/abbott-i-stat-ctni-cartridge/
+abbott-i-stat-eg7-plus-cartridge,Abbott,i-STAT EG7+ CARTRIDGE,blood-gas,reagent,2,sample_type pack_size,/products/abbott-i-stat-eg7-plus-cartridge/
 abbott-i-stat-total-beta-hcg-cartridge,Abbott,i-STAT Total beta-hCG Cartridge,general,reagent,2,category technology,/products/abbott-i-stat-total-beta-hcg-cartridge/
 abbott-influenza-a-and-b-2,Abbott,Influenza A & B 2,molecular,reagent,2,catalogue_no pack_size,/products/abbott-influenza-a-and-b-2/
 abbott-lipid-panel,Abbott,Lipid Panel,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/abbott-lipid-panel/
@@ -263,9 +252,6 @@ abbott-lipid-panel-plus,Abbott,Lipid Panel Plus,clinical-chemistry,reagent,2,cat
 abbott-lipid-profil,Abbott,Lipid Profil,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/abbott-lipid-profil/
 abbott-lipid-profil-glu,Abbott,Lipid Profil/GLU,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/abbott-lipid-profil-glu/
 abbott-liver-panel-plus,Abbott,Liver Panel Plus,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/abbott-liver-panel-plus/
-abbott-metlac-12-panel,Abbott,MetLac 12 Panel,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/abbott-metlac-12-panel/
-abbott-metlyte-8-panel,Abbott,MetLyte 8 Panel,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/abbott-metlyte-8-panel/
-abbott-metlyte-plus-crp,Abbott,MetLyte Plus CRP,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/abbott-metlyte-plus-crp/
 abbott-nmp22,Abbott,NMP22,rapid-tests,reagent,2,catalogue_no pack_size,/products/abbott-nmp22/
 abbott-nmp22-bladderchek,Abbott,NMP22 BLADDERCHEK,rapid-tests,reagent,2,catalogue_no pack_size,/products/abbott-nmp22-bladderchek/
 abbott-oral-fluid-test-kit,Abbott,Oral Fluid Test Kit,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/abbott-oral-fluid-test-kit/
@@ -279,7 +265,6 @@ abbott-pt-inr,Abbott,PT/INR,coagulation,reagent,2,catalogue_no pack_size,/produc
 abbott-ptplus,Abbott,PTplus,blood-gas,reagent,2,catalogue_no pack_size,/products/abbott-ptplus/
 abbott-realtime-sars-cov-2-assay,Abbott,Realtime Sars-Cov-2 Assay,molecular,reagent,2,catalogue_no pack_size,/products/abbott-realtime-sars-cov-2-assay/
 abbott-rsv,Abbott,RSV,molecular,reagent,2,catalogue_no pack_size,/products/abbott-rsv/
-abbott-strep-a-2,Abbott,Strep A 2,molecular,reagent,2,catalogue_no pack_size,/products/abbott-strep-a-2/
 abbott-urocolor-10,Abbott,UroColor 10,clinical-chemistry,,2,product_type analyte,/products/abbott-urocolor-10/
 abbott-urometer-120-urine-chemistry-analyzer,Abbott,UROMETER 120 URINE CHEMISTRY ANALYZER,clinical-chemistry,instrument,2,analyte catalogue_no,/products/abbott-urometer-120-urine-chemistry-analyzer/
 abbott-urometer-720-urine-chemistry-analyzer,Abbott,UROMETER 720 URINE CHEMISTRY ANALYZER,clinical-chemistry,instrument,2,analyte catalogue_no,/products/abbott-urometer-720-urine-chemistry-analyzer/
@@ -301,6 +286,7 @@ aidian-easy-crp,Aidian,easy CRP,clinical-chemistry,reagent,2,catalogue_no pack_s
 aidian-hba1c,Aidian,HbA1c,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/aidian-hba1c/
 aidian-ifobt,Aidian,iFOBT,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/aidian-ifobt/
 aidian-strep-a,Aidian,Strep A,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/aidian-strep-a/
+aidian-uricult-trio,Aidian,Uricult Trio,microbiology,reagent,2,specs pack_size,/products/aidian-uricult-trio/
 aidian-wrcrp-plus-hb,Aidian,wrCRP+Hb,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/aidian-wrcrp-plus-hb/
 analyticon-combiscreen,Analyticon,CombiScreen,urinalysis,reagent,2,catalogue_no pack_size,/products/analyticon-combiscreen/
 analyticon-combiscreen-11sys,Analyticon,CombiScreen 11Sys,urinalysis,reagent,2,catalogue_no pack_size,/products/analyticon-combiscreen-11sys/
@@ -313,12 +299,10 @@ arkray-albumin,Arkray,Albumin,clinical-chemistry,reagent,2,catalogue_no pack_siz
 arkray-albumin-alb-single-strips,Arkray,Albumin (Alb) single strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-albumin-alb-single-strips/
 arkray-alkaline-phosphatase-alp-single-strips,Arkray,Alkaline phosphatase (ALP) single strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-alkaline-phosphatase-alp-single-strips/
 arkray-alp,Arkray,ALP,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-alp/
-arkray-alt-gpt,Arkray,ALT/GPT,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-alt-gpt/
 arkray-alt-gpt-single-strips,Arkray,ALT/GPT single strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-alt-gpt-single-strips/
 arkray-amylase,Arkray,Amylase,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-amylase/
 arkray-amylase-amy-single-strips,Arkray,Amylase (Amy) single strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-amylase-amy-single-strips/
 arkray-aspartate-aminotransferase-ast-single-strips,Arkray,Aspartate aminotransferase (AST) single strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-aspartate-aminotransferase-ast-single-strips/
-arkray-ast-got,Arkray,AST/GOT,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-ast-got/
 arkray-aution-screen,Arkray,Aution Screen,rapid-tests,reagent,2,catalogue_no pack_size,/products/arkray-aution-screen/
 arkray-aution-sticks,Arkray,Aution Sticks,urinalysis,reagent,2,catalogue_no pack_size,/products/arkray-aution-sticks/
 arkray-aution-sticks-10ea,Arkray,Aution Sticks 10EA,urinalysis,reagent,2,catalogue_no pack_size,/products/arkray-aution-sticks-10ea/
@@ -366,7 +350,6 @@ arkray-test-strip,Arkray,Test Strip,rapid-tests,reagent,2,catalogue_no pack_size
 arkray-thrombostat-automated-coagulation-analyser,Arkray,Thrombostat Automated Coagulation Analyser,coagulation,instrument,2,analyte catalogue_no,/products/arkray-thrombostat-automated-coagulation-analyser/
 arkray-total-a2-multi-strips,Arkray,Total-A2 multi strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-total-a2-multi-strips/
 arkray-total-b-multi-strips,Arkray,Total-B multi strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-total-b-multi-strips/
-arkray-total-bilirubin,Arkray,Total-Bilirubin,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-total-bilirubin/
 arkray-total-bilirubin-t-bil-single-strips,Arkray,Total bilirubin (T-Bil) single strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-total-bilirubin-t-bil-single-strips/
 arkray-total-cholesterol,Arkray,Total-cholesterol,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-total-cholesterol/
 arkray-total-cholesterol-tc-single-strips,Arkray,Total cholesterol (TC) single strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-total-cholesterol-tc-single-strips/
@@ -375,7 +358,6 @@ arkray-triglycerides,Arkray,Triglycerides,clinical-chemistry,reagent,2,catalogue
 arkray-triglycerides-tc-single-strips,Arkray,Triglycerides (TC) single strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-triglycerides-tc-single-strips/
 arkray-urea,Arkray,Urea,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-urea/
 arkray-urea-bun-single-strips,Arkray,Urea (BUN) single strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-urea-bun-single-strips/
-arkray-uric-acid,Arkray,Uric acid,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-uric-acid/
 arkray-uric-acid-ua-single-strips,Arkray,Uric acid (UA) single strips,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/arkray-uric-acid-ua-single-strips/
 arkray-uriflet-s-11-ua,Arkray,Uriflet S 11 UA,urinalysis,reagent,2,catalogue_no pack_size,/products/arkray-uriflet-s-11-ua/
 becton-dickinson-flu-a-plus-b,Becton Dickinson,Flu A+B,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/becton-dickinson-flu-a-plus-b/
@@ -440,7 +422,6 @@ buhlmann-fcal,Bühlmann,fCAL,clinical-chemistry,reagent,2,catalogue_no pack_size
 buhlmann-infliximab,Bühlmann,Infliximab,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/buhlmann-infliximab/
 calbiotech-salmonella-igg-elisa,Calbiotech,Salmonella IgG ELISA,immunoassays,reagent,2,analyte catalogue_no,/products/calbiotech-salmonella-igg-elisa/
 calbiotech-salmonella-igm-elisa,Calbiotech,Salmonella IgM ELISA,immunoassays,reagent,2,analyte catalogue_no,/products/calbiotech-salmonella-igm-elisa/
-cepheid-bcr-abl-ultra,Cepheid,BCR-ABL Ultra,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-bcr-abl-ultra/
 cepheid-bcr-abl-ultra-p190,Cepheid,BCR-ABL Ultra p190,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-bcr-abl-ultra-p190/
 cepheid-c-difficile-bt,Cepheid,C. difficile BT,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-c-difficile-bt/
 cepheid-ct-ng,Cepheid,CT/NG,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-ct-ng/
@@ -452,20 +433,15 @@ cepheid-hiv-1-qual-xc,Cepheid,HIV-1 Qual XC,molecular,reagent,2,catalogue_no pac
 cepheid-hiv-1-viral-load-xc,Cepheid,HIV-1 Viral Load XC,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-hiv-1-viral-load-xc/
 cepheid-hpv,Cepheid,HPV,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-hpv/
 cepheid-mrsa-nxg,Cepheid,MRSA NxG,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-mrsa-nxg/
-cepheid-mrsa-sa-ssti,Cepheid,MRSA/SA SSTI,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-mrsa-sa-ssti/
 cepheid-mtb-rif-ultra,Cepheid,MTB/RIF Ultra,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-mtb-rif-ultra/
 cepheid-mtb-xdr,Cepheid,MTB/XDR,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-mtb-xdr/
 cepheid-norovirus,Cepheid,Norovirus,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-norovirus/
 cepheid-npm1-mutation,Cepheid,NPM1 Mutation,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-npm1-mutation/
 cepheid-resistanceplus-mg-flexible,Cepheid,ResistancePlus MG FleXible,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-resistanceplus-mg-flexible/
-cepheid-sa-nasal-complete,Cepheid,SA Nasal Complete,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-sa-nasal-complete/
 cepheid-tv,Cepheid,TV,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-tv/
 cepheid-vana-vanb,Cepheid,vanA/vanB,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-vana-vanb/
-cepheid-xpress-cov-2-flu-rsv-plus,Cepheid,Xpress CoV-2/Flu/RSV plus,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-xpress-cov-2-flu-rsv-plus/
 cepheid-xpress-cov-2-plus,Cepheid,Xpress CoV-2 plus,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-xpress-cov-2-plus/
 cepheid-xpress-flu-rsv,Cepheid,Xpress Flu/RSV,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-xpress-flu-rsv/
-cepheid-xpress-gbs,Cepheid,Xpress GBS,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-xpress-gbs/
-cepheid-xpress-strep-a,Cepheid,Xpress Strep A,molecular,reagent,2,catalogue_no pack_size,/products/cepheid-xpress-strep-a/
 concile-bodycheck-ferritin,Concile,BodyCheck Ferritin,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/concile-bodycheck-ferritin/
 concile-bodycheck-hba1c,Concile,BodyCheck HbA1c,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/concile-bodycheck-hba1c/
 concile-bodycheck-hcy,Concile,BodyCheck HCY,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/concile-bodycheck-hcy/
@@ -527,7 +503,6 @@ diasys-hba1-test,DiaSys,HbA1 Test,diabetes,reagent,2,catalogue_no pack_size,/pro
 diasys-respons-uds100,DiaSys,respons UDS100,urinalysis,instrument,2,analyte catalogue_no,/products/diasys-respons-uds100/
 diasys-udstrip-12,DiaSys,UDStrip-12,urinalysis,reagent,2,catalogue_no pack_size,/products/diasys-udstrip-12/
 diesse-esr,Diesse,ESR,hematology,reagent,2,catalogue_no pack_size,/products/diesse-esr/
-diesse-mini-cube,Diesse,Mini-Cube,hematology,instrument,2,analyte catalogue_no,/products/diesse-mini-cube/
 doasense-doac-dipstick,Doasense,DOAC Dipstick,rapid-tests,reagent,2,catalogue_no pack_size,/products/doasense-doac-dipstick/
 dr-muller-crp,Dr. Müller,CRP,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/dr-muller-crp/
 dr-muller-glucose,Dr. Müller,Glucose,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/dr-muller-glucose/
@@ -604,7 +579,6 @@ fujifilm-tg-piiis,Fujifilm,TG-PIIIS,clinical-chemistry,reagent,2,catalogue_no pa
 fujifilm-tp-piiis,Fujifilm,TP-PIIIS,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/fujifilm-tp-piiis/
 fujifilm-ua-piiis,Fujifilm,UA-PIIIS,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/fujifilm-ua-piiis/
 haemonetics-teg-5000,Haemonetics,TEG 5000,coagulation,instrument,2,analyte catalogue_no,/products/haemonetics-teg-5000/
-haemonetics-teg-6s,Haemonetics,TEG 6s,coagulation,instrument,2,analyte catalogue_no,/products/haemonetics-teg-6s/
 haemonetics-teg-functional-fibrinogen,Haemonetics,TEG Functional Fibrinogen,coagulation,reagent,2,catalogue_no pack_size,/products/haemonetics-teg-functional-fibrinogen/
 hemocue-albumin-201-system,HemoCue,Albumin 201 System,general,instrument,2,category technology,/products/hemocue-albumin-201-system/
 hemocue-hb-301-microcuvettes,HemoCue,Hb 301 Microcuvettes,hematology,,2,product_type pack_size,/products/hemocue-hb-301-microcuvettes/
@@ -645,10 +619,11 @@ ihealth-covid-19-antigen-rapid-test,iHealth,COVID-19 Antigen Rapid Test,rapid-te
 iline-chip,iLine,Chip,coagulation,reagent,2,catalogue_no pack_size,/products/iline-chip/
 inbios-chikjj-detect-igm-elisa-kit-971058,InBios,CHIKjj Detect IgM ELISA Kit,immunoassays,reagent,2,catalogue_no pack_size,/products/inbios-chikjj-detect-igm-elisa-kit-971058/
 inbios-denv-detect-igg-elisa,InBios,DENV Detect IgG ELISA,immunoassays,reagent,2,catalogue_no pack_size,/products/inbios-denv-detect-igg-elisa/
-inbios-denv-detect-ns1-elisa,InBios,DENV Detect NS1 ELISA,immunoassays,reagent,2,catalogue_no pack_size,/products/inbios-denv-detect-ns1-elisa/
+inbios-denv-detect-igm-capture-elisa-kit,InBios,DENV Detect IgM Capture ELISA Kit,immunoassays,reagent,2,sample_type pack_size,/products/inbios-denv-detect-igm-capture-elisa-kit/
 inbios-scrub-typhus-detect-igg-elisa-kit,InBios,Scrub Typhus Detect IgG ELISA Kit,immunoassays,reagent,2,catalogue_no pack_size,/products/inbios-scrub-typhus-detect-igg-elisa-kit/
 inbios-scrub-typhus-detect-igm-elisa-kit,InBios,Scrub Typhus Detect IgM ELISA Kit,immunoassays,reagent,2,catalogue_no pack_size,/products/inbios-scrub-typhus-detect-igm-elisa-kit/
 inbios-scrub-typhus-detecta-c-igg-rapid-test,InBios,Scrub Typhus Detecta c IgG Rapid Test,rapid-tests,reagent,2,catalogue_no pack_size,/products/inbios-scrub-typhus-detecta-c-igg-rapid-test/
+inbios-west-nile-detect-igm-capture-elisa,InBios,West Nile Detect IgM Capture ELISA,immunoassays,reagent,2,analyte pack_size,/products/inbios-west-nile-detect-igm-capture-elisa/
 jungbrunnen-ferritin,Jungbrunnen,Ferritin,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/jungbrunnen-ferritin/
 jungbrunnen-vhc-vitamin-d,Jungbrunnen,VHC Vitamin-D,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/jungbrunnen-vhc-vitamin-d/
 keul-o-test-psa,Keul,o-test PSA,rapid-tests,reagent,2,catalogue_no pack_size,/products/keul-o-test-psa/
@@ -685,8 +660,6 @@ meridian-bioscience-campy,Meridian Bioscience,Campy,clinical-chemistry,reagent,2
 meridian-bioscience-gbs-ds,Meridian Bioscience,GBS DS,molecular,reagent,2,catalogue_no pack_size,/products/meridian-bioscience-gbs-ds/
 meridian-bioscience-hpsa,Meridian Bioscience,HpSA,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/meridian-bioscience-hpsa/
 meridian-bioscience-strep-a,Meridian Bioscience,Strep A,molecular,reagent,2,catalogue_no pack_size,/products/meridian-bioscience-strep-a/
-meridian-bioscience-tru-legionella,Meridian Bioscience,TRU Legionella,rapid-tests,reagent,2,catalogue_no pack_size,/products/meridian-bioscience-tru-legionella/
-meridian-bioscience-tru-rsv,Meridian Bioscience,TRU RSV,rapid-tests,reagent,2,catalogue_no pack_size,/products/meridian-bioscience-tru-rsv/
 meridian-bioscience-tru-strep-pneumo,Meridian Bioscience,TRU Strep Pneumo,rapid-tests,reagent,2,catalogue_no pack_size,/products/meridian-bioscience-tru-strep-pneumo/
 micropoint-bnp,Micropoint,BNP,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/micropoint-bnp/
 micropoint-cardiac-panel-3,Micropoint,Cardiac Panel 3,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/micropoint-cardiac-panel-3/
@@ -808,20 +781,14 @@ qualigen-testosterone,Qualigen,Testosterone,clinical-chemistry,reagent,2,catalog
 qualigen-tsh,Qualigen,TSH,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/qualigen-tsh/
 quidelortho-bnp-test,QuidelOrtho,BNP Test,immunoassays,reagent,2,catalogue_no pack_size,/products/quidelortho-bnp-test/
 quidelortho-c-difficile-fia,QuidelOrtho,C. difficile FIA,immunoassays,reagent,2,catalogue_no pack_size,/products/quidelortho-c-difficile-fia/
-quidelortho-campylobacter-fia,QuidelOrtho,Campylobacter FIA,immunoassays,reagent,2,catalogue_no pack_size,/products/quidelortho-campylobacter-fia/
 quidelortho-cardiac-panel,QuidelOrtho,Cardiac Panel,immunoassays,reagent,2,catalogue_no pack_size,/products/quidelortho-cardiac-panel/
 quidelortho-cardio2-panel,QuidelOrtho,Cardio2 Panel,immunoassays,reagent,2,catalogue_no pack_size,/products/quidelortho-cardio2-panel/
 quidelortho-cardio3-panel,QuidelOrtho,Cardio3 Panel,immunoassays,reagent,2,catalogue_no pack_size,/products/quidelortho-cardio3-panel/
 quidelortho-d-dimer-test,QuidelOrtho,D-Dimer Test,immunoassays,reagent,2,catalogue_no pack_size,/products/quidelortho-d-dimer-test/
-quidelortho-flu-plus-sars-antigen-fia,QuidelOrtho,Flu + Sars Antigen FIA,immunoassays,reagent,2,catalogue_no pack_size,/products/quidelortho-flu-plus-sars-antigen-fia/
-quidelortho-hsv-1-plus-2-vzv,QuidelOrtho,HSV 1+2/VZV,molecular,reagent,2,catalogue_no pack_size,/products/quidelortho-hsv-1-plus-2-vzv/
 quidelortho-influenza-a-plus-b,QuidelOrtho,Influenza A+B,molecular,reagent,2,catalogue_no pack_size,/products/quidelortho-influenza-a-plus-b/
 quidelortho-influenza-a-plus-b-fia,QuidelOrtho,Influenza A+B FIA,immunoassays,reagent,2,catalogue_no pack_size,/products/quidelortho-influenza-a-plus-b-fia/
 quidelortho-legionella-fia,QuidelOrtho,Legionella FIA,immunoassays,reagent,2,catalogue_no pack_size,/products/quidelortho-legionella-fia/
-quidelortho-nt-probnp-test,QuidelOrtho,NT-proBNP-Test,immunoassays,reagent,2,catalogue_no pack_size,/products/quidelortho-nt-probnp-test/
-quidelortho-profiler-sob-panel,QuidelOrtho,Profiler SOB Panel,immunoassays,reagent,2,catalogue_no pack_size,/products/quidelortho-profiler-sob-panel/
 quidelortho-quickvue-dipstick-strep-a,QuidelOrtho,QuickVue Dipstick Strep A,rapid-tests,reagent,2,catalogue_no pack_size,/products/quidelortho-quickvue-dipstick-strep-a/
-quidelortho-quickvue-hcg-combo,QuidelOrtho,QuickVue hCG Combo,rapid-tests,reagent,2,catalogue_no pack_size,/products/quidelortho-quickvue-hcg-combo/
 quidelortho-quickvue-in-line-strep-a,QuidelOrtho,QuickVue In-Line Strep A,rapid-tests,reagent,2,catalogue_no pack_size,/products/quidelortho-quickvue-in-line-strep-a/
 quidelortho-quickvue-influenza-a-plus-b,QuidelOrtho,QuickVue Influenza A+B,rapid-tests,reagent,2,catalogue_no pack_size,/products/quidelortho-quickvue-influenza-a-plus-b/
 quidelortho-quickvue-rsv,QuidelOrtho,QuickVue RSV,rapid-tests,reagent,2,catalogue_no pack_size,/products/quidelortho-quickvue-rsv/
@@ -887,7 +854,6 @@ roche-sars-cov-2-rapid-antigen-test,Roche,SARS-CoV-2 Rapid Antigen Test,rapid-te
 roche-strep-a-test,Roche,Strep A Test,molecular,reagent,2,catalogue_no pack_size,/products/roche-strep-a-test/
 roche-test-strips,Roche,Test strips,diabetes,reagent,2,catalogue_no pack_size,/products/roche-test-strips/
 roche-traptest,Roche,TRAPtest,coagulation,reagent,2,catalogue_no pack_size,/products/roche-traptest/
-roche-trop-t-sensitive,Roche,Trop T sensitive,rapid-tests,reagent,2,catalogue_no pack_size,/products/roche-trop-t-sensitive/
 roche-troponin-t,Roche,Troponin T,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/roche-troponin-t/
 schebo-2in1-quick,Schebo,2in1 Quick,rapid-tests,reagent,2,catalogue_no pack_size,/products/schebo-2in1-quick/
 sd-biosensor-adeno-respi-ag-fia,SD Biosensor,Adeno Respi Ag FIA,immunoassays,reagent,2,catalogue_no pack_size,/products/sd-biosensor-adeno-respi-ag-fia/
@@ -994,7 +960,6 @@ servoprax-servotest-11,Servoprax,Servotest 11,urinalysis,reagent,2,catalogue_no 
 servoprax-servotest-albucreal-ii,Servoprax,Servotest Albucreal II,urinalysis,reagent,2,catalogue_no pack_size,/products/servoprax-servotest-albucreal-ii/
 servoprax-servotest-one-strip-reader,Servoprax,Servotest One Strip Reader,urinalysis,reagent,2,catalogue_no pack_size,/products/servoprax-servotest-one-strip-reader/
 siemens-healthineers-bgem-test-card,Siemens Healthineers,BGEM test card,rapid-tests,reagent,2,catalogue_no pack_size,/products/siemens-healthineers-bgem-test-card/
-siemens-healthineers-clinitek-microalbumin-2-a56597,Siemens Healthineers,Clinitek Microalbumin 2,urinalysis,reagent,2,catalogue_no pack_size,/products/siemens-healthineers-clinitek-microalbumin-2-a56597/
 siemens-healthineers-clinitek-microalbumin-2-reagent-strips,Siemens Healthineers,CLINITEK Microalbumin 2 Reagent Strips,general,reagent,2,category technology,/products/siemens-healthineers-clinitek-microalbumin-2-reagent-strips/
 siemens-healthineers-clinitek-microalbumin-9,Siemens Healthineers,Clinitek Microalbumin 9,urinalysis,reagent,2,catalogue_no pack_size,/products/siemens-healthineers-clinitek-microalbumin-9/
 siemens-healthineers-clinitek-status-analyzer,Siemens Healthineers,CLINITEK Status Analyzer,clinical-chemistry,instrument,2,analyte catalogue_no,/products/siemens-healthineers-clinitek-status-analyzer/
@@ -1002,14 +967,10 @@ siemens-healthineers-clinitest-hcg,Siemens Healthineers,Clinitest hCG,urinalysis
 siemens-healthineers-clinitest-rapid-covid-19-plus-influenza-antigen,Siemens Healthineers,Clinitest Rapid COVID-19 + Influenza Antigen,rapid-tests,reagent,2,catalogue_no pack_size,/products/siemens-healthineers-clinitest-rapid-covid-19-plus-influenza-antigen/
 siemens-healthineers-dca-microalbumin-creatinine-urine-test,Siemens Healthineers,DCA Microalbumin/Creatinine Urine Test,general,reagent,2,category technology,/products/siemens-healthineers-dca-microalbumin-creatinine-urine-test/
 siemens-healthineers-hba1c,Siemens Healthineers,HbA1c,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/siemens-healthineers-hba1c/
-siemens-healthineers-microalbumin-creatinine-acr,Siemens Healthineers,Microalbumin/creatinine (ACR),clinical-chemistry,reagent,2,catalogue_no pack_size,/products/siemens-healthineers-microalbumin-creatinine-acr/
 siemens-healthineers-multistix,Siemens Healthineers,Multistix,urinalysis,reagent,2,catalogue_no pack_size,/products/siemens-healthineers-multistix/
 siemens-healthineers-multistix-10-sg,Siemens Healthineers,Multistix 10 SG,urinalysis,reagent,2,catalogue_no pack_size,/products/siemens-healthineers-multistix-10-sg/
 siemens-healthineers-multistix-5,Siemens Healthineers,Multistix 5,urinalysis,reagent,2,catalogue_no pack_size,/products/siemens-healthineers-multistix-5/
-siemens-healthineers-multistix-8-sg,Siemens Healthineers,Multistix 8 SG,urinalysis,reagent,2,catalogue_no pack_size,/products/siemens-healthineers-multistix-8-sg/
 siemens-healthineers-pt-inr-test-strips,Siemens Healthineers,PT/INR Test Strips,coagulation,reagent,2,catalogue_no pack_size,/products/siemens-healthineers-pt-inr-test-strips/
-siemens-healthineers-rapidlab-1240,Siemens Healthineers,RapidLab 1240,blood-gas,reagent,2,catalogue_no pack_size,/products/siemens-healthineers-rapidlab-1240/
-siemens-healthineers-rapidlab-1245,Siemens Healthineers,RapidLab 1245,blood-gas,reagent,2,catalogue_no pack_size,/products/siemens-healthineers-rapidlab-1245/
 siemens-healthineers-rapidlab-1260,Siemens Healthineers,RapidLab 1260,blood-gas,reagent,2,catalogue_no pack_size,/products/siemens-healthineers-rapidlab-1260/
 siemens-healthineers-rapidlab-1265,Siemens Healthineers,RapidLab 1265,blood-gas,reagent,2,catalogue_no pack_size,/products/siemens-healthineers-rapidlab-1265/
 skyla-hb1-poc-clinical-chemistry-auto-analyzer,Skyla,HB1 POC Clinical Chemistry Auto Analyzer,clinical-chemistry,instrument,2,analyte catalogue_no,/products/skyla-hb1-poc-clinical-chemistry-auto-analyzer/
@@ -1086,7 +1047,6 @@ vedalab-troponin-i,Vedalab,Troponin I,clinical-chemistry,reagent,2,catalogue_no 
 vedalab-tsh,Vedalab,TSH,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/vedalab-tsh/
 vedalab-ultra-tsh,Vedalab,ULTRA-TSH,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/vedalab-ultra-tsh/
 vedalab-vitamin-d,Vedalab,Vitamin D,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/vedalab-vitamin-d/
-werfen-act-lr,Werfen,ACT-LR,clinical-chemistry,reagent,2,catalogue_no pack_size,/products/werfen-act-lr/
 werfen-act-plus,Werfen,ACT+,coagulation,reagent,2,catalogue_no pack_size,/products/werfen-act-plus/
 werfen-aptt,Werfen,APTT,coagulation,reagent,2,catalogue_no pack_size,/products/werfen-aptt/
 werfen-aspirin-test,Werfen,Aspirin-Test,coagulation,reagent,2,catalogue_no pack_size,/products/werfen-aspirin-test/
@@ -1115,7 +1075,9 @@ abbott-abon-urine-test-drug-screen-cassette,Abbott,ABON Urine Test Drug Screen C
 abbott-afinion-2,Abbott,Afinion 2,clinical-chemistry,instrument,1,catalogue_no,/products/abbott-afinion-2/
 abbott-afinion-acr,Abbott,AFINION ACR,clinical-chemistry,,1,product_type,/products/abbott-afinion-acr/
 abbott-afinion-hba1c,Abbott,AFINION HbA1c,diabetes,,1,product_type,/products/abbott-afinion-hba1c/
+abbott-amlyte-13,Abbott,Amlyte 13,clinical-chemistry,reagent,1,pack_size,/products/abbott-amlyte-13/
 abbott-binaxnow-influenza-a-and-b-card,Abbott,BINAXNOW INFLUENZA A&B CARD,rapid-tests,reagent,1,catalogue_no,/products/abbott-binaxnow-influenza-a-and-b-card/
+abbott-binaxnow-legionella,Abbott,BinaxNow Legionella,rapid-tests,reagent,1,pack_size,/products/abbott-binaxnow-legionella/
 abbott-binaxnow-streptococcus-pneumoniae,Abbott,Binaxnow Streptococcus Pneumoniae,rapid-tests,reagent,1,pack_size,/products/abbott-binaxnow-streptococcus-pneumoniae/
 abbott-bioline-cholera-ag-01-0139,Abbott,Bioline CHOLERA Ag 01/0139,rapid-tests,reagent,1,catalogue_no,/products/abbott-bioline-cholera-ag-01-0139/
 abbott-bioline-dengue-duo,Abbott,Bioline Dengue Duo,rapid-tests,reagent,1,pack_size,/products/abbott-bioline-dengue-duo/
@@ -1123,22 +1085,30 @@ abbott-bioline-hiv-1-2-3-0,Abbott,Bioline HIV 1 2 3.0,rapid-tests,reagent,1,pack
 abbott-bioline-malaria-ag-p-f-pv,Abbott,Bioline Malaria Ag P.f Pv,rapid-tests,reagent,1,pack_size,/products/abbott-bioline-malaria-ag-p-f-pv/
 abbott-bioline-onchocerciasis-igg4-elisa,Abbott,Bioline ONCHOCERCIASIS IgG4 ELISA,immunoassays,reagent,1,analyte,/products/abbott-bioline-onchocerciasis-igg4-elisa/
 abbott-cholestech-ldx,Abbott,Cholestech LDX,clinical-chemistry,instrument,1,catalogue_no,/products/abbott-cholestech-ldx/
+abbott-comprehensive-metabolic-panel,Abbott,Comprehensive Metabolic Panel,clinical-chemistry,reagent,1,pack_size,/products/abbott-comprehensive-metabolic-panel/
 abbott-determine-hiv-1-2,Abbott,Determine HIV-1 2,rapid-tests,reagent,1,pack_size,/products/abbott-determine-hiv-1-2/
 abbott-digival,Abbott,Digival,clinical-chemistry,instrument,1,catalogue_no,/products/abbott-digival/
 abbott-freestyle-optium-neo-meter,Abbott,FreeStyle Optium Neo Meter,diabetes,instrument,1,catalogue_no,/products/abbott-freestyle-optium-neo-meter/
-abbott-i-stat-1,Abbott,i-STAT 1,blood-gas,instrument,1,catalogue_no,/products/abbott-i-stat-1/
+abbott-general-chemistry-13,Abbott,General Chemistry 13,clinical-chemistry,reagent,1,pack_size,/products/abbott-general-chemistry-13/
+abbott-general-chemistry-6,Abbott,General Chemistry 6,clinical-chemistry,reagent,1,pack_size,/products/abbott-general-chemistry-6/
+abbott-hepatic-function-panel,Abbott,Hepatic Function Panel,clinical-chemistry,reagent,1,pack_size,/products/abbott-hepatic-function-panel/
+abbott-hs-tni,Abbott,hs-TnI,blood-gas,reagent,1,pack_size,/products/abbott-hs-tni/
 abbott-i-stat-300-handheld-blood-analyzer,Abbott,i-STAT 300 Handheld Blood Analyzer,blood-gas,instrument,1,catalogue_no,/products/abbott-i-stat-300-handheld-blood-analyzer/
+abbott-i-stat-6-plus-cartridge,Abbott,i-STAT 6+ CARTRIDGE,blood-gas,reagent,1,pack_size,/products/abbott-i-stat-6-plus-cartridge/
 abbott-i-stat-alinity,Abbott,i-STAT Alinity,blood-gas,instrument,1,catalogue_no,/products/abbott-i-stat-alinity/
 abbott-i-stat-chem8-plus-cartridge,Abbott,i-STAT CHEM8+ CARTRIDGE,clinical-chemistry,reagent,1,analyte,/products/abbott-i-stat-chem8-plus-cartridge/
 abbott-i-stat-ec8-plus-cartridge,Abbott,i-STAT EC8+ Cartridge,blood-gas,reagent,1,analyte,/products/abbott-i-stat-ec8-plus-cartridge/
-abbott-id-now,Abbott,ID Now,molecular,instrument,1,catalogue_no,/products/abbott-id-now/
 abbott-id-now-influenza-a-and-b-2,Abbott,ID NOW INFLUENZA A & B 2,molecular,,1,product_type,/products/abbott-id-now-influenza-a-and-b-2/
 abbott-id-now-instrument,Abbott,ID NOW Instrument,molecular,instrument,1,catalogue_no,/products/abbott-id-now-instrument/
 abbott-id-now-strep-a-2,Abbott,ID NOW STREP A 2,molecular,,1,product_type,/products/abbott-id-now-strep-a-2/
+abbott-metlac-12-panel,Abbott,MetLac 12 Panel,clinical-chemistry,reagent,1,pack_size,/products/abbott-metlac-12-panel/
+abbott-metlyte-8-panel,Abbott,MetLyte 8 Panel,clinical-chemistry,reagent,1,pack_size,/products/abbott-metlyte-8-panel/
+abbott-metlyte-plus-crp,Abbott,MetLyte Plus CRP,clinical-chemistry,reagent,1,pack_size,/products/abbott-metlyte-plus-crp/
 abbott-nycocard-hba1c,Abbott,NYCOCARD HbA1c,diabetes,,1,product_type,/products/abbott-nycocard-hba1c/
 abbott-piccolo-xpress,Abbott,Piccolo Xpress,clinical-chemistry,instrument,1,catalogue_no,/products/abbott-piccolo-xpress/
 abbott-pima-cd4-cartridge-fdaeb4,Abbott,PIMA CD4 CARTRIDGE (25 tests),rapid-tests,reagent,1,analyte,/products/abbott-pima-cd4-cartridge-fdaeb4/
 abbott-sotoxa,Abbott,SoToxa,clinical-chemistry,instrument,1,catalogue_no,/products/abbott-sotoxa/
+abbott-strep-a-2,Abbott,Strep A 2,molecular,reagent,1,pack_size,/products/abbott-strep-a-2/
 abbott-testpack-plus-with-obc-strep-a,Abbott,TESTPACK PLUS WITH OBC STREP A,rapid-tests,reagent,1,catalogue_no,/products/abbott-testpack-plus-with-obc-strep-a/
 acon-mission-hemopro-hemoglobin-microcuvette,Acon,Mission HemoPro Hemoglobin Microcuvette,hematology,,1,product_type,/products/acon-mission-hemopro-hemoglobin-microcuvette/
 acon-mission-u120-urine-analyzer,Acon,Mission U120 Urine Analyzer,urinalysis,instrument,1,analyte,/products/acon-mission-u120-urine-analyzer/
@@ -1154,6 +1124,8 @@ aidian-quikread-go-plus,Aidian,QuikRead go Plus,clinical-chemistry,instrument,1,
 analyticon-urilyzer-100-pro,Analyticon,Urilyzer 100 Pro,urinalysis,instrument,1,catalogue_no,/products/analyticon-urilyzer-100-pro/
 analyticon-urilyzer-500-pro,Analyticon,Urilyzer 500 Pro,urinalysis,instrument,1,catalogue_no,/products/analyticon-urilyzer-500-pro/
 apexbio-eclipse-a1c,Apexbio,Eclipse A1c,diabetes,instrument,1,catalogue_no,/products/apexbio-eclipse-a1c/
+arkray-alt-gpt,Arkray,ALT/GPT,clinical-chemistry,reagent,1,pack_size,/products/arkray-alt-gpt/
+arkray-ast-got,Arkray,AST/GOT,clinical-chemistry,reagent,1,pack_size,/products/arkray-ast-got/
 arkray-aution-data-ae-4070,Arkray,Aution Data AE-4070,urinalysis,instrument,1,catalogue_no,/products/arkray-aution-data-ae-4070/
 arkray-blood-glucose-test-meter-glucocard-sigma-gt-1070,Arkray,Blood Glucose Test Meter GLUCOCARD Sigma GT-1070,diabetes,instrument,1,catalogue_no,/products/arkray-blood-glucose-test-meter-glucocard-sigma-gt-1070/
 arkray-compact-glycohemoglobin-analyzer-pocketchem-a1c,Arkray,Compact Glycohemoglobin Analyzer PocketChem A1c,diabetes,instrument,1,catalogue_no,/products/arkray-compact-glycohemoglobin-analyzer-pocketchem-a1c/
@@ -1163,6 +1135,8 @@ arkray-pocketchem-ba-pa-4140,Arkray,PocketChem BA PA-4140,clinical-chemistry,ins
 arkray-spotchem-d-concept,Arkray,Spotchem D-Concept,clinical-chemistry,instrument,1,catalogue_no,/products/arkray-spotchem-d-concept/
 arkray-spotchem-el-se-1520-4a3605,Arkray,Spotchem El Se-1520,clinical-chemistry,instrument,1,catalogue_no,/products/arkray-spotchem-el-se-1520-4a3605/
 arkray-spotchem-ez-sp-4430,Arkray,Spotchem EZ SP-4430,clinical-chemistry,instrument,1,catalogue_no,/products/arkray-spotchem-ez-sp-4430/
+arkray-total-bilirubin,Arkray,Total-Bilirubin,clinical-chemistry,reagent,1,pack_size,/products/arkray-total-bilirubin/
+arkray-uric-acid,Arkray,Uric acid,clinical-chemistry,reagent,1,pack_size,/products/arkray-uric-acid/
 arkray-urine-test-strips-aution-sticks,Arkray,Urine test strips AUTION Sticks,rapid-tests,reagent,1,analyte,/products/arkray-urine-test-strips-aution-sticks/
 becton-dickinson-veritor-plus,Becton Dickinson,Veritor Plus,clinical-chemistry,instrument,1,catalogue_no,/products/becton-dickinson-veritor-plus/
 bilimetrix-bilistick,Bilimetrix,Bilistick,clinical-chemistry,instrument,1,catalogue_no,/products/bilimetrix-bilistick/
@@ -1176,7 +1150,6 @@ boditech-afias-6,Boditech,AFIAS-6,immunoassays,instrument,1,catalogue_no,/produc
 boditech-hemochroma-plus-microcuvette,Boditech,Hemochroma PLUS Microcuvette,hematology,,1,product_type,/products/boditech-hemochroma-plus-microcuvette/
 boditech-ichroma-iii-fluorescence-immunoassay-analyzer,Boditech,ichroma III Fluorescence Immunoassay Analyzer,immunoassays,instrument,1,analyte,/products/boditech-ichroma-iii-fluorescence-immunoassay-analyzer/
 bosch-vivalytic,Bosch,Vivalytic,molecular,instrument,1,catalogue_no,/products/bosch-vivalytic/
-buhlmann-quantum-blue,Bühlmann,Quantum Blue,clinical-chemistry,instrument,1,catalogue_no,/products/buhlmann-quantum-blue/
 calbiotech-ana-screen-igg-elisa,Calbiotech,ANA Screen IgG ELISA,immunoassays,reagent,1,analyte,/products/calbiotech-ana-screen-igg-elisa/
 calbiotech-androstenedione-elisa,Calbiotech,Androstenedione ELISA,immunoassays,reagent,1,analyte,/products/calbiotech-androstenedione-elisa/
 calbiotech-beta2-microglobulin-elisa,Calbiotech,Beta2 Microglobulin ELISA,immunoassays,reagent,1,analyte,/products/calbiotech-beta2-microglobulin-elisa/
@@ -1216,8 +1189,14 @@ calbiotech-treponima-pallidum-igg-elisa,Calbiotech,Treponima pallidum IgG ELISA,
 calbiotech-vitamin-b12-elisa,Calbiotech,Vitamin B12 ELISA,immunoassays,reagent,1,analyte,/products/calbiotech-vitamin-b12-elisa/
 calbiotech-vzv-igg-elisa,Calbiotech,VZV IgG ELISA,immunoassays,reagent,1,analyte,/products/calbiotech-vzv-igg-elisa/
 calbiotech-vzv-igm-elisa,Calbiotech,VZV IgM ELISA,immunoassays,reagent,1,analyte,/products/calbiotech-vzv-igm-elisa/
+cepheid-bcr-abl-ultra,Cepheid,BCR-ABL Ultra,molecular,reagent,1,pack_size,/products/cepheid-bcr-abl-ultra/
 cepheid-genexpert-ii,Cepheid,GeneXpert II,molecular,instrument,1,catalogue_no,/products/cepheid-genexpert-ii/
 cepheid-genexpert-iv,Cepheid,GeneXpert IV,molecular,instrument,1,catalogue_no,/products/cepheid-genexpert-iv/
+cepheid-mrsa-sa-ssti,Cepheid,MRSA/SA SSTI,molecular,reagent,1,pack_size,/products/cepheid-mrsa-sa-ssti/
+cepheid-sa-nasal-complete,Cepheid,SA Nasal Complete,molecular,reagent,1,pack_size,/products/cepheid-sa-nasal-complete/
+cepheid-xpress-cov-2-flu-rsv-plus,Cepheid,Xpress CoV-2/Flu/RSV plus,molecular,reagent,1,pack_size,/products/cepheid-xpress-cov-2-flu-rsv-plus/
+cepheid-xpress-gbs,Cepheid,Xpress GBS,molecular,reagent,1,pack_size,/products/cepheid-xpress-gbs/
+cepheid-xpress-strep-a,Cepheid,Xpress Strep A,molecular,reagent,1,pack_size,/products/cepheid-xpress-strep-a/
 concile-1-plus,Concile,α1+,clinical-chemistry,instrument,1,catalogue_no,/products/concile-1-plus/
 concile-duo-reader,Concile,DUO Reader,clinical-chemistry,instrument,1,catalogue_no,/products/concile-duo-reader/
 concile-gp-reader,Concile,GP Reader,clinical-chemistry,instrument,1,catalogue_no,/products/concile-gp-reader/
@@ -1233,6 +1212,7 @@ ctk-biotech-onsite-s-typhi-paratyphi-ag-rapid-test,CTK Biotech,OnSite S.Typhi Pa
 ctk-biotech-onsite-typhoid-igg-igm-rapid-test-345ae9,CTK Biotech,OnSite Typhoid IgG IgM Rapid Test,rapid-tests,reagent,1,pack_size,/products/ctk-biotech-onsite-typhoid-igg-igm-rapid-test-345ae9/
 ctk-biotech-trustline-scrub-typhus-igg-igm-rapid-test-bff502,CTK Biotech,TRUSTline Scrub typhus IgG IgM Rapid Test,rapid-tests,reagent,1,pack_size,/products/ctk-biotech-trustline-scrub-typhus-igg-igm-rapid-test-bff502/
 diasys-responsa1c,DiaSys,responsA1c,diabetes,instrument,1,catalogue_no,/products/diasys-responsa1c/
+diesse-mini-cube,Diesse,Mini-Cube,hematology,instrument,1,analyte,/products/diesse-mini-cube/
 doasense-reader,Doasense,Reader,urinalysis,instrument,1,catalogue_no,/products/doasense-reader/
 dr-muller-super-gl-compact,Dr. Müller,Super GL compact,clinical-chemistry,instrument,1,catalogue_no,/products/dr-muller-super-gl-compact/
 dr-muller-super-gl2,Dr. Müller,Super GL2,clinical-chemistry,instrument,1,catalogue_no,/products/dr-muller-super-gl2/
@@ -1249,7 +1229,6 @@ edan-i15-control-level-3,EDAN,i15 control level -3,blood-gas,reagent,1,sample_ty
 edan-i500,EDAN,i500,blood-gas,instrument,1,catalogue_no,/products/edan-i500/
 ekf-diagnostics-biosen-c-line,EKF Diagnostics,Biosen C-line,clinical-chemistry,instrument,1,catalogue_no,/products/ekf-diagnostics-biosen-c-line/
 ekf-diagnostics-biosen-glucose-lactate-system-solution,EKF Diagnostics,Biosen Glucose/Lactate system solution,diabetes,instrument,1,catalogue_no,/products/ekf-diagnostics-biosen-glucose-lactate-system-solution/
-ekf-diagnostics-diaspect-tm,EKF Diagnostics,DiaSpect Tm,hematology,instrument,1,catalogue_no,/products/ekf-diagnostics-diaspect-tm/
 ekf-diagnostics-hemo-control-hemoglobin-analyzer,EKF Diagnostics,Hemo Control Hemoglobin Analyzer,hematology,reagent,1,pack_size,/products/ekf-diagnostics-hemo-control-hemoglobin-analyzer/
 ekf-diagnostics-lactate-scout-sport,EKF Diagnostics,Lactate Scout Sport,clinical-chemistry,instrument,1,catalogue_no,/products/ekf-diagnostics-lactate-scout-sport/
 ekf-diagnostics-quo-lab-a1c,EKF Diagnostics,Quo-Lab A1c,diabetes,instrument,1,catalogue_no,/products/ekf-diagnostics-quo-lab-a1c/
@@ -1264,6 +1243,7 @@ flashdx-1000-e,FlashDx,1000-E,molecular,instrument,1,catalogue_no,/products/flas
 fujifilm-dri-chem-fdc-nx700i,Fujifilm,Dri-Chem FDC NX700i,clinical-chemistry,instrument,1,catalogue_no,/products/fujifilm-dri-chem-fdc-nx700i/
 fujifilm-dri-chem-nx600,Fujifilm,Dri-Chem NX600,clinical-chemistry,instrument,1,catalogue_no,/products/fujifilm-dri-chem-nx600/
 fujifilm-dri-chem-slide-nh3-wii-for-whole-blood-and-nh3-pii-for-plasma,Fujifilm,DRI-CHEM SLIDE NH3-WII (for whole blood) and NH3-PII (for plasma),clinical-chemistry,,1,product_type,/products/fujifilm-dri-chem-slide-nh3-wii-for-whole-blood-and-nh3-pii-for-plasma/
+haemonetics-teg-6s,Haemonetics,TEG 6s,coagulation,instrument,1,analyte,/products/haemonetics-teg-6s/
 hemocue-glucose-201-microcuvettes,HemoCue,Glucose 201 Microcuvettes,diabetes,,1,product_type,/products/hemocue-glucose-201-microcuvettes/
 hemocue-glucose-201-plus,HemoCue,Glucose 201+,diabetes,instrument,1,catalogue_no,/products/hemocue-glucose-201-plus/
 hemocue-glucose-201-rt-microcuvettes,HemoCue,Glucose 201 RT Microcuvettes,diabetes,,1,product_type,/products/hemocue-glucose-201-rt-microcuvettes/
@@ -1288,9 +1268,8 @@ horiba-yumizen-h500-ct,Horiba,Yumizen H500 CT,hematology,instrument,1,catalogue_
 human-humameter-a1c,Human,HumaMeter A1c,diabetes,instrument,1,catalogue_no,/products/human-humameter-a1c/
 human-humasens2-0plus,Human,HumaSens2.0plus,clinical-chemistry,instrument,1,catalogue_no,/products/human-humasens2-0plus/
 iline-microinr,iLine,microINR,coagulation,instrument,1,catalogue_no,/products/iline-microinr/
-iline-microinr-expert,iLine,microINR Expert,coagulation,instrument,1,catalogue_no,/products/iline-microinr-expert/
-iline-microinr-link,iLine,microINR Link,coagulation,instrument,1,catalogue_no,/products/iline-microinr-link/
 inbios-cl-detect-rapid-test-for-cutaneous-leishmaniasis,InBios,CL Detect Rapid Test for Cutaneous Leishmaniasis,rapid-tests,reagent,1,sample_type,/products/inbios-cl-detect-rapid-test-for-cutaneous-leishmaniasis/
+inbios-denv-detect-ns1-elisa,InBios,DENV Detect NS1 ELISA,immunoassays,reagent,1,pack_size,/products/inbios-denv-detect-ns1-elisa/
 j-mitra-hcv-tri-dot,J. Mitra,HCV TRI DOT,rapid-tests,reagent,1,pack_size,/products/j-mitra-hcv-tri-dot/
 j-mitra-hiv-tri-dot,J. Mitra,HIV TRI DOT,rapid-tests,reagent,1,pack_size,/products/j-mitra-hiv-tri-dot/
 jungbrunnen-vhc-reader,Jungbrunnen,VHC Reader,clinical-chemistry,instrument,1,catalogue_no,/products/jungbrunnen-vhc-reader/
@@ -1312,6 +1291,8 @@ melet-schloesing-ms4se,Melet Schloesing,MS4Se,hematology,instrument,1,catalogue_
 memed-key,MeMed,Key,clinical-chemistry,instrument,1,catalogue_no,/products/memed-key/
 meridian-bioscience-curian,Meridian Bioscience,Curian,clinical-chemistry,instrument,1,catalogue_no,/products/meridian-bioscience-curian/
 meridian-bioscience-revogene,Meridian Bioscience,Revogene,molecular,instrument,1,catalogue_no,/products/meridian-bioscience-revogene/
+meridian-bioscience-tru-legionella,Meridian Bioscience,TRU Legionella,rapid-tests,reagent,1,pack_size,/products/meridian-bioscience-tru-legionella/
+meridian-bioscience-tru-rsv,Meridian Bioscience,TRU RSV,rapid-tests,reagent,1,pack_size,/products/meridian-bioscience-tru-rsv/
 micropoint-mlabs,Micropoint,mLabs,clinical-chemistry,instrument,1,catalogue_no,/products/micropoint-mlabs/
 micropoint-qlabs-q3-pro,Micropoint,qLabs Q3 Pro,clinical-chemistry,instrument,1,catalogue_no,/products/micropoint-qlabs-q3-pro/
 mindray-clinical-chemistry-analyzer-bs-230,Mindray,Clinical Chemistry Analyzer BS-230,clinical-chemistry,instrument,1,analyte,/products/mindray-clinical-chemistry-analyzer-bs-230/
@@ -1360,6 +1341,12 @@ pts-diagnostics-cardiochek-plus,PTS Diagnostics,CardioChek Plus,clinical-chemist
 qiagen-qiastat-dx-2-0,Qiagen,QIAstat-Dx 2.0,molecular,instrument,1,catalogue_no,/products/qiagen-qiastat-dx-2-0/
 qiagen-quantiferon-tb-gold-plus-blood-collection-tubes,Qiagen,QuantiFERON-TB Gold Plus Blood Collection Tubes,immunoassays,consumable,1,pack_size,/products/qiagen-quantiferon-tb-gold-plus-blood-collection-tubes/
 qualigen-fastpack-ip,Qualigen,FastPack IP,clinical-chemistry,instrument,1,catalogue_no,/products/qualigen-fastpack-ip/
+quidelortho-campylobacter-fia,QuidelOrtho,Campylobacter FIA,immunoassays,reagent,1,pack_size,/products/quidelortho-campylobacter-fia/
+quidelortho-flu-plus-sars-antigen-fia,QuidelOrtho,Flu + Sars Antigen FIA,immunoassays,reagent,1,pack_size,/products/quidelortho-flu-plus-sars-antigen-fia/
+quidelortho-hsv-1-plus-2-vzv,QuidelOrtho,HSV 1+2/VZV,molecular,reagent,1,pack_size,/products/quidelortho-hsv-1-plus-2-vzv/
+quidelortho-nt-probnp-test,QuidelOrtho,NT-proBNP-Test,immunoassays,reagent,1,pack_size,/products/quidelortho-nt-probnp-test/
+quidelortho-profiler-sob-panel,QuidelOrtho,Profiler SOB Panel,immunoassays,reagent,1,pack_size,/products/quidelortho-profiler-sob-panel/
+quidelortho-quickvue-hcg-combo,QuidelOrtho,QuickVue hCG Combo,rapid-tests,reagent,1,pack_size,/products/quidelortho-quickvue-hcg-combo/
 quidelortho-sofia-2,QuidelOrtho,Sofia 2,immunoassays,instrument,1,catalogue_no,/products/quidelortho-sofia-2/
 quidelortho-solana,QuidelOrtho,Solana,molecular,instrument,1,catalogue_no,/products/quidelortho-solana/
 quidelortho-triage-meterpro,QuidelOrtho,Triage MeterPro,immunoassays,instrument,1,catalogue_no,/products/quidelortho-triage-meterpro/
@@ -1377,7 +1364,6 @@ roche-accutrend-plus,Roche,Accutrend Plus,clinical-chemistry,instrument,1,catalo
 roche-accutrend-plus-system,Roche,Accutrend Plus system,diabetes,instrument,1,catalogue_no,/products/roche-accutrend-plus-system/
 roche-coaguchek-aptt-test-strips,Roche,CoaguChek aPTT Test Strips,coagulation,reagent,1,catalogue_no,/products/roche-coaguchek-aptt-test-strips/
 roche-coaguchek-pt-test-strips,Roche,CoaguChek PT Test Strips,coagulation,reagent,1,catalogue_no,/products/roche-coaguchek-pt-test-strips/
-roche-coaguchek-xs-pro-system,Roche,CoaguChek XS Pro system,coagulation,instrument,1,catalogue_no,/products/roche-coaguchek-xs-pro-system/
 roche-cobas-b-101,Roche,cobas b 101,clinical-chemistry,instrument,1,catalogue_no,/products/roche-cobas-b-101/
 roche-cobas-b-123,Roche,cobas b 123,blood-gas,instrument,1,catalogue_no,/products/roche-cobas-b-123/
 roche-cobas-b-123-poc-system,Roche,Cobas b 123 POC system,blood-gas,instrument,1,catalogue_no,/products/roche-cobas-b-123-poc-system/
@@ -1391,6 +1377,7 @@ roche-ise-9180,Roche,ISE 9180,clinical-chemistry,instrument,1,catalogue_no,/prod
 roche-ketosure-poc,Roche,Ketosure POC,diabetes,instrument,1,catalogue_no,/products/roche-ketosure-poc/
 roche-multiplate,Roche,Multiplate,coagulation,instrument,1,catalogue_no,/products/roche-multiplate/
 roche-sars-cov,Roche,SARS-CoV,molecular,reagent,1,catalogue_no,/products/roche-sars-cov/
+roche-trop-t-sensitive,Roche,Trop T sensitive,rapid-tests,reagent,1,pack_size,/products/roche-trop-t-sensitive/
 roche-urisys-1100,Roche,Urisys 1100,urinalysis,instrument,1,catalogue_no,/products/roche-urisys-1100/
 roche-urisys-1100-urine-analyzer,Roche,Urisys 1100 urine analyzer,urinalysis,instrument,1,analyte,/products/roche-urisys-1100-urine-analyzer/
 sd-biosensor-standard-f200,SD Biosensor,Standard F200,immunoassays,instrument,1,catalogue_no,/products/sd-biosensor-standard-f200/
@@ -1410,21 +1397,23 @@ servoprax-servotest-reader,Servoprax,Servotest Reader,urinalysis,instrument,1,ca
 siemens-healthineers-atellica-dca,Siemens Healthineers,Atellica DCA,clinical-chemistry,instrument,1,catalogue_no,/products/siemens-healthineers-atellica-dca/
 siemens-healthineers-atellica-lumiq,Siemens Healthineers,Atellica LumIQ,urinalysis,instrument,1,catalogue_no,/products/siemens-healthineers-atellica-lumiq/
 siemens-healthineers-clinitek-advantus,Siemens Healthineers,Clinitek Advantus,urinalysis,instrument,1,catalogue_no,/products/siemens-healthineers-clinitek-advantus/
+siemens-healthineers-clinitek-microalbumin-2-a56597,Siemens Healthineers,Clinitek Microalbumin 2,urinalysis,reagent,1,pack_size,/products/siemens-healthineers-clinitek-microalbumin-2-a56597/
 siemens-healthineers-clinitek-status-connect,Siemens Healthineers,Clinitek Status Connect,urinalysis,instrument,1,catalogue_no,/products/siemens-healthineers-clinitek-status-connect/
 siemens-healthineers-clinitek-status-plus,Siemens Healthineers,Clinitek Status+,urinalysis,instrument,1,catalogue_no,/products/siemens-healthineers-clinitek-status-plus/
 siemens-healthineers-clinitek-status-plus-analyzer,Siemens Healthineers,CLINITEK Status+ Analyzer,urinalysis,instrument,1,analyte,/products/siemens-healthineers-clinitek-status-plus-analyzer/
-siemens-healthineers-dca-vantage,Siemens Healthineers,DCA Vantage,clinical-chemistry,instrument,1,catalogue_no,/products/siemens-healthineers-dca-vantage/
 siemens-healthineers-epoc,Siemens Healthineers,epoc,blood-gas,instrument,1,catalogue_no,/products/siemens-healthineers-epoc/
 siemens-healthineers-epoc-blood-test-strips,Siemens Healthineers,Epoc Blood Test Strips,blood-gas,reagent,1,catalogue_no,/products/siemens-healthineers-epoc-blood-test-strips/
 siemens-healthineers-innovance-pfa-200,Siemens Healthineers,Innovance PFA-200,coagulation,instrument,1,catalogue_no,/products/siemens-healthineers-innovance-pfa-200/
+siemens-healthineers-microalbumin-creatinine-acr,Siemens Healthineers,Microalbumin/creatinine (ACR),clinical-chemistry,reagent,1,pack_size,/products/siemens-healthineers-microalbumin-creatinine-acr/
 siemens-healthineers-multistix-10-sg-reagent-strips,Siemens Healthineers,Multistix 10 SG Reagent Strips,urinalysis,reagent,1,analyte,/products/siemens-healthineers-multistix-10-sg-reagent-strips/
+siemens-healthineers-multistix-8-sg,Siemens Healthineers,Multistix 8 SG,urinalysis,reagent,1,pack_size,/products/siemens-healthineers-multistix-8-sg/
 siemens-healthineers-rapidlab-1200,Siemens Healthineers,RAPIDLab 1200,blood-gas,instrument,1,catalogue_no,/products/siemens-healthineers-rapidlab-1200/
+siemens-healthineers-rapidlab-1240,Siemens Healthineers,RapidLab 1240,blood-gas,reagent,1,pack_size,/products/siemens-healthineers-rapidlab-1240/
+siemens-healthineers-rapidlab-1245,Siemens Healthineers,RapidLab 1245,blood-gas,reagent,1,pack_size,/products/siemens-healthineers-rapidlab-1245/
 siemens-healthineers-rapidlab-348ex,Siemens Healthineers,RAPIDLab 348EX,blood-gas,instrument,1,catalogue_no,/products/siemens-healthineers-rapidlab-348ex/
-siemens-healthineers-rapidpoint-500e,Siemens Healthineers,RAPIDPoint 500e,blood-gas,instrument,1,catalogue_no,/products/siemens-healthineers-rapidpoint-500e/
 siemens-healthineers-uristix-reagent-urinalysis-strips,Siemens Healthineers,Uristix Reagent Urinalysis Strips,urinalysis,reagent,1,analyte,/products/siemens-healthineers-uristix-reagent-urinalysis-strips/
 siemens-healthineers-xprecia-prime,Siemens Healthineers,Xprecia Prime,coagulation,instrument,1,catalogue_no,/products/siemens-healthineers-xprecia-prime/
 siemens-healthineers-xprecia-stride,Siemens Healthineers,Xprecia Stride,coagulation,instrument,1,catalogue_no,/products/siemens-healthineers-xprecia-stride/
-siemens-healthineers-xprecia-stride-coagulation-analyzer,Siemens Healthineers,Xprecia Stride Coagulation Analyzer,coagulation,instrument,1,catalogue_no,/products/siemens-healthineers-xprecia-stride-coagulation-analyzer/
 sysmex-pa-100-ast,Sysmex,PA-100 AST,urinalysis,instrument,1,catalogue_no,/products/sysmex-pa-100-ast/
 sysmex-poch-100i,Sysmex,pocH-100i,hematology,instrument,1,catalogue_no,/products/sysmex-poch-100i/
 sysmex-uc-1000,Sysmex,UC-1000,hematology,instrument,1,catalogue_no,/products/sysmex-uc-1000/
@@ -1443,6 +1432,7 @@ ustar-easynat-16-module,Ustar,EasyNAT (16 Module),molecular,instrument,1,catalog
 ustar-easynat-4-module,Ustar,EasyNAT (4 Module),molecular,instrument,1,catalogue_no,/products/ustar-easynat-4-module/
 ustar-easynat-8-module,Ustar,EasyNAT (8 Module),molecular,instrument,1,catalogue_no,/products/ustar-easynat-8-module/
 vedalab-easy-reader-plus,Vedalab,Easy Reader+,clinical-chemistry,instrument,1,catalogue_no,/products/vedalab-easy-reader-plus/
+werfen-act-lr,Werfen,ACT-LR,clinical-chemistry,reagent,1,pack_size,/products/werfen-act-lr/
 werfen-avoximeter-1000e,Werfen,Avoximeter 1000E,blood-gas,instrument,1,catalogue_no,/products/werfen-avoximeter-1000e/
 werfen-gem-hemochron-100,Werfen,GEM Hemochron 100,coagulation,instrument,1,catalogue_no,/products/werfen-gem-hemochron-100/
 werfen-gem-premier-3500,Werfen,GEM Premier 3500,blood-gas,instrument,1,catalogue_no,/products/werfen-gem-premier-3500/

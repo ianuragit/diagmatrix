@@ -11,8 +11,8 @@ Generated 2026-11-25 from `data/products.json`.
 | Flagged duplicate listings (hidden, redirect) | 66 |
 | Duplicate groups | 61 |
 | Cross-source merges | 22 |
-| Complete listings (all required fields) | 294 (16.8%) |
-| Incomplete listings | 1455 (83.2%) |
+| Complete listings (all required fields) | 304 (17.4%) |
+| Incomplete listings | 1445 (82.6%) |
 | Complete on core facts (ignoring catalogue no. & pack size) | 1389 (79.4%) |
 | Brands in catalogue | 110 |
 | Brands verified (domain resolves or confirmed by web search) | 108 |
@@ -175,7 +175,7 @@ Automatic fixes applied in `build-data`, and items left for review.
 - **Out of scope (non-diagnostic) dropped**: 2 — ARKRAY Insulin Cooling Pouch - Uno Z (keyword "insulin cooling pouch"); ARKRAY Insulin Cooling Pouch - Duo Z for Travel (keyword "insulin cooling pouch")
 - **Untranslated (non-English) text**: 0
 - **Very short product names** (≤ 2 letters/digits; shown with brand): 24 — Abbott G, Abbott G3+, Arkray CK, Biosurfit BC, Boditech LH, Boditech T3, Boditech T4, Cepheid GI, Cepheid TV, Concile α1+, Dr. Müller Hb, MeMed BV, OPTI Medical B, Roche Li+, Roche PT, SD Biosensor T3, SD Biosensor T4, Tascom CK, Tascom Hb, Tascom K, Tascom TC, Tascom TG, Vedalab LH, Werfen PT
-- **Listings with several catalogue numbers** (pack variants, kept as listed): 20
+- **Listings with several catalogue numbers** (pack variants, kept as listed): 24
 - **Same-named different products** given a pack-size / Cat. no. suffix: 14
 - **Low classification confidence** (< 0.6): 64
   - Arkray Urine test strips AUTION SCREEN (0.59)
@@ -252,22 +252,22 @@ A listing is **complete** when it has every field required for its type. All: br
 | product_type | 1438 | 66 | 4.6% |
 | analyte | 1735 | 183 | 10.5% |
 | sample_type | 1438 | 143 | 9.9% |
-| catalogue_no | 1749 | 1256 | 71.8% |
+| catalogue_no | 1749 | 1198 | 68.5% |
 | pack_size | 1452 | 1078 | 74.2% |
 
 Listings by number of missing fields:
 
 | Missing fields | Listings |
 | ---: | ---: |
-| 0 | 294 |
-| 1 | 346 |
-| 2 | 897 |
-| 3 | 110 |
-| 4 | 70 |
+| 0 | 304 |
+| 1 | 376 |
+| 2 | 862 |
+| 3 | 107 |
+| 4 | 68 |
 | 5 | 15 |
 | 6 | 1 |
-| 7 | 11 |
-| 8 | 5 |
+| 7 | 12 |
+| 8 | 4 |
 
 Note: the second source publishes no catalogue numbers or pack sizes, so most of its listings miss exactly those two fields. Add them by hand (`data/manual/`) or from another source to raise completeness.
 
@@ -275,22 +275,22 @@ Note: the second source publishes no catalogue numbers or pack sizes, so most of
 
 | Source | Listings | Incomplete | % |
 | --- | ---: | ---: | ---: |
-| src-b | 1097 | 1083 | 98.7% |
-| src-a | 674 | 380 | 56.4% |
+| src-b | 1097 | 1075 | 98.0% |
+| src-a | 674 | 378 | 56.1% |
 
 ### Incomplete listings by category
 
 | Category | Listings | Incomplete | % |
 | --- | ---: | ---: | ---: |
-| clinical-chemistry | 424 | 417 | 98.3% |
+| clinical-chemistry | 424 | 415 | 97.9% |
 | immunoassays | 316 | 217 | 68.7% |
-| molecular | 201 | 199 | 99.0% |
+| molecular | 201 | 198 | 98.5% |
 | rapid-tests | 278 | 148 | 53.2% |
 | urinalysis | 112 | 108 | 96.4% |
-| blood-gas | 108 | 99 | 91.7% |
+| blood-gas | 108 | 97 | 89.8% |
 | general | 86 | 86 | 100.0% |
-| hematology | 80 | 65 | 81.3% |
-| coagulation | 67 | 62 | 92.5% |
+| hematology | 80 | 64 | 80.0% |
+| coagulation | 67 | 58 | 86.6% |
 | diabetes | 74 | 51 | 68.9% |
 | microbiology | 3 | 3 | 100.0% |
 
@@ -299,7 +299,7 @@ Note: the second source publishes no catalogue numbers or pack sizes, so most of
 | Product type | Listings | Incomplete | % |
 | --- | ---: | ---: | ---: |
 | reagent | 1353 | 1101 | 81.4% |
-| instrument | 297 | 259 | 87.2% |
+| instrument | 297 | 249 | 83.8% |
 | (unknown) | 66 | 66 | 100.0% |
 | control | 19 | 18 | 94.7% |
 | consumable | 14 | 11 | 78.6% |
@@ -308,14 +308,14 @@ Note: the second source publishes no catalogue numbers or pack sizes, so most of
 
 | Brand | Listings | Incomplete | % |
 | --- | ---: | ---: | ---: |
-| Abbott | 191 | 112 | 58.6% |
+| Abbott | 191 | 110 | 57.6% |
 | Arkray | 103 | 98 | 95.1% |
 | SD Biosensor | 122 | 89 | 73.0% |
-| Roche | 96 | 81 | 84.4% |
+| Roche | 96 | 80 | 83.3% |
 | Boditech | 53 | 44 | 83.0% |
 | Calbiotech | 96 | 43 | 44.8% |
 | Vedalab | 43 | 43 | 100.0% |
-| Siemens Healthineers | 45 | 41 | 91.1% |
+| Siemens Healthineers | 45 | 38 | 84.4% |
 | HemoCue | 42 | 35 | 83.3% |
 | Werfen | 35 | 35 | 100.0% |
 | Cepheid | 33 | 33 | 100.0% |
@@ -327,7 +327,7 @@ Note: the second source publishes no catalogue numbers or pack sizes, so most of
 | Seamaty | 27 | 27 | 100.0% |
 | Ustar | 27 | 27 | 100.0% |
 | Concile | 26 | 26 | 100.0% |
-| EKF Diagnostics | 29 | 25 | 86.2% |
+| EKF Diagnostics | 29 | 24 | 82.8% |
 | Bioantibody | 23 | 23 | 100.0% |
 | Nova Biomedical | 23 | 23 | 100.0% |
 | CTK Biotech | 49 | 22 | 44.9% |

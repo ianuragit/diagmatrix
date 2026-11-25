@@ -762,7 +762,7 @@ async function cmdEnrichFda() {
   );
   let checked = 0;
   for (const p of todo) {
-    if (http.stats.network >= max) {
+    if (!values.offline && http.stats.network >= max) {
       log.info(`request budget reached (${max}); re-run later to continue`);
       break;
     }

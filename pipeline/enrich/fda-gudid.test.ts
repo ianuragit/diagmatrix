@@ -103,4 +103,77 @@ describe('FDA GUDID matching', () => {
       ).status,
     ).toBe('none');
   });
+
+  it('sends one-word names to review and rejects calibrators and malformed numbers', () => {
+    expect(
+      matchRecords(
+        p({ name: 'Glucose', brand: 'Arkray', product_line: null, subtype: null }),
+        [rec('Arkray USA', 'GLUCOCARD Expression', 'Blood glucose meter', '570001')],
+        'q',
+      ).status,
+    ).toBe('ambiguous');
+    expect(
+      matchRecords(
+        p({ name: 'TSH Assay', brand: 'Qualigen', product_line: null, subtype: null }),
+        [rec('Qualigen', 'Calibrator Kit – TSH Assay', '', '25000024')],
+        'q',
+      ).status,
+    ).toBe('none');
+    expect(
+      matchRecords(
+        p({ name: 'QStat Cartridge', brand: 'Qualigen', product_line: null, subtype: null }),
+        [rec('Qualigen', 'QStat Cartridge', '', 'QStat Cartridge KIT\n(Box)')],
+        'q',
+      ).status,
+    ).toBe('none');
+  });
+
+  it('keeps model digits, respects product type and lab platforms', () => {
+    expect(
+      matchRecords(
+        p({
+          name: 'Clinitek Microalbumin 9',
+          brand: 'Siemens Healthineers',
+          product_line: null,
+          subtype: null,
+        }),
+        [
+          rec(
+            'Siemens Healthcare Diagnostics',
+            'CLINITEK Microalbumin 2 Reagent Strips',
+            '',
+            'A2083C24',
+          ),
+        ],
+        'q',
+      ).status,
+    ).toBe('none');
+    expect(
+      matchRecords(
+        p({
+          name: 'Avoximeter 1000E',
+          brand: 'Werfen',
+          product_type: 'instrument',
+          product_line: null,
+          subtype: null,
+        }),
+        [
+          rec(
+            'Accriva Diagnostics',
+            'Avoximeter Whole Blood Oximeter',
+            'Avoximeter 1000E Cuvettes 100 cuvettes/box',
+            'C100B',
+          ),
+        ],
+        'q',
+      ).status,
+    ).toBe('none');
+    expect(
+      matchRecords(
+        p({ name: 'beta-hCG test', product_line: null, subtype: null }),
+        [rec('Abbott Ireland', 'ARCHITECT', 'ARCHITECT Total Beta hCG Reagent Kit', '07K7825')],
+        'q',
+      ).status,
+    ).toBe('none');
+  });
 });

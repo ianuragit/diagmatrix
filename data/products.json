@@ -1045,7 +1045,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "400-0041",
     "specs": {
       "Analytes": "Alanine aminotransferase (ALT), Bilirubin, C-reactive protein (CRP), Glucose, Potassium, Creatine kinase (CK), Creatinine, Sodium, Albumin",
       "Sample type": "Plasma, Serum, Blood",
@@ -1519,7 +1519,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "852-000",
     "specs": {
       "Analytes": "Legionella",
       "Method": "Rapid test, Urinalysis"
@@ -5337,7 +5337,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "893-000",
     "specs": {
       "Analytes": "S. aureus, Staphylococcus",
       "Method": "Rapid test"
@@ -5392,7 +5392,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "400-0028",
     "specs": {
       "Analytes": "Alanine aminotransferase (ALT), Alkaline phosphatase, Bilirubin, Chloride, Glucose, Potassium, Creatinine, Sodium, Protein, Albumin",
       "Sample type": "Plasma, Serum, Blood",
@@ -6821,7 +6821,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "400-0029",
     "specs": {
       "Analytes": "Alanine aminotransferase (ALT), Alkaline phosphatase, Amylase, Aspartate aminotransferase (AST), Bilirubin, Gamma-Glutamyltransferase (GGT), Glucose, Uric acid, Blood urea nitrogen (BUN), Ionized calcium, Creatinine, Protein, Albumin",
       "Sample type": "Plasma, Serum, Blood",
@@ -6870,7 +6870,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "400-0006",
     "specs": {
       "Analytes": "Alanine aminotransferase (ALT), Aspartate aminotransferase (AST), Gamma-Glutamyltransferase (GGT), Glucose, Blood urea nitrogen (BUN), Creatinine",
       "Sample type": "Plasma, Serum, Blood",
@@ -6963,7 +6963,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "400-0026",
     "specs": {
       "Analytes": "Alanine aminotransferase (ALT), Alkaline phosphatase, Amylase, Aspartate aminotransferase (AST), Bilirubin, Gamma-Glutamyltransferase (GGT), Protein, Albumin",
       "Sample type": "Plasma, Serum, Blood",
@@ -7007,7 +7007,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "09P81-25",
     "specs": {
       "Analytes": "High-sensitivity troponin I",
       "Sample type": "Plasma, Blood",
@@ -7065,7 +7065,7 @@
     "product_type": "instrument",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "03P75-06",
     "specs": {
       "Analytes": "Activated Clotting Time (ACT), BNP, Chloride, CK-MB, Glucose, Hematocrit, Hemoglobin, Urea, Blood urea nitrogen (BUN), hCG, High-sensitivity troponin I, Ionized calcium, Potassium, Creatinine, Lactate, Sodium, pCO2, pH, pO2, PT/INR, Troponin I",
       "Connectivity": "HL7, LAN",
@@ -7257,7 +7257,7 @@
     "product_type": "reagent",
     "subtype": "cartridge",
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "03P80-25",
     "specs": {
       "Shape": "Rectangular",
       "Set Contains": "Box of individual test cartridges",
@@ -8082,7 +8082,7 @@
     "product_type": "reagent",
     "subtype": "cartridge",
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "03P76-25",
     "specs": {
       "Size": "Standard i-STAT cartridge size",
       "Equipment Type": "Blood Gas and Chemistry Analyzer Cartridge",
@@ -8492,7 +8492,7 @@
     "product_type": "instrument",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "NAT-024R",
     "specs": {
       "Analytes": "Influenza A, Influenza B, RSV, SARS-CoV-2, Strep A, Streptococcus",
       "Connectivity": "HL7, POCT1-A, LAN, WLAN",
@@ -9264,7 +9264,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "400-0037",
     "specs": {
       "Analytes": "Chloride, Glucose, Ionized magnesium, Potassium, Creatinine, Lactate, Sodium, Phosphate, Albumin",
       "Sample type": "Plasma, Serum, Blood",
@@ -9313,7 +9313,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "400-0023",
     "specs": {
       "Analytes": "Chloride, Glucose, Blood urea nitrogen (BUN), Potassium, Creatine kinase (CK), Creatinine, Sodium",
       "Sample type": "Plasma, Serum, Blood",
@@ -9363,7 +9363,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "400-0034",
     "specs": {
       "Analytes": "Chloride, C-reactive protein (CRP), Glucose, Blood urea nitrogen (BUN), Potassium, Creatine kinase (CK), Creatinine, Sodium",
       "Sample type": "Plasma, Serum, Blood",
@@ -10969,7 +10969,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "734-000",
     "specs": {
       "Analytes": "Strep A, Streptococcus",
       "Sample type": "Swab",
@@ -15121,7 +15121,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "68197",
     "specs": {
       "Method": "Susceptibility testing, Urinalysis, Rapid test"
     },
@@ -15872,7 +15872,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "77111",
     "specs": {
       "Analytes": "Alanine aminotransferase (ALT)",
       "Sample type": "Plasma, Serum, Blood",
@@ -16126,7 +16126,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "77110",
     "specs": {
       "Analytes": "Aspartate aminotransferase (AST)",
       "Sample type": "Plasma, Serum, Blood",
@@ -20264,7 +20264,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "77127",
     "specs": {
       "Analytes": "Bilirubin",
       "Sample type": "Plasma, Serum, Blood",
@@ -20857,7 +20857,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "77102",
     "specs": {
       "Analytes": "Uric acid",
       "Sample type": "Plasma, Serum, Blood",
@@ -26295,7 +26295,7 @@
     "product_type": "instrument",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "BI-POCTR-ABS",
     "specs": {
       "Analytes": "Calprotectin",
       "Connectivity": "HL7, LAN",
@@ -31076,7 +31076,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "GXBCRABL-US-10",
     "specs": {
       "Sample type": "Blood",
       "Sample volume (µL)": "4000",
@@ -31911,7 +31911,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "GXMRSA/SA-SSTI-10",
     "specs": {
       "Analytes": "S. aureus, Staphylococcus",
       "Sample type": "Swab, Tissue samples",
@@ -32157,7 +32157,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "GXSACOMP-10, GXSACOMP-120",
     "specs": {
       "Analytes": "S. aureus, Staphylococcus",
       "Sample type": "Swab",
@@ -32281,7 +32281,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "XPRS4PLEX-10",
     "specs": {
       "Analytes": "Influenza A, Influenza B, RSV, SARS-CoV-2",
       "Sample type": "Swab",
@@ -32408,7 +32408,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "XPRSGBS-10",
     "specs": {
       "Analytes": "Strep B, Streptococcus",
       "Sample type": "Swab",
@@ -32450,7 +32450,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "XPRSTREPA-10, XPRSTREPA-120",
     "specs": {
       "Analytes": "Strep A, Streptococcus",
       "Sample type": "Swab",
@@ -38761,7 +38761,7 @@
     "product_type": "instrument",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "10392",
     "specs": {
       "Connectivity": "HL7, POCT1-A, Bluetooth",
       "Method": "Erythrocyte sedimentation rate (ESR)",
@@ -41857,7 +41857,7 @@
     "product_type": "instrument",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "900-001",
     "specs": {
       "Analytes": "Hemoglobin",
       "Connectivity": "Bluetooth",
@@ -46488,7 +46488,7 @@
     "product_type": "instrument",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "07-690-US",
     "specs": {
       "Connectivity": "HL7",
       "Method": "Viscoelastometry",
@@ -50705,7 +50705,7 @@
     "product_type": null,
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "1210403010",
     "specs": {
       "Equipment Type": "Analyzer Cleaning Solution",
       "Technology": "ABX Miniclean is based on a chemical cleaning"
@@ -51613,7 +51613,7 @@
     "product_type": "instrument",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "KTQ0001AD",
     "specs": {
       "Connectivity details": "LIS transfer",
       "Analytes": "PT/INR",
@@ -51671,7 +51671,7 @@
     "product_type": "instrument",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "KTE0001AD, KTL0001AD",
     "specs": {
       "Analytes": "PT/INR",
       "Connectivity": "Bluetooth",
@@ -52172,7 +52172,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "DDMS-1",
     "specs": {
       "Equipment Type": "ELISA Kit",
       "Power Source": "Not Required (manual)",
@@ -52233,7 +52233,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "DNS1-1",
     "specs": {
       "Use": "For the qualitative detection of NS1 antigen of dengue virus in human serum",
       "Technology": "Enzyme-linked immunosorbent assay (ELISA)",
@@ -52904,7 +52904,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "WNMS-1",
     "specs": {
       "Function": "Detection of recent West Nile Virus infection",
       "Equipment Type": "ELISA Diagnostic Kit",
@@ -56959,7 +56959,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "751930",
     "specs": {
       "Analytes": "Legionella",
       "Method": "Rapid test, Urinalysis"
@@ -57011,7 +57011,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "751330",
     "specs": {
       "Analytes": "RSV",
       "Method": "Rapid test"
@@ -66326,7 +66326,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "20352",
     "specs": {
       "Analytes": "Campylobacter",
       "Sample type": "Stool",
@@ -66544,7 +66544,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "20377",
     "specs": {
       "Analytes": "Influenza A, Influenza B, SARS-CoV-2",
       "Sample type": "Swab",
@@ -66586,7 +66586,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "M102",
     "specs": {
       "Analytes": "Herpes Simplex, Varizella-Zoster-Virus",
       "Sample type": "Swab",
@@ -66755,7 +66755,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "98700EU",
     "specs": {
       "Analytes": "NT-proBNP",
       "Sample type": "Plasma, Blood",
@@ -66803,7 +66803,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "97300EU",
     "specs": {
       "Analytes": "BNP, CK-MB, D-Dimer, Myoglobin, Troponin I",
       "Sample type": "Plasma, Blood",
@@ -66893,7 +66893,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "20110",
     "specs": {
       "Analytes": "hCG",
       "Method": "Rapid test, Urinalysis"
@@ -69213,7 +69213,7 @@
     "product_type": "reagent",
     "subtype": "strip",
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "05213312160",
     "specs": {
       "Use": "For blood cholesterol measurement",
       "Capacity": "25 Test Strips per pack",
@@ -70060,7 +70060,7 @@
     "product_type": "reagent",
     "subtype": "strip",
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "3260763160",
     "specs": {
       "Feature": "Measures 10 parameters: glucose, protein, nitrite, ketone, bilirubin, blood, leukocytes, specific gravity, pH, urobilinogen",
       "Set Contains": "100 Chemstrip 10 MD Test Strips, Package insert",
@@ -70579,7 +70579,7 @@
     "product_type": "instrument",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "05448964001, 05530199160",
     "specs": {
       "Function": "Measurement of INR values",
       "Storage Instructions": "Store at room temperature",
@@ -73534,7 +73534,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "11621947196",
     "specs": {
       "Analytes": "Troponin T",
       "Method": "Rapid test"
@@ -82855,7 +82855,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "A2083C24",
     "specs": {
       "Analytes": "Microalbumin, Creatinine",
       "Sample type": "Urine",
@@ -83573,7 +83573,7 @@
     "product_type": "instrument",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "5075US",
     "specs": {
       "Analytes": "Microalbumin, HbA1c, Creatinine",
       "Connectivity": "POCT1-A, LAN",
@@ -84064,7 +84064,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "6011A",
     "specs": {
       "Analytes": "Microalbumin, Creatinine",
       "Sample type": "Urine",
@@ -84353,7 +84353,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "A2164C16",
     "specs": {
       "Analytes": "Erythrocytes (RBC), Glucose, Ketone bodies, Leukocytes (WBC), Nitrite, pH, Protein, Specific gravity",
       "Sample type": "Urine",
@@ -84536,7 +84536,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "5060298",
     "specs": {
       "Analytes": "Chloride, Glucose, Ionized calcium, Potassium, Lactate, Sodium, pCO2, pH, pO2",
       "Sample type": "Blood",
@@ -84584,7 +84584,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "5061537",
     "specs": {
       "Analytes": "Bilirubin, Chloride, Glucose, Hemoglobin, Ionized calcium, Potassium, Lactate, Sodium, pCO2, pH, pO2",
       "Sample type": "Blood",
@@ -84783,7 +84783,7 @@
     "product_type": "instrument",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "11416751",
     "specs": {
       "Analytes": "Bilirubin, Chloride, Glucose, Hemoglobin, Ionized calcium, Potassium, Lactate, Sodium, pCO2, pH, pO2",
       "Connectivity": "HL7, POCT1-A, LAN, WLAN",
@@ -85001,7 +85001,7 @@
     "product_type": "instrument",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "11065584",
     "specs": {
       "Technology": "Microfluidic electrochemical measurement",
       "Feature": "Fast results, integrated quality control, barcode sample ID",
@@ -90732,7 +90732,7 @@
     "product_type": "reagent",
     "subtype": null,
     "pack_size": null,
-    "catalogue_no": null,
+    "catalogue_no": "JACT-LR",
     "specs": {
       "Analytes": "Activated Clotting Time (ACT)",
       "Sample type": "Blood"

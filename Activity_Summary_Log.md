@@ -227,3 +227,8 @@ about how (or whether) to continue crawling Source A.
 - Hand-added products (`data/manual`) are not in `sources.yaml`; they always load and always win precedence.
 
 **Outcome**: `pnpm typecheck`, `pnpm test`, `pnpm build` all green.
+
+## 2026-11-25 — Catalogue numbers from FDA GUDID
+- New `pnpm enrich-fda` (openFDA device/udi, no key, cached, 1.1 s interval). 817 network requests; 1,255 products checked.
+- Strict matching (company, all name words and model digits, controls, lab platforms, instrument vs consumable, panels). 58 catalogue numbers filled (545 → 603 products with a number); 142 ambiguous to `docs/catalogue-review.csv`.
+- EUDAMED: public endpoint answers 429 and asks for the official data API, which needs registration. Not scraped.
