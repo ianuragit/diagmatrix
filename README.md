@@ -68,7 +68,7 @@ Things deliberately left unset for now — fill in before launch.
 | `pnpm crawl` | Discover product URLs for every enabled source and fetch them into `.cache/http/`. Cached URLs are not re-fetched; `frozen` sources never touch the network. Stops a source at the first sustained block (401/403/429). Flags: `--source a,b`, `--refresh` (conditional revalidation), `--offline` (cache only), `--discover-only`, `--limit N`. |
 | `pnpm parse` | Turn cached pages into `data/raw/{source}/products/*.json` (also run automatically at the end of `crawl`). Never uses the network. |
 | `pnpm build-data` | Normalise, classify, dedupe, merge (+ `data/manual/*.yaml`) → `data/products.json`, `data/duplicates.json`, `data/id-map.json`; private provenance and build report in `data/private/`. No network. Refuses to shrink the catalogue by more than 2% (max 20) unless `--allow-shrink`. |
-| `pnpm validate` | Schema-check `data/products.json`; fails on errors or duplicate slugs. |
+| `pnpm validate` | Schema-check `data/products.json`; fails on errors, duplicate slugs, private terms, or non-English text. |
 | `pnpm report` | Markdown report: raw counts and coverage per source; catalogue brand table, categories, field coverage, duplicate groups, merges, scope drops, brand conflicts, low-confidence items. Never prints source URLs or ids. |
 | `pnpm privacy-check` | Scan committable files and `dist/` for private terms. |
 | `pnpm dev` / `pnpm build` / `pnpm preview` | Astro site; `build` also runs Pagefind. |
@@ -169,6 +169,16 @@ a broken source from deleting products.
 | Browser | `pnpm test:e2e` | search, `/` shortcut, facet narrowing + URL + back, basket persistence, modal prefill + event + validation, request-a-product page, duplicate redirect, no-JS pagination, mobile sticky CTA, JSON-LD / OG / robots / llms.txt / sitemap |
 | Links | `pnpm linkcheck` | every internal link and anchor in `dist/` |
 | Lighthouse (mobile) | manual | 100 / 100 / 100 / 100 on home, listing, product, category, brand, analyte, request pages |
+
+## Language: English only
+
+The site is English-only. Source B publishes in German, so `build-data` translates every displayed
+string (product names, spec values, document titles) with `pipeline/config/translations.yaml`, after
+classification. `pnpm validate` fails if German is left in `data/products.json`; it prints the
+product and the words to add to the dictionary. Brand names keep their spelling (`allow` list).
+
+If a translation changes a product's name, run `pnpm build-data --reslug` once: the product gets a
+slug matching its English name and the old slug is kept in `data/redirects.json`, so old links still work.
 
 ## Frozen sources
 

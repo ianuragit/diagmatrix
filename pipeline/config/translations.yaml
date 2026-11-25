@@ -1,0 +1,246 @@
+# German → English for everything shown on the site (the site is English-only).
+# Applied in build-data AFTER classification, to: product names, public spec
+# values and document titles. Classification still matches the original text.
+#
+#   names    – full-name overrides, used when word order changes ("PSA gesamt" → "Total PSA")
+#   values   – full-value overrides for whole sentences
+#   terms    – exact items of comma-separated lists (e.g. an analyte list), case-insensitive
+#   phrases  – word/phrase replacements inside free text, longest first, case-insensitive
+#   allow    – proper nouns that may keep non-English letters (brand and person names)
+#   markers  – words that betray untranslated German; `pnpm validate` fails if any remain
+#
+# US spelling throughout (hemoglobin, hematocrit, ionized), matching the rest of the site.
+
+names:
+  PSA gesamt: Total PSA
+  Blutketone Teststreifen: Blood ketone test strips
+  Spermien Testkassette CS1: Sperm test cassette CS1
+  UA (Harnsäure): Uric acid (UA)
+  hCG Urin: hCG urine
+  HDL Cholesterin direkt (HDL) Einzel-Streifen: HDL cholesterol, direct (HDL) single strips
+  ABL90 Flex Plus mit Kreatinin und Harnstoff: ABL90 Flex Plus with creatinine and urea
+  Total IgE Basis Set: Total IgE basic set
+  Total ßhCG: Total β-hCG
+  Aution Daten AE-4070: Aution Data AE-4070
+
+values:
+  'Einbindung in Softwarelösung ( z.B. "HemoCue Basic Connect") möglich': 'Can be integrated into a software solution (e.g. "HemoCue Basic Connect")'
+  'Für automatische Kommunikation mit externer Software (z. B. "HemoCue DM-DMS-Software" oder „Observation Reviewer“) ist die Dockingstation zuständig': 'Automatic communication with external software (e.g. "HemoCue DM-DMS-Software" or "Observation Reviewer") is handled by the docking station'
+
+terms:
+  Alanin-Aminotransferase (ALT): Alanine aminotransferase (ALT)
+  Alkalische Phosphatase: Alkaline phosphatase
+  Amphetamine: Amphetamines
+  Anti-Müller-Hormon (AMH): Anti-Mullerian hormone (AMH)
+  Anti-Thyreoglobulin-Antikörper: Anti-thyroglobulin antibodies
+  Anti-Thyroid Peroxidase-Antikörper: Anti-thyroid peroxidase antibodies
+  Aspartat-Aminotransferase (AST): Aspartate aminotransferase (AST)
+  Basophile (BASO): Basophils (BASO)
+  Benzodiazepine: Benzodiazepines
+  C-Peptid: C-peptide
+  C-reaktives Protein (CRP): C-reactive protein (CRP)
+  Carcinoembryonales Antigen (CEA): Carcinoembryonic antigen (CEA)
+  Chlorid: Chloride
+  Cholesterin: Cholesterol
+  Eisen: Iron
+  Eosinophile (EOS): Eosinophils (EOS)
+  Erythrozyten: Erythrocytes (RBC)
+  Follikelstimulierendes Hormon (FSH): Follicle-stimulating hormone (FSH)
+  Freies PSA (fPSA): Free PSA (fPSA)
+  Freies Thyroxin (FT4): Free thyroxine (FT4)
+  Freies Trijodthyronin (FT3): Free triiodothyronine (FT3)
+  Gallensäure: Bile acids
+  Gewebeproben: Tissue samples
+  Morphologie: Morphology
+  Rundzellen: Round cells
+  Konzentration: Concentration
+  Leukozytendifferenzierung: Leukocyte differential
+  Lipoprotein-assoziierte Phospholipase A2: Lipoprotein-associated phospholipase A2 (Lp-PLA2)
+  Folsäure: Folic acid
+  Gamma-Glutamyltransferase: Gamma-glutamyltransferase (GGT)
+  Gerinnungsfaktoren: Coagulation factors
+  Glukose: Glucose
+  Granulozyten (GRAN): Granulocytes (GRAN)
+  HDL-Cholesterin: HDL cholesterol
+  Harnsäure: Uric acid
+  Harnstoff (Urea): Urea
+  Harnstoff-Stickstoff (BUN): Blood urea nitrogen (BUN)
+  Hochsensitives CRP: High-sensitivity CRP
+  Hochsensitives Troponin I: High-sensitivity troponin I
+  Homocystein: Homocysteine
+  Hämatokrit: Hematocrit
+  Hämoglobin: Hemoglobin
+  Ionisiertes Kalzium: Ionized calcium
+  Ionisiertes Magnesium: Ionized magnesium
+  Kalium: Potassium
+  Kalzium: Calcium
+  Ketamin: Ketamine
+  Ketonkörper: Ketone bodies
+  Kokain: Cocaine
+  Kreatin-Kinase (CK): Creatine kinase (CK)
+  Kreatinin: Creatinine
+  LDL-Cholesterin: LDL cholesterol
+  Laktat: Lactate
+  Laktatdehydrogenase (LDH): Lactate dehydrogenase (LDH)
+  Leukozyten (WBC): Leukocytes (WBC)
+  Luteinisierendes Hormon (LH): Luteinizing hormone (LH)
+  Lymphozyten (LYM): Lymphocytes (LYM)
+  Methadon: Methadone
+  Mikroalbumin: Microalbumin
+  Monozyten (MON): Monocytes (MON)
+  Motilität: Motility
+  Natrium: Sodium
+  Neutrophile (NEU): Neutrophils (NEU)
+  Nitrit: Nitrite
+  Opiate: Opiates
+  Pankreatischer Elastase: Pancreatic elastase
+  Phosphat: Phosphate
+  Progesteron: Progesterone
+  Prolaktin: Prolactin
+  Prostata-spezifisches Antigen (PSA): Prostate-specific antigen (PSA)
+  Serumamyloid A (SAA): Serum amyloid A (SAA)
+  Sexualhormon-bindendes Globulin (SHBG): Sex hormone-binding globulin (SHBG)
+  Spezifisches Gewicht: Specific gravity
+  Testosteron: Testosterone
+  Thrombozyten: Platelets
+  Thyreoidea-stimulierendes Hormon (TSH): Thyroid-stimulating hormone (TSH)
+  Thyroxin (T4): Thyroxine (T4)
+  Triglyceride: Triglycerides
+  Trijodthyronin (T3): Triiodothyronine (T3)
+  Trizyklische Antidepressiva: Tricyclic antidepressants
+  Unreife Granulozyten: Immature granulocytes
+  Zytokeratin-Fragmente (UBC): Cytokeratin fragments (UBC)
+
+phrases:
+  # product-name vocabulary
+  Einzel-Streifen: single strips
+  Multi-Streifen: multi strips
+  Teststreifen: test strips
+  Testkassette: test cassette
+  Kassetten: cassettes
+  Streifen: strips
+  Mikroküvetten: microcuvettes
+  Küvetten: cuvettes
+  Alk. Phosphatase: Alkaline phosphatase
+  Aspartet-Aminotransferase: Aspartate aminotransferase
+  Creatininkinase: Creatine kinase
+  Creatinin: Creatinine
+  Kreatinin: creatinine
+  Fructosamin: Fructosamine
+  Laktatdehydrogenase: Lactate dehydrogenase
+  Totalbilirubin: Total bilirubin
+  Totalcholesterin: Total cholesterol
+  Totaleiweiss: Total protein
+  Totaleiweiß: Total protein
+  Cholesterin: cholesterol
+  Triglyceride: Triglycerides
+  Phosphor: Phosphorus
+  Mikroalbumin: Microalbumin
+  Harnsäure: Uric acid
+  Harnstoff: Urea
+  Urin: Urine
+  direkt: direct
+  gesamt: total
+  ßhCG: β-hCG
+  Glukose: Glucose
+  Laktat: Lactate
+  Freies: Free
+  Folsäure: Folic acid
+  Testkartuschen: test cartridges
+  Kartuschen: cartridges
+  Kartusche: cartridge
+  Digitale Blutzell-Morphologie: Digital blood cell morphology
+  Morphologie: morphology
+  Mikroprobe: micro sample
+  Blutzucker: blood glucose
+  Kalibrator: calibrator
+  Kontrolle: control
+  Kontrollen: controls
+  Lösung: solution
+  Zubehör: accessories
+  Lanzetten: lancets
+  Kapillaren: capillaries
+  Röhrchen: tubes
+  Elektrolyte-Reagenz: Electrolyte reagent
+  Reagenz: reagent
+  Elektrolyte: Electrolytes
+  Blutgase: Blood gases
+  D-Dimere: D-dimer
+  Lipide: Lipids
+  Leber: Liver
+  Niere: Kidney
+  Streptokokken: Streptococci
+  Mononukleose: Mononucleosis
+  Mononuklease: Mononucleosis
+  Kreatininteststreifen: creatinine test strips
+  Laktatteststreifen: lactate test strips
+  Liver-Multistreifen: Liver multi strips
+  Multistreifen: multi strips
+  MicroSensor-Karte: MicroSensor card
+  Q-Test-Karte: Q-Test card
+  Testkarte: test card
+  Karte: card
+  Y-Messzelle: Y measuring cell
+  Messzelle: measuring cell
+  Gebrauchsanweisungen: instructions for use
+  Spezifikationen: specifications
+  Ressource: resource
+  inklusive: including
+  Broschure: brochure
+  # connectivity sentences
+  RS232-Schnittstelle zur LIS-Anbindung vorhanden: RS232 interface for LIS connection
+  Unidirektionale LIS-Übertragung: Unidirectional LIS transfer
+  Bidirektionale LIS-Übertragung: Bidirectional LIS transfer
+  optionale LIS-Übertragung möglich: Optional LIS transfer available
+  LIS-Übertragung: LIS transfer
+  Cloud-Datentransfer: cloud data transfer
+  unidirektional: unidirectional
+  bidirektional: bidirectional
+  # document titles
+  Broschüren & Dokumente: brochures & documents
+  Produktbroschüre: product brochure
+  Broschüren: brochures
+  Broschüre: brochure
+  Bedienerhandbuch: operator manual
+  Bedienungshandbuch: operating manual
+  Bedienungsanleitung: operating instructions
+  Benutzerhandbuch: user manual
+  Gebrauchsanleitung: instructions for use
+  Gebrauxchsanleitung: instructions for use
+  Gebrauchsanweisung: instructions for use
+  Kurzanleitung: quick guide
+  Anleitung: instructions
+  Handbücher: manuals
+  Handbuch: manual
+  Produktdatenblatt: product data sheet
+  Datenblatt: data sheet
+  Produktblatt: product sheet
+  Produktkatalog: product catalogue
+  Packungsbeilage: package insert
+  Packungsgbeilage: package insert
+  Geräteflyer: device flyer
+  Dokumentenbibliothek: document library
+  Dokumentendatenbank: document database
+  Dokumente: documents
+  Technische Daten: technical data
+  Technische: technical
+  Daten: data
+  # glue words
+  und: and
+  mit: with
+  oder: or
+  für: for
+  zur: for
+  möglich: available
+
+allow: [Bühlmann, BüHLMANN, Dräger, Müller, Günter, Orphée, Mérieux, bioMérieux, Anti-Mullerian]
+
+markers: [und, mit, für, zur, oder, gesamt, einzel, streifen, teststreifen, kassette, kassetten, küvetten,
+  harnstoff, harnsäure, kreatinin, glukose, kalium, natrium, chlorid, cholesterin, laktat, hämoglobin,
+  hämatokrit, erythrozyten, leukozyten, thrombozyten, ketonkörper, ionisiertes, freies, spezifisches,
+  broschüre, handbuch, anleitung, gebrauchsanleitung, datenblatt, packungsbeilage, übertragung,
+  schnittstelle, vorhanden, möglich, urin, blut, stuhl, abstrich, speichel, schnelltest, probentyp,
+  methode, kontrolle, zubehör, gerät, messgerät, konzentration, morphologie, rundzellen, mikroprobe,
+  testkartuschen, kartusche, kartuschen, assoziierte, differenzierung, leukozytendifferenzierung, probe,
+  reagenz, elektrolyte, blutgase, lipide, leber, niere, streptokokken, mononukleose, karte, messzelle,
+  spezifikationen, inklusive, gebrauchsanweisungen, broschure, gewebeproben]

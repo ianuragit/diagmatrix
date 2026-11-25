@@ -226,3 +226,19 @@ test.describe('SEO / GEO outputs', () => {
     expect(sm).not.toMatch(/\/(search|basket)\//);
   });
 });
+
+test('old German product URLs redirect to the English page; pages are English-only', async ({
+  page,
+}) => {
+  const redirects = JSON.parse(readFileSync('data/redirects.json', 'utf8')) as Record<
+    string,
+    string
+  >;
+  const [from, to] =
+    Object.entries(redirects).find(([f]) => f.includes('einzel-streifen')) ??
+    Object.entries(redirects)[0]!;
+  await page.goto(`./products/${from}/`);
+  await expect(page).toHaveURL(new RegExp(`/products/${to}/$`));
+  const text = await page.locator('main').innerText();
+  expect(text).not.toMatch(/\b(Einzel-Streifen|Harnsäure|Kreatinin|Glukose|und|Broschüre)\b/);
+});

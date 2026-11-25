@@ -5,8 +5,10 @@ import type { BrandConfig } from './brand.ts';
 import type { Taxonomy } from './classify.ts';
 import { CONFIG_DIR, loadYaml } from '../core/config.ts';
 import type { RawProduct } from '../core/types.ts';
+import type { TranslationConfig } from './translate.ts';
 
 const taxonomy = loadYaml<Taxonomy>(join(CONFIG_DIR, 'taxonomy.yaml'));
+const translations = loadYaml<TranslationConfig>(join(CONFIG_DIR, 'translations.yaml'));
 const brands = loadYaml<BrandConfig>(join(CONFIG_DIR, 'brands.yaml'));
 const T = '2026-11-25T00:00:00.000Z';
 
@@ -232,5 +234,57 @@ describe('build()', () => {
       'Hand-written.',
     );
     expect(again.report.overridesApplied).toEqual(['abbott-bioline-hbsag']);
+  });
+
+  it('translates German display text and redirects re-slugged / merged ids', () => {
+    const de = (o: Partial<BuildInput> = {}) =>
+      input({
+        translations,
+        sources: [
+          {
+            id: 'src-b',
+            priority: 20,
+            hosts: ['src-b.example'],
+            records: [
+              raw('src-b', '500', {
+                name: 'Harnsäure (UA) Einzel-Streifen',
+                brand: 'ARKRAY',
+                specs: { Methode: 'Trockenchemie', Parameter: 'Harnsäure' },
+                documents: [
+                  {
+                    title: 'Arkray Datenblatt',
+                    url: 'https://www.arkray.example/a.pdf',
+                    type: 'pdf',
+                  },
+                ],
+              }),
+              raw('src-b', '501', {
+                name: 'Uric acid (UA) single strips',
+                brand: 'ARKRAY',
+                specs: { Parameter: 'Harnsäure' },
+              }),
+            ],
+          },
+        ],
+        manual: [],
+        ...o,
+      });
+    const out = build(de());
+    const p = out.products.find((x) => !x.duplicate_of)!;
+    expect(p.name).toBe('Uric acid (UA) single strips');
+    expect(p.specs['Analytes']).toBe('Uric acid');
+    expect(p.specs['Method']).toBe('Dry chemistry');
+    expect(p.documents[0]!.title).toBe('Arkray data sheet');
+    expect(out.report.untranslated).toEqual([]);
+
+    // A map carrying an old German id: reslug turns it into a redirect to the English slug.
+    const oldMap = new Map(out.idMap);
+    for (const [k, v] of oldMap)
+      if (v === p.id) oldMap.set(k, 'arkray-harnsaure-ua-einzel-streifen');
+    const again = build(de({ idMap: oldMap, reslug: true }));
+    expect(again.products.some((x) => x.id === 'arkray-uric-acid-ua-single-strips')).toBe(true);
+    expect(again.redirects['arkray-harnsaure-ua-einzel-streifen']).toBe(
+      'arkray-uric-acid-ua-single-strips',
+    );
   });
 });

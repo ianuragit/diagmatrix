@@ -27,6 +27,7 @@ import {
 import { build, type BuildReport, type ManualProduct } from './normalise/merge.ts';
 import type { BrandConfig } from './normalise/brand.ts';
 import type { Taxonomy } from './normalise/classify.ts';
+import { Translator, type TranslationConfig } from './normalise/translate.ts';
 import { filesToScan, scanForTerms } from './core/privacy.ts';
 import {
   CacheMissError,
@@ -59,6 +60,7 @@ const { positionals, values } = parseArgs({
     'discover-only': { type: 'boolean', default: false },
     'download-images': { type: 'boolean', default: false },
     'allow-shrink': { type: 'boolean', default: false },
+    reslug: { type: 'boolean', default: false },
     limit: { type: 'string' },
   },
 });
@@ -237,7 +239,29 @@ async function cmdValidate() {
     process.exitCode = 1;
     return;
   }
-  log.info(`products.json valid: ${result.data.length} products`);
+  // English-only site: refuse to publish leftover German.
+  const tr = new Translator(loadYaml<TranslationConfig>(join(CONFIG_DIR, 'translations.yaml')));
+  const foreign: string[] = [];
+  for (const p of result.data) {
+    const texts = [
+      p.name,
+      p.summary ?? '',
+      ...Object.keys(p.specs),
+      ...Object.values(p.specs),
+      ...p.documents.map((d) => d.title),
+    ];
+    const words = [...new Set(texts.flatMap((t) => tr.leftovers(t)))];
+    if (words.length) foreign.push(`${p.id}: ${words.join(', ')}`);
+  }
+  if (foreign.length) {
+    log.error(
+      `non-English text in ${foreign.length} products (add to pipeline/config/translations.yaml)`,
+      { examples: foreign.slice(0, 20) },
+    );
+    process.exitCode = 1;
+    return;
+  }
+  log.info(`products.json valid: ${result.data.length} products, English-only`);
 }
 
 async function loadRaw(sourceId: string): Promise<RawProduct[]> {
@@ -550,6 +574,7 @@ async function loadManual(): Promise<ManualProduct[]> {
 
 const ID_MAP = join(ROOT, 'data', 'id-map.json');
 const DUPLICATES_JSON = join(ROOT, 'data', 'duplicates.json');
+const REDIRECTS_JSON = join(ROOT, 'data', 'redirects.json');
 const PRIVATE_DIR = join(ROOT, 'data', 'private');
 
 async function cmdBuildData() {
@@ -582,6 +607,8 @@ async function cmdBuildData() {
     overrides: overridesDoc?.overrides ?? {},
     idMap,
     privateTerms: loadLocalSources().private_terms,
+    translations: loadYaml<TranslationConfig>(join(CONFIG_DIR, 'translations.yaml')),
+    reslug: values.reslug,
   });
   // Guard: a refresh with a missing cache or a broken source must not silently delete products.
   if (existsSync(PRODUCTS_JSON) && !values['allow-shrink']) {
@@ -597,6 +624,24 @@ async function cmdBuildData() {
   }
   await writeJson(PRODUCTS_JSON, result.products);
   await writeJson(DUPLICATES_JSON, result.duplicates);
+  // Redirects accumulate across builds so old URLs keep working.
+  const prev: Record<string, string> = existsSync(REDIRECTS_JSON)
+    ? JSON.parse(await readFile(REDIRECTS_JSON, 'utf8'))
+    : {};
+  const liveIds = new Set(result.products.map((p) => p.id));
+  const all = { ...prev, ...result.redirects };
+  const resolved: Record<string, string> = {};
+  for (const [from, to] of Object.entries(all)) {
+    if (liveIds.has(from)) continue; // became a product again
+    let target = to;
+    for (let i = 0; i < 10 && !liveIds.has(target) && all[target]; i++) target = all[target]!;
+    if (liveIds.has(target)) resolved[from] = target;
+  }
+  await writeJson(REDIRECTS_JSON, Object.fromEntries(Object.entries(resolved).sort()));
+  if (Object.keys(result.redirects).length)
+    log.info(
+      `redirects: ${Object.keys(result.redirects).length} new, ${Object.keys(resolved).length} total`,
+    );
   await writeJson(
     ID_MAP,
     Object.fromEntries([...result.idMap].sort((a, b) => a[0].localeCompare(b[0]))),

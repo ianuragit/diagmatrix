@@ -2,6 +2,21 @@
 
 Newest first.
 
+## 2026-11-25 — English-only site
+
+**Done**
+- New `pipeline/config/translations.yaml` (≈150 entries) + `pipeline/normalise/translate.ts`: product
+  names, spec values (analyte lists item-by-item), connectivity sentences and document titles are
+  translated from German after classification. 98 product names and ~130 spec values changed.
+- `pnpm validate` now fails on leftover German (markers + non-English letters outside brand names);
+  the build report lists offenders. Full scan of 1,887 built files: no German left; no French/Spanish/
+  Italian/Dutch found. Fixed double-encoded characters at source (°C, µL) via text fixes.
+- Two products merged with their existing English twins after translation (Nova creatinine strips,
+  MicroSensor card) — 1,217 canonical products.
+- `build-data --reslug`: 99 products got English slugs; old slugs live on in `data/redirects.json` and
+  render as redirect pages (excluded from the sitemap). Merged-away ids always redirect.
+- Tests: 6 unit (translator + build) and 1 browser test (old German URL → English page). 82 unit / 17 e2e.
+
 ## 2026-11-25 — Phase 7: tests, Lighthouse, deploy, docs
 
 **Done**

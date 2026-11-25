@@ -9,6 +9,7 @@ import AddToQuote from '../../../components/AddToQuote.astro';
 import WhatsAppLink from '../../../components/WhatsAppLink.astro';
 import {
   allProducts,
+  productRedirects,
   analyteLabel,
   brandSlug,
   categoryLabel,
@@ -28,7 +29,7 @@ import { productJsonLd } from '../../../lib/seo';
 export const getStaticPaths = (async () => {
   const all = await allProducts();
   const byId = new Map(all.map((p) => [p.id, p]));
-  return all.map((p) => ({
+  const pages = all.map((p) => ({
     params: { slug: p.slug },
     props: {
       p,
@@ -36,6 +37,18 @@ export const getStaticPaths = (async () => {
       related: p.related.map((id) => byId.get(id)).filter((x): x is Product => !!x),
     },
   }));
+  // Old slugs (renamed or merged products) render as redirects to the current page.
+  const redirects = Object.entries(productRedirects())
+    .filter(([from, to]) => !byId.has(from) && byId.has(to))
+    .map(([from, to]) => {
+      const target = byId.get(to)!;
+      const canonical = target.duplicate_of ? byId.get(target.duplicate_of)! : target;
+      return {
+        params: { slug: from },
+        props: { p: canonical, canonical, related: [] as Product[] },
+      };
+    });
+  return [...pages, ...redirects];
 }) satisfies GetStaticPaths;
 
 const { p, canonical, related } = Astro.props;

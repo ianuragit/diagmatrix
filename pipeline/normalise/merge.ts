@@ -20,6 +20,7 @@ import { Classifier, kwRegex, type Classification, type Taxonomy } from './class
 import { parsePackSize, stripPackSize } from './packsize.ts';
 import { dedupeKey } from './dedupe.ts';
 import { buildSummary } from './summary.ts';
+import { Translator, type TranslationConfig } from './translate.ts';
 
 // ---------------------------------------------------------------------------
 // Inputs
@@ -47,8 +48,15 @@ export interface BuildInput {
   taxonomy: Taxonomy;
   overrides: Record<string, Partial<Product>>;
   idMap: Map<string, string>;
+  /**
+   * Give products whose name changed (e.g. after translation) a fresh slug that
+   * matches their name; the old slug becomes a redirect. One-off, opt-in.
+   */
+  reslug?: boolean;
   /** Extra private terms (company names) that must never be published. */
   privateTerms: string[];
+  /** German → English for display text (pipeline/config/translations.yaml). */
+  translations?: TranslationConfig;
 }
 
 export interface DroppedRecord {
@@ -67,6 +75,8 @@ export interface BuildReport {
   componentsMatchedToPages: number;
   overridesApplied: string[];
   overridesUnknown: string[];
+  /** Display text that still looks non-English after translation. */
+  untranslated: { id: string; field: string; text: string; words: string[] }[];
 }
 
 export interface BuildOutput {
@@ -82,6 +92,8 @@ export interface BuildOutput {
   };
   provenance: Record<string, SourceRef[]>;
   idMap: Map<string, string>;
+  /** old id → new id, for ids that stopped being products in this build (merged or re-slugged). */
+  redirects: Record<string, string>;
   report: BuildReport;
 }
 
@@ -151,7 +163,9 @@ export function build(input: BuildInput): BuildOutput {
     componentsMatchedToPages: 0,
     overridesApplied: [],
     overridesUnknown: [],
+    untranslated: [],
   };
+  const tr = new Translator(input.translations ?? {});
 
   const privateHosts = input.sources.flatMap((s) =>
     s.hosts.map((h) => h.replace(/^www\./, '').toLowerCase()),
@@ -187,7 +201,7 @@ export function build(input: BuildInput): BuildOutput {
         },
         refKey,
         priority: src.priority,
-        name: fixText(r.name),
+        name: tr.name(fixText(r.name)),
         statedBrand: r.brand,
         catalogue_no:
           r.catalogue_no && r.catalogue_no !== r.source_id ? r.catalogue_no.trim() : null,
@@ -228,7 +242,7 @@ export function build(input: BuildInput): BuildOutput {
           },
           refKey: compKey,
           priority: src.priority,
-          name: fixText(comp.name),
+          name: tr.name(fixText(comp.name)),
           statedBrand: r.brand,
           catalogue_no: null,
           specs: comp.specs,
@@ -260,7 +274,7 @@ export function build(input: BuildInput): BuildOutput {
       },
       refKey,
       priority: -1,
-      name: fixText(m.name),
+      name: tr.name(fixText(m.name)),
       statedBrand: m.brand ?? null,
       catalogue_no: m.catalogue_no ?? null,
       specs: m.specs ?? {},
@@ -377,12 +391,14 @@ export function build(input: BuildInput): BuildOutput {
       name: stripped.name,
       pack_size: pack,
       cls,
-      specs: publicSpecs(c, tax, mentionsPrivate),
-      documents: c.documents.filter(
-        (d) =>
-          ['pdf', 'manual', 'brochure', 'datasheet', 'ifu'].includes(d.type) &&
-          !isPrivateUrl(d.url),
-      ),
+      specs: publicSpecs(c, tax, mentionsPrivate, tr),
+      documents: c.documents
+        .filter(
+          (d) =>
+            ['pdf', 'manual', 'brochure', 'datasheet', 'ifu'].includes(d.type) &&
+            !isPrivateUrl(d.url),
+        )
+        .map((d) => ({ ...d, title: tr.text(d.title) })),
       catalogue_no: c.catalogue_no,
       key: dedupeKey(stripped.name, b.brand),
       filled: Object.keys(c.specs).length + Object.keys(c.facts).length + (c.catalogue_no ? 2 : 0),
@@ -423,7 +439,19 @@ export function build(input: BuildInput): BuildOutput {
     const loose = members.filter((m) => !m.catalogue_no);
     if (loose.length) groups.get(`${k}|${cats[0]}`)!.push(...loose);
   }
-  const alloc = createIdAllocator(input.idMap);
+  const allocRaw = createIdAllocator(input.idMap);
+  const redirects: Record<string, string> = {};
+  const alloc = (key: string, display: string) => {
+    const existing = input.idMap.get(key);
+    const ideal = slugify(display) || 'product';
+    if (input.reslug && existing && existing !== ideal && !existing.startsWith(`${ideal}-`)) {
+      input.idMap.delete(key);
+      const fresh = allocRaw(key, display);
+      redirects[existing] = fresh;
+      return fresh;
+    }
+    return allocRaw(key, display);
+  };
   const products: Product[] = [];
   const provenance: Record<string, SourceRef[]> = {};
   const refToId = new Map<string, string>();
@@ -629,8 +657,31 @@ export function build(input: BuildInput): BuildOutput {
     Object.assign(p, patch, { id: p.id, slug: p.slug });
     report.overridesApplied.push(id);
   }
+  // Anything still non-English is reported (and `pnpm validate` fails on it).
+  for (const p of products) {
+    const check = (field: string, text: string | null | undefined) => {
+      if (!text) return;
+      const words = tr.leftovers(text);
+      if (words.length)
+        report.untranslated.push({ id: p.id, field, text: text.slice(0, 120), words });
+    };
+    check('name', p.name);
+    check('summary', p.summary);
+    for (const [k, v] of Object.entries(p.specs)) {
+      check(`specs.key`, k);
+      check(`specs.${k}`, v);
+    }
+    for (const d of p.documents) check('documents.title', d.title);
+  }
   // Brand-conflict report keyed by public id.
   report.brandConflicts = report.brandConflicts.map((c) => ({ ...c, id: refToId.get(c.id) ?? '' }));
+
+  // Ids that stopped being products because their record merged into another one.
+  const liveIds = new Set(products.map((p) => p.id));
+  for (const [refKey, id] of refToId) {
+    const old = input.idMap.get(hashKey(refKey));
+    if (old && old !== id && !liveIds.has(old)) redirects[old] = id;
+  }
 
   products.sort((a, b) => a.id.localeCompare(b.id));
   for (const p of products) ProductSchema.parse(p);
@@ -639,6 +690,7 @@ export function build(input: BuildInput): BuildOutput {
     duplicates: { duplicate_groups: duplicateGroups, cross_source_merges: crossMerges },
     provenance,
     idMap: input.idMap,
+    redirects,
     report,
   };
 }
@@ -691,10 +743,20 @@ function mergeRecords(reps: Normalised[]) {
  * Public spec table: filler and commercial keys dropped, keys/values translated,
  * fact-table values win over spec-list values, brand/catalogue moved to own fields.
  */
+const LIST_KEYS = new Set([
+  'Parameter',
+  'Methode',
+  'Method',
+  'Probentyp',
+  'Sample type',
+  'Konnektivität',
+]);
+
 function publicSpecs(
   c: Candidate,
   tax: Taxonomy,
   mentionsPrivate: (s: string) => boolean,
+  tr: Translator,
 ): Record<string, string> {
   const dropKeys = new Set(tax.spec_filters.drop_keys.map((k) => k.toLowerCase()));
   const dropVals = new Set(tax.spec_filters.drop_values.map((v) => v.toLowerCase()));
@@ -707,13 +769,19 @@ function publicSpecs(
       /^(brand|make|manufacturer|cat(alog(ue)?)?\.?\s*no\.?|categories|alternative name)$/i.test(k)
     )
       return;
-    const v = vRaw
-      .split(/,\s*/)
-      .map((x) => valueMap.get(x.toLowerCase()) ?? x)
-      .join(', ')
-      .trim();
+    const isList = LIST_KEYS.has(kRaw);
+    const mapped = isList
+      ? tr.list(
+          vRaw
+            .split(/,\s*/)
+            .map((x) => valueMap.get(x.toLowerCase()) ?? x)
+            .join(', '),
+        )
+      : tr.text(valueMap.get(vRaw.toLowerCase()) ?? vRaw);
+    const v = mapped.trim();
     if (!v || dropVals.has(v.toLowerCase()) || mentionsPrivate(v) || mentionsPrivate(k)) return;
-    out[k] = v.length > 200 ? v.slice(0, 197) + '…' : v;
+    // Lists (e.g. analytes) are kept whole; free text is capped.
+    out[k] = !isList && v.length > 200 ? v.slice(0, 197) + '…' : v;
   };
   for (const [k, v] of Object.entries(c.specs)) put(k, v);
   for (const [k, v] of Object.entries(c.facts)) put(k, v); // facts override specs

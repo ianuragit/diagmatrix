@@ -661,22 +661,22 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 
 ## Catalogue
 
-- Records: 1226 (1219 canonical, 7 flagged duplicates)
-- Canonical products by source: src-b 1098, src-a 134 (in more than one source: 13)
+- Records: 1224 (1217 canonical, 7 flagged duplicates)
+- Canonical products by source: src-b 1096, src-a 134 (in more than one source: 13)
 
 ### By category / product type
 
 | Category | Instruments | Tests & reagents | Controls | Consumables | Unknown | Total |
 |---|---:|---:|---:|---:|---:|---:|
-| clinical-chemistry | 73 | 337 | 0 | 0 | 0 | 410 |
+| clinical-chemistry | 73 | 335 | 0 | 0 | 0 | 408 |
 | molecular | 24 | 169 | 0 | 0 | 0 | 193 |
-| rapid-tests | 0 | 184 | 0 | 1 | 0 | 185 |
+| rapid-tests | 0 | 186 | 0 | 1 | 0 | 187 |
 | immunoassays | 10 | 115 | 0 | 0 | 0 | 125 |
-| blood-gas | 24 | 63 | 0 | 0 | 0 | 87 |
+| blood-gas | 24 | 61 | 0 | 1 | 0 | 86 |
 | urinalysis | 24 | 60 | 0 | 0 | 0 | 84 |
 | coagulation | 14 | 34 | 0 | 0 | 0 | 48 |
-| hematology | 31 | 13 | 1 | 1 | 0 | 46 |
-| diabetes | 11 | 10 | 0 | 0 | 0 | 21 |
+| hematology | 31 | 12 | 1 | 1 | 0 | 45 |
+| diabetes | 11 | 9 | 0 | 1 | 0 | 21 |
 | general | 6 | 4 | 1 | 1 | 5 | 17 |
 | microbiology | 0 | 3 | 0 | 0 | 0 | 3 |
 
@@ -690,7 +690,7 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 | Roche | 62 | 15 | 47 |
 | Vedalab | 43 | 1 | 42 |
 | Boditech | 35 | 4 | 31 |
-| Werfen | 35 | 10 | 25 |
+| Werfen | 35 | 10 | 24 |
 | Cepheid | 33 | 2 | 31 |
 | Siemens Healthineers | 32 | 13 | 19 |
 | QuidelOrtho | 31 | 3 | 28 |
@@ -700,8 +700,8 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 | Seamaty | 27 | 2 | 25 |
 | Ustar | 27 | 3 | 24 |
 | Concile | 26 | 4 | 22 |
-| Nova Biomedical | 25 | 14 | 11 |
 | Bioantibody | 23 | 1 | 18 |
+| Nova Biomedical | 23 | 14 | 9 |
 | Hitado | 20 | 0 | 20 |
 | EDAN | 19 | 4 | 15 |
 | Coyote | 17 | 2 | 14 |
@@ -723,7 +723,7 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 | LSI Medience | 9 | 1 | 8 |
 | LumiraDx | 9 | 1 | 8 |
 | Analyticon | 8 | 2 | 6 |
-| Human | 8 | 3 | 5 |
+| Human | 8 | 3 | 4 |
 | Pluslife | 8 | 2 | 6 |
 | Qiagen | 8 | 1 | 6 |
 | Qualigen | 8 | 1 | 7 |
@@ -785,24 +785,24 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 
 | Field | Filled | % |
 |---|---:|---:|
-| name | 1219 | 100.0% |
-| brand | 1219 | 100.0% |
-| product_line | 209 | 17.1% |
-| category | 1202 | 98.6% |
-| subcategory | 1214 | 99.6% |
-| technology | 1205 | 98.9% |
-| analyte | 1166 | 95.7% |
-| sample_type | 1158 | 95.0% |
-| product_type | 1214 | 99.6% |
-| subtype | 27 | 2.2% |
+| name | 1217 | 100.0% |
+| brand | 1217 | 100.0% |
+| product_line | 209 | 17.2% |
+| category | 1200 | 98.6% |
+| subcategory | 1212 | 99.6% |
+| technology | 1203 | 98.8% |
+| analyte | 1164 | 95.6% |
+| sample_type | 1156 | 95.0% |
+| product_type | 1212 | 99.6% |
+| subtype | 59 | 4.8% |
 | pack_size | 96 | 7.9% |
 | catalogue_no | 106 | 8.7% |
-| specs (≥1 row) | 1218 | 99.9% |
-| summary | 1219 | 100.0% |
+| specs (≥1 row) | 1216 | 99.9% |
+| summary | 1217 | 100.0% |
 | image_local | 0 | 0.0% |
 | documents | 239 | 19.6% |
-| related | 1200 | 98.4% |
-| classification_confidence ≥ 0.7 | 1202 | 98.6% |
+| related | 1198 | 98.4% |
+| classification_confidence ≥ 0.7 | 1200 | 98.6% |
 
 ### Duplicate groups (6) — non-canonical records are hidden and redirect
 
@@ -848,8 +848,8 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 
 - Qiagen Filter-Tips, 1000 µl — 0.44 (tech: none, analyte: none, sample: none, type: keyword)
 - EDAN i15 control level -1 — 0.46 (tech: none, analyte: none, sample: none, type: keyword:control)
-- Bioantibody PSA gesamt — 0.5 (tech: none, analyte: structured, sample: none, type: none)
-- Bioantibody Testosteron — 0.5 (tech: none, analyte: structured, sample: none, type: none)
+- Bioantibody Total PSA — 0.5 (tech: none, analyte: structured, sample: none, type: none)
+- Bioantibody Testosterone — 0.5 (tech: none, analyte: structured, sample: none, type: none)
 - Bioantibody β-hCG — 0.5 (tech: none, analyte: structured, sample: none, type: none)
 - Bioantibody LH/FSH/Progesteron/Prolaktin — 0.5 (tech: none, analyte: structured, sample: none, type: none)
 - NAL von minden RSS flash 2.0 — 0.43 (tech: none, analyte: none, sample: none, type: structured)

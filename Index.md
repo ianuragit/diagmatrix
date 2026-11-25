@@ -27,15 +27,18 @@ Every folder and key file, mirroring the tree. Keep current.
 | `pipeline/normalise/packsize.ts` | Pack-size parsing and stripping from names. |
 | `pipeline/normalise/dedupe.ts` | Normalised dedupe key + grouping. |
 | `pipeline/normalise/merge.ts` | build-data core: components, scope, merge by priority, duplicates, stable ids, related, overrides. |
+| `pipeline/normalise/translate.ts` | Translator (names, lists, free text) + leftover detector used by `validate`. |
 | `pipeline/normalise/summary.ts` | Factual summaries generated only from normalised fields. |
 | `pipeline/normalise/*.test.ts` | Unit tests incl. an end-to-end `build()` test with synthetic records. |
 | `pipeline/config/sources.yaml` | Source registry with neutral ids (id, enabled, priority). |
 | `pipeline/config/sources.local.example.yaml` | Template for the git-ignored `sources.local.yaml` (real base URLs + private terms). |
 | `pipeline/config/brands.yaml` | 101 canonical brands, aliases, product-line → brand, `stated_only` and OEM flags. |
 | `pipeline/config/taxonomy.yaml` | Categories, technologies, 129 analytes, 15 technologies, sample types, product types, spec filters, EN/DE translations, text fixes, scope rules. |
+| `pipeline/config/translations.yaml` | German → English for display text: name overrides, sentence overrides, list terms, phrases, allowed proper nouns, leftover markers. |
 | `pipeline/config/overrides.yaml` | Per-id manual corrections applied last. |
 | `data/raw/{source}/` (git-ignored) | `nav.json`, `products/*.json`, `parse-failures.json` per source. |
 | `data/private/` (git-ignored) | `provenance.json` (source URLs/ids per product), `build-report.json`. Never published. |
+| `data/redirects.json` | Old product slug → current slug (renamed/merged products); rendered as redirect pages. |
 | `data/id-map.json` | Stable product ids keyed by hashed source refs. |
 | `data/manual/` | Hand-added products (`*.yaml`), a first-class source; `example.yaml.sample` shows the format. |
 | `data/products.json` | Final public catalogue (canonical + flagged duplicates). |

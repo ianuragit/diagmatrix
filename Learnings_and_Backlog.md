@@ -1,6 +1,8 @@
 # Learnings and Backlog
 
 ## Learnings
+- 2026-11-25 — A short marker list misses German compounds (Laktatteststreifen, MicroSensor-Karte); a sweep for German word endings over every distinct token found them. Keep adding markers as new words appear.
+- 2026-11-25 — Translating names can merge records with existing English twins and change slugs; redirects must cover both re-slugged and merged-away ids.
 - 2026-11-25 — Lighthouse CLS on listings came from swapping a small static filter list for the full facet panel above the results on phones; a collapsed disclosure opened pre-paint on desktop removes it.
 - 2026-11-25 — A percentage-only shrink guard (10%) let a whole source disappear (9.9%); use min(2%, 20 products).
 - 2026-11-25 — GitHub keeps `refs/pull/1/head` for merged PRs, so the original Phase 1 commit stays reachable by SHA via PR #1 even after rewriting `main`; only GitHub Support can purge it.
@@ -28,7 +30,6 @@
 - 2026-11-25 — Optional: ask GitHub Support to purge PR #1's cached refs (old commit naming the sources).
 - 2026-11-25 — Cache OG images between builds (hash of the card text) if build time matters.
 - 2026-11-25 — Configure the inquiry form (Web3Forms/Formspree key) and WhatsApp number when ready — config only.
-- 2026-11-25 — Product names from Source B are often German ("Harnstoff (BUN), Kreatinin und eGFR", "PSA gesamt"); consider an English display-name map for common terms.
 - 2026-11-25 — 53 products still have no analyte (niche markers: mutation panels, TDM, AMR genes) and 9 are low-confidence; review via `pnpm report` and fix with taxonomy keywords or overrides.
 - 2026-11-25 — Brand ownership questions for a human: LumiraDx (now Roche?), Xprecia (Siemens vs OEM Universal Biosensors), Calbiotech vs InBios.
 - 2026-11-25 — Pack size (8%) and catalogue no (9%) are sparse: Source B publishes neither. Hand-added data or a third source would help.
@@ -38,6 +39,7 @@
 - 2026-11-24 — `--download-images` flag is parsed but not yet wired (Phase 4/5).
 
 ## Implemented
+- 2026-11-25 — English-only site: translation layer, validate guard, re-slug with redirects.
 - 2026-11-25 — Phase 7: deploy, link check, Lighthouse fixes, CI e2e, shrink guard, docs.
 - 2026-11-25 — Phase 6: SEO/GEO. Request-a-product page.
 - 2026-11-25 — Phase 4 normalise/enrich/dedupe; frozen sources; manual products.

@@ -78,6 +78,17 @@ export function groupBy<K extends string>(
   return m;
 }
 
+/** Old product slugs → current slug (data/redirects.json), e.g. after translation re-slugging. */
+export function productRedirects(): Record<string, string> {
+  try {
+    return JSON.parse(
+      readFileSync(join(process.cwd(), 'data', 'redirects.json'), 'utf8'),
+    ) as Record<string, string>;
+  } catch {
+    return {};
+  }
+}
+
 /** A hub with fewer products than this is "thin" → noindex until it grows. */
 export const THIN_HUB = 3;
 export const PAGE_SIZE = 24;
