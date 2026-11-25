@@ -2,24 +2,24 @@
 ## Source `src-a`
 
 - Nav entries: 3234
-- Parsed records: 1342
-- Parse failures: 1892
+- Parsed records: 1969
+- Parse failures: 1265
 
 ### Categories
 
 | Category | In nav | Parsed |
 |---|---:|---:|
-| Medical Reagents | 550 | 2 |
-| Medical CLIA | 329 | 319 |
+| Medical Reagents | 550 | 353 |
+| Medical CLIA | 329 | 332 |
 | Medical POCT | 311 | 308 |
 | Medical FIA | 311 | 305 |
 | Medical LAB | 310 | 1 |
 | Medical Accesories | 302 | 1 |
-| Medical Analyzer | 265 | 1 |
+| Medical Analyzer | 265 | 262 |
 | Life Sciences | 237 | 0 |
 | Medical Surgicals | 171 | 0 |
 | Medical ELISA | 170 | 172 |
-| Medical RTD | 150 | 150 |
+| Medical RTD | 150 | 152 |
 | Medical IVD | 82 | 82 |
 | Medical Consumables | 46 | 1 |
 
@@ -27,17 +27,17 @@
 
 | Field | Records | % |
 |---|---:|---:|
-| brand (stated) | 1110 | 82.7% |
-| catalogue_no | 1082 | 80.6% |
-| fact table | 1119 | 83.4% |
-| spec rows | 1331 | 99.2% |
-| image | 1342 | 100.0% |
+| brand (stated) | 1522 | 77.3% |
+| catalogue_no | 1492 | 75.8% |
+| fact table | 1535 | 78.0% |
+| spec rows | 1724 | 87.6% |
+| image | 1969 | 100.0% |
 | documents | 0 | 0.0% |
 | components | 0 | 0.0% |
 | related (source-linked) | 0 | 0.0% |
-| description | 1323 | 98.6% |
+| description | 1946 | 98.8% |
 
-Top fact-table keys: Brand (1110), Sample Type (960), Pack Size (921), CAT No (738), CAT No. (309), Application (297), Biomarker (175), Test Type (79), Number of Reactions(Preps)/Kit (44), Model (33), Result Time (Rapid Kits) (32), CAT No.Â (19), Cat. No (18), Method (17), Cat No (14)
+Top fact-table keys: Brand (1522), Sample Type (1137), Pack Size (1135), CAT No (1045), Application (556), CAT No. (405), Model (193), Biomarker (175), Capacity (169), Test Type (86), Number of Reactions(Preps)/Kit (44), Product Type (43), Result Time (Rapid Kits) (32), Cat. No (20), CAT No.Â (20)
 
 ### Sample records
 
@@ -67,6 +67,63 @@ Top fact-table keys: Brand (1110), Sample Type (960), Pack Size (921), CAT No (7
     "Portable": "Yes"
   },
   "description_chars": 1449
+}
+```
+```json
+{
+  "source": "src-a",
+  "fetched_at": "2026-11-25T09:11:06.240Z",
+  "name": "7500 Thermo Fisher Fast Real Time PCR System",
+  "category": "Medical Analyzer",
+  "subcategory": null,
+  "brand": "Thermo Fisher",
+  "catalogue_no": null,
+  "facts": {
+    "Dynamic Range": "9 Logs Of Linear Dynamic Range",
+    "Feature": "Simple Intuitive Software",
+    "Format": "Convenient 96-Eell Format",
+    "Peak Block Ramp": "5.5 C/s",
+    "Run Time": "36 min",
+    "Type": "Real-Time PCR System",
+    "Usage/Application": "Virus Test Especially Covid-19",
+    "Model Name/Number": "7500 Fast",
+    "Brand": "Thermo Fisher"
+  },
+  "image": "(present)",
+  "documents": 0,
+  "components": [],
+  "spec_rows": 0,
+  "specs_preview": {},
+  "description_chars": 1208
+}
+```
+```json
+{
+  "source": "src-a",
+  "fetched_at": "2026-11-25T10:21:09.597Z",
+  "name": "Acon Cyto-Diluent for Mission HA-360",
+  "category": "Medical Reagents",
+  "subcategory": null,
+  "brand": "Acon",
+  "catalogue_no": "C121-9011",
+  "facts": {
+    "Brand": "Acon",
+    "Sample Type": "Diluent",
+    "Pack Size": "20L",
+    "CAT No": "C121-9011",
+    "Application": "Hematology"
+  },
+  "image": "(present)",
+  "documents": 0,
+  "components": [],
+  "spec_rows": 29,
+  "specs_preview": {
+    "Features": "Ready-to-use, High Purity, Reliable Performance",
+    "Operating Type": "Automatic",
+    "Portable": "Yes",
+    "Frequency": "Single-use per test"
+  },
+  "description_chars": 1267
 }
 ```
 ```json
@@ -180,30 +237,6 @@ Top fact-table keys: Brand (1110), Sample Type (960), Pack Size (921), CAT No (7
 ```json
 {
   "source": "src-a",
-  "fetched_at": "2026-11-24T20:48:46.392Z",
-  "name": "Mindray Clinical Chemistry Analyzer BS-230",
-  "category": "Medical Analyzer",
-  "subcategory": null,
-  "brand": "Mindray",
-  "catalogue_no": "BS-230",
-  "facts": {
-    "Brand": "Mindray",
-    "Model": "BS-230",
-    "Capacity": "200 Test/Hr",
-    "CAT No": "BS-230",
-    "Application": "Biochemistry"
-  },
-  "image": "(present)",
-  "documents": 0,
-  "components": [],
-  "spec_rows": 0,
-  "specs_preview": {},
-  "description_chars": 1336
-}
-```
-```json
-{
-  "source": "src-a",
   "fetched_at": "2026-11-24T20:48:47.418Z",
   "name": "Qiagen Filter-Tips, 1000 l",
   "category": "Medical Consumables",
@@ -250,35 +283,6 @@ Top fact-table keys: Brand (1110), Sample Type (960), Pack Size (921), CAT No (7
 ```json
 {
   "source": "src-a",
-  "fetched_at": "2026-11-25T07:29:21.357Z",
-  "name": "Fujifilm FUJI DRI-CHEM SLIDE GGT-P III Biochemistry Reagent Kit",
-  "category": "Medical Reagents",
-  "subcategory": null,
-  "brand": "FUJIFILM",
-  "catalogue_no": "15809736",
-  "facts": {
-    "Brand": "FUJIFILM",
-    "Sample Type": "Serum/ Plasma",
-    "Pack Size": "24T",
-    "CAT No": "15809736",
-    "Application": "High Density Lipo-protein Cholesterol Concentration"
-  },
-  "image": "(present)",
-  "documents": 0,
-  "components": [],
-  "spec_rows": 34,
-  "specs_preview": {
-    "Noise Level": "Low",
-    "Use": "Hospital",
-    "Usage Type": "Professional",
-    "Condition": "New"
-  },
-  "description_chars": 227
-}
-```
-```json
-{
-  "source": "src-a",
   "fetched_at": "2026-11-25T07:30:32.913Z",
   "name": "Bio-Rad Gene Pulser / MicroPulser Electroporation Cuvettes",
   "category": "Medical LAB",
@@ -302,7 +306,7 @@ Top fact-table keys: Brand (1110), Sample Type (960), Pack Size (921), CAT No (7
 
 ### Parse failures by reason
 
-- 1892 × Not in cache and network is disabled (offline): <url>
+- 1265 × Not in cache and network is disabled (offline): <url>
 
 ## Source `src-b`
 
@@ -669,54 +673,58 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 
 ## Catalogue
 
-- Records: 2413 (2333 canonical, 80 flagged duplicates)
-- Canonical products by source: src-b 1097, src-a 1258 (in more than one source: 22)
+- Records: 3036 (2947 canonical, 89 flagged duplicates)
+- Canonical products by source: src-b 1097, src-a 1875 (in more than one source: 25)
 
 ### By category / product type
 
 | Category | Instruments | Tests & reagents | Controls | Consumables | Unknown | Total |
 |---|---:|---:|---:|---:|---:|---:|
-| immunoassays | 30 | 838 | 11 | 6 | 0 | 885 |
-| clinical-chemistry | 80 | 339 | 0 | 1 | 4 | 424 |
-| rapid-tests | 2 | 290 | 0 | 1 | 0 | 293 |
-| molecular | 26 | 172 | 0 | 0 | 3 | 201 |
-| urinalysis | 34 | 74 | 0 | 0 | 4 | 112 |
-| blood-gas | 32 | 70 | 4 | 1 | 1 | 108 |
-| general | 19 | 35 | 4 | 2 | 26 | 86 |
-| hematology | 44 | 15 | 8 | 1 | 12 | 80 |
-| diabetes | 27 | 31 | 0 | 3 | 13 | 74 |
-| coagulation | 20 | 44 | 0 | 0 | 3 | 67 |
+| immunoassays | 34 | 863 | 11 | 6 | 0 | 914 |
+| clinical-chemistry | 108 | 374 | 6 | 2 | 68 | 558 |
+| general | 73 | 149 | 9 | 5 | 119 | 355 |
+| rapid-tests | 2 | 293 | 0 | 1 | 0 | 296 |
+| molecular | 62 | 198 | 2 | 2 | 29 | 293 |
+| hematology | 67 | 25 | 8 | 1 | 28 | 129 |
+| blood-gas | 38 | 70 | 4 | 1 | 1 | 114 |
+| urinalysis | 35 | 74 | 0 | 0 | 4 | 113 |
+| coagulation | 24 | 47 | 1 | 0 | 18 | 90 |
+| diabetes | 32 | 34 | 0 | 3 | 13 | 82 |
 | microbiology | 0 | 3 | 0 | 0 | 0 | 3 |
 
 ### Brands
 
 | Brand | Products | Instruments | Tests & reagents |
 |---|---:|---:|---:|
-| Abbott | 191 | 19 | 161 |
-| Snibe | 163 | 1 | 162 |
+| Abbott | 195 | 22 | 161 |
+| Snibe | 177 | 1 | 176 |
 | Boditech | 161 | 9 | 150 |
-| SD Biosensor | 150 | 11 | 137 |
-| Arkray | 104 | 17 | 79 |
+| SD Biosensor | 152 | 11 | 139 |
+| Qiagen | 121 | 12 | 88 |
+| Mindray | 115 | 15 | 98 |
+| Arkray | 113 | 22 | 81 |
+| Zybio | 112 | 6 | 61 |
+| Roche | 109 | 34 | 70 |
 | Calbiotech | 98 | 0 | 98 |
-| Roche | 96 | 24 | 70 |
-| Zybio | 63 | 2 | 61 |
+| Thermo Fisher | 80 | 24 | 28 |
+| Erba Mannheim | 70 | 25 | 40 |
+| Horiba | 67 | 4 | 30 |
+| Beckman Coulter | 65 | 1 | 52 |
 | Getein | 58 | 4 | 54 |
+| Siemens Healthineers | 54 | 23 | 27 |
+| Wondfo | 54 | 10 | 43 |
+| Acon | 50 | 11 | 32 |
 | CTK Biotech | 49 | 0 | 49 |
-| Acon | 48 | 10 | 32 |
-| Wondfo | 48 | 7 | 41 |
-| Beckman Coulter | 46 | 0 | 46 |
-| Siemens Healthineers | 45 | 18 | 27 |
-| Mindray | 43 | 1 | 40 |
+| Fujifilm | 44 | 3 | 26 |
+| Cepheid | 43 | 6 | 31 |
 | Vedalab | 43 | 1 | 42 |
 | HemoCue | 42 | 21 | 10 |
+| QuidelOrtho | 41 | 5 | 36 |
+| Bio-Rad | 38 | 19 | 3 |
 | Werfen | 35 | 10 | 24 |
-| Horiba | 34 | 4 | 24 |
-| Cepheid | 33 | 2 | 31 |
 | EDAN | 31 | 6 | 23 |
-| QuidelOrtho | 31 | 3 | 28 |
-| Fujifilm | 30 | 3 | 26 |
+| Molbio | 30 | 4 | 26 |
 | EKF Diagnostics | 29 | 7 | 10 |
-| Molbio | 29 | 3 | 26 |
 | NAL von minden | 29 | 5 | 24 |
 | Seamaty | 27 | 2 | 25 |
 | Ustar | 27 | 3 | 24 |
@@ -725,51 +733,53 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 | Nova Biomedical | 23 | 14 | 9 |
 | InBios | 21 | 0 | 21 |
 | Hitado | 20 | 0 | 20 |
+| Sysmex | 20 | 14 | 4 |
+| Becton Dickinson | 18 | 4 | 5 |
+| (none) | 17 | 5 | 3 |
+| Awareness Technology | 17 | 9 | 3 |
 | Coyote | 17 | 2 | 14 |
 | Medtronic | 17 | 1 | 15 |
 | Tascom | 16 | 1 | 15 |
 | Micropoint | 15 | 3 | 12 |
-| Erba Mannheim | 14 | 2 | 11 |
 | Bosch | 13 | 1 | 12 |
 | Radiometer | 13 | 4 | 9 |
 | Aidian | 12 | 2 | 10 |
 | Precision Biosensor | 12 | 1 | 11 |
 | Dr. Müller | 11 | 4 | 7 |
 | Meridian Bioscience | 11 | 2 | 9 |
-| Sysmex | 11 | 6 | 4 |
-| Thermo Fisher | 11 | 1 | 10 |
 | Premier Medical | 10 | 0 | 10 |
 | PTS Diagnostics | 10 | 2 | 8 |
 | Eurolyser | 9 | 1 | 8 |
 | Haemonetics | 9 | 2 | 7 |
 | LSI Medience | 9 | 1 | 8 |
 | LumiraDx | 9 | 1 | 8 |
-| Qiagen | 9 | 1 | 6 |
 | Acro Biotech | 8 | 0 | 8 |
 | Analyticon | 8 | 2 | 6 |
 | Human | 8 | 3 | 4 |
 | Pluslife | 8 | 2 | 6 |
 | Qualigen | 8 | 1 | 7 |
+| bioMérieux | 7 | 2 | 2 |
 | Credo | 7 | 1 | 6 |
 | Macherey-Nagel | 7 | 2 | 5 |
 | Servoprax | 7 | 1 | 6 |
 | URIT | 7 | 4 | 3 |
-| Becton Dickinson | 6 | 1 | 5 |
 | Bühlmann | 6 | 1 | 5 |
 | FlashDx | 6 | 1 | 5 |
 | J. Mitra | 6 | 0 | 6 |
 | Actim | 5 | 1 | 4 |
 | OPTI Medical | 5 | 1 | 4 |
-| bioMérieux | 4 | 2 | 2 |
 | Biosurfit | 4 | 1 | 3 |
 | DiaSys | 4 | 2 | 2 |
+| Eppendorf | 4 | 0 | 0 |
 | iLine | 4 | 3 | 1 |
+| Leica BIOSYSTEM | 4 | 0 | 0 |
+| Medica | 4 | 4 | 0 |
 | Melet Schloesing | 4 | 3 | 1 |
 | MNCHIP | 4 | 1 | 3 |
 | Noul | 4 | 1 | 3 |
+| Philips | 4 | 1 | 0 |
 | 77 Elektronika | 3 | 2 | 1 |
 | HemoSonics | 3 | 1 | 2 |
-| (none) | 3 | 0 | 3 |
 | HiMedia | 3 | 0 | 2 |
 | Jungbrunnen | 3 | 1 | 2 |
 | Nihon Kohden | 3 | 3 | 0 |
@@ -790,7 +800,7 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 | KH Medical | 2 | 0 | 2 |
 | Liofilchem | 2 | 2 | 0 |
 | MeMed | 2 | 1 | 1 |
-| Bio-Rad | 1 | 0 | 0 |
+| ALTA | 1 | 1 | 0 |
 | CellaVision | 1 | 0 | 0 |
 | Copack | 1 | 0 | 0 |
 | Dymind | 1 | 1 | 0 |
@@ -803,42 +813,52 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 | Rapha Diagnostics | 1 | 0 | 1 |
 | Silver Lake Research | 1 | 0 | 1 |
 | Skyla | 1 | 1 | 0 |
+| Spinreact | 1 | 1 | 0 |
 | Trivitron | 1 | 0 | 1 |
 
 ### Field coverage (canonical products)
 
 | Field | Filled | % |
 |---|---:|---:|
-| name | 2333 | 100.0% |
-| brand | 2330 | 99.9% |
-| product_line | 790 | 33.9% |
-| category | 2247 | 96.3% |
-| subcategory | 2267 | 97.2% |
-| technology | 2250 | 96.4% |
-| analyte | 1981 | 84.9% |
-| sample_type | 2083 | 89.3% |
-| product_type | 2267 | 97.2% |
-| subtype | 177 | 7.6% |
-| pack_size | 841 | 36.0% |
-| catalogue_no | 1025 | 43.9% |
-| specs (≥1 row) | 2331 | 99.9% |
-| summary | 2320 | 99.4% |
+| name | 2947 | 100.0% |
+| brand | 2930 | 99.4% |
+| product_line | 891 | 30.2% |
+| category | 2592 | 88.0% |
+| subcategory | 2667 | 90.5% |
+| technology | 2595 | 88.1% |
+| analyte | 2142 | 72.7% |
+| sample_type | 2276 | 77.2% |
+| product_type | 2667 | 90.5% |
+| subtype | 195 | 6.6% |
+| pack_size | 1038 | 35.2% |
+| catalogue_no | 1427 | 48.4% |
+| specs (≥1 row) | 2876 | 97.6% |
+| summary | 2850 | 96.7% |
 | image_local | 0 | 0.0% |
-| documents | 239 | 10.2% |
-| related | 2014 | 86.3% |
-| classification_confidence ≥ 0.7 | 2144 | 91.9% |
+| documents | 239 | 8.1% |
+| related | 2155 | 73.1% |
+| classification_confidence ≥ 0.7 | 2297 | 77.9% |
 
-### Duplicate groups (75) — non-canonical records are hidden and redirect
+### Duplicate groups (84) — non-canonical records are hidden and redirect
 
+- **Thermo Fisher 7500 Thermo Fisher Fast Real Time PCR System** ← `thermo-fisher-7500-fast-real-time-pcr-system`
+- **Thermo Fisher QuantStudio 7 Pro Real-Time PCR System** ← `thermo-fisher-quantstudio-7-pro-real-time-pcr-system-41a477`
+- **Thermo Fisher Applied Biosystems VeritiPro Thermal Cycler** ← `thermo-fisher-veritipro-thermal-cycler`
 - **Roche CoaguChek Pro II** ← `roche-coagu-chek-pro-ii`
 - **Roche Coagu Chek Xs Plus System** ← `roche-coaguchek-xs-plus-system`
+- **Thermo Fisher Applied Biosystems MagMAX Viral** ← `thermo-fisher-applied-biosystems`
 - **Snibe MAGLUMI Cholylglycine (CLIA)** ← `snibe-maglumi-cholylglycine-clia-9386c6`
 - **Snibe MAGLUMI EBV EA IgA (CLIA)** ← `snibe-maglumi-ebv-ea-iga-clia-138161`
 - **Snibe MAGLUMI GAD65 (CLIA)** ← `snibe-maglumi-anti-gad65-clia`
+- **Thermo Fisher Applied Biosystems QuantStudio Absolute Q Digital PCR System, desktop** ← `thermo-fisher-applied-biosystems-quantstudio-absolute-q-digital-pcr-system-desktop-b7e32f`
+- **Arkray Autocell Plus Automated 3 Part WBC Differential Hematology Analyser** ← `arkray-autocell-plus-automated-3-part-wbc-differential-hematology-analyser-f4d58d`
+- **Bio-Rad TeSeE Precess 24 Homogenizers** ← `bio-rad-tesee-precess-24-homogenizers-65f500`
+- **Bio-Rad TeSeE Precess 48 Homogenizers** ← `bio-rad-tesee-precess-48-homogenizers-506476`
 - **URIT 31 Urine Analyzer** ← `urit-31-urine-analyzer`
 - **InBios CHIKjj Detect IgM ELISA Kit** ← `inbios-chikjj-detect-igm-elisa-kit`
 - **InBios DENV Detect IgM Capture ELISA Kit** ← `inbios-denv-detect-igm-capture-elisa`
 - **InBios ZIKV Detect 2.0 IgM Capture ELISA Kit** ← `inbios-zikv-detect-2-0-igm-capture-elisa`
+- **Horiba ABX Micro es 60** ← `horiba-abx-micro-es-60-55822e`
 - **InBios Kalazar Detect Rapid Test for Visceral Leishmaniasis** ← `inbios-kalazar-detect-rapid-test-for-visceral-leishmaniasis-032ddb`
 - **EDAN BG8 i15 Test Cartridge** ← `edan-bg8-i15-test-cartridge-d70e81`
 - **EDAN BG9 i15 Test Cartridge** ← `edan-bg9-i15-test-cartridge-5f44c8`
@@ -906,10 +926,13 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 - **Boditech AFIAS-6** ← `boditech-afias-6-dd2320`
 - **Abbott DETERMINE HBsAg 2** ← `abbott-determine-hbsag-2-7da385`
 
-### Cross-source merges (22)
+### Cross-source merges (25)
 
+- Fujifilm DRI-CHEM NX600 (2 listings)
 - Roche CoaguChek Pro II (2 listings)
+- SD Biosensor STANDARD M10 (2 listings)
 - Horiba Microsemi CRP (2 listings)
+- Horiba ABX Micro es 60 (2 listings)
 - SD Biosensor STANDARD Q Malaria P.F/Pan Ag (2 listings)
 - SD Biosensor STANDARD Q Malaria PF PV Ag (2 listings)
 - SD Biosensor STANDARD Q Dengue IgM/IgG (2 listings)
@@ -933,16 +956,20 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
 
 ### Scope filter
 
-- Dropped as non-diagnostic: 4
+- Dropped as non-diagnostic: 5
   - ARKRAY Insulin Cooling Pouch - Uno Z — keyword "insulin cooling pouch"
   - ARKRAY Insulin Cooling Pouch - Duo Z for Travel — keyword "insulin cooling pouch"
   - Bio-Rad Gene Pulser / MicroPulser Electroporation Cuvettes — source category "Medical LAB"
   - Erba H360 Control — source category "Medical Accesories"
+  - Eppendorf Refrigerated Centrifuge 5425 R — keyword "centrifuge"
 - Instrument child tests expanded into own records: 1231; matched to existing pages: 0
 
 ### Brand checks
 
-- Name-derived brand disagreed with the stated brand (16):
+- Name-derived brand disagreed with the stated brand (19):
+  - Abbott Alere h 380-3-part differential hematology Analyzer: using **Abbott**, source said Abbott Alere
+  - Abbott Alere h s 30-3-part differential hematology Analyzer: using **Abbott**, source said Abbott Alere
+  - Abbott Alere Easy Microplate Washer: using **Abbott**, source said Abbott Alere
   - Mindray Wash Buffer: using **Mindray**, source said EKF Diagnostics
   - Calbiotech Free Testosterone ELISA: using **Calbiotech**, source said InBios
   - ZYBIO EXR 25-OH-VITAMIN-D: using **Zybio**, source said Serum/ Plasma/WB
@@ -959,48 +986,48 @@ Top fact-table keys: Manufacturer (303), Methode (296), Parameter (290), Categor
   - LumiraDx: using **LumiraDx**, source said Roche
   - Xprecia Prime: using **Siemens Healthineers**, source said Universal Biosensors (OEM/distributor)
   - Xprecia Stride: using **Siemens Healthineers**, source said Universal Biosensors (OEM/distributor)
-- Stated brands not in brands.yaml (passed through, tidied): 0 — 
-- Products with no brand: 3 — Hepa card, Standrard F HbA1c, Strandard F U-Albumin FIA
+- Stated brands not in brands.yaml (passed through, tidied): 7 — Awareness Technology (17), Medica (4), Leica BIOSYSTEM (4), Eppendorf (4), Philips (4), Spinreact (1), ALTA (1)
+- Products with no brand: 17 — Eppendorf Mastercycler X50 - PCR Thermocycler, Qiagenq PCR 384-well plate white, skirted, Eppendorf epMotion 5070 MultiCon PCR Solution, Hepa card, Standrard F HbA1c, Philips EverFlo 5 LPM Oxygen Concentrator, Quantstudio 3 Real Time Pcr System 0.2 mL 96 wells, QIAquant 96 Real time PCR System, LightCycler 96 Real-Time PCR System, Applied Biosystem ProFlex 3 x 32-well PCR System, Philips SimplyGo Mini Portable Oxygen Concentrator, Philips Trilogy EV300 Ventilator, ALTA Nucleic Acid extractor, Forma Steri-Cult CO2 Incubators, Strandard F U-Albumin FIA, KingFisher Flex Purification System King Fisher with 96 PCR Head, SimpliAmp Thermal Cycler
 
-### Low classification confidence (< 0.6): 84
+### Low classification confidence (< 0.6): 371
 
 - Arkray Urine test strips AUTION SCREEN — 0.59 (tech: none, analyte: none, sample: structured, type: keyword)
-- Snibe Maglumi 2000 Plus Chemiluminescence Immunoassay (CLIA) System — 0.59 (tech: keyword, analyte: none, sample: none, type: keyword)
-- Snibe Maglumi 600 Chemiluminescence Immunoassay (CLIA) System — 0.59 (tech: keyword, analyte: none, sample: none, type: keyword)
-- Snibe Maglumi 800 Chemiluminescence Immunoassay (CLIA) System — 0.59 (tech: keyword, analyte: none, sample: none, type: keyword)
-- Snibe MAGLUMI X3 Fully-auto Chemiluminescence Immunoassay (CLIA) System — 0.59 (tech: keyword, analyte: none, sample: none, type: keyword)
-- Snibe MAGLUMI X6 Fully-auto Chemiluminescence Immunoassay (CLIA) System — 0.59 (tech: keyword, analyte: none, sample: none, type: keyword)
-- Snibe MAGLUMI X8 Fully-auto Chemiluminescence Immunoassay (CLIA) System — 0.59 (tech: keyword, analyte: none, sample: none, type: keyword)
-- Acon On Call MultiPro ACR — 0.59 (tech: none, analyte: keyword, sample: structured, type: none)
-- Acon On Call MultiPro CRP — 0.59 (tech: none, analyte: keyword, sample: structured, type: none)
-- Arkray Orinalyser U500 — 0.48 (tech: none, analyte: none, sample: structured, type: none)
-- Medtronic HMS Plus Cartridges - Heparin Dose Response (HDR) - 6-Channel — 0.59 (tech: none, analyte: none, sample: structured, type: keyword)
-- URIT PFS - 30 Lipid Meter — 0.56 (tech: none, analyte: keyword, sample: none, type: keyword)
-- Qiagen Filter-Tips, 1000 µl — 0.44 (tech: none, analyte: none, sample: none, type: keyword)
-- Arkray Blood Lactate Meter Lactate Pro 2 LT-1730 — 0.56 (tech: none, analyte: keyword, sample: none, type: keyword)
-- Arkray Trustcheck BPM 3.0 Digital Blood Pressure Monitor — 0.33 (tech: none, analyte: none, sample: none, type: none)
-- Erba Mannheim DekaPHAN LAURA — 0.53 (tech: structured, analyte: none, sample: none, type: none)
-- Snibe MAGLUMI Starter 1+2 — 0.57 (tech: structured, analyte: none, sample: none, type: technology)
-- SD Biosensor G6PD CONTROL — 0.57 (tech: none, analyte: keyword, sample: none, type: keyword:control)
-- Snibe MAGLUMI Reaction Cup — 0.57 (tech: structured, analyte: none, sample: none, type: technology)
-- Snibe MAGLUMI Light Check — 0.57 (tech: structured, analyte: none, sample: none, type: technology)
-- Horiba ABX CRP STD — 0.44 (tech: none, analyte: keyword, sample: none, type: none)
-- Horiba ABX Miniclean — 0.33 (tech: none, analyte: none, sample: none, type: none)
-- Horiba ABX Minidil LMG — 0.53 (tech: structured, analyte: none, sample: none, type: none)
-- Horiba CRP Unit 50 — 0.59 (tech: none, analyte: keyword, sample: structured, type: none)
-- EKF Diagnostics Chip sensor glucose (type II) — 0.54 (tech: analyte, analyte: keyword, sample: none, type: none)
-- EDAN BC4 i15 Test Cartridge — 0.44 (tech: none, analyte: none, sample: none, type: keyword)
-- EDAN BG3 i15 Test Cartridge — 0.44 (tech: none, analyte: none, sample: none, type: keyword)
-- EDAN BG4 i15 Test Cartridge — 0.44 (tech: none, analyte: none, sample: none, type: keyword)
-- EDAN BG9 i15 Test Cartridge — 0.59 (tech: none, analyte: none, sample: structured, type: keyword)
-- EDAN CP50 i15 calibrant fluid pack — 0.54 (tech: analyte, analyte: keyword, sample: none, type: none)
-- EDAN CP100 i15 calibrant fluid pack — 0.33 (tech: none, analyte: none, sample: none, type: none)
-- Mindray Wash Buffer — 0.56 (tech: category, analyte: none, sample: none, type: keyword)
-- EKF Diagnostics Biosen S-Line Lab+ — 0.33 (tech: none, analyte: none, sample: none, type: none)
-- EKF Diagnostics EasyCon Norm (QC material) — 0.33 (tech: none, analyte: none, sample: none, type: none)
-- EKF Diagnostics Hemolyzing solution cups with 20 µl end-to-end capillaries (plastic capillaries) — 0.33 (tech: none, analyte: none, sample: none, type: none)
-- EKF Diagnostics Safecups micro test tubes 2.0 mL — 0.44 (tech: none, analyte: none, sample: none, type: keyword)
-- Snibe MAGLUMI Wash Concentrate — 0.5 (tech: category, analyte: none, sample: none, type: technology)
-- Zybio EXR 25-OH-VITAMIN-D — 0.57 (tech: structured, analyte: none, sample: none, type: technology)
-- Snibe MAGLUMI Tip — 0.5 (tech: category, analyte: none, sample: none, type: technology)
-- EKF Diagnostics Biosen Hemolyzing solution cups with 20 µl end-to-end capillaries — 0.48 (tech: none, analyte: none, sample: structured, type: none)
+- Awareness Technology ChemWell RPR 5801 — 0.33 (tech: none, analyte: none, sample: none, type: none)
+- Awareness Technology ChemWell-T 4620- PC Controlled Chemistry + Turbidmetric Analyzer — 0.45 (tech: none, analyte: none, sample: none, type: keyword)
+- Awareness Technology ChemWell-T 4625 ics- PC Controlled Chemistry + Turbidmetric Analyzer — 0.45 (tech: none, analyte: none, sample: none, type: keyword)
+- Awareness Technology ChemWell 2910- PC Controlled ELISA/ BIOCHEMISTRY ANALYZER — 0.59 (tech: keyword, analyte: none, sample: none, type: keyword)
+- Fujifilm DRI-CHEM NX700 — 0.48 (tech: keyword, analyte: none, sample: none, type: none)
+- Roche Cobas e 411 Analyzer — 0.45 (tech: none, analyte: none, sample: none, type: keyword)
+- QuidelOrtho Quidel's Triage System — 0.45 (tech: none, analyte: none, sample: none, type: keyword)
+- Erba Mannheim ECL 105 Single Channel Cogulation Analyzer — 0.45 (tech: none, analyte: none, sample: none, type: keyword)
+- Erba Mannheim ECL 760 Seven Channel Fully Automated Random Access Analyzer — 0.45 (tech: none, analyte: none, sample: none, type: keyword)
+- Siemens Healthineers BFT II Analyzer — 0.45 (tech: none, analyte: none, sample: none, type: keyword)
+- Sysmex CA-660 Automated Haemostasis Analyzer — 0.45 (tech: none, analyte: none, sample: none, type: keyword)
+- Awareness Technology Selectalyte 3910- ISE Analyzer — 0.45 (tech: none, analyte: none, sample: none, type: keyword)
+- Erba Mannheim EC 90 Next Generation Electrolyte Analyzer — 0.45 (tech: none, analyte: none, sample: none, type: keyword)
+- Medica EasyLyte Analyzer — 0.45 (tech: none, analyte: none, sample: none, type: keyword)
+- Roche 9180 Electrolyte Analyzer — 0.45 (tech: none, analyte: none, sample: none, type: keyword)
+- Siemens Healthineers RAPIDChem 744/754 Electrolyte and Lithium Testing Analyzers — 0.33 (tech: none, analyte: none, sample: none, type: none)
+- Erba Mannheim ESL 30 Fully Automated walk-away System — 0.45 (tech: none, analyte: none, sample: none, type: keyword)
+- Medica EasyBloodGas Analyzer — 0.45 (tech: none, analyte: none, sample: none, type: keyword)
+- Leica BIOSYSTEM HistoCore AUTOCUT — 0.33 (tech: none, analyte: none, sample: none, type: none)
+- Leica BIOSYSTEM HistoCore BIOCUT — 0.33 (tech: none, analyte: none, sample: none, type: none)
+- Leica BIOSYSTEM HistoCore MULTICUT — 0.33 (tech: none, analyte: none, sample: none, type: none)
+- Abbott Easy Microplate Washer — 0.33 (tech: none, analyte: none, sample: none, type: none)
+- Abbott Easy Reader — 0.45 (tech: none, analyte: none, sample: none, type: keyword)
+- Awareness Technology ChemWell Fusion- 4800 PC Controlled EIA and CLIA Combination Analyzer — 0.59 (tech: keyword, analyte: none, sample: none, type: keyword)
+- Awareness Technology Chromate 4300- PC Controlled Microplate Washer — 0.33 (tech: none, analyte: none, sample: none, type: none)
+- Awareness Technology LuMate 4400-PC Controlled Microplate Luminometer — 0.33 (tech: none, analyte: none, sample: none, type: none)
+- Awareness Technology Stat Fax 2200- Digital Dry Bath — 0.33 (tech: none, analyte: none, sample: none, type: none)
+- Awareness Technology Stat Fax 2600- Automatic Microplate Washer — 0.33 (tech: none, analyte: none, sample: none, type: none)
+- Awareness Technology Stat Fax 4200 - Stand-alone Microplate Reader — 0.45 (tech: none, analyte: none, sample: none, type: keyword)
+- Awareness Technology Stat Fax 4700 - Micro strip Reader — 0.44 (tech: none, analyte: none, sample: none, type: keyword)
+- Erba Mannheim ELAN 30s Fully Automated ELISA Microstrip Processor — 0.59 (tech: keyword, analyte: none, sample: none, type: keyword)
+- Erba Mannheim Lisa Wash II — 0.33 (tech: none, analyte: none, sample: none, type: none)
+- Erba Mannheim LisaScan EM — 0.33 (tech: none, analyte: none, sample: none, type: none)
+- Thermo Fisher Varioskan LUX multimode microplate reader — 0.45 (tech: none, analyte: none, sample: none, type: keyword)
+- Bio-Rad C1000 Touch Thermal Cycler with 384-Well Reaction Module — 0.33 (tech: none, analyte: none, sample: none, type: none)
+- Bio-Rad C1000 Touch Thermal Cycler with 96-Deep Well Reaction Module — 0.33 (tech: none, analyte: none, sample: none, type: none)
+- Bio-Rad C1000 Touch Thermal Cycler with 96-Well Fast Reaction Module — 0.33 (tech: none, analyte: none, sample: none, type: none)
+- Bio-Rad PTC Tempo 96 Thermal Cycler — 0.33 (tech: none, analyte: none, sample: none, type: none)
+- Bio-Rad PX1 PCR Plate Sealer — 0.59 (tech: keyword, analyte: none, sample: none, type: keyword)

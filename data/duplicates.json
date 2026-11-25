@@ -1,6 +1,51 @@
 {
   "duplicate_groups": [
     {
+      "key": "7500 fast pcr real system time",
+      "brand": "Thermo Fisher",
+      "canonical": "thermo-fisher-7500-thermo-fisher-fast-real-time-pcr-system",
+      "members": [
+        {
+          "id": "thermo-fisher-7500-thermo-fisher-fast-real-time-pcr-system",
+          "name": "Thermo Fisher 7500 Thermo Fisher Fast Real Time PCR System"
+        },
+        {
+          "id": "thermo-fisher-7500-fast-real-time-pcr-system",
+          "name": "Thermo Fisher 7500 Fast Real-Time PCR System"
+        }
+      ]
+    },
+    {
+      "key": "7 pcr pro quantstudio real system time",
+      "brand": "Thermo Fisher",
+      "canonical": "thermo-fisher-quantstudio-7-pro-real-time-pcr-system",
+      "members": [
+        {
+          "id": "thermo-fisher-quantstudio-7-pro-real-time-pcr-system",
+          "name": "Thermo Fisher QuantStudio 7 Pro Real-Time PCR System"
+        },
+        {
+          "id": "thermo-fisher-quantstudio-7-pro-real-time-pcr-system-41a477",
+          "name": "Thermo Fisher QuantStudio 7 Pro Real-Time PCR System"
+        }
+      ]
+    },
+    {
+      "key": "cycler thermal veritipro",
+      "brand": "Thermo Fisher",
+      "canonical": "thermo-fisher-applied-biosystems-veritipro-thermal-cycler",
+      "members": [
+        {
+          "id": "thermo-fisher-applied-biosystems-veritipro-thermal-cycler",
+          "name": "Thermo Fisher Applied Biosystems VeritiPro Thermal Cycler"
+        },
+        {
+          "id": "thermo-fisher-veritipro-thermal-cycler",
+          "name": "Thermo Fisher VeritiPro Thermal Cycler"
+        }
+      ]
+    },
+    {
       "key": "coaguchek ii pro",
       "brand": "Roche",
       "canonical": "roche-coaguchek-pro-ii-2dc743",
@@ -27,6 +72,21 @@
         {
           "id": "roche-coaguchek-xs-plus-system",
           "name": "Roche CoaguChek XS Plus system"
+        }
+      ]
+    },
+    {
+      "key": "applied biosystem",
+      "brand": "Thermo Fisher",
+      "canonical": "thermo-fisher-applied-biosystems-magmax-viral",
+      "members": [
+        {
+          "id": "thermo-fisher-applied-biosystems-magmax-viral",
+          "name": "Thermo Fisher Applied Biosystems MagMAX Viral"
+        },
+        {
+          "id": "thermo-fisher-applied-biosystems",
+          "name": "Thermo Fisher Applied Biosystems"
         }
       ]
     },
@@ -72,6 +132,66 @@
         {
           "id": "snibe-maglumi-anti-gad65-clia",
           "name": "Snibe MAGLUMI ANTI GAD65 (CLIA)"
+        }
+      ]
+    },
+    {
+      "key": "absolute applied biosystem desktop digital pcr q quantstudio system",
+      "brand": "Thermo Fisher",
+      "canonical": "thermo-fisher-applied-biosystems-quantstudio-absolute-q-digital-pcr-system-desktop",
+      "members": [
+        {
+          "id": "thermo-fisher-applied-biosystems-quantstudio-absolute-q-digital-pcr-system-desktop",
+          "name": "Thermo Fisher Applied Biosystems QuantStudio Absolute Q Digital PCR System, desktop"
+        },
+        {
+          "id": "thermo-fisher-applied-biosystems-quantstudio-absolute-q-digital-pcr-system-desktop-b7e32f",
+          "name": "Thermo Fisher Applied Biosystems QuantStudio Absolute Q Digital PCR System, desktop"
+        }
+      ]
+    },
+    {
+      "key": "3 analyser autocell automated differential hematology part plus wbc",
+      "brand": "Arkray",
+      "canonical": "arkray-autocell-plus-automated-3-part-wbc-differential-hematology-analyser",
+      "members": [
+        {
+          "id": "arkray-autocell-plus-automated-3-part-wbc-differential-hematology-analyser",
+          "name": "Arkray Autocell Plus Automated 3 Part WBC Differential Hematology Analyser"
+        },
+        {
+          "id": "arkray-autocell-plus-automated-3-part-wbc-differential-hematology-analyser-f4d58d",
+          "name": "Arkray Autocell Plus Automated 3 Part WBC Differential Hematology Analyser"
+        }
+      ]
+    },
+    {
+      "key": "24 homogenizer precess tesee",
+      "brand": "Bio-Rad",
+      "canonical": "bio-rad-tesee-precess-24-homogenizers",
+      "members": [
+        {
+          "id": "bio-rad-tesee-precess-24-homogenizers",
+          "name": "Bio-Rad TeSeE Precess 24 Homogenizers"
+        },
+        {
+          "id": "bio-rad-tesee-precess-24-homogenizers-65f500",
+          "name": "Bio-Rad TeSeE PRECESS 24 Homogenizers"
+        }
+      ]
+    },
+    {
+      "key": "48 homogenizer precess tesee",
+      "brand": "Bio-Rad",
+      "canonical": "bio-rad-tesee-precess-48-homogenizers",
+      "members": [
+        {
+          "id": "bio-rad-tesee-precess-48-homogenizers",
+          "name": "Bio-Rad TeSeE Precess 48 Homogenizers"
+        },
+        {
+          "id": "bio-rad-tesee-precess-48-homogenizers-506476",
+          "name": "Bio-Rad TeSeE PRECESS 48 Homogenizers"
         }
       ]
     },
@@ -132,6 +252,21 @@
         {
           "id": "inbios-zikv-detect-2-0-igm-capture-elisa",
           "name": "InBios ZIKV Detect 2.0 IgM Capture ELISA"
+        }
+      ]
+    },
+    {
+      "key": "60 abx es micro",
+      "brand": "Horiba",
+      "canonical": "horiba-abx-micro-es-60",
+      "members": [
+        {
+          "id": "horiba-abx-micro-es-60",
+          "name": "Horiba ABX Micro es 60"
+        },
+        {
+          "id": "horiba-abx-micro-es-60-55822e",
+          "name": "Horiba ABX Micro es 60"
         }
       ]
     },
@@ -1148,13 +1283,28 @@
   ],
   "cross_source_merges": [
     {
+      "id": "fujifilm-dri-chem-nx600-62e063",
+      "name": "Fujifilm DRI-CHEM NX600",
+      "listings": 2
+    },
+    {
       "id": "roche-coaguchek-pro-ii-2dc743",
       "name": "Roche CoaguChek Pro II",
       "listings": 2
     },
     {
+      "id": "sd-biosensor-standard-m10-e293a0",
+      "name": "SD Biosensor STANDARD M10",
+      "listings": 2
+    },
+    {
       "id": "horiba-microsemi-crp-d137e4",
       "name": "Horiba Microsemi CRP",
+      "listings": 2
+    },
+    {
+      "id": "horiba-abx-micro-es-60",
+      "name": "Horiba ABX Micro es 60",
       "listings": 2
     },
     {
