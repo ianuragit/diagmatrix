@@ -99,8 +99,17 @@ export function loadSources(
     const envKey = `SOURCE_${s.id.toUpperCase().replace(/[^A-Z0-9]/g, '_')}_URL`;
     const baseUrl = process.env[envKey] || local.sources[s.id]?.baseUrl || s.baseUrl || null;
     const enabled = (local.sources[s.id]?.enabled ?? s.enabled) && !!baseUrl;
+    // Local overrides win, including an explicit `frozen: false`.
+    const minIntervalMs = local.sources[s.id]?.minIntervalMs ?? s.minIntervalMs;
+    const frozen = local.sources[s.id]?.frozen ?? s.frozen ?? false;
     out.push(
-      SourceConfigSchema.parse({ ...s, baseUrl: baseUrl ?? 'https://unset.invalid', enabled }),
+      SourceConfigSchema.parse({
+        ...s,
+        baseUrl: baseUrl ?? 'https://unset.invalid',
+        enabled,
+        frozen,
+        ...(minIntervalMs ? { minIntervalMs } : {}),
+      }),
     );
   }
   return out.sort((a, b) => a.priority - b.priority);

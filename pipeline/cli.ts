@@ -61,6 +61,7 @@ const { positionals, values } = parseArgs({
     'download-images': { type: 'boolean', default: false },
     'allow-shrink': { type: 'boolean', default: false },
     reslug: { type: 'boolean', default: false },
+    'max-requests': { type: 'string' },
     limit: { type: 'string' },
   },
 });
@@ -105,17 +106,36 @@ async function crawlSource(src: LoadedSource, http: HttpClient) {
   slog.info(`discovered ${unique.length} product URLs`);
   if (values['discover-only']) return;
 
+  // Don't fetch what build-data would drop anyway (taxonomy.yaml → scope.exclude_source_categories).
+  const tax = loadYaml<Taxonomy>(join(CONFIG_DIR, 'taxonomy.yaml'));
+  const excluded = new Set(tax.scope.exclude_source_categories[src.config.id] ?? []);
+  const inScope = unique.filter((e) => !excluded.has(e.category));
+  if (inScope.length < unique.length)
+    slog.info(`scope: skipping ${unique.length - inScope.length} pages in excluded categories`);
+
   const limit = values.limit ? Number(values.limit) : Infinity;
+  const maxRequests = values['max-requests'] ? Number(values['max-requests']) : Infinity;
+  const startNetwork = http.stats.network;
   let done = 0;
+  let fetched = 0;
   let frozenSkipped = 0;
-  for (const entry of unique.slice(0, limit)) {
+  const todo = inScope.slice(0, limit);
+  for (const entry of todo) {
+    if (http.stats.network - startNetwork >= maxRequests) {
+      slog.info(
+        `max-requests reached (${maxRequests}); stopping this batch — re-run to continue from the cache`,
+      );
+      break;
+    }
     try {
-      await http.get(entry.url);
+      const res = await http.get(entry.url);
+      if (!res.fromCache) fetched++;
     } catch (err) {
       if (err instanceof HostBlockedError) {
         slog.error(
-          `stopping ${src.config.id}: the site is blocking requests. ${done} of ${unique.length} attempted; re-run later (cached pages are kept).`,
+          `stopping ${src.config.id}: the site is blocking requests. ${fetched} new pages fetched this run; cached pages are kept.`,
         );
+        process.exitCode = 3;
         break;
       }
       if (err instanceof CacheMissError && src.config.frozen) {
@@ -126,10 +146,11 @@ async function crawlSource(src: LoadedSource, http: HttpClient) {
         slog.error('fetch failed', { url: entry.url, error: String(err) });
     }
     if (++done % 50 === 0 && !src.config.frozen)
-      slog.info(`fetched ${done}/${Math.min(limit, unique.length)}`);
+      slog.info(`progress ${done}/${todo.length} (new this run: ${fetched})`);
   }
   if (frozenSkipped)
     slog.info(`frozen: ${frozenSkipped} uncached pages skipped without any request`);
+  if (!src.config.frozen) slog.info(`done: ${fetched} new pages fetched this run`);
 }
 
 async function cmdCrawl() {
